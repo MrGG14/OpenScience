@@ -1,0 +1,27 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Open Science assesment 1
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nicolas
+    family-names: Vega Muñoz
+    email: nicovegamunoz@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10702189
+  - type: url
+    value: 'https://github.com/MrGG14/OpenScience'
+repository-code: 'https://github.com/MrGG14/OpenScience'
+abstract: Analysis over 10 open-access articles using Grobid
+keywords:
+  - Gobrid
+  - keyword cloud
+  - Open Science
+license: Apache-2.0
+version: '1'
+date-released: '2024-02-25'
