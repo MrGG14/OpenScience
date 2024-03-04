@@ -20,6 +20,15 @@ open-access articles and will:
 - Gobrid library (uses requests as dependency beyond the Standard Python Library).
  
  ## Installation instructions
+First of all you need to install Gobrid from Docker as specified in [Gobrid´s containers documentation](https://grobid.readthedocs.io/en/latest/Grobid-docker/). CRF-only image is recomended.
+
+To install initialize the docker daemon and execute: 
+```
+docker pull lfoppiano/grobid:0.8.0
+```
+
+
+ 
  ## Execution instructions
 Initilize Gobrid: 
 ```
