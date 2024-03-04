@@ -21,6 +21,10 @@ open-access articles and will:
  
  ## Installation instructions
  ## Execution instructions
+Initilize Gobrid: docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
+
+Run on specified port: http://localhost:8070/
+
  ## Running example(s)
  ## Preferred citation 
  Read CFF
