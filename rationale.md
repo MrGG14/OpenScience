@@ -1,3 +1,5 @@
+# TO DO LIST:
+
 - [x] Add license 
 
 - [x] Obtain DOI
@@ -6,6 +8,10 @@
 
 - [x] Create  Codemeta JSON-LD
 
+- [x] Create README.md
+
 - [ ] Draw a keyword cloud based on the abstract information
+
 - [ ] Create a visualization showing the number of figures per article.
+      
 - [ ] Create a list of the links found in each paper.
