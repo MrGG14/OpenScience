@@ -5,13 +5,11 @@ import os
 import xml.etree.ElementTree as ET
 from grobid_client.grobid_client import GrobidClient
 from wordcloud import WordCloud
+import re 
 
 
 #FUNCS TO OBTAIN WORDCLOUD
-def get_abstract(file_path):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-
+def get_abstract(root):
     abstract = root.find('.//{http://www.tei-c.org/ns/1.0}abstract')
 
     ET.tostring(abstract, encoding='utf8').decode('utf8')
@@ -19,8 +17,8 @@ def get_abstract(file_path):
     abstract = paragraph.text
     return abstract
 
-def wordcloud(file_path):
-    abstract = get_abstract(file_path)
+def wordcloud(root):
+    abstract = get_abstract(root)
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(abstract)
 
     plt.figure(figsize=(10, 5))
@@ -34,12 +32,10 @@ def wordcloud(file_path):
 
 # FUNCS TO OBTAIN FIGURE HISTOGRAM
     
-def count_figs(file_path):
-    tree = ET.parse(file_path)
-    root = tree.getroot()
+def count_figs(root):
     figs = root.findall(".//{http://www.tei-c.org/ns/1.0}figure")
     count = len(figs)
-    file = file_path.replace("output\\", "")[2:]
+    file = file_path.replace("output\\", "")[2:-15]
     file_nfigs = [file, count]
     return file_nfigs
 
@@ -61,21 +57,14 @@ def figs_hist(file_nfigs):
 
 # FUNCS TO GET LINKS FROM EACH PAPER
     
-
-def get_paper_links(file_path):    
-    tree = ET.parse(file_path)
-    root = tree.getroot()
-    enlaces = [element.text for element in root.findall('.//ptr')]
-    file = file_path.replace("output\\", "")[2:]
-    file_nfigs = [file, enlaces]
-    return file_nfigs
-
-def find_links(element):
+def get_paper_links(root):
     links = []
-    for child in element:
-        if child.tag == 'ptr' and 'target' in child.attrib:
-            links.append(child.attrib['target'])
-        links.extend(find_links(child))
+    if root.text:
+        links.extend(re.findall(r'https://\S+', root.text))
+    for child in root:
+        links.extend(get_paper_links(child))
+        if child.tail:
+            links.extend(re.findall(r'https://\S+', child.tail))
     return links
 
 if __name__ == "__main__":
@@ -86,24 +75,24 @@ if __name__ == "__main__":
   
 
     file_nfigs = []
-    file_links = []
+    file_links = {}
 
     for file in os.listdir(xml_dir):
         if file[-3:] == 'xml':
             file_path = os.path.join(xml_dir, file)
-            print(file_path)
             tree = ET.parse(file_path)
             root = tree.getroot()
-            print(root)
+            
+
             # 1. Plot WordCloud
-            # wordcloud(file_path)
+            wordcloud(root)
 
             # 2. Count figures for each paper
-            # file_nfigs.append(count_figs(file_path))
+            file_nfigs.append(count_figs(root))
 
             # 3. Get links from each paper
-            file_links.append(find_links(root))
+            file_links[file_path.replace("output\\", "")[2:-15]] = get_paper_links(root)
 
 
-    # figs_hist(file_nfigs)
+    figs_hist(file_nfigs)
     print(file_links)
