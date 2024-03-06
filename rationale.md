@@ -2,7 +2,7 @@
 
 - [x] Add [license](https://github.com/MrGG14/OpenScience/blob/main/LICENSE): Apache 2.0
 
-- [x] Obtain DOI: Obtained from [Zenodo](https://zenodo.org/records/10702189)
+- [x] Obtain DOI: 10.5281/zenodo.10702188. Obtained from [Zenodo](https://zenodo.org/records/10702189)
 
 - [x] Create [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
 
