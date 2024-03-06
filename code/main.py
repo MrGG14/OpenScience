@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from grobid_client.grobid_client import GrobidClient
 from wordcloud import WordCloud
 import re 
+import shutil
 
 
 #FUNCS TO OBTAIN WORDCLOUD
@@ -51,7 +52,8 @@ def figs_hist(file_nfigs):
     plt.xticks(rotation=60) 
     plt.xticks(fontsize=6)
     plt.tight_layout()  # Ajustar el diseño para evitar superposiciones
-    plt.show()
+    if counts != []:
+        plt.show()
     # plt.savefig("./output/imagenes/histograma.png")
 
 
@@ -68,10 +70,18 @@ def get_paper_links(root):
     return links
 
 if __name__ == "__main__":
+
     xml_dir = './output'
 
-    # client = GrobidClient(config_path="code/config.json")
-    # client.process("processFulltextDocument", "./papers", output="./output/", consolidate_citations=True, tei_coordinates=True, n=20)
+    for file in os.listdir(xml_dir): 
+        path = os.path.join(xml_dir, file)
+        if os.path.isfile(path):
+            os.remove(path)
+        else:
+            shutil.rmtree(path)
+
+    client = GrobidClient(config_path="code/config.json")
+    client.process("processFulltextDocument", "./papers", output="./output/", consolidate_citations=True, tei_coordinates=True, n=20)
   
 
     file_nfigs = []
