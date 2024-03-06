@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 RUN git clone https://github.com/kermitt2/grobid_client_python && cd grobid_client_python && python setup.py install
 RUN cd ..
 
-CMD ["python", "-u", "code/main.py"]
+CMD ["python", "-u", "main.py"]
