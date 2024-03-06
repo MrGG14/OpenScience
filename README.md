@@ -49,7 +49,14 @@ Once Gobrid is up and running you just need to place the papers you want to anal
 
 Finally just execute the 'main.py' file. The outputs generated will be in the 'output' folder.
 
- ## Running example
+All this can also be done using Docker compose. If you want to execute this way you need to go to the repository folder and execute the following comand:
+
+```
+docker compose build
+docker compose run paper_analysis
+```
+
+ ## Running example 
 We will run an example using [10 Deep Learning papers](https://github.com/MrGG14/OpenScience/tree/main/papers) in PDF format located in the 'papers' folder.
 
 We just need to execute the main.py file and we obtain: 
