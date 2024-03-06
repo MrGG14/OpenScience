@@ -36,10 +36,9 @@ Finally, you may need to install the necessary packages to run the code. In orde
 
 ```
 pip install -r requirements.txt
-
 ```
 
- 
+ You can also install Gobrid´s client for python following the [instructions](https://github.com/kermitt2/grobid_client_python).
  ## Execution instructions
 Initilize Gobrid (Docker must be running): 
 ```
