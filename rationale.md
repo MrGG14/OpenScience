@@ -1,6 +1,6 @@
 # TO DO LIST:
 
-- [x] Add license: Apache 2.0
+- [x] Add [license](https://github.com/MrGG14/OpenScience/blob/main/LICENSE): Apache 2.0
 
 - [x] Obtain DOI: Obtained from [Zenodo](https://zenodo.org/records/10702189)
 
