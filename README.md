@@ -76,4 +76,6 @@ We just need to execute the main.py file and we obtain:
  Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
  ## Where to get help
 Gobrid´s documentation [here](https://github.com/kermitt2/grobid_client_python)
- ## Acknowledgements (if any)
+Docker´s documentation [here](https://docs.docker.com/manuals/)
+ ## Problems
+There seems to be a problem to install Gobrid´s python client from Docker. In the Dockerfile we try to install it following Gobrid´s steps (setup.py install) and directly with pip and neither of them seem to install it correctly. However locally works with both, we dont know where this error must come from. 
