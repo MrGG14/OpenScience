@@ -6,8 +6,6 @@ import xml.etree.ElementTree as ET
 from grobid_client.grobid_client import GrobidClient
 from wordcloud import WordCloud
 import re 
-import shutil
-
 
 #FUNCS TO OBTAIN WORDCLOUD
 def get_abstract(root):
