@@ -40,7 +40,7 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
 Once Gobrid is up and running you just need to execute the 'main.py' file. 
  ## Running example(s)
  ## Preferred citation 
- Read CFF
+ Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
  ## Where to get help
 Gobrid´s documentation [here](https://github.com/kermitt2/grobid_client_python)
  ## Acknowledgements (if any)
