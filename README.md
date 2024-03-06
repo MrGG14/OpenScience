@@ -1,5 +1,7 @@
 # OpenScience
 [![DOI](https://zenodo.org/badge/762679154.svg)](https://zenodo.org/doi/10.5281/zenodo.10702188)
+[![Documentation Status](https://readthedocs.org/projects/openscience/badge/?version=latest)](https://openscience.readthedocs.io/en/latest/?badge=latest)
+
 
  ## Description
 
