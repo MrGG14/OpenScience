@@ -14,4 +14,4 @@
 
 - [x] Create a visualization showing the number of figures per article.
       
-- [ ] Create a list of the links found in each paper.
+- [x] Create a list of the links found in each paper.
