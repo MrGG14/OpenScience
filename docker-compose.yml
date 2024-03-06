@@ -11,7 +11,7 @@ services:
       - ./config/grobid:/home/config/grobid
     restart: always
       
-  report-generator:
+  paper_analysis:
     build: . 
     container_name: paper_analysis
     volumes:
