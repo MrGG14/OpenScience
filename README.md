@@ -38,7 +38,17 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
 ```
 
 Once Gobrid is up and running you just need to execute the 'main.py' file. 
- ## Running example(s)
+ ## Running examplE
+We will run an example using [10 Deep Learning papers](https://github.com/MrGG14/OpenScience/tree/main/papers) in PDF format.
+
+We just need to execute the main.py file and we obtain: 
+
+- [XMLs generated](https://github.com/MrGG14/OpenScience/tree/main/output)
+
+- [WordCloud images](https://github.com/MrGG14/OpenScience/tree/main/output/imgs/WordCloud)
+
+- [Figures per paper](https://github.com/MrGG14/OpenScience/tree/main/output/imgs/FigHist)
+ 
  ## Preferred citation 
  Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
  ## Where to get help
