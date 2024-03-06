@@ -47,10 +47,10 @@ docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
 
 Once Gobrid is up and running you just need to place the papers you want to analyze in the 'papers' folder.
 
-Finally just execute the 'main.py' file. 
+Finally just execute the 'main.py' file. The outputs generated will be in the 'output' folder.
 
  ## Running example
-We will run an example using [10 Deep Learning papers](https://github.com/MrGG14/OpenScience/tree/main/papers) in PDF format.
+We will run an example using [10 Deep Learning papers](https://github.com/MrGG14/OpenScience/tree/main/papers) in PDF format located in the 'papers' folder.
 
 We just need to execute the main.py file and we obtain: 
 
