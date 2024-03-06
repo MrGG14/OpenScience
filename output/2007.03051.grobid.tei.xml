@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,62.79,91.76,471.32,13.46;1,223.85,109.70,149.19,13.46">Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Learning Models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2020-07-06">6 Jul 2020</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName coords="1,137.02,163.20,103.86,9.34;1,240.88,161.51,1.36,6.12"><forename type="first">Lasse</forename><forename type="middle">F</forename><surname>Wolff Anthony</surname></persName>
+							<email>&lt;lassewolffan-thony@gmail.com&gt;</email>
+							<affiliation key="aff0">
+								<orgName type="department">Equal contribution</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Sci-ence</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<settlement>Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,256.25,163.20,86.12,9.34;1,342.37,161.51,1.36,6.12"><forename type="first">Benjamin</forename><surname>Kanding</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Equal contribution</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Sci-ence</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<settlement>Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,357.74,163.20,93.32,9.34"><forename type="first">Raghavendra</forename><surname>Selvan</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Sci-ence</orgName>
+								<orgName type="institution">University of Copenhagen</orgName>
+								<address>
+									<settlement>Copenhagen</settlement>
+									<country key="DK">Denmark</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,136.87,648.21,54.80,8.63"><forename type="first">Lasse</forename><forename type="middle">F</forename><surname>Wolff</surname></persName>
+						</author>
+						<title level="a" type="main" coord="1,62.79,91.76,471.32,13.46;1,223.85,109.70,149.19,13.46">Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Learning Models</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2020-07-06">6 Jul 2020</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">C4340CAFBEC3FBA1CCDC55A4994DCB03</idno>
+					<idno type="arXiv">arXiv:2007.03051v1[cs.CY]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-03-06T11:02+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Deep learning (DL) can achieve impressive results across a wide variety of tasks, but this often comes at the cost of training models for extensive periods on specialized hardware accelerators. This energy-intensive workload has seen immense growth in recent years. Machine learning (ML) may become a significant contributor to climate change if this exponential trend continues. If practitioners are aware of their energy and carbon footprint, then they may actively take steps to reduce it whenever possible. In this work, we present carbontracker, a tool for tracking and predicting the energy and carbon footprint of training DL models. We propose that energy and carbon footprint of model development and training is reported alongside performance metrics using tools like carbontracker. We hope this will promote responsible computing in ML and encourage research into energy-efficient deep neural networks. 1  </p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The popularity of solving problems using deep learning (DL) has rapidly increased and with it the need for ever more powerful models. These models achieve impressive results across a wide variety of tasks such as gameplay, where AlphaStar reached the highest rank in the strategy game Starcraft II <ref type="bibr" coords="1,183.47,572.01,86.99,9.58" target="#b28">(Vinyals et al., 2019)</ref> and Agent57 surpassed human performance in all 57 Atari 2600 games <ref type="bibr" coords="1,108.63,595.93,78.08,9.58" target="#b5">(Badia et al., 2020)</ref>. This comes at the cost of training the model for thousands of hours on special-ized hardware accelerators such as graphics processing units (GPUs). From 2012 to 2018 the compute needed for DL grew 300000-fold <ref type="bibr" coords="1,414.32,222.14,124.57,9.58" target="#b0">(Amodei &amp; Hernandez, 2018)</ref>. This immense growth in required compute has a high energy demand, which in turn increases the demand for energy production. In 2010 energy production was responsible for approximately 35% of total anthropogenic greenhouse gas (GHG) emissions <ref type="bibr" coords="1,307.11,299.85,90.38,9.58" target="#b8">(Bruckner et al., 2014)</ref>. Should this exponential trend in DL compute continue then machine learning (ML) may become a significant contributor to climate change.</p><p>This can be mitigated by exploring how to improve energy efficiency in DL. Moreover, if practitioners are aware of their energy and carbon footprint, then they may actively take steps to reduce it whenever possible. We show that in ML, these can be simple steps that result in considerable reductions to carbon emissions.</p><p>The environmental impact of ML in research and industry has seen increasing interest in the last year following the 2018 IPCC special report <ref type="bibr" coords="1,485.81,443.31,56.62,9.58" target="#b14">(IPCC, 2018)</ref> calling for urgent action in order to limit global warming to 1.5 • C. We briefly review some notable work on the topic. <ref type="bibr" coords="1,391.29,479.17,87.69,9.58" target="#b26">Strubell et al. (2019)</ref> estimated the financial and environmental costs of R&amp;D and hyperparameter tuning for various state-of-the-art (SOTA) neural network (NN) models in natural language processing (NLP). They point out that increasing cost and emissions of SOTA models contribute to a lack of equity between those researchers who have access to large-scale compute, and those who do not. The authors recommend that metrics such as training time, computational resources required, and model sensitivity to hyperparameters should be reported to enable direct comparison between models. <ref type="bibr" coords="1,460.90,610.68,81.53,9.58" target="#b17">Lacoste et al. (2019)</ref> provided the Machine Learning Emissions Calculator that relies on self-reporting. The tool can estimate the carbon footprint of GPU compute by specifying hardware type, hours used, cloud provider, and region. <ref type="bibr" coords="1,506.19,658.50,31.63,9.58;1,307.44,670.46,65.80,9.58" target="#b13">Henderson et al. (2020)</ref> presented the experiment-impact-tracker framework and gave various strategies for mitigating carbon emissions in ML. Their Python framework allows for estimating the energy and carbon impact of ML systems as well as the generation of "Carbon Impact Statements" for standardized reporting hereof.</p><p>In this work, we propose carbontracker, a tool for tracking and predicting the energy consumption and carbon emissions of training DL models. The methodology is similar to that of <ref type="bibr" coords="2,214.13,136.00,77.06,9.58;2,55.11,147.96,26.56,9.58" target="#b13">Henderson et al. (2020)</ref> but differs from prior art in two major ways:</p><p>(1) We allow for a further proactive and interventiondriven approach to reducing carbon emissions by supporting predictions. Model training can be stopped, at the user's discretion, if the predicted environmental cost is exceeded.</p><p>(2) We support a variety of different environments and platforms such as clusters, desktop computers, and Google Colab notebooks, allowing for a plug-and-play experience.</p><p>We experimentally evaluate the tool on several different deep convolutional neural network (CNN) architectures and datasets for medical image segmentation and assess the accuracy of its predictions. We present concrete recommendations on how to reduce carbon emissions considerably when training DL models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Design and Implementation</head><p>The design philosophy that guided the development of carbontracker can be summarized by the following principles:</p><p>Pythonic The majority of ML takes place in the Python language <ref type="bibr" coords="2,100.14,471.63,87.50,9.58" target="#b29">(Wilcox et al., 2017)</ref>. We want the tool to be as easy as possible to integrate into existing work environments making Python the language of choice.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Usable</head><p>The required effort and added code must be minimal and not obfuscate the existing code structure. Carbontracker supports predicting the total duration, energy, and carbon footprint of training a DL model. These predictions are based on a user-specified number of monitored epochs with a default of 1. We forecast the carbon intensity of electricity production during the predicted duration using the supported APIs. The forecasted carbon intensity is then used to predict the carbon footprint. Following our preliminary research, we use a simple linear model for predictions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Experiments and Results</head><p>In order to evaluate the performance and behavior of carbontracker, we conducted experiments on three medical image datasets using two different CNN models: U-net <ref type="bibr" coords="2,371.25,339.36,109.53,9.58" target="#b21">(Ronneberger et al., 2015)</ref> and lungVAE <ref type="bibr" coords="2,307.11,351.31,88.41,9.58" target="#b22">(Selvan et al., 2020)</ref>. The models were trained for the task of medical image segmentation using three datasets: DRIVE <ref type="bibr" coords="2,382.96,375.22,74.60,9.58" target="#b24">(Staal et al., 2004)</ref>, LIDC <ref type="bibr" coords="2,490.85,375.22,50.59,9.58;2,307.44,387.18,48.19,9.58" target="#b1">(Armato III et al., 2004)</ref>, and CXR <ref type="bibr" coords="2,405.64,387.18,81.95,9.58" target="#b15">(Jaeger et al., 2014)</ref>. Details on the models and datasets are given in Appendix B. All measurements were taken using carbontracker version 1.1.2. We performed our experiments on a single NVIDIA TITAN RTX GPU with 12 GB memory and two Intel central processing units (CPUs).</p><p>In line with our message of reporting energy and carbon footprint, we used carbontracker to generate the following statement: The training of models in this work is estimated to use 37.445 kWh of electricity contributing to 3.166 kg of CO 2 eq. This is equivalent to 26.296 km travelled by car (see A.5).</p><p>An overview of predictions from carbontracker based on monitoring for 1 training epoch for the trained models compared to the measured values is shown in Figure <ref type="figure" coords="2,535.79,566.51,3.70,9.58" target="#fig_0">1</ref>.</p><p>The errors in the energy predictions are 4.9-19.1% compared to the measured energy values, 7.3-19.9% for the CO 2 eq, and 0.8-4.6% for the duration. The error in the CO 2 eq predictions are also affected by the quality of the forecasted carbon intensity from the APIs used by carbontracker. This is highlighted in Figure <ref type="figure" coords="2,476.10,638.24,3.66,9.58" target="#fig_1">2</ref>, which shows the estimated carbon emissions (gCO 2 eq) of training our U-net model on LIDC in Denmark and Great Britain for different carbon intensity estimation methods. As also shown by <ref type="bibr" coords="2,407.09,686.06,99.12,9.58" target="#b13">Henderson et al. (2020)</ref>, we see that using country or region-wide average estimates  may severely overestimate (or under different circumstances underestimate) emissions. This illustrates the importance of using real-time (or forecasted) carbon intensity for accurate estimates of carbon footprint.</p><p>Figure <ref type="figure" coords="3,85.94,481.02,4.98,9.58" target="#fig_2">3</ref> summarizes the relative energy consumption of each component across all runs. We see that while the GPU uses the majority of the total energy, around 50-60%, the CPU and dynamic random-access memory (DRAM) also account for a significant part of the total consumption. This is consistent with the findings of <ref type="bibr" coords="3,103.85,552.75,132.04,9.58" target="#b12">Gorkovenko &amp; Dholakia (2020)</ref>, who found that GPUs are responsible for around 70% of power consumption, CPU for 15%, and RAM for 10% when testing on the TensorFlow benchmarking suite for DL on Lenovo ThinkSystem SR670 servers. As such, only accounting for GPU consumption when quantifying the energy and carbon footprint of DL models will lead to considerable underestimation of the actual footprint.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Reducing Your Carbon Footprint</head><p>The carbon emissions that occur when training DL models are not irreducible and do not have to simply be the cost of progress within DL. Several steps can  be taken in order to reduce this footprint considerably.</p><p>In this section, we outline some strategies for practitioners to directly mitigate their carbon footprint when training DL models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Low Carbon Intensity Regions</head><p>The carbon intensity of electricity production varies by region and is dependent on the energy sources that power the local electrical grid. Figure <ref type="figure" coords="3,407.31,523.51,5.08,9.58" target="#fig_3">4</ref> illustrates how the variation in carbon intensity between regions can influence the carbon footprint of training DL models. Based on the 2016 average intensities, we see that a model trained in Estonia may emit more than 61 times the CO 2 eq as an equivalent model would when trained in Sweden.</p><p>In perspective, our U-net model trained on the LIDC dataset would emit 17.7 gCO 2 eq or equivalently the same as traveling 0.14 km by car when trained in Sweden. However, training in Estonia it would emit 1087.9 gCO 2 eq or the same as traveling 9.04 km by car for just a single training session.</p><p>As training DL models is generally not latency bound, we recommend that ML practitioners move training to regions with a low carbon intensity whenever it is possible to do so. We must further emphasize that for large-scale models that are trained on multiple GPUs for long periods, such as OpenAI's GPT-3 language model <ref type="bibr" coords="4,84.83,272.28,79.37,9.58" target="#b7">(Brown et al., 2020)</ref>, it is imperative that training takes place in low carbon intensity regions in order to avoid several megagrams of carbon emissions.</p><p>The absolute difference in emissions may even be significant between two green regions, like Sweden and France, for such large-scale runs.</p><p>Training Times The time period in which a DL model is trained affects its overall carbon footprint. This is caused by carbon intensity changing throughout the day as energy demand and capacity of energy sources change. Figure <ref type="figure" coords="4,161.96,396.22,5.08,9.58" target="#fig_4">5</ref> shows the carbon intensity (gCO 2 eq/kWh) for Denmark and Great Britain in the week of 2020-05-18 to 2020-05-25 collected with the APIs supported by carbontracker. A model trained during low carbon intensity hours of the day in Denmark may emit as little as 1 4 the CO 2 eq of one trained during peak hours. A similar trend can be seen for Great Britain, where 2-fold savings in emissions can be had.</p><p>We suggest that ML practitioners shift training to take place in low carbon intensity time periods whenever possible. The time period should be determined on a regional level.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Efficient Algorithms</head><p>The use of efficient algorithms when training DL models can further help reduce compute-resources and thereby also carbon emissions. Hyperparameter tuning may be improved by substituting grid search for random search <ref type="bibr" coords="4,205.19,596.30,85.49,9.58;4,55.44,608.25,21.51,9.58" target="#b6">(Bergstra &amp; Bengio, 2012)</ref>, using Bayesian optimization <ref type="bibr" coords="4,209.98,608.25,80.45,9.58" target="#b23">(Snoek et al., 2012)</ref> or other optimization techniques like Hyperband <ref type="bibr" coords="4,276.89,620.21,12.55,9.58;4,55.44,632.16,50.05,9.58" target="#b19">(Li et al., 2017)</ref>. Energy efficiency of inference in deep neural networks (DNNs) is also an active area of research with methods such as quantization aware training, energy-aware pruning <ref type="bibr" coords="4,204.84,668.03,81.47,9.58" target="#b30">(Yang et al., 2017)</ref>, and power-and memory-constrained hyperparameter optimization like HyperPower <ref type="bibr" coords="4,191.14,691.94,95.35,9.58" target="#b25">(Stamoulis et al., 2018)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Efficient Hardware and Settings</head><p>Choosing more energy-efficient computing hardware and settings may also contribute to reducing carbon emissions. Some GPUs have substantially higher efficiency in terms of floating point operations per second (FLOPS) per watt of power usage compared to others <ref type="bibr" coords="4,481.97,118.07,60.71,9.58;4,307.44,130.02,21.87,9.58" target="#b17">(Lacoste et al., 2019)</ref>. Power management techniques like dynamic voltage and frequency scaling (DVFS) can further help conserve energy consumption <ref type="bibr" coords="4,443.49,153.94,63.83,9.58" target="#b18">(Li et al., 2016)</ref> and for some models even reduce time to reach convergence <ref type="bibr" coords="4,307.11,177.85,75.75,9.58" target="#b27">(Tang et al., 2019)</ref>. <ref type="bibr" coords="4,391.10,177.85,75.05,9.58" target="#b27">Tang et al. (2019)</ref> show that DVFS can be applied to GPUs to help conserve about 8.7% to 23.1% energy consumption for training different DNNs and about 19.6% to 26.4% for inference. Moreover, the authors show that the default frequency settings on tested GPUs, such as NVIDIA's Pascal P100 and Volta V100, are often not optimized for energy efficiency in DNN training and inference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion and Conclusion</head><p>The current trend in DL is a rapidly increasing demand for compute that does not appear to slow down. This is evident in recent models such as the GPT-3 language model <ref type="bibr" coords="4,382.63,361.59,86.34,9.58" target="#b7">(Brown et al., 2020)</ref> with 175 billion parameters requiring an estimated 28000 GPU-days to train excluding R&amp;D (see Appendix D). We hope to spread awareness about the environmental impact of this increasing compute through accurate reporting with the use of tools such as carbontracker. Once informed, concrete and often simple steps can be taken in order to reduce the impact.</p><p>SOTA-results in DL are frequently determined by a model's performance through metrics such as accuracy, AUC score, or similar performance metrics. Energyefficiency is usually not one of these. While such performance metrics remain a crucial measure of model success, we hope to promote an increasing focus on energy-efficiency. We must emphasize that we do not argue that compute-intensive research is not essential for the progress of DL. We believe, however, that the impact of this compute should be minimized. We propose that the total energy and carbon footprint of model development and training is reported alongside accuracy and similar metrics to promote responsible computing in ML and research into energy-efficient DNNs.</p><p>In this work, we showed that ML risks becoming a significant contributor to climate change. To this end, we introduced the open-source carbontracker tool for tracking and predicting the total energy consumption and carbon emissions of training DL models. This enables practitioners to be aware of their footprint and take action to reduce it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Implementation details</head><p>Listing 1. Example of the default setup added to training scripts for tracking and predicting with carbontracker. Carbontracker is a multithreaded program. Figure <ref type="figure" coords="6,536.36,568.86,5.08,9.58" target="#fig_6">6</ref> illustrates a high-level overview of the program.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.1. On the Topic of Power and Energy Measurements</head><p>In our work, we measure the total power of selected components such as the GPU, CPU, and DRAM. It can be argued that dynamic power rather than total power would more fairly represent a user's power consumption when using large clusters or cloud computing. We argue that these computing resources would not have to exist if the user did not use them. As such, the user should also be accountable for the static power consumption during the period in which they reserve the resource. It is also a pragmatic solution as accurately estimating dynamic power is challenging due to the infeasibility of measuring static power by software and the difficulty in storing and updating information about static power for a multitude of different components. A similar argument can be made for the inclusion of life-cycle aspects in our energy estimates, such as accounting for the energy attributed to the manufacturing of system components. Like <ref type="bibr" coords="7,55.44,546.89,101.87,9.58" target="#b13">Henderson et al. (2020)</ref>, we ignore these aspects due to the difficulties in their estimation.</p><p>The power and energy monitoring in carbontracker is limited to a few main components of computational systems. Additional power consumed by the supporting infrastructure, such as that used for cooling or power delivery, is accounted for by multiplying the measured power by the Power Usage Effectiveness (PUE) of the data center hosting the compute, as suggested by <ref type="bibr" coords="7,97.84,660.47,81.42,9.58" target="#b26">Strubell et al. (2019)</ref>. PUE is a ratio describing the efficiency of a data center and the energy overhead of the computing equipment. It is defined as the ratio of the total energy used in a data center facility to the energy used by the IT equipment such as the compute, storage, and network equipment <ref type="bibr" coords="7,451.81,70.25,80.67,9.58" target="#b4">(Avelar et al., 2012)</ref>:</p><formula xml:id="formula_0" coords="7,359.89,105.91,28.71,9.61">PUE =</formula><p>Total Facility Energy IT Equipment Energy .</p><p>(1)</p><p>Previous research has examined PUE and its shortcomings <ref type="bibr" coords="7,328.38,153.68,133.56,9.58" target="#b31">(Yuventi &amp; Mehdizadeh, 2013)</ref>. These shortcomings may largely be resolved by data centers reporting an average PUE instead of a minimum observed value.</p><p>In our work, we use a PUE of 1.58, the global average for data centers in 2018 as reported by Ascierto (2018). 2  This may lead to inaccurate estimates of power and energy consumption of compute in energy-efficient data centers; e.g., Google reports a fleetwide PUE of 1.10 for 2020. <ref type="foot" coords="7,366.83,247.74,3.49,6.71" target="#foot_1">3</ref> Future work may, therefore, explore alternatives to using an average PUE value as well as to include more components in our measurements to improve the accuracy of our estimation. Currently, the software needed to take power measurements for components beyond the GPU, CPU, and DRAM is extremely limited or in most cases, non-existent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.2. On the Topic of Carbon Offsetting</head><p>Carbon emissions can be compensated for by carbon offsetting or the purchases of Renewable Energy Credits (RECs). Carbon offsetting is the reduction in emissions made to compensate for emissions occurring elsewhere <ref type="bibr" coords="7,354.03,412.66,113.28,9.58">(Goodward &amp; Kelly, 2010)</ref>. We ignore such offsets and RECs in our reporting as to encourage responsible computing in the ML community that would further reduce global emissions. See <ref type="bibr" coords="7,493.31,448.53,48.13,9.58;7,307.44,460.48,54.20,9.58" target="#b13">Henderson et al. (2020)</ref> for an extended discussion on carbon offsets and why they also do not account for them in the experiment-impact-tracker framework. Our carbon footprint estimate is solely based on the energy consumed during training of DL models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.3. Power and Energy Tracking</head><p>The power and energy tracking in carbontracker occurs in the carbontracker thread. The thread continuously collects instantaneous power samples in real-time for every available device of the specified components. Once samples for every device has been collected, the thread will sleep for a fixed interval before collecting samples again. When the epoch ends, the thread stores the epoch duration. Finally, after the training loop completes we calculate the total energy When the specified epochs before predicting have passed, the total predicted consumption is reported to stdout and optional log files. Similarly, when the specified amount of epochs have been monitored, the actual measured consumption is reported, after which the carbontracker and carbonintensity threads join the main thread. Finally, the carbontracker object runs the cleanup routine delete() which releases all used resources.  12 https://bit.ly/2zFsOK2 13 http://download.microsoft.com/download/ 8/2/9/8297f7c7-ae81-4e99-b1db-d65a01f7a8ef/ microsoft_cloud_infrastructure_datacenter_ and_network_fact_sheet.pdf Using the average carbon intensity of USA in 2017 of 449.06 gCO 2 eq/kWh 14 , we see this may emit up to 449.06gCO 2 eq/kWh•188701.92kWh = 84738484.20gCO 2 eq = 84738.48kgCO 2 eq. This is equivalent to 84738484.20gCO 2 eq 120.4gCO 2 eqkm -1 = 703808.01km travelled by car using the average CO 2 eq emissions of a newly registered car in the European Union in 2018 15 .</p><p>14 https://www.eia.gov/tools/faqs/faq.php? id=74&amp;t=11</p><p>15 https://www.eea.europa. eu/data-and-maps/indicators/ average-co2-emissions-from-motor-vehicles/ assessment-1 </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,55.19,168.66,234.25,8.63;3,55.44,179.60,235.49,8.65;3,55.44,190.55,234.00,8.65;3,55.44,201.54,235.49,8.63;3,55.44,212.50,235.57,8.63;3,55.44,223.46,226.72,8.63;3,55.44,67.06,233.99,86.78"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Comparison of predicted and measured values of energy in kWh (left), emissions in gCO2eq (center), and duration in s (right) for the full training session when predicting after a single epoch. The diagonal line represents predictions that are equal to the actual measured consumption. Description of the models and datasets are in Appendix B.</figDesc><graphic coords="3,55.44,67.06,233.99,86.78" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,55.19,335.28,234.26,8.63;3,55.44,346.24,235.49,8.63;3,55.44,357.19,234.89,8.63;3,55.44,368.15,235.48,8.63;3,55.44,379.09,234.00,8.65;3,55.44,389.96,234.00,8.74;3,55.44,401.03,235.42,8.63;3,78.84,248.45,187.20,72.00"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Carbon emissions (gCO2eq) of training the U-net on LIDC dataset for different carbon intensity estimation methods. (left) The emissions of training in Denmark and (right) in Great Britain at 2020-05-21 22:00 local time. Real-time indicates that the current intensity is fetched every 15 min during training using the APIs supported by carbontracker. The average intensities are from 2016 (see Figure 8 in Appendix).</figDesc><graphic coords="3,78.84,248.45,187.20,72.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,307.19,179.17,234.25,8.63;3,307.44,190.13,234.00,8.63;3,307.44,201.09,234.00,8.63;3,307.44,212.02,234.00,8.65;3,307.44,223.01,234.00,8.63;3,307.44,233.96,119.83,8.63;3,315.05,253.67,218.78,98.45"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Comparison of energy usage by component shown as the relative energy usage (%) out of the total energy spent during training.We see that the GPU uses the majority of the energy, about 50-60%, but the CPU and DRAM also account for a significant amount of the total energy consumption across all models and datasets.</figDesc><graphic coords="3,315.05,253.67,218.78,98.45" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="3,307.19,366.94,234.25,8.63;3,307.44,377.90,235.57,8.63;3,307.16,388.86,234.28,8.63;3,307.44,399.82,146.43,8.63"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Estimated carbon emissions (gCO2eq) of training our models (see Appendix B) in different EU-28 countries. The calculations are based on the average carbon intensities from 2016 (see Figure 8 in Appendix).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,55.19,168.90,234.43,8.63;4,55.44,179.86,234.00,8.63;4,55.44,190.82,234.00,8.63;4,55.44,201.66,234.00,8.74;4,55.44,212.73,234.00,8.63;4,55.44,223.69,98.15,8.63;4,71.99,67.06,198.89,89.50"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Real-time carbon intensity (gCO2eq/kWh) for Denmark (DK) and Great Britain (GB) from 2020-05-18 to 2020-05-25 shown in local time. The data is collected using the APIs supported by carbontracker. The carbon intensities are volatile to changes in energy demand and depend on the energy sources available.</figDesc><graphic coords="4,71.99,67.06,198.89,89.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="8,55.19,352.36,486.25,8.74;8,55.44,363.43,486.00,8.63;8,55.17,374.36,487.84,8.65;8,54.99,385.35,486.45,8.63;8,55.44,396.31,487.12,8.63;8,55.44,407.15,486.00,8.74;8,55.44,418.23,253.56,8.63;8,140.49,67.06,315.88,270.58"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. A visualization of the carbontracker control flow. The main thread instantiates the CarbonTracker class which then spawns the carbontracker and carbonintensity daemon threads. The carbontracker thread continuously collects power measurements for available devices. The carbonintensity thread fetches the current carbon intensity every 900 s.When the specified epochs before predicting have passed, the total predicted consumption is reported to stdout and optional log files. Similarly, when the specified amount of epochs have been monitored, the actual measured consumption is reported, after which the carbontracker and carbonintensity threads join the main thread. Finally, the carbontracker object runs the cleanup routine delete() which releases all used resources.</figDesc><graphic coords="8,140.49,67.06,315.88,270.58" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="10,55.19,235.45,234.25,8.63;10,55.44,246.29,234.00,8.74;10,55.44,257.36,234.00,8.63;10,55.06,268.21,234.38,8.74;10,55.44,279.28,172.33,8.63;10,84.69,67.06,175.50,153.56"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Box plot of the performance impact (%) of using carbontracker to monitor all training epochs shown as the relative increase in epoch duration compared to a baseline without carbontracker. The whiskers and outliers are obtained from the Tukey method using 1.5 times IQR.</figDesc><graphic coords="10,84.69,67.06,175.50,153.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="10,307.19,379.75,234.25,8.63;10,307.44,390.71,234.00,8.63;10,307.44,401.67,235.49,8.63;10,307.44,412.63,234.00,8.63;10,307.44,423.59,234.00,8.63;10,307.44,435.65,215.19,6.31;10,307.44,446.61,174.40,6.31"><head>Figure 8 .</head><label>8</label><figDesc>Figure8. Average carbon intensity (gCO2eq/kWh) of EU-28 countries in 2016. The intensity is calculated as the ratio of emissions from public electricity production and gross electricity production. Data is provided by the European Environment Agency (EEA). See https://www.eea.europa.eu/ds_resolveuid/ 3f6dc9e9e92b45b9b829152c4e0e7ade.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="11,55.19,514.38,486.25,8.63;11,55.44,525.34,486.00,8.63;11,55.44,536.30,486.00,8.63;11,55.44,547.14,486.00,8.74;11,55.44,558.22,278.62,8.63;11,116.19,215.28,364.49,284.28"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. Comparison of predicted and measured values of energy (kWh) and duration (s) per epoch when predicting after a single epoch. (row 1) Energy. (row 2) Cumulative energy. (row 3) Duration. (row 4) Cumulative duration. Each column shows a different model and dataset, as detailed in Appendix B. The initial epoch is often characterized by low energy usage and short epoch duration compared to the following epochs. Notwithstanding, the linear prediction model used by carbontracker may still lead to reasonable predictions after monitoring a single epoch.</figDesc><graphic coords="11,116.19,215.28,364.49,284.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="7,55.16,77.30,234.56,297.44"><head></head><label></label><figDesc>Listing 2. Example output of using carbontracker to track and predict the energy and carbon footprint of training a DL model.</figDesc><table coords="7,55.44,119.36,233.46,255.38"><row><cell cols="2">CarbonTracker: The following components</cell></row><row><cell>→</cell><cell>were found: GPU with device(s) TITAN</cell></row><row><cell>→</cell><cell>RTX. CPU with device(s) cpu:0, cpu:1.</cell></row><row><cell cols="2">CarbonTracker: Carbon intensity</cell></row><row><cell>→</cell><cell>for the next 1:54:54 is predicted to</cell></row><row><cell>→</cell><cell>be 54.09 gCO2/kWh at detected location:</cell></row><row><cell>→</cell><cell>Copenhagen, Capital Region, DK.</cell></row><row><cell cols="2">CarbonTracker:</cell></row><row><cell cols="2">Predicted consumption for 100 epoch(s):</cell></row><row><cell></cell><cell>Time: 1:54:54</cell></row><row><cell></cell><cell>Energy: 1.159974 kWh</cell></row><row><cell></cell><cell>CO2eq: 62.744032 g</cell></row><row><cell></cell><cell>This is equivalent to:</cell></row><row><cell></cell><cell>0.521130 km travelled by car</cell></row><row><cell cols="2">CarbonTracker: Average</cell></row><row><cell>→</cell><cell>carbon intensity during training</cell></row><row><cell>→</cell><cell>was 58.25 gCO2/kWh at detected location:</cell></row><row><cell>→</cell><cell>Copenhagen, Capital Region, DK.</cell></row><row><cell cols="2">CarbonTracker:</cell></row><row><cell cols="2">Actual consumption for 100 epoch(s):</cell></row><row><cell></cell><cell>Time: 1:55:55</cell></row><row><cell></cell><cell>Energy: 1.334319 kWh</cell></row><row><cell></cell><cell>CO2eq: 77.724065 g</cell></row><row><cell></cell><cell>This is equivalent to:</cell></row><row><cell></cell><cell>0.645549 km travelled by car</cell></row><row><cell cols="2">CarbonTracker: Finished monitoring.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="8,55.02,449.93,236.16,238.97"><head></head><label></label><figDesc>avg,de is the average power consumed by device d ∈ D in epoch e ∈ E, and T e is the duration of epoch e.</figDesc><table coords="8,55.02,449.93,236.16,238.97"><row><cell>consumption E as</cell><cell></cell><cell></cell></row><row><cell>E = PUE</cell><cell>P avg,de T e</cell><cell>(2)</cell></row><row><cell>e∈E d∈D</cell><cell></cell><cell></cell></row><row><cell cols="3">where P The components supported by carbontracker in its</cell></row><row><cell cols="3">current form are the GPU, CPU, and DRAM due to the</cell></row><row><cell cols="3">aforementioned restrictions. NVIDIA GPUs represent</cell></row><row><cell cols="3">a large share of Infrastructure-as-a-Service compute</cell></row><row><cell cols="3">instance types with dedicated accelerators. So we</cell></row><row><cell cols="3">support NVIDIA GPUs as power sampling is exposed</cell></row><row><cell cols="3">through the NVIDIA Management Library (NVML) 4 .</cell></row><row><cell cols="3">Likewise, we support Intel CPUs and DRAM through</cell></row><row><cell cols="3">the Intel Running Average Power Limit (Intel RAPL)</cell></row><row><cell>interface (David et al., 2010).</cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0" coords="7,323.58,668.02,217.86,8.74;7,307.44,678.07,235.12,8.65;7,307.44,688.06,169.65,8.63"><p>Early versions (v1.1.2 and earlier) of carbontracker used a PUE of 1.58. This has subsequently been updated to 1.67, the global average for 2019<ref type="bibr" coords="7,413.89,688.06,59.34,8.63" target="#b3">(Ascierto, 2019)</ref>.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1" coords="7,323.58,699.00,13.56,8.63;7,386.50,700.10,156.02,6.31;7,307.44,710.07,123.74,6.31"><p>See https://www.google.com/about/ datacenters/efficiency/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_2" coords="8,71.58,700.10,156.02,6.31;8,55.44,710.07,162.89,6.31"><p>https://developer.nvidia.com/ nvidia-management-library-nvml</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_3" coords="8,323.58,700.10,177.53,6.31;8,307.44,710.07,43.04,6.31"><p>https://github.com/DenisCarriere/ geocoder</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="11" xml:id="foot_4" coords="9,323.58,700.10,166.78,6.31;9,307.44,710.07,140.87,6.31"><p>https://github.com/stefanknegt/ Probabilistic-Unet-Pytorch</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGEMENTS</head><p>The authors would like to thank <rs type="person">Morten Pol Engell-Nørregård</rs> for the thorough feedback on the thesis version of this work. The authors also thank the anonymous reviewers and early users of carbontracker for their insightful feedback.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.4. Converting Energy Consumption to Carbon Emissions</head><p>We can estimate the carbon emissions resulting from the electricity production of the energy consumed during training as the product of the energy and carbon intensity as shown in (3):</p><p>Carbon Footprint = Energy Consumption× Carbon Intensity.</p><p>(3)</p><p>The used carbon intensity heavily influences the accuracy of this estimate. In carbontracker, we support the fetching of carbon intensity in real-time through external APIs.We dynamically determine the location based on the IP address of the local compute through the Python geocoding library geocoder 5 . Unfortunately, there does not currently exist a globally accurate, free, and publicly available real-time carbon intensity database. This makes determining the carbon intensity to use for the conversion more difficult.</p><p>We solve this problem by using several APIs that are local to each region. It is currently limited to Denmark and Great Britain. Other regions default to an average carbon intensity for the EU-28 countries in 2017 6 . For Denmark we use data from Energi Data Service 7 and for Great Britain we use the Carbon Intensity API 8 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.5. Logging</head><p>Finally, carbontracker has extensive logging capabilities enabling transparency of measurements and enhancing the reproducibility of experiments. The user may specify the desired path for these log files. We use the logging API 9 provided by the standard Python library.</p><p>Additional functionality for interaction with logs has also been added through the carbontracker.parser module.</p><p>Logs may easily be parsed into Python dictionaries containing all information regarding the training sessions, including power and energy usages, epoch durations, devices monitored, whether the model stopped early, and the outputted prediction. We further support aggregating logs into a single estimate of the total impact of all training sessions. By using different log directories, the user can easily keep track of the total impact of each model trained and developed. The user may then use the provided parser functionality to estimate the full impact of R&amp;D.</p><p>Current version of carbontracker uses kilometers travelled by car as the carbon emissions conversion. This data is retrieved from the average CO 2 eq emissions of a newly registered car in the European Union in 2018 10 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Models and Data</head><p>In our experimental evaluation, we trained two CNN models on three medical image datasets for the task of image segmentation. The models were developed in PyTorch <ref type="bibr" coords="9,106.45,532.58,85.53,9.58" target="#b20">(Paszke et al., 2019)</ref>. We describe each of the models and datasets in turn below.</p><p>U-net DRIVE This is a standard U-net model <ref type="bibr" coords="9,266.07,573.07,20.01,9.58;9,55.44,585.02,95.01,9.58" target="#b21">(Ronneberger et al., 2015)</ref> trained on the DRIVE dataset 6 https://www.eea.europa. eu/data-and-maps/data/ co2-intensity-of-electricity-generation 7 https://energidataservice.dk/ 8 https://carbonintensity.org.uk/ 9 https://docs.python.org/3/library/ logging.html 10 https://www.eea.europa. eu/data-and-maps/indicators/ average-co2-emissions-from-motor-vehicles/ assessment-1 <ref type="bibr" coords="9,307.11,70.25,76.92,9.58" target="#b24">(Staal et al., 2004)</ref>. DRIVE stands for Digital Retinal Images for Vessel Extraction and is intended for segmentation of blood vessels in retinal images. The images are 768 by 584 pixels and JPEG compressed. We used a training set of 15 images and trained for 300 epochs with a batch size of 4 and a learning rate of 10 -3 with the Adam optimizer <ref type="bibr" coords="9,419.64,141.98,87.30,9.58" target="#b16">(Kingma &amp; Ba, 2014)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>U-net CXR</head><p>The model is based on a U-net <ref type="bibr" coords="9,518.07,163.16,20.01,9.58;9,307.44,175.12,87.48,9.58" target="#b21">(Ronneberger et al., 2015)</ref> with slightly changed parameters. The dataset comprises of chest X-rays (CXR) with lung masks curated for pulmonary tuberculosis detection <ref type="bibr" coords="9,307.11,210.98,80.26,9.58" target="#b15">(Jaeger et al., 2014)</ref>. We use 528 CXRs for training and 176 for validation without any data augmentation. We trained the model for 200 epochs with a batch size of 12, a learning rate of 10 -4 , and weight decay of 10 -5 with the Adam optimizer <ref type="bibr" coords="9,419.64,258.80,87.30,9.58" target="#b16">(Kingma &amp; Ba, 2014)</ref>.</p><p>U-net LIDC This is also a standard U-net model <ref type="bibr" coords="9,307.11,291.94,107.26,9.58" target="#b21">(Ronneberger et al., 2015)</ref> but trained on a preprocessed LIDC-IDRI dataset <ref type="bibr" coords="9,397.01,303.90,109.10,9.58" target="#b1">(Armato III et al., 2004)</ref>  11 . The LIDC-IDRI dataset consists of 1018 thoracic computed tomography (CT) scans with annotated lesions from four different radiologists. We trained our model on the annotations of a single radiologist for 100 epochs. We used a batch size of 64 and a learning rate of 10 -3 with the Adam optimizer <ref type="bibr" coords="9,419.64,375.63,87.30,9.58" target="#b16">(Kingma &amp; Ba, 2014)</ref>. lungVAE CXR This model and dataset is from the open source model available from <ref type="bibr" coords="9,459.19,408.77,79.77,9.58" target="#b22">Selvan et al. (2020)</ref>. The model uses a U-net type segmentation network and a variational encoder for data imputation. The dataset is the same CXR dataset as used in our above U-net CXR model. 528 CXRs are used for training and 176 for validation. The model was trained with a batch size of 12 and a learning rate of 10 -4 with the Adam optimizer <ref type="bibr" coords="9,353.14,492.45,90.53,9.58" target="#b16">(Kingma &amp; Ba, 2014)</ref> for a maximum of 200 epoch using early stopping based on the validation loss. The first run was 90 epochs, and the second run was 97.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Additional Experiments</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.1. Performance Impact of Carbontracker</head><p>The performance impact of using carbontracker to monitor all training epochs is shown as a boxplot in Figure <ref type="figure" coords="9,535.86,594.91,3.66,9.58">7</ref>. We see that the mean increase in epoch duration for our U-net models across two runs is 0.19% on DRIVE, 1.06% on LIDC, and -0.58% on CXR. While we see individual epochs with a relative increase of up to 5% on LIDC and even 22% on DRIVE, this is more likely attributed to the stochasticity in epoch duration than to carbontracker. We further note that the fluctuations in epoch dura-</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="5,55.44,183.09,235.65,9.71;5,65.40,195.04,225.28,9.50;5,65.40,207.13,22.42,9.58" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Beyond Compute: Enabling AI Through System Integration</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Amodei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Herun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/hcs55958.2022.9895602</idno>
+		<ptr target="https://blog.openai.com/aiand-compute" />
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE Hot Chips 34 Symposium (HCS)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,226.95,235.25,9.58;5,65.40,238.90,225.28,9.58;5,65.40,250.86,225.28,9.58;5,65.40,262.81,225.69,9.58;5,65.40,274.77,224.04,9.58;5,65.40,286.59,225.78,9.71" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="5,160.92,262.81,130.17,9.58;5,65.40,274.77,224.04,9.58;5,65.40,286.72,84.12,9.58">Lung image database consortium: developing a resource for the medical imaging research community</title>
+		<author>
+			<persName coords=""><forename type="first">Iii</forename><surname>Armato</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">G</forename><surname>Mclennan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Mcnitt-Gray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">F</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">R</forename><surname>Yankelevitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Aberle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">R</forename><surname>Henschke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">I</forename><surname>Hoffman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">A</forename><surname>Kazerooni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">A</forename><surname>Macmahon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="5,157.74,286.59,37.94,9.50">Radiology</title>
+		<imprint>
+			<biblScope unit="volume">232</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="739" to="748" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,306.54,235.74,9.58;5,65.09,318.50,173.95,9.58" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" coord="5,108.70,306.54,177.86,9.58">Uptime Institute 2018 Data Center Survey</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ascierto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<pubPlace>Uptime Institute</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="5,55.44,338.32,235.74,9.58;5,65.09,350.27,173.95,9.58" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" coord="5,108.70,338.32,177.86,9.58">Uptime Institute 2019 Data Center Survey</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Ascierto</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<pubPlace>Uptime Institute</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="5,55.44,370.09,235.66,9.58;5,65.10,381.92,225.58,9.71;5,65.10,394.00,63.28,9.58" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="5,223.62,370.09,67.47,9.58;5,65.10,381.92,220.94,9.71">Metric System</title>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Avelar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Azevedo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>French</surname></persName>
+		</author>
+		<idno type="DOI">10.5040/9780755622771.ch-0230</idno>
+	</analytic>
+	<monogr>
+		<title level="m">A New Dictionary of the French Revolution</title>
+		<imprint>
+			<publisher>I.B. Tauris</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1" to="83" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,413.82,235.25,9.58;5,65.40,425.77,225.29,9.58;5,65.40,437.73,217.17,9.58" xml:id="b5">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">P</forename><surname>Badia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Piot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Kapturowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Sprechmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vitvitskyi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Blundell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>Agent57: Outperforming the atari human benchmark</note>
+</biblStruct>
+
+<biblStruct coords="5,55.44,457.55,235.65,9.58;5,65.10,469.37,224.34,9.71;5,65.07,481.33,183.65,9.71" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="5,174.25,457.55,116.84,9.58;5,65.10,469.50,101.97,9.58">Random search for hyperparameter optimization</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bergstra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="5,174.75,469.37,114.69,9.50;5,65.07,481.33,33.70,9.50">Journal of Machine Learning Research</title>
+		<idno type="ISSN">15324435</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="281" to="305" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,501.28,235.24,9.58;5,65.23,513.23,225.45,9.58;5,65.40,525.19,225.28,9.58;5,65.40,537.14,225.28,9.58;5,65.40,549.10,225.28,9.58;5,65.40,561.05,225.28,9.58;5,65.40,573.01,224.04,9.58;5,65.01,584.96,225.68,9.58;5,65.40,596.92,22.42,9.58" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coord="5,118.20,584.96,168.32,9.58">Language models are few-shot learners</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><forename type="middle">B</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Ryder</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Subbiah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Neelakantan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Shyam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Sastry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Herbert-Voss</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Krueger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Henighan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Child</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Ziegler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Winter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Hesse</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sigler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Litwin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Chess</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Berner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Mccandlish</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Amodei</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,616.74,234.00,9.58;5,65.40,628.56,224.04,9.71;5,65.15,640.52,224.28,9.50;5,64.94,652.47,224.51,9.50;5,65.40,664.43,204.62,9.71" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="5,137.28,628.69,67.62,9.58">Energy systems</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Bruckner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Bashmakov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Mulugetta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Chum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="5,224.19,628.56,65.25,9.50;5,65.15,640.52,224.28,9.50;5,64.94,652.47,224.51,9.50;5,65.40,664.43,175.51,9.50">Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</title>
+		<imprint>
+			<date type="published" when="2014">2014. 2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,55.44,684.38,235.25,9.58;5,65.40,696.33,224.04,9.58;5,65.40,708.16,224.04,9.71;5,317.40,70.12,225.78,9.71;5,317.40,82.20,225.72,9.58" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="5,116.92,696.33,172.52,9.58;5,65.40,708.29,32.68,9.58">RAPL</title>
+		<author>
+			<persName><forename type="first">Howard</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eugene</forename><surname>Gorbatov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulf</forename><forename type="middle">R</forename><surname>Hanebutte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Le</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1840845.1840883</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="5,116.70,708.16,172.74,9.50;5,317.40,70.12,143.80,9.50">Proceedings of the 16th ACM/IEEE international symposium on Low power electronics and design</title>
+		<meeting>the 16th ACM/IEEE international symposium on Low power electronics and design</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2010-08-18">2010</date>
+			<biblScope unit="page" from="189" to="194" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,102.97,235.74,9.58;5,317.09,114.92,224.35,9.58" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="5,440.14,102.97,99.11,9.58">Biodiversity offsets under the Resource Management Act 1991: A New Environmental Bottom-Line?</title>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">Lothian</forename><surname>Holloway</surname></persName>
+		</author>
+		<idno type="DOI">10.26686/wgtn.17007844</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="5,393.24,114.92,132.05,9.58">The World Resources Institute</title>
+		<imprint>
+			<biblScope unit="page">10</biblScope>
+			<date>null</date>
+			<publisher>Victoria University of Wellington Library</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="5,317.40,126.88,213.91,9.58" xml:id="b11">
+	<monogr>
+		<author>
+			<persName coords=""><surname>Street</surname></persName>
+		</author>
+		<title level="m" coord="5,356.51,126.88,55.45,9.58">NE Suite 800</title>
+		<meeting><address><addrLine>Washington, D. C .</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,147.64,235.65,9.58;5,317.40,159.60,225.78,9.58;5,317.10,171.55,88.19,9.58" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" coord="5,459.19,147.64,83.91,9.58;5,317.40,159.60,220.59,9.58">Towards Power Efficiency in Deep Learning on Data Center Hardware</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gorkovenko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dholakia</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1814" to="1820" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,192.32,235.25,9.58;5,317.23,204.28,225.86,9.58;5,317.40,216.23,224.04,9.58;5,317.40,228.19,224.34,9.58;5,317.40,241.37,187.80,7.01" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="5,461.43,204.28,81.66,9.58;5,317.40,216.23,224.04,9.58;5,317.40,228.19,143.25,9.58">Rethinking Machine Learning Benchmarks in the Context of Professional Codes of Conduct</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Henderson</surname></persName>
+			<idno type="ORCID">0000-0003-3938-0541</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jieru</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0009-0002-4370-0683</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mona</forename><surname>Diab</surname></persName>
+			<idno type="ORCID">0000-0002-7696-1436</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joelle</forename><surname>Pineau</surname></persName>
+			<idno type="ORCID">0000-0003-0747-7250</idno>
+		</author>
+		<idno type="DOI">10.1145/3614407.3643708</idno>
+		<ptr target="http://arxiv.org/abs/2002.05651" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Symposium on Computer Science and Law</title>
+		<meeting>the Symposium on Computer Science and Law</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-01">jan 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,260.91,234.00,9.58;5,317.40,272.86,224.04,9.58;5,317.40,284.82,224.04,9.58;5,317.40,296.77,224.04,9.58;5,317.40,308.73,224.04,9.58;5,317.40,320.68,170.61,9.58" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" coord="5,342.51,260.91,198.94,9.58;5,317.40,272.86,224.04,9.58;5,317.40,284.82,224.04,9.58;5,317.40,296.77,155.58,9.58">Global Warming of 1.5°C</title>
+		<author>
+			<persName coords=""><surname>Ipcc</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/9781009157940</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+	<note>in the context of strengthening the global response to the threat of climate change</note>
+</biblStruct>
+
+<biblStruct coords="5,307.44,341.45,235.25,9.58;5,317.40,353.40,224.42,9.58;5,317.40,365.36,224.43,9.58;5,317.40,377.18,225.28,9.71;5,317.40,389.27,60.93,9.58" xml:id="b15">
+	<monogr>
+		<title level="m" type="main" coord="5,438.04,353.40,103.78,9.58;5,317.40,365.36,224.43,9.58;5,317.40,377.18,221.19,9.71">Two public chest x-ray datasets for computer-aided screening of pulmonary diseases. Quantitative imaging in medicine and surgery</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jaeger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Candemir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Antani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y.-X</forename><forename type="middle">J</forename><surname>Wáng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P.-X</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Thoma</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">475</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,409.90,234.00,9.71;5,317.40,421.86,135.84,9.71" xml:id="b16">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Adam Optimizer</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1412.6980</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="1" to="15" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="5,307.44,442.75,235.25,9.58;5,317.09,454.71,224.34,9.58;5,317.40,466.66,142.60,9.58" xml:id="b17">
+	<monogr>
+		<title level="m" type="main" coord="5,331.17,454.71,210.27,9.58;5,317.40,466.66,37.60,9.58">Quantifying the Carbon Emissions of Machine Learning</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lacoste</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Luccioni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Dandres</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="5,307.44,487.43,234.00,9.58;5,317.40,499.38,224.04,9.58;5,317.40,511.21,224.03,9.71;5,317.40,523.16,224.04,9.50;5,317.07,535.12,226.01,9.50;5,317.40,547.07,224.04,9.50;5,317.40,559.03,225.78,9.71;5,317.40,571.11,224.04,9.58;5,317.40,583.07,225.85,9.58;5,317.40,595.02,187.15,9.58" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="5,492.41,487.43,49.03,9.58;5,317.40,499.38,224.04,9.58;5,317.40,511.34,127.11,9.58">Evaluating the Energy Efficiency of Deep Convolutional Neural Networks on CPUs and GPUs</title>
+		<author>
+			<persName><forename type="first">Da</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinbo</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michela</forename><surname>Becchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziliang</forename><surname>Zong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bdcloud-socialcom-sustaincom.2016.76</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="5,464.68,511.21,76.76,9.50;5,317.40,523.16,224.04,9.50;5,317.07,535.12,226.01,9.50;5,317.40,547.07,224.04,9.50;5,317.40,559.03,85.36,9.50">2016 IEEE International Conferences on Big Data and Cloud Computing (BDCloud), Social Computing and Networking (SocialCom), Sustainable Computing and Communications (SustainCom) (BDCloud-SocialCom-SustainCom)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-10">2016. oct 2016</date>
+			<biblScope unit="page" from="477" to="484" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,615.79,235.25,9.58;5,317.40,627.75,224.04,9.58;5,317.40,639.57,225.28,9.71;5,317.12,651.53,224.31,9.71;5,316.91,663.61,45.66,9.58" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="5,449.83,627.75,91.61,9.58;5,317.40,639.70,184.10,9.58">A novel bandit-based approach to hyperparameter optimization</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Jamieson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Desalvo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Rostamizadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Talwalkar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Hyperband</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="5,509.17,639.57,33.51,9.50;5,317.12,651.53,45.85,9.50">J. Mach. Learn. Res</title>
+		<idno type="ISSN">1532-4435</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="6765" to="6816" />
+			<date type="published" when="2017-01">January 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,307.44,684.38,235.25,9.58;5,317.23,696.33,225.45,9.58;5,317.40,708.29,225.28,9.58;6,65.40,70.25,225.69,9.58;6,65.40,82.20,224.04,9.58;6,65.40,94.16,225.69,9.58;6,65.40,106.11,224.34,9.58;6,65.40,119.29,187.80,7.01" xml:id="b20">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gross</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lerer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bradbury</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Chanan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Killeen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Gimelshein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Antiga</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Desmaison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Köpf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Devito</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Raison</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Tejani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chilamkurthy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Steiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Chintala</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Pytorch</surname></persName>
+		</author>
+		<ptr target="http://arxiv.org/abs/1912.01703" />
+		<title level="m" coord="6,167.72,94.16,123.37,9.58;6,65.40,106.11,161.99,9.58">An Imperative Style, High-Performance Deep Learning Library</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,138.05,235.65,9.58;6,65.12,150.00,225.97,9.58;6,65.40,161.83,224.04,9.71;6,65.40,173.78,224.04,9.50;6,65.12,185.74,225.81,9.71;6,65.40,197.82,225.77,9.58;6,65.40,209.78,210.28,9.58" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="6,238.09,138.05,53.00,9.58;6,65.12,150.00,225.97,9.58;6,65.40,161.96,23.85,9.58">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+		<ptr target="http://arxiv.org/abs/1505.04597" />
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s" coord="6,107.38,161.83,182.06,9.50;6,65.40,173.78,224.04,9.50;6,65.12,185.74,121.52,9.50">Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015-05">may 2015</date>
+			<biblScope unit="volume">9351</biblScope>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,229.76,235.25,9.58;6,65.40,241.71,224.04,9.58;6,65.40,253.67,224.04,9.58;6,65.40,265.49,224.04,9.71;6,65.12,277.45,227.31,9.71;6,64.81,290.76,223.66,7.01" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="6,265.54,241.71,23.90,9.58;6,65.40,253.67,224.04,9.58;6,65.40,265.62,72.69,9.58">Lung Segmentation from Chest X-rays using Variational Data Imputation</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Selvan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><forename type="middle">B</forename><surname>Dam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><forename type="middle">S</forename><surname>Detlefsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Rischel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Sheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Pai</surname></persName>
+		</author>
+		<ptr target="https://openreview.net/forum?id=dlzQM28tq2W" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="6,161.15,265.49,128.29,9.50;6,65.12,277.45,126.76,9.50">ICML Workshop on The Art of Learning with Missing Values</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,309.51,234.00,9.58;6,65.40,321.47,225.69,9.58;6,65.40,333.29,224.04,9.71;6,65.40,345.25,124.22,9.71" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="6,250.87,309.51,38.56,9.58;6,65.40,321.47,225.69,9.58;6,65.40,333.42,27.45,9.58">Artificial Neural Networks - Architectures and Algo- rithms</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Snoek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">P</forename><surname>Adams</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439809037-8</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="6,113.60,333.29,175.84,9.50;6,65.40,345.25,29.79,9.50">Computational Intelligence Paradigms</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="93" to="132" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,365.36,235.25,9.58;6,65.40,377.31,224.04,9.58;6,65.40,389.14,224.04,9.71;6,64.80,401.09,224.85,9.71;6,65.40,413.18,225.78,9.58" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="6,203.31,377.31,86.13,9.58;6,65.40,389.27,190.88,9.58">Ridge-Based Vessel Segmentation in Color Images of the Retina</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Staal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Abramoff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Niemeijer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">A</forename><surname>Viergever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Van Ginneken</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tmi.2004.825627</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,267.43,389.14,22.01,9.50;6,64.80,401.09,136.19,9.50">IEEE Transactions on Medical Imaging</title>
+		<title level="j" type="abbrev">IEEE Trans. Med. Imaging</title>
+		<idno type="ISSN">0278-0062</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="501" to="509" />
+			<date type="published" when="2004-04">apr 2004</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,433.16,235.25,9.58;6,65.40,445.11,224.04,9.58;6,65.40,457.07,225.78,9.58;6,65.40,468.89,224.04,9.71;6,64.80,480.85,225.89,9.50;6,65.12,492.93,224.31,9.58;6,65.40,504.89,225.78,9.58;6,65.40,516.84,210.28,9.58" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="6,78.88,445.11,210.56,9.58;6,65.40,457.07,220.88,9.58">HyperPower: Power- and memory-constrained hyper-parameter optimization for neural networks</title>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Stamoulis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ermao</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Da-Cheng</forename><surname>Juan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diana</forename><surname>Marculescu</surname></persName>
+		</author>
+		<idno type="DOI">10.23919/date.2018.8341973</idno>
+		<ptr target="http://arxiv.org/abs/1712.02446" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="6,78.77,468.89,210.67,9.50;6,64.80,480.85,225.89,9.50;6,65.12,492.93,85.71,9.58">2018 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-12">dec 2018</date>
+			<biblScope unit="page" from="19" to="24" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,536.82,234.00,9.58;6,65.40,548.78,225.78,9.58;6,65.40,560.73,224.34,9.58;6,65.40,573.91,134.00,7.01" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="6,239.95,536.82,49.48,9.58;6,65.40,548.78,203.12,9.58">Energy and Policy Considerations for Deep Learning in NLP</title>
+		<author>
+			<persName><forename type="first">Emma</forename><surname>Strubell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananya</forename><surname>Ganesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Mccallum</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/p19-1355</idno>
+		<ptr target="https://bit.ly/2JTbGnI" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</title>
+		<meeting>the 57th Annual Meeting of the Association for Computational Linguistics</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="3645" to="3650" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,592.67,234.00,9.58;6,65.40,604.62,224.04,9.58;6,65.40,616.45,224.04,9.71;6,64.41,628.40,225.03,9.50;6,65.40,640.36,225.78,9.71;6,65.40,652.44,225.78,9.58;6,65.40,664.40,210.28,9.58" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="6,239.55,592.67,49.89,9.58;6,65.40,604.62,224.04,9.58;6,65.40,616.58,149.11,9.58">The Impact of GPU DVFS on the Energy and Performance of Deep Learning</title>
+		<author>
+			<persName><forename type="first">Zhenheng</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaowen</forename><surname>Chu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3307772.3328315</idno>
+		<ptr target="http://arxiv.org/abs/1905.11012" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="6,232.52,616.45,56.92,9.50;6,64.41,628.40,225.03,9.50;6,65.40,640.36,110.62,9.50">Proceedings of the Tenth ACM International Conference on Future Energy Systems</title>
+		<meeting>the Tenth ACM International Conference on Future Energy Systems</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2019-05">may 2019</date>
+			<biblScope unit="page" from="315" to="325" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,55.44,684.38,235.24,9.58;6,65.40,696.33,225.28,9.58;6,65.40,708.29,224.03,9.58;6,317.40,70.25,225.78,9.58;6,317.40,82.07,138.85,9.71" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="6,195.86,708.29,93.58,9.58;6,317.40,70.25,221.49,9.58">Grandmaster level in StarCraft II using multi-agent reinforcement learning</title>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Igor</forename><surname>Babuschkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wojciech</forename><forename type="middle">M</forename><surname>Czarnecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michaël</forename><surname>Mathieu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Dudzik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junyoung</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Powell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timo</forename><surname>Ewalds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petko</forename><surname>Georgiev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junhyuk</forename><surname>Oh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Horgan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Kroiss</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivo</forename><surname>Danihelka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aja</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Sifre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">P</forename><surname>Agapiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Jaderberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">S</forename><surname>Vezhnevets</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Leblond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Pohlen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentin</forename><surname>Dalibard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Budden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yury</forename><surname>Sulsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Molloy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><forename type="middle">L</forename><surname>Paine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caglar</forename><surname>Gulcehre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Pfaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuhuai</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roman</forename><surname>Ring</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dani</forename><surname>Yogatama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dario</forename><surname>Wünsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katrina</forename><surname>Mckinney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Schaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Lillicrap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Demis</forename><surname>Hassabis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Apps</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Silver</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-019-1724-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,317.40,82.07,26.65,9.50">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">575</biblScope>
+			<biblScope unit="issue">7782</biblScope>
+			<biblScope unit="page" from="350" to="354" />
+			<date type="published" when="2019-10-30">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,307.44,101.97,234.00,9.58;6,317.40,113.93,224.04,9.58;6,317.40,125.88,211.71,9.58" xml:id="b29">
+	<monogr>
+		<title level="m" type="main" coord="6,387.50,113.93,153.94,9.58;6,317.40,125.88,106.93,9.58">Developer economics: State of the developer nation q1 2017</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Wilcox</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Schuermans</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Voskoglou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sobolevski</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical report</note>
+</biblStruct>
+
+<biblStruct coords="6,307.44,145.65,234.00,9.58;6,317.40,157.60,224.04,9.58;6,317.40,169.56,139.56,9.58;6,476.00,169.43,65.44,9.71;6,316.41,181.38,225.03,9.50;6,317.40,193.34,224.04,9.71;6,317.40,205.43,183.14,9.58;6,518.03,205.43,23.41,9.58;6,317.40,217.38,224.35,9.58;6,317.40,230.56,187.80,7.01" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" coord="6,495.35,145.65,46.08,9.58;6,317.40,157.60,224.04,9.58;6,317.40,169.56,134.67,9.58">Designing Energy-Efficient Convolutional Neural Networks Using Energy-Aware Pruning</title>
+		<author>
+			<persName><forename type="first">Tien-Ju</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Hsin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivienne</forename><surname>Sze</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.643</idno>
+		<ptr target="http://arxiv.org/abs/1611.05128" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="6,492.32,169.43,49.12,9.50;6,316.41,181.38,225.03,9.50;6,317.40,193.34,109.35,9.50">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-11">2017. nov 2017</date>
+			<biblScope unit="volume">2017</biblScope>
+			<biblScope unit="page" from="6071" to="6079" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,307.44,249.10,234.00,9.58;6,317.40,261.06,225.69,9.58;6,317.40,272.88,224.03,9.71;6,317.40,284.84,225.28,9.71;6,316.91,296.92,132.00,9.58" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" coord="6,450.80,249.10,90.63,9.58;6,317.40,261.06,225.69,9.58;6,317.40,273.01,182.85,9.58">A critical analysis of Power Usage Effectiveness and its use in communicating data center energy consumption</title>
+		<author>
+			<persName><forename type="first">Jumie</forename><surname>Yuventi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roshan</forename><surname>Mehdizadeh</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.enbuild.2013.04.015</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,511.69,272.88,29.74,9.50;6,317.40,284.84,56.23,9.50">Energy and Buildings</title>
+		<title level="j" type="abbrev">Energy and Buildings</title>
+		<idno type="ISSN">0378-7788</idno>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="90" to="94" />
+			<date type="published" when="2013-09">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

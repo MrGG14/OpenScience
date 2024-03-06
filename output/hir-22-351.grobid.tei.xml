@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,56.69,128.05,141.91,22.42">Book Review: Deep Learning</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>The Korean Society of Medical Informatics</publisher>
+				<availability status="unknown"><p>Copyright The Korean Society of Medical Informatics</p>
+				</availability>
+				<date type="published" when="2016">2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,56.69,168.97,95.44,10.59"><roleName>PhD</roleName><forename type="first">Kwang</forename><forename type="middle">Gi</forename><surname>Kim</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Biomedical Engineering Branch</orgName>
+								<orgName type="department" key="dep2">Division of Precision Medicine and Cancer Informatics</orgName>
+								<orgName type="institution">National Cancer Center</orgName>
+								<address>
+									<settlement>Goyang</settlement>
+									<country key="KR">Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,107.28,525.77,59.23,10.11"><forename type="first">Ian</forename><surname>Goodfellow</surname></persName>
+							<affiliation key="aff1">
+								<address>
+									<settlement>Cambridge</settlement>
+									<region>MA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,173.18,525.77,56.90,10.11"><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+							<affiliation key="aff1">
+								<address>
+									<settlement>Cambridge</settlement>
+									<region>MA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,253.95,525.77,25.12,10.11;1,85.04,539.77,37.85,10.11"><forename type="first">Aaron</forename><surname>Courville</surname></persName>
+							<affiliation key="aff1">
+								<address>
+									<settlement>Cambridge</settlement>
+									<region>MA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,56.69,128.05,141.91,22.42">Book Review: Deep Learning</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Healthcare Informatics Research</title>
+						<title level="j" type="abbrev">Healthc Inform Res</title>
+						<idno type="ISSN">2093-3681</idno>
+						<idno type="eISSN">2093-369X</idno>
+						<imprint>
+							<publisher>The Korean Society of Medical Informatics</publisher>
+							<biblScope unit="volume">22</biblScope>
+							<biblScope unit="issue">4</biblScope>
+							<biblScope unit="page">351</biblScope>
+							<date type="published" when="2016" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">830419BE6788B42AE98C4FE7562F2F53</idno>
+					<idno type="DOI">10.4258/hir.2016.22.4.351</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-03-06T11:02+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Deep learning is a form of machine learning that enables computers to learn from experience and understand the world in terms of a hierarchy of concepts. Because the computer gathers knowledge from experience, there is no need for a human computer operator formally to specify all of the knowledge needed by the computer. The hierarchy of concepts allows the computer to learn complicated concepts by building them out of simpler ones; a graph of these hierarchies would be many layers deep. This book introduces a broad range of topics in relation to deep learning.</p><p>The text offers a mathematical and conceptual background covering relevant concepts in linear algebra, probability theory and information theory, numerical computation, and machine learning. It describes deep learning techniques which are used by practitioners in industry, including deep feedforward networks, regularization, optimization algorithms, convolutional networks, sequence modeling, and practical methodology; and it surveys such applications as natural language processing, speech recognition, computer vision, online recommendation systems, bioinformatics, and videogames. Finally, the book offers research perspectives covering such theoretical topics as linear factor models, autoencoders, representation learning, structured probabilistic models, Monte Carlo methods, the partition function, approximate inference, and deep generative models.</p><p>Deep learning can be used by undergraduate or graduate students who are planning careers in either industry or research, and by software engineers who want to begin using deep learning in their products or platforms. A website offers supplementary material for both readers and instructors.</p><p>This book can be useful for a variety of readers, but the author wrote it with two main target audiences in mind. One of these target audiences is university students (undergraduate or graduate) who study machine learning, includ-</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.283" lry="810.709"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.283" lry="810.709"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.283" lry="810.709"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.283" lry="810.709"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>https://doi.org/10.4258/hir.2016.22. <ref type="bibr" coords="2,537.02,763.12,18.58,9.25">4.351</ref> ing those who are beginning their careers in deep learning and artificial intelligence research. The other target audience consists of software engineers who may not have a background in machine learning or statistics but who nonetheless want to acquire this knowledge rapidly and begin using deep learning in their fields. Deep learning has already proven useful in many software disciplines, including computer vision, speech and audio processing, natural language processing, robotics, bioinformatics and chemistry, video games, search engines, online advertising and finance.</p><p>This book has been organized into three parts so as to best accommodate a variety of readers. In Part I, the author intro duces basic mathematical tools and machine learning concepts. Part II describes the most established deep learning algorithms that are essentially solved technologies. Part III describes more speculative ideas that are widely believed to be important for future research in deep learning.</p><p>In this book, certain areas assume that all readers have a computer science background. The authors assume familiarity with programming and a basic understanding of computational performance issues, complexity theory, introductory-level calculus and some of the terminology of graph theory.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 1. Introduction</head><p>This book offers a solution to more intuitive problems in these areas. These solutions allow computers to learn from experience and understand the world in terms of a hierarchy of concepts, with each concept defined in terms of its relationship to simpler concepts. By gathering knowledge from experience, this approach avoids the need for human operators to specify formally all of the knowledge needed by the computer. The hierarchy of concepts allows the computer to learn complicated concepts by building them out of simpler ones. If the authors draw a graph to show how these concepts have been built on top of each other, the graph will be deep, with many layers. For this reason, the authors call this approach "AI Deep Learning. " Chapter 2. Linear Algebra Linear algebra is a branch of mathematics that is widely used throughout science and engineering. However, because linear algebra is a form of continuous rather than discrete mathematics, many computer scientists have little experience with it. This chapter will completely omit many important linear algebra topics that are not essential for understanding deep learning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 3. Probability and Information Theory</head><p>This chapter describes probability and information theory. Probability theory is a mathematical framework for representing uncertain statements. It provides a means of quantifying uncertainties and axioms to derive new uncertainty statements. In addition, probability theory is a fundamental tool of many disciplines of science and engineering. The authors mention this chapter to ensure that readers whose fields are primarily in software engineering with limited exposure to probability theory can understand the material in this book.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 4. Numerical Computation</head><p>This chapter includes a brief overview of numerical optimization in general. Machine learning algorithms usually require a large amount of numerical computation. This typically refers to algorithms that solve mathematical problems by methods that update estimates of the solution via an iterative process rather than analytically deriving a formula and thus providing a symbolic expression for the correct solution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 5. Machine Learning Basics</head><p>This chapter introduces the basic concepts of generalization, underfitting, overfitting, bias, variance and regularization. Deep learning is a specific type of machine learning. In order to understand deep learning well, one must have a solid understanding of the basic principles of machine learning. This chapter provides a brief course in the most important general principles, which will be applied throughout the rest of the book. Novice readers or those who want to gain a broad perspective are recommended to consider machine learning textbooks with more comprehensive coverage of the fundamentals, such as those by Murphy <ref type="bibr" coords="2,473.96,514.91,11.70,10.11" target="#b0">[1]</ref> or Bishop <ref type="bibr" coords="2,528.77,514.91,10.49,10.11" target="#b1">[2]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 6. Deep Feedforward Networks</head><p>Deep feedforward networks, also often called neural networks or multilayer perceptrons (MLPs), are the quintessential deep-learning models. Feedforward networks are of extreme importance to machine learning practitioners. They form the basis of many important commercial applications. For example, the convolutional networks used for object recognition from photos are a specialized type of feedforward network. Feedforward networks are a conceptual stepping stone on the path to recurrent networks, which power many natural-language applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 7. Regularization for Deep Learning</head><p>In this chapter, the authors describe regularization in more detail, focusing on regularization strategies for deep models or models that may be used as building blocks to form deep models. Some sections of this chapter deal with standard concepts in machine learning. If readers are already familiar with these concepts, they may want to skip the relevant sections. However, most of this chapter is concerned with extensions of these basic concepts to the particular case of neural networks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 8. Optimization for Training Deep Models</head><p>This chapter focuses on one particular case of optimization: finding the parameters θ of a neural network that significantly reduce a cost function J(θ), which typically includes a performance measure evaluated on the entire training set as well as additional regularization terms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 9. Convolutional Networks</head><p>Convolutional networks <ref type="bibr" coords="3,156.63,304.92,10.49,10.11" target="#b2">[3]</ref>, also known as neural networks or CNNs, are a specialized type of neural network for processing data that has a known, grid-like topology. In this chapter, the authors initially describe what convolution is. Next, they explain the motivation behind the use of convolution in a neural network, after which they describe an operation, called pooling, employed by nearly all convolutional networks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 10. Sequence Modeling: Recurrent and Recursive Nets</head><p>Recurrent neural networks or RNNs are a family of neural networks for the processing of sequential data <ref type="bibr" coords="3,241.65,472.92,10.49,10.11" target="#b3">[4]</ref>.</p><p>This chapter extends the idea of a computational graph to include cycles. These cycles represent the influence of the present value of a variable on its own value at a future time step. Such computational graphs allow one to define recurrent neural networks. Also in this chapter, the authors describe several different ways to construct, train, and use recurrent neural networks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 11. Practical Methodology</head><p>Successfully applying deep learning techniques requires more than merely knowing what algorithms exist and understanding the principles by which they work.</p><p>Correct application of an algorithm depends on mastering some fairly simple methodology. Many of the recommendations in this chapter are adapted from Ng <ref type="bibr" coords="3,222.71,682.92,10.49,10.11" target="#b4">[5]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 12. Applications</head><p>In this chapter, the authors describe how to use deep learn-ing to solve applications in computer vision, speech recognition, natural language processing, and other application areas of commercial interest. The authors begin by discussing the large-scale neural network implementations that are required for most serious AI applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 13. Linear Factor Models</head><p>In this chapter, the authors describe some of the simplest probabilistic models with latent variables, i.e., linear factor models. These models are occasionally used as building blocks of mixture models <ref type="bibr" coords="3,420.21,206.92,8.07,10.11" target="#b6">[6]</ref><ref type="bibr" coords="3,428.28,206.92,4.04,10.11" target="#b7">[7]</ref><ref type="bibr" coords="3,432.32,206.92,8.07,10.11" target="#b8">[8]</ref> or larger, deep probabilistic models. Additionally, they show many of the basic approaches that are necessary to build generative models, which are more advanced deep models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 14. Autoencoders</head><p>An autoencoder is a neural network that is trained to attempt to copy its input to its output. Internally, it has a hidden layer 'h' that describes the code used to represent the input.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 15. Representation Learning</head><p>This chapter initially discusses what it means to learn representations and how the notion of representation can be useful to design deep architectures. Secondly, it discusses how learning algorithms share statistical strength across different tasks, including the use of information from unsupervised tasks to perform supervised tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 16. Structured Probabilistic Models for Deep Learning</head><p>Deep learning draws upon many modeling formalisms that researchers can use to guide their design efforts and describe their algorithms. One of these formalisms is the idea of structured probabilistic models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 17. Monte Carlo Methods</head><p>Randomized algorithms fall into two rough categories: Las Vegas algorithms and Monte Carlo algorithms. Las Vegas algorithms always return precisely the correct answer (or report their failure). These algorithms consume a random amount of resources, usually in the form of memory or time. In contrast, Monte Carlo algorithms return answers with a random amount of error.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 18. Confronting the Partition Function</head><p>In this chapter, the authors describe techniques used for training and evaluating models that have intractable partihttps://doi.org/10.4258/hir.2016.22.4.351 tion functions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 19. Approximate Inference</head><p>This chapter introduces several of the techniques used to confront these intractable inference problems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chapter 20. Deep Generative Models</head><p>This describes how to use these techniques to train probabilistic models that would otherwise be intractable, such as deep belief networks and deep Boltzmann machines.</p><p>This book provides the reader with a good overview of deep learning, and in the future this knowledge can serve as good material when researching content related to the study of artificial intelligence.</p><p>In particular, in medical imaging data, there are a number of images which require some preparation processes. These images can create a higher detection rate with artificial intelligence of tumors and diseases to help medical staff. At present, much effort is required to create the proper data values. In the future, it will be possible to generate useful images automatically, with more input image data then utilized. This book describes a wide range of different methods that make use of deep learning for object or landmark detection tasks in 2D and 3D medical imaging; it also examines a varied selection of techniques for semantic segmentation or detection using deep learning principles in medical imaging.</p></div>		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,322.02,94.92,233.47,10.11;4,331.23,108.92,160.68,10.11" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" coord="4,383.42,94.92,172.07,10.11;4,331.23,108.92,13.38,10.11">Machine learning: a probabilistic perspective</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">P</forename><surname>Murphy</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<publisher>MIT Press</publisher>
+			<pubPlace>Cambridge (MA)</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,122.92,233.40,10.11;4,331.23,136.92,168.90,10.11" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="4,382.83,122.92,168.64,10.11">Pattern recognition and machine learning</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Bishop</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-0-387-45528-0_10</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Pattern Recognition and Machine Learning</title>
+		<meeting><address><addrLine>New York (NY)</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer New York</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="98" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,150.92,233.53,10.11;4,331.23,164.92,224.17,10.11;4,331.23,178.92,224.31,10.11;4,331.23,192.92,131.17,10.11" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="4,376.98,164.92,178.42,10.11;4,331.23,178.92,196.36,10.11">Handwritten digit recognition: applications of neural network chips and automatic learning</title>
+		<author>
+			<persName coords=""><forename type="first">Le</forename><surname>Cun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Jackel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">D</forename><surname>Boser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Denker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">S</forename><surname>Graf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">P</forename><surname>Guyon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,534.81,178.92,20.73,10.11;4,331.23,192.92,58.78,10.11">IEEE Commun Mag</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="41" to="46" />
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,206.92,233.37,10.11;4,331.23,220.92,224.32,10.11;4,331.23,234.92,89.32,10.11" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="4,516.10,206.92,39.29,10.11;4,331.23,220.92,187.27,10.11">Learning representations by back-propagating errors</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">E</forename><surname>Rumelhart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronald</forename><forename type="middle">J</forename><surname>Williams</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/323533a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,526.29,220.92,29.26,10.11">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">323</biblScope>
+			<biblScope unit="issue">6088</biblScope>
+			<biblScope unit="page" from="533" to="536" />
+			<date type="published" when="1986-10">1986</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,248.92,233.58,10.11" xml:id="b4">
+	<monogr>
+		<title level="m" type="main" coord="4,358.18,248.92,153.00,10.11">Advice for applying machine learning</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ng</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>Internet</note>
+</biblStruct>
+
+<biblStruct coords="4,331.23,262.92,224.34,10.11;4,331.23,276.92,224.39,10.11;4,331.23,290.92,81.60,10.11" xml:id="b5">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><surname>Stanford</surname></persName>
+		</author>
+		<ptr target="http://cs229.stanford.edu/mate-rials/ML-advice.pdf" />
+		<imprint>
+			<date type="published" when="2015">2015. 2016 Oct 22</date>
+		</imprint>
+		<respStmt>
+			<orgName>CA): Stanford University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,304.92,233.45,10.11;4,331.23,318.92,224.37,10.11;4,331.23,332.92,119.35,10.11" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="4,507.06,304.92,48.41,10.11;4,331.23,318.92,201.96,10.11">The &quot;Wake-Sleep&quot; Algorithm for Unsupervised Neural Networks</title>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Dayan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><forename type="middle">J</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Radford</forename><forename type="middle">M</forename><surname>Neal</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.7761831</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,540.25,318.92,15.35,10.11;4,331.23,332.92,18.16,10.11">Science</title>
+		<title level="j" type="abbrev">Science</title>
+		<idno type="ISSN">0036-8075</idno>
+		<idno type="ISSNe">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">268</biblScope>
+			<biblScope unit="issue">5214</biblScope>
+			<biblScope unit="page" from="1158" to="1161" />
+			<date type="published" when="1995-05-26">1995</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,346.92,233.54,10.11;4,331.23,360.92,224.33,10.11;4,331.23,374.92,58.13,10.11" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coord="4,445.10,346.92,110.46,10.11;4,331.23,360.92,94.00,10.11">The EM algorithm for mixtures of factor analyzers</title>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1996">1996</date>
+			<pubPlace>Toronto, Canada</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Toronto</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,322.02,388.92,233.63,10.11;4,331.23,402.92,224.30,10.11;4,331.23,416.92,58.40,10.11" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="4,470.78,388.92,84.87,10.11;4,331.23,402.92,93.12,10.11">Global coordination of local linear models</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Roweis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">K</forename><surname>Saul</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,432.84,402.92,122.69,10.11">Adv Neural Inf Process Syst</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="889" to="896" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

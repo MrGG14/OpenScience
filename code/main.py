@@ -21,18 +21,10 @@ def get_abstract(root):
 def wordcloud(root):
     abstract = get_abstract(root)
     wordcloud = WordCloud(width=800, height=400, background_color='white').generate(abstract)
-
-    plt.figure(figsize=(10, 5))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis('off')
-    plt.title(' Abstract´s WordCloud')
-    plt.show()
-    # plt.savefig("./output/imagenes/histograma.png")
-
+    return wordcloud
         
 
-# FUNCS TO OBTAIN FIGURE HISTOGRAM
-    
+# FUNCS TO OBTAIN FIGURE HISTOGRAM    
 def count_figs(root):
     figs = root.findall(".//{http://www.tei-c.org/ns/1.0}figure")
     count = len(figs)
@@ -51,14 +43,12 @@ def figs_hist(file_nfigs):
     plt.title('Número de Figuras por Archivo XML')
     plt.xticks(rotation=60) 
     plt.xticks(fontsize=6)
-    plt.tight_layout()  # Ajustar el diseño para evitar superposiciones
+    plt.tight_layout()  
     if counts != []:
-        plt.show()
-    # plt.savefig("./output/imagenes/histograma.png")
+        plt.savefig("./output/imgs/FigHist/" + 'hist' + ".png")
 
 
-# FUNCS TO GET LINKS FROM EACH PAPER
-    
+# FUNCS TO GET LINKS FROM EACH PAPER    
 def get_paper_links(root):
     links = []
     if root.text:
@@ -69,16 +59,19 @@ def get_paper_links(root):
             links.extend(re.findall(r'https://\S+', child.tail))
     return links
 
+# FUNC TO REMOVE DATA FROM PREVIOUS EXECUTIONS
+def remove_files(ruta):
+    for root, dirs, files in os.walk(ruta):
+        for archivo in files:
+            ruta_completa = os.path.join(root, archivo)
+            os.remove(ruta_completa)
+
+
 if __name__ == "__main__":
 
     xml_dir = './output'
 
-    for file in os.listdir(xml_dir): 
-        path = os.path.join(xml_dir, file)
-        if os.path.isfile(path):
-            os.remove(path)
-        else:
-            shutil.rmtree(path)
+    remove_files(xml_dir)
 
     client = GrobidClient(config_path="code/config.json")
     client.process("processFulltextDocument", "./papers", output="./output/", consolidate_citations=True, tei_coordinates=True, n=20)
@@ -93,15 +86,17 @@ if __name__ == "__main__":
             tree = ET.parse(file_path)
             root = tree.getroot()
             
+            file_name = file_path.replace("output\\", "")[2:-15]
 
             # 1. Plot WordCloud
-            wordcloud(root)
+            wcloudimg = wordcloud(root)
+            wcloudimg.to_file("./output/imgs/WordCloud/" + file_name + ".png")
 
             # 2. Count figures for each paper
             file_nfigs.append(count_figs(root))
 
             # 3. Get links from each paper
-            file_links[file_path.replace("output\\", "")[2:-15]] = get_paper_links(root)
+            file_links[file_name] = get_paper_links(root)
 
 
     figs_hist(file_nfigs)
