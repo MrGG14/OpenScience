@@ -2,8 +2,6 @@ from grobid_client.grobid_client import GrobidClient
 import xml.etree.ElementTree as ET        
 import matplotlib.pyplot as plt
 import os
-import xml.etree.ElementTree as ET
-from grobid_client.grobid_client import GrobidClient
 from wordcloud import WordCloud
 import re 
 
