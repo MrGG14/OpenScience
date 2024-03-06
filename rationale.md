@@ -1,4 +1,4 @@
-# TO DO LIST:
+# CHECKLIST:
 
 - [x] Add [license](https://github.com/MrGG14/OpenScience/blob/main/LICENSE): Apache 2.0
 
