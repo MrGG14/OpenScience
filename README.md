@@ -32,6 +32,13 @@ docker pull lfoppiano/grobid:0.8.0
 
 Then you should clone this repository locally.
 
+Finally, you may need to install the necessary packages to run the code. In order to do this go to the github cloned repo through the CMD and go to the '/docs' folder (cd docs). Now just run:
+
+```
+pip install -r requirements.txt
+
+```
+
  
  ## Execution instructions
 Initilize Gobrid (Docker must be running): 
