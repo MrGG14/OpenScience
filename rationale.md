@@ -20,4 +20,4 @@
 
 - [x] Create Dockerfile: A Dockerfile which copies necessary folders and runs installation commands has been created
 
-- [x] Dockerize project: The project and its dependencies have been dockerized. 
+- [x] Dockerize project: The project and its dependencies have been dockerized (docker-compose.yml) 
