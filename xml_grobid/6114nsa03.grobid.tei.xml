@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,110.52,104.73,396.99,12.75;1,280.44,125.85,57.17,12.75">Cloud Computing and Security Issues in the Cloud</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+				<availability status="unknown"><p>Copyright Academy and Industry Research Collaboration Center (AIRCC)</p>
+				</availability>
+				<date type="published" when="2014-01-31">2014-01-31</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,186.48,167.18,75.56,11.04"><forename type="first">Monjur</forename><surname>Ahmed</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Senior Lecturer</orgName>
+								<orgName type="institution">Daffodil Institute of IT</orgName>
+								<address>
+									<settlement>Dhaka</settlement>
+									<country key="BD">Bangladesh</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mohammad</forename><surname>Ashraf Hossain</surname></persName>
+						</author>
+						<title level="a" type="main" coord="1,110.52,104.73,396.99,12.75;1,280.44,125.85,57.17,12.75">Cloud Computing and Security Issues in the Cloud</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Network Security &amp; Its Applications</title>
+						<title level="j" type="abbrev">IJNSA</title>
+						<idno type="ISSN">0975-2307</idno>
+						<idno type="eISSN">0974-9330</idno>
+						<imprint>
+							<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+							<biblScope unit="volume">6</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<biblScope unit="page" from="25" to="36"/>
+							<date type="published" when="2014-01-31" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">38B4A0BC41A3AA7645B3FA043D1851FD</idno>
+					<idno type="DOI">10.5121/ijnsa.2014.6103</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cloud computing</term>
+					<term>cloud service</term>
+					<term>cloud security</term>
+					<term>computer network</term>
+					<term>distributed computing</term>
+					<term>security</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cloud computing has formed the conceptual and infrastructural basis for tomorrow's computing. The global computing infrastructure is rapidly moving towards cloud based architecture. While it is important to take advantages of could based computing by means of deploying it in diversified sectors, the security aspects in a cloud based computing environment remains at the core of interest. Cloud based services and service providers are being evolved which has resulted in a new business trend based on cloud technology. With the introduction of numerous cloud based services and geographically dispersed cloud service providers, sensitive information of different entities are normally stored in remote servers and locations with the possibilities of being exposed to unwanted parties in situations where the cloud servers storing those information are compromised. If security is not robust and consistent, the flexibility and advantages that cloud computing has to offer will have little credibility. This paper presents a review on the cloud computing concepts as well as security issues inherent within the context of cloud computing and cloud infrastructure.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>Recent developments in the field of could computing have immensely changed the way of computing as well as the concept of computing resources. In a cloud based computing infrastructure, the resources are normally in someone else's premise or network and accessed remotely by the cloud users <ref type="bibr" coords="1,235.56,514.62,56.04,9.40" target="#b36">(Petre, 2012;</ref><ref type="bibr" coords="1,296.88,514.62,100.68,9.40" target="#b33">Ogigau-Neamtiu, 2012;</ref><ref type="bibr" coords="1,402.84,514.62,105.26,9.40" target="#b41">Singh &amp; jangwal, 2012)</ref>. Processing is done remotely implying the fact that the data and other elements from a person need to be transmitted to the cloud infrastructure or server for processing; and the output is returned upon completion of required processing. In some cases, it might be required or at least possible for a person to store data on remote cloud servers. These gives the following three sensitive states or scenarios that are of particular concern within the operational context of cloud computing:</p><p>• The transmission of personal sensitive data to the cloud server, • The transmission of data from the cloud server to clients' computers and • The storage of clients' personal data in cloud servers which are remote server not owned by the clients.</p><p>All the above three states of cloud computing are severely prone to security breach that makes the research and investigation within the security aspects of cloud computing practice an imperative one. There have been a number of different blends that are being used in cloud computing realm, but the core concept remain same -the infrastructure, or roughly speaking, the resources remain somewhere else with someone else's ownership and the users 'rent' it for the time they use the infrastructure <ref type="bibr" coords="2,165.60,93.90,113.64,9.40" target="#b4">(Bisong &amp; Rahman, 2011;</ref><ref type="bibr" coords="2,283.32,93.90,142.68,9.40" target="#b38">Rashmi, Sahoo &amp; Mehfuz, 2013;</ref><ref type="bibr" coords="2,430.08,93.90,82.51,9.40;2,105.84,105.90,22.36,9.40" target="#b37">Qaisar &amp; Khawaja, 2012)</ref>. In some cases, stored sensitive data at remote cloud servers are also to be counted.</p><p>Security has been at the core of safe computing practices. When it is possible for any unwanted party to 'sneak' on any private computers by means of different ways of 'hacking'; the provision of widening the scope to access someone's personal data by means of cloud computing eventually raises further security concerns. Cloud computing cannot eliminate this widened scope due to its nature and approach. As a result, security has always been an issue with cloud computing practices. Robustness of security and a secured computing infrastructure is not a one-off effort, it is rather ongoing -this makes it essential to analyse and realize the state-of-the-art of the cloud computing security as a mandatory practice. The study presented in this paper is organized with a view to discuss and indentify the approach to cloud computing as well as the security issues and concerns that must be taken into account in the deployment towards a cloud based computing infrastructure. Discussion on the technological concepts and approaches to cloud computing including the architectural illustration has been taken into consideration within the context of discussion in this paper. Security issues inherent in cloud computing approach have been discussed afterwards. The exploration in the technological and security concerns of cloud computing has led to the concluding realization on the overall aspects of cloud computing. The approaches to counter security issues inherent in cloud computing are numerous with diversified facets and applications which has been kept out of scope. A discussion on the authentication of cloud computing has been addressed as it forms the holistic basis to embed integrity in the context of cloud computing security.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">CLOUD COMPUTING INFRASTRUCTURE</head><p>The term cloud computing is rather a concept which is a generalized meaning evolved from distributed and grid computing. Cloud computing is described as the offspring of distributed and grid computing by some authors (Che, Duan, Zhang &amp; Fan, 2011).The straightforward meaning of cloud computing refers to the features and scenarios where total computing could be done by using someone else's network where ownership of hardware and soft resources are of external parties. In general practice, the dispersive nature of the resources that are considered to be the 'cloud' to the users are essentially in the form of distributed computing; though this is not apparent or by its definition of cloud computing, do not essentially have to be apparent to the users.</p><p>In recent years, the cloud has evolved in two broad perspectives -to rent the infrastructure in cloud, or to rent any specific service in the cloud. Where the former one deals with the hardware and software usage on the cloud, the later one is confined only with the 'soft' products or services from the cloud service and infrastructure providers. The computing world has been introduced with a number of terminologies like SaaS (Software as a Service), PaaS (Platform as a Service) and IaaS (Infrastructure as a Service) with the evolution of cloud computing. As discussed earlier, the term 'cloud computing' is rather a concept, so are the terminologies to define different blends of cloud computing. At its core essence, cloud computing is nothing but a specialized form of grid     Any disruption of any form for whatever is the reason, deem to the cloud users either as service unavailability or quality deterioration -its affect and ways to counter this disruption is a critical part for the cloud infrastructure. Security issues might play a stimulating role as a driving factor for any aforementioned disruption.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">AUTHENTICATION IN CLOUD</head><p>Security is the most prioritized aspect for any form of computing, making it an obvious expectation that security issues are crucial for cloud environment as well. As the cloud computing approach could be associated with having users' sensitive data stored both at clients' end as well as in cloud servers, identity management and authentication are very crucial in cloud computing  ). In the later case, the cloud service provider is required to have collaboration with the third party authentication specialist -the collaboration between the cloud service provider and the third party authentication specialist during the authentication process of cloud users is done essentially through cloud. This feature adds performance overheads and security issues to the cloud context as the message passing between third party authentication management authority and the cloud service provider as part of collaboration might essentially be done through cloud infrastructure. As discussed earlier, the total authentication process and how they are carried out -regardless of the involvement of third party authentication specialists -is transparent to the cloud users. The illustration on the authentication scenario presented above is a fairly simple one -if geographically dispersed servers are deployed by the cloud service providers then the total authentication process might be far more complex in terms of security, underlying algorithm as well as performance level. Whatever is the level of complexity, the introduction of third party authentication and identity management specialist into any cloud architecture should have only one goal; and the goal is to strengthen the robustness of security in the concerned area which the cloud service provider itself is not capable of to deploy or offer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">SECURITY ISSUES IN CLOUD</head><p>Cloud computing comes with numerous possibilities and challenges simultaneously. Of the challenges, security is considered to be a critical barrier for cloud computing in its path to success <ref type="bibr" coords="6,105.84,228.06,142.96,9.40" target="#b22">(Khorshed, Ali &amp; Wasimi, 2012)</ref>. The security challenges for cloud computing approach are somewhat dynamic and vast. Data location is a crucial factor in cloud computing security <ref type="bibr" coords="6,105.84,251.70,75.40,9.40" target="#b44">(Teneyuca, 2011)</ref>. Location transparency is one of the prominent flexibilities for cloud computing, which is a security threat at the same time -without knowing the specific location of data storage, the provision of data protection act for some region might be severely affected and violated. Cloud users' personal data security is thus a crucial concern in a cloud computing environment <ref type="bibr" coords="6,163.20,299.34,3.75,9.40">(</ref> As cloud computing normally means using public networks and subsequently putting the transmitting data exposed to the world, cyber attacks in any form are anticipated for cloud computing. The existing contemporary cloud based services have been found to suffer from vulnerability issues with the existence of possible security loopholes that could be exploited by an attacker. Security and privacy both are concerns in cloud computing due to the nature of such computing approach <ref type="bibr" coords="7,192.96,189.18,108.04,9.40" target="#b4">(Bisong &amp; Rahman, 2011)</ref>. The approach by which cloud computing is done has made it prone to both information security and network security issues (Rakhmi, Sahoo &amp; Mehfuz, 2013; Qaisar &amp; Khawaja, 2012). Third party relationship might emerge as a risk for cloud environment along with other security threats inherent in infrastructural and virtual machine aspects <ref type="bibr" coords="7,139.68,236.58,104.68,9.40" target="#b17">(Hashizume et al., 2013)</ref>. Factors like software bugs, social engineering, human errors make the security for cloud a dynamically challenging one <ref type="bibr" coords="7,352.56,248.58,49.62,9.40" target="#b24">(Kim, 2009)</ref>. Intrusion detection is the most important role in seamless network monitoring to reduce security risks. If the contemporary IDSs (Intrusion detection Systems) are inefficient, the resultant consequence might be undetected security breach for cloud environment <ref type="bibr" coords="7,266.28,284.22,95.56,9.40" target="#b45">(Westphall et al., 2011)</ref>.</p><p>The facets from which the security threat might be introduced into a cloud environment are numerous ranging from database, virtual servers, and network to operating systems, load balancing, memory management and concurrency control <ref type="bibr" coords="7,348.24,331.74,87.04,9.40" target="#b15">(Hamlen et al., 2010)</ref>. Data segregation and session hijacking are two potential and unavoidable security threats for cloud users. One of the challenges for cloud computing is in its level of abstraction as well as dynamism in scalability which results in poorly defined security or infrastructural boundary. Privacy and its underlying concept might significantly vary in different regions and thus it may lead to security breach for cloud services in specific contexts and scenarios <ref type="bibr" coords="7,318.72,391.26,91.84,9.40" target="#b9">(Chen &amp; Zhao, 2012)</ref>. Data loss and various botnets can come into action to breach security of cloud servers. Besides, multi-tenancy model is also an aspect that needs to be given attention <ref type="bibr" coords="7,298.80,415.02,82.03,9.40" target="#b27">(Kuyoro et al., 2011</ref>; Ogigau-Neamtiu, 2012) when it comes to security. Security in the data-centres of cloud providers are also within the interests of security issues, as a single physical server would hold many clients' data (Okuhara, Shiozaki &amp; Suzuki, 2010) making it a common shared platform in terms of physical server or operating system. The storage security at the cloud service providers data centres are also directly linked with the security of the cloud services <ref type="bibr" coords="7,271.56,474.42,61.36,9.40" target="#b31">(Mircea, 2012)</ref>. All the traditional security risks are thus applicable with added degree of potency in a cloud infrastructure which makes the ongoing success of cloud computing a quite challenging one. Confidentiality, availability and integrity are the generalized categories into which the security concerns of a cloud environment falls. Threats for a cloud infrastructure are applicable both to data and infrastructure <ref type="bibr" coords="7,418.56,522.06,94.03,9.40;7,105.84,533.82,22.36,9.40" target="#b1">(Agarwal &amp; Agarwal, 2011)</ref>.</p><p>Different modes of data transfer and communication means (e.g. satellite communication) might need to take into account. Huge amount of data transfer is a common anticipation in a cloud environment, the communication technology used along with the security concerns of the adapted communication technology also becomes a security concern for the cloud computing approach. The broadcast nature of some communication technology is a core concern in this regard (Celesti, Fazio, Villari &amp; Puliafito, 2012). Cloud environment is associated with both physical and virtual resources and they pose different level of security issues -having no sophisticated authentication mechanism to fully address the security threats is an existing problem for cloud computing. It has mainly resulted in the situations where grid computing has been taken as an embedded part of cloud computing (Casola, Cuomo, Rak &amp; Villano, 2013). As the virtualized resources are highly coupled with a cloud infrastructure, intrusion related security concerns are of utmost priority as part of security issues. Arbitrary intermittent intrusion needs to be monitored in the operational context of a cloud computing infrastructure where the severity of possibility for a virtual machine to be compromised is to be taken into account <ref type="bibr" coords="8,307.80,82.14,139.00,9.40" target="#b2">(Arshad, Townsend &amp; Xu, 2013)</ref>. Some authors have argued that using Internet technologies is not a must for cloud computing <ref type="bibr" coords="8,442.20,93.90,70.27,9.40;8,105.84,105.90,24.21,9.40" target="#b22">(Khorshed et al., 2012)</ref> -but the cost efficiency and globalization trends will enforce and motivate almost all the businesses to admit Internet and associated technologies to be the ultimate means towards cloud computing approach. As a result, total Internet related security concerns are anticipated to be automatically added on top of the cloud-specific security issues. Bringing portability is one of the means to make cloud services flexible. The portability of cloud services would also be associated with security concerns. Cloud portability enables the cloud users to switch among different cloud service providers without being affected with the necessity to change the ways to accomplish tasks in different ways. It is a clear provision on bargaining power for the cloud users; but at the same time, the security issues with cloud portability are to be counted. Cloud portability might bring severe degree of API based security threats <ref type="bibr" coords="8,311.40,212.82,172.24,9.40">(Petcu, Macariu, Panica &amp; Craciun, 2013)</ref>.</p><p>The wide transition to mobile computing practices in recent years has made it imperative to include mobile computing and its associated technologies as an essential part of cloud computing.</p><p>Resource scarcity as well as other constraints of mobile computing is barriers to cloud computing. The demand of huge data processing is a problem for mobile end-user devices which has been further complemented by the security concerns of mobile cloud computing. For mobile cloud computing, the device level limitations has inspired researchers to suggest the inclusion of another level of cloud termed as 'mobile cloud' to aid the processing of the specific computing and processing for mobile computing devices <ref type="bibr" coords="8,307.68,319.86,148.96,9.40" target="#b13">(Fernando, Loke &amp; Rahayu, 2013)</ref>. The earlier explained broadcast nature of satellite communication and related security issues are equally applicable to the mobile cloud computing due to its being wireless communication. Besides, the addition of mobile cloud into the perspective would add another cloud with all its security issues for a service provider having both mobile cloud and conventional cloud. The addition of mobile cloud in the scenario would boost performance, but it would also add another layer of security issue not only to the mobile cloud users, but also to the total infrastructure of the cloud service provider. The hierarchical arrangement of cloud computing facilitates different level of extensibility for the cloud users with varying degree of associated security issues <ref type="bibr" coords="8,463.44,415.02,49.03,9.40;8,105.84,426.90,22.36,9.40">(Che et al., 2011)</ref>. Security issues for cloud computing are described by some authors as an obvious one due to its nature. In a business model, the risks for the consumers are related to and dependent on the relevant approaches and policies of the cloud service providers the consumers are dealing with.</p><p>Using cloud products or services may lead to security concerns for the consumers if they are not well aware with the type and particulars of the products or services they are to procure or to use in a cloud environment; this is also related to the cloud providers' identity and reliability. One of the inherent problems in this context is that, the consumers might normally not be able to identify or foresee all the risks involved in the specific cloud transaction they are dealing with or involved in (Svantesson &amp; Clarke, 2010).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">CONCLUSIONS</head><p>Cloud computing has enormous prospects, but the security threats embedded in cloud computing approach are directly proportional to its offered advantages. Cloud computing is a great opportunity and lucrative option both to the businesses and the attackers -either parties can have their own advantages from cloud computing. The vast possibilities of cloud computing cannot be ignored solely for the security issues reason -the ongoing investigation and research for robust, consistent and integrated security models for cloud computing could be the only path of motivation. The security issues could severely affect could infrastructures. Security itself is conceptualized in cloud computing infrastructure as a distinct layer <ref type="bibr" coords="8,404.52,655.98,103.60,9.40" target="#b11">(Dukaric &amp; Juric, 2013)</ref>. Security for cloud computing environment is a non-compromising requirement. Cloud computing is inevitable to become the ideal (and possibly the ultimate) approach to business computing though the security barriers along with other issues need to be resolved for cloud computing to make it more viable (Marston, Li, Bandyopadhyay, Zhang &amp; Ghalsasi, 2011) . Yet, given its total advantages and dynamism and provided it is deployed within an integrated and secured infrastructural framework, cloud computing can offer virtual ownership and access to 'super computers' without procuring them physically. Perhaps this is what inspired coining the term SCC (Scientific Cloud Computing). Research effort has been contributed to develop faster yet secured SCC tools (Jorissen, Villa &amp; Rehr, 2012) which will greatly influence the pace of research and motivation in various fields together with clouding computing itself. The social implications of cloud computing approaches might emerge with severe impact if robust security models for cloud computing do not exist. The security issues for cloud computing are not related to the technical and direct security breach only; a number of social inconsistency might also be resulted even without any 'hard' security breach having taken place. The distributed and dispersive processing, transmission and storage features are behind reason. One such example is the obtaining of digital evidences. The evolution of cloud computing might significantly affect the collection and retention of digital evidence <ref type="bibr" coords="9,231.12,236.58,107.66,9.40" target="#b30">(Mason &amp; George, 2011)</ref>. The vastness and potentiality of cloud computing cannot be overlooked, subsequently robust security models for cloud computing scenarios is the most prioritized factor for a successful cloud based infrastructure development and deployment. With the goal of secured exploitation of a Service Oriented Architecture, the security aspects and issues of cloud computing are inherent not only with the elements that from the cloud infrastructure but also with all associated services as well as the ways computing is done both at the users' and the cloud service providers' ends. The security issues in cloud computing are somewhat sensitive and crucial on the basis of sociological and technological viewpoints -the technological inconsistency that results in security breach in cloud computing might lead to significant sociological impacts. As a result, when dealing with cloud computing and its security issues, technical as well as epistemological factors are equally important to take into consideration. Based on the fact that the impact of cloud computing can include both the technical and social settings, the research on cloud computing and its related concerns are not related only with computing aspects. Service oriented architecture and other characteristics of cloud computing suggests that the concept of cloud computing would require to analyze the practicality in line with social, business, technical and legal perspectives -all these facets will incorporate security issues either in technical or strategic form. Regardless of the nature of security issues, it can be undoubtedly concluded that the severe adverse effects as a consequence of security breaches in cloud computing, the deployment of any form of cloud computing should deal with the security concerns corresponding to those of the safety critical systems.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,105.84,82.14,406.58,9.40;3,105.84,93.90,406.63,9.40;3,105.84,105.90,406.75,9.40;3,105.84,117.78,406.84,9.40;3,105.84,129.66,406.63,9.40;3,105.84,141.54,406.65,9.40;3,105.84,153.42,406.58,9.40;3,105.84,165.30,406.46,9.40;3,105.84,177.18,406.75,9.40;3,105.84,189.18,406.53,9.40;3,105.84,200.94,406.70,9.40;3,105.84,212.82,406.63,9.40;3,105.84,224.82,406.58,9.40;3,105.84,236.58,406.58,9.40;3,105.84,248.58,406.70,9.40;3,105.84,260.46,406.63,9.40;3,105.84,272.22,406.70,9.40;3,105.84,284.22,46.75,9.40"><head></head><label></label><figDesc>and distributed computing which varies in terms of infrastructure, services, deployment and geographic dispersion<ref type="bibr" coords="3,203.28,93.90,104.76,9.40" target="#b17">(Hashizume et al. 2013;</ref><ref type="bibr" coords="3,312.60,93.90,99.00,9.40" target="#b45">Westphall et al., 2011;</ref><ref type="bibr" coords="3,416.16,93.90,96.31,9.40;3,105.84,105.90,128.78,9.40" target="#b15">Hamlen, Kantarcioglu, Khan, &amp; Thuraisingham, 2010)</ref>. In a pervasive meaning within the context of computer networks, infrastructure could be thought of as the hardware as well as their alignment where platform is the operating system which acts as the platform for the software<ref type="bibr" coords="3,359.40,129.66,102.72,9.40" target="#b41">(Singh &amp; jangwal, 2012;</ref><ref type="bibr" coords="3,464.88,129.66,43.12,9.40" target="#b28">Lee, 2012)</ref>. Thus the concept of cloud based services is hierarchically built from bottom to top in the order of IaaS, PaaS and SaaS. This is merely the level of abstraction that defines the extent to which an end-user could 'borrow' the resources ranging from infrastructure to software -the core concern of security and the fashion of computing are not affected by this level of abstraction. As a result, security is to be considered within any form of cloud computing(Bisong &amp; Rahman, 2011) regardless of flavour, hierarchy and level of abstraction. Virtualization is an inevitable technology that is highly coupled with the concept of cloud computing (Buyya et al., 2009; Ogigau-Neamtiu, 2012; Hashizume et al. 2013; Kim, 2009; Mosher, 2011; Atayero &amp; Feyisetan, 2011; Zissis &amp; Lekkas, 2012) -it is the virtualization technology that complements cloud services specially in the form of PaaS and SaaS where one physical infrastructure contains services or platforms to deliver a number of cloud users simultaneously. This leads to the addition of total security aspects of virtualization technology on top of the existing security concerns and issues of cloud computing.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,105.84,307.98,406.72,9.40;3,105.84,319.86,190.75,9.40;3,141.00,352.68,336.12,261.96"><head>Figure 1</head><label>1</label><figDesc>Figure 1 illustrates a typical cloud based scenario that includes the cloud service provider and the cloud users in a cloud computing architecture.</figDesc><graphic coords="3,141.00,352.68,336.12,261.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="3,251.40,627.88,148.99,8.48"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: A Typical Cloud Architecture</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,105.84,272.22,406.70,9.40;4,105.84,284.22,254.35,9.40;4,141.48,316.92,335.16,258.96"><head>Figure 2</head><label>2</label><figDesc>Figure 2 illustrates the hierarchical arrangement based on which a cloud is perceived in the form of IaaS, PaaS and SaaS from any cloud end-user's viewpoint.</figDesc><graphic coords="4,141.48,316.92,335.16,258.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,244.08,589.12,130.07,8.48;4,105.84,612.30,406.60,9.40;4,105.84,624.06,406.72,9.40;4,105.84,636.06,406.70,9.40;4,105.84,647.94,406.75,9.40;4,105.84,659.70,406.72,9.40;4,105.84,671.70,406.68,9.40;4,105.84,683.58,406.65,9.40;4,105.84,695.46,144.19,9.40"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Cloud Service Hierarchy As depicted in figure 2, the technical details, arrangements and management of the cloud service providers' network is transparent to the cloud user. From the end of the cloud user, the service from the provider comes in the form of SaaS, PaaS or IaaS where the cloud user has no intention or worry about what goes on in the internal arrangement of the cloud service providers' network.Any disruption of any form for whatever is the reason, deem to the cloud users either as service unavailability or quality deterioration -its affect and ways to counter this disruption is a critical part for the cloud infrastructure. Security issues might play a stimulating role as a driving factor for any aforementioned disruption.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="5,105.84,168.66,406.63,9.40;5,105.84,180.42,406.70,9.40;5,105.84,192.30,406.46,9.40;5,105.84,204.30,406.84,9.40;5,105.84,216.06,182.95,9.40"><head></head><label></label><figDesc><ref type="bibr" coords="5,105.84,168.66,87.72,9.40" target="#b23">(Kim &amp; Hong, 2012;</ref><ref type="bibr" coords="5,196.56,168.66,56.16,9.40" target="#b12">Emam, 2013;</ref><ref type="bibr" coords="5,255.72,168.66,101.23,9.40" target="#b16">Han, Susilo &amp; Mu, 2013</ref>; Yassin, Jin, Ibrahim, Qiang &amp; Zou, 2012). Verification of eligible users' credentials and protecting such credentials are part of main security issues in the cloud -violation in these areas could lead to undetected security breach<ref type="bibr" coords="5,105.84,204.30,57.53,9.40" target="#b26">(Kumar, 2012</ref>) at least to some extent for some period. A possible authentication scenario for a cloud infrastructure is illustrated in figure3.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,238.44,545.56,141.23,8.48;5,105.84,568.62,406.60,9.40;5,105.84,580.38,406.70,9.40;5,105.84,592.38,406.63,9.40;5,105.84,604.26,406.72,9.40;5,105.84,616.14,406.58,9.40;5,105.84,628.02,406.58,9.40;5,105.84,639.90,406.63,9.40;5,105.84,651.90,406.72,9.40;5,105.84,663.66,406.65,9.40;5,105.84,675.66,406.58,9.40;5,105.84,687.54,406.60,9.40;5,105.84,699.42,406.60,9.40;5,105.72,237.60,392.64,294.12"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Authentication in the CloudThe illustration presented in figure3conveys that the authentication for the cloud users can be done either by the cloud service provider or the service provider can outsource the identity management and authentication service to third party specialists (Gonzalez, Miers, Redigolo, Simplicio, Carvalho, Naslund &amp; Pourzandi, 2012; Sharma &amp; Mittal, 2013). In the later case, the cloud service provider is required to have collaboration with the third party authentication specialist -the collaboration between the cloud service provider and the third party authentication specialist during the authentication process of cloud users is done essentially through cloud. This feature adds performance overheads and security issues to the cloud context as the message passing between third party authentication management authority and the cloud service provider as part of collaboration might essentially be done through cloud infrastructure. As discussed earlier, the total authentication process and how they are carried out -regardless of the involvement of third party authentication specialists -is transparent to the cloud users. The</figDesc><graphic coords="5,105.72,237.60,392.64,294.12" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="2,105.84,200.94,406.82,104.56"><head></head><label></label><figDesc>Cloud is mainly categorized as private cloud, community cloud, public cloud and hybrid cloud (Ogigau-Neamtiu, 2012; Singh &amp; jangwal, 2012; Rashmi et al., 2013; Qaisar &amp; Khawaja, 2012; Kuyoro, Ibikunle &amp; Awodele, 2011; Suresh &amp; Prasad, 2012;<ref type="bibr" coords="2,175.92,236.58,63.33,9.40" target="#b47">Youssef, 2012)</ref> -the discussion in this paper assumes only one category of cloud exists which is public cloud; as this assumption will well satisfy all the characteristics of any other type of cloud. Due to its diversified potentiality, the approach to cloud computing is being thought to be as the 5th utility to join the league of existing utilities water, electricity, gas and telephony (Buyya, Yeo, Venugopal, Broberg &amp; Brandic, 2009) rather than being just another service.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,105.84,299.34,406.82,401.68"><head></head><label></label><figDesc><ref type="bibr" coords="6,166.95,299.34,129.33,9.40" target="#b20">Joint, Baker &amp; Eccles, 2009;</ref><ref type="bibr" coords="6,301.44,299.34,57.36,9.40" target="#b18">Ismail, 2011;</ref><ref type="bibr" coords="6,363.96,299.34,88.22,9.40" target="#b25">King &amp; Raja, 2012)</ref>. In terms of customers' personal or business data security, the strategic policies of the cloud providers are of highest significance<ref type="bibr" coords="6,194.52,323.10,96.57,9.40" target="#b19">(Joint &amp; Baker, 2011)</ref> as the technical security solely is not adequate to address the problem. Trust is another problem which raises security concerns to use cloud service cloud environment might have security loopholes which in turn would pose security risks to the cloud infrastructure itself. The problem with third party APIs as well as spammers are threats to the cloud environment<ref type="bibr" coords="7,242.16,105.90,109.20,9.40" target="#b4">(Bisong &amp; Rahman, 2011;</ref><ref type="bibr" coords="7,354.12,105.90,98.56,9.40" target="#b41">Singh &amp; Jangwal, 2012)</ref>.</figDesc><table coords="6,105.84,525.30,406.70,140.08"><row><cell>of safe</cell></row><row><cell>computing -they can be well considered as part of security concerns for cloud computing (Lee,</cell></row><row><cell>2012; Ogigau-Neamtiu, 2012; Singh &amp; Jangwal, 2012). However, it is important to distinguish</cell></row><row><cell>between risk and security concerns in this regard. For example, vendor lock-in might be</cell></row><row><cell>considered as one of the possible risks in cloud based services which do not essentially have to be</cell></row><row><cell>related to security aspects. On the contrary, using specific type of operating system (e.g. open-</cell></row><row><cell>source vs. proprietary) might pose security threat and concerns which, of course, is a security risk.</cell></row><row><cell>Other examples of business risks of cloud computing could be licensing issues, service</cell></row><row><cell>unavailability, provider's business discontinuity that do not fall within the security concerns from</cell></row><row><cell>a technical viewpoint. Thus, in cloud computing context, a security concern is always some type</cell></row><row><cell>of risk but any risk cannot be blindly judged to be a security concern. Allocation of</cell></row><row><cell>responsibilities among the parties involved in a cloud computing infrastructure might result in</cell></row></table><note coords="6,105.84,346.98,406.65,9.40;6,105.84,358.74,406.56,9.40;6,105.84,370.62,406.51,9.40;6,105.84,382.62,406.56,9.40;6,105.84,394.38,406.58,9.40;6,105.84,406.38,406.63,9.40;6,105.84,418.26,406.70,9.40;6,105.84,430.02,406.60,9.40;6,105.84,442.02,406.58,9.40;6,105.84,453.90,406.53,9.40;6,105.84,465.78,406.70,9.40;6,105.84,477.66,406.60,9.40;6,105.84,489.66,406.70,9.40;6,105.84,501.42,406.60,9.40;6,105.84,513.30,406.63,9.40;6,105.84,525.30,374.44,9.40;6,105.84,667.98,406.82,9.40;6,105.84,679.86,406.70,9.40;6,105.84,691.62,406.72,9.40;7,105.84,82.14,39.52,9.40"><p><p><p><p><p><p><p><p>(Ryan &amp; Falvy, 2012)  </p>for the reason that it is directly related to the credibility and authenticity of the cloud service providers. Trust establishment might become the key to establish a successful cloud computing environment. The provision of trust model is essential in cloud computing as this is a common interest area for all stakeholders for any given cloud computing scenario. Trust in cloud might be dependent on a number of factors among which some are automation management, human factors, processes and policies</p><ref type="bibr" coords="6,328.20,406.38,105.90,9.40" target="#b0">(Abbadi &amp; Martin, 2011)</ref></p>. Trust in cloud is not a technical security issue, but it is the most influential soft factor that is driven by security issues inherent in cloud computing to a great extent. All kinds of attacks that are applicable to a computer network and the data in transit equally applies to cloud based services -some threats in this category are man-in-the-middle attack, phishing, eavesdropping, sniffing and other similar attacks. DDoS (Distributed Denial of Service) attack is one common yet major attack for cloud computing infrastructure</p><ref type="bibr" coords="6,214.44,477.66,113.17,9.40" target="#b10">(Dou, Chen &amp; Chen, 2013</ref></p>). The well known DDoS attack can be a potential problem for cloud computing, though not with any exception of having no option to mitigate this. The security of virtual machine will define the integrity and level of security of a cloud environment to greater extent (Rakhmi, Sahoo &amp; Mehfuz, 2013;</p><ref type="bibr" coords="6,421.32,513.30,91.15,9.40;6,105.84,525.30,22.36,9.40" target="#b1">Agarwal &amp; Agarwal, 2011)</ref></p>. Accounting &amp; authentication as well as using encryption falls within the practice experiencing inconsistency which might eventually lead to a situation with security vulnerabilities. Like any other network scenario, the provision of insider-attack remains as a valid threat for cloud computing (Ogigau-Neamtiu, 2012). Any security tools or other kinds of software used in a</p></note></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Authors</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,126.96,516.28,385.50,8.48;9,126.96,527.08,150.11,8.48" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="9,270.24,516.28,69.17,8.48">Trust in the Cloud</title>
+		<author>
+			<persName><forename type="first">Imad</forename><forename type="middle">M</forename><surname>Abbadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Martin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.istr.2011.08.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,346.80,516.28,146.69,8.48">Information Security Technical Report</title>
+		<title level="j" type="abbrev">Information Security Technical Report</title>
+		<idno type="ISSN">1363-4127</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="108" to="114" />
+			<date type="published" when="2011-08">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,126.96,537.88,385.38,8.48;9,126.96,548.80,385.38,8.48;9,126.96,559.48,33.66,8.48" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="9,287.88,537.88,220.00,8.48">The Security Risks Associated with Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,126.96,548.80,276.84,8.48;9,423.01,548.80,79.85,8.48">International Journal of Computer Applications in Engineering Sciences</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="257" to="259" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note>Special Issue on CNS</note>
+</biblStruct>
+
+<biblStruct coords="9,126.96,570.28,385.50,8.48;9,126.96,581.08,323.27,8.48" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="9,297.08,570.28,211.23,8.48">A novel intrusion severity analysis approach for Clouds</title>
+		<author>
+			<persName><forename type="first">Junaid</forename><surname>Arshad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Townend</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2011.08.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,126.96,581.08,140.45,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="416" to="428" />
+			<date type="published" when="2013-01">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,126.96,592.00,385.43,8.48;9,126.96,602.80,385.38,8.48;9,126.96,613.60,58.62,8.48" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="9,292.68,592.00,219.71,8.48;9,126.96,602.80,99.37,8.48">Security Issues in Cloud Computing: The Potentials of Homomorphic Encryption</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">A</forename><surname>Atayero</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Feyisetan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,234.84,602.80,273.58,8.48">Journal of Emerging Trends in Computing and Information Sciences</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="546" to="552" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,126.96,624.40,385.55,8.48;9,126.96,635.20,385.38,8.48;9,126.96,646.00,107.75,8.48" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="9,284.16,624.40,228.35,8.48;9,126.96,635.20,40.12,8.48">An Overview Of The Security Concerns In Enterprise Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Bisong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Shawon</forename><surname>M. Rahman</surname></persName>
+		</author>
+		<idno type="DOI">10.5121/ijnsa.2011.3103</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,180.00,635.20,269.53,8.48">International Journal of Network Security &amp; Its Applications</title>
+		<title level="j" type="abbrev">IJNSA</title>
+		<idno type="ISSN">0975-2307</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="30" to="45" />
+			<date type="published" when="2011-01-28">2011</date>
+			<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,126.96,656.80,385.55,8.48;9,126.96,667.60,385.51,8.48;9,126.96,678.40,169.26,8.48" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Cloud computing and emerging IT platforms: Vision, hype, and reality for delivering computing as the 5th utility</title>
+		<author>
+			<persName><forename type="first">Rajkumar</forename><surname>Buyya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chee</forename><forename type="middle">Shin</forename><surname>Yeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srikumar</forename><surname>Venugopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Broberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivona</forename><surname>Brandic</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2008.12.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,488.04,667.60,24.43,8.48;9,126.96,678.40,113.57,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="599" to="616" />
+			<date type="published" when="2009-06">2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,81.76,385.48,8.48;10,126.96,92.56,385.50,8.48;10,126.96,103.48,124.55,8.48" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="10,346.92,81.76,165.52,8.48;10,126.96,92.56,123.25,8.48">The CloudGrid approach: Security analysis and performance evaluation</title>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Casola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Cuomo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massimiliano</forename><surname>Rak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Umberto</forename><surname>Villano</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2011.08.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,266.40,92.56,170.21,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="387" to="401" />
+			<date type="published" when="2013-01">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,114.16,385.43,8.48;10,126.96,124.96,385.50,8.48;10,126.96,135.76,152.75,8.48" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="10,366.24,114.16,146.15,8.48;10,126.96,124.96,219.02,8.48">Virtual machine provisioning through satellite communications in federated Cloud environments</title>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Celesti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Fazio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Massimo</forename><surname>Villari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Puliafito</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2011.05.021</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,352.80,124.96,141.06,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="85" to="93" />
+			<date type="published" when="2012-01">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,146.68,385.55,8.48;10,126.96,157.48,320.03,8.48" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="10,303.24,146.68,209.28,8.48;10,126.96,157.48,38.17,8.48">Study on the Security Models and Strategies of Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yamin</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Fan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.proeng.2011.11.2551</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,171.72,157.48,79.45,8.48">Procedia Engineering</title>
+		<title level="j" type="abbrev">Procedia Engineering</title>
+		<idno type="ISSN">1877-7058</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="586" to="593" />
+			<date type="published" when="2011" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,168.28,385.50,8.48;10,126.96,178.96,385.52,8.48;10,126.96,189.88,103.07,8.48" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Data Security and Privacy Protection Issues in Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Deyan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccsee.2012.193</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,254.04,168.28,258.42,8.48;10,126.96,178.96,318.59,8.48">2012 International Conference on Computer Science and Electronics Engineering</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012-03">2012</date>
+			<biblScope unit="page" from="647" to="651" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,200.68,385.39,8.48;10,126.96,211.48,385.50,8.48;10,126.96,222.28,124.55,8.48" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="10,278.88,200.68,233.47,8.48;10,126.96,211.48,102.22,8.48">A confidence-based filtering method for DDoS attack defense in cloud environment</title>
+		<author>
+			<persName><forename type="first">Wanchun</forename><surname>Dou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinjun</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.12.011</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,247.68,211.48,175.85,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1838" to="1850" />
+			<date type="published" when="2013-09">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,233.08,385.43,8.48;10,126.96,243.88,382.19,8.48" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="10,283.92,233.08,228.47,8.48;10,126.96,243.88,42.81,8.48">Towards a unified taxonomy and architecture of cloud frameworks</title>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Dukaric</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matjaz</forename><forename type="middle">B</forename><surname>Juric</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.09.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,176.64,243.88,140.33,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1196" to="1210" />
+			<date type="published" when="2013-07">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,254.68,385.43,8.48;10,126.96,265.48,346.14,8.48" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="10,220.32,254.68,292.07,8.48;10,126.96,265.48,65.33,8.48">Additional Authentication and Authorization using Registered Email-ID for Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">H M</forename><surname>Emam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,199.32,265.48,213.24,8.48">International Journal of Soft Computing and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="110" to="113" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,276.40,385.39,8.48;10,126.96,287.20,291.71,8.48" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="10,338.88,276.40,140.16,8.48">Mobile cloud computing: A survey</title>
+		<author>
+			<persName><forename type="first">Niroshinie</forename><surname>Fernando</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seng</forename><forename type="middle">W</forename><surname>Loke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenny</forename><surname>Rahayu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.05.023</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,487.92,276.40,24.43,8.48;10,126.96,287.20,113.57,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="84" to="106" />
+			<date type="published" when="2013-01">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,297.88,385.50,8.48;10,126.96,308.68,385.38,8.48;10,126.96,319.60,157.14,8.48" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coord="10,159.00,308.68,349.09,8.48">A Quantitative Analysis of Current Security Concerns and Solutions for Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Nelson</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Miers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Redigolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tereza</forename><surname>Carvalho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcos</forename><surname>Simplicio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mats</forename><surname>Naslund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Makan</forename><surname>Pourzandi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cloudcom.2011.39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2011 IEEE Third International Conference on Cloud Computing Technology and Science</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,330.40,385.43,8.48;10,126.96,341.20,385.40,8.48;10,126.96,352.00,96.11,8.48" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="10,412.80,330.40,99.59,8.48;10,126.96,341.20,40.12,8.48">Security Issues for Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Hamlen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murat</forename><surname>Kantarcioglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Latifur</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bhavani</forename><surname>Thuraisingham</surname></persName>
+		</author>
+		<idno type="DOI">10.4018/jisp.2010040103</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,179.52,341.20,248.18,8.48">International Journal of Information Security and Privacy</title>
+		<idno type="ISSN">1930-1650</idno>
+		<idno type="ISSNe">1930-1669</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="36" to="48" />
+			<date type="published" when="2010-04-01">2010</date>
+			<publisher>IGI Global</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,362.80,385.39,8.48;10,126.96,373.60,296.27,8.48" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="10,292.80,362.80,186.00,8.48">Identity-based data storage in cloud computing</title>
+		<author>
+			<persName><forename type="first">Jinguang</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Willy</forename><surname>Susilo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Mu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.07.010</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,487.80,362.80,24.55,8.48;10,126.96,373.60,113.57,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="673" to="681" />
+			<date type="published" when="2013-03">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,384.40,385.40,8.48;10,126.96,395.20,142.74,8.48" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="10,229.44,384.40,201.35,8.48">An analysis of security issues for cloud computing</title>
+		<author>
+			<persName coords=""><forename type="first">Keiko</forename><surname>Hashizume</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">G</forename><surname>Rosado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><surname>Fernández-Medina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><forename type="middle">B</forename><surname>Fernandez</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/1869-0238-4-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,439.20,384.40,73.16,8.48;10,126.96,395.20,96.51,8.48">Journal of Internet Services and Applications</title>
+		<title level="j" type="abbrev">J Internet Serv Appl</title>
+		<idno type="ISSN">1869-0238</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5</biblScope>
+			<date type="published" when="2013">2013</date>
+			<publisher>Sociedade Brasileira de Computacao - SB</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,406.12,385.50,8.48;10,126.96,416.80,172.07,8.48" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="10,196.49,406.12,176.89,8.48">Cursing the Cloud (or) Controlling the Cloud?</title>
+		<author>
+			<persName coords=""><forename type="first">Noriswadi</forename><surname>Ismail</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2011.03.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,376.56,406.12,131.47,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="250" to="257" />
+			<date type="published" when="2011-06">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,427.60,385.39,8.48;10,126.96,438.40,385.50,8.48;10,126.96,449.32,115.67,8.48" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="10,259.80,427.60,252.55,8.48;10,126.96,438.40,151.48,8.48">Knowing the past to understand the present – issues in the contracting for cloud based services</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Joint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwin</forename><surname>Baker</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2011.05.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,288.84,438.40,146.59,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="407" to="415" />
+			<date type="published" when="2011-08">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,460.12,385.67,8.48;10,126.96,470.92,200.75,8.48" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="10,289.08,460.12,119.83,8.48">Hey, you, get off of that cloud?</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Joint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwin</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edward</forename><surname>Eccles</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2009.03.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,411.72,460.12,100.91,8.48;10,126.96,470.92,26.59,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="270" to="274" />
+			<date type="published" when="2009-01">2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,481.60,385.55,8.48;10,126.96,492.52,385.50,8.48;10,126.96,503.32,115.19,8.48" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="10,321.48,481.60,191.03,8.48;10,126.96,492.52,154.54,8.48">A high performance scientific cloud computing environment for materials simulations</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Jorissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">D</forename><surname>Vila</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">J</forename><surname>Rehr</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cpc.2012.04.010</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,292.08,492.52,141.66,8.48">Computer Physics Communications</title>
+		<title level="j" type="abbrev">Computer Physics Communications</title>
+		<idno type="ISSN">0010-4655</idno>
+		<imprint>
+			<biblScope unit="volume">183</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1911" to="1919" />
+			<date type="published" when="2012-09">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,514.12,385.55,8.48;10,126.96,524.92,385.55,8.48;10,126.96,535.84,252.23,8.48" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="10,362.88,514.12,149.63,8.48;10,126.96,524.92,308.17,8.48">A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Tanzim</forename><surname>Khorshed</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">B M Shawkat</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saleh</forename><forename type="middle">A</forename><surname>Wasimi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.01.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,442.92,524.92,69.59,8.48;10,126.96,535.84,69.30,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="833" to="851" />
+			<date type="published" when="2012-06">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,546.52,385.55,8.48;10,126.96,557.32,358.98,8.48" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="10,263.52,546.52,248.99,8.48;10,126.96,557.32,50.78,8.48">Zero-Knowledge Authentication for Secure Multi-cloud Computing Environments</title>
+		<author>
+			<persName><forename type="first">Hyungjoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyunsoo</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jungho</forename><surname>Kang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-10-0281-6_37</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Computer Science and Ubiquitous Computing</title>
+		<imprint>
+			<publisher>Springer Singapore</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="255" to="261" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,568.12,383.22,8.48" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="10,191.76,568.12,152.54,8.48">Cloud Computing: Today and Tomorrow.</title>
+		<author>
+			<persName coords=""><forename type="first">Won</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.5381/jot.2009.8.1.c4</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,351.48,568.12,107.54,8.48">The Journal of Object Technology</title>
+		<title level="j" type="abbrev">JOT</title>
+		<idno type="ISSNe">1660-1769</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">65</biblScope>
+			<date type="published" when="2009">2009</date>
+			<publisher>AITO - Association Internationale pour les Technologies Objets</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,579.04,385.39,8.48;10,126.96,589.84,218.94,8.48" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="10,254.21,579.04,258.14,8.48;10,126.96,589.84,19.25,8.48">Protecting the privacy and security of sensitive customer data in the cloud</title>
+		<author>
+			<persName><forename type="first">Nancy</forename><forename type="middle">J</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><forename type="middle">T</forename><surname>Raja</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2012.03.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,152.52,589.84,138.89,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="308" to="319" />
+			<date type="published" when="2012-06">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,600.64,385.55,8.48;10,126.96,611.32,128.58,8.48" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="10,199.80,600.64,147.05,8.48">World of Cloud Computing &amp; Security</title>
+		<author>
+			<persName coords=""><forename type="first">Ashish</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.11591/closer.v1i2.399</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,353.40,600.64,159.11,8.48;10,126.96,611.32,77.61,8.48">International Journal of Cloud Computing and Services Science (IJ-CLOSER)</title>
+		<title level="j" type="abbrev">IJ-CLOSER</title>
+		<idno type="ISSN">2089-3337</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="53" to="58" />
+			<date type="published" when="2012-06-09">2012</date>
+			<publisher>Institute of Advanced Engineering and Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,622.24,385.43,8.48;10,126.96,633.04,272.22,8.48" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="10,354.36,622.24,158.03,8.48;10,126.96,633.04,39.98,8.48">Cloud Computing Security Issues and Challenges</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">O</forename><surname>Kuyoro</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Ibikunle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><surname>Awodele</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,173.52,633.04,164.93,8.48">International Journal of Computer Networks</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="247" to="255" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,643.84,385.67,8.48;10,126.96,654.64,121.38,8.48" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="10,187.56,643.84,195.50,8.48">Security Threats in Cloud Computing Environments</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,390.00,643.84,122.63,8.48;10,126.96,654.64,70.45,8.48">International Journal of Security and Its Application</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="25" to="32" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,665.44,385.39,8.48;10,126.96,676.24,351.47,8.48" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="10,418.02,665.44,94.32,8.48;10,126.96,676.24,75.50,8.48">Cloud computing — The business perspective</title>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Marston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Subhajyoti</forename><surname>Bandyopadhyay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anand</forename><surname>Ghalsasi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dss.2010.12.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,208.68,676.24,97.26,8.48">Decision Support Systems</title>
+		<title level="j" type="abbrev">Decision Support Systems</title>
+		<idno type="ISSN">0167-9236</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="176" to="189" />
+			<date type="published" when="2011-04">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,126.96,687.04,385.79,8.48;10,126.96,697.84,199.19,8.48" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" coord="10,256.56,687.04,148.68,8.48">Digital evidence and ‘cloud’ computing</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esther</forename><surname>George</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2011.07.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,412.20,687.04,100.55,8.48;10,126.96,697.84,26.59,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="524" to="528" />
+			<date type="published" when="2011-09">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,81.76,385.55,8.48;11,126.96,92.56,113.22,8.48" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" coord="11,202.56,81.76,145.87,8.48">Addressing Data Security in the Cloud</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Mircea</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,355.68,81.76,156.83,8.48;11,126.96,92.56,58.66,8.48">World Academy of Science, Engineering and Technology</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="539" to="546" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,103.48,291.06,8.48" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" coord="11,201.12,103.48,89.31,8.48">Cloud Computing Risks</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Mosher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,296.64,103.48,91.15,8.48">ISSA Journal, July Issue</title>
+		<imprint>
+			<biblScope unit="page" from="34" to="38" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,114.16,385.39,8.48;11,126.96,124.96,107.70,8.48" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" coord="11,246.12,114.16,136.75,8.48">Cloud Computing Security Issues</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Ogigau-Neamtiu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,392.64,114.16,119.71,8.48;11,126.96,124.96,46.63,8.48">Journal of Defense Resource Management</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="141" to="148" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,135.76,385.50,8.48;11,126.96,146.68,210.42,8.48" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" coord="11,333.24,135.76,174.76,8.48">◾ Advanced Security Architectures for Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Okuhara</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Shiozaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Suzuki</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781315372112-48</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Cloud Computing Security</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="443" to="458" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,157.48,385.67,8.48;11,126.96,168.28,376.79,8.48" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" coord="11,350.76,157.48,161.87,8.48;11,126.96,168.28,38.02,8.48">Portable Cloud applications—From theory to practice</title>
+		<author>
+			<persName><forename type="first">Dana</forename><surname>Petcu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgiana</forename><surname>Macariu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silviu</forename><surname>Panica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ciprian</forename><surname>Crăciun</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2012.01.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,171.12,168.28,140.34,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1417" to="1430" />
+			<date type="published" when="2013-08">2013</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,178.96,343.26,8.48" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" coord="11,191.76,178.96,124.12,8.48">Data mining in Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Petre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,322.68,178.96,96.75,8.48">Database Systems Journal</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="67" to="71" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,189.88,385.55,8.48;11,126.96,200.68,379.26,8.48" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" coord="11,303.60,189.88,208.91,8.48;11,126.96,200.68,63.39,8.48">Cloud Computing: Network/Security Threats and Countermeasures</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Qaisar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">F</forename><surname>Khawaja</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,196.92,200.68,239.57,8.48">Interdisciplinary Journal of Contemporary Research in Business</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1323" to="1329" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,211.48,385.55,8.48;11,126.96,222.28,385.55,8.48;11,126.96,233.08,209.87,8.48" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" coord="11,311.40,211.48,201.11,8.48;11,126.96,222.28,135.83,8.48">Securing Software as a Service Model of Cloud Computing: Issues and Solutions</title>
+		<author>
+			<persName coords=""><forename type="first">Sahoo</forename><surname>Rashmi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Mehfuz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename></persName>
+		</author>
+		<idno type="DOI">10.5121/ijccsa.2013.3401</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,273.36,222.28,239.15,8.48;11,126.96,233.08,45.47,8.48">International Journal on Cloud Computing: Services and Architecture</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,243.88,385.43,8.48;11,126.96,254.68,183.47,8.48" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" coord="11,252.36,243.88,71.09,8.48">Trust in the clouds</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Ryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Falvey</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2012.07.002</idno>
+		<ptr target="http://dx.doi.org/10.1016/j.clsr.2012.07.002" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,330.60,243.88,142.23,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="513" to="521" />
+			<date type="published" when="2012-10">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,265.48,385.55,8.48;11,126.96,276.40,385.67,8.48;11,126.96,287.20,103.50,8.48" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" coord="11,265.32,265.48,247.19,8.48;11,126.96,276.40,69.17,8.48">Comparative Analysis of Various Authentication Techniques in Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">U</forename><surname>Mittal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,206.88,276.40,305.75,8.48;11,126.96,287.20,42.81,8.48">International Journal of Innovative Research in Science, Engineering and Technology</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="994" to="998" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,297.88,385.43,8.48;11,126.96,308.68,385.55,8.48;11,126.96,319.60,94.14,8.48" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" coord="11,263.40,297.88,248.99,8.48;11,126.96,308.68,129.99,8.48">Cost breakdown of Public Cloud Computing and Private Cloud Computing and Security Issues</title>
+		<author>
+			<persName coords=""><forename type="first">Swarnpreet</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Jangwal</surname></persName>
+		</author>
+		<idno type="DOI">10.5121/ijcsit.2012.4202</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,267.72,308.68,244.79,8.48;11,126.96,319.60,42.81,8.48">International Journal of Computer Science and Information Technology</title>
+		<title level="j" type="abbrev">IJCSIT</title>
+		<idno type="ISSN">0975-4660</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="17" to="31" />
+			<date type="published" when="2012-04-30">2012</date>
+			<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,330.40,385.43,8.48;11,126.96,341.20,261.71,8.48" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" coord="11,282.12,330.40,184.80,8.48">Privacy and consumer risks in cloud computing</title>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Svantesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Clarke</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.clsr.2010.05.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,474.84,330.40,37.55,8.48;11,126.96,341.20,88.99,8.48">Computer Law &amp; Security Review</title>
+		<title level="j" type="abbrev">Computer Law &amp; Security Review</title>
+		<idno type="ISSN">0267-3649</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="391" to="397" />
+			<date type="published" when="2010-07">2010</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,352.00,385.50,8.48;11,126.96,362.80,385.38,8.48;11,126.96,373.60,33.66,8.48" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" coord="11,275.40,352.00,232.60,8.48">Security Issues and Security Algorithms in Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">S</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">V</forename><surname>Prasad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,126.96,362.80,355.21,8.48">International Journal of Advanced Research in Computer Science and Software Engineering</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="110" to="114" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,384.40,385.67,8.48;11,126.96,395.20,233.99,8.48" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" coord="11,219.84,384.40,200.87,8.48">Internet cloud security: The illusion of inclusion</title>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Teneyuca</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.istr.2011.08.005</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,430.44,384.40,82.19,8.48;11,126.96,395.20,63.27,8.48">Information Security Technical Report</title>
+		<title level="j" type="abbrev">Information Security Technical Report</title>
+		<idno type="ISSN">1363-4127</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="102" to="107" />
+			<date type="published" when="2011-08">2011</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,406.12,385.38,8.48;11,126.96,416.80,385.43,8.48;11,126.96,427.60,385.43,8.48;11,126.96,438.40,11.58,8.48" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" coord="11,447.36,416.80,65.03,8.48;11,126.96,427.60,184.62,8.48">Management and Security for Grid, Cloud and Cognitive Networks</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">B</forename><surname>Westphall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Westphall</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><forename type="middle">L</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">O</forename><surname>Rolim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">M</forename><surname>Vieira</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Schulter</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">A</forename><surname>Chaves</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Werner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">S</forename><surname>Mendes</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">B</forename><surname>Brinhosa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">A</forename><surname>Geronimo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">R</forename><surname>Freitas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,318.48,427.60,168.62,8.48">Revista de Sistemas de Informação da FSMA</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="8" to="21" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,449.32,385.55,8.48;11,126.96,460.12,385.50,8.48;11,126.96,470.92,53.94,8.48" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" coord="11,394.08,449.32,118.43,8.48;11,126.96,460.12,168.15,8.48">A Practical Privacy-preserving Password Authentication Scheme for Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">A</forename><surname>Yassin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hai</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayad</forename><surname>Ibrahim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weizhong</forename><surname>Qiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deqing</forename><surname>Zou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ipdpsw.2012.148</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2012 IEEE 26th International Parallel and Distributed Processing Symposium Workshops &amp; PhD Forum</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012-05">2012</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="143" to="148" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,481.60,385.55,8.48;11,126.96,492.52,237.42,8.48" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" coord="11,214.68,481.60,211.23,8.48">Exploring Cloud Computing Services and Applications</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">E</forename><surname>Youssef</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,433.20,481.60,79.31,8.48;11,126.96,492.52,177.22,8.48">Journal of Emerging Trends in Computing and Information Sciences</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="838" to="847" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,126.96,503.32,385.55,8.48;11,126.96,514.12,252.23,8.48" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" coord="11,262.68,503.32,171.60,8.48">Addressing cloud computing security issues</title>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Zissis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Lekkas</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2010.12.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,442.20,503.32,70.31,8.48;11,126.96,514.12,69.30,8.48">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="583" to="592" />
+			<date type="published" when="2012-03">2012</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

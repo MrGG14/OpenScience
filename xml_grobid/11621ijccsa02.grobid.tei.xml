@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,145.49,116.86,304.45,18.27;1,131.09,139.18,333.16,18.27">Digital Banking - Architecture Strategies using Cloud Computing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+				<availability status="unknown"><p>Copyright Academy and Industry Research Collaboration Center (AIRCC)</p>
+				</availability>
+				<date type="published" when="2021-12-31">2021-12-31</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,260.74,175.52,73.90,11.66"><forename type="first">Prudhvi</forename><surname>Parne</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Information Technology</orgName>
+								<orgName type="institution">Bank of Hope</orgName>
+								<address>
+									<addrLine>1655 E Redondo Brach Blvd</addrLine>
+									<settlement>Gardena</settlement>
+									<region>CA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,145.49,116.86,304.45,18.27;1,131.09,139.18,333.16,18.27">Digital Banking - Architecture Strategies using Cloud Computing</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal on Cloud Computing: Services and Architecture</title>
+						<title level="j" type="abbrev">IJCCSA</title>
+						<idno type="ISSN">2231-6663</idno>
+						<imprint>
+							<publisher>Academy and Industry Research Collaboration Center (AIRCC)</publisher>
+							<biblScope unit="volume">11</biblScope>
+							<biblScope unit="issue">6</biblScope>
+							<biblScope unit="page" from="9" to="18"/>
+							<date type="published" when="2021-12-31" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">2BF648A09854B4D4D57C190C7F6AEA83</idno>
+					<idno type="DOI">10.5121/ijccsa.2021.11602</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cloud Computing</term>
+					<term>Technology</term>
+					<term>Finance</term>
+					<term>Security</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>With recent advances in technology, internet has drastically changed the computing world from the concept of parallel computing to distributed computing to grid computing and now to cloud computing. The evolution of cloud computing over the past few years is potentially one of the major advances in the history of computing. Unfortunately, many banks are still hesitant to adopt cloud technology. New credit unions wanting to achieve greater business agility, cloud technology enables organizations to respond instantly to changing market conditions, leveraging data and applied analytics to achieve customer experience and operational productivity benefits. As a result, cloud computing comes in to provide a solution to such challenges making banking a reliable and trustworthy service. This paper aims at cloud computing strategy, impact in banking and financial institutions and discusses the significant reliance of cloud computing.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>Banks have always relied on legacy systems from historic times, and in most cases, they are usually reluctant to embrace changes to their technology infrastructure. Nevertheless, with increasing concern for customer data, many banking institutions are now considering shifting to cloud computing. Although the shift is quite intimidating, cloud computing is promising banking institutions to award them immense benefits, which will assist them in overcoming the problems they have been facing with the legacy systems in the recent past. Fintech's recent survey indicated that 46% of bankers perceive these trials as the most significant obstruction to the development of commercial banks <ref type="bibr" coords="1,167.73,567.19,11.61,9.94" target="#b0">[1]</ref>. Therefore, as the banking institutions embark on the journey, the paper will reflect on how the banks will be impacted by the implementation of cloud computing into their daily operations. Cloud computing consists of a set of resources and services offered through the Internet. Hence, cloud computing is also called Internet computing <ref type="bibr" coords="1,431.93,605.11,16.80,9.94" target="#b16">[18]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">CLOUD COMPUTING</head><p>Cloud computing is defined as a model for enabling banks to have convenient and on-demand network access to a communal pool of configurable computing resources. Such include servers, networks, applications, storage, and services that can be swiftly released and provisioned with little administration effort or the level of interaction with the service provider. Cloud computing promotes accessibility through various attributes, including on-demand services where the client can enjoy unilaterally providing computing abilities <ref type="bibr" coords="1,319.78,722.52,11.61,9.94" target="#b3">[4]</ref>. These encompass network storage and server time depending on the organization's requirements without necessarily calling for human</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">CLOUD COMPUTING MODELS</head><p>Cloud computing promises to improve banking institutions by providing them with a variety of software to select from. The entire cloud architecture <ref type="bibr" coords="2,327.24,424.82,18.32,9.94" target="#b14">[16]</ref> is aimed at providing the users with high bandwidth, allowing users to have uninterrupted access to data and applications, on-demand agile network with possibility to move quickly and efficiently between servers or even between clouds and most importantly network security. Cloud computing holds the tremendous potential of presenting numerous public (shared) services depending on the cloud model you chooseout of the four distinct models. Each model extends a whole new level of versatility and power. The four major cloud consulting service delivery models are SaaS, UCaaS, PaaS and IaaS.</p><p>The first option is using the software as a service that helps develop banking institutions. Through this software, the micro banking institutions can easily access the internet-hosted software services using the browser instead of relying on traditional applications that have been stored in their server or computer. Depending on software as a service, the application host is responsible for maintaining and controlling the application comprising software settings and updates. This software package has been revered and it has become very popular and fashionable recently for various reasons. For example, it is engaging to the clients because of its shifts in cumbrance and value both the hardware and software package preparation and how it is maintained from the perspective of the client to the seller. SaaS is conjointly offering numerous benefits to the seller. In fact, WHO has recently developed and maintained this application on their platform and have permitted the customer use option of their applications. Software-as-aservice (SaaS) presents a comprehensive product that is run and administered by a cloud service provider/vendor. SaaS is a service in the cloud, extending an entire software suite in pay-per-use form. It is made accessible to the end-consumers over a ubiquitous network, i.e. the internet. SaaS is the superset of both, PaaS and IaaS as it offers the entire package from infrastructure, middleware, OS to applications deployed over the web, that can be seamlessly accessed, invariant to time, place and platform. This fully-developed cloud service model encourages businesses to get going amid the COVID-19 pandemic and respond expeditiously to it as well as scale business operations remotely.</p><p>The second option is infrastructure as a service which means that the banking institution can buy or rent the disk space and computers from an internet service provider. This will enable them to access information over the internet or private network. The provider maintains the physical computer hardware such as memory, CPU processing, network connectivity, and data storage. Examples of this software include Windows Azure. This is regarded as a fashion for delivering Cloud Computing through an infrastructure-like servers, storage, network associate degrees operative systems and as associate degree-on demand service <ref type="bibr" coords="3,373.21,206.37,11.61,9.94">[7]</ref>. It prevents the clients for shopping for the servers, datacenters, and software or network instrumentation, rather they can only buy various resources like sometimes an extremely outsourced service on demand. Infrastructure-as-a-service (IaaS) is one of the most pliable cloud computing service models which presents the required infrastructure and all the computing resources to users in an entirely remote environment. The vendors delivering PaaS service are responsible to provide advanced services to address your company's infra needs, which involves data storage space, servers, virtualization and networking. IaaS is a highly expandable and lucrative service as outsourcing data centers, cloud components and servers annihilate the necessity for establishing an in-house infrastructure. This service model can aid you to upscale and downscale your infra service ondemand. IaaS will be a good fit for SMEs and start-ups that might not have ample resources to buy essential infra for building their own network.</p><p>The third option is the platform as a service that will enable the banking institution to rent operating systems, hardware, network capacity, and storage <ref type="bibr" coords="3,353.42,383.54,18.32,9.94" target="#b15">[17]</ref> provided by infrastructure as a service and the corresponding software application and servers environments. Platform as a service offers banks top-notch control over their technical aspects of the computing setup and customize to suit their needs. However, this must be done or applied in the package development environments. PaaS is similarly printed to be a computing platform that allows the establishment of web applications faster and easily and while not the quality of buying and maintenance of the package and infrastructure at a lower end <ref type="bibr" coords="3,270.33,459.40,11.61,9.94" target="#b5">[6]</ref>. It is also regarded as analogous to SaaS only that, instead of being package delivered over the web, it is a platform for the creation of the package, delivered over the web. Platform-as-a-service (PaaS) is a subset of SaaS and it is built on virtually the same infrastructure as IaaS. Besides that, in this service model, the vendor assists companies with middleware, database management systems, OS, web servers and development tools. All of these encapsulate a remote environment where users can build, compile and run their software products without requiring any in-house hardware/software. Thus, PaaS enables users to emphasize their application resources and effectively manage their data as the rest of the things will be handled efficiently by the vendors. Since the platform is web-accessible, remote development unit can have ready access to all the assets ubiquitously. This, in turn, will help them to improve their product development life cycle, resulting in more agile product delivery.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">DIFFERENT TYPES OF CLOUD DEPLOYMENTS</head><p>In contrast to the models discussed above, which define how services are offered via the cloud, these different cloud deployment types <ref type="bibr" coords="3,257.38,652.65,18.32,9.94" target="#b9">[11]</ref> have to do with where the cloud servers are and who manages them.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The most common cloud deployments are:</head><p>Private cloud: A private cloud is a server, data center, or distributed network wholly dedicated to one organization. There is little to no difference between a public and a private model from the technical point of view, as their architectures are very similar. However, opposed to a public cloud that is available to the general public, only one specific company owns a private one. That is why it is also called an internal or corporate cloud. Internal Cloud means that it allows the accessibility of systems and services within a specific boundary or organization. The cloud platform is implemented in a cloud-based secure environment that is guarded by advanced firewalls under the surveillance of the IT department that belongs to a particular organization. Private clouds permit only authorized users, providing the organizations greater control over data and its security. Business organizations that have dynamic, critical, secured, management demand based requirement should adopt Private Cloud.</p><p>Public cloud: A public cloud <ref type="bibr" coords="4,213.19,206.37,18.32,9.94" target="#b10">[12]</ref> is a service run by an external vendor that may include servers in one or multiple data centers. Unlike a private cloud, public clouds are shared by multiple organizations. Using virtual machines, individual servers may be shared by different companies, a situation that is called "multitenancy" because multiple tenants are renting server space within the same server. Public Cloud is a type of cloud hosting that allows the accessibility of systems &amp; its services to its clients/users easily. Some of the examples of those companies which provide public cloud facilities are IBM, Google, Amazon, Microsoft, etc. This cloud service is open for use. This type of cloud computing is a true specimen of cloud hosting where the service providers render services to various clients. Server infrastructure belongs to service providers that manage them and administer pool resources, which is why there is no need for user companies to buy and maintain their hardware. Provider companies offer resources as a service both free of charge or on a pay-per-use basis via the Internet connection. Users can scale resources when required. The public cloud deployment model is the first choice for businesses that operate within the industries with low privacy concerns. When it comes to popular public cloud deployment models, examples are Amazon Elastic Compute Cloud (Amazon EC2) the top service provider, Microsoft Azure, Google App Engine, IBM Cloud, Salesforce Heroku and others.</p><p>Hybrid cloud: hybrid cloud deployments combine public and private clouds and may even include on-premises legacy servers. An organization may use their private cloud for some services and their public cloud for others, or they may use the public cloud as backup for their private cloud. Hybrid Cloud is another cloud computing type, which is integrated, i.e., it can be a combination of two or more cloud servers, i.e., private, public or community combined as one architecture, but remain individual entities. Non-critical tasks such as development and test workloads can be done using public cloud whereas critical tasks that are sensitive such as organization data handling are done using a private cloud. Benefits of both deployment models, as well as a community deployment model, are possible in a hybrid cloud hosting. Hybrid cloud deployment model not only safeguards and controls strategically important assets but does so in the most cost and resource-effective way possible for each specific case. Also, this approach facilitates data and application portability.</p><p>Multi-cloud: multi-cloud is a type of cloud deployment that involves using multiple public clouds. In other words, an organization with a multi-cloud deployment rents virtual servers and services from several external vendors to continue the analogy used above, this is like leasing several adjacent plots of land from different landlords. Multi-cloud deployments can also be hybrid cloud, and vice versa.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">FACTORS INFLUENCING THE ADOPTION OF CLOUD COMPUTING IN BANKS</head><p>From a different perspective, the shift to adopt cloud computing technology in the banking institution is influenced by various factors. The first factor is a classification of information sensitivity in the banking system. Banks have the freedom to select the kind of system suitable for them depending on the data the institution will be processing as permitted by the government regulations and data security <ref type="bibr" coords="5,214.39,105.04,18.32,9.94" target="#b17">[19]</ref> necessities. As a result, the banking organization must ensure that the cloud computing they will decide on meets all the qualifications <ref type="bibr" coords="5,417.57,117.79,11.61,9.94" target="#b2">[3]</ref>. For instance, the United States carefully evaluates their outsourcing procedures and ensure that the banks apply them strictly. The second factor is the competitive advantages and differentiation capacities availed by Cloud Computing. For this, the bank will decide on the choice of computing for the organization depending on the level of competition existing in the industry. As a result, the organization will consider cloud computing an effective alternative to turn to outdo the competitors successfully. Similarly, if there is a need for the bank to differentiate its products, inhouse development is more preferred by the institution owing to its swiftness in marketing its expectations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">POSITIVE IMPACTS OF CLOUD COMPUTING ON BANKS</head><p>Cloud computing has continued to gain popularity as it acts as a catalyst through which banks and financial institutions can rely on transforming the features of their monetary services and tailoring them according to the customers' needs. As banks continue to adopt cloud technology, it becomes essential to propel the institutions towards a positive future. One of Cloud technology's paramount importance to banks and financial institutions is that it creates no need to develop an up-front investment in infrastructure such as software licenses and does not attract the risk of unused licenses. Similarly, cloud technology does not demand investment in hardware components and other associated maintenance services. Therefore, capital expenditure that would have been spent in meeting these qualifications is turned into operational cost, thus enabling the institutions to achieve their goals. The consumers of cloud technology are only needed to use the number of IT resources they initially need and will only be required for the volume of technology they have used.</p><p>The second impact of cloud computing on banks and financial institutions includes that cloud computing facilitates fast and easy scaling of the computing resources required to sustain the organization's cloud operations. Cloud technology also plays a crucial role in diminishing ongoing operating, upgrades, and maintenance costs through the utility model. This payback is often described as an instant outcome of the technology. Scaling <ref type="bibr" coords="5,387.26,488.20,18.32,9.94" target="#b13">[15]</ref> the technology up and down network capacity, hardware, and cost based on demand can be expensive for large-scale financial institutions because they deal in a wide range of data. Therefore, cloud computing enables banks to easily add or eliminate resources at a fine grain along with a lead time of few minutes instead of several weeks as they wait for the matching of resources to workload closer. Peaks mainly influence this demand for cloud technology resources. The process of waiting can end up attracting a lot of complications for the organization in determining the definite number of servers that an institution requires to execute its tasks without disruption or experiencing data breaches. In most situations, the response regarding the organization's needs is usually based on the cost-benefit analysis. However, with the concept of cloud computing, organizations should forget all about the investigation because the technology offers them a flexible solution for the consistent change in IT resources demand.</p><p>Another impact of cloud computing is that it has increased in availability compared to other inhouse solutions by intensifying the accessibility of Virtual Machine, which strengthens the ability of the organization to create a customized environment above the physical infrastructures <ref type="bibr" coords="5,497.19,677.85,11.61,9.94" target="#b1">[2]</ref>. Cloud technology enables organizations to access a wide variety of numerous applications and attributes. One of them is Software as a service, a virtualization technique fully exploited when employing the cloud computing model. This is an indication that software applications can be easily accessed via the web interface. The significance is that this application portfolio is getting more dynamic concerning the transformations of the banks as a way of meeting consumer behaviour change. Through cloud computing, applications can be quickly deleted or added to the firm's portfolio within a short period. Nevertheless, cloud computing attracts minimal maintenance costs because it acts as the primary catalyst for innovation. Cloud computing is becoming more affordable and more universal, thus creating the opportunity for innovation to continue to grow to new heights.</p><p>Besides, cloud computing comes with high data security, thus eliminating the thought of losing valuable data to hackers, which can be drastic to the bank and the customers. In the long run, data breaches tend to be costly, racking up in millions and dollars, thus increasing the opportunity that the institution that has been rigged will be expelled from the market as customers will lose faith in them <ref type="bibr" coords="6,123.11,219.09,11.61,9.94" target="#b4">[5]</ref>. while data breach threats are on the rise owing to numerous advancements in technology providing hackers with immense techniques to crack organizations' passwords, cloud computing is paving a long-lasting solution to these problems to hinder hackers from tampering with important information. Cloud computing ensures that the bank has access to an up-to-date customer-centered platform strengthened by complicated password combinations to protect banking data.</p><p>Cloud computing has strengthened collaborations where partnership in a cloud environment gives a firm the capability to share and communicate frequently and efficiently outside the old techniques. Cloud computing can provide all workers, sub-contractors and third parties access to all the files, primarily if the banks work in various locations. There is a possibility of choosing a cloud computing model that seems too easy for the banks to share their archives with their advisers. On the contrary, cloud technology is providing banks with improved efficiency in their operations. The financial services provided by these organizations are aided by cloud technology to streamline all the processes using enhanced efficiency. Both sellers and buyers are connected in the payment procedures on a communal application. This is very necessary because it improves the speed of transactions and tracking of data becomes simple. Besides this, cloud computing helps in the continuity of the business since it can assist the financial services firms and banks with fault tolerance, data protection, and recovery from disasters for financial companies. Data Mining is used for extracting potentially useful information from raw data. The implementation of data mining <ref type="bibr" coords="6,223.30,472.12,18.32,9.94" target="#b18">[20]</ref> techniques through Cloud computing will allow the users to retrieve meaningful information from virtually integrated data warehouse that reduces the costs of infrastructure and storage.</p><p>Moreover, cloud computing incurs lower prices compared with traditional solutions. Nevertheless, agility and transformation are on the list. This involves the financial administrations experiencing shorter development cycles for the novel products via the supple cloud-based operating replicas. The associated technology ropes the quicker and more efficient replies to the requirements of the latest banking customers <ref type="bibr" coords="6,345.37,573.19,11.61,9.94" target="#b4">[5]</ref>. It helps the firm shift non-critical facilities, including software patches, maintenance, and other computing matters. This aids the financial companies to concentrate more on business growth and expansion. Also, the flexibility of the work practices allows the employees to be flexible, especially in their work practices. For instance, increase the capacity to access data from homesteads, on public holidays, or even through the commute to and from the job. If there is a need to access the data while off-site, it is possible to connect to the virtual office faster and straightforwardly. Finally, is the access to automatic updates. The necessities can be involved in the service fee. The system will often be updated with modern technology depending on the cloud computing service provided. The current date versions of software can be included and the advancements to servers and computer dispensation power.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">NEGATIVE IMPACTS OF CLOUD COMPUTING</head><p>Despite the various aids of cloud computing knowledge, most financial institutions are still not able to adopt it. Some of the challenges that are barriers to the banks from implementing it are data and security privacy. Sensitive information is contained in the bank data and keeping it safe from a cyber-breach is a must for all banking sectors. There is no exception regardless of the technology; security has to be tight and remains an issue. The security breaches occurrences are inventible but avoidable <ref type="bibr" coords="7,192.15,184.51,11.61,9.94" target="#b1">[2]</ref>. Also, regulatory and compliance are considered where all banks are authorized to comply with strict standards. A lot of the banking regulators need the client's financial information situated in the same nation. Specific compliance guidelines need treasured data not to be mixed with the other data on the database or shared servers. The Data Cloud <ref type="bibr" coords="7,494.83,222.45,18.32,9.94" target="#b12">[14]</ref> allows organizations to unify and connect to a single copy of all of their data with ease. The result is an ecosystem of thousands of businesses and organizations connecting to not only their own data, but also connecting to each other by effortlessly sharing and consuming shared data and data services. Lastly, there is no complete control of severe firms' submissions, and data is an essential concern for financial organizations. If a third-party handles cloud service providers, they might lessen the ability to be supple and elegant. Therefore, not having control of an enormous volume of data dissuades organizations from moving to the cloud.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.">CASE STUDY</head><p>Deutsch Bank is a financial institution offering investment and commercial banking, transaction banking, retail banking along with wealth administration services and products to organizations, organizational financiers and government, private individuals and large and small businesses. Deutsch Bank is among the Germany's well performing banking institutions with a robust brand position across Europe as well as robust presence in Asia Pacific and American regions. Google on the other hand is a platform that offers organizations with leading infrastructure, industrial solutions and also enhances platform capabilities. The platform's objective is to deliver top-notch cloud solutions that leverages Google's superior technology to assist corporations to function more effectively and adjust to the transforming wants of their consumers as a way of providing them with a firm foundation for their future financing decisions. customers across 150 countries have been turning to Google cloud as their reliable partner to address the dire business challenges facing them.</p><p>Google Cloud and Deutsch bank entered a multi-year contract in July and with the ink already dried up now, these organizations have proceeded to outline a number of ways that the bank will be using the digitalization of their processes. The 150-year-old banking institution is looking forward to utilizing the Google cloud for several number of their upcoming products. These comprises of innovative loaning products to offer upkeep to 'pay per use' systems as a way of providing alternative to procuring assets outright and developing a freshly innovated interface for consumption by their clients. The company's Autobahn podium which is tasked with providing access to Deutsch Bank research, analytics and commentary will also be getting a makeover to establish more individualized experiences.</p><p>On a more typical theme, providing robust security is a slogan for Deutsch Bank as it will provide them with high level functionality and administer their encryption keys and select the data analytics region that can be used in deploying the applications. With the improvement, resilience and flexibility is expected to improve significantly without compromising the organization's goal on providing privacy and security to secure customer information as well as the Deutsch Bank information assets. This collaboration will be a significant win for both Google cloud and Deutsch Bank releasing proposal in February. The utilization of shift to the cloud to the press materials proposes a significant overhaul. Regarding to the new statement released in October of 2019, an internal memo highlighted a total of $ 12 billion investments for the technology with an assurance to strengthen cloud computing strategy. For Google, Deutsch Bank was a perfect match into one of the three chief consumer verticals of healthcare, finance and retail.</p><p>According to Deutsche Bank's chief technology, innovation and data officer, Leukert, the new chapter to the bank as it would open numerous opportunities to the institutions in the long run.</p><p>The officer continued that with Google Cloud by their side, they will be able to have a strategic partner that will play a significant role in accelerating their technological transformation enabling them to utilize a safe and flexible environment for them to swiftly deliver new services and products to their users <ref type="bibr" coords="8,192.98,231.57,11.61,9.94" target="#b7">[9]</ref>. The officer continued that this transformation to join the cloud computing is a blueprint to bring together the respective strengths inside technology and banking for the benefits of the Deutsche clients.</p><p>Deutsch Bank and Google Cloud are developing a plan that will precisely co-innovate with numerous encouraging establishments to Fintech by providing accessibility to a wide implementation of the bank's cloud-native offerings. The bank's client will benefit significantly from the innovation as it will play a great role in reshaping how the bank will be designing and delivering their financial products and services. With rapid application development, along with the effective usage of forward-thinking artificial intelligent and wide-ranging data analysis gears, the organization will be in a profitable position to respond to the increasing flexibility and accurately solve pressing problems, customer needs and trends.</p><p>Additionally, Robin Enslin the president of Google cloud pointed that the cloud computing will also focus on advancing the company's Mobile self-service selections, artificial intelligenceoriented endorsements and other helpful novelties, the company expects that the customer's banking experience will transform greatly <ref type="bibr" coords="8,272.23,434.18,16.80,9.94" target="#b8">[10]</ref>. The president continues that the partnership will play a great role in reviving numerous innovations and further develop the bank to emerge as the best early expertise adopter. Deutsch Bank is a pioneer in the service industry and the Google Cloud computing pointed out that they could not be more ecstatic to partner with such an important market leader.</p><p>These partners are also considering various areas to explore to make the best out of their partnerships. Such include providing new lending commodities to provide ample support to the pay-per-use systems as a brilliant alternative to secure the right asset outright. The partners are also developing an intuitive and unified interface for the retail consumers across their member countries to more easily access the various products offered by Postbank and Deutsche bank products. Lastly, Google Cloud and Deutsch banks are exploring numerous strategies to aid in enhancing the Autobahn banking platform to become an award-winning electronic service that will be providing organizational and company clients with the power to establish more individualized experiences and recommendations. In attempt to expand their customer outreach, Deutsch bank is making strategies to list all Google Cloud merchandises on the Google Cloud marketplace to propel a wider implementation of the institution's new cloud native solutions and services. Significantly, the shift to the cloud computing will provide the Deutsch Bank with an upper hand of exploiting an up-to-date information and fully administered atmosphere for their applications. With the new partnership underway, Deutsch Bank will be able to select the type of datacenter region that will work well with their applications while they are being deployed to accommodate for data location roles or preferences. The bank's applications will be in a position to encrypt data both in transit and at rest. Google Cloud will also offer the Deutsche bank with the functionality it needs to allow the bank to effectively manage their chief encryption keys.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9.">CONCLUSIONS</head><p>As a concluding remark, it is clear that cloud computing has completely transformed the face of banking. Cloud computing have brought more affordable and reliable means through which banks can rely on to ensure that their customers information is well protected. Other positive impacts include its high scalability levels and vast capacities to support collaboration between different shareholders in the organization by allowing free exchange of information among them. Despite the positivity, cloud computing has also brought along some among them including that the costs are still extremely high for micro enterprises to adopt it.</p></div>		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AUTHORS</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="9,103.49,248.79,409.56,9.07;9,103.49,260.07,409.39,9.07;9,103.49,271.59,254.59,9.07" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="9,296.06,248.79,216.99,9.07;9,103.49,260.07,286.82,9.07">A Study of Impact of Cloud Computing and Artificial Intelligence on Banking Services, Profitability and Operational Benefits</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Tiwari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Bharadwaj</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Joshi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,396.78,260.07,116.09,9.07;9,103.49,271.59,173.36,9.07">Turkish Journal of Computer and Mathematics Education (TURCOMAT)</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1617" to="1627" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,283.11,409.66,9.07;9,103.49,294.66,409.50,9.07;9,103.49,306.18,140.05,9.07" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="9,422.00,283.11,91.15,9.07;9,103.49,294.66,172.19,9.07">The Banking Industry Underestimates Costs of Cloud Migrations</title>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Kaya</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Van Den</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Wieringa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Makkes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="9,294.64,294.66,218.35,9.07;9,103.49,306.18,23.27,9.07">2020 IEEE 22nd Conference on Business Informatics (CBI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020. June</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="300" to="309" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,317.70,409.77,9.07;9,103.49,329.22,218.30,9.07" xml:id="b2">
+	<monogr>
+		<title level="m" type="main" coord="9,319.05,317.70,194.21,9.07;9,103.49,329.22,214.34,9.07">Cloud-computing in banking influential factors, benefits and risks from a decision maker&apos;s perspective</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Rieger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Gewald</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Schumacher</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,340.74,409.57,9.07;9,103.49,352.26,256.99,9.07" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="9,244.24,340.74,268.82,9.07;9,103.49,352.26,47.72,9.07">Legal approaches to management of the risk of cloud computing insolvencies</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Parry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Bisson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,157.93,352.26,133.33,9.07">Journal of Corporate Law Studies</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="421" to="451" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,363.78,409.99,9.07;9,103.49,375.32,178.73,9.07" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="9,221.72,363.78,291.76,9.07;9,103.49,375.32,35.28,9.07">Cloud Computing in Developing Economies</title>
+		<author>
+			<persName coords=""><forename type="first">Nir</forename><surname>Kshetri</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/mc.2010.212</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer</title>
+		<title level="j" type="abbrev">Computer</title>
+		<idno type="ISSN">0018-9162</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="47" to="55" />
+			<date type="published" when="2010-01">2010. January</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,386.49,409.74,9.16;9,103.49,398.12,30.33,9.07" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="9,172.96,386.49,92.65,9.16">Security of the Internet</title>
+		<author>
+			<persName coords=""><forename type="first">Marcel</forename><surname>Decker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="9,275.96,386.49,237.27,9.16">The Froehlich/kent reference work of Telecommunications</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,421.16,409.91,9.07;9,103.49,432.57,123.24,9.17" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Understanding Cloud Computing Vulnerabilities</title>
+		<author>
+			<persName><forename type="first">Bernd</forename><surname>Grobauer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tobias</forename><surname>Walloschek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Elmar</forename><surname>Stocker</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/msp.2010.115</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,385.11,421.16,128.29,9.07;9,103.49,432.57,36.42,9.16">IEEE Security &amp; Privacy Magazine</title>
+		<title level="j" type="abbrev">IEEE Secur. Privacy Mag.</title>
+		<idno type="ISSN">1540-7993</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="50" to="57" />
+			<date type="published" when="2011-03">March-2011, Pg 53</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,444.20,173.62,9.07" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coord="9,165.36,444.20,107.03,9.07">Case Study-Deutsche Bank</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ali</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,455.74,409.37,9.07;9,103.49,467.26,275.25,9.07" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="9,245.70,455.74,267.16,9.07;9,103.49,467.26,58.74,9.07">Robotic process automation in banking industry: a case study on Deutsche Bank</title>
+		<author>
+			<persName><forename type="first">Alice</forename><forename type="middle">Saldanha</forename><surname>Villar</surname></persName>
+			<idno type="ORCID">0000-0001-8250-1340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nawaz</forename><surname>Khan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42786-021-00030-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,169.46,467.26,180.76,9.07">Journal of Banking and Financial Technology</title>
+		<title level="j" type="abbrev">J BANK FINANC TECHNOL</title>
+		<idno type="ISSN">2524-7956</idno>
+		<idno type="ISSNe">2524-7964</idno>
+		<imprint>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2021-05-27">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,478.78,173.62,9.07" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" coord="9,165.36,478.78,107.03,9.07">Case Study-Deutsche Bank</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Ali</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,490.30,409.37,9.07;9,103.49,501.82,275.25,9.07" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="9,245.70,490.30,267.16,9.07;9,103.49,501.82,58.73,9.07">Robotic process automation in banking industry: a case study on Deutsche Bank</title>
+		<author>
+			<persName><forename type="first">Alice</forename><forename type="middle">Saldanha</forename><surname>Villar</surname></persName>
+			<idno type="ORCID">0000-0001-8250-1340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nawaz</forename><surname>Khan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42786-021-00030-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,169.45,501.82,180.98,9.07">Journal of Banking and Financial Technology</title>
+		<title level="j" type="abbrev">J BANK FINANC TECHNOL</title>
+		<idno type="ISSN">2524-7956</idno>
+		<idno type="ISSNe">2524-7964</idno>
+		<imprint>
+			<biblScope unit="page" from="1" to="16" />
+			<date type="published" when="2021-05-27">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,513.34,409.34,9.07;9,103.49,524.62,358.37,9.07" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="9,317.64,513.34,195.19,9.07;9,103.49,524.62,88.77,9.07">Performance Estimation of Scalable e-Learning Systems in the Cloud</title>
+		<author>
+			<persName coords=""><forename type="first">Strahil</forename><forename type="middle">A</forename><surname>Sokolov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stefan</forename><forename type="middle">M</forename><surname>Vlaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihail</forename><surname>Vukadinoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asen</forename><forename type="middle">P</forename><surname>Zahariev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teodor</forename><forename type="middle">B</forename><surname>Iliev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivaylo</forename><forename type="middle">S</forename><surname>Stoyanov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/siitme.2018.8599252</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE 24th International Symposium for Design and Technology in Electronic Packaging​ (SIITME)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,536.14,409.95,9.07;9,103.49,547.69,45.43,9.07" xml:id="b12">
+	<monogr>
+		<author>
+			<persName coords=""><surname>Hayes</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1364782.1364786dl.acm.org</idno>
+		<ptr target="https://dl.acm.org/doi/fullHtml/10.1145/1364782.1364786dl.acm.org" />
+		<title level="m" coord="9,191.75,536.14,74.04,9.07">Cloud computing</title>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,559.21,409.44,9.07;9,103.49,570.73,226.57,9.07" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="9,432.41,559.21,80.52,9.07;9,103.49,570.73,157.76,9.07">Cloud Computing: a Perspective Study</title>
+		<author>
+			<persName><forename type="first">Lizhe</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Von Laszewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Younge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Kunze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cheng</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00354-008-0081-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">New Generation Computing</title>
+		<title level="j" type="abbrev">New Gener. Comput.</title>
+		<idno type="ISSN">0288-3635</idno>
+		<idno type="ISSNe">1882-7055</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="137" to="146" />
+			<date type="published" when="2010-04">2010. 2010</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,582.25,292.05,9.07" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" coord="9,245.46,582.25,67.58,9.07">Cloud Computing</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Antonopoulos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Gillam</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-54645-2</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Springer International Publishing</publisher>
+			<biblScope unit="page" from="191" to="233" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,593.77,409.57,9.07;9,103.49,605.29,409.78,9.07;9,103.49,616.81,51.72,9.07" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="9,215.27,605.29,146.50,9.07">A view of cloud computing</title>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Armbrust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armando</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rean</forename><surname>Griffith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">D</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Randy</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andy</forename><surname>Konwinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gunho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ariel</forename><surname>Rabkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ion</forename><surname>Stoica</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matei</forename><surname>Zaharia</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1721654.1721672</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<title level="j" type="abbrev">Commun. ACM</title>
+		<idno type="ISSN">0001-0782</idno>
+		<idno type="ISSNe">1557-7317</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="50" to="58" />
+			<date type="published" when="2010-04">2010. 2010</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,628.35,409.84,9.07;9,103.49,639.87,343.68,9.07" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="9,222.20,628.35,230.69,9.07">Cloud computing - concepts, architecture and challenges</title>
+		<author>
+			<persName><forename type="first">Yashpalsinh</forename><surname>Jadeja</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kirit</forename><surname>Modi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icceet.2012.6203873</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="9,462.32,628.35,51.01,9.07;9,103.49,639.87,311.79,9.07">2012 International Conference on Computing, Electronics and Electrical Technologies (ICCEET)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012-03">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,651.15,347.76,9.07" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Cloud Data Storage</title>
+		<author>
+			<persName><forename type="first">Dan</forename><forename type="middle">C</forename><surname>Marinescu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-812810-7.00008-x</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="9,103.49,651.15,242.26,9.07">Cloud Computing</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2018" />
+			<biblScope unit="page" from="195" to="233" />
+		</imprint>
+	</monogr>
+	<note>second edition</note>
+</biblStruct>
+
+<biblStruct coords="9,103.49,662.67,410.06,9.07;9,103.49,674.19,220.69,9.07" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="9,295.18,662.67,189.58,9.07">Cloud computing: opportunities and challenges</title>
+		<author>
+			<persName coords=""><surname>Mno Sadiku</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">O</forename><forename type="middle">D</forename><surname>Musa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Momoh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="9,491.80,662.67,21.75,9.07;9,103.49,674.19,37.60,9.07">IEEE potentials</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">33</biblScope>
+			<date type="published" when="2014-01">2014. Jan.-Feb. 2014</date>
+			<publisher>IEEE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,685.71,409.36,9.07;9,103.49,697.23,111.26,9.07" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="9,213.60,685.71,295.31,9.07">Security in the Cloud</title>
+		<author>
+			<persName coords=""><surname>Jf Ransome</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439806814-7</idno>
+		<idno>taylorfrancis.com. 153-182</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Cloud Computing</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2017-03-27">2017</date>
+			<biblScope unit="page" from="153" to="182" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="9,103.49,708.78,409.83,9.07;9,103.49,720.30,280.77,9.07" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Data Mining in Cloud Computing: Survey</title>
+		<author>
+			<persName coords=""><forename type="first">Medara</forename><surname>Rambabu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Swati</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ravi</forename><forename type="middle">Shankar</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-15-6067-5_7</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="9,274.95,708.78,238.37,9.07;9,103.49,720.30,196.04,9.07">Advances in Intelligent Systems and Computing</title>
+		<imprint>
+			<publisher>Springer Singapore</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="48" to="56" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

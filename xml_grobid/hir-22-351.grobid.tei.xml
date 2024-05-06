@@ -81,7 +81,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.0" ident="GROBID" when="2024-03-06T11:02+0000">
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T12:52+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -146,7 +146,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">C</forename><forename type="middle">M</forename><surname>Bishop</surname></persName>
 		</author>
-		<idno type="DOI">10.1007/978-0-387-45528-0_10</idno>
+		<idno type="DOI">10.1007/978-0-387-45528-0_1</idno>
 	</analytic>
 	<monogr>
 		<title level="m">Pattern Recognition and Machine Learning</title>
@@ -226,11 +226,15 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="4,322.02,248.92,233.58,10.11" xml:id="b4">
 	<monogr>
-		<title level="m" type="main" coord="4,358.18,248.92,153.00,10.11">Advice for applying machine learning</title>
+		<title level="m" type="main" coord="4,358.18,248.92,153.00,10.11">Evaluating the Potential of Applying Machine Learning Tools to Metabolic Pathway Optimization</title>
 		<author>
 			<persName coords=""><forename type="first">A</forename><surname>Ng</surname></persName>
 		</author>
-		<imprint/>
+		<idno type="DOI">10.20944/preprints202008.0543.v1</idno>
+		<imprint>
+			<date type="published" when="2020-08-26" />
+			<publisher>MDPI AG</publisher>
+		</imprint>
 	</monogr>
 	<note>Internet</note>
 </biblStruct>
@@ -304,23 +308,26 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="4,322.02,388.92,233.63,10.11;4,331.23,402.92,224.30,10.11;4,331.23,416.92,58.40,10.11" xml:id="b8">
 	<analytic>
-		<title level="a" type="main" coord="4,470.78,388.92,84.87,10.11;4,331.23,402.92,93.12,10.11">Global coordination of local linear models</title>
+		<title level="a" type="main" coord="4,470.78,388.92,84.87,10.11;4,331.23,402.92,93.12,10.11">A Unifying Review of Linear Gaussian Models</title>
 		<author>
-			<persName coords=""><forename type="first">S</forename><forename type="middle">T</forename><surname>Roweis</surname></persName>
+			<persName><forename type="first">Sam</forename><surname>Roweis</surname></persName>
 		</author>
 		<author>
-			<persName coords=""><forename type="first">L</forename><forename type="middle">K</forename><surname>Saul</surname></persName>
+			<persName><forename type="first">Zoubin</forename><surname>Ghahramani</surname></persName>
 		</author>
-		<author>
-			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
-		</author>
+		<idno type="DOI">10.1162/089976699300016674</idno>
 	</analytic>
 	<monogr>
-		<title level="j" coord="4,432.84,402.92,122.69,10.11">Adv Neural Inf Process Syst</title>
+		<title level="j" coord="4,432.84,402.92,122.69,10.11">Neural Computation</title>
+		<title level="j" type="abbrev">Neural Computation</title>
+		<idno type="ISSN">0899-7667</idno>
+		<idno type="ISSNe">1530-888X</idno>
 		<imprint>
-			<biblScope unit="volume">2</biblScope>
-			<biblScope unit="page" from="889" to="896" />
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="305" to="345" />
 			<date type="published" when="2002">2002</date>
+			<publisher>MIT Press - Journals</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>

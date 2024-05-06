@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="2,77.16,79.55,456.92,10.52;2,197.28,95.39,217.20,10.52">UNLEASHING THE EFFICACY OF AI FOR SMART BANKING: A DEMOGRAPHIC SURVEY OF INDIAN PRIVATE BANKS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="2,266.16,127.07,79.72,10.52"><roleName>Dr</roleName><forename type="first">Rashmi</forename><surname>Bh</surname></persName>
+							<email>rashmi.bh@christuniversity.in</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Christ University</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,240.24,254.03,47.18,10.52"><forename type="first">Mr</forename><surname>Ram</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">PG Department of Commerce</orgName>
+								<orgName type="institution">St. Claret College</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,290.50,254.03,80.94,10.52"><forename type="first">Kumar</forename><surname>Kuncha</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Business and Management</orgName>
+								<orgName type="laboratory">Research Scholar</orgName>
+								<orgName type="institution">Christ University</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,235.32,317.51,53.13,10.52"><forename type="first">Mr</forename><surname>Manu</surname></persName>
+							<email>manu@claretcollege.edu.in</email>
+							<affiliation key="aff2">
+								<orgName type="department">School of Business and Management</orgName>
+								<orgName type="laboratory">Research Scholar</orgName>
+								<orgName type="institution">Christ University</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,291.57,317.51,84.93,10.52"><forename type="first">Vasudevan</forename><surname>Unni</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Management</orgName>
+								<orgName type="institution">St. Claret College</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,259.44,380.99,92.81,10.52"><roleName>Dr</roleName><forename type="first">Philcy</forename><surname>Antony</surname></persName>
+							<email>philcyantony@jyotinivas.org</email>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Management</orgName>
+								<orgName type="institution">St. Claret College</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,264.84,444.47,82.19,10.52"><roleName>Dr</roleName><forename type="first">Priya</forename><surname>Vinod</surname></persName>
+							<email>priyavinod2541@gmail.com</email>
+							<affiliation key="aff4">
+								<orgName type="department">PG Department of Management</orgName>
+								<orgName type="institution">Jyoti Nivas College Autonomous</orgName>
+								<address>
+									<settlement>Bangalore</settlement>
+									<region>Karnataka</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="2,77.16,79.55,456.92,10.52;2,197.28,95.39,217.20,10.52">UNLEASHING THE EFFICACY OF AI FOR SMART BANKING: A DEMOGRAPHIC SURVEY OF INDIAN PRIVATE BANKS</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">18448135, 20652445</idno>
+					</monogr>
+					<idno type="MD5">6BCE905A51DD154E3E95A0995B076798</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Artificial intelligence</term>
+					<term>Private banks in India</term>
+					<term>Profitability in Banks</term>
+					<term>Kruskal Wallis test</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Artificial Intelligence (AI), sometimes called machine intelligence, is the integration of the human mind into a machine. This is a machine that is smarter than the intelligence of human nature. From Secrets to self-driving cars, the artificial intelligence is rapidly evolving. Artificial intelligence generally has two main ideas. First, it mimics the human brain in how mental processes work, and second, it helps to visualize these processes through machine learning. Fake Financial Advice is for chat machines only. Artificial intelligence has dealt with many sectors, including the banking sector. The main objective of this study was to understand the effects of artificial intelligence in modern banks. This study focuses on the perception of artificial intelligence in the banking sector, how it has transformed banks dramatically, and its impact on human resources. Knowing that human beings have a faulty tendency but the world is changing, and creativity, a lack of knowledge is needed for automation. Much of the work and craftsmanship that has ever been done by humans has now been improved by the use of advanced technology.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Banking as a Service Sector (BaaS) is considered as an end-to-end approach that facilitates fintech companies and other third party organisations to connect with a bank's system employing APIs. This helps organisations build innovative financial services upon the provider bank's regulated infrastructure while enabling open banking services. BaaS is the provision of banking products and services through third-party distributors. Through integrating non-banking businesses with regulated financial infrastructure, BaaS offerings are enabling new, specialized propositions and bringing them to market faster. Banking by far is the most dominant segment of the financial system and plays a pivotal role in the development of a sound economy. A healthy banking system, besides providing necessary architecture for facilitating economic growth, also serves as a strong repository of liquidity. Banks also play a central role in the transmission of monetary policy, one of the government's most important tools for achieving economic growth without inflation. The central bank controls the money supply at the national level, while banks facilitate the flow of money in the markets within which they operate. India is a country of 1.2 billion people, spread across 29 states and seven union territories. There are around 600,000 villages and 640 districts in our country. A vast majority of the population, especially in rural areas, is excluded from the easy access to finance ( Gounasegaran, <ref type="bibr" coords="3,146.37,396.83,122.89,10.52">Kuriakose, &amp; Iyer, 2013 )</ref>. Forty per cent of the households having bank accounts, but only 38 per cent of the 117,200 branches of scheduled commercial banks are working in rural areas. Accessibility of financial services at affordable and appropriate prices has been always a global issue. Hence, an inclusive financial system is required widely not only in India, but has become a policy priority in various countries. Financial access can surely improve the financial condition and living standard of the poor and the deprived section. So, RBI has been continuously stimulating the banking sector to extend the banking network both by setting up of new branches and installation of new ATMs Major advances in computers, software, and the Internet have transformed our society without fail. Today it is difficult to imagine a financial worker without a computer, internet, or cell phone. The pace at which information technology is changing offers tremendous opportunities to expand customers, introduce new products or improve existing ones and increase productivity in the short term. On the other hand, if companies fail to respond to the current wave of information technology, they may soon be overwhelmed by events. In addition to the development of information technology in recent years, the development of artificial intelligence is popular. In short, artificial intelligence refers to computers that have human intelligence capabilities that can achieve high efficiency for the company and their employees. The financial sector has been one of the first to experiment with counterfeit spy technology, mainly due to its high profitability. It is therefore important to consider the role that artificial intelligence can play in the digital transformation of the bank <ref type="bibr" coords="3,202.50,698.39,85.67,10.52" target="#b0">(Bussmann, 2021)</ref>.</p><p>AI is a type of human intelligence that helps to create more intelligent machines that can perform human functions intelligently. Artificial intelligence works like the human brain, enabling it to have better reason and make decisions based on the data it uses. Artificial intelligence now begins in today's markets. It is used in a variety of ways; One of these is the banking sector. The banking industry uses artificial intelligence in a very innovative way that saves a lot of time and money. Banks use statistics to provide accurate results, which in turn helps them to improve customer service and improve sales to maximize profits. Artificial intelligence involves machine learning and in-depth learning that help reduce emotional and cognitive errors. One of the most important functions of the artificial intelligence is to extract important information from a variety of sources and to draw conclusions (Chakraborty, 2017). For example, IPsoft, a leader in Enterprise AI, developed Amelia Humanoid Assistant (Robot). It is the most humane digital intelligence company of that company. At first glance, he indicated that he was in business, wearing white oxford under a blouse, curly hair, and well-dressed. The company values Amelia's ability to learn, participate and improve over time, making it the only artificial intelligence on the market that can fully understand customer needs and intentions. Amelia can teach words and phrases in more than 100 languages. The real benefits of a business include lower operating costs, higher customer satisfaction and increased staff efficiency. When a company acquires Amelia (or more Amelia), it can be positioned to meet the different needs, functions and characteristics of the company -all related to unique business and operational models. Human nature sees, knows, and remembers all human prayers. It can read emotions and patterns in conversations with partners and clients, in any form of communication. It can do the tedious task of thousands of people while supporting the invention and efficiency of property against humanity <ref type="bibr" coords="4,157.18,428.63,79.92,10.52" target="#b7">(Jewandah 2018)</ref>. Artificial Intelligence encompasses the software's ability to acquire and process knowledge without and without human intervention. By looking at the world around us and analysing data automatically, artificial intelligence systems draw conclusions and take action correctly. They learn from past decisions and make timely adjustments based on their realities. Artificial Intelligence as a concept was first introduced at the Dartmouth conference in 19561 and is not new in itself. However, in recent years, a number of advances in information technology have greatly increased the capacity for artificial intelligence: I) The expansion of internet access has led to the production and storage of many digital data. In approximately 10 years, global data access has increased 17 times. Forecasts include a fivefold increase between now and before 2025. Big data, when refined and organized (or big data), is the basis for decision-making based on databases. ii) Computer processing capacity has greatly increased. The default threshold for this, the clover population, has increased by 10 m since the seventies. The speed of central processing units, which further contributes to processing capacity, has increased 6,750 times over the same period. This allows calculators to process data faster and facilitate decision-making. iii) other factors -such as reducing data storage costs, advances in data processing systems or an increase in the number of IT professionals -have increased the efficiency and power of artificial intelligence. Although the cost of a hard drive dropped from about $ 5,000 per gigabyte in 1990 to $ 0.025 today, for example, between 2007 and 2017, the number of IT professionals in the euro area increased by 50%. As access to big data, data analysis technology such as machine learning, and the increasing importance of these devices have led to the rapid development of artificial intelligence language, object recognition and sound, and visualization and problem solving (T. <ref type="bibr" coords="5,423.03,143.03,89.00,10.52" target="#b20">Dhanabalan, 2018)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Literature Review</head><p>For banks, data is relevant to almost every sector, from traditional investment and lending banks to investment and asset management banks. Thus, without human intervention, automatic data management provides banks with significant opportunities to improve speed, accuracy and efficiency. Possible use of artificial intelligence in a bank can be divided into four broad categories: 1) Customer-focused service programs, 2) Office operations, 3) Business and credit card management, and 4) Control Focus. However, today, in general, banks are still experimenting with artificial intelligence technology and have not fully implemented it in their systems. Fake spyware solutions targeting customers and businesses seem to receive more in-depth scrutiny than others: I) Fake Detective will be tested to detect and prevent online bank fraud in real time. Indeed, credit card fraud has become a common form of cybercrime in recent years, fuelled by the rapid growth of online and mobile payments.8 To detect service fraud, counterfeit spy algorithms attract transactions. customer credit card. Compare real-time features with new features and cost and regular use. When AI recognizes risks, it closes the business <ref type="bibr" coords="5,364.20,380.99,75.65,10.52" target="#b2">(Costello, 2020)</ref>. ii) AI is also tested during KYC procedures to verify customer identity. The Fake Intelligence Algorithm analyses user files and evaluates the reliability of the information provided against the network information. When counterfeit spy algorithms detect diversity, red flags are raised and bankers conduct a thorough KYC audit. iii) Another area where banks are experimenting with counterfeit spy technology is chatbots. Chatbots are digital helpers who communicate with clients in writing or voice and try to resolve their questions without the CEO. iv) Banks also detect counterfeit intelligence, for example, analysing information from legal documents or annual reports and filtering key points. AI tools create designs automatically based on data analysis and subsequent experiments to learn from previous errors to improve their accuracy. v) Some modern financial technology tools grow over time that prove counterfeit spy solutions. A good example is robot advice, which provides complete automation of some asset management services and online budgeting tools to help customers make the right decisions instead of spending and saving. As these financial technology solutions mature, they increasingly use technology that automatically scans data and finds patterns. <ref type="bibr" coords="5,72.00,650.75,62.35,10.52" target="#b4">Frost (2019)</ref> in their article "Machine Intelligence Vs. Humanitarian Judgment in the New Economy Business examined how machine-trained machines to imitate human scientists worked in conjunction with trained structures to achieve better economic outcomes. They found that (1) the model, trained to imitate human choice, performed well in model performance, indicating the © ICAS 2022 beginning of a personal sample of human investment that could be identified and emulated; (2) Structures trained to maximize results were more difficult to use than "human design copies" when selecting units from a common use group, suggesting that the data usage used by these researchers ignored some major potential that could have been identified earlier. .; (3) The logical comparison of the two structures suggests that the differences are due in part to human heritage, which systematically emphasizes the "cognitive aspects" of work. Their findings include real knowledge about appointments and prizes and, broadly, how artificial intelligence can help people analyse and evaluate information in the world of constant "reconstruction of information". <ref type="bibr" coords="6,72.00,206.51,56.87,10.52" target="#b10">Lam (2019)</ref> in his research paper "How Artificial Intelligence Transforms the Banking Sector -A Survey of the Four Large Commercial Banks in India" looks at where technology began in banking services and counterfeit intelligence in India. .... Traditional developments in banks and banks are slowly acquiring new technologies such as artificial intelligence, blockchain and online computers, but while banks are still embroiled in a fake spy revolution, human connection is still important. India's banking industry is looking for ways to use artificial intelligence that will enhance banking operations and improve customer service in the near future. Óskarsdottir, (2019) in his study "What artificial intelligence can and cannot do" talks about the role of artificial intelligence in business. He talked about the world of automation and how business is changing with robotics and mechanical engineering. The purpose of this artificial intelligence project is to carefully select A and B and provide the necessary information so that artificial intelligence can understand the relationship of A → B. Creative options A and B have become important in many industries. He is ready to change things. <ref type="bibr" coords="6,72.00,412.79,73.29,10.52" target="#b1">Catalini (2018)</ref> in their study "Improving Portfolio Architecture by Using Artificial Intelligence" are trying to improve the use of artificial intelligence through the mail system (NN) in the real market. This paper is a summary of Markovitz's common theory of the best boundaries to monitor and enhance portfolio growth and promote neuroscience to understand how artificial intelligence can provide better portfolio efficiency and the best economist's understanding of all professional standards. Fuster, ( <ref type="formula" coords="6,117.87,507.95,21.37,10.52">2018</ref>) "Using Artificial Intelligence in Finance" teaches that artificial intelligence now enters the second stage of development, the third in its history, after the technological revolution called in-depth study. Artificial intelligence is used in a variety of systems, as well as in the financial industry. Banks should use human-derived intelligence through processes such as open innovation</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Gaps</head><p>It has been noted from previous research that thee is a lack of awareness among the employees in the banking sector in using AI tools for enhancing performance and better services to the customers. Banking companies in the developed nations and emerging countries are now started to realise the true potential of AI and implement them so as to provide uninterrupted services to the customers, reduce waiting time and enable in enhancing the profitability of the company in a</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Plan</head><p>The basic aspect of the study is to understand the efficacy of AI in the Indian banking sector, for this purpose the researcher has selected private banking companies covering ICICI, HDFC, Axis, Kotak Mahindra, Yes Bank and IDFC First bank. The researchers has chosen nearly 323 respondents. The detailed questionnaire were stated in the appendix section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Objectives</head><p>The main objectives of the study are stated as follows To measure 'the Impact of AI on Profitability' in Private Banking Sector To perform detailed descriptive analysis of demographic factors To apprehend the inferential analysis of Demographic Factors Respondents who has HDFC bank account provided a higher responses with 64% stating that the AI enable in increasing the overall profits of the companies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>© ICAS 2022</head><p>-Measure 'the Impact of AI on Profitability' in Private Banking Sector</p><p>Based on the overall analysis it can be stated that the median sample is 4.5 which is in line between agree and strongly agree, hence stated that the implementation of AI enhances the efficacy on profitability of the companies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>© ICAS 2022</head><p>Based on the overall comparison between the demographic factor and AI on profitability shows that all the variables possess positive and effective responses stating that AI is highly supportive in enhancing the overall profitability of the organisation.</p><p>-Inferential Analysis of Demographic Factors </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="7,72.00,317.51,44.65,10.52;7,72.00,333.47,187.07,10.52;7,276.60,365.63,252.13,10.52;7,276.60,386.39,252.00,10.52;7,276.60,407.03,252.02,10.52;7,276.60,427.79,178.22,10.52;7,276.60,497.51,252.10,10.52;7,276.60,518.27,252.11,10.52;7,276.60,538.91,252.14,10.52;7,276.60,559.67,252.10,10.52;7,276.60,580.31,38.93,10.52;8,79.44,736.45,56.82,9.91;8,276.60,80.03,252.08,10.52;8,276.60,100.67,251.98,10.52;8,276.60,121.43,252.02,10.52;8,276.60,142.07,251.99,10.52;8,276.60,162.83,143.43,10.52;8,276.60,226.91,30.75,10.52;8,325.56,226.91,55.26,10.52;8,399.03,226.91,41.74,10.52;8,459.22,226.91,15.96,10.52;8,493.39,226.91,35.25,10.52;8,276.60,247.67,252.12,10.52;8,276.60,268.31,252.17,10.52;8,276.60,288.95,252.08,10.52;8,276.60,309.71,38.93,10.52;8,276.60,342.35,252.13,10.52;8,276.60,362.99,252.10,10.52;8,276.60,383.75,252.07,10.52;8,276.60,404.39,252.01,10.52;8,276.60,425.15,143.52,10.52;8,276.60,480.23,251.99,10.52;8,276.60,500.87,61.97,10.52;8,353.79,500.87,30.74,10.52;8,399.75,500.87,20.63,10.52;8,435.59,500.87,56.78,10.52;8,507.47,500.87,21.30,10.52;8,276.60,521.63,252.08,10.52;8,276.60,542.27,252.07,10.52;8,276.60,563.03,251.99,10.52;8,276.60,583.67,205.90,10.52;9,79.44,736.45,56.82,9.91;9,276.60,80.03,252.08,10.52;9,276.60,100.67,252.14,10.52;9,276.60,121.43,252.14,10.52;9,276.60,142.07,252.12,10.52;9,276.60,162.83,213.79,10.52;9,276.60,217.91,252.23,10.52;9,276.60,238.67,252.16,10.52;9,276.60,259.31,252.18,10.52;9,276.60,279.95,187.18,10.52;9,276.60,369.35,252.14,10.52;9,276.60,389.99,252.09,10.52;9,276.60,410.75,220.72,10.52"><head>Findings</head><label></label><figDesc>-General implications from Responses From the pareto chart it is noted that nearly 57.6% of the respondents have strongly agreed to the aspect that AI support in enhancing the profitability in Banking companies Based on the bar chart of type of city, it is noted that response average is high in Non metro cities with nearly 57.67% of the population as compared with Metro cities with response rate of 57.14% © ICAS 2022 From the pie chart, individuals who are aged between 56 -65 has mentioned that impact of AI is positive in the banking sector with nearly 100% responses, other age categories has specified the response of more than 50%. can be stated that the male respondents possess better average with 60.86% when compared with female respondents of 53.23% The pie chart based on the marital status shows that the respondents across categories like Single, Married and Divorced has mentioned that the impact of AI is highly useful in increasing profitability of the company The critical analysis of the educational level of the respondents shows that individuals who completed graduation provided better responses of 58.72% stating that AI impacts company profitability whereas individuals who completed post-graduation mentioned only 54.54% © ICAS 2022 Through the demographic variable of annual income of the respondents it is noted that highest responses supporting the implementation of AI on profitability is noted from the respondents who are drawing salary between 11 -15 lakhs. Based on the experience factor of the respondents it is noted that individuals possess experience between 2 -5 years and more than 10 years stated a 100% impact of AI on profitability Through the piechart it can be stated that AI is implemented in the banking sector and enable in enhancing the profitability on the long run.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="10,76.32,91.92,459.36,315.36"><head></head><label></label><figDesc></figDesc><graphic coords="10,76.32,91.92,459.36,315.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="11,103.68,76.08,404.64,303.36"><head></head><label></label><figDesc></figDesc><graphic coords="11,103.68,76.08,404.64,303.36" type="bitmap" /></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Artificial intelligence is a type of artificial intelligence that helps to create intelligent machines capable of performing human functions intelligently. Artificial intelligence acts like the human brain, enabling it to take logical ideas and make decisions based on the data it uses. Artificial intelligence is now starting to appear in today's market. It is used in a variety of ways; One of them is a bank. Banks use artificial intelligence in a very innovative way that saves time and money. Banks use statistics to provide accurate results that help improve customer service and increase sales to maximize profits. Artificial intelligence includes machine learning and in-depth learning, which helps reduce errors in feeling and learning. One of the main functions of artificial intelligence is to gather useful information from a variety of sources and to draw conclusions.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="16,72.00,317.51,467.44,10.52;16,72.00,333.47,341.14,10.52" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="16,396.11,317.51,143.33,10.52;16,72.00,333.47,122.01,10.52">Explainable Machine Learning in Credit Risk Management</title>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Bussmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Giudici</surname></persName>
+			<idno type="ORCID">0000-0002-4198-0127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitri</forename><surname>Marinelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jochen</forename><surname>Papenbrock</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10614-020-10042-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,202.86,333.47,124.82,10.52">Computational Economics</title>
+		<title level="j" type="abbrev">Comput Econ</title>
+		<idno type="ISSN">0927-7099</idno>
+		<idno type="ISSNe">1572-9974</idno>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="203" to="216" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,72.00,349.31,467.44,10.52;16,72.00,365.15,162.99,10.52;16,72.00,380.99,467.65,10.52;16,72.00,396.83,447.26,10.52" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" coord="16,265.15,349.31,274.29,10.52;16,72.00,365.15,162.99,10.52;16,294.53,380.99,184.33,10.52">-tuck.dartmouth.edu Machine intelligence vs. human judgement in new venture finance</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Catalini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Foster</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Nanda</surname></persName>
+		</author>
+		<ptr target="https://www.bankofengland.co.uk/working-paper/2017/machine-learning-at-central-banks" />
+		<editor>Chakraborty, C., &amp; Joseph, A.</editor>
+		<imprint>
+			<date type="published" when="2017">2018. 2017</date>
+		</imprint>
+	</monogr>
+	<note>Machine learning at central banks</note>
+</biblStruct>
+
+<biblStruct coords="16,72.00,412.79,467.35,10.52;16,72.00,428.63,467.37,10.52;16,72.00,444.47,82.83,10.52" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="16,335.91,412.79,203.45,10.52;16,72.00,428.63,273.35,10.52">Machine + man: A field experiment on the role of discretion in augmenting AI-based lending models</title>
+		<author>
+			<persName><forename type="first">Anna</forename><forename type="middle">M</forename><surname>Costello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">K</forename><surname>Down</surname></persName>
+			<idno type="ORCID">0000-0003-3485-2239</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mihir</forename><forename type="middle">N</forename><surname>Mehta</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jacceco.2020.101360</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,353.47,428.63,180.28,10.52">Journal of Accounting and Economics</title>
+		<title level="j" type="abbrev">Journal of Accounting and Economics</title>
+		<idno type="ISSN">0165-4101</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">2-3</biblScope>
+			<biblScope unit="page">101360</biblScope>
+			<date type="published" when="2020-11">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,72.00,460.31,467.31,10.52;16,72.00,476.27,446.02,10.52;16,72.00,492.11,467.25,10.52;16,72.00,507.95,271.83,10.52" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">https://inass.org/wp-content/uploads/2022/05/2022083131-2.pdf</title>
+		<idno type="DOI">10.22266/ijies2022.0831.31</idno>
+		<idno>02.22</idno>
+		<ptr target="www.fsb.org/wpcontent/uploads/P011117.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,72.00,460.31,77.47,10.52">International Journal of Intelligent Engineering and Systems</title>
+		<title level="j" type="abbrev">IJIES</title>
+		<idno type="ISSNe">2185-3118</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2017">2018. 2017</date>
+			<publisher>The Intelligent Networks and Systems Society</publisher>
+		</imprint>
+	</monogr>
+	<note>Artificial Intelligence Powered Banking</note>
+</biblStruct>
+
+<biblStruct coords="16,72.00,523.79,467.50,10.52;16,72.00,539.75,467.45,10.52;16,72.00,555.59,55.96,10.52" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="16,413.68,523.79,125.82,10.52;16,72.00,539.75,173.14,10.52">BigTech and the changing structure of financial intermediation</title>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Frost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonardo</forename><surname>Gambacorta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyun</forename><forename type="middle">Song</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Zbinden</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/epolic/eiaa003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Economic Policy</title>
+		<idno type="ISSN">0266-4658</idno>
+		<idno type="ISSNe">1468-0327</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">100</biblScope>
+			<biblScope unit="page" from="761" to="799" />
+			<date type="published" when="2019-10-01">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">BIS Working Paper No. 779</note>
+</biblStruct>
+
+<biblStruct coords="16,72.00,571.43,467.37,10.52;16,72.00,587.27,467.16,10.52;16,72.00,603.23,183.95,10.52" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="16,437.70,571.43,101.67,10.52;16,72.00,587.27,236.90,10.52">Predictably Unequal? The Effects of Machine Learning on Credit Markets</title>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Fuster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Goldsmith-Pinkham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tarun</forename><surname>Ramadorai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ansgar</forename><surname>Walther</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.3072038</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2018">2018. 12448</date>
+			<publisher>Elsevier BV</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,72.00,619.07,467.42,10.52;16,72.00,634.91,52.89,10.52" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="16,201.02,619.07,226.59,10.52">Artificial Intelligence: The Ultimate Disrupter</title>
+		<author>
+			<persName coords=""><forename type="first">Guy</forename><forename type="middle">A</forename><surname>Messick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,437.24,619.07,96.69,10.52">Credit Union Times</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">38</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,72.00,650.75,467.42,10.52;16,72.00,666.71,467.45,10.52;16,72.00,682.55,61.49,10.52" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="16,175.90,650.75,363.52,10.52;16,72.00,666.71,177.67,10.52">How Artificial Intelligence is changing the banking sector -A case study of top four Commercial Indian Banks</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Jewandah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,261.50,666.71,277.94,10.52;16,72.00,682.55,56.37,10.52">International Journal of Management</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>Technology and Engineering</note>
+</biblStruct>
+
+<biblStruct coords="17,79.44,736.45,56.82,9.91" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">ICAS Committees</title>
+		<author>
+			<persName coords=""><forename type="first">©</forename><surname>Icas</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icas.2006.26</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Autonomic and Autonomous Systems (ICAS&apos;06)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,79.55,467.37,10.52;17,72.00,95.39,421.55,10.52" xml:id="b9">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Kumba</forename><surname>Sennaar</surname></persName>
+		</author>
+		<ptr target="https://www.techemergence.com/ai-inbanking-analysis/" />
+		<title level="m" coord="17,193.41,79.55,276.96,10.52">AI in Banking -An Analysis of 7 Top American Banks</title>
+		<imprint>
+			<date type="published" when="2018">2019. 2018</date>
+		</imprint>
+	</monogr>
+	<note>Accessed on 15.02.22</note>
+</biblStruct>
+
+<biblStruct coords="17,72.00,111.23,467.33,10.52;17,72.00,127.07,467.37,10.52;17,72.00,143.03,91.80,10.52" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="17,239.44,111.23,299.89,10.52;17,72.00,127.07,114.19,10.52">AI-Based Online P2P Lending Risk Assessment On Social Network Data With Missing Value</title>
+		<author>
+			<persName><forename type="first">Lok</forename><forename type="middle">Ting</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shun-Wen</forename><surname>Hsiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bigdata47090.2019.9005950</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,194.71,127.07,295.08,10.52">2019 IEEE International Conference on Big Data (Big Data)</title>
+		<meeting><address><addrLine>Los Angeles, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-12">2019. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,158.87,403.02,10.52" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" coord="17,166.35,158.87,150.67,10.52">Regulators have their eye on AI</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Ludwig</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>American Banker</publisher>
+			<biblScope unit="volume">183</biblScope>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,174.71,467.36,10.52;17,72.00,190.55,467.40,10.52;17,72.00,206.51,104.00,10.52" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="17,230.69,174.71,308.66,10.52;17,72.00,190.55,247.20,10.52">Artificial intelligence and augmented intelligence collaboration: regaining trust and confidence in the financial sector</title>
+		<author>
+			<persName><forename type="first">Alison</forename><surname>Lui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">William</forename><surname>Lamb</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13600834.2018.1488659</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,326.26,190.55,213.14,10.52;17,72.00,206.51,18.21,10.52">Information &amp; Communications Technology Law</title>
+		<title level="j" type="abbrev">Information &amp; Communications Technology Law</title>
+		<idno type="ISSN">1360-0834</idno>
+		<idno type="ISSNe">1469-8404</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="267" to="283" />
+			<date type="published" when="2018-06-25">2018</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,222.35,467.33,10.52;17,72.00,238.19,467.24,10.52;17,72.00,254.03,187.78,10.52" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Crypto-Currencies: Can Investors Rely on them as Investment Avenue?</title>
+		<author>
+			<persName coords=""><forename type="first">Manu</forename><forename type="middle">Vasudevan</forename><surname>Unni</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4100949</idno>
+		<ptr target="http://dx.doi.org/10.2139/ssrn.4100949" />
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<date type="published" when="2022-05-05">May 5, 2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,269.99,467.36,10.52;17,72.00,285.83,467.36,10.52;17,72.00,301.67,224.62,10.52" xml:id="b14">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Swapna</surname></persName>
+		</author>
+		<idno>02.22</idno>
+		<ptr target="https://medium.com/datadriveninvestor/ethics-of-using-ai-in-thefinancial-banking-industry-fa93203" />
+		<title level="m" coord="17,180.98,269.99,353.62,10.52">Ethics of Using Artificial Intelligence in Financial Banking Industry</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">6</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,317.51,467.42,10.52;17,72.00,333.47,94.05,10.52" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="17,182.46,317.51,285.99,10.52">Artificial Intelligence: The Next Frontier of Cyber Warfare?</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">C</forename><surname>Meinert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,470.93,317.51,68.48,10.52;17,72.00,333.47,33.39,10.52">ABA Banking Journal</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">43</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,349.31,467.50,10.52;17,72.00,365.15,59.12,10.52" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="17,176.28,349.31,264.96,10.52">Workforce Diversity Can Help Banks Mitigate AI Bias</title>
+		<author>
+			<persName coords=""><forename type="first">Robin</forename><surname>Nunn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,454.29,349.31,85.21,10.52">American Banker</title>
+		<imprint>
+			<biblScope unit="volume">183</biblScope>
+			<biblScope unit="issue">104</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,380.99,467.35,10.52;17,72.00,396.83,467.27,10.52;17,72.00,412.79,224.06,10.52" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="17,459.70,380.99,79.65,10.52;17,72.00,396.83,467.27,10.52;17,72.00,412.79,40.96,10.52">The value of big data for credit scoring: Enhancing financial inclusion using mobile phone data and social network analytics</title>
+		<author>
+			<persName><forename type="first">María</forename><surname>Óskarsdóttir</surname></persName>
+			<idno type="ORCID">0000-0001-5095-5356</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cristián</forename><surname>Bravo</surname></persName>
+			<idno type="ORCID">0000-0003-1579-1565</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Sarraute</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Vanthienen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bart</forename><surname>Baesens</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.asoc.2018.10.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,120.50,412.79,115.95,10.52">Applied Soft Computing</title>
+		<title level="j" type="abbrev">Applied Soft Computing</title>
+		<idno type="ISSN">1568-4946</idno>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="26" to="39" />
+			<date type="published" when="2019-01">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,428.63,467.28,10.52;17,72.00,444.47,406.62,10.52" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="17,170.48,428.63,368.80,10.52;17,72.00,444.47,209.02,10.52">Chatbots, Robo Advisers, &amp; AI: Technologies presage an enhanced member experience, improved sales, and lower costs</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Sarvady</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,288.51,444.47,110.59,10.52">Credit Union Magazine</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="18" to="22" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,460.31,467.23,10.52;17,72.00,476.27,140.78,10.52" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="17,163.33,460.31,278.47,10.52">Teaching an Algorithm to Understand Right and Wrong</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Satell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,452.65,460.31,86.58,10.52;17,72.00,476.27,112.16,10.52">Harvard Business Review Digital Articles</title>
+		<imprint>
+			<biblScope unit="page" from="2" to="5" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,492.11,467.42,10.52;17,72.00,507.95,467.41,10.52;17,72.00,523.79,178.37,10.52" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="17,272.32,492.11,267.10,10.52;17,72.00,507.95,213.91,10.52">TRANSFORMING INDIAN INDUSTRIES THROUGH ARTIFICIAL INTELLIGENCE AND ROBOTICS IN INDUSTRY 4.0</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Dhanabalan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sathish</surname></persName>
+		</author>
+		<idno type="DOI">10.56726/irjmets45102</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,296.46,507.95,242.95,10.52;17,72.00,523.79,74.98,10.52">International Research Journal of Modernization in Engineering Technology and Science</title>
+		<title level="j" type="abbrev">IRJMETS</title>
+		<idno type="ISSNe">2582-5208</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="835" to="845" />
+			<date type="published" when="2018">2018</date>
+			<publisher>International Research Journal of Modernization in Engineering Technology and Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,72.00,539.75,467.29,10.52;17,72.00,555.59,321.62,10.52" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="17,242.93,539.75,296.36,10.52;17,72.00,555.59,39.72,10.52">Crypto-Currencies: Can Investors Rely on them as Investment Avenue?</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">V</forename><surname>Unni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Rudresh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,120.39,555.59,214.14,10.52">Management Journal for Advanced Research</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="6" to="14" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

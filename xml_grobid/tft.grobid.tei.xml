@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,155.86,87.37,225.11,13.68;1,38.36,164.61,396.85,13.68;1,38.36,181.85,143.72,13.68">Temporal Fusion Transformers for interpretable multi-horizon time series forecasting</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Elsevier BV</publisher>
+				<availability status="unknown"><p>Copyright Elsevier BV</p>
+				</availability>
+				<date type="published" when="2021-10">2021-10</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,38.36,205.15,51.22,10.74"><forename type="first">Bryan</forename><surname>Lim</surname></persName>
+							<email>blim@robots.ox.ac.uk</email>
+							<idno type="ORCID">0000-0003-2779-4122</idno>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Oxford</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,113.32,205.15,70.77,10.74"><forename type="first">Sercan</forename><forename type="middle">Ö</forename><surname>Arık</surname></persName>
+							<email>soarik@google.com</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Google Cloud AI</orgName>
+								<address>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,195.96,205.15,64.30,10.74"><forename type="first">Nicolas</forename><surname>Loeff</surname></persName>
+							<email>nloeff@google.com</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Google Cloud AI</orgName>
+								<address>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,272.13,205.15,68.30,10.74"><forename type="first">Tomas</forename><surname>Pfister</surname></persName>
+							<email>tpfister@google.com</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Google Cloud AI</orgName>
+								<address>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,155.86,87.37,225.11,13.68;1,38.36,164.61,396.85,13.68;1,38.36,181.85,143.72,13.68">Temporal Fusion Transformers for interpretable multi-horizon time series forecasting</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Forecasting</title>
+						<title level="j" type="abbrev">International Journal of Forecasting</title>
+						<idno type="ISSN">0169-2070</idno>
+						<imprint>
+							<publisher>Elsevier BV</publisher>
+							<biblScope unit="volume">37</biblScope>
+							<biblScope unit="issue">4</biblScope>
+							<biblScope unit="page" from="1748" to="1764"/>
+							<date type="published" when="2021-10" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">DF3C041DAF1F44917AA21BFB425CAFE6</idno>
+					<idno type="DOI">10.1016/j.ijforecast.2021.03.012</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:53+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Deep learning Interpretability Time series Multi-horizon forecasting Attention mechanisms Explainable AI</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Multi-horizon forecasting often contains a complex mix of inputs -including static (i.e. time-invariant) covariates, known future inputs, and other exogenous time series that are only observed in the past -without any prior information on how they interact with the target. Several deep learning methods have been proposed, but they are typically 'black-box' models that do not shed light on how they use the full range of inputs present in practical scenarios. In this paper, we introduce the Temporal Fusion Transformer (TFT) -a novel attention-based architecture that combines high-performance multi-horizon forecasting with interpretable insights into temporal dynamics. To learn temporal relationships at different scales, TFT uses recurrent layers for local processing and interpretable self-attention layers for long-term dependencies. TFT utilizes specialized components to select relevant features and a series of gating layers to suppress unnecessary components, enabling high performance in a wide range of scenarios. On a variety of real-world datasets, we demonstrate significant performance improvements over existing benchmarks, and highlight three practical interpretability use cases of TFT.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="544.252" lry="742.677"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Multi-horizon forecasting, i.e. the prediction of variables-of-interest at multiple future time steps, is a crucial problem within time series machine learning. In contrast to one-step-ahead predictions, multi-horizon forecasts provide users with access to estimates across the entire path, allowing them to optimize their actions at multiple steps in the future (e.g. retailers optimizing the inventory for the entire upcoming season, or clinicians optimizing a treatment plan for a patient). Multi-horizon forecasting has many impactful real-world applications models <ref type="bibr" coords="2,68.15,270.28,110.97,8.11" target="#b0">(Alaa &amp; van der Schaar, 2019;</ref><ref type="bibr" coords="2,181.06,270.28,79.12,8.11;2,38.36,280.63,96.54,8.11" target="#b28">Makridakis, Spiliotis, &amp; Assimakopoulos, 2020;</ref><ref type="bibr" coords="2,137.18,280.63,93.68,8.11" target="#b31">Rangapuram et al., 2018)</ref>. While many architectures have focused on variants of recurrent neural network (RNN) architectures <ref type="bibr" coords="2,183.23,301.33,76.95,8.11;2,38.36,311.68,22.11,8.11" target="#b31">(Rangapuram et al., 2018;</ref><ref type="bibr" coords="2,63.50,311.68,196.68,8.11" target="#b33">Salinas, Flunkert, Gasthaus, &amp; Januschowski, 2019;</ref><ref type="bibr" coords="2,38.36,322.02,67.56,8.11" target="#b39">Wen et al., 2017)</ref>, recent improvements have also used attention-based methods to enhance the selection of relevant time steps in the past <ref type="bibr" coords="2,149.14,342.72,65.00,8.11" target="#b14">(Fan et al., 2019)</ref> -including transformer-based models <ref type="bibr" coords="2,141.38,353.07,53.79,8.11" target="#b25">(Li et al., 2019)</ref>. However, these often fail to consider the different types of inputs commonly present in multi-horizon forecasting, and either assume that all exogenous inputs are known into the future <ref type="bibr" coords="2,65.59,394.46,60.90,8.11" target="#b25">(Li et al., 2019;</ref><ref type="bibr" coords="2,130.14,394.46,99.74,8.11" target="#b31">Rangapuram et al., 2018;</ref><ref type="bibr" coords="2,233.54,394.46,26.63,8.11;2,38.36,404.81,48.54,8.11" target="#b33">Salinas et al., 2019)</ref> -a common problem with autoregressive models -or neglect important static covariates <ref type="bibr" coords="2,239.09,415.16,21.09,8.11;2,38.36,425.51,46.09,8.11" target="#b39">(Wen et al., 2017)</ref> -which are simply concatenated with other time-dependent features at each step. Many recent improvements in time series models have resulted from the alignment of architectures with unique data characteristics <ref type="bibr" coords="2,72.92,466.90,187.25,8.11" target="#b23">(Koutník, Greff, Gomez, &amp; Schmidhuber, 2014;</ref><ref type="bibr" coords="2,38.36,477.25,65.01,8.11" target="#b30">Neil et al., 2016)</ref>. We argue and demonstrate that similar performance gains can also be reaped by designing networks with suitable inductive biases for multi-horizon forecasting.</p><p>In addition to not considering the heterogeneity of common multi-horizon forecasting inputs, most current architectures are 'black-box' models where forecasts are controlled by complex nonlinear interactions between many parameters. This makes it difficult to explain how models arrive at their predictions, and in turn, makes it challenging for users to trust a model's outputs and model builders to debug it. Unfortunately, commonly used explainability methods for DNNs are not well suited for applying to time series. In their conventional form, post hoc methods (e.g. LIME <ref type="bibr" coords="2,158.15,622.12,83.53,8.11" target="#b32">(Ribeiro et al., 2016)</ref> and SHAP <ref type="bibr" coords="2,60.99,632.47,82.46,8.11" target="#b27">(Lundberg &amp; Lee, 2017</ref>)) do not consider the time ordering of input features. For example, for LIME, surrogate models are independently constructed for each data point, and for SHAP, features are considered independently for neighboring time steps. Such post hoc approaches would lead to poor explanation quality as dependencies between timesteps are typically significant in time series. On the other hand, some attention-based architectures are proposed with inherent interpretability for sequential data, primarily language or speech -such as the Transformer architecture <ref type="bibr" coords="2,333.66,97.50,172.24,8.11;2,284.08,107.98,144.71,8.11">(Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, &amp; Polosukhin, 2017)</ref>. The fundamental caveat to apply them is that multi-horizon forecasting includes many different types of input features, as opposed to language or speech. In their conventional form, these architectures can provide insights into relevant time steps for multi-horizon forecasting, but they cannot distinguish the importance of different features at a given timestep. Overall, in addition to the need for new methods to tackle the heterogeneity of data in multi-horizon forecasting for high performance, new methods are also needed to render these forecasts interpretable, given the needs of the use cases.</p><p>In this paper, we propose the Temporal Fusion Transformer (TFT) -an attention-based DNN architecture for multi-horizon forecasting that achieves high performance while enabling new forms of interpretability. To obtain significant performance improvements over state-of-theart benchmarks, we introduce multiple novel ideas to align the architecture with the full range of potential inputs and temporal relationships common to multi-horizon forecasting -specifically incorporating (1) static covariate encoders which encode context vectors for use in other parts of the network, (2) gating mechanisms throughout and sample-dependent variable selection to minimize the contributions of irrelevant inputs, (3) a sequence-tosequence layer to locally process known and observed inputs, and (4) a temporal self-attention decoder to learn any long-term dependencies present within the dataset. The use of these specialized components also facilitates interpretability; in particular, we show that TFT enables three valuable interpretability use cases: helping users identify (i) globally-important variables for the prediction problem, (ii) persistent temporal patterns, and (iii) significant events. On a variety of real-world datasets, we demonstrate how TFT can be practically applied, as well as the insights and benefits it provides.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related work</head><p>DNNs for Multi-horizon Forecasting: Similarly to traditional multi-horizon forecasting methods <ref type="bibr" coords="2,459.96,527.11,45.94,8.11;2,284.08,537.58,96.87,8.11" target="#b29">(Marcellino, Stock, &amp; Watson, 2006;</ref><ref type="bibr" coords="2,385.94,537.58,119.96,8.11;2,284.08,548.06,20.16,8.11" target="#b35">Taieb, Sorjamaa, &amp; Bontempi, 2010)</ref>, recent deep learning methods can be categorized into iterated approaches using autoregressive models <ref type="bibr" coords="2,496.21,558.53,9.69,8.11;2,284.08,569.00,45.39,8.11" target="#b25">(Li et al., 2019;</ref><ref type="bibr" coords="2,332.06,569.00,96.51,8.11" target="#b31">Rangapuram et al., 2018;</ref><ref type="bibr" coords="2,431.15,569.00,74.75,8.11" target="#b33">Salinas et al., 2019)</ref> or direct methods based on sequence-to-sequence models <ref type="bibr" coords="2,297.38,589.95,65.12,8.11" target="#b14">(Fan et al., 2019;</ref><ref type="bibr" coords="2,365.26,589.95,64.59,8.11" target="#b39">Wen et al., 2017)</ref>.</p><p>Iterated approaches utilize one-step-ahead prediction models, with multi-step predictions obtained by recursively feeding predictions into future inputs. Approaches with Long Short-term Memory (LSTM) <ref type="bibr" coords="2,451.24,631.85,54.66,8.11;2,284.08,642.32,77.29,8.11" target="#b20">(Hochreiter &amp; Schmidhuber, 1997)</ref> networks have been considered, such as Deep AR <ref type="bibr" coords="2,337.03,652.79,84.81,8.11" target="#b33">(Salinas et al., 2019)</ref> which uses stacked LSTM layers to generate parameters of one-step-ahead Gaussian predictive distributions. Deep State-Space Models (DSSM) <ref type="bibr" coords="2,332.65,684.21,101.76,8.11" target="#b31">(Rangapuram et al., 2018</ref>) adopt a similar approach, utilizing LSTMs to generate parameters of a predefined linear state-space model with predictive distributions produced via Kalman filtering -with extensions for multivariate time series data in <ref type="bibr" coords="3,212.25,86.52,47.93,8.11;3,38.36,96.83,23.37,8.11" target="#b38">Wang et al. (2019)</ref>. More recently, Transformer-based architectures have been explored in <ref type="bibr" coords="3,132.21,107.13,58.05,8.11" target="#b25">Li et al. (2019)</ref>, which proposes the use of convolutional layers for local processing and a sparse attention mechanism to increase the size of the receptive field during forecasting. Despite their simplicity, iterative methods rely on the assumption that the values of all variables excluding the target are known at forecast time -such that only the target needs to be recursively fed into future inputs. However, in many practical scenarios, numerous useful time-varying inputs exist, with many unknown in advance. Their straightforward use is hence limited for iterative approaches. TFT, on the other hand, explicitly accounts for the diversity of inputsnaturally handling static covariates and (past-observed and future-known) time-varying inputs.</p><p>In contrast, direct methods are trained to explicitly generate forecasts for multiple predefined horizons at each time step. Their architectures typically rely on sequence-to-sequence models, e.g. LSTM encoders to summarize past inputs, and a variety of methods to generate future predictions. The Multi-horizon Quantile Recurrent Forecaster (MQRNN) <ref type="bibr" coords="3,119.64,313.23,68.43,8.11" target="#b39">(Wen et al., 2017)</ref> uses LSTM or convolutional encoders to generate context vectors which are fed into multi-layer perceptrons (MLPs) for each horizon. In <ref type="bibr" coords="3,48.29,344.15,62.07,8.11" target="#b14">Fan et al. (2019)</ref> a multi-modal attention mechanism is used with LSTM encoders to construct context vectors for a bi-directional LSTM decoder. Despite performing better than LSTM-based iterative methods, interpretability remains challenging for such standard direct methods. In contrast, we show that by interpreting attention patterns, TFT can provide insightful explanations about temporal dynamics, and do so while maintaining state-of-the-art performance on a variety of datasets.</p><p>Time Series Interpretability with Attention: Attention mechanisms are used in translation <ref type="bibr" coords="3,200.11,447.20,60.07,8.11;3,38.36,457.50,20.16,8.11" target="#b36">(Vaswani et al., 2017)</ref>, image classification <ref type="bibr" coords="3,147.08,457.50,113.09,8.11;3,38.36,467.81,117.01,8.11">(Wang, Jiang, Qian, Yang, Li, Zhang, Wang, &amp; Tang, 2017)</ref> or tabular learning <ref type="bibr" coords="3,241.14,467.81,19.03,8.11;3,38.36,478.11,61.88,8.11">(Arik &amp; Pfister, 2019)</ref> to identify salient portions of input for each instance using the magnitude of attention weights. Recently, they have been adapted for time series with interpretability motivations <ref type="bibr" coords="3,147.16,509.03,113.02,8.11" target="#b0">(Alaa &amp; van der Schaar, 2019;</ref><ref type="bibr" coords="3,38.36,519.33,65.46,8.11" target="#b7">Choi et al., 2016;</ref><ref type="bibr" coords="3,106.50,519.33,52.93,8.11" target="#b25">Li et al., 2019)</ref>, using LSTM-based <ref type="bibr" coords="3,238.53,519.33,21.64,8.11;3,38.36,529.64,48.09,8.11" target="#b34">(Song et al., 2018)</ref> and transformer-based <ref type="bibr" coords="3,183.57,529.64,61.64,8.11" target="#b25">(Li et al., 2019)</ref> architectures. However, this was done without considering the importance of static covariates (as the above methods blend variables at each input). TFT alleviates this by using separate encoder-decoder attention for static features at each time step on top of the self-attention to determine the contribution time-varying inputs.</p><p>Instance-wise Variable Importance with DNNs: Instance (i.e. sample)-wise variable importance can be obtained with post-hoc explanation methods <ref type="bibr" coords="3,211.45,622.38,48.72,8.11;3,38.36,632.69,39.26,8.11" target="#b27">(Lundberg &amp; Lee, 2017;</ref><ref type="bibr" coords="3,79.97,632.69,74.63,8.11" target="#b32">Ribeiro et al., 2016;</ref><ref type="bibr" coords="3,156.95,632.69,103.22,8.11" target="#b40">Yoon, Arik, &amp; Pfister, 2019)</ref> and inherently interpretable models <ref type="bibr" coords="3,187.11,642.99,73.07,8.11" target="#b7">(Choi et al., 2016;</ref><ref type="bibr" coords="3,38.36,653.30,134.19,8.11" target="#b18">Guo, Lin, &amp; Antulov-Fantulin, 2019)</ref>. Post-hoc explanation methods, e.g. LIME <ref type="bibr" coords="3,113.87,663.60,76.92,8.11" target="#b32">(Ribeiro et al., 2016)</ref>, SHAP <ref type="bibr" coords="3,220.99,663.60,39.19,8.11;3,38.36,673.91,52.41,8.11" target="#b27">(Lundberg &amp; Lee, 2017)</ref> and RL-LIM <ref type="bibr" coords="3,146.53,673.91,75.29,8.11" target="#b40">(Yoon et al., 2019)</ref>, are applied on pre-trained black-box models and often based on distilling into a surrogate interpretable model, or decomposing into feature attributions. They are not designed to take into account the time ordering of inputs, limiting their use for complex time series data. Inherently interpretable modeling approaches build components for feature selection directly into the architecture. For time series forecasting specifically, they are based on explicitly quantifying time-dependent variable contributions. For example, Interpretable Multi-Variable LSTMs <ref type="bibr" coords="3,462.57,137.00,43.33,8.11;3,284.08,147.17,22.26,8.11" target="#b18">(Guo et al., 2019)</ref> partitions the hidden state such that each variable contributes uniquely to its own memory segment, and weights memory segments to determine variable contributions. Methods combining temporal importance and variable selection have also been considered in <ref type="bibr" coords="3,488.70,187.87,17.20,8.11;3,284.08,198.04,44.11,8.11" target="#b7">Choi et al. (2016)</ref>, which computes a single contribution coefficient based on attention weights from each. However, in addition to the shortcoming of modeling only one-stepahead forecasts, existing methods also focus on instancespecific (i.e. sample-specific) interpretations of attention weights -without providing insights into global temporal dynamics. In contrast, the use cases in Section 7 demonstrate that TFT is able to analyze global temporal relationships and allows users to interpret global behaviors of the model on the whole dataset -specifically in the identification of any persistent patterns (e.g. seasonality or lag effects) and regimes present.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Multi-horizon forecasting</head><p>Let there be I unique entities in a given time series dataset -such as different stores in retail or patients in healthcare. Each entity i is associated with a set of static covariates s i ∈ R ms , as well as inputs χ i,t ∈ R mχ and scalar targets y i,t ∈ R at each time-step t ∈ [0, T i ].</p><p>Time-dependent input features are subdivided into two</p><formula xml:id="formula_0" coords="3,284.08,408.19,221.32,13.99">categories χ i,t = [ z T i,t , x T i,t ] T -observed inputs z i,t ∈ R (mz )</formula><p>which can only be measured at each step and are unknown beforehand, and known inputs x i,t ∈ R mx which can be predetermined (e.g. the day-of-week at time t).</p><p>In many scenarios, the provision for prediction intervals can be useful for optimizing decisions and risk management by yielding an indication of likely best and worst-case values that the target can take. As such, we adopt quantile regression to our multi-horizon forecasting setting (e.g. outputting the 10th, 50th and 90th percentiles at each time step). Each quantile forecast takes the form:</p><formula xml:id="formula_1" coords="3,284.69,537.60,221.20,10.71">ŷi (q, t, τ ) = f q ( τ , y i,t-k:t , z i,t-k:t , x i,t-k:t+τ , s i ) ,<label>(1)</label></formula><p>where ŷi,t+τ (q, t, τ ) is the predicted qth sample quantile of the τ -step-ahead forecast at time t, and f q (.) is a prediction model. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Model architecture</head><p>We design TFT to use canonical components to efficiently build feature representations for each input type (i.e. static, known, observed inputs) for high forecasting performance on a wide range of problems. The major constituents of TFT are: 1. Gating mechanisms to skip over any unused components of the architecture, providing adaptive depth and network complexity to accommodate a wide range of datasets and scenarios. 2. Variable selection networks to select relevant input variables at each time step. 3. Static covariate encoders to integrate static features into the network, through the encoding of context vectors to condition temporal dynamics. 4. Temporal processing to learn both long-and shortterm temporal relationships from both observed and known time-varying inputs. A sequence-to-sequence layer is employed for local processing, whereas longterm dependencies are captured using a novel interpretable multi-head attention block. 5. Prediction intervals via quantile forecasts to determine the range of likely target values at each prediction horizon. Fig. <ref type="figure" coords="4,67.20,593.64,4.80,8.11">2</ref> shows the high-level architecture of Temporal Fusion Transformer (TFT), with individual components described in detail in the subsequent sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Gating mechanisms</head><p>The precise relationship between exogenous inputs and targets is often unknown in advance, making it difficult to anticipate which variables are relevant. Moreover, it is difficult to determine the extent of required non-linear processing, and there may be instances where simpler models can be beneficial -e.g. when datasets are small or noisy. With the motivation of giving the model the flexibility to apply non-linear processing only where needed, we propose Gated Residual Network (GRN) as shown in Fig. <ref type="figure" coords="4,338.37,390.24,4.80,8.11">2</ref> as a building block of TFT. The GRN takes in a primary input a and an optional context vector c and yields:</p><formula xml:id="formula_2" coords="4,284.08,425.91,157.23,11.48">GRN ω (a, c) = LayerNorm ( a + GLU ω (η 1 )</formula><p>) ,</p><p>(2)</p><formula xml:id="formula_3" coords="4,320.00,442.32,185.90,10.43">η 1 = W 1,ω η 2 + b 1,ω ,<label>(3)</label></formula><formula xml:id="formula_4" coords="4,320.00,456.36,185.90,11.49">η 2 = ELU ( W 2,ω a + W 3,ω c + b 2,ω ) ,<label>(4)</label></formula><p>where ELU is the Exponential Linear Unit activation function <ref type="bibr" coords="4,304.54,484.77,168.79,8.11" target="#b8">(Clevert, Unterthiner, &amp; Hochreiter, 2016)</ref>, <ref type="bibr" coords="4,437.73,505.58,68.17,8.11;4,284.08,515.99,23.37,8.11" target="#b24">Kiros, and Hinton (2016)</ref>, and ω is an index to denote weight sharing.</p><formula xml:id="formula_5" coords="4,284.08,484.10,221.82,29.59">η 1 ∈ R d model , η 2 ∈ R d model are intermediate layers, LayerNorm is standard layer normalization of Lei Ba,</formula><p>When W 2,ω a + W 3,ω c + b 2,ω ≫ 0, the ELU activation would act as an identity function and when W 2,ω a + W 3,ω c + b 2,ω ≪ 0, the ELU activation would generate a constant output, resulting in linear layer behavior. We use component gating layers based on Gated Linear Units (GLUs) <ref type="bibr" coords="4,312.96,578.43,149.52,8.11" target="#b12">(Dauphin, Fan, Auli, &amp; Grangier, 2017)</ref> to provide the flexibility to suppress any parts of the architecture that are not required for a given dataset. Letting γ ∈ R d model be the input, the GLU then takes the form:</p><formula xml:id="formula_6" coords="4,284.08,625.57,221.81,10.07">GLU ω (γ) = σ (W 4,ω γ + b 4,ω ) ⊙ (W 5,ω γ + b 5,ω ),<label>(5)</label></formula><p>where σ (.) is the sigmoid activation function,</p><formula xml:id="formula_7" coords="4,284.08,642.43,221.81,19.55">W (.) ∈ R d model ×d model , b (.) ∈ R d model</formula><p>are the weights and biases, ⊙</p><p>is the element-wise Hadamard product, and d model is the hidden state size (common across TFT). GLU allows TFT to control the extent to which the GRN contributes to the original input a -potentially skipping over the layer entirely if necessary as the GLU outputs could be all close to 0 in order to suppress the nonlinear contribution. For instances without a context vector, the GRN simply treats the contex input as zero -i.e. c = 0 in Eq. ( <ref type="formula" coords="5,220.65,98.81,3.22,8.11" target="#formula_4">4</ref>). During training, dropout is applied before the gating layer and layer normalization -i.e. to η 1 in Eq. (3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Variable selection networks</head><p>While multiple variables may be available, their relevance and specific contribution to the output are typically unknown. TFT is designed to provide instancewise variable selection through the use of variable selection networks applied to both static covariates and time-dependent covariates. Beyond providing insights into which variables are most significant for the prediction problem, variable selection also allows TFT to remove any unnecessary noisy inputs which could negatively impact performance. Most real-world time series datasets contain features with less predictive content, thus variable selection can greatly help model performance via utilization of learning capacity only on the most salient ones.</p><p>We use entity embeddings <ref type="bibr" coords="5,157.98,319.90,97.73,8.11" target="#b16">(Gal &amp; Ghahramani, 2016</ref>) for categorical variables as feature representations, and linear transformations for continuous variables -transforming each input variable into a (d model )-dimensional vector which matches the dimensions in subsequent layers for skip connections. All static, past and future inputs make use of separate variable selection networks with distinct weights (as denoted by different colors in the main architecture diagram of Fig. <ref type="figure" coords="5,169.01,406.30,3.27,8.11">2</ref>). Without loss of generality, we present the variable selection network for past inputs below -noting that those for other inputs take the same form.</p><p>Let ξ (j)  t ∈ R d model denote the transformed input of the jth variable at time t, with</p><formula xml:id="formula_8" coords="5,141.44,460.00,84.88,15.11">Ξ t = [ ξ (1) T t , . . . , ξ (mχ ) T t</formula><p>] T being the flattened vector of all past inputs at time t. Variable selection weights are generated by feeding both Ξ t and an external context vector c s through a GRN, followed by a Softmax layer:</p><formula xml:id="formula_9" coords="5,38.36,526.04,221.81,11.12">v χt = Softmax ( GRN vχ (Ξ t , c s ) ) ,<label>(6)</label></formula><p>where v χt ∈ R mχ is a vector of variable selection weights, and c s is obtained from a static covariate encoder (see Section 4.3). For static variables, we note that the context vector c s is omitted -given that it already has access to static information. At each time step, an additional layer of non-linear processing is employed by feeding each ξ (j)   t through its own GRN:</p><formula xml:id="formula_10" coords="5,38.92,634.10,221.25,14.78">ξ(j) t = GRN ξ (j) ( ξ (j) t ) ,<label>(7)</label></formula><p>where ξ(j)</p><p>t is the processed feature vector for variable j. We note that each variable has its own GRN ξ (j) , with weights shared across all time steps t. Processed features are then weighted by their variable selection weights and combined:</p><formula xml:id="formula_11" coords="5,284.64,78.04,221.25,30.33">ξt = mχ ∑ j=1 v (j) χt ξ(j) t ,<label>(8)</label></formula><p>where v (j)  χt is the jth element of vector v χt .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Static covariate encoders</head><p>In contrast with other time series forecasting architectures, the TFT is carefully designed to integrate information from static metadata, using separate GRN encoders to produce four different context vectors, c s , c e , c c , and c h . These contect vectors are wired into various locations in the temporal fusion decoder (Section 4.5) where static variables play an important role in processing. Specifically, this includes contexts for (1) temporal variable selection (c s ), (2) local processing of temporal features (c c , c h ), and (3) enriching of temporal features with static information (c e ). As an example, taking ζ to be the output of the static variable selection network, contexts for temporal variable selection would be encoded according to c s = GRN cs (ζ).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Interpretable multi-head attention</head><p>The TFT employs a self-attention mechanism to learn long-term relationships across different time steps, which we modify from multi-head attention in transformerbased architectures <ref type="bibr" coords="5,362.26,364.48,58.89,8.11" target="#b25">(Li et al., 2019;</ref><ref type="bibr" coords="5,424.14,364.48,81.76,8.11" target="#b36">Vaswani et al., 2017)</ref> to enhance explainability. In general, attention mechanisms scale values V ∈ R N×d V based on relationships between keys K ∈ R N×dattn and queries Q ∈ R N×dattn as below:</p><formula xml:id="formula_12" coords="5,284.08,421.34,221.81,9.36">Attention(Q , K , V ) = A(Q , K )V , (9)</formula><p>where A() is a normalization function, and N is the number of time steps feeding into the attention layer (i.e. k + τ max ). A common choice is scaled dot-product attention <ref type="bibr" coords="5,284.08,469.17,82.86,8.11" target="#b36">(Vaswani et al., 2017)</ref>:</p><formula xml:id="formula_13" coords="5,284.08,483.36,217.88,11.80">A(Q , K ) = Softmax(Q K T / √ d attn ). (<label>10</label></formula><formula xml:id="formula_14" coords="5,501.97,486.17,3.93,8.11">)</formula><p>To improve the learning capacity of the standard attention mechanism, multi-head attention is proposed in <ref type="bibr" coords="5,284.08,522.99,81.45,8.11" target="#b36">Vaswani et al. (2017)</ref>, employing different heads for different representation subspaces:</p><formula xml:id="formula_15" coords="5,284.08,549.15,217.88,10.88">MultiHead(Q , K , V ) = [H 1 , . . . , H m H ] W H , (<label>11</label></formula><formula xml:id="formula_16" coords="5,501.97,549.81,3.93,8.11">)</formula><formula xml:id="formula_17" coords="5,289.12,562.30,216.78,13.11">H h = Attention(Q W (h) Q , K W (h) K , V W (h) V ),<label>(12)</label></formula><p>where </p><formula xml:id="formula_18" coords="5,284.08,580.92,221.81,22.86">W (h) K ∈ R d model ×dattn , W (h) Q ∈ R d model ×dattn , W (h) V ∈ R d model ×d V are</formula><formula xml:id="formula_19" coords="5,284.08,604.14,221.81,20.83">W H ∈ R (m H •d V )×d model linearly combines out- puts concatenated from all heads H h .</formula><p>Given that different values are used in each head, attention weights alone would not be indicative of a particular feature's importance. As such, we modify multihead attention to share values in each head, and employ additive aggregation of all heads:</p><formula xml:id="formula_20" coords="5,284.08,683.55,221.82,9.65">InterpretableMultiHead(Q , K , V ) = H W H , (13) H = Ã(Q , K ) V W V , (14) = { 1 m H m H ∑ h=1 A ( Q W (h) Q , K W (h) K ) } V W V , (15) = 1 m H m H ∑ h=1 Attention(Q W (h) Q , K W (h) K , V W V ),<label>(16)</label></formula><p>where W V ∈ R d model ×d V are value weights shared across all heads, and W H ∈ R dattn×d model is used for final linear mapping.</p><p>Comparing Eqs. ( <ref type="formula" coords="6,118.36,168.43,3.64,8.11">9</ref>) and ( <ref type="formula" coords="6,150.62,168.43,7.07,8.11">14</ref>), we can see that the final output of interpretable multi-head attention bears a strong resemblance to a single attention layer -the key difference lying in the methodology to generate attention weights Ã(Q , K ). From Eq. ( <ref type="formula" coords="6,165.41,210.26,7.07,8.11">15</ref>), each head can learn</p><formula xml:id="formula_21" coords="6,38.36,218.37,183.47,14.94">different temporal patterns A ( Q W (h) Q , K W (h) K )</formula><p>, while attending to a common set of input features V -which can be interpreted as a simple ensemble over attention weights into combined matrix Ã(Q , K ) in Eq. ( <ref type="formula" coords="6,222.10,256.66,7.07,8.11">14</ref>). Compared to A(Q , K ) in Eq. ( <ref type="formula" coords="6,135.66,267.23,7.07,8.11" target="#formula_13">10</ref>), Ã(Q , K ) yields an increased representation capacity in an efficient way, while still allowing simple interpretability studies to be performed by analyzing a single set of attention weights.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.">Temporal fusion decoder</head><p>The temporal fusion decoder uses the series of layers described below to learn temporal relationships present in the dataset:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.1.">Locality enhancement with sequence-to-sequence layer</head><p>In time series data, points of significance are often identified in relation to their surrounding values -such as anomalies, change-points, or cyclical patterns. Leveraging local context, through the construction of features that utilize pattern information on top of point-wise values, can thus lead to performance improvements in attentionbased architectures. For instance, <ref type="bibr" coords="6,172.55,465.02,58.49,8.11" target="#b25">Li et al. (2019)</ref> adopts a single convolutional layer for locality enhancementextracting local patterns using the same filter across all time. However, this might not be suitable for cases when observed inputs exist, due to the differing number of past and future inputs.</p><p>As such, we propose the application of a sequenceto-sequence layer to naturally handle these differences -feeding ξt-k:t into the encoder and ξt+1:t+τmax into the decoder. This then generates a set of uniform temporal features which serve as inputs into the temporal fusion decoder itself, denoted by φ(t, n) ∈ {φ(t, -k), . . . , φ(t, τ max )} with n being a position index. Inspired by its success in canonical sequential encoding problems, we consider the use of an LSTM encoder-decoder, a commonly-used building block in other multi-horizon forecasting architectures <ref type="bibr" coords="6,139.87,632.12,70.50,8.11" target="#b14">(Fan et al., 2019;</ref><ref type="bibr" coords="6,214.93,632.12,45.25,8.11;6,38.36,642.54,20.16,8.11" target="#b39">Wen et al., 2017)</ref>, although other designs can potentially be adopted as well. This also serves as a replacement for standard positional encoding, providing an appropriate inductive bias for the time ordering of the inputs. Moreover, to allow static metadata to influence local processing, we use the c c , c h context vectors from the static covariate encoders to initialize the cell state and hidden state respectively for the first LSTM in the layer. We also employ a gated skip connection over this layer:</p><formula xml:id="formula_22" coords="6,285.39,102.58,220.50,13.29">φ(t, n) = LayerNorm ( ξt+n + GLU φ (φ(t, n)) ) ,<label>(17)</label></formula><p>where n ∈ [-k, τ max ] is a position index.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.2.">Static enrichment layer</head><p>As static covariates often have a significant influence on the temporal dynamics (e.g. genetic information on disease risk), we introduce a static enrichment layer that enhances temporal features with static metadata. For a given position index n, static enrichment takes the form:</p><formula xml:id="formula_23" coords="6,284.08,219.42,221.82,13.99">θ(t, n) = GRN θ ( φ(t, n), c e ) ,<label>(18)</label></formula><p>where the weights of GRN φ are shared across the entire layer, and c e is a context vector from a static covariate encoder.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.3.">Temporal self-attention layer</head><p>Following static enrichment, we next apply selfattention. All static-enriched temporal features are first grouped into a single matrix -i.e. Θ(t) = [θ(t, -k), . . ., θ(t, τ )] T -and interpretable multi-head attention (see Section 4.4) is applied at each forecast time (with N = τ max + k + 1): Decoder masking <ref type="bibr" coords="6,355.85,410.01,61.64,8.11" target="#b25">(Li et al., 2019;</ref><ref type="bibr" coords="6,421.39,410.01,84.51,8.11" target="#b36">Vaswani et al., 2017)</ref> is applied to the multi-head attention layer to ensure that each temporal dimension can only attend to features preceding it. Besides preserving causal information flow via masking, the self-attention layer allows TFT to pick up long-range dependencies that may be challenging for RNN-based architectures to learn. Following the selfattention layer, an additional gating layer is also applied to facilitate training:</p><formula xml:id="formula_24" coords="6,284.08,371.06,221.82,8.19">B(t) = InterpretableMultiHead(Θ(t), Θ(t), Θ(t)),<label>(19)</label></formula><formula xml:id="formula_25" coords="6,284.08,512.73,172.82,10.07">δ(t, n) = LayerNorm(θ(t, n) + GLU δ (β(t, n))).</formula><p>(20)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.4.">Position-wise feed-forward layer</head><p>We apply additional non-linear processing to the outputs of the self-attention layer. Similar to the static enrichment layer, this makes use of GRNs:</p><formula xml:id="formula_26" coords="6,284.08,586.85,217.88,10.07">ψ(t, n) = GRN ψ (δ(t, n)) , (<label>21</label></formula><formula xml:id="formula_27" coords="6,501.97,587.52,3.93,8.11">)</formula><p>where the weights of GRN ψ are shared across the entire layer. As per Fig. <ref type="figure" coords="6,353.94,615.62,3.37,8.11">2</ref>, we also apply a gated residual connection which skips over the entire transformer block, providing a direct path to the sequence-to-sequence layer -yielding a simpler model if additional complexity is not required, as shown below:</p><formula xml:id="formula_28" coords="6,285.94,673.36,219.96,13.29">ψ(t, n) = LayerNorm ( φ(t, n) + GLU ψ (ψ(t, n)) ) ,<label>(22)</label></formula><p>4.6. Quantile outputs</p><p>In line with previous work <ref type="bibr" coords="7,155.51,76.10,66.95,8.11" target="#b39">(Wen et al., 2017)</ref>, TFT also generates prediction intervals on top of point forecasts. This is achieved by the simultaneous prediction of various percentiles (e.g. 10th, 50th and 90th) at each time step. Quantile forecasts are generated using a linear transformation of the output from the temporal fusion decoder:</p><formula xml:id="formula_29" coords="7,38.97,143.44,217.27,9.65">ŷ(q, t, τ ) = W q ψ(t, τ ) + b q , (<label>23</label></formula><formula xml:id="formula_30" coords="7,256.24,144.10,3.93,8.11">)</formula><p>where W q ∈ R 1×d , b q ∈ R are linear coefficients for the specified quantile q. We note that forecasts are only generated for horizons in the future -i.e. τ ∈ {1, . . . , τ max }.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Loss functions</head><p>TFT is trained by jointly minimizing the quantile loss <ref type="bibr" coords="7,38.36,231.76,67.65,8.11" target="#b39">(Wen et al., 2017)</ref>, summed across all quantile outputs:</p><formula xml:id="formula_31" coords="7,38.36,244.59,221.82,54.64">L(Ω, W ) = ∑ yt ∈Ω ∑ q∈Q τmax ∑ τ =1 QL ( y t , ŷ(q, t -τ , τ ), q ) Mτ max (24) QL(y, ŷ, q) = q(y -ŷ) + + (1 -q)(ŷ -y) + , (<label>25</label></formula><formula xml:id="formula_32" coords="7,256.24,290.53,3.93,8.11">)</formula><p>where Ω is the domain of training data containing M samples, W represents the weights of TFT, Q is the set of output quantiles (we use Q = {0.1, 0.5, 0.9} in our experiments, and (.) + = max(0, .). For out-of-sample testing, we evaluate the normalized quantile losses across the entire forecasting horizon -focusing on P50 and P90 risk for consistency with previous work <ref type="bibr" coords="7,199.70,368.43,60.48,8.11" target="#b25">(Li et al., 2019;</ref><ref type="bibr" coords="7,38.36,378.75,97.05,8.11" target="#b31">Rangapuram et al., 2018;</ref><ref type="bibr" coords="7,138.17,378.75,74.01,8.11" target="#b33">Salinas et al., 2019)</ref>:</p><formula xml:id="formula_33" coords="7,38.36,391.11,217.88,28.47">q-Risk = 2 ∑ yt ∈ Ω ∑ τmax τ =1 QL ( y t , ŷ(q, t -τ , τ ), q ) ∑ yt ∈ Ω ∑ τmax τ =1 |y t | , (<label>26</label></formula><formula xml:id="formula_34" coords="7,256.24,402.14,3.93,8.11">)</formula><p>where Ω is the domain of test samples. Full details on hyperparameter optimization and training can be found in Appendix A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Performance evaluation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Datasets</head><p>We choose datasets to reflect commonly observed characteristics across a wide range of challenging multihorizon forecasting problems. To establish a baseline and position with respect to prior academic work, we first evaluate performance on the Electricity and Traffic datasets used in <ref type="bibr" coords="7,102.15,560.42,53.02,8.11" target="#b25">Li et al. (2019)</ref>, <ref type="bibr" coords="7,161.35,560.42,94.93,8.11" target="#b31">Rangapuram et al. (2018)</ref>, <ref type="bibr" coords="7,38.36,570.74,77.29,8.11" target="#b33">Salinas et al. (2019)</ref> -which focus on simpler univariate time series containing known inputs only alongside the target. Next, the Retail dataset helps us benchmark the model using the full range of complex inputs observed in multi-horizon prediction applications (see Section 3)including rich static metadata and observed time-varying inputs. Finally, to evaluate robustness to over-fitting on smaller noisy datasets, we consider the financial application of volatility forecasting -using a dataset much smaller than others. Broad descriptions of each dataset can be found below, along with an exploratory analysis of dataset targets in Appendix B:</p><p>• Electricity: The UCI Electricity Load Diagrams Dataset, containing the electricity consumption of 370 customers -aggregated on an hourly level as in <ref type="bibr" coords="7,454.35,76.76,51.55,8.11;7,292.75,87.34,53.69,8.11" target="#b41">Yu, Rao, and Dhillon (2016)</ref>. In accordance with <ref type="bibr" coords="7,427.33,87.34,74.54,8.11" target="#b33">(Salinas et al., 2019)</ref>, we use the past week (i.e. 168 h) to forecast over the next 24 h.</p><p>• Traffic: The UCI PEM-SF Traffic Dataset describes the occupancy rate (with y t ∈ [0, 1]) of 440 SF Bay Area freeways -as in <ref type="bibr" coords="7,360.50,140.23,59.35,8.11" target="#b41">Yu et al. (2016)</ref>. It is also aggregated on an hourly level as per the electricity dataset, with the same look-back window and forecast horizon.</p><p>• Retail: Favorita Grocery Sales Dataset from the Kaggle competition <ref type="bibr" coords="7,342.93,182.54,59.77,8.11" target="#b15">(Favorita, 2018)</ref>, that combines metadata for different products and the stores, along with other exogenous time-varying inputs sampled at the daily level. We forecast log product sales 30 days into the future, using 90 days of past information.</p><p>• Volatility (or Vol.): The OMI realized library <ref type="bibr" coords="7,477.79,235.56,28.11,8.11;7,292.75,246.14,138.07,8.11" target="#b19">(Heber, Lunde, Shephard, &amp; Sheppard, 2009)</ref> contains daily realized volatility values of 31 stock indices computed from intraday data, along with their daily returns. For our experiments, we consider forecasts over the next week (i.e. 5 business days) using information over the past year (i.e. 252 business days).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Training procedure</head><p>For each dataset, we partition all time series into 3 parts -a training set for learning, a validation set for hyperparameter tuning, and a hold-out test set for performance evaluation. Hyperparameter optimization is conducted via random search, using 240 iterations for Volatility, and 60 iterations for others. Full search ranges for all hyperparameters are below, with datasets and optimal model parameters listed in Table <ref type="table" coords="7,447.15,417.14,3.37,8.11" target="#tab_2">1</ref>.</p><p>• State size <ref type="bibr" coords="7,345.00,436.06,117.36,8.11">-10, 20, 40, 80, 160, 240, 320</ref> • Dropout rate -0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 0.9 • Minibatch size -64, 128, 256 • Learning rate -0.0001, 0.001, 0.01 • Max. gradient norm -0.01, 1.0, 100.0 • Num. heads -1, 4</p><p>To preserve explainability, we adopt only a single interpretable multi-head attention layer. For ConvTrans <ref type="bibr" coords="7,496.21,518.72,9.69,8.11;7,284.08,529.30,44.69,8.11" target="#b25">(Li et al., 2019)</ref>, we use the same fixed stack size (3 layers) and number of heads (8 heads) as in <ref type="bibr" coords="7,430.91,539.87,55.11,8.11" target="#b25">Li et al. (2019)</ref>. We keep the same attention model, and treat kernel sizes for the convolutional processing layer as a hyperparameter (∈ {1, 3, 6, 9}) -as optimal kernel sizes are observed to be dataset dependent <ref type="bibr" coords="7,374.71,582.18,56.61,8.11" target="#b25">(Li et al., 2019</ref>). An open-source implementation of the TFT on these datasets can be found on GitHub<ref type="foot" coords="7,323.95,601.13,3.90,6.59" target="#foot_1">3</ref> for full reproducibility.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Computational cost</head><p>Across all datasets, each TFT model was also trained on a single GPU, and can be deployed without the need for extensive computing resources. For instance, using a NVIDIA Tesla V100 GPU, our optimal TFT model (for the Electricity dataset) takes just slightly over 6 h to train (each epoch being roughly 52 mins). The batched inference on the entire validation dataset (consisting of 50,000 samples) takes 8 min. TFT training and inference times can be further reduced with hardware-specific optimizations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4.">Benchmarks</head><p>We extensively compare TFT to a wide range of models for multi-horizon forecasting, based on the categories described in Section 2. Hyperparameter optimization is conducted using random search over a pre-defined search space, using the same number of iterations across all benchmarks for a given dataset. Additional details are included in Appendix A.</p><p>Direct methods: As TFT falls within this class of multihorizon models, we primarily focus comparisons on deep learning models which directly generate prediction at future horizons, including: (1) simple sequence-to-sequence models with global contexts (Seq2Seq), and (2) the Multihorizon Quantile Recurrent Forecaster (MQRNN) <ref type="bibr" coords="8,239.09,491.71,21.09,8.11;8,38.36,502.41,46.16,8.11" target="#b39">(Wen et al., 2017)</ref>. In addition, we include two simple direct benchmarks to evaluate the benefits of deep learning models: (1) multi-layer perceptron (MLP), and (2) linear quantile regression with L2 regularisation (Ridge). For the MLP, we use a single two-layered neural network which takes all available information per time step (i.e. {y t-k:t , z t-k:t , x t-k:t+τ , s}), and predicts all quantiles across the forecast horizon (i.e. ŷ(q, t, τ ) ∀q ∈ {0.1, 0.5, 0.9} and τ ∈ {1, . . . , τ max }). For Ridge, we use a separate set of linear coefficients for each horizon/quantile output, feeding in the same inputs as the MLP. Given the size of our datasets, we also train Ridge using stochastic gradient descent.</p><p>Iterative methods: To position with respect to the rich body of work on iterative models, we evaluate TFT using the same setup as <ref type="bibr" coords="8,143.70,662.83,83.91,8.11" target="#b33">(Salinas et al., 2019)</ref> for the Electricity and Traffic datasets. This extends the results from <ref type="bibr" coords="8,59.34,684.21,57.36,8.11" target="#b25">(Li et al., 2019)</ref> for (1) DeepAR <ref type="bibr" coords="8,180.86,684.21,75.28,8.11" target="#b33">(Salinas et al., 2019)</ref>,</p><p>(2) DSSM <ref type="bibr" coords="8,324.63,55.61,100.71,8.11" target="#b31">(Rangapuram et al., 2018)</ref>, and (3) the Transformer-based architecture of <ref type="bibr" coords="8,401.90,66.07,60.26,8.11" target="#b25">Li et al. (2019)</ref> with local convolutional processing -which refer to as ConvTrans. For more complex datasets, we focus on the ConvTrans model given its strong outperformance over other iterative models in prior work, and DeepAR due to its popularity among practitioners. As models in this category require knowledge of all inputs in the future to generate predictions, we accommodate this for complex datasets by imputing unknown inputs with their last available value.</p><p>For simpler univariate datasets, we note that the results for ARIMA, ETS, TRMF, DeepAR, DSSM, and Con-vTrans have been reproduced from <ref type="bibr" coords="8,430.79,191.63,63.21,8.11" target="#b25">(Li et al., 2019)</ref> in Table <ref type="table" coords="8,307.40,202.09,4.80,8.11" target="#tab_3">2</ref> for consistency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.">Results and discussion</head><p>Table <ref type="table" coords="8,320.52,243.98,4.80,8.11" target="#tab_3">2</ref> shows that TFT significantly outperforms all benchmarks over the variety of datasets described in Section 6.1 -demonstrating the benefits of explicitly aligning the architecture with the general multi-horizon forecasting problem. This applies to both point forecasts and uncertainty estimates, with TFT yielding 7% lower P50 and 9% lower P90 losses on average respectively compared to the next best model. We also test for the statistical significance of TFT improvements in Appendix C, which shows that TFT losses are significantly lower than the next best benchmark with 95% confidence. In addition, a more qualitative evaluation of TFT credible intervals is also provided in Appendix E for reference.</p><p>Comparing direct and iterative models, we observe the importance of accounting for the observed inputs -noting the poorer results of ConvTrans on complex datasets where observed input imputation is required (i.e. Volatility and Retail). Furthermore, the benefits of quantile regression are also observed when targets are not captured well by Gaussian distributions with direct models outperforming in those scenarios. This can be seen, for example, from the Traffic dataset where target distribution is significantly skewed -with more than 90% of occupancy rates falling between 0 and 0.1, and the remainder distributed evenly until 1.0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.6.">Ablation analysis</head><p>To quantify the benefits of each of our proposed architectural contribution, we perform an extensive ablation analysis -removing each component from the network as below, and quantifying the percentage increase in loss versus the original architecture:</p><p>• Gating layers: We ablate by replacing each GLU layer (Eq. ( <ref type="formula" coords="8,313.55,600.01,3.50,8.11" target="#formula_6">5</ref>)) with a simple linear layer followed by ELU.</p><p>• Static covariate encoders: We ablate by setting all context vectors to zero -i.e. c s =c e =c c =c h =0 -and concatenating all transformed static inputs to all timedependent past and future inputs.</p><p>• Instance-wise variable selection networks: We ablate by replacing the softmax outputs of Eq. ( <ref type="formula" coords="8,453.36,663.29,3.64,8.11" target="#formula_9">6</ref>) with trainable coefficients, and removing the networks generating the variable selection weights. We retain, however, the variable-wise GRNs (see Eq. ( <ref type="formula" coords="9,220.67,368.54,3.18,8.11" target="#formula_10">7</ref>)), maintaining a similar amount of non-linear processing.</p><p>• Self-attention layers: We ablate by replacing the attention matrix of the interpretable multi-head attention layer (Eq. ( <ref type="formula" coords="9,91.39,409.65,7.51,8.11">14</ref>)) with a matrix of trainable parameters</p><formula xml:id="formula_35" coords="9,47.02,418.73,213.15,10.48">W A -i.e. Ã(Q , K ) = W A , where W A ∈ R N×N . This</formula><p>prevents TFT from attending to different input features at different times, helping evaluation of the importance of instance-wise attention weights.</p><p>• Sequence-to-sequence layers for local processing: We ablate by replacing the sequence-to-sequence layer of Section 4.5.1 with standard positional encoding used in <ref type="bibr" coords="9,57.29,491.72,80.25,8.11" target="#b36">Vaswani et al. (2017)</ref>. Ablated networks are trained across for each dataset using the hyperparameters of Table <ref type="table" coords="9,182.23,511.99,3.37,8.11" target="#tab_2">1</ref>. Fig. <ref type="figure" coords="9,208.88,511.99,4.80,8.11">3</ref> shows that the effects on both P50 and P90 losses are similar across all datasets, with all components contributing to performance improvements on the whole.</p><p>In general, the components responsible for capturing temporal relationships, local processing, and selfattention layers, have the largest impact on performance, with P90 loss increases of &gt; 6% on average and &gt; 20% on select datasets when ablated. The diversity across time series datasets can also be seen from the differences in the ablation impact of the respective temporal components. Concretely, while local processing is critical in Traffic, Retail and Volatility, lower post-ablation P50 losses indicate that it can be detrimental in Electricity -with the self-attention layer playing a more vital role. A possible explanation is that persistent daily seasonality appears to dominate other temporal relationships in the Electricity dataset. For this dataset, Table <ref type="table" coords="9,187.53,684.21,4.23,8.11" target="#tab_6">D</ref>.6 of Appendix D also shows that the hour-of-day has the largest variable importance score across all temporal inputs, exceeding even the target (i.e. Power Usage) itself. In contrast to other datasets where past target observations are more significant (e.g. Traffic), direct attention to previous days seems to help to learn daily seasonal patterns in Electricity -with local processing between adjacent time steps being less necessary. We can account for this by treating the sequence-to-sequence architecture in the temporal fusion decoder as a hyperparameter to tune, including an option for simple positional encoding without any local processing.</p><p>Static covariate encoders and instance-wise variable selection have the next largest impact -increasing P90 losses by more than 2.6% and 4.1% on average. The biggest benefits of these are observed for the electricity dataset, where some of the input features get very low importance.</p><p>Finally, gating layer ablation also shows increases in P90 losses, with a 1.9% increase on average. This is the most significant on the volatility (with a 4.1% P90 loss increase), underlying the benefit of component gating for smaller and noisier datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">Interpretability use cases</head><p>Having established the performance benefits of our model, we next demonstrate how our model design allows for analysis of its individual components to interpret the general relationships it has learned. We demonstrate Fig. <ref type="figure" coords="10,52.47,321.94,2.78,6.56">3</ref>. Results of ablation analysis. Both a) and b) show the impact of ablation on the P50 and P90 losses respectively. Results per dataset shown on the left, and the range across datasets shown on the right. While the precise importance of each is dataset-specific, all components contribute significantly on the whole -with the maximum percentage increase over all datasets ranging from 3.6% to 23.4% for P50 losses, and similarly from 4.1% to 28.4% for P90 losses. three interpretability use cases: (1) examining the importance of each input variable in prediction, (2) visualizing persistent temporal patterns, and (3) identifying any regimes or events that lead to significant changes in temporal dynamics. In contrast to other examples of attention-based interpretability <ref type="bibr" coords="10,165.24,434.72,94.93,8.11;10,38.36,445.12,22.11,8.11" target="#b0">(Alaa &amp; van der Schaar, 2019;</ref><ref type="bibr" coords="10,63.12,445.12,54.81,8.11" target="#b25">Li et al., 2019;</ref><ref type="bibr" coords="10,120.58,445.12,66.90,8.11" target="#b34">Song et al., 2018)</ref> which zoom in on interesting but instance-specific examples, our methods focus on ways to aggregate the patterns across the entire dataset -extracting generalizable insights about temporal dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1.">Analyzing variable importance</head><p>We first quantify variable importance by analyzing the variable selection weights described in Section 4.2. Concretely, we aggregate selection weights (i.e. v (j)   χt in Eq. ( <ref type="formula" coords="10,249.69,548.98,3.50,8.11" target="#formula_11">8</ref>)) for each variable across our entire test set, recording the 10th, 50th and 90th percentiles of each sampling distribution. As the Retail dataset contains the full set of available input types (i.e. static metadata, known inputs, observed inputs, and the target), we present the results for its variable importance analysis in Table <ref type="table" coords="10,182.23,611.39,3.37,8.11" target="#tab_4">3</ref>. We also note similar findings in other datasets, which are documented in Appendix D.1 for completeness. On the whole, the results show that the TFT extracts only a subset of key inputs that intuitively play a significant role in predictions. The analysis of persistent temporal patterns is often key to understanding the time-dependent relationships present in a given dataset. For instance, lag models are frequently adopted to study the length of time required for an intervention to take effect <ref type="bibr" coords="10,380.47,393.10,113.44,8.11" target="#b13">(Du, Song, Han, &amp; Hong, 2018</ref>)such as the impact of a government's increase in public expenditure on the resultant growth in Gross National Product <ref type="bibr" coords="10,316.48,424.28,53.97,8.11" target="#b4">(Baltagi, 2008)</ref>. Seasonality models are also commonly used in econometrics to identify periodic patterns in a target-of-interest <ref type="bibr" coords="10,370.82,445.06,67.16,8.11" target="#b21">(Hylleberg, 1992)</ref> and measure the length of each cycle. From a practical standpoint, model builders can use these insights to further improve the forecasting model -for instance by increasing the receptive field to incorporate more history if attention peaks are observed at the start of the lookback window, or by engineering features to directly incorporate seasonal effects. As such, using the attention weights present in the self-attention layer of the temporal fusion decoder, we present a method to identify similar persistent patternsby measuring the contributions of features at fixed lags in the past on forecasts at various horizons. Combining Eq. ( <ref type="formula" coords="10,303.93,569.79,7.86,8.11">14</ref>) and ( <ref type="formula" coords="10,342.36,569.79,7.07,8.11" target="#formula_24">19</ref>), we see that the self-attention layer contains a matrix of attention weights at each forecast time t -i.e. Ã(φ(t), φ(t)). Multi-head attention outputs at each forecast horizon τ (i.e. β(t, τ )) can then be described as an attention-weighted sum of lower level features at each position n: masking, we also note that α(t, i, j) = 0, ∀i &gt; j. For each forecast horizon τ , the importance of a previous time point n &lt; τ can hence be determined by analyzing distributions of α(t, n, τ ) across all time steps and entities.</p><formula xml:id="formula_36" coords="10,284.08,634.91,221.82,58.29">β(t, τ ) = τmax ∑ n=-k α(t, n, τ ) θ(t, n), (27) where α(t, n, τ ) is the (τ , n)-th element of Ã(φ(t), φ(t)), and θ(t, n) is a row of Θ(t) = Θ(t)W V . Due to decoder</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2.">Visualizing persistent temporal patterns</head><p>Attention weight patterns can be used to shed light on the most important past time steps that the TFT model bases its decisions on. In contrast to other traditional and machine learning time series methods, which rely on model-based specifications for seasonality and lag analysis, the TFT can learn such patterns from raw training data.</p><p>Fig. <ref type="figure" coords="11,67.03,611.18,4.80,8.11" target="#fig_2">4</ref> shows the attention weight patterns across all our test datasets -with the upper graph plotting the mean along with the 10th, 50th and 90th percentiles of the attention weights for one-step-ahead forecasts (i.e. α(t, 1, τ )) over the test set, and the bottom graph plotting the average attention weights for various horizons (i.e. τ ∈ {5, 10, 15, 20}). We observe that the three datasets exhibit a seasonal pattern, with clear attention spikes at daily intervals observed for Electricity and Traffic, and slightly weaker weekly patterns for Retail. For Retail, we also observe the decaying trend pattern, with the last few days dominating the importance.</p><p>No strong persistent patterns were observed for the Volatility -attention weights equally distributed across all positions on average. This resembles a moving average filter at the feature level, and -given the high degree of randomness associated with the volatility process -could be useful in extracting the trend over the entire period by smoothing out high-frequency noise.</p><p>TFT learns these persistent temporal patterns from the raw training data without any human hard-coding. Such capability is expected to be very useful in building trust with human experts via sanity-checking. Model developers can also use these towards model improvements, e.g. via specific feature engineering or data collection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.3.">Identifying regimes &amp; significant events</head><p>Identifying sudden changes in temporal patterns can also be very useful, as temporary shifts can occur due to the presence of significant regimes or events. For instance, regime-switching behavior has been widely documented in financial markets <ref type="bibr" coords="11,362.76,308.31,105.41,8.11" target="#b1">(Ang &amp; Timmermann, 2012)</ref>, with returns characteristics -such as volatility -being observed to change abruptly between regimes. As such, identifying such regime changes provides strong insights into the underlying problem which is useful for the identification of the significant events.</p><p>Firstly, for a given entity, we define the average attention pattern per forecast horizon as:</p><formula xml:id="formula_37" coords="11,285.38,397.06,220.51,29.15">ᾱ(n, τ ) = T ∑ t=1 α(t, j, τ )/T ,<label>(28)</label></formula><p>and then construct ᾱ(τ ) = [ ᾱ(-k, τ ), . . . , ᾱ(τ max , τ )] T .</p><p>To compare similarities between attention weight vectors, we use the distance metric proposed by <ref type="bibr" coords="11,463.35,454.66,42.56,8.11;11,284.08,465.17,98.72,8.11" target="#b9">Comaniciu, Ramesh, and Meer (2003)</ref>:</p><formula xml:id="formula_38" coords="11,284.08,479.66,221.82,11.35">κ(p, q) = √ 1 -ρ(p, q),<label>(29)</label></formula><p>where ρ(p, q) = ∑ j √ p j q j is the Bhattacharya coefficient <ref type="bibr" coords="11,313.03,509.38,59.07,8.11" target="#b22">(Kailath, 1967)</ref> measuring the overlap between discrete distributions -with p j , q j being elements of probability vectors p, q respectively. For each entity, significant shifts in temporal dynamics are then measured using the distance between attention vectors at each point with the average pattern, aggregated for all horizons as below:</p><formula xml:id="formula_39" coords="11,284.08,584.00,221.82,30.15">dist(t) = τmax ∑ τ =1 κ ( ᾱ(τ ), α(t, τ ) ) /τ max ,<label>(30)</label></formula><p>where α(t, τ ) = [α(t, -k, τ ), . . . , α(t, τ max , τ )] T .</p><p>Using the volatility dataset, we attempt to analyze regimes by applying our distance metric to the attention patterns for the S&amp;P 500 index over our training period <ref type="bibr" coords="11,284.08,663.21,55.89,8.11">(2001 to 2015)</ref>. Plotting dist(t) against the target (i.e. log realized volatility) in the bottom chart of Fig. <ref type="figure" coords="11,457.21,673.71,3.37,8.11" target="#fig_3">5</ref>, significant deviations in attention patterns can be observed around periods of high volatility (e.g. the 2008 financial crisis)corresponding to the peaks observed in dist(t). From the plots, we can see that TFT appears to alter its behavior between regimes -placing equal attention across past inputs when volatility is low, while attending more to sharp trend changes during high volatility periods -suggesting differences in temporal dynamics learned in each of these cases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8.">Conclusions</head><p>We introduce TFT, a novel attention-based deep learning model for interpretable high-performance multihorizon forecasting. To handle static covariates, a priori known inputs, and observed inputs effectively across a wide range of multi-horizon forecasting datasets, TFT uses specialized components. Specifically, these include: (1) sequence-to-sequence and attention-based temporal processing components that capture time-varying relationships at different timescales, (2) static covariate encoders that allow the network to condition temporal forecasts on static metadata, (3) gating components that enable skipping over unnecessary parts of the network, (4) variable selection to pick relevant input features at each time step, and (5) quantile predictions to obtain output intervals across all prediction horizons. On a wide range of realworld tasks -on both simple datasets that contain only known inputs and complex datasets which encompass the full range of possible inputs -we show that TFT achieves state-of-the-art forecasting performance. Lastly, we investigate the general relationships learned by TFT through a series of interpretability use cases -proposing novel methods to use TFT to (i) analyze important variables for a given prediction problem, (ii) visualize persistent temporal relationships learned (e.g. seasonality), and (iii) identify significant regime changes. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Declaration of competing interest</head><p>One or more of the authors of this paper have disclosed potential or pertinent conflicts of interest, which may include receipt of payment, either direct or indirect, institutional support, or association with an entity in the biomedical field which may be perceived to have potential conflict of interest with this work. For full disclosure statements refer to https://doi.org/10.1016/j. ijforecast.2021.03.012.: The work for this paper is funded by Google. 1. TFT 0.5 (or 0.9) quantile forecasts are obtained for all entities, time steps and forecast horizons, and paired with respective targets. 2. For each bootstrap sample, we (a) randomly draw forecast-target pairs (across entities, time and forecast horizon) with replacement until our sample size matches the size of the original dataset, and (b) compute a single P50 (or P90) loss per Eq. ( <ref type="formula" coords="15,233.26,350.07,7.07,8.11" target="#formula_33">26</ref>). 3. We repeat the bootstrap step 1000 times, creating a sampling distribution of P50 (or P90) losses.</p><p>We note that this methodology also allows us to evaluate significance against published results, where we do not have access to confidence intervals around losses. From the results in Table <ref type="table" coords="15,134.29,418.19,3.42,8.11" target="#tab_5">C</ref>.5, we can see that the losses for the next best model fall outside the confidence interval, indicating that P50 and P90 losses are significantly lower for the TFT.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix D. Interpretability results</head><p>Apart from Section 7, which highlights our most prominent findings, we present the remaining results here for completeness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D.1. Variable importance</head><p>Table <ref type="table" coords="15,75.24,550.50,4.23,8.11" target="#tab_6">D</ref>.6 shows the variable importance scores for the remaining Electricity, Traffic and Volatility datasets. As these datasets only have one static input, the network allocates full weight to the entity identifier for Electricity and Traffic, along with the region input for Volatility. We also observe two types of important time-dependent inputs -those related to past values of the target as before, and those related to calendar effects. For instance, the hour-of-day plays a significant role for Electricity and Traffic datasets, echoing the daily seasonality observed in the next section. In the Volatility dataset, the dayof-month is observed to play a significant role in future inputs -potentially reflecting turn-of-month effects <ref type="bibr" coords="15,240.68,673.93,15.60,8.11;15,38.36,684.21,44.86,8.11" target="#b17">(Giovanis, 2014)</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix E. Analysis of quantile forecasts under regime shifts</head><p>As noted in Section 7.3, abrupt changes in temporal dynamics can occur in the presence of regime shifts or significant events -which may rarely occur and are difficult to define or detect beforehand. While the improvements in high quantile (e.g. P90) losses do demonstrate that TFT uncertainty estimates are well-calibrated across regimes, it can be useful to analyze the behavior of TFT uncertainty estimates following sudden regime shifts.</p><p>As such, we perform a qualitative examination of TFT credible intervals before and after a sudden regime shift. We focus on the Volatility dataset around March 2020, </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,38.36,229.36,221.81,6.56;2,38.36,238.01,205.30,6.49;2,46.03,55.59,206.64,162.00"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Illustration of multi-horizon forecasting with static covariates, past observed and a priori-known future time-dependent inputs.</figDesc><graphic coords="2,46.03,55.59,206.64,162.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="6,284.08,387.82,221.81,9.65;6,284.08,398.58,221.81,9.65"><head></head><label></label><figDesc>to yield B(t) = [β(t, -k), . . . , β(t, τ max )]. d V = d attn = d model /m H are chosen, where m H is the number of heads.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="12,38.36,455.98,467.54,6.56;12,38.36,464.63,467.54,6.49;12,38.36,473.20,100.39,6.49;12,73.50,55.59,397.44,388.62"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. Persistent temporal patterns across datasets. Clear seasonality observed for the Electricity, Traffic and Retail datasets, but no strong persistent patterns seen in Volatility dataset. Upper plot -percentiles of attention weights for one-step-ahead forecast. Lower plot -average attention weights for forecast at various horizons.</figDesc><graphic coords="12,73.50,55.59,397.44,388.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="13,38.36,289.19,467.54,6.56;13,38.36,297.30,467.54,7.49;13,38.36,305.87,467.54,7.49;13,38.36,314.97,467.54,6.49;13,38.36,323.54,46.20,6.49;13,44.13,55.59,456.00,221.83"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Regime identification for S&amp;P 500 realized volatility. Significant deviations in attention patterns can be observed around periods of high volatility -corresponding to the peaks observed in dist(t). We use a threshold of dist(t) &gt; 0.3 to denote significant regimes, as highlighted in purple. Focusing on periods around the 2008 financial crisis, the top right plot visualizes α(t, n, 1) midway through the significant regime, compared to the normal regime on the top left. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)</figDesc><graphic coords="13,44.13,55.59,456.00,221.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="16,38.36,455.26,467.54,6.56;16,38.36,463.91,467.54,6.49;16,38.36,472.48,467.54,6.49;16,38.36,481.04,467.54,6.49;16,38.36,489.61,396.08,6.49;16,38.36,510.93,221.82,8.11;16,38.36,521.76,221.82,8.11;16,38.36,532.59,221.82,8.11;16,38.36,543.42,221.82,8.11;16,38.36,554.25,221.82,8.11;16,38.36,565.08,221.82,8.11;16,38.36,575.91,221.82,8.11;16,38.36,586.74,221.82,8.11;16,38.36,597.57,221.82,8.11;16,38.36,608.40,221.82,8.11;16,38.36,619.23,221.82,8.11;16,38.36,630.06,221.82,8.11;16,38.36,640.89,221.82,8.11;16,38.36,651.72,221.82,8.11;16,38.36,662.55,221.82,8.11;16,38.36,673.38,221.82,8.11;16,38.36,684.21,160.86,8.11;16,63.96,55.59,416.40,387.90"><head>Fig. E. 7 .</head><label>7</label><figDesc>Fig. E.7. TFT one-step-ahead forecasts for realized volatility across major stock indices following the incidence of COVID-19. From the target values in purple, we note the regime shift following the sharp increase in index volatilities in March 2020, which later decay to elevated baseline levels over 2020. While volatilities in March 2020 do appear at or around the 0.975 quantile forecast, the TFT maintains reasonable uncertainty estimates over the regime shift -with most values lying within the 95% credible interval -demonstrating its ability to adapt to changing temporal dynamics. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) where abrupt changes in market conditions were reported in response to the incidence of COVID-19 (Baker, Bloom, Davis, Kost, Sammon, &amp; Viratyosin, 2020; Cox, Greenwald, &amp; Ludvigson, 2020) -leading to a sharp increase in the volatility of global stock indices. To obtain a 95% credible interval, we re-train our TFT to output 0.975 and 0.025 quantile forecasts on top of mean estimates, applying the TFT to an extended out-of-sample period to incorporate the impact of COVID-19. Focusing on one-step-ahead forecasts for 3 major stock indices (S&amp;P 500, FTSE 100, Nikkei 225) in Fig. E.7 -and noting similar observations in other indices -we can see that the TFT maintains reasonable uncertainty estimates before, during, and after the COVID-19 crash of March 2020. The adaptivity of the TFT to regime changes also echoes the findings of Section 7.3, which shows that the TFT can dynamically modify its attention patterns in different conditions.</figDesc><graphic coords="16,63.96,55.59,416.40,387.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="4,67.16,55.59,410.04,223.74"><head></head><label></label><figDesc></figDesc><graphic coords="4,67.16,55.59,410.04,223.74" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="10,44.13,55.59,456.16,254.58"><head></head><label></label><figDesc></figDesc><graphic coords="10,44.13,55.59,456.16,254.58" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="14,99.42,163.21,345.60,220.86"><head></head><label></label><figDesc></figDesc><graphic coords="14,99.42,163.21,345.60,220.86" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="3,284.08,575.76,221.82,83.30"><head></head><label></label><figDesc>TFT architecture. TFT inputs static metadata, time-varying past inputs and time-varying a priori known future inputs. Variable Selection is used for judicious selection of the most salient features based on the input. Gated Residual Network blocks enable efficient information flow with skip connections and gating layers. Time-dependent processing is based on LSTMs for local processing, and multi-head attention for integrating information from any time step.</figDesc><table coords="3,284.08,575.76,221.82,83.30"><row><cell>Fig. 2.</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="3">In line with other direct methods,</cell></row><row><cell cols="5">we simultaneously output forecasts for τ max time steps</cell></row><row><cell cols="5">-i.e. τ ∈ {1, . . . , τ max }. We incorporate all past infor-</cell></row><row><cell cols="5">mation within a finite look-back window k, using target</cell></row><row><cell cols="5">and known inputs only up till and including the forecast</cell></row><row><cell cols="3">start time t (i.e. y i,t-k:t =</cell><cell>{</cell><cell>y i,t-k , . . . , y i,t</cell><cell>} ) and known</cell></row><row><cell cols="5">inputs across the entire range (i.e. x i,t-k:t+τ =</cell><cell>{ x i,t-k , . . .,</cell></row><row><cell>x i,t , . . . , x i,t+τ</cell><cell>}</cell><cell>). 2</cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="8,38.36,55.59,217.28,156.91"><head>Table 1</head><label>1</label><figDesc>Information on dataset and optimal TFT configuration.</figDesc><table coords="8,42.89,74.95,212.75,137.55"><row><cell></cell><cell>Electricity</cell><cell>Traffic</cell><cell>Retail</cell><cell>Vol.</cell></row><row><cell>Dataset details</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Target type</cell><cell>R</cell><cell>[0, 1]</cell><cell>R</cell><cell>R</cell></row><row><cell>Number of entities</cell><cell>370</cell><cell>440</cell><cell>130k</cell><cell>41</cell></row><row><cell>Number of samples</cell><cell>500k</cell><cell>500k</cell><cell>500k</cell><cell>∼100k</cell></row><row><cell>Network parameters</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>k</cell><cell>168</cell><cell>168</cell><cell>90</cell><cell>252</cell></row><row><cell>τ max</cell><cell>24</cell><cell>24</cell><cell>30</cell><cell>5</cell></row><row><cell>Dropout rate</cell><cell>0.1</cell><cell>0.3</cell><cell>0.1</cell><cell>0.3</cell></row><row><cell>State size</cell><cell>160</cell><cell>320</cell><cell>240</cell><cell>160</cell></row><row><cell>Number of heads</cell><cell>4</cell><cell>4</cell><cell>4</cell><cell>1</cell></row><row><cell>Training parameters</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Minibatch size</cell><cell>64</cell><cell>128</cell><cell>128</cell><cell>64</cell></row><row><cell>Learning rate</cell><cell>0.001</cell><cell>0.001</cell><cell>0.001</cell><cell>0.01</cell></row><row><cell>Max gradient norm</cell><cell>0.01</cell><cell>100</cell><cell>100</cell><cell>0.01</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="9,85.11,55.59,374.03,280.24"><head>Table 2</head><label>2</label><figDesc>P50 and P90 quantile losses on a range of real-world datasets. Percentages in brackets reflect the increase in quantile loss versus TFT (lower q-Risk better), with TFT outperforming competing methods across all experiments, improving on the next best alternative method (underlined) between 3% and 26%.</figDesc><table coords="9,89.64,92.51,359.72,243.32"><row><cell cols="3">(a) P50 and P90 Losses on simpler univariate datasets.</cell><cell></cell><cell></cell></row><row><cell></cell><cell>P50</cell><cell></cell><cell>P90</cell><cell></cell></row><row><cell></cell><cell>Electricity</cell><cell>Traffic</cell><cell>Electricity</cell><cell>Traffic</cell></row><row><cell>ARIMA</cell><cell>0.154 (+180% )</cell><cell>0.223 (+135% )</cell><cell>0.102 (+278% )</cell><cell>0.137 (+94% )</cell></row><row><cell>ETS</cell><cell>0.102 (+85% )</cell><cell>0.236 (+148% )</cell><cell>0.077 (+185% )</cell><cell>0.148 (+110% )</cell></row><row><cell>TRMF</cell><cell>0.084 (+53% )</cell><cell>0.186 (+96% )</cell><cell>-</cell><cell>-</cell></row><row><cell>DeepAR</cell><cell>0.075 (+36% )</cell><cell>0.161 (+69% )</cell><cell>0.040 (+48% )</cell><cell>0.099 (+40% )</cell></row><row><cell>DSSM</cell><cell>0.083 (+51% )</cell><cell>0.167 (+76% )</cell><cell>0.056 (+107% )</cell><cell>0.113 (+60% )</cell></row><row><cell>ConvTrans</cell><cell>0.059 (+7% )</cell><cell>0.122 (+28% )</cell><cell>0.034 (+26% )</cell><cell>0.081 (+15% )</cell></row><row><cell>Ridge</cell><cell>0.064 (+17% )</cell><cell>0.135 (+42% )</cell><cell>0.036 (+35% )</cell><cell>0.099 (+41% )</cell></row><row><cell>MLP</cell><cell>0.062 (+13% )</cell><cell>0.122 (+28% )</cell><cell>0.035 (+30% )</cell><cell>0.087 (+24% )</cell></row><row><cell>Seq2Seq</cell><cell>0.067 (+22% )</cell><cell>0.105 (+11% )</cell><cell>0.036 (+33% )</cell><cell>0.075 (+6% )</cell></row><row><cell>MQRNN</cell><cell>0.077 (+40% )</cell><cell>0.117 (+23% )</cell><cell>0.036 (+33% )</cell><cell>0.082 (+16% )</cell></row><row><cell>TFT</cell><cell>0.055*</cell><cell>0.095*</cell><cell>0.027*</cell><cell>0.070*</cell></row><row><cell cols="3">(b) P50 and P90 Losses on datasets with rich static or observed inputs.</cell><cell></cell><cell></cell></row><row><cell></cell><cell>P50</cell><cell></cell><cell>P90</cell><cell></cell></row><row><cell></cell><cell>Volatility</cell><cell>Favorita</cell><cell>Volatility</cell><cell>Favorita</cell></row><row><cell>DeepAR</cell><cell>0.050 (+28% )</cell><cell>0.574 (+62% )</cell><cell>0.024 (+21% )</cell><cell>0.230 (+56% )</cell></row><row><cell>ConvTrans</cell><cell>0.047 (+20% )</cell><cell>0.429 (+21% )</cell><cell>0.024 (+22% )</cell><cell>0.192 (+30% )</cell></row><row><cell>Ridge</cell><cell>0.051 (+29% )</cell><cell>0.720 (+104% )</cell><cell>0.028 (+41% )</cell><cell>0.163 (+10% )</cell></row><row><cell>MLP</cell><cell>0.049 (+25% )</cell><cell>0.532 (+50% )</cell><cell>0.026 (+33% )</cell><cell>0.199 (+35% )</cell></row><row><cell>Seq2Seq</cell><cell>0.042 (+7% )</cell><cell>0.411 (+16% )</cell><cell>0.021 (+8% )</cell><cell>0.157 (+7% )</cell></row><row><cell>MQRNN</cell><cell>0.042 (+7% )</cell><cell>0.379 (+7% )</cell><cell>0.021 (+9% )</cell><cell>0.152 (+3% )</cell></row><row><cell>TFT</cell><cell>0.039*</cell><cell>0.354*</cell><cell>0.020*</cell><cell>0.147*</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="11,38.36,55.59,221.82,379.88"><head>Table 3</head><label>3</label><figDesc>Variable importance for the Retail dataset. The 10th, 50th and 90th percentiles of the variable selection weights are shown, with values larger than 0.1 indicated by *. For static covariates, the largest weights are attributed to variables that uniquely identify different entities (i.e. item number and store number). For past inputs, past values of the target (i.e. log sales) are critical as expected, as forecasts are extrapolations of past observations. For future inputs, promotion periods and national holidays have the greatest influence on sales forecasts, in line with periods of increased customer spending.</figDesc><table coords="11,42.89,143.49,202.78,291.98"><row><cell></cell><cell>10%</cell><cell>50%</cell><cell>90%</cell></row><row><cell>(a) Static covariates</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Item num</cell><cell>0.198*</cell><cell>0.230*</cell><cell>0.251*</cell></row><row><cell>Store num</cell><cell>0.152*</cell><cell>0.161*</cell><cell>0.170*</cell></row><row><cell>City</cell><cell>0.094</cell><cell>0.100</cell><cell>0.124</cell></row><row><cell>State</cell><cell>0.049</cell><cell>0.060</cell><cell>0.083</cell></row><row><cell>Type</cell><cell>0.005</cell><cell>0.006</cell><cell>0.008</cell></row><row><cell>Cluster</cell><cell>0.108*</cell><cell>0.122*</cell><cell>0.133*</cell></row><row><cell>Family</cell><cell>0.063</cell><cell>0.075</cell><cell>0.079</cell></row><row><cell>Class</cell><cell>0.148*</cell><cell>0.156*</cell><cell>0.163*</cell></row><row><cell>Perishable</cell><cell>0.084</cell><cell>0.085</cell><cell>0.088</cell></row><row><cell>(b) Past inputs</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Transactions</cell><cell>0.029</cell><cell>0.033</cell><cell>0.037</cell></row><row><cell>Oil</cell><cell>0.062</cell><cell>0.081</cell><cell>0.105</cell></row><row><cell>On-promotion</cell><cell>0.072</cell><cell>0.075</cell><cell>0.078</cell></row><row><cell>Day of week</cell><cell>0.007</cell><cell>0.007</cell><cell>0.008</cell></row><row><cell>Day of month</cell><cell>0.083</cell><cell>0.089</cell><cell>0.096</cell></row><row><cell>Month</cell><cell>0.109*</cell><cell>0.122*</cell><cell>0.136*</cell></row><row><cell>National hol</cell><cell>0.131*</cell><cell>0.138*</cell><cell>0.145*</cell></row><row><cell>Regional hol</cell><cell>0.011</cell><cell>0.014</cell><cell>0.018</cell></row><row><cell>Local hol</cell><cell>0.056</cell><cell>0.068</cell><cell>0.072</cell></row><row><cell>Open</cell><cell>0.027</cell><cell>0.044</cell><cell>0.067</cell></row><row><cell>Log sales</cell><cell>0.304*</cell><cell>0.324*</cell><cell>0.353*</cell></row><row><cell>(c) Future inputs</cell><cell></cell><cell></cell><cell></cell></row><row><cell>On-promotion</cell><cell>0.155*</cell><cell>0.170*</cell><cell>0.182*</cell></row><row><cell>Day of week</cell><cell>0.029</cell><cell>0.065</cell><cell>0.089</cell></row><row><cell>Day of month</cell><cell>0.056*</cell><cell>0.116*</cell><cell>0.138*</cell></row><row><cell>Month</cell><cell>0.111*</cell><cell>0.155*</cell><cell>0.240*</cell></row><row><cell>National hol</cell><cell>0.145*</cell><cell>0.220*</cell><cell>0.242*</cell></row><row><cell>Regional hol</cell><cell>0.012</cell><cell>0.014</cell><cell>0.060</cell></row><row><cell>Local hol</cell><cell>0.116*</cell><cell>0.151*</cell><cell>0.239*</cell></row><row><cell>Open</cell><cell>0.088</cell><cell>0.095</cell><cell>0.097</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="15,38.36,55.59,221.82,193.32"><head>Table C .5</head><label>C</label><figDesc>Significance testing results for TFT P50 and P90 quantile losses vs. next best model. 95% percentile thresholds for TFT losses are computed using bootstrap resampling, which we compare against the next best model's loss. Across all datasets, losses for the next best model are higher than their respective thresholds, allowing us to conclude that the TFT losses are lower than competing benchmarks in a statistically significant way.</figDesc><table coords="15,42.89,126.36,212.75,122.56"><row><cell></cell><cell>Electricity</cell><cell>Traffic</cell><cell>Vol.</cell><cell>Retail</cell></row><row><cell>(a) P50 losses</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>TFT loss</cell><cell>0.0550</cell><cell>0.0950</cell><cell>0.0394</cell><cell>0.3536</cell></row><row><cell>95% threshold</cell><cell>0.0559</cell><cell>0.0956</cell><cell>0.0399</cell><cell>0.3550</cell></row><row><cell>Next best loss</cell><cell>0.0590</cell><cell>0.1050</cell><cell>0.0420</cell><cell>0.3789</cell></row><row><cell>Next best model</cell><cell>ConvTrans</cell><cell>Seq2Seq</cell><cell>Seq2Seq</cell><cell>MQRNN</cell></row><row><cell>TFT % improvement</cell><cell>7.3%</cell><cell>10.5%</cell><cell>6.7%</cell><cell>7.2%</cell></row><row><cell>(b) P90 losses</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>TFT loss</cell><cell>0.0270</cell><cell>0.0705</cell><cell>0.0197</cell><cell>0.1471</cell></row><row><cell>95% threshold</cell><cell>0.0278</cell><cell>0.0713</cell><cell>0.0201</cell><cell>0.1477</cell></row><row><cell>Next best loss</cell><cell>0.0340</cell><cell>0.0745</cell><cell>0.0213</cell><cell>0.1519</cell></row><row><cell>Next best model</cell><cell>ConvTrans</cell><cell>Seq2Seq</cell><cell>Seq2Seq</cell><cell>MQRNN</cell></row><row><cell>TFT % improvement</cell><cell>25.9%</cell><cell>5.4%</cell><cell>7.8%</cell><cell>3.1%</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="15,284.08,55.59,221.82,459.74"><head>Table D .6</head><label>D</label><figDesc>Variable importance scores for the Electricity, Traffic and Volatility datasets. The most significant variable of each input category is indicated by *. As before, past values of the target play a significant role -being the top 1 or 2 most significant past input across datasets. The role of seasonality can also be seen in Electricity and Traffic, where the past and future values of the hour-of-day is important for forecasts.</figDesc><table coords="15,288.61,117.79,202.78,397.54"><row><cell></cell><cell>10%</cell><cell>50%</cell><cell>90%</cell></row><row><cell>(a) Electricity</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Static</cell><cell></cell><cell></cell><cell></cell></row><row><cell>ID</cell><cell>1.000*</cell><cell>1.000*</cell><cell>1.000*</cell></row><row><cell>Past</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hour of day</cell><cell>0.437*</cell><cell>0.462*</cell><cell>0.473*</cell></row><row><cell>Day of week</cell><cell>0.078</cell><cell>0.099</cell><cell>0.151</cell></row><row><cell>Time index</cell><cell>0.066</cell><cell>0.077</cell><cell>0.092</cell></row><row><cell>Power usage</cell><cell>0.342</cell><cell>0.359</cell><cell>0.366</cell></row><row><cell>Future</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hour of day</cell><cell>0.718*</cell><cell>0.738*</cell><cell>0.739*</cell></row><row><cell>Day of week</cell><cell>0.109</cell><cell>0.124</cell><cell>0.166</cell></row><row><cell>Time index</cell><cell>0.114</cell><cell>0.137</cell><cell>0.155</cell></row><row><cell>(b) Traffic</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Static</cell><cell></cell><cell></cell><cell></cell></row><row><cell>ID</cell><cell>1.000*</cell><cell>1.000*</cell><cell>1.000*</cell></row><row><cell>Past</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hour of day</cell><cell>0.285</cell><cell>0.296</cell><cell>0.300</cell></row><row><cell>Day of week</cell><cell>0.117</cell><cell>0.122</cell><cell>0.124</cell></row><row><cell>Time index</cell><cell>0.107</cell><cell>0.109</cell><cell>0.111</cell></row><row><cell>Occupancy</cell><cell>0.471*</cell><cell>0.473*</cell><cell>0.483*</cell></row><row><cell>Future</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Hour of day</cell><cell>0.781*</cell><cell>0.781*</cell><cell>0.781*</cell></row><row><cell>Day of week</cell><cell>0.099</cell><cell>0.100</cell><cell>0.102</cell></row><row><cell>Time index</cell><cell>0.117</cell><cell>0.119</cell><cell>0.121</cell></row><row><cell>(c) Volatility</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Static</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Region</cell><cell>1.000*</cell><cell>1.000*</cell><cell>1.000*</cell></row><row><cell>Past</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Time index</cell><cell>0.093</cell><cell>0.098</cell><cell>0.142</cell></row><row><cell>Day of week</cell><cell>0.003</cell><cell>0.004</cell><cell>0.004</cell></row><row><cell>Day of month</cell><cell>0.017</cell><cell>0.027</cell><cell>0.028</cell></row><row><cell>Week of year</cell><cell>0.022</cell><cell>0.057</cell><cell>0.068</cell></row><row><cell>Month</cell><cell>0.008</cell><cell>0.009</cell><cell>0.011</cell></row><row><cell>Open-to-close returns</cell><cell>0.078</cell><cell>0.158</cell><cell>0.178</cell></row><row><cell>Realised vol</cell><cell>0.620*</cell><cell>0.647*</cell><cell>0.714*</cell></row><row><cell>Future</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Time index</cell><cell>0.011</cell><cell>0.014</cell><cell>0.024</cell></row><row><cell>Day of week</cell><cell>0.019</cell><cell>0.072</cell><cell>0.299</cell></row><row><cell>Day of month</cell><cell>0.069*</cell><cell>0.635*</cell><cell>0.913</cell></row><row><cell>Week of year</cell><cell>0.026</cell><cell>0.060</cell><cell>0.227</cell></row><row><cell>Month</cell><cell>0.008</cell><cell>0.055</cell><cell>0.713</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_0" coords="3,299.03,676.92,206.87,6.49;3,284.08,685.49,27.78,6.49"><p>For notation simplicity, we omit the subscript i unless explicitly required.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_1" coords="7,299.03,685.49,111.48,6.49"><p>Made available at publication time.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>The authors gratefully acknowledge discussions with <rs type="person">Yaguang Li</rs>, <rs type="person">Maggie Wang</rs>, <rs type="person">Jeffrey Gu</rs>, <rs type="person">Minho Jin</rs>, and <rs type="person">Andrew Moore</rs> that contributed to the development of this paper.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Feature transformations and training details</head><p>We provide all the sufficient information on feature pre-processing and train/test splits to ensure the reproducibility of our results.</p><p>Electricity: Per <ref type="bibr" coords="13,110.36,610.50,74.49,8.11" target="#b33">(Salinas et al., 2019)</ref>, we use 500k samples taken between 2014-01-01 to 2014-09-01 -using the first 90% for training, and the last 10% as a validation set. Testing is done over the 7 days immediately following the training set -as described in <ref type="bibr" coords="13,177.92,652.62,78.36,8.11" target="#b33">Salinas et al. (2019)</ref>, <ref type="bibr" coords="13,38.36,663.15,57.52,8.11" target="#b41">Yu et al. (2016)</ref>. Given the large differences in magnitude between trajectories, we also apply z-score normalization separately to each entity for real-valued inputs. In line with previous work, we consider the electricity usage, day-of-week, hour-of-day, and a time index -i.e. the number of time steps from the first observation -as real-valued inputs, and treat the entity identifier as a categorical variable.</p><p>Traffic: Tests on the Traffic dataset are also kept consistent with previous work, using 500k training samples taken before 2008-06-15 as per <ref type="bibr" coords="13,409.02,419.09,75.94,8.11" target="#b33">(Salinas et al., 2019)</ref>, and split in the same way as the Electricity dataset. For testing, we use the 7 days immediately following the training set, and z-score normalization was applied across all entities. For inputs, we also take traffic occupancy, day-of-week, hour-of-day, and a time index as real-valued inputs, and the entity identifier as a categorical variable.</p><p>Retail: We treat each product number-store number pair as a separate entity, with over 135k entities in total. The training set is made up of 450k samples taken between 2015-01-01 to 2015-12-01, a validation set of 50k samples from the 30 days after the training set, and a test set of all entities over the 30-day horizon following the validation set. We use all inputs from the Kaggle competition. Data is resampled at regular daily intervals, imputing any missing days using the last available observation. We include an additional 'open' flag to denote whether data is present on a given day. We group national, regional, and local holidays into separate variables. We apply a log-transform on the sales data, and adopt z-score normalization across all entities. We consider log sales, transactions, oil to be real-valued and the rest to be categorical.</p><p>Volatility: We use the data from 2000-01-03 to 2019-06-28 -with the training set consisting of data before 2016, the validation set from 2016-2017, and the test  We treat all date-related variables (i.e. day-of-week, dayof-month, week-of-year, and month) and the region as categorical inputs. A log transformation is applied to the target, and all inputs are z-score normalized across all entities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix B. Exploratory analysis of targets across datasets</head><p>Given the importance of target variables in multihorizon forecasting problems, we perform an exploratory data analysis on the targets across datasets -presenting summary statistics in Table <ref type="table" coords="14,157.01,652.78,3.43,8.11">B</ref>.4. We also perform an autocorrelation analysis on the target variable to build some intuition around temporal dynamics, which highlights any significant lags present in each dataset. As standard autocorrelation functions (ACFs) are computed on a univariate variable for a single entity, we compute ACFs separately for each entity -presenting the 95th, 50th, and 5th percentiles across all entities for each lag. From the ranges in Fig. <ref type="figure" coords="14,373.14,487.25,3.42,8.11">B</ref>.6, we can see that the ACF values agree well with the interpretability results of Section 7.2 -i.e. seasonal patterns in Electricity, Traffic, and Retail, no distinct lags in Volatility -indicating that the TFT is faithfully learning significant temporal patterns in the dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix C. Significance testing of TFT P50 and P90 results</head><p>To evaluate the statistical significance of the results, we conduct one-tailed hypothesis tests on the TFT P50 and P90 losses, under the null hypothesis that the TFT losses are not less than the next best benchmark. We compute a 95% confidence interval for the TFT losses via bootstrap resampling, which we compare against point estimates reported for the next best model. Bootstrap distributions are generated using the methodology below:</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="16,284.08,531.23,221.82,6.49;16,296.04,539.80,97.86,6.49" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="16,407.93,531.23,97.97,6.49;16,296.04,539.80,68.11,6.49">Cardiovascular disease risk prediction using automated machine learning: A prospective study of 423,604 UK Biobank participants</title>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">M</forename><surname>Alaa</surname></persName>
+			<idno type="ORCID">0000-0001-9936-7141</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emanuele</forename><surname>Di Angelantonio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">H F</forename><surname>Rudd</surname></persName>
+			<idno type="ORCID">0000-0003-2243-3117</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mihaela</forename><surname>Van Der Schaar</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0213653</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e0213653</biblScope>
+			<date type="published" when="2019-05-15">2019</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,548.37,221.82,6.49;16,296.04,556.94,194.40,6.49" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="16,407.45,548.37,98.45,6.49;16,296.04,556.94,23.16,6.49">Regime Changes and Financial Markets</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allan</forename><surname>Timmermann</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-financial-110311-101808</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,325.26,556.94,114.02,6.49">Annual Review of Financial Economics</title>
+		<title level="j" type="abbrev">Annu. Rev. Financ. Econ.</title>
+		<idno type="ISSN">1941-1367</idno>
+		<idno type="ISSNe">1941-1375</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="313" to="337" />
+			<date type="published" when="2012-10-01">2012</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,565.51,221.82,6.49;16,296.04,574.08,85.74,6.49" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">TabNet: Attentive Interpretable Tabular Learning</title>
+		<author>
+			<persName><forename type="first">Sercan</forename><forename type="middle">Ö</forename><surname>Arik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pfister</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v35i8.16826</idno>
+		<idno type="arXiv">arXiv:1908.07442</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="6679" to="6687" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,582.65,221.82,6.49;16,296.04,591.22,209.86,6.49;16,296.04,599.79,209.86,6.49;16,296.04,608.36,28.94,6.49" xml:id="b3">
+	<monogr>
+		<title level="m" type="main" coord="16,369.03,591.22,136.87,6.49;16,296.04,599.79,114.72,6.49">The Unprecedented Stock Market Impact of COVID-19</title>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Bloom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kyle</forename><surname>Kost</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Sammon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tasaneeya</forename><surname>Viratyosin</surname></persName>
+		</author>
+		<idno type="DOI">10.3386/w26945</idno>
+		<imprint>
+			<date type="published" when="2020-04">2020</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,616.93,221.81,6.49;16,296.04,625.50,45.59,6.49" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="16,340.19,616.93,113.11,6.49">Distributed Lags and Dynamic Models</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Baltagi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-76516-5_6</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="16,466.96,616.93,38.94,6.49">Econometrics</title>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page" from="129" to="145" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,634.07,221.82,6.49;16,296.04,642.64,163.96,6.49" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="16,369.95,634.07,133.18,6.49">Probabilistic demand forecasting at scale</title>
+		<author>
+			<persName><forename type="first">Joos-Hendrik</forename><surname>Böse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentin</forename><surname>Flunkert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Gasthaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Januschowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dustin</forename><surname>Lange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Salinas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Schelter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Seeger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuyang</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.14778/3137765.3137775</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the VLDB Endowment</title>
+		<title level="j" type="abbrev">Proc. VLDB Endow.</title>
+		<idno type="ISSN">2150-8097</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1694" to="1705" />
+			<date type="published" when="2017-08">2017</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,651.21,221.82,6.49;16,296.04,659.78,209.86,6.49;16,296.04,668.35,48.82,6.49" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="16,462.97,651.21,42.92,6.49;16,296.04,659.78,140.17,6.49">Multi-horizon inflation forecasts using disaggregated data</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Capistrán</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Constandse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Ramos-Francia</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.econmod.2010.01.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="16,443.19,659.78,59.65,6.49">Economic Modelling</title>
+		<title level="j" type="abbrev">Economic Modelling</title>
+		<idno type="ISSN">0264-9993</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="666" to="677" />
+			<date type="published" when="2010-05">2010</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="16,284.08,676.92,221.82,6.49;16,296.04,685.49,190.83,6.49" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="16,357.20,676.92,148.70,6.49;16,296.04,685.49,160.51,6.49">RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Choi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="16,471.84,685.49,12.02,6.49">NIPS</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,56.88,221.82,6.49;17,50.31,65.45,209.37,6.49" xml:id="b8">
+	<monogr>
+		<title level="m" type="main" coord="17,206.21,56.88,53.96,6.49;17,50.31,65.45,180.33,6.49">Fast and accurate deep network learning by exponential linear units (ELUs)</title>
+		<author>
+			<persName coords=""><forename type="first">D.-A</forename><surname>Clevert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>In ICLR</note>
+</biblStruct>
+
+<biblStruct coords="17,38.36,74.02,221.82,6.49;17,50.31,82.58,209.86,6.49;17,50.31,91.15,48.82,6.49" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="17,178.77,74.02,81.40,6.49;17,50.31,82.58,8.37,6.49">Kernel-based object tracking</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Comaniciu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Meer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2003.1195991</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,64.60,82.58,192.87,6.49">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Machine Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="564" to="577" />
+			<date type="published" when="2003-05">2003</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,99.92,221.81,6.49;17,50.31,108.69,48.82,6.49" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="17,122.27,99.92,74.68,6.49">Timing of Seasonal Sales</title>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Courty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/209627</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,202.21,99.92,55.05,6.49">The Journal of Business</title>
+		<title level="j" type="abbrev">J BUS</title>
+		<idno type="ISSN">0021-9398</idno>
+		<idno type="ISSNe">1537-5374</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="545" to="572" />
+			<date type="published" when="1999-10">1999</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,117.45,221.81,6.49;17,50.31,126.22,209.86,6.49;17,50.31,134.99,70.20,6.49" xml:id="b11">
+	<monogr>
+		<title level="m" type="main" coord="17,204.71,117.45,55.46,6.49;17,50.31,126.22,154.99,6.49">What Explains the COVID-19 Stock Market?</title>
+		<author>
+			<persName><forename type="first">Josue</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Greenwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sydney</forename><surname>Ludvigson</surname></persName>
+		</author>
+		<idno type="DOI">10.3386/w27784</idno>
+		<imprint>
+			<date type="published" when="2020-09">2020</date>
+			<publisher>National Bureau of Economic Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,143.75,221.82,6.49;17,50.31,152.52,139.72,6.49" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="17,200.10,143.75,60.07,6.49;17,50.31,152.52,108.32,6.49">Language modeling with gated convolutional networks</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Dauphin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Auli</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Grangier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,173.60,152.52,13.14,6.49">ICML</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,161.29,221.82,6.49;17,50.31,170.06,160.78,6.49" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="17,177.94,161.29,82.23,6.49;17,50.31,170.06,41.73,6.49">Temporal Causal Inference with Time Lag</title>
+		<author>
+			<persName><forename type="first">Sizhen</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guojie</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haikun</forename><surname>Hong</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/neco_a_01028</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,97.45,170.06,58.75,6.49">Neural Computation</title>
+		<title level="j" type="abbrev">Neural Computation</title>
+		<idno type="ISSN">0899-7667</idno>
+		<idno type="ISSNe">1530-888X</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="271" to="291" />
+			<date type="published" when="2018-01">2018</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,178.82,221.82,6.49;17,50.31,187.59,114.87,6.49" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coord="17,117.57,178.82,142.60,6.49;17,50.31,187.59,85.45,6.49">Multi-Horizon Time Series Forecasting with Temporal Attention Learning</title>
+		<author>
+			<persName><forename type="first">Chenyou</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuze</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyue</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rong</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wensheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heng</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3292500.3330662</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,150.34,187.59,11.14,6.49">Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</title>
+		<meeting>the 25th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2019-07-25">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,196.36,221.82,6.49;17,50.31,205.12,209.36,6.49;17,50.31,213.89,37.71,6.49" xml:id="b15">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Favorita</surname></persName>
+		</author>
+		<ptr target="https://www.kaggle.com/c/favorita-grocery-sales-forecasting/" />
+		<title level="m" coord="17,107.26,196.36,152.91,6.49;17,50.31,205.12,35.57,6.49">Corporacion favorita grocery sales forecasting competition</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,222.66,221.82,6.49;17,50.31,231.43,155.79,6.49" xml:id="b16">
+	<monogr>
+		<title level="m" type="main" coord="17,145.14,222.66,115.03,6.49;17,50.31,231.43,125.79,6.49">A theoretically grounded application of dropout in recurrent neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Gal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Z</forename><surname>Ghahramani</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>In NIPS</note>
+</biblStruct>
+
+<biblStruct coords="17,38.36,240.19,221.82,6.49;17,50.31,248.96,209.86,6.49;17,50.31,257.73,209.86,6.49;17,50.31,266.49,83.65,6.49" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="17,103.39,240.19,156.78,6.49;17,50.31,248.96,209.86,6.49;17,50.31,257.73,52.43,6.49">The Turn-of-The-Month-Effect: Evidence from Periodic Generalized Autoregressive Conditional Heteroskedasticity (PGARCH) Model</title>
+		<author>
+			<persName coords=""><forename type="first">Eleftherios</forename><surname>Giovanis</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.2479295</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,110.52,257.73,149.65,6.49;17,50.31,266.49,49.11,6.49">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="43" to="61" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,275.26,221.82,6.49;17,50.31,284.03,179.15,6.49" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="17,187.62,275.26,72.55,6.49;17,50.31,284.03,148.15,6.49">Exploring interpretable LSTM neural networks over multi-variable data</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Antulov-Fantulin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,213.04,284.03,13.14,6.49">ICML</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,292.80,221.82,6.49;17,50.31,301.56,209.86,6.49;17,50.31,310.33,19.73,6.49" xml:id="b19">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Heber</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Lunde</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Shephard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">K</forename><surname>Sheppard</surname></persName>
+		</author>
+		<ptr target="https://realized.oxford-man.ox.ac.uk/" />
+		<title level="m" coord="17,236.39,292.80,23.79,6.49;17,50.31,301.56,94.21,6.49">Oxfordman institute&apos;s realized library</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,319.10,221.82,6.49;17,50.31,327.86,117.66,6.49" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="17,176.34,319.10,79.91,6.49">Long Short-Term Memory</title>
+		<author>
+			<persName><forename type="first">Sepp</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/neco.1997.9.8.1735</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,50.31,327.86,58.75,6.49">Neural Computation</title>
+		<title level="j" type="abbrev">Neural Computation</title>
+		<idno type="ISSN">0899-7667</idno>
+		<idno type="ISSNe">1530-888X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1735" to="1780" />
+			<date type="published" when="1997-11-01">1997</date>
+			<publisher>MIT Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,336.63,221.82,6.49;17,50.31,345.40,17.42,6.49" xml:id="b21">
+	<monogr>
+		<title level="m" type="main" coord="17,130.52,336.63,64.95,6.49">Modelling Seasonality</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Hylleberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/oso/9780198773177.001.0001</idno>
+		<imprint>
+			<date type="published" when="1992-08-20">1992</date>
+			<publisher>Oxford University PressOxford</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,354.17,221.82,6.49;17,50.31,362.93,209.86,6.49;17,50.31,371.70,41.15,6.49" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="17,95.01,354.17,165.16,6.49;17,50.31,362.93,55.39,6.49">The Divergence and Bhattacharyya Distance Measures in Signal Selection</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kailath</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tcom.1967.1089532</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,111.30,362.93,145.74,6.49">IEEE Transactions on Communications</title>
+		<title level="j" type="abbrev">IEEE Trans. Commun.</title>
+		<idno type="ISSN">0096-2244</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="52" to="60" />
+			<date type="published" when="1967-02">1967</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,380.47,221.82,6.49;17,50.31,389.23,43.46,6.49" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="17,221.53,380.47,38.64,6.49;17,50.31,389.23,11.57,6.49">Evolving deep unsupervised convolutional networks for vision-based reinforcement learning</title>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Koutník</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juergen</forename><surname>Schmidhuber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faustino</forename><surname>Gomez</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2576768.2598358</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,77.34,389.23,13.14,6.49">Proceedings of the 2014 Annual Conference on Genetic and Evolutionary Computation</title>
+		<meeting>the 2014 Annual Conference on Genetic and Evolutionary Computation</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2014-07-12">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,38.36,398.00,221.82,6.49;17,50.31,406.77,56.17,6.49" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="17,194.92,398.00,62.06,6.49">ArXiv prepares for multimillion-dollar redesign</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lei Ba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">R</forename><surname>Kiros</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.029931</idno>
+		<idno type="arXiv">arXiv:1607.06450</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,56.88,221.82,6.49;17,296.04,65.65,202.69,6.49" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="17,348.26,56.88,157.64,6.49;17,296.04,65.65,163.48,6.49">Enhancing the locality and breaking the memory bottleneck of transformer on time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,474.06,65.65,21.58,6.49">NeurIPS</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,74.41,221.82,6.49;17,296.04,83.18,209.86,6.49;17,296.04,91.95,33.50,6.49" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="17,436.87,74.41,69.02,6.49;17,296.04,83.18,206.49,6.49">Forecasting treatment responses over time using recurrent marginal structural networks</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Lim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Alaa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Van Der Schaar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,304.87,91.95,21.58,6.49">NeurIPS</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,100.72,221.82,6.49;17,296.04,109.48,84.75,6.49" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="17,393.26,100.72,112.64,6.49;17,296.04,109.48,55.12,6.49">Unified Deep Learning Model for Multitask Reaction Predictions with Explanation</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Lundberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S.-I</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jcim.1c01467.s001</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,365.76,109.48,12.02,6.49">NIPS</title>
+		<imprint>
+			<publisher>American Chemical Society (ACS)</publisher>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,118.25,221.82,6.49;17,296.04,127.02,209.86,6.49;17,296.04,135.78,152.03,6.49" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="17,480.02,118.25,25.87,6.49;17,296.04,127.02,206.32,6.49">The M4 Competition: 100,000 time series and 61 forecasting methods</title>
+		<author>
+			<persName><forename type="first">Spyros</forename><surname>Makridakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evangelos</forename><surname>Spiliotis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vassilios</forename><surname>Assimakopoulos</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijforecast.2019.04.014</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,296.04,135.78,105.22,6.49">International Journal of Forecasting</title>
+		<title level="j" type="abbrev">International Journal of Forecasting</title>
+		<idno type="ISSN">0169-2070</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="54" to="74" />
+			<date type="published" when="2020-01">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,144.55,221.82,6.49;17,296.04,153.32,209.86,6.49;17,296.04,162.09,157.99,6.49" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="17,433.23,144.55,72.67,6.49;17,296.04,153.32,209.86,6.49;17,296.04,162.09,33.28,6.49">A comparison of direct and iterated multistep AR methods for forecasting macroeconomic time series</title>
+		<author>
+			<persName><forename type="first">Massimiliano</forename><surname>Marcellino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">H</forename><surname>Stock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">W</forename><surname>Watson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jeconom.2005.07.020</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,334.82,162.09,69.58,6.49">Journal of Econometrics</title>
+		<title level="j" type="abbrev">Journal of Econometrics</title>
+		<idno type="ISSN">0304-4076</idno>
+		<imprint>
+			<biblScope unit="volume">135</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="499" to="526" />
+			<date type="published" when="2006-11">2006</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,170.85,221.82,6.49;17,296.04,179.62,163.65,6.49" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" coord="17,358.46,170.85,147.44,6.49;17,296.04,179.62,133.72,6.49">Phased LSTM: Accelerating recurrent network training for long or event-based sequences</title>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Neil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,444.66,179.62,12.02,6.49">NIPS</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,188.39,221.82,6.49;17,296.04,197.15,62.00,6.49" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" coord="17,383.28,188.39,122.62,6.49;17,296.04,197.15,32.43,6.49">State space models and the Kalman filter</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">S</forename><surname>Rangapuram</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/cbo9781107049994.004</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,343.01,197.15,12.02,6.49">Forecasting, Structural Time Series Models and the Kalman Filter</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="100" to="167" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,205.92,221.82,6.49;17,296.04,214.69,114.51,6.49" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" coord="17,376.32,205.92,129.58,6.49;17,296.04,214.69,85.47,6.49">&quot;Why Should I Trust You?&quot;</title>
+		<author>
+			<persName><forename type="first">Marco</forename><forename type="middle">Tulio</forename><surname>Ribeiro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sameer</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Guestrin</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2939672.2939778</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,395.70,214.69,11.14,6.49">Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</title>
+		<meeting>the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2016-08-13">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,223.46,221.82,6.49;17,296.04,232.22,209.86,6.49;17,296.04,240.99,108.13,6.49" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" coord="17,479.39,223.46,26.50,6.49;17,296.04,232.22,206.49,6.49">DeepAR: Probabilistic forecasting with autoregressive recurrent networks</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Salinas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentin</forename><surname>Flunkert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Gasthaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Januschowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijforecast.2019.07.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,296.04,240.99,105.22,6.49">International Journal of Forecasting</title>
+		<title level="j" type="abbrev">International Journal of Forecasting</title>
+		<idno type="ISSN">0169-2070</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1181" to="1191" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,249.76,221.82,6.49;17,296.04,258.52,74.04,6.49" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" coord="17,353.40,249.76,152.50,6.49;17,296.04,258.52,70.63,6.49">Attend and Diagnose: Clinical Time Series Analysis Using Attention Models</title>
+		<author>
+			<persName><forename type="first">Huan</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deepta</forename><surname>Rajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jayaraman</forename><surname>Thiagarajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Spanias</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v32i1.11635</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2018-04-29">2018</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,267.29,221.82,6.49;17,296.04,276.06,209.86,6.49;17,296.04,284.83,60.34,6.49" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" coord="17,437.48,267.29,68.42,6.49;17,296.04,276.06,153.76,6.49">Multiple-output modeling for multi-step-ahead time series forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">B</forename><surname>Taieb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Sorjamaa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Bontempi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,455.27,276.06,47.25,6.49">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1950" to="1957" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,293.59,221.82,6.49;17,296.04,302.36,160.77,6.49" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" coord="17,349.84,302.36,77.04,6.49">Figure 10: Scaled dot-product attention and multi-head attention (Vaswani et al., 2017).</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerjcs.1946/fig-10</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,441.78,302.36,12.02,6.49">NIPS</title>
+		<imprint>
+			<publisher>PeerJ</publisher>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,311.13,221.82,6.49;17,296.04,319.89,190.60,6.49" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" coord="17,296.04,319.89,159.37,6.49">Residual Attention Network for Image Classification</title>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengqing</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honggang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaogang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoou</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.683</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,469.75,319.89,13.51,6.49">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-07">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,328.66,192.09,6.49" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" coord="17,359.36,328.66,85.83,6.49">Deep factors for forecasting</title>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,459.74,328.66,13.14,6.49">ICML</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,337.43,221.82,6.49;17,296.04,346.20,98.83,6.49" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" coord="17,354.28,337.43,140.19,6.49">A multi-horizon quantile recurrent forecaster</title>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Wen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,296.04,346.20,95.47,6.49">NIPS 2017 time series workshop</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,354.96,221.82,6.49;17,296.04,363.73,203.37,6.49" xml:id="b40">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">O</forename><surname>Arik</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Pfister</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1909.12367</idno>
+		<title level="m" coord="17,431.77,354.96,74.13,6.49;17,296.04,363.73,141.05,6.49">RL-LIM: Reinforcement learning-based locally interpretable modeling</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,372.50,221.82,6.49;17,296.04,381.26,206.72,6.49" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" coord="17,415.75,372.50,90.15,6.49;17,296.04,381.26,177.09,6.49">Temporal regularized matrix factorization for high-dimensional time series prediction</title>
+		<author>
+			<persName coords=""><forename type="first">H.-F</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">S</forename><surname>Dhillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,487.74,381.26,12.02,6.49">NIPS</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,284.08,390.03,221.82,6.49;17,296.04,398.80,209.86,6.49;17,296.04,407.57,51.21,6.49" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" coord="17,392.29,390.03,113.61,6.49;17,296.04,398.80,151.33,6.49">Multi-step prediction for influenza outbreak by an adjusted long short-term memory</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Nawata</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0950268818000705</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,453.36,398.80,52.54,6.49;17,296.04,407.57,24.43,6.49">Epidemiology and Infection</title>
+		<title level="j" type="abbrev">Epidemiol. Infect.</title>
+		<idno type="ISSN">0950-2688</idno>
+		<idno type="ISSNe">1469-4409</idno>
+		<imprint>
+			<biblScope unit="volume">146</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="809" to="816" />
+			<date type="published" when="2018-04-02">2018</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

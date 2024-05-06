@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,107.69,99.57,396.62,14.93;1,279.75,140.50,52.38,8.64">CBIR USING FEATURES DERIVED BY DEEP LEARNING A PREPRINT</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2020-02-20">February 20, 2020</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,162.76,172.31,63.95,8.96;1,226.71,170.81,1.36,6.12"><forename type="first">Subhadip</forename><surname>Maji</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName coords="1,374.35,172.31,60.04,8.96"><forename type="first">Smarajit</forename><surname>Bose</surname></persName>
+							<email>smarajit@isical.ac.in</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">M.Tech QROR-II</orgName>
+								<orgName type="institution">Indian Statistical Institute</orgName>
+								<address>
+									<postCode>700108</postCode>
+									<settlement>Kolkata Kolkata</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Interdisciplinary Statistical Research Unit Indian Statistical Institute</orgName>
+								<address>
+									<postCode>700108</postCode>
+									<settlement>Kolkata Kolkata</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,107.69,99.57,396.62,14.93;1,279.75,140.50,52.38,8.64">CBIR USING FEATURES DERIVED BY DEEP LEARNING A PREPRINT</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2020-02-20">February 20, 2020</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">F3A6008980126DE4F1DAF81EE0C67819</idno>
+					<idno type="arXiv">arXiv:2002.07877v1[cs.IR]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Content Based Image Retrieval</term>
+					<term>Feature Selection</term>
+					<term>Deep Learning</term>
+					<term>Pre-trained Network Models</term>
+					<term>Pre-clustering</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>In a Content Based Image Retrieval (CBIR) System, the task is to retrieve similar images from a large database given a query image. The usual procedure is to extract some useful features from the query image, and retrieve images which have similar set of features. For this purpose, a suitable similarity measure is chosen, and images with high similarity scores are retrieved. Naturally the choice of these features play a very important role in the success of this system, and high level features are required to reduce the "semantic gap". In this paper, we propose to use features derived from pre-trained network models from a deeplearning convolution network trained for a large image classification problem. This approach appears to produce vastly superior results for a variety of databases, and it outperforms many contemporary CBIR systems. We analyse the retrieval time of the method, and also propose a pre-clustering of the database based on the above-mentioned features which yields comparable results in a much shorter time in most of the cases.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Given a query image, often similar images may need to be retrieved from a large database. This is called Content Based Image Retrieval. The standard procedure is to find similar images based on some features extracted from the images. Ideally these features should describe the content information of the images. That is why high-level features are needed, and the low level features like pixel values etc are not very useful.</p><p>IBM developed the first commercial version of CBIR system naming QBIC (Query By Image Content) <ref type="bibr" coords="1,478.97,555.49,17.02,8.64" target="#b23">[24]</ref> in 1995. It allows user to query by user-constructed sketches, example images and drawings. This system uses a combination of texture, shape and colour. Colour co-occurrence matrix (CCM) is used to extract low level features from images, which has been widely used in many works <ref type="bibr" coords="1,218.33,588.21,18.06,8.64" target="#b33">[34,</ref><ref type="bibr" coords="1,238.88,588.21,12.64,8.64" target="#b14">15,</ref><ref type="bibr" coords="1,254.01,588.21,13.48,8.64" target="#b25">26]</ref> in the area of CBIR. Bose et al. <ref type="bibr" coords="1,399.48,588.21,11.79,8.64" target="#b6">[7]</ref> used some visual descriptors to extract features from MPEG-7 standard <ref type="bibr" coords="1,232.04,599.12,15.77,8.64" target="#b17">[18,</ref><ref type="bibr" coords="1,250.30,599.12,13.28,8.64" target="#b20">21]</ref> along with CCM features which achieved some improvement.</p><p>Lohite et al. <ref type="bibr" coords="1,127.37,615.51,16.93,8.64" target="#b19">[20]</ref> worked with the widely used color, texture and edge features of the images, and optimized the result using SVM (Support Vector Machine) classifier. Mehmood et al. <ref type="bibr" coords="1,358.61,626.42,15.15,8.64" target="#b22">[23]</ref> presented a CBIR method named WATH (weighted average of triangular histograms) of visual words. This method adds image spatial elements to inverted index of BoVW (bag-of-visual-words) model, corrects overfitting problem on larger size of dictionary and tries to bride the semantic gap between low-level and high-level features.</p><p>Rashno et al. <ref type="bibr" coords="1,128.33,675.54,15.32,8.64" target="#b29">[30]</ref> proposed a new scheme which suggests to transform the input RGB image to three subsets in neutrosophic (NS) domain. For each of the segment, statistic component, histogram, colour features including dominant colour descriptor (DCD) and wavelet features are extracted. These features are then used to retrieve images. Kumar et al. <ref type="bibr" coords="2,122.97,75.48,15.02,8.64" target="#b32">[33]</ref> introduced a new feature descriptor called local mean differential excitation pattern (LMDeP) which can produce robust features. Sarwar et al. <ref type="bibr" coords="2,241.42,86.39,15.29,8.64" target="#b31">[32]</ref> recommended a method based on bag-of-words (BoW) model, which integrates visual words with local intensity order pattern (LIOP) feature and local binary pattern variance (LBPV) feature to reduce the semantic gap issue and enhance CBIR performance. Rana et al. <ref type="bibr" coords="2,411.56,108.20,15.05,8.64" target="#b28">[29]</ref> proposed image retrieval by combining colour and shape features with nonparametric ranklet transformed texture features. Yusuf et al. <ref type="bibr" coords="2,495.98,119.11,15.02,8.64" target="#b40">[41]</ref> gained improvement in CBIR performance on the basis of visual words fusion of scale invariant feature transform (SIFT) and local intensity order pattern (LIOP) descriptors. Sharif et al. <ref type="bibr" coords="2,311.36,140.93,14.93,8.64" target="#b34">[35]</ref> came up with another feature descriptor called binary robust invariant scalable keypoints (BRISK) along with SIFT. Ashraf et al. <ref type="bibr" coords="2,379.09,151.84,10.86,8.64" target="#b3">[4]</ref> developed a method which retrieves images using YCbCr colour scheme with canny edge histogram and discrete wavelet transform. In Obulesu et al.'s <ref type="bibr" coords="2,72.00,173.66,16.38,8.64" target="#b24">[25]</ref> two extended versions of motif co-occurrence matrices (MCM) are calculated and combined to improve the CBIR performance.</p><p>After the introduction and evolution of Deep Learning Neural Network, the performance of CBIR has got a boost, because by the help of deep models we can finally extract higher-level features along with the low-level features from the image to reduce the semantic gap mentioned above. Khokhar et al. <ref type="bibr" coords="2,387.05,222.77,15.32,8.64" target="#b16">[17]</ref> described how Back-propagation Feedforward Neural Network (BFNN) can be used for classification in CBIR after exploiting some features of images e.g. geometric, colour and texture. Ashraf et al. <ref type="bibr" coords="2,259.95,244.59,10.51,8.64" target="#b4">[5]</ref> presented a bandlet transform based image representation technique which returns information about major objects present in the image reliably. Finally to retrieve images Artifical Neural Network has been used. Xu et al. <ref type="bibr" coords="2,205.00,266.41,14.93,8.64" target="#b39">[40]</ref> proposed part-based weighting aggregation (PWA) for CBIR. This PWA utilizes discriminative filters of deep convolutional layers as part detectors. Several other recent CBIR techniques can be found in the review paper <ref type="bibr" coords="2,146.61,288.23,16.49,8.64" target="#b42">[43]</ref>.</p><p>In this paper, features derived from a pre-trained network model from a deep learning convolution neural network trained for a large image classification have been used for retrieval of similar images. The resulting algorithms appears to achieve remarkable success in terms of retrieval accuracy, and appears to outperform many contemporary CBIR methods. The algorithm is quite fast, however, to reduce retrieval time, a concept of pre-clustering the database has also been introduced which seems to work faster without sacrificing retrieval performance.</p><p>The paper is organized is as follows: Section 2 describes the motivation behind this approach, presents a review of the key ingredients and explores the characteristics of the derived features from a pre-trained network model. In Section 3, we present the details regarding the pre-trained models, similarity measures and evaluation of performance that have been used in this work. Section 4 contains the results of extensive experiments while Section 5 discusses the time complexity. In Section 6, we introduce a concept of pre-clustering of the database and in Section 7, we present the concluding remarks and some future directions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Proposed Method using Features derived by Deep Learning</head><p>In a Content-Based Image Retrieval system, images are represented by a set of low level or/and high-level features. This is called feature encoding where an image from RGB or HSV space is encoded to a n-dimensional feature vector.</p><p>In this paper we propose to derive feature vectors of an image with the help of some pre-trained deep learning models. For this purpose we first present a brief description of the key concepts such as neural network, pre-trained models etc.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Neural Network</head><p>Neural Networks are set up as collections of neurons that are connected in a non-cyclic graph. These models are often depicted into separate layers of neurons. Generally, the most common type is the fully-connected Neural Network layer in which neurons between two adjacent layers are fully pairwise connected, but there is no connection between neurons within a single layer. Below are two examples of fully connected Neural Network <ref type="bibr" coords="2,393.95,585.12,17.95,8.64" target="#b10">[11]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Convolutional Neural Network (CNN)</head><p>Convolutional Neural Networks take input as images and they handle the architecture in a more sensible way. The layers of a CNN have neurons which are arranged in 3 dimensions: width, height, depth. Here, the word depth refers to the third dimension of an activation volume of a layer. The neurons in a layer are connected to a small region of the preceding CNN layer, unlike to all the neurons which is a norm in a fully-connected neural network. The visualization is shown in Figure <ref type="figure" coords="2,148.13,675.31,3.74,8.64">2</ref>.</p><p>As mentioned above, a simple CNN is a sequence of layers, and every layer of a CNN transforms one volume of activation to another by passing through certain differentiable functions. There are mainly three types of layers in CNN architectures: Convolutional Layer, Pooling Layer and Fully-Connected Layer (shown in Figure <ref type="figure" coords="2,469.17,713.51,3.67,8.64">1</ref>). We will stack Figure <ref type="figure" coords="3,100.32,178.43,3.85,8.64">1</ref>: Left: A two-layer Neural Network (one hidden layer of four neurons and one output layer with two neurons) with three inputs. Right: A three-layer neural network with two hidden layers of four neurons each, one output layer with a single neuron and three inputs <ref type="bibr" coords="3,221.34,200.25,16.60,8.64" target="#b10">[11]</ref> these layers on top of each other to form a fully operational CNN architecture <ref type="bibr" coords="3,387.89,233.65,15.87,8.64" target="#b10">[11]</ref>. Figure <ref type="figure" coords="3,440.18,233.65,5.08,8.64">2</ref> shows the CNN model architecture of a classification problem. This network consists of convolution, pooling, fully connected layers and some activation layers (e.g. ReLU, softmax etc).</p><p>Figure <ref type="figure" coords="3,100.37,420.83,3.86,8.64">2</ref>: Every layer of a CNN converts the 3D input volume to a 3D output volume of activations. In given example, the image of the bird is the input layer, so its height and width are the dimensions of the image, and the depth would be three (Red, Green, Blue channels)</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Pre-trained Neural Network Model</head><p>Transfer learning <ref type="bibr" coords="3,141.77,495.28,16.74,8.64" target="#b38">[39]</ref> is a method where instead of starting the training process of a model from scratch, we use the learned weights of an already trained model to solve a different but similar problem. In this way we leverage previous learning through the learned weights and save time considerable amount of time. Usually much better results are also achieved compared to training from scratch.</p><p>In computer vision, transfer learning is usually executed by the use of pre-trained models. A pre-trained model <ref type="bibr" coords="3,512.36,544.40,18.48,8.64" target="#b21">[22]</ref> is a model that was trained on a large benchmark dataset to solve some specific problems similar to the ones we want to solve. Accordingly, because of the high computational cost of training such deep learning models, it is a common practice to import and use models from a published architecture (e.g. VGG, ResNet, Xception etc). A comprehensive review of pre-trained models' performance on computer vision problems using data from the ImageNet <ref type="bibr" coords="3,472.98,588.04,18.25,8.64" target="#b11">[12]</ref> challenge is presented by Canziani et al. <ref type="bibr" coords="3,182.91,598.94,10.20,8.64" target="#b7">[8]</ref>.</p><p>Being motivated by this, we have used a pre-trained Neural Network model which was trained on the ImageNet Dataset. This dataset contains more than 14 million images which belong to more than 20,000 classes. It also provides bounding box annotations for around 1 million images, which can be used in Object Localization tasks. Multiple layers of convolutional layers, average pooling layers, max pooling layers etc. are stacked up with one another with different combinations to build up the model architectures. The final layer is then unwrapped to an n-dimensional vector, which is called the dense (or fully connected) layer. Several fully connected layers can be stacked on this unwrapped dense layer. Finally, a softmax activation layer of dimension: the number of class is stacked over the final dense layer to get the probabilities of each class for classification problems or a linear activation layer of single dimension can be placed to predict the regressed value for regression problems or other kind of structured activation layers are placed according to the desired problems to solve.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Visualizing what CNN learn</head><p>It is often referred that deep-learning models are "black boxes". For certain types of deep-learning models it may be true but for CNN it is not absolutely true. The representations and features, learned by CNN are highly amenable to visualization, in large part because they're representations of visual concepts. Since 2013, different types of techniques have been developed for visualizing and interpreting these feature representations of CNN. Below are some methods to visualize the learnings of CNN <ref type="bibr" coords="4,189.17,140.91,20.06,8.64" target="#b9">[10]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.1">Visualizing intermediate CNN outputs (intermediate activations):</head><p>For this sample image shown in Figure <ref type="figure" coords="4,232.35,189.05,3.95,8.64" target="#fig_1">3</ref>   There are a few things to note here:</p><p>1. The first layers are basically the edge detectors. At this stage, the activations retain almost all of the information present in the picture fed in the network.</p><p>2. As we go higher in the model, the activations outputs from each layer become increasingly abstract and less visually interpretable. They begin to encode higher-level features such as "fish fin" and "fish eye." Higher feature representations carry increasingly less information about the visual contents of the image, and increasingly more information related to the class of the image. It decomposes an image in a hierarchical fashion using multiple alternating layers of convolutional sparse coding (deconvolution <ref type="bibr" coords="5,130.06,460.12,16.68,8.64" target="#b41">[42]</ref>) and max-pooling. Each of this deconvolution layers attempts to minimize the reconstruction error of the input image under a sparsity constraint on an over-complete set of feature maps. After doing so, for this sample image shown in Figure <ref type="figure" coords="5,164.67,481.94,3.68,8.64" target="#fig_4">6</ref>. Some of the shallow level (low level) convolution features are shown in Figure <ref type="figure" coords="5,486.94,481.94,3.68,8.64" target="#fig_5">7</ref>. And, some of the deep level (high level) convolution features are shown in Figure <ref type="figure" coords="5,353.68,492.85,3.74,8.64" target="#fig_6">8</ref>.</p><p>Here we actually see that the model represents edge, texture type low-level features in the first layers, where in the last layers the model learns to represent some higher-level features. As an example, in Figure <ref type="figure" coords="5,422.29,520.15,4.88,8.64" target="#fig_6">8</ref> the deep layers of the model represents fish fin, fish body types concepts.   Visualizing convent filters has been clearly described in chapter 5 of Francois Chollet's book <ref type="bibr" coords="6,442.72,298.16,17.56,8.64" target="#b9">[10]</ref>. It has been shown that the filters in the earlier layers encode directional edges, colors and textures. Also, as we visualize the filters in the deeper layer we find that the filters lend to learn textures found in natural images: feathers, eyes, leaves etc.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Proposed method of Feature Extraction by Deep Learning</head><p>From the above section it is evident that as the model architecture goes deep, it starts to learn high-level features from the low-level features. We propose to use these higher-level features for the feature representation of images in a CBIR system. So, we removed the last softmax activation layer used for calculating probabilities of each class and selected the preceding fully connected layer to be our feature vector representation for CBIR. As this vector is the deepest layer of the model, this represents the most learned high-level features. We encoded (predicted) the images of our CBIR database through our pre-trained model and got an n-dimensional feature vector for each of the images. The flowchart of this process is shown in Figure <ref type="figure" coords="6,206.31,430.10,9.80,8.64">10</ref> for better understanding. The value of n varies with the selection of deep learning network architecture.</p><p>3 Details of the proposed algorithm and performance evaluation 3.1 Pre-trained models used</p><p>We have tried the following network architectures all pre-trained on the ImageNet dataset:</p><p>• DenseNet[14]</p><p>• InceptionResNetV2 <ref type="bibr" coords="6,185.36,548.29,18.23,8.64" target="#b37">[38]</ref> • InceptionV3 <ref type="bibr" coords="6,156.56,563.33,17.71,8.64" target="#b37">[38]</ref> • MobileNetV2 <ref type="bibr" coords="6,160.62,578.37,19.18,8.64" target="#b30">[31]</ref> • NasNet Large <ref type="bibr" coords="6,162.26,593.41,17.62,8.64" target="#b43">[44]</ref> • ResNet50 <ref type="bibr" coords="6,145.13,608.45,18.63,8.64" target="#b12">[13]</ref> • VGG19 <ref type="bibr" coords="6,134.53,623.49,21.33,8.64" target="#b36">[37]</ref> • Xception <ref type="bibr" coords="6,142.88,638.52,13.13,8.64" target="#b8">[9]</ref> The main advantage of this method of feature extraction is that now we are able to extract higher level features without exploiting our database. This is necessary because from the practical point of view we would be having a dump of dataset without any class information. The user will try to find similar images from the database based on the query image he/she has. Now as the dump dataset does not have any pre-defined class, training model on our dataset is not a feasible task unless we manually try to assign class to each of the images of our database dump consisting millions or billions of images which is very time consuming and prone to subjective error for classifying images. To avoid this problem, we are using a Neural Network model pre-trained on a huge separate dataset (ImageNet) to perform feature extraction independently on our CBIR datasets unlike training the model itself on the CBIR datasets <ref type="bibr" coords="7,470.78,86.39,15.77,8.64" target="#b16">[17,</ref><ref type="bibr" coords="7,489.04,86.39,13.28,8.64" target="#b15">16]</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Database Used</head><p>The CBIR methods were applied on the following image databases, which vary in number as well as types of images.  The similarity (or dissimilarity) between a query image (Q) given by the user and a database image (I) stored in the system is measured by some distance metric. It is assumed that this distance will accurately measure the dissimilarity (or similarity) between the images as well. A smaller calculated distance implies more similarity. The similarity between two images can be different for different user's way of perceiving the images. Broadly speaking, there are mainly two types of similarity measures, geometric and probabilistic <ref type="bibr" coords="7,300.39,669.88,15.48,8.64" target="#b27">[28]</ref>. In the first case, the similarity is based on the distance between the feature vectors. A most widely used one is Minkowski, of which L1-norm and L2-norm are most popular.</p><p>In probabilistic type, a Gaussian classifier is often used to measure the relevance between the query image and the database image so that the pairs that had a high likelihood ratio were classified as relevant and the pairs having a low likelihood ratio is considered as irrelevant. Although past research <ref type="bibr" coords="7,341.31,713.51,12.46,8.64" target="#b2">[3]</ref> shows that the probabilistic methods perform significantly better than the geometric methods, they are computationally expensive. Throughout this paper we have used L1 or L2 norm as dissimilarity measure.</p><p>Manhattan Distance (L1 norm) between the extracted features of query image (Q) and database image (I) is formulated by,</p><formula xml:id="formula_0" coords="8,249.06,139.00,290.94,30.32">D(I, Q) = n i=1 |x i,I -x i,Q |<label>(1)</label></formula><p>And, Euclidean Distance (L2 norm) between Q and I is given by,</p><formula xml:id="formula_1" coords="8,246.55,207.23,293.45,30.32">D(I, Q) = n i=1 (x i,I -x i,Q ) 2 (2)</formula><p>Where, n is the feature dimension of the images. x ( i, I) and x ( i, Q) are the i-th feature value of database image and query image respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Evaluation of Performance</head><p>The most commonly used measures for evaluating the performance of a CBIR system is Precision, which is defined as follows:</p><formula xml:id="formula_2" coords="8,183.12,345.52,356.88,21.87">Precision = Number of relevant images retrieved Number of retrieved images<label>(3)</label></formula><p>Generally, the number of images retrieved by any CBIR method is a pre-specified positive integer. This is called the scope of the system. Precision value is calculated for each image in the database, and these values are averaged over all images in the database. Usually, the greater the scope, the larger is the number of relevant images retrieved, typically leading to decreasing values of precision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Results</head><p>In this section we present all the results including selection of the best deep learning network architecture, retrieval results of our CBIR system with respect to the sample query images taken from our datasets, category wise image retrieval precision for our datasets and comparison of precision between the proposed method and some other recent ones on CBIR.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Selection of best Deep Learning Network architecture</head><p>We did a comparative study to select the best deep learning architecture as described in section 2.5 by calculating the average precision for each one of them for a scope value of 20 on DBCorel dataset. Euclidean Distance (L2 norm) is used as the dissimilarity metric. From the results given in Figure <ref type="figure" coords="8,336.54,568.53,10.16,8.64" target="#fig_9">11</ref> it is clearly seen that InceptionResNetV2 is the winner with 96.115% average precision value. Therefore we decided to use the InceptionResNetV2 network architecture for all the subsequent experiments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Image Retrieval of Sample Query Images</head><p>Using the InceptionResNetV2 architecture on the Corel Dataset for the scope of 20, for the example query image shown in Figure <ref type="figure" coords="8,110.74,648.01,8.30,8.64">12</ref>.</p><p>We retrieve 20 results shown in Figure <ref type="figure" coords="8,226.20,664.40,8.23,8.64" target="#fig_10">13</ref>. From Figure <ref type="figure" coords="8,293.76,664.40,8.23,8.64" target="#fig_10">13</ref>, we find that the query images belong to the "bus" category and all 20 results are relevant to the query image. So, the precision for this query image is 1.</p><p>For another query image from the corel dataset shown in Figure <ref type="figure" coords="8,325.94,691.70,8.20,8.64" target="#fig_11">14</ref>, the retrieved results are shown in Figure . Here we see that the query image belongs to the "African People" category and out of 20 retrieved results 13 results are relevant to the query image. So, for this specific image precision value is 13/20 = 0.65. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Category wise Precision Calculation</head><p>In this subsection we produce the category wise average precision on DBCorel and DB2000 for a scope of 20 using Euclidean Distance as dissimilarity metric. Fig   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Result comparison with other recently proposed algorithms</head><p>For DB2000, we select Bose et al.'s paper <ref type="bibr" coords="10,239.29,571.65,12.81,8.64" target="#b6">[7]</ref> as the baseline result. This paper <ref type="bibr" coords="10,385.56,571.65,12.81,8.64" target="#b6">[7]</ref> extracted features from the images in two ways: features from colour co-occurrence matrix and features from MPEG-7. As our paper does not take into account Relevance Feedback <ref type="bibr" coords="10,182.66,593.46,12.93,8.64" target="#b6">[7]</ref>, we are only comparing the precision without relevance feedback of this paper <ref type="bibr" coords="10,507.46,593.46,12.51,8.64" target="#b6">[7]</ref> with ours. Figure <ref type="figure" coords="10,123.24,604.37,9.96,8.64" target="#fig_14">17</ref> shows that our proposed method outperforms all the methods discussed in <ref type="bibr" coords="10,429.96,604.37,10.93,8.64" target="#b6">[7]</ref>.</p><p>In recent years, many researchers have worked <ref type="bibr" coords="10,255.79,620.76,18.20,8.64" target="#b16">[17,</ref><ref type="bibr" coords="10,276.48,620.76,7.48,8.64" target="#b3">4,</ref><ref type="bibr" coords="10,286.45,620.76,12.47,8.64" target="#b34">35,</ref><ref type="bibr" coords="10,301.41,620.76,12.47,8.64" target="#b40">41,</ref><ref type="bibr" coords="10,316.36,620.76,7.48,8.64" target="#b0">1,</ref><ref type="bibr" coords="10,326.33,620.76,12.47,8.64" target="#b31">32,</ref><ref type="bibr" coords="10,341.29,620.76,7.48,8.64" target="#b1">2,</ref><ref type="bibr" coords="10,351.26,620.76,7.48,8.64" target="#b4">5,</ref><ref type="bibr" coords="10,361.23,620.76,12.47,8.64" target="#b29">30,</ref><ref type="bibr" coords="10,376.19,620.76,12.47,8.64" target="#b22">23,</ref><ref type="bibr" coords="10,391.15,620.76,12.47,8.64" target="#b19">20,</ref><ref type="bibr" coords="10,406.10,620.76,8.31,8.64" target="#b5">6]</ref> on DBCorel Dataset extracting different kinds of features and similarity distances. We present two types of comparison with these recent papers on DBCorel Dataset: Category wise precision comparison (Figure <ref type="figure" coords="10,344.75,642.58,9.03,8.64" target="#fig_15">18</ref>) and average precision comparison (Table <ref type="table" coords="10,530.74,642.58,3.67,8.64">2</ref>). It shows that our proposed method outperforms all other methods published in the recent papers. Lohite et al. <ref type="bibr" coords="10,524.68,653.49,15.31,8.64" target="#b19">[20]</ref> calculated category wise precision for scope of 50 instead of 20. We did a comparative study with this algorithm too in Figure <ref type="figure" coords="10,100.50,675.31,9.96,8.64" target="#fig_16">19</ref> and showed that except African People category our proposed method works better even for scope 50.</p><p>For DBCaltech (Caltech101) Dataset, we produce the comparisn with two algortihms given in <ref type="bibr" coords="10,464.60,691.70,11.01,8.64" target="#b6">[7,</ref><ref type="bibr" coords="10,478.94,691.70,12.06,8.64" target="#b28">29]</ref>. Figure <ref type="figure" coords="10,529.84,691.70,10.16,8.64" target="#fig_17">20</ref> compares the average precision. Multiple CBIR techniques are described in both <ref type="bibr" coords="10,404.09,702.61,11.85,8.64" target="#b6">[7]</ref> &amp; <ref type="bibr" coords="10,429.16,702.61,15.58,8.64" target="#b28">[29]</ref>. Hence, we picked the average precision of the best methods. Clearly the proposed method outperformed both of the other methods.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Real Time CBIR</head><p>We have already seen that due to introduction of very deep neural network model (InceptionResNetV2), our results have been improved quite a significant amount, but it arises the retrieval time of images as a matter of question. Whatever models we use, our ultimate goal is to retrieve images in real-time. In this chapter we will discuss about the time complexity of our CBIR system and will show that in spite of introducing deep models, our system can retrieve images in real time for DBCaltech dataset. Also, we will show that introducing the application of Principal Component Analysis <ref type="bibr" coords="11,105.95,619.69,17.16,8.64" target="#b35">[36]</ref> will make the image retrieval even faster without sacrificing the precision.</p><p>Because of small image count, we did not calculate image retrieval time for DB2000 and DBCorel, as it will be always low.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Principal Component Analysis</head><p>Principal Component Analysis <ref type="bibr" coords="11,194.73,691.70,17.29,8.64" target="#b35">[36]</ref> (PCA), is a dimensionality-reduction method generally used to reduce the dimensionality of large data-sets, by converting large set of variables into smaller ones which contains most of the information of the original dataset.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>Average Precision (%) Proposed Method 96.115 Ashraf et al. <ref type="bibr" coords="13,272.16,96.16,10.65,8.64" target="#b3">[4]</ref> 73.5 Sharif et al. <ref type="bibr" coords="13,268.90,107.47,15.02,8.64" target="#b34">[35]</ref> 84.39 Yousuf et al. <ref type="bibr" coords="13,270.85,118.78,15.02,8.64" target="#b40">[41]</ref> 87.3 Ahmed et al. <ref type="bibr" coords="13,273.27,130.09,10.65,8.64" target="#b1">[2]</ref> 83.5 Sarwar et al. <ref type="bibr" coords="13,270.79,141.39,15.02,8.64" target="#b31">[32]</ref> 89.58 Ahmed et al. <ref type="bibr" coords="13,273.27,152.70,10.65,8.64" target="#b0">[1]</ref> 76.5 Ashraf et al. <ref type="bibr" coords="13,272.16,164.01,10.65,8.64" target="#b4">[5]</ref> 82 Rashno et al. <ref type="bibr" coords="13,271.67,175.32,15.02,8.64" target="#b29">[30]</ref> 65.95 Mehmood et al. <ref type="bibr" coords="13,277.21,186.63,15.02,8.64" target="#b22">[23]</ref> 87.85 Khokhar et al. <ref type="bibr" coords="13,274.16,197.93,15.02,8.64" target="#b16">[17]</ref> 94.3 Ahamed et al. <ref type="bibr" coords="13,275.48,209.24,10.65,8.64" target="#b5">[6]</ref> 82 Table <ref type="table" coords="13,95.65,220.55,3.80,8.64">2</ref>: Comparison of average precision between our proposed method and recent papers' methods for scope of 20 on DBCorel. Reducing the number of variables of a data set truncates the information of it, but the trick in dimensionality reduction is to trade a little information for simplicity. The reason behind is smaller data sets are easier to handle and visualize. Analyzing data becomes much easier and faster for machine learning algorithms in small sized datasets. So, to sum up, the idea of PCA is simple-reduce the number of variables of a data set, while preserving as much information as possible.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">PCA on the Encoded Features</head><p>The encoded feature vector dimension for InceptionResNetV2 is 1536 which seems to be large. So, we did Principal Component Analysis on the 1536 feature vector to reduce its dimension and chose the number of principal components (M) for which the average precision value is maximum. For DBCaltech dataset we are taking roughly 100 PCs to calculate the precision. It is seen that taking the first handful number of PCs results almost the same or sometime better average precision with respect to the whole 1536 features. Average precision with PCA: 82.54% and average precision without PCA: 82.02%. In summary PCA increases precision and saves computational time as we are handling with a very reduced dimension.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Approach</head><p>Here, we calculate the average query image retrieval time for the scope of 20 on DBCaltech Dataset. This experiment is done with the following combinations: with PCA and without PCA.</p><p>To explain the experiment with PCA, at first, we will feed all of our database images through CBIR model (Inception-ResNetV2 without the last softmax layer) and PCA respectively, then store those extracted features of dimension 100 of each image in memory as a feature bank. Now when a query image comes it will be passed through CBIR model and PCA respectively. Then we will compare the extracted features from the query image with each of the feature list in the feature bank and ultimately retrieve those images whose features are closer to the query image features evaluated by some similarity metrics i.e. Manhattan Distance, Euclidean Distance etc. So, the time between the feeding of query image and retrieving similar images is the image retrieval time and Fig 41 shows this average image retrieval time. We use the term "average", because we used all the images for our database as query image and calculated retrieval time for each of these images and finally took mean. This process is test on two machines:</p><p>Our local machine • Thermal: Bare Board As we all know that GPUs are highly specialized in parallel computing, so the time required for image retrieval is very less in GPU compared to our local machine. This can be clearly seen in Figure <ref type="figure" coords="14,386.78,384.78,8.27,8.64" target="#fig_19">21</ref>. Also it can be seen that using PCA has reduced down the retrieval time a bit.</p><p>DBCaltech has 9144 images with 1536 dimensional features (without PCA) and DB2000 has 2000 images with 1536 dimensional features. We can see that our GPU machine and somewhat our local machine also can retrieve images from these dataset in real time. Image retrieval time depends on both the Database size and dimension. Dimension is almost same as long as we use same architecture (InceptionResNetV2 in our case). But if we use a dataset of very high number of images (say millions) then the image retrieval time increases naturally. In case, where we see that searching through all of the database for relevant images is taking much time then we could use a random sample of size say 10,000 or 20,000 to retrieve 20 images from the database of size millions or billions. As mentioned above that as the size of the database increases the image retrieval time also increases. So, we have thought of a novel method to further improve the image retrieval time. This method does clustering of the database images and then only search for images within a specified cluster.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">Approach</head><p>The pre-trained model: InceptionResNetV2 we have used during our pre-specified CBIR method was originally trained to predict 1000 classes. Earlier we omitted the last softmax layer and chose the last dense layer for feature extraction. This time we will use both the last dense layer output and softmax layer probability output. The method is explained step by step below. This method has been applied on the Caltech Dataset.</p><p>Figure <ref type="figure" coords="15,103.51,558.43,8.49,8.64">22</ref>: Tested image retrieval time on DBCaltech between proposed Fast Retrieval method and previous method Note: The precision value of the with this above fast retrieval method becomes 81.48% while with the previous method it was 82.02%. So, it is clearly seen that the precision value does not reduce much while the image retrieval time reduces around 2.5 times. The reason behind almost similar results even if searching in the small subset is that the InceptionResNetV2 model predicts the similar images to the same classes, so the clusters of similar images are formed in the classes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Conclusion</head><p>This paper shows that using pre-trained deep learning features gives better precision result with respect to the features derived by traditional methods e.g. CCM, wavelet etc. However, this result can be improved for a specific dataset by introducing the user feedback which is called as Relevance Feedback. Relevance Feedback is basically the feedback from users after each retrieval regarding which results are relevant to the query images and which are not. Using this feedback the CBIR system will start learning and will improve the result gradually.</p><p>There is one limitation of features derived by deep learning is that these features are not rotation-invariant. This means that if we try to retrieve similar images given a same query image but with different orientation angles at every time, the retrieval results will change significantly. Building a rotation-invariant CBIR system may be a next step of improvement over this approach.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="4,236.30,189.05,303.70,8.64;4,72.00,199.96,467.99,8.64;4,72.00,210.87,7.47,8.64"><head></head><label></label><figDesc>: from ImageDB2000 Dataset, the first few intermediate activations for the above image are shown in the Figure 4. The last few intermediate layer activations for Figure 3 are shown in the Figure 5.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,208.72,347.96,194.57,8.64;4,251.28,233.47,109.44,106.37"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: A sample image from DB2000 Dataset</figDesc><graphic coords="4,251.28,233.47,109.44,106.37" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,156.50,579.47,299.01,8.64;4,119.38,509.91,373.25,61.44"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: First few intermediate activations of the image shown in Figure 3</figDesc><graphic coords="4,119.38,509.91,373.25,61.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="5,157.06,363.36,297.89,8.64;5,130.13,220.07,351.74,135.17"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Last few intermediate activations of the image shown in Figure 3</figDesc><graphic coords="5,130.13,220.07,351.74,135.17" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="5,238.73,695.32,134.53,8.64;5,242.45,560.10,127.10,127.10"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: A sample image of Fish</figDesc><graphic coords="5,242.45,560.10,127.10,127.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="6,175.27,146.17,261.47,8.64;6,125.71,72.00,360.58,66.05"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Some low level features of the image shown in Figure 6</figDesc><graphic coords="6,125.71,72.00,360.58,66.05" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="6,160.48,264.86,291.04,8.64;6,173.71,168.03,264.58,88.70"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Some of the deep level features of the image shown in Figure 6</figDesc><graphic coords="6,173.71,168.03,264.58,88.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="7,97.90,151.14,443.84,9.03;7,107.56,162.44,428.80,8.64;7,97.90,176.75,442.10,9.03;7,107.87,188.05,202.96,8.64;7,97.90,202.36,442.10,9.03;7,107.87,213.65,433.38,8.64;7,107.87,224.56,97.53,8.64"><head>•</head><label></label><figDesc>ImageDB2000: The database contains 2000 images from 10 different categories each containing 200 images. The categories are Flowers, Fruits, Nature, Leaves, Ships, Faces, Fishes, Cars, Animals, and Aeroplanes[7]. • ImageDBCaltech (Caltech101): This database contains 9144 images from 102 categories. The number of images in each category varies from 34 to 800[19]. • ImageDBCorel: This dataset contains 1000 images belonging to 10 categories. Each category contains 100 images. The categories are: African People, Beach, Building, Bus, Dinosaurs, Elephant, Flower, Horse, Mountain and Food[27].</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8" coords="7,152.69,375.10,306.62,8.64;7,167.33,248.71,139.10,118.27"><head>Figure 9 :Figure 10 :</head><label>910</label><figDesc>Figure 9: Sample images from Dataset (a) ImageDB2000 and (b) DBCaltech</figDesc><graphic coords="7,167.33,248.71,139.10,118.27" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="9,162.24,256.52,287.52,8.64;9,154.97,72.00,302.06,176.40"><head>Figure 11 :</head><label>11</label><figDesc>Figure 11: Comparison of Deep Learning Architecture on Corel Dataset</figDesc><graphic coords="9,154.97,72.00,302.06,176.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="10,168.64,312.97,274.73,8.64;10,186.39,72.00,239.23,232.85"><head>Figure 13 :</head><label>13</label><figDesc>Figure 13: Retrieved Results for the query image shown in Figure 12</figDesc><graphic coords="10,186.39,72.00,239.23,232.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="10,208.72,493.78,194.57,8.64;10,240.00,351.74,132.00,133.92"><head>Figure 14 :</head><label>14</label><figDesc>Figure 14: A sample query image from DBCorel</figDesc><graphic coords="10,240.00,351.74,132.00,133.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="11,168.64,312.30,274.73,8.64;11,186.72,72.00,238.56,232.18"><head>Figure 15 :</head><label>15</label><figDesc>Figure 15: Retrieved Results for the query image shown in Figure 14</figDesc><graphic coords="11,186.72,72.00,238.56,232.18" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="11,130.53,508.58,350.93,8.64;11,97.01,334.19,207.74,166.27"><head>Figure 16 :</head><label>16</label><figDesc>Figure 16: Category wise average precision for scope of 20 on (a) DBCorel (b) DB2000</figDesc><graphic coords="11,97.01,334.19,207.74,166.27" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14" coords="12,72.00,256.84,468.00,8.64;12,72.00,267.75,48.71,8.64;12,154.97,72.31,302.06,176.40"><head>Figure 17 :</head><label>17</label><figDesc>Figure 17: Comparison of average precision between our proposed method and Bose et al.[7] methods for scope of 20 on DB2000.</figDesc><graphic coords="12,154.97,72.31,302.06,176.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15" coords="12,72.00,485.07,468.00,8.64;12,72.00,495.98,74.16,8.64;12,120.19,286.10,371.62,190.85"><head>Figure 18 :</head><label>18</label><figDesc>Figure 18: Comparison of category wise precision between our proposed method and recent papers methods for scope of 20 on DBCorel.</figDesc><graphic coords="12,120.19,286.10,371.62,190.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16" coords="12,72.00,688.11,468.17,8.64;12,72.00,699.02,469.39,8.64;12,72.00,709.93,35.70,8.64;12,134.31,514.34,343.39,165.65"><head>Figure 19 :</head><label>19</label><figDesc>Figure 19: Comparison of category wise precision between our proposed method and Lohite et al.[20] methods for scope of 50 on DBCorel. Average precision of our proposed method: 93.39%. Average precision of Lohite et al.[20]: 84.226%</figDesc><graphic coords="12,134.31,514.34,343.39,165.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_17" coords="13,72.00,421.09,467.99,8.64;13,72.00,432.00,121.74,8.64;13,176.54,261.76,258.91,151.20"><head>Figure 20 :</head><label>20</label><figDesc>Figure 20: Comparison of average precision among our proposed method, Bose et al.[7] and Rana et al.[29] methods for scope of 20 on DBCaltech.</figDesc><graphic coords="13,176.54,261.76,258.91,151.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_18" coords="14,97.90,177.42,134.74,8.96;14,97.90,192.41,94.10,8.96;14,72.00,212.76,60.60,8.96;14,97.90,233.24,128.24,8.96;14,97.90,248.23,91.79,8.96;14,97.90,263.22,131.77,8.96;14,97.90,278.20,120.70,8.96;14,97.90,293.19,169.95,8.96;14,97.90,308.17,205.12,8.96;14,97.90,323.16,151.22,8.96;14,97.90,338.14,109.09,8.96"><head>• 1 . 24 •</head><label>124</label><figDesc>8GHz Intel Core i5 processor • 8GB LPDDR3 RAM GPU Machine • GPU: 1 NVIDIA Pascal GPU • CUDA Cores: 2,048 • Memory Size: 16 GB GDDR5 • H.264 1080p30 streams: Max vGPU instances: 16 (1 GB Profile) • vGPU Profiles: 1 GB, 2 GB, 4 GB, 8 GB, 16 GB • Form Factor: MXM (blade servers) • Power: 90 W (70 W opt)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_19" coords="14,200.18,632.34,211.63,8.64;14,198.12,498.22,215.76,126.00"><head>Figure 21 :</head><label>21</label><figDesc>Figure 21: Tested image retrieval time on DBCaltech</figDesc><graphic coords="14,198.12,498.22,215.76,126.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="3,106.00,276.30,400.00,136.40"><head></head><label></label><figDesc></figDesc><graphic coords="3,106.00,276.30,400.00,136.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="9,71.64,487.79,470.10,213.68"><head>Table 1 :</head><label>1</label><figDesc>Category wise average precision for scope of 20 on (a) DBCorel (b) DB2000</figDesc><table coords="9,95.05,557.15,386.92,133.41"><row><cell>Categories</cell><cell>Average Precision(%)</cell><cell cols="2">Categories Average Precision(%)</cell></row><row><cell>African People</cell><cell>79.35</cell><cell>Flower</cell><cell>96.65</cell></row><row><cell>Beach</cell><cell>96.6</cell><cell>Fruit</cell><cell>93.25</cell></row><row><cell>Building</cell><cell>93.55</cell><cell>Nature</cell><cell>97.675</cell></row><row><cell>Bus</cell><cell>100</cell><cell>Leaf</cell><cell>91.125</cell></row><row><cell>Dinosaurs</cell><cell>100</cell><cell>Ship</cell><cell>99.8</cell></row><row><cell>Elephant</cell><cell>100</cell><cell>Face</cell><cell>99.275</cell></row><row><cell>Flower</cell><cell>97.25</cell><cell>Fish</cell><cell>99.3</cell></row><row><cell>Horse</cell><cell>99.9</cell><cell>Car</cell><cell>99.725</cell></row><row><cell>Mountain</cell><cell>98.95</cell><cell>Animal</cell><cell>93.3</cell></row><row><cell>Food</cell><cell>95.55</cell><cell>Aeroplane</cell><cell>99.975</cell></row><row><cell></cell><cell>(a)</cell><cell>(b)</cell><cell></cell></row></table><note coords="9,267.74,487.79,272.26,8.64;9,72.00,498.70,467.99,8.64;9,71.64,509.61,470.10,8.64;9,71.69,520.52,469.69,8.64;9,72.00,531.43,386.49,8.64"><p><p><p><p><ref type="bibr" coords="9,267.74,487.79,10.16,8.64" target="#b15">16</ref> </p>and Table</p>1</p>illustrate the results. From the result we see that in DBCorel, for Bus, Dinosaurs and Elephant category the pre-trained InceptionResNetV2 model retrieves all the images with 100% precision but performs comparatively poorly for the African People category resulting in 79.35% precision. The overall average precision for this dataset is 96.115%. For DB2000 the best retrieved category is Airplane (precision: 99.975%) and worst category is Leaf (precision: 91.125%), overall average precision being 97%.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0" coords="4,107.87,713.51,305.23,8.64"><p>The sparsity of the activations increases as we go deep in the layers of CNN.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="17,98.56,98.59,441.44,8.64;17,98.56,109.33,441.44,8.81;17,97.89,120.24,286.03,8.87" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="17,180.13,98.59,359.87,8.64;17,98.56,109.50,136.86,8.64">Convolution, Approximation and Spatial Information Based Object and Color Signatures for Content Based Image Retrieval</title>
+		<author>
+			<persName><forename type="first">Khawaja</forename><forename type="middle">Tehseen</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Ali Haider</forename><surname>Naqvi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccisci.2019.8716437</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,259.18,109.33,280.82,8.58;17,97.89,120.24,29.78,8.58">2019 International Conference on Computer and Information Sciences (ICCIS)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-04">Apr. 2019</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,133.31,441.44,8.64;17,98.56,144.05,415.57,8.87" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="17,316.51,133.31,223.49,8.64;17,98.56,144.22,75.61,8.64">Content based image retrieval using image features information fusion</title>
+		<author>
+			<persName coords=""><forename type="first">Khawaja</forename><forename type="middle">Tehseen</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahida</forename><surname>Ummesafi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Amjad</forename><surname>Iqbal</surname></persName>
+			<idno type="ORCID">0000-0002-2163-3224</idno>
+		</author>
+		<idno type="DOI">10.1016/j.inffus.2018.11.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,198.73,144.05,77.77,8.58">Information Fusion</title>
+		<title level="j" type="abbrev">Information Fusion</title>
+		<idno type="ISSN">1566-2535</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="76" to="99" />
+			<date type="published" when="2018-11">Nov. 2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,156.95,443.10,8.81;17,98.56,167.86,443.18,8.81;17,98.37,178.94,256.90,8.70" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="17,221.98,157.12,260.87,8.64">Probabilistic vs. geometric similarity measures for image retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Aksoy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">M</forename><surname>Haralick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2000.854847</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,505.92,156.95,35.74,8.58;17,98.56,167.86,329.84,8.58">Proceedings IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)</title>
+		<meeting>IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)</meeting>
+		<imprint>
+			<publisher>IEEE Comput. Soc</publisher>
+			<date type="published" when="2000-06">June 2000</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="357" to="362" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Cat. No.PR00662</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,191.84,443.19,8.64;17,98.56,202.58,346.84,8.87" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="17,180.12,191.84,352.97,8.64">Content Based Image Retrieval by Using Color Descriptor and Discrete Wavelet Transform</title>
+		<author>
+			<persName coords=""><forename type="first">Rehan</forename><surname>Ashraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mudassar</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sohail</forename><surname>Jabbar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shehzad</forename><surname>Khalid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Awais</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sadia</forename><surname>Din</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gwangil</forename><surname>Jeon</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10916-017-0880-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,112.12,202.58,110.16,8.58">Journal of Medical Systems</title>
+		<title level="j" type="abbrev">J Med Syst</title>
+		<idno type="ISSN">0148-5598</idno>
+		<idno type="ISSNe">1573-689X</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2018-03">Mar. 2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,215.65,441.44,8.64;17,98.56,226.39,331.40,8.87" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="17,187.99,215.65,352.01,8.64;17,98.56,226.56,30.66,8.64">Content Based Image Retrieval Using Embedded Neural Networks with Bandletized Regions</title>
+		<author>
+			<persName coords=""><forename type="first">Rehan</forename><surname>Ashraf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khalid</forename><surname>Bashir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aun</forename><surname>Irtaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/e17063552</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,154.03,226.39,31.65,8.58">Entropy</title>
+		<title level="j" type="abbrev">Entropy</title>
+		<idno type="ISSNe">1099-4300</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3552" to="3580" />
+			<date type="published" when="2015-06">June 2015</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,239.46,441.44,8.64;17,98.56,250.20,445.10,8.87;17,98.56,261.68,60.01,8.30" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="17,411.78,239.46,128.22,8.64;17,98.56,250.37,22.25,8.64">CBIR system based on prediction errors</title>
+		<author>
+			<persName coords=""><forename type="first">Mohamed</forename><surname>Uvaze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ahamed</forename><surname>Ayoobkhan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Eswaran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kannan</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<idno type="DOI">10.1688/JISE.2017.33.2.5</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,144.11,250.20,190.31,8.58">Journal of Information Science and Engineering</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="347" to="365" />
+			<date type="published" when="2017-03">Mar. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,274.01,441.44,8.81;17,98.12,284.92,443.62,8.87" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="17,185.44,274.18,276.08,8.64">Improved Content-Based Image Retrieval via Discriminant Analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Smarajit</forename><surname>Bose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amita</forename><surname>Pal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Disha</forename><surname>Chakrabarti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taranga</forename><surname>Mukherjee</surname></persName>
+		</author>
+		<idno type="DOI">10.18178/ijmlc.2017.7.3.618</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,486.37,274.01,53.63,8.58;17,98.12,284.92,176.44,8.58">International Journal of Machine Learning and Computing</title>
+		<title level="j" type="abbrev">IJMLC</title>
+		<idno type="ISSN">2010-3700</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="44" to="48" />
+			<date type="published" when="2017-06">June 2017</date>
+			<publisher>EJournal Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,297.99,441.60,8.64;17,98.56,308.73,445.10,8.87;17,98.56,320.21,67.73,8.30" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="17,342.10,297.99,198.07,8.64;17,98.56,308.90,89.24,8.64">ArXiv prepares for multimillion-dollar redesign</title>
+		<author>
+			<persName coords=""><forename type="first">Alfredo</forename><surname>Canziani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eugenio</forename><surname>Culurciello</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.029931</idno>
+		<idno type="arXiv">arXiv:1605.07678</idno>
+		<idno>arXiv: 1605. 07678 [cs.CV</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2016-05">May 2016</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,332.54,442.68,8.81;17,98.56,343.62,325.01,8.70" xml:id="b8">
+	<monogr>
+		<title level="m" type="main" coord="17,178.06,332.71,275.05,8.64">Xception: Deep Learning with Depthwise Separable Convolutions</title>
+		<author>
+			<persName coords=""><forename type="first">François</forename><surname>Chollet</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1610.02357</idno>
+		<idno>arXiv: 1610.02357 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2016-10">Oct. 2016</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,356.35,442.83,8.81;17,98.56,367.43,67.25,8.64" xml:id="b9">
+	<monogr>
+		<title level="m" type="main" coord="17,168.37,356.35,123.69,8.81">Deep Learning with Python. 1st</title>
+		<author>
+			<persName coords=""><forename type="first">Francois</forename><surname>Chollet</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Manning Publications Co</publisher>
+			<biblScope unit="page">9781617294433</biblScope>
+			<pubPlace>Greenwich, CT, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,380.16,443.18,8.87;17,98.23,391.24,94.07,8.64" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Content Based Hierarchical URL Classification with Convolutional Neural Networks</title>
+		<author>
+			<persName><forename type="first">Kishan</forename><surname>Maladkar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icit48102.2019.00053</idno>
+		<ptr target="http://cs231n.stanford.edu/" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,98.56,380.16,262.82,8.58">2019 International Conference on Information Technology (ICIT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-12">2019</date>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,403.98,441.44,8.81;17,97.95,414.88,383.84,8.87" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="17,158.26,404.14,209.79,8.64">ImageNet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li-Jia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kai Li</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Li Fei-Fei</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2009.5206848</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,392.45,403.98,147.54,8.58;17,97.95,414.88,122.56,8.58">2009 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-06">June 2009</date>
+			<biblScope unit="page" from="248" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,427.79,443.19,8.81;17,98.56,438.86,227.31,8.70" xml:id="b12">
+	<monogr>
+		<title level="m" type="main" coord="17,176.23,427.96,185.30,8.64">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1512.03385</idno>
+		<idno>arXiv: 1512.03385 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2015-12">Dec. 2015</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,451.60,443.19,8.81;17,98.56,462.68,227.31,8.70" xml:id="b13">
+	<monogr>
+		<title level="m" type="main" coord="17,174.93,451.77,179.08,8.64">Densely Connected Convolutional Networks</title>
+		<author>
+			<persName coords=""><forename type="first">Gao</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1608.06993</idno>
+		<idno>arXiv: 1608.06993 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2016-08">Aug. 2016</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,475.58,443.19,8.64;17,98.81,486.49,87.39,8.64" xml:id="b14">
+	<monogr>
+		<title level="m" type="main" coord="17,152.18,475.58,182.70,8.64">Color-spatial Image Indexing and Applications</title>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Huang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<pubPlace>Ithaca, NY, USA</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">AAI9838769. PhD thesis</note>
+</biblStruct>
+
+<biblStruct coords="17,98.56,499.39,441.44,8.64;17,98.56,510.13,439.72,8.87" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="17,177.63,499.39,362.37,8.64;17,98.56,510.30,133.02,8.64">An effective content-based image retrieval technique for image visuals representation based on the bag-of-visual-words model</title>
+		<author>
+			<persName coords=""><forename type="first">Safia</forename><surname>Jabeen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zahid</forename><surname>Mehmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toqeer</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Tariq</forename><surname>Mahmood</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0194526</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,256.73,510.13,44.00,8.58">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">e0194526</biblScope>
+			<date type="published" when="2018-03">Mar. 2018</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,523.20,443.09,8.64;17,98.56,533.94,441.44,8.81;17,98.23,545.02,249.10,8.70" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="17,243.34,523.20,298.31,8.64;17,98.56,534.11,112.34,8.64">Content Based Image Retrieval with Multi-Feature Classification by Back-propagation Neural Network</title>
+		<author>
+			<persName coords=""><forename type="first">Suman</forename><surname>Khokhar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Satya</forename><surname>Verma</surname></persName>
+		</author>
+		<idno type="DOI">10.7753/ijcatr0607.1002</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,236.24,533.94,296.29,8.58">International Journal of Computer Applications Technology and Research</title>
+		<title level="j" type="abbrev">IJCATR</title>
+		<idno type="ISSNe">2319-8656</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="278" to="284" />
+			<date type="published" when="2017-07-31">July 2017</date>
+			<publisher>Association of Technology and Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,557.75,441.43,8.81;17,98.56,568.83,143.55,8.64" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="17,160.33,557.75,350.82,8.58">Distributed Multimedia Database Systems</title>
+		<author>
+			<persName coords=""><forename type="first">Harald</forename><surname>Kosch</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9780203009338.ch5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Distributed Multimedia Database Technologies Supported by MPEG-7 and MPEG-21</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2003-11-24">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,581.73,441.44,8.64;17,98.56,592.47,441.44,8.81;17,98.25,603.38,360.24,8.87" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="17,254.54,581.73,285.46,8.64;17,98.56,592.64,253.85,8.64">Learning Generative Visual Models from Few Training Examples: An Incremental Bayesian Approach Tested on 101 Object Categories</title>
+		<author>
+			<persName><surname>Li Fei-Fei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Perona</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2004.383</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="17,398.06,592.47,141.94,8.58;17,98.25,603.38,119.43,8.58">2004 Conference on Computer Vision and Pattern Recognition Workshop</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2004-06">2004. June 2004</date>
+			<biblScope unit="page" from="178" to="178" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,616.45,441.44,8.64;17,98.56,627.19,442.10,8.81;17,98.56,638.27,53.96,8.64" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="17,319.36,616.45,220.64,8.64;17,98.56,627.36,134.49,8.64">CONTENT BASED IMAGE RETRIEVAL USING ERROR DIFFUSION BLOCK TRUNCATION CODING AND SVM FEATURES</title>
+		<author>
+			<persName coords=""><forename type="first">Yogen</forename><surname>Mr</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Mahesh Lohite</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Prof</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Sushant</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Pawar</surname></persName>
+		</author>
+		<idno type="DOI">10.21090/ijaerd.31433</idno>
+		<idno>IRJET) 04.07</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,256.05,627.19,250.28,8.58">International Journal of Advance Engineering and Research Development</title>
+		<title level="j" type="abbrev">IJAERD</title>
+		<idno type="ISSN">2348-6406</idno>
+		<idno type="ISSNe">2348-4470</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2017-11-30">2017</date>
+			<publisher>International Journal of Advance Engineering and Research Development (IJAERD)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,651.00,441.44,8.81;17,98.00,661.91,359.76,8.87" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="17,191.92,651.17,113.73,8.64">Color and texture descriptors</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><forename type="middle">S</forename><surname>Manjunath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-R</forename><surname>Ohm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">V</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yamada</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/76.927424</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="17,329.31,651.00,210.69,8.58;17,98.00,661.91,45.32,8.58">IEEE Transactions on Circuits and Systems for Video Technology</title>
+		<title level="j" type="abbrev">IEEE Trans. Circuits Syst. Video Technol.</title>
+		<idno type="ISSN">1051-8215</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="703" to="715" />
+			<date type="published" when="2001-06">June 2001</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="17,98.56,674.81,442.48,8.87;17,98.56,685.89,384.41,8.70" xml:id="b21">
+	<monogr>
+		<title level="m" type="main" coord="17,172.48,674.81,171.92,8.58">Transfer learning from pre-trained models</title>
+		<author>
+			<persName coords=""><forename type="first">Pedro</forename><surname>Marcelino</surname></persName>
+		</author>
+		<ptr target="https://towardsdatascience.com/transfer-learning-from-pre-trained-models-" />
+		<imprint>
+			<date type="published" when="2019">2393f124751. 2019</date>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,75.48,441.44,8.64;18,98.20,86.39,441.97,8.64;18,98.56,97.13,443.56,8.87;18,98.56,108.60,299.32,8.30" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="18,365.66,75.48,174.34,8.64;18,98.20,86.39,441.97,8.64;18,98.56,97.30,32.88,8.64">Content-based image retrieval and semantic automatic image annotation based on the weighted average of triangular histograms using support vector machine</title>
+		<author>
+			<persName coords=""><forename type="first">Zahid</forename><surname>Mehmood</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Toqeer</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Arshad</forename><surname>Javid</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10489-017-0957-5</idno>
+		<ptr target="https://doi.org/10.1007/s10489-017-0957-5" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,157.03,97.13,81.36,8.58">Applied Intelligence</title>
+		<title level="j" type="abbrev">Appl Intell</title>
+		<idno type="ISSN">0924-669X</idno>
+		<idno type="ISSNe">1573-7497</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="166" to="181" />
+			<date type="published" when="2018-01">Jan. 2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,121.11,442.83,8.64;18,98.31,132.02,137.89,8.64" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="18,190.17,121.11,328.52,8.64">&lt;title&gt;QBIC project: querying images by content, using color, texture, and shape&lt;/title&gt;</title>
+		<author>
+			<persName><forename type="first">Carlton</forename><forename type="middle">W</forename><surname>Niblack</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ron</forename><surname>Barber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Will</forename><surname>Equitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Myron</forename><forename type="middle">D</forename><surname>Flickner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><forename type="middle">H</forename><surname>Glasman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dragutin</forename><surname>Petkovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Yanker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Faloutsos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Taubin</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.143648</idno>
+	</analytic>
+	<monogr>
+		<title level="m">SPIE Proceedings</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="1908-01">1908. Jan. 1993</date>
+			<biblScope unit="page" from="173" to="187" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,144.92,441.44,8.64;18,98.56,155.66,441.44,8.81;18,97.81,166.73,262.87,8.70" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="18,413.42,144.92,126.58,8.64;18,98.56,155.83,163.16,8.64">Content based Image Retrieval Using Multi Motif Co-Occurrence Matrix</title>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Obulesu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vijay Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sumalatha</surname></persName>
+		</author>
+		<idno type="DOI">10.5815/ijigsp.2018.04.07</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,286.06,155.66,253.94,8.58">International Journal of Image, Graphics and Signal Processing</title>
+		<title level="j" type="abbrev">IJIGSP</title>
+		<idno type="ISSN">2074-9074</idno>
+		<idno type="ISSNe">2074-9082</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="59" to="72" />
+			<date type="published" when="2018-04-08">Apr. 2018</date>
+			<publisher>MECS Publisher</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,179.64,321.65,8.64" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="18,159.43,179.64,188.92,8.64">Empirical evaluation of MPEG-7 XM color descriptors in content-based retrieval of semantic image categories</title>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Ojala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Aittola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Matinmikko</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icpr.2002.1048479</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Object recognition supported by user interaction for service robots</title>
+		<imprint>
+			<publisher>IEEE Comput. Soc</publisher>
+			<date type="published" when="2001-01">Jan. 2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,192.37,442.49,8.87;18,98.56,203.45,250.69,8.70" xml:id="b26">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Ortega-Binderberger</surname></persName>
+		</author>
+		<ptr target="https://archive.ics.uci.edu/ml/datasets/corel+image+features" />
+		<title level="m" coord="18,223.79,192.37,124.76,8.58">Corel Image Features Data Set</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,216.35,441.44,8.64;18,98.56,227.09,331.63,8.81" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="18,263.38,216.35,276.62,8.64;18,98.56,227.26,35.13,8.64">Probabilistic Feature Relevance Learning for Content-Based Image Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Jing</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bir</forename><surname>Bhanu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shan</forename><surname>Qing</surname></persName>
+		</author>
+		<idno type="DOI">10.1006/cviu.1999.0770</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,157.55,227.09,173.86,8.58">Computer Vision and Image Understanding</title>
+		<title level="j" type="abbrev">Computer Vision and Image Understanding</title>
+		<idno type="ISSN">1077-3142</idno>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="150" to="164" />
+			<date type="published" when="1999-07">1999</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,240.16,441.44,8.64;18,98.25,250.90,441.75,8.81;18,98.39,261.81,319.54,8.87" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="18,315.05,240.16,224.95,8.64;18,98.25,251.07,261.70,8.64">Boosting content based image retrieval performance through integration of parametric &amp; nonparametric approaches</title>
+		<author>
+			<persName coords=""><forename type="first">Soumya</forename><forename type="middle">Prakash</forename><surname>Rana</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Maitreyee</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Siarry</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jvcir.2018.11.015</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,385.48,250.90,154.52,8.58;18,98.39,261.81,87.14,8.58">Journal of Visual Communication and Image Representation</title>
+		<title level="j" type="abbrev">Journal of Visual Communication and Image Representation</title>
+		<idno type="ISSN">1047-3203</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="205" to="219" />
+			<date type="published" when="2018-11">Nov. 2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,274.88,443.18,8.64;18,98.56,285.62,443.19,8.81;18,98.81,297.10,153.87,8.30" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="18,199.55,274.88,333.13,8.64">Content-based image retrieval with color and texture features in neutrosophic domain</title>
+		<author>
+			<persName><forename type="first">Abdolreza</forename><surname>Rashno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saeed</forename><surname>Sadri</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/pria.2017.7983063</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="18,111.72,285.62,338.49,8.58">2017 3rd International Conference on Pattern Recognition and Image Analysis (IPRIA)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-04">Apr. 2017</date>
+			<biblScope unit="page" from="50" to="55" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,309.43,442.68,8.81;18,98.56,320.51,323.90,8.70" xml:id="b30">
+	<monogr>
+		<title level="m" type="main" coord="18,197.57,309.60,249.27,8.64">MobileNetV2: Inverted Residuals and Linear Bottlenecks</title>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><surname>Sandler</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1801.04381</idno>
+		<idno>arXiv: 1801.04381 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2018-01">Jan. 2018</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,333.41,441.44,8.64;18,98.56,344.15,442.93,8.81;18,97.81,355.23,443.57,8.70;18,98.56,366.54,211.65,8.30" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" coord="18,188.33,333.41,351.67,8.64;18,98.56,344.32,205.37,8.64">A novel method for content-based image retrieval to improve the effectiveness of the bag-of-words model using a support vector machine</title>
+		<author>
+			<persName coords=""><forename type="first">Amna</forename><surname>Sarwar</surname></persName>
+			<idno type="ORCID">0000-0001-6810-1180</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zahid</forename><surname>Mehmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khurram</forename><forename type="middle">Ashfaq</forename><surname>Qazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Adnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Habibullah</forename><surname>Jamal</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0165551518782825</idno>
+		<ptr target="https://doi.org/10.1177/0165551518782825" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,329.00,344.15,123.79,8.58">Journal of Information Science</title>
+		<title level="j" type="abbrev">Journal of Information Science</title>
+		<idno type="ISSN">0165-5515</idno>
+		<idno type="ISSNe">1741-6485</idno>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="117" to="135" />
+			<date type="published" when="2019">2019</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">eprint</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,379.04,441.44,8.64;18,98.56,389.78,443.56,8.87;18,98.56,401.25,277.91,8.30" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" coord="18,282.51,379.04,257.49,8.64;18,98.56,389.95,33.07,8.64">Local mean differential excitation pattern for content based image retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">V</forename><surname>Satya Kumar</surname></persName>
+			<idno type="ORCID">0000-0002-2837-4317</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">G</forename><surname>Krishna Mohan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42452-018-0047-2</idno>
+		<ptr target="https://doi.org/10.1007/s42452-018-0047-2" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,156.35,389.78,84.55,8.58">SN Applied Sciences</title>
+		<title level="j" type="abbrev">SN Appl. Sci.</title>
+		<idno type="ISSN">2523-3963</idno>
+		<idno type="ISSNe">2523-3971</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">46</biblScope>
+			<date type="published" when="2018-11-15">Nov. 2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,413.59,441.44,8.81;18,98.31,424.50,443.07,8.81;18,98.30,435.97,133.22,8.30" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" coord="18,242.77,413.76,222.96,8.64">Image indexing by modified color co-occurrence matrix</title>
+		<author>
+			<persName coords=""><forename type="first">Seong-O</forename><surname>Shim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tae-Sun</forename><surname>Choi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICIP.2003.1247289</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="18,490.20,413.59,49.80,8.58;18,98.31,424.50,205.85,8.58">Proceedings 2003 International Conference on Image Processing</title>
+		<meeting>2003 International Conference on Image Processing</meeting>
+		<imprint>
+			<date type="published" when="2003-09">Sept. 2003</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">493</biblScope>
+		</imprint>
+	</monogr>
+	<note>Cat. No.03CH37429</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,448.48,441.44,8.64;18,98.56,459.22,443.56,8.87;18,98.56,470.69,34.36,8.30" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" coord="18,181.54,448.48,358.46,8.64;18,98.56,459.39,119.96,8.64">Scene analysis and search using local features and support vector machine for effective content-based image retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Uzma</forename><surname>Sharif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zahid</forename><surname>Mehmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toqeer</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Arshad</forename><surname>Javid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10462-018-9636-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="18,242.79,459.22,118.68,8.58">Artificial Intelligence Review</title>
+		<title level="j" type="abbrev">Artif Intell Rev</title>
+		<idno type="ISSN">0269-2821</idno>
+		<idno type="ISSNe">1573-7462</idno>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="901" to="925" />
+			<date type="published" when="2018-06-13">June 2018</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,483.03,443.18,8.81;18,98.56,494.11,217.09,8.70" xml:id="b35">
+	<monogr>
+		<title level="m" type="main" coord="18,177.11,483.20,182.30,8.64">A Tutorial on Principal Component Analysis</title>
+		<author>
+			<persName coords=""><forename type="first">Jonathon</forename><surname>Shlens</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1404.1100</idno>
+		<idno>arXiv: 1404.1100 [cs.LG]</idno>
+		<imprint>
+			<date type="published" when="2014-04">Apr. 2014</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,507.01,443.09,8.64;18,98.56,517.75,412.21,8.87" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" coord="18,269.76,507.01,271.90,8.64;18,98.56,517.92,14.94,8.64">Preprint repository arXiv achieves milestone million uploads</title>
+		<author>
+			<persName coords=""><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.028530</idno>
+		<idno type="arXiv">arXiv:1409.1556</idno>
+		<idno>arXiv: 1409.1556 [cs.CV</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2014-09">Sept. 2014</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,530.82,443.18,8.64;18,98.56,541.56,399.33,8.87" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" coord="18,198.69,530.82,334.56,8.64">Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning</title>
+		<author>
+			<persName coords=""><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Alemi</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v31i1.11231</idno>
+		<idno type="arXiv">arXiv:1602.07261</idno>
+		<idno>arXiv: 1602.07261 [cs.CV</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2016-02">Feb. 2016</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,554.63,249.44,8.64" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Transfer Learning</title>
+		<author>
+			<persName coords=""><forename type="first">Lisa</forename><surname>Torrey</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jude</forename><surname>Shavlik</surname></persName>
+		</author>
+		<idno type="DOI">10.4018/978-1-60566-766-9.ch011</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="18,223.92,554.63,70.41,8.64">Handbook of Research on Machine Learning Applications and Trends</title>
+		<imprint>
+			<publisher>IGI Global</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="242" to="264" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,567.53,441.44,8.64;18,98.56,578.27,443.18,8.87" xml:id="b39">
+	<monogr>
+		<title level="m" type="main" coord="18,161.66,567.53,378.34,8.64;18,98.56,578.44,34.85,8.64">Unsupervised Part-based Weighting Aggregation of Deep Convolutional Features for Image Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Jian</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1705.01247</idno>
+		<idno>arXiv: 1705.01247 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2017-05">May 2017</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,591.34,441.61,8.64;18,98.56,602.08,443.19,8.81;18,98.81,613.56,127.73,8.30" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" coord="18,208.53,591.34,331.63,8.64;18,98.56,602.25,162.30,8.64">A Novel Technique Based on Visual Words Fusion Analysis of Sparse Features for Effective Content-Based Image Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Muhammad</forename><surname>Yousuf</surname></persName>
+			<idno type="ORCID">0000-0003-2223-6658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zahid</forename><surname>Mehmood</surname></persName>
+			<idno type="ORCID">0000-0003-4888-2594</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hafiz</forename><forename type="middle">Adnan</forename><surname>Habib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toqeer</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tanzila</forename><surname>Saba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amjad</forename><surname>Rehman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Rashid</surname></persName>
+			<idno type="ORCID">0000-0001-5852-1296</idno>
+		</author>
+		<idno type="DOI">10.1155/2018/2134395</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mathematical Problems in Engineering</title>
+		<title level="j" type="abbrev">Mathematical Problems in Engineering</title>
+		<idno type="ISSN">1024-123X</idno>
+		<idno type="ISSNe">1563-5147</idno>
+		<imprint>
+			<biblScope unit="volume">2018</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2018-03">2018. Mar. 2018</date>
+			<publisher>Hindawi Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,626.06,441.44,8.64;18,98.56,636.80,442.48,8.87;18,98.56,648.28,91.39,8.30" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" coord="18,276.01,626.06,263.98,8.64;18,98.56,636.97,31.90,8.64">Adaptive deconvolutional networks for mid and high level feature learning</title>
+		<author>
+			<persName><forename type="first">Matthew</forename><forename type="middle">D</forename><surname>Zeiler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Graham</forename><forename type="middle">W</forename><surname>Taylor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rob</forename><surname>Fergus</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2011.6126474</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="18,154.60,636.80,205.25,8.58">2011 International Conference on Computer Vision</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011-11">Nov. 2011</date>
+			<biblScope unit="page" from="2018" to="2025" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="18,98.56,660.78,441.43,8.64;18,98.56,671.52,437.88,8.87" xml:id="b42">
+	<monogr>
+		<title level="m" type="main" coord="18,279.89,660.78,260.10,8.64;18,98.56,671.69,26.13,8.64">Recent Advance in Content-based Image Retrieval: A Literature Survey</title>
+		<author>
+			<persName coords=""><forename type="first">Wengang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Houqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Qi</forename><surname>Tian</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1706.06064</idno>
+		<idno>arXiv: 1706.06064 [cs.MM</idno>
+		<imprint>
+			<date type="published" when="2017-06">June 2017</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct coords="18,98.56,684.42,442.68,8.81;18,98.56,695.50,324.74,8.70" xml:id="b43">
+	<monogr>
+		<title level="m" type="main" coord="18,178.05,684.59,278.30,8.64">Learning Transferable Architectures for Scalable Image Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Barret</forename><surname>Zoph</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1707.07012</idno>
+		<idno>arXiv: 1707.07012 [cs.CV</idno>
+		<imprint>
+			<date type="published" when="2017-07">July 2017</date>
+		</imprint>
+	</monogr>
+	<note>In: arXiv e-prints</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

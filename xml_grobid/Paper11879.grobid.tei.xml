@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,95.64,64.62,450.55,6.72;1,79.56,122.11,437.01,15.70;1,177.48,151.27,241.34,15.70">International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,187.44,175.56,110.80,7.89"><forename type="first">Bismah</forename><forename type="middle">Nazim</forename><surname>Killedar</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,321.39,175.56,87.42,7.89"><forename type="first">Maaz</forename><forename type="middle">Zahid</forename><surname>Datey</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution" key="instit1">Anjuman Islam Janjira Degree College of Science</orgName>
+								<orgName type="institution" key="instit2">Murud-Janjira</orgName>
+								<address>
+									<settlement>Raigad</settlement>
+									<region>Maharashtra</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Communication and Technology (IJARSCT)</orgName>
+								<orgName type="institution">International Journal of Advanced Research in Science</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,95.64,64.62,450.55,6.72;1,79.56,122.11,437.01,15.70;1,177.48,151.27,241.34,15.70">International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">(Online) 2581-9429</idno>
+					</monogr>
+					<idno type="MD5">8B99D6F866B6D0679F8B7A583992EB03</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:28+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Cloud computing, SMBs</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cloud computing has had a significant impact on small and medium-sized businesses (SMBs). The benefits of cloud computing adoption, including cost savings, scalability, flexibility, and improved data security, have made this technology increasingly popular among SMBs. However, several challenges prevent SMBs from adopting cloud computing, including a lack of technical knowledge and expertise, security concerns, and concerns around the reliability and availability of cloud computing services. Despite these challenges, many SMBs have successfully implemented cloud computing and have seen significant improvements in their operations. Case studies have shown that SMBs that migrated to cloud-based services experienced a reduction in IT costs and an increase in revenue. Additionally, SMBs that adopted cloud computing services saw a reduction in downtime and improved disaster recovery capabilities. The impact of cloud computing on SMBs extends beyond operational improvements. Cloud computing has also improved the competitiveness and profitability of SMBs, enabling them to access enterprise-grade technology at an affordable cost and allowing them to scale their operations quickly and efficiently. Cloud computing has also enabled SMBs to compete with larger businesses by providing them with the same technological capabilities. Cloud computing has had a significant impact on SMBs by providing them with cost-effective access to enterprise-grade technology, improving operational efficiency, and enhancing competitiveness and profitability. While several challenges prevent SMBs from adopting cloud computing, successful implementation can bring significant benefits to their operations</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Small and medium-sized businesses (SMBs) are crucial for economic growth and development. However, these businesses often encounter significant difficulties when it comes to adopting and implementing new technologies. Cloud computing is a technology that can provide a range of benefits to businesses of all sizes, including cost savings, flexibility, scalability, and improved data security. The aim of this research paper is to examine the impact of cloud computing on SMBs. Specifically, this study investigates the benefits and barriers to cloud computing adoption for SMBs and analyzes case studies of businesses that have successfully implemented cloud computing. The research questions guiding this study are: What benefits can SMBs derive from cloud computing? What are the primary barriers to cloud computing adoption for SMBs? How can SMBs overcome these barriers and realize the potential benefits of cloud computing? This research paper begins with an overview of cloud computing, followed by a comprehensive literature review of the benefits and barriers to cloud computing adoption for SMBs. The methodology section describes the research design, data collection methods, data analysis techniques, and limitations of the study. The findings and discussion section presents an analysis of the collected data, a discussion of the findings in relation to the research questions, and a comparison with existing literature. Finally, the research paper concludes with a summary of key findings, implications of the study, recommendations for SMBs, and suggestions for future research. Overall, this research paper adds to the understanding of the impact of cloud computing on SMBs and offers practical recommendations for SMBs to overcome barriers to cloud computing adoption and realize the full benefits of this technology.</p><p>www.ijarsct.co.in Impact Factor: 7.301</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Background and description of Cloud Computing</head><p>Cloud computing is a model that provides on-demand access to participated computing resources, similar as servers, storage, operations, and services, over the internet. It offers a flexible and cost-effective alternative to traditional IT structure and enables businesses of all sizes to measure their operations rapidly and efficiently. Cloud computing providers offer a range of services, including Software as a Service( SaaS), Platform as a Service( PaaS), and Infrastructure as a Service( IaaS), which can be acclimatized to meet the specific requirements of businesses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Significance of the Study</head><p>Cloud computing has disintegrated the IT industry, changing the way businesses operate. Small and medium-sized businesses, in particular, have the chance to access enterprise-grade technology at an affordable cost, opening up new chances for growth and innovation. As cloud computing adoption continues to increase, it's important to understand its impact on small and medium-sized businesses, including the challenges and opportunities it presents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Research Questions</head><p>The research paper searches to answer the following research questions  What are the benefits of cloud computing for small and medium-sized businesses?  What are the challenges that small and medium-sized businesses face when taking up cloud computing?  What factors impact the decision to borrow cloud computing among small and medium-sized businesses?  How has cloud computing affected the competitiveness and profitability of small and medium-sized businesses?  What are the stylish practices for applying cloud computing in small and medium-sized businesses?</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Objectives of the Study This research study aims to achieve the following objectives:</head><p> To review existing literature on cloud computing and its impact on small and medium-sized businesses.  To identify the benefits and challenges of cloud computing adoption for small and medium-sized businesses.</p><p> To analyze the factors that impact the decision to adopt cloud computing among small and medium-sized businesses.  To estimate the impact of cloud computing on the competitiveness and profitability of small and mediumsized businesses.  To give recommendations and stylish practices for successful cloud computing implementation in small and medium-sized businesses.</p><p>II. LITERATURE REVIEW A. Overview of Cloud Computing: Cloud computing has transformed the IT industry by providing access to shared computing resources over the internet. The National Institute of Standards and Technology (NIST) defines cloud computing as "a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction" [1]. Cloud computing offers several benefits, including increased efficiency, scalability, and reduced IT costs.</p><p>B. Benefits of Cloud Computing for Small and Medium-sized Businesses: Cloud computing adoption can provide several advantages for small and medium-sized businesses (SMBs). Firstly, cloud computing enables SMBs to access enterprise-grade technology that would be unaffordable otherwise, including high-end software, hardware, and security services <ref type="bibr" coords="2,92.52,705.90,10.69,7.12">[1]</ref>. Secondly, cloud computing allows SMBs to scale their IT infrastructure quickly and efficiently, providing them with the flexibility to respond to changing business needs. Additionally, cloud computing eliminates the need for costly on-premise infrastructure, reducing IT costs significantly <ref type="bibr" coords="2,314.68,732.30,10.58,7.12">[2]</ref>.</p><p>www.ijarsct.co.in Impact Factor: 7.301 C. Barriers to Adopting Cloud Computing: Although cloud computing offers significant benefits, several barriers prevent SMBs from adopting this technology. The lack of technical knowledge and expertise required to deploy and manage cloud computing services is one primary barrier. SMBs may not have the resources to hire IT professionals with the necessary skills to implement cloud computing. Security concerns are another barrier as SMBs may hesitate to store their sensitive data on third-party servers. Moreover, there may be concerns around the reliability and availability of cloud computing services, as SMBs may fear downtime or data loss [3]. D. Case Studies of Small and Medium-sized Businesses that have Implemented Cloud Computing: Case studies demonstrate the benefits of cloud computing for SMBs. A study conducted by Microsoft found that SMBs that migrated to cloud-based services experienced a 20% reduction in IT costs and an increase in revenue by 25% <ref type="bibr" coords="3,464.52,235.86,10.69,7.12">[4]</ref>. Another study by the International Data Corporation (IDC) found that SMBs that adopted cloud computing services saw a 40% increase in employee productivity and a 20% increase in IT staff productivity <ref type="bibr" coords="3,378.24,262.26,10.69,7.12" target="#b4">[5]</ref>. These case studies demonstrate the significant impact of cloud computing on SMBs and highlight the potential benefits of its adoption.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. METHODOLOGY A. Research Design and Approach:</head><p>The research design for this study is a qualitative type case study. The case study design is appropriate for exploring the benefits and challenges of cloud computing adoption in small and medium-sized businesses. The approach involves the analysis of data collected from a selected sample of businesses that have adopted cloud computing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Data Collection Methods:</head><p>The data for this study will be collected using semi-structured interviews with key informants from selected small and medium-sized businesses that have adopted cloud computing. The key informants will include business owners, IT managers, and other relevant stakeholders. The interviews will be conducted either in person or via video conferencing and will be recorded and transcribed for analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Data Analysis Techniques:</head><p>The data collected from the semi-structured interviews will be analyzed using thematic analysis. Thematic analysis is a qualitative analysis technique that involves the identification of patterns and themes in the data. The analysis will involve the identification of key benefits and challenges of cloud computing adoption in small and medium-sized businesses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Limitations of the Study:</head><p>There are several limitations to this study. Firstly, the study will be limited to a small sample of businesses, and the results may not be generalizable to the wider population. Secondly, the study is limited to the perspectives of the key informants and may not capture the views of other stakeholders. Finally, the study is limited to a specific geographical area, and the findings may not be applicable in other contexts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. FINDINGS AND DISCUSSION</head><p>A. Analysis of the Data Collected: The results of the semi-structured interviews with key informants from small and medium-sized businesses indicate that cloud computing adoption can bring significant benefits to these businesses. These advantages include cost savings, improved flexibility and scalability, and enhanced data security. However, the analysis also revealed some obstacles to cloud computing adoption, including concerns about data security and privacy, lack of technical expertise, and limited resources. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,57.60,672.30,481.02,7.12;3,57.60,685.50,481.15,7.12;3,57.60,698.71,480.91,7.12;3,57.60,711.90,369.14,7.12;3,57.60,738.42,481.13,7.12;3,57.60,751.62,480.94,7.12"><head></head><label></label><figDesc>B. Discussion of the Findings in Relation to Research Questions: The study's findings provide insight into the research questions. The research has shown that small and medium-sized businesses can gain substantial benefits from cloud computing adoption, including cost savings, flexibility, scalability, and improved data security. However, these benefits can only be fully realized if the barriers to cloud computing adoption are addressed. C. Comparison with Existing Literature: The results of this study are consistent with previous research on the advantages and challenges of cloud computing adoption. The study contributes to the existing literature by providing a</figDesc></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,100.20,450.30,438.47,7.12;4,100.20,463.50,91.98,7.12" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" coord="4,227.04,450.30,162.75,7.12">The NIST definition of cloud computing</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">M</forename><surname>Mell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Grance</surname></persName>
+		</author>
+		<idno type="DOI">10.6028/nist.sp.800-145</idno>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>National Institute of Standards and Technology</publisher>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page">50</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>National Institute of Standards and Technology</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,476.82,438.40,7.12;4,100.20,490.02,259.90,7.12" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="4,509.40,476.82,29.20,7.12;4,100.20,490.02,76.25,7.12">A view of cloud computing</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Armbrust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armando</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rean</forename><surname>Griffith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><forename type="middle">D</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Randy</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andy</forename><surname>Konwinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gunho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Patterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ariel</forename><surname>Rabkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ion</forename><surname>Stoica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matei</forename><surname>Zaharia</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1721654.1721672</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,183.48,490.02,115.36,7.12">Communications of the ACM</title>
+		<title level="j" type="abbrev">Commun. ACM</title>
+		<idno type="ISSN">0001-0782</idno>
+		<idno type="ISSNe">1557-7317</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="50" to="58" />
+			<date type="published" when="2010-04">2010</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,503.22,438.40,7.12;4,100.20,516.42,438.37,7.12;4,100.20,529.62,100.84,7.12" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Cloud computing and emerging IT platforms: Vision, hype, and reality for delivering computing as the 5th utility</title>
+		<author>
+			<persName><forename type="first">Rajkumar</forename><surname>Buyya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chee</forename><forename type="middle">Shin</forename><surname>Yeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srikumar</forename><surname>Venugopal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Broberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivona</forename><surname>Brandic</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2008.12.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,422.16,516.42,116.41,7.12;4,100.20,529.62,31.35,7.12">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="599" to="616" />
+			<date type="published" when="2009-06">2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,542.94,301.53,7.12" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="4,176.41,542.94,221.29,7.12">Chapter 8: Solutions</title>
+		<idno type="DOI">10.1515/9781547400065-008</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Administering, Configuring, and Maintaining Microsoft Dynamics 365 in the Cloud</title>
+		<imprint>
+			<publisher>De Gruyter</publisher>
+			<date type="published" when="2017-12-18">2017</date>
+			<biblScope unit="page" from="183" to="196" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,86.28,556.14,452.31,7.12;4,100.20,569.34,44.82,7.12" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Cloud Computing an Emerging Tool to Survive E-Business Especially Small and Medium Sized Business</title>
+		<author>
+			<persName coords=""><surname>Idc</surname></persName>
+		</author>
+		<idno type="DOI">10.21275/v5i2.nov161574</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Science and Research (IJSR)</title>
+		<title level="j" type="abbrev">IJSR</title>
+		<idno type="ISSNe">2319-7064</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1877" to="1880" />
+			<date type="published" when="2012">2012</date>
+			<publisher>International Journal of Science and Research</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,582.54,438.33,7.12;4,100.20,595.74,52.47,7.12" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="4,233.40,582.54,154.45,7.12">Using thematic analysis in psychology</title>
+		<author>
+			<persName><forename type="first">Virginia</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victoria</forename><surname>Clarke</surname></persName>
+		</author>
+		<idno type="DOI">10.1191/1478088706qp063oa</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,395.40,582.54,138.71,7.12">Qualitative Research in Psychology</title>
+		<title level="j" type="abbrev">Qualitative Research in Psychology</title>
+		<idno type="ISSN">1478-0887</idno>
+		<idno type="ISSNe">1478-0895</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="77" to="101" />
+			<date type="published" when="2006-01">2006</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,609.07,438.37,7.12;4,100.20,622.26,438.46,7.12;4,100.20,635.46,438.38,7.12;4,100.20,648.66,64.34,7.12;4,187.92,648.66,38.86,7.12;4,250.20,648.66,14.38,7.12;4,288.00,648.66,47.71,7.12;4,359.16,648.66,33.20,7.12;4,415.68,648.66,49.32,7.12;4,488.52,648.66,50.18,7.12;4,100.20,661.86,160.80,7.12" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="4,342.94,622.26,195.72,7.12;4,100.20,635.46,331.33,7.12">AI Techniques for Efficient Healthcare Systems in ECG Wave Based Cardiac Disease Detection by High Performance Modelling</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jeba</forename><surname>Sonia</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">J</forename><surname>Joel Devadass</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dr</forename><forename type="middle">R</forename><surname>Daniel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dr</forename><forename type="middle">A</forename><surname>Sabin Begum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Pathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dr</forename><surname>Veera Talukdar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vivek</forename><surname>Dadasaheb</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Solavande</forename></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.7562589</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.7562589" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,442.92,635.46,95.66,7.12;4,100.20,648.66,64.34,7.12;4,187.92,648.66,38.86,7.12;4,250.20,648.66,14.38,7.12;4,288.00,648.66,47.71,7.12;4,359.16,648.66,33.20,7.12;4,415.68,648.66,36.69,7.12">International Journal of Communication Networks and Information Security (IJCNIS)</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="290" to="302" />
+			<date type="published" when="2022">2022. 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,675.18,438.40,7.12;4,100.20,688.38,51.18,7.12" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coord="4,203.40,675.18,307.12,7.12">Research design: qualitative, quantitative, and mixed methods approaches</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">W</forename><surname>Creswell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Sage publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,701.58,438.56,7.12;4,100.20,714.78,34.14,7.12" xml:id="b8">
+	<monogr>
+		<title level="m" type="main" coord="4,278.52,701.58,256.31,7.12">Management information systems: managing the digital firm</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">C</forename><surname>Laudon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">P</forename><surname>Laudon</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Pearson</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,100.20,727.98,438.37,7.12;4,100.20,741.30,160.05,7.12" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="4,218.64,727.98,211.60,7.12">Cloud computing and SMEs: a systematic review</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="4,439.56,727.98,99.02,7.12;4,100.20,741.30,99.85,7.12">International Journal of Information Management</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="28" to="41" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

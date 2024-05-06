@@ -73,7 +73,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.0" ident="GROBID" when="2024-03-06T11:02+0000">
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -606,8 +606,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="5,307.44,409.90,234.00,9.71;5,317.40,421.86,135.84,9.71" xml:id="b16">
-	<monogr>
-		<title/>
+	<analytic>
+		<title level="a" type="main">Preprint repository arXiv achieves milestone million uploads</title>
 		<author>
 			<persName coords=""><forename type="first">D</forename><surname>Kingma</surname></persName>
 		</author>
@@ -617,10 +617,17 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><surname>Adam Optimizer</surname></persName>
 		</author>
+		<idno type="DOI">10.1063/pt.5.028530</idno>
 		<idno type="arXiv">arXiv:1412.6980</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
 		<imprint>
-			<date type="published" when="2014">2014</date>
 			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2014">2014</date>
+			<publisher>AIP Publishing</publisher>
 		</imprint>
 	</monogr>
 	<note type="report_type">arXiv preprint</note>

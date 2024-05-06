@@ -57,7 +57,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-				<application version="0.8.0" ident="GROBID" when="2024-03-06T11:02+0000">
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:51+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -148,25 +148,21 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="8,72.33,433.01,224.67,6.94;8,72.33,441.88,224.68,7.07;8,72.33,451.01,73.20,6.94" xml:id="b1">
 	<analytic>
-		<title level="a" type="main" coord="8,187.54,433.01,109.46,6.94;8,72.33,442.01,85.51,6.94">Automatic Time Series Forecasting: The&lt;b&gt;forecast&lt;/b&gt;Package for&lt;i&gt;R&lt;/i&gt;</title>
+		<title level="a" type="main" coord="8,187.54,433.01,109.46,6.94;8,72.33,442.01,85.51,6.94">Automatic time series forecasting: the forecast package for R</title>
 		<author>
-			<persName><forename type="first">Rob</forename><forename type="middle">J</forename><surname>Hyndman</surname></persName>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">J</forename><surname>Hyndman</surname></persName>
 		</author>
 		<author>
-			<persName><forename type="first">Yeasmin</forename><surname>Khandakar</surname></persName>
+			<persName coords=""><forename type="first">Y</forename><surname>Khandakar</surname></persName>
 		</author>
-		<idno type="DOI">10.18637/jss.v027.i03</idno>
 	</analytic>
 	<monogr>
 		<title level="j" coord="8,167.58,441.88,98.29,6.89">Journal of Statistical Software</title>
-		<title level="j" type="abbrev">J. Stat. Soft.</title>
-		<idno type="ISSNe">1548-7660</idno>
 		<imprint>
-			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="volume">26</biblScope>
 			<biblScope unit="issue">3</biblScope>
 			<biblScope unit="page" from="1" to="22" />
 			<date type="published" when="2008">2008</date>
-			<publisher>Foundation for Open Access Statistic</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -192,7 +188,7 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 			<biblScope unit="issue">8</biblScope>
 			<biblScope unit="page" from="1735" to="1780" />
 			<date type="published" when="1997-11-01">1997</date>
-			<publisher>MIT Press - Journals</publisher>
+			<publisher>MIT Press</publisher>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -226,8 +222,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="8,72.33,514.09,224.67,6.94;8,72.33,522.96,224.67,7.07;8,72.33,531.96,109.97,7.07" xml:id="b4">
-	<analytic>
-		<title level="a" type="main" coord="8,265.01,514.09,31.99,6.94;8,72.33,523.09,196.46,6.94">Preprint repository arXiv achieves milestone million uploads</title>
+	<monogr>
+		<title level="m" type="main" coord="8,265.01,514.09,31.99,6.94;8,72.33,523.09,196.46,6.94">Nonlinear systems identification using deep dynamic neural networks</title>
 		<author>
 			<persName coords=""><forename type="first">O</forename><forename type="middle">P</forename><surname>Ogunmolu</surname></persName>
 		</author>
@@ -240,16 +236,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">N</forename><forename type="middle">R</forename><surname>Gans</surname></persName>
 		</author>
-		<idno type="DOI">10.1063/pt.5.028530</idno>
 		<idno type="arXiv">arXiv:1610.01439</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Physics Today</title>
-		<title level="j" type="abbrev">Phys. Today</title>
-		<idno type="ISSNe">1945-0699</idno>
 		<imprint>
 			<date type="published" when="2016">2016</date>
-			<publisher>AIP Publishing</publisher>
 		</imprint>
 	</monogr>
 	<note type="report_type">arXiv preprint</note>
@@ -335,21 +324,17 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 
 <biblStruct coords="8,72.33,655.22,224.67,6.94;8,72.33,664.09,224.67,7.07;8,72.33,673.22,30.80,6.94" xml:id="b9">
 	<analytic>
-		<title level="a" type="main" coord="8,111.61,655.22,185.39,6.94;8,72.33,664.22,104.22,6.94">Modeling asymptotically independent spatial extremes based on Laplace random fields</title>
+		<title level="a" type="main" coord="8,111.61,655.22,185.39,6.94;8,72.33,664.22,104.22,6.94">Modeling asymptotically independent spatial extremes based on laplace random fields</title>
 		<author>
-			<persName coords=""><forename type="first">Thomas</forename><surname>Opitz</surname></persName>
+			<persName coords=""><forename type="first">T</forename><surname>Opitz</surname></persName>
 		</author>
-		<idno type="DOI">10.1016/j.spasta.2016.01.001</idno>
 	</analytic>
 	<monogr>
 		<title level="j" coord="8,185.67,664.09,54.30,6.89">Spatial Statistics</title>
-		<title level="j" type="abbrev">Spatial Statistics</title>
-		<idno type="ISSN">2211-6753</idno>
 		<imprint>
 			<biblScope unit="volume">16</biblScope>
 			<biblScope unit="page" from="1" to="18" />
-			<date type="published" when="2016-05">2016</date>
-			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2016">2016</date>
 		</imprint>
 	</monogr>
 </biblStruct>
@@ -372,13 +357,10 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">M</forename><forename type="middle">S</forename><surname>Andersland</surname></persName>
 		</author>
-		<idno type="DOI">10.1109/icpp.1997.622683</idno>
 	</analytic>
 	<monogr>
-		<title level="m" coord="8,218.18,703.11,75.66,6.89">Proceedings of the 1997 International Conference on Parallel Processing (Cat. No.97TB100162)</title>
-		<meeting>the 1997 International Conference on Parallel Processing (Cat. No.97TB100162)</meeting>
+		<title level="m" coord="8,218.18,703.11,75.66,6.89">Parallel Processing &apos;97</title>
 		<imprint>
-			<publisher>IEEE Comput. Soc</publisher>
 			<date>Aug</date>
 			<biblScope unit="page" from="481" to="488" />
 		</imprint>
@@ -386,8 +368,8 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 </biblStruct>
 
 <biblStruct coords="8,333.33,73.71,224.67,7.07;8,333.33,82.71,81.24,7.07" xml:id="b11">
-	<analytic>
-		<title level="a" type="main" coord="8,447.08,73.85,54.90,6.94">Preprint repository arXiv achieves milestone million uploads</title>
+	<monogr>
+		<title level="m" type="main" coord="8,447.08,73.85,54.90,6.94">Concrete dropout</title>
 		<author>
 			<persName coords=""><forename type="first">Y</forename><surname>Gal</surname></persName>
 		</author>
@@ -397,16 +379,9 @@ xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.co
 		<author>
 			<persName coords=""><forename type="first">A</forename><surname>Kendall</surname></persName>
 		</author>
-		<idno type="DOI">10.1063/pt.5.028530</idno>
 		<idno type="arXiv">arXiv:1705.07832</idno>
-	</analytic>
-	<monogr>
-		<title level="j">Physics Today</title>
-		<title level="j" type="abbrev">Phys. Today</title>
-		<idno type="ISSNe">1945-0699</idno>
 		<imprint>
 			<date type="published" when="2017">2017</date>
-			<publisher>AIP Publishing</publisher>
 		</imprint>
 	</monogr>
 	<note type="report_type">arXiv preprint</note>
