@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,108.43,82.10,314.08,14.93">VISION TRANSFORMERS NEED REGISTERS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-09-28">28 Sep 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,113.98,117.53,71.29,8.96"><forename type="first">Timothée</forename><surname>Darcet</surname></persName>
+							<email>timdarcet@meta.com</email>
+							<affiliation key="aff0">
+								<orgName type="institution">INRIA</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,201.06,117.53,66.70,8.96"><forename type="first">Maxime</forename><surname>Oquab</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">INRIA</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,277.21,117.53,57.69,8.96"><forename type="first">Julien</forename><surname>Mairal</surname></persName>
+							<email>julien.mairal@inria.fr</email>
+							<affiliation key="aff0">
+								<orgName type="institution">INRIA</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,352.65,117.53,73.79,8.96"><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+							<email>bojanowski@meta.com</email>
+							<affiliation key="aff0">
+								<orgName type="institution">INRIA</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,120.94,129.32,47.41,8.64"><forename type="first">Meta</forename><surname>Fair</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">INRIA</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,108.43,82.10,314.08,14.93">VISION TRANSFORMERS NEED REGISTERS</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-09-28">28 Sep 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">954E212A4FDFADDA823560E427D0EB83</idno>
+					<idno type="arXiv">arXiv:2309.16588v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:53+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Without registers With registers Input DeiT-III CLIP DINOv2 DeiT-III CLIP DINOv2</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Transformers have recently emerged as a powerful tool for learning visual representations. In this paper, we identify and characterize artifacts in feature maps of both supervised and self-supervised ViT networks. The artifacts correspond to high-norm tokens appearing during inference primarily in low-informative background areas of images, that are repurposed for internal computations. We propose a simple yet effective solution based on providing additional tokens to the input sequence of the Vision Transformer to fill that role. We show that this solution fixes that problem entirely for both supervised and self-supervised models, sets a new state of the art for self-supervised visual models on dense visual prediction tasks, enables object discovery methods with larger models, and most importantly leads to smoother feature maps and attention maps for downstream visual processing.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Figure <ref type="figure" coords="1,136.84,560.17,3.88,8.64">1</ref>: Register tokens enable interpretable attention maps in all vision transformers, similar to the original DINO method <ref type="bibr" coords="1,215.69,571.12,75.77,8.64" target="#b4">(Caron et al., 2021)</ref>. Attention maps are calculated in high resolution for better visualisation. More qualitative results are available in appendix D.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>Embedding images into generic features that can serve multiple purposes in computer vision has been a long-standing problem. First methods relied on handcrafted principles, such as SIFT <ref type="bibr" coords="1,475.76,657.62,28.24,8.64;1,108.00,668.58,21.44,8.64" target="#b17">(Lowe, 2004)</ref>, before the scale of data and deep learning techniques allowed for end-to-end training. Pursuing generic feature embeddings is still relevant today, as collecting valuable annotated data for many specific tasks remains difficult. This difficulty arises because of the required expertise (e.g., medical data, or remote sensing) or the cost at scale. Today, it is common to pretrain a model for a task for which plenty of data is available and extract a subset of the model to use as a feature extractor. Multiple approaches offer this possibility; supervised methods, building on classification We consider ViTs trained with label supervision (DeiT-III), text-supervision (OpenCLIP) or selfsupervision (DINO and DINOv2). Interestingly, all models but DINO exhibit peaky outlier values in the attention maps. The goal of this work is to understand and mitigate this phenomenon.</p><p>or text-image alignment, allow training strong feature models to unlock downstream tasks. Alternatively, self-supervised methods building on the Transformer architecture have attracted significant attention due to their high prediction performance on downstream tasks and the intriguing ability of some models to provide unsupervised segmentations <ref type="bibr" coords="2,320.22,414.53,77.75,8.64" target="#b4">(Caron et al., 2021)</ref> In particular, the DINO algorithm is shown to produce models that contain explicit information about the semantic layout of an image. Indeed, qualitative results show that the last attention layer naturally focuses on semantically consistent parts of images and often produces interpretable attention maps. Exploiting these properties, object discovery algorithms such as LOST <ref type="bibr" coords="2,393.87,464.35,87.18,8.64" target="#b22">(Siméoni et al., 2021)</ref> build on top of DINO. Such algorithms can detect objects without supervision by gathering information in attention maps. They are effectively unlocking a new frontier in computer vision.</p><p>DINOv2 <ref type="bibr" coords="2,146.43,503.20,81.40,8.64" target="#b18">(Oquab et al., 2023)</ref>, a follow-up to DINO, provides features that allow tackling dense prediction tasks. DINOv2 features lead to successful monocular depth estimation and semantic segmentation with a frozen backbone and linear models. Despite the strong performance on dense tasks, we observed that DINOv2 is surprisingly incompatible with LOST. When used to extract features, it delivers disappointing performance, only on par with supervised alternative backbones in this scenario. This suggests that DINOv2 behaves differently than DINO. The investigation described in this work notably exposes the presence of artefacts in the feature maps of DINOv2 that were not present in the first version of this model. These are observable qualitatively using straightforward methods. Also surprisingly, applying the same observations to supervised vision transformers exposes similar artifacts, as shown in Fig. <ref type="figure" coords="2,269.33,601.83,3.74,8.64" target="#fig_0">2</ref>. This suggests that DINO is, in fact, an exception, while DINOv2 models match the baseline behavior of vision transformers.</p><p>In this work, we set out to better understand this phenomenon and develop methods to detect these artifacts. We observe that they are tokens with roughly 10x higher norm at the output and correspond to a small fraction of the total sequence (around 2%). We also show that these tokens appear around the middle layers of the vision transformer, and that they only appear after a sufficiently long training of a sufficiently big transformer. In particular, we show that these outlier tokens appear in patches similar to their neighbors, meaning patches that convey little additional information.</p><p>As part of our investigation, we evaluate the outlier tokens with simple linear models to understand the information they contain. We observe that, compared to non-outlier tokens, they hold less information about their original position in the image or the original pixels in their patch. This ob- We observe that DINOv2 has a few outlier patches, whereas DINO does not present these artifacts. For DINOv2, although most patch tokens have a norm between 0 and 100, a small proportion of tokens have a very high norm. We measure the proportion of tokens with norm larger than 150 at 2.37%.</p><p>servation suggests that the model discards the local information contained in these patches during inference. On the other hand, learning an image classifier on outlier patches yields significantly stronger accuracy than doing so on the other patches, suggesting that they contain global information about the image. We propose the following interpretation to these elements: the model learns to recognize patches containing little useful information, and recycle the corresponding tokens to aggregate global image information while discarding spatial information.</p><p>This interpretation is consistent with an inner mechanism in transformer models that allows performing computations within a restricted set of tokens. In order to test this hypothesis, we append additional tokens -that we call registers -to the token sequence, independent of the input image. We train several models with and without this modification and observe that the outlier tokens disappear from the sequence entirely. As a result, the performance of the models increases in dense prediction tasks, and the resulting feature maps are significantly smoother. These smooth feature maps enable object discovery methods like LOST mentioned above with the updated models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">PROBLEM FORMULATION</head><p>As shown in Fig. <ref type="figure" coords="3,181.20,431.71,3.74,8.64" target="#fig_0">2</ref>, most modern vision transformers exhibit artifacts in the attention maps. The unsupervised DINO backbone <ref type="bibr" coords="3,233.86,442.67,80.48,8.64" target="#b4">(Caron et al., 2021)</ref> has been previously praised for the quality of local features and interpretability of attention maps. Surprisingly, the outputs of the subsequent DINOv2 models have been shown to hold good local information but exhibit undesirable artifacts in attention maps. In this section, we propose to study why and when these artifacts appear. While this work focuses on alleviating artefacts in all vision transformers, we focus our analysis on DINOv2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">ARTIFACTS IN THE LOCAL FEATURES OF DINOV2</head><p>Artifacts are high-norm outlier tokens. We want to find a quantitative way of characterizing artefacts that appear in the local features. We observe that an important difference between "artifact" patches and other patches is the norm of their token embedding at the output of the model. In Fig. <ref type="figure" coords="3,499.02,555.88,4.98,8.64" target="#fig_1">3</ref> (left), we compare the norm of local features for a DINO and DINOv2 model given a reference image. We clearly see that the norm of artifact patches is much higher than the norm of other patches. We also plot the distribution of feature norms over a small dataset of images in Fig. <ref type="figure" coords="3,499.02,588.75,4.98,8.64" target="#fig_1">3</ref> (right), which is clearly bimodal, allowing us to choose a simple criterion for the rest of this section: tokens with norm higher than 150 will be considered as "high-norm" tokens, and we will study their properties relative to regular tokens. This hand-picked cutoff value can vary across models. In the rest of this work, we use "high-norm" and "outlier" interchangeably.</p><p>Outliers appear during the training of large models. We make several additional observations about the conditions in which these outlier patches appear during the training of DINOv2. This analysis is illustrated in Fig. <ref type="figure" coords="3,221.67,679.54,3.74,8.64" target="#fig_3">4</ref>. First, these high-norm patches seem to differentiate themselves from other patches around layer 15 of this 40-layer ViT (Fig. <ref type="figure" coords="3,326.65,690.50,7.61,8.64" target="#fig_3">4a</ref>). Second, when looking at the distribution of norms along training of DINOv2, we see that these outliers only appear after one third of training (Fig. <ref type="figure" coords="3,129.79,712.42,7.89,8.64" target="#fig_3">4b</ref>). Finally, when analyzing more closely models of different size (Tiny, Small, Base, Large, Huge and giant), we see that only the three largest models exhibit outliers (Fig. <ref type="figure" coords="3,425.33,723.38,7.61,8.64" target="#fig_3">4c</ref>).    High-norm tokens appear where patch information is redundant. To verify this, we measure the cosine similarity between high-norm tokens and their 4 neighbors right after the patch embedding layer (at the beginning of the vision transformer). We illustrate the density plot in Fig. <ref type="figure" coords="4,108.00,460.50,7.93,8.64" target="#fig_5">5a</ref>. We observe that high-norm tokens appear on patches that are very similar to their neighbors. This suggests that these patches contrain redundant information and that the model could discard their information without hurting the quality of the image representation. This matches qualitative observations (see Fig. <ref type="figure" coords="4,197.40,493.38,4.15,8.64" target="#fig_0">2</ref>) that they often appear in uniform, background areas.</p><p>High-norm tokens hold little local information. In order to better understand the nature of these tokens, we propose to probe the patch embeddings for different types of information. For that we consider two different tasks: position prediction and pixel reconstruction. For each of these tasks, we train a linear model on top of the patch embeddings, and measure the performance of this model. We compare the performance achieved with high-norm tokens and with other tokens, to see if high-norm tokens contain different information than "normal" tokens.</p><p>• Position prediction. We train a linear model to predict the position of each patch token in the image, and measure its accuracy. We note that this position information was injected in the tokens before the first ViT layer in the form of absolute position embeddings. We observe that high-norm tokens have much lower accuracy than the other tokens (Fig. <ref type="figure" coords="4,488.23,625.92,7.89,8.64" target="#fig_5">5b</ref>), suggesting they contain less information about their position in the image. • Pixel reconstruction. We train a linear model to predict the pixel values of the image from the patch embeddings, and measure the accuracy of this model. We observe again that high-norm tokens achieve much lower accuracy than other tokens (Fig. <ref type="figure" coords="4,431.24,673.53,7.89,8.64" target="#fig_5">5b</ref>). This suggests that high-norm tokens contain less information to reconstruct the image than the others.  <ref type="table" coords="5,132.58,147.95,3.88,8.64">1</ref>: Image classification via linear probing on normal and outlier patch tokens. We also report the accuracy of classifiers learnt on the class token. We see that outlier tokens have a much higher accuracy than regular ones, suggesting they are effectively storing global image information. benchmarks. For each image in a classification dataset, we forward it through DINOv2-g and extract the patch embeddings. From those, we choose a single token at random, either high-norm or normal. This token is then considered as the image representation. We then train a logistic regression classifier to predict the image class from this representation, and measure the accuracy. We observe that the high-norm tokens have a much higher accuracy than the other tokens (Table <ref type="table" coords="5,472.53,427.85,3.60,8.64">1</ref>). This suggests that outlier tokens contain more global information than other patch tokens.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">HYPOTHESIS AND REMEDIATION</head><p>Having made these observations, we make the following hypothesis: large, sufficiently trained models learn to recognize redundant tokens, and to use them as places to store, process and retrieve global information. Furthermore, we posit that while this behavior is not bad in itself, the fact that it happens inside the patch tokens is undesirable. Indeed, it leads the model to discard local patch information (Tab. 5b), possibly incurring decreased performance on dense prediction tasks.</p><p>We therefore propose a simple fix to this issue: we explicitly add new tokens to the sequence, that the model can learn to use as registers. We add these tokens after the patch embedding layer, with a learnable value, similarly to the [CLS] token. At the end of the vision transformer, these tokens are discarded, and the [CLS] token and patch tokens are used as image representations, as usual. This mechanism was first proposed in Memory Transformers <ref type="bibr" coords="5,331.64,588.68,80.67,8.64" target="#b2">(Burtsev et al., 2020)</ref>, improving translation tasks in NLP. Interestingly, we show here that this mechanism admits a natural justification for vision transformers, fixing an interpretability and performance issue that was present otherwise.</p><p>We note that we have not been able to fully determine which aspects of the training led to the appearance of artifacts in DINOv2 but not in DINO, but Fig. <ref type="figure" coords="5,353.89,638.49,4.98,8.64" target="#fig_3">4</ref> suggests that scaling the model size beyond ViT-L, and longer training length may be possible causes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">EXPERIMENTS</head><p>In this section, we validate the proposed solution by training vision transformers with additional [reg] register tokens. We evaluate the effectiveness of our approach by a quantitative and qualitative analysis. We then ablate the number of registers used for training, to check that they do not cause a performance regression, evaluate an unsupervised object discovery method atop our features and finally provide a qualitative analysis of the patterns learnt by the registers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">TRAINING ALGORITHMS AND DATA</head><p>As the proposed solution is a simple architectural change, we can easily apply it to any training procedure. We try it on three different state-of-the-art training methods for supervised, text-supervised, and unsupervised learning, shortly described below.</p><p>DEIT-III <ref type="bibr" coords="6,149.23,315.33,83.33,8.64" target="#b25">(Touvron et al., 2022</ref>) is a simple and robust supervised training recipe for classification with ViTs on ImageNet-1k and ImageNet-22k. We choose this method as an example of labelsupervised training as it is simple, uses the base ViT architecture, achieves strong classification results, and is easy to reproduce and modify with our improvements. We run this method on the ImageNet-22k dataset, using the ViT-B settings, as provided in the official repository<ref type="foot" coords="6,448.65,357.50,3.49,6.05" target="#foot_0">1</ref> .</p><p>OpenCLIP <ref type="bibr" coords="6,157.42,376.10,76.59,8.64" target="#b11">(Ilharco et al., 2021</ref>) is a strong training method for producing text-image aligned models, following the original CLIP work. We chose this method as an example of text-supervised training because it is open-source, uses the base ViT architecture, and is easy to reproduce and modify with our improvements. We run the OpenCLIP method on a text-image-aligned corpus based on Shutterstock that includes only licensed image and text data. We use a ViT-B/16 image encoder, as proposed in the official repository<ref type="foot" coords="6,245.27,429.23,3.49,6.05" target="#foot_1">2</ref> .</p><p>DINOv2 <ref type="bibr" coords="6,146.37,447.83,75.01,8.64" target="#b18">(Oquab et al., 2023</ref>) is a self-supervised method for learning visual features, following the DINO work mentioned previously. We apply our changes to this method as it is the main focus of our study. We run this method on ImageNet-22k with the ViT-L configuration. We use the code from the official repository<ref type="foot" coords="6,217.88,479.04,3.49,6.05" target="#foot_2">3</ref> .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">EVALUATION OF THE PROPOSED SOLUTION</head><p>As shown in Fig. <ref type="figure" coords="6,181.35,529.74,3.74,8.64">1</ref>, we get rid of the artifacts by training models with additional register tokens.</p><p>In the appendix, we provide additional qualitative results for more images in Fig. <ref type="figure" coords="6,442.77,540.69,8.30,8.64" target="#fig_3">14</ref>. In order to quantitatively measure this effect, for each model, we probe the norm of features at the output of the model. We report these norms for all three algorithms with and without registers in Fig. <ref type="figure" coords="6,479.50,562.61,3.74,8.64" target="#fig_7">7</ref>. We see that when training with registers, models do not exhibit large-norm tokens at the output, which confirms the initial qualitative assessment.</p><p>Performance regression. In the previous section, we have shown that the proposed approach removes artifacts from local feature maps. In this experiment, we want to check that the use of register tokens does not affect the representation quality of those features. We run linear probing on Im-ageNet classification, ADE20k Segmentation, and NYUd monocular depth estimation. We follow the experimental protocol outlined in <ref type="bibr" coords="6,261.43,645.30,77.81,8.64" target="#b18">Oquab et al. (2023)</ref>. We summarize the performance of the models described in Sec. 3.1 with and without register tokens in Table <ref type="table" coords="6,399.13,656.26,7.93,8.64">2a</ref>. We see that when using registers, models do not lose performance and sometimes even work better. For completeness, we also provided the zero-shot classification performance on ImageNet for OpenCLIP (  Table <ref type="table" coords="7,133.19,217.73,3.88,8.64">2</ref>: Evaluation of downstream performance of the models that we trained, with and without registers. We consider linear probing of frozen features for all three models, and zero-shot evaluation for the OpenCLIP model. We see that using register not only does not degrade performance, but even improves it by a slight margin in some cases.  (bottom): performance on three tasks (ImageNet, ADE-20k and NYUd) as a function of number of registers used. While one register is sufficient to remove artefacts, using more leads to improved downstream performance. which remains unchanged. Please note that the absolute performance of our OpenCLIP reproduction is lower due to the data source we used.</p><p>Number of register tokens. As described in Sec. 2.2, we propose alleviating the feature maps' artifacts by adding register tokens. In this experiment, we study the influence of the number of such tokens on local features and downstream performance. We train DINOv2 ViT-L/14 models with 0, 1, 2, 4, 8 or 16 registers. In Fig. <ref type="figure" coords="7,225.03,567.76,3.74,8.64" target="#fig_9">8</ref>, we report the results of this analysis. In Fig. <ref type="figure" coords="7,410.52,567.76,3.99,8.64" target="#fig_9">8</ref>(top), we qualitatively study the attention maps and observe that the visible artifacts disappear when adding at least one register. We then examine in Fig. <ref type="figure" coords="7,246.58,589.68,4.67,8.64" target="#fig_9">8</ref>(bottom) performance on downstream evaluation benchmarks, following the protocol from <ref type="bibr" coords="7,221.85,600.64,76.29,8.64" target="#b18">Oquab et al. (2023)</ref>. There seems to be an optimal number of registers for dense tasks, and adding one brings most of the benefit. This optimum is likely explained by the disappearance of artifacts, leading to better local features. On ImageNet, however, performance improves when using more registers. In all our experiments, we kept 4 register tokens.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">OBJECT DISCOVERY</head><p>Recent unsupervised object discovery methods rely on the quality and smoothness of local feature maps <ref type="bibr" coords="7,132.56,690.50,89.18,8.64" target="#b22">(Siméoni et al., 2021;</ref><ref type="bibr" coords="7,225.26,690.50,74.39,8.64" target="#b26">Wang et al., 2023)</ref>. By leveraging <ref type="bibr" coords="7,370.46,690.50,105.13,8.64">DINO Caron et al. (2021)</ref>, these methods have significantly surpassed the previous state of the art. However, the algorithm leads to poor performance when applied to modern backbones such as DINOv2 <ref type="bibr" coords="7,412.70,712.42,79.75,8.64" target="#b18">Oquab et al. (2023)</ref> or supervised ones <ref type="bibr" coords="7,174.21,723.38,83.30,8.64" target="#b25">Touvron et al. (2022)</ref>. We posit that this can be alleviated by the method proposed  <ref type="bibr" coords="8,330.78,190.83,89.09,8.64" target="#b22">(Siméoni et al., 2021)</ref> on models with and without registers. We evaluated three types of models trained with various amounts of supervision on VOC 2007, 2012 and COCO. We measure performance using corloc. We observe that adding register tokens makes all models significantly more viable for usage in object discovery.</p><formula xml:id="formula_0" coords="8,129.20,248.02,346.87,9.33">Input [CLS] [reg 0 ] [reg 6 ] [reg 8 ] [reg 12 ]</formula><p>Figure <ref type="figure" coords="8,137.64,323.71,3.88,8.64">9</ref>: Comparison of the attention maps of the [CLS] and register tokens. Register tokens sometimes attend to different parts of the feature map, in a way similar to slot attention <ref type="bibr" coords="8,463.06,334.67,40.95,8.64;8,108.00,345.63,47.12,8.64" target="#b16">(Locatello et al., 2020)</ref>. Note that this behaviour was never required from the model, and emerged naturally from training.</p><p>in this work. We run LOST <ref type="bibr" coords="8,227.17,391.17,89.39,8.64" target="#b22">(Siméoni et al., 2021)</ref> on features extracted from backbones trained using the algorithms described in Sec.3.1 with and without registers. We run object discovery on PASCAL VOC 2007 and 2012 and COCO 20k. We use values for DeiT and OpenCLIP, and for DINOv2, we use keys. Because the output features may have different conditionning, we manually add a bias to the gram matrix of features. The results of this experiment are presented in Table <ref type="table" coords="8,496.53,435.01,3.74,8.64" target="#tab_3">3</ref>. For all models and on all datasets, adding registers for training improves the unsupervised object discovery performance. The performance of DINOv2 on VOC2007 still does not match that of DINO as reported in the work of <ref type="bibr" coords="8,247.87,467.89,87.32,8.64" target="#b22">Siméoni et al. (2021)</ref> (61.9 corloc). However, the model with registers gets an improvement of 20.1 corloc (55.4 versus 35.3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">QUALITATIVE EVALUATION OF REGISTERS</head><p>In this final experiment, we qualitatively probe for the behavior of register tokens. We want to verify if they all exhibit similar attention patterns or whether a differentiation automatically emerges. To this end, we plot the attention maps of the class and register tokens to patch tokens. The result of this visualization is shown in Fig. <ref type="figure" coords="8,242.09,559.46,3.74,8.64">9</ref>. We see that registers do not have a completely aligned behavior. Some selected registers exhibit interesting attention patterns, attending to the different objects in the scene. While nothing enforced this behavior, their activations had some natural diversity. We leave the study of the regularization of registers for future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">RELATED WORK</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">FEATURE EXTRACTION WITH PRETRAINED MODELS</head><p>Using pretrained neural network models for extracting visual features has stood the test of time since the AlexNet <ref type="bibr" coords="8,182.74,679.54,99.93,8.64" target="#b15">(Krizhevsky et al., 2012)</ref> CNN model pretrained on ImageNet-1k <ref type="bibr" coords="8,448.50,679.54,55.50,8.64;8,108.00,690.50,45.90,8.64" target="#b20">(Russakovsky et al., 2015)</ref>. More recent models have upgraded the same setup with modern architectures, such as ResNets (used in, e.g., DETR, <ref type="bibr" coords="8,233.17,701.46,78.63,8.64" target="#b3">Carion et al., 2020)</ref> or even Vision Transformers. As Transformers are easily able to handle different modalities during training, off-the-shelf backbones are now commonly trained on label supervision (e.g., DeiT-III on ImageNet-22k, <ref type="bibr" coords="8,388.54,723.38,85.87,8.64" target="#b25">Touvron et al., 2022)</ref> or text supervision (e.g., CLIP <ref type="bibr" coords="9,204.36,85.34,84.64,8.64" target="#b19">(Radford et al., 2021)</ref>), providing strong visual foundation models, scaling well with model sizes, and enabling excellent performance on a variety of tasks including detection <ref type="bibr" coords="9,108.00,107.26,80.52,8.64" target="#b3">(Carion et al., 2020)</ref> and segmentation <ref type="bibr" coords="9,263.36,107.26,78.31,8.64" target="#b28">(Zheng et al., 2021;</ref><ref type="bibr" coords="9,344.15,107.26,79.69,8.64" target="#b14">Kirillov et al., 2023)</ref>.</p><p>In this context, supervision relies on annotations in the form of labels or text alignment; the dataset biases <ref type="bibr" coords="9,135.74,135.15,102.03,8.64" target="#b24">(Torralba &amp; Efros, 2011)</ref> are not well characterized, yet they drive learning and shape the learned models. An alternative approach consists of not using supervision and letting the models learn from the data via a pretext task that is designed to require understanding the content of images <ref type="bibr" coords="9,139.88,168.03,88.29,8.64" target="#b6">(Doersch et al., 2015)</ref>. This self-supervised learning paradigm was explored in multiple methods using Vision Transformers: MAE <ref type="bibr" coords="9,283.80,178.99,66.62,8.64" target="#b10">(He et al., 2022)</ref> trains a model at reconstructing pixel values of hidden areas of an image and then applies fine-tuning to address a new task. With a different approach, the self-distillation family of methods <ref type="bibr" coords="9,333.61,200.91,66.73,8.64" target="#b9">(He et al., 2020;</ref><ref type="bibr" coords="9,403.58,200.91,76.14,8.64" target="#b4">Caron et al., 2021;</ref><ref type="bibr" coords="9,482.97,200.91,21.03,8.64;9,108.00,211.86,47.58,8.64" target="#b29">Zhou et al., 2022)</ref> showcase strong performance using frozen backbones, allowing for more robustness to domain shifts for task-specific downstream models.</p><p>In this work, we focused the analysis on self-supervised learning, and more specifically on the DI-NOv2 approach <ref type="bibr" coords="9,173.64,250.72,77.85,8.64" target="#b18">(Oquab et al., 2023)</ref>, which has shown to be particularly effective for learning local features. We showed that despite excellent benchmark scores, DINOv2 features exhibit undesirable artifacts and that correcting these artifacts in the learning process allows for further improvements in the benchmark performances. These phenomenon is even more surprising as DINOv2 builds upon DINO <ref type="bibr" coords="9,135.46,294.55,76.17,8.64" target="#b4">(Caron et al., 2021)</ref>, which does not show signs of artifacts. We then further showed that the correction techniques also hold for supervised training paradigms by testing on DeiT-III and CLIP.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">ADDITIONAL TOKENS IN TRANSFORMERS</head><p>Extending the transformer sequence with special tokens was popularized in BERT <ref type="bibr" coords="9,447.67,350.76,56.33,8.64;9,108.00,361.72,21.44,8.64" target="#b5">(Devlin et al., 2019)</ref>. However, most approaches add new tokens either to provide the network with new information as for example <ref type="bibr" coords="9,200.52,372.68,23.80,8.64">[SEP]</ref> tokens in BERT and tape tokens in AdaTape <ref type="bibr" coords="9,408.69,372.68,69.22,8.64" target="#b27">(Xue et al., 2023)</ref>, or to gather information in these tokens, and use their output value as an output of the model:</p><p>• for classification: as [CLS] tokens in BERT and ViT <ref type="bibr" coords="9,354.86,403.94,101.41,8.64" target="#b7">(Dosovitskiy et al., 2021)</ref> • for generative learning: as <ref type="bibr" coords="9,250.85,418.58,35.42,8.64">[MASK]</ref> in BERT and BEiT <ref type="bibr" coords="9,367.32,418.58,69.45,8.64" target="#b0">(Bao et al., 2021)</ref> • for detection: as object queries in DETR <ref type="bibr" coords="9,316.09,433.21,81.77,8.64" target="#b3">(Carion et al., 2020)</ref>, detection tokens in YO-LOS <ref type="bibr" coords="9,165.18,444.17,71.38,8.64" target="#b8">(Fang et al., 2021)</ref>, and ViDT <ref type="bibr" coords="9,285.34,444.17,73.88,8.64" target="#b23">(Song et al., 2021)</ref> • for accumulating information from possibly multiple modalities before decoding, as latent token arrays in Perceivers <ref type="bibr" coords="9,251.54,469.76,77.60,8.64" target="#b12">(Jaegle et al., 2021;</ref><ref type="bibr" coords="9,331.63,469.76,21.44,8.64">2022)</ref>.</p><p>Different to these works, the tokens we add to the sequence add no information, and their output value is not used for any purpose. They are simply registers where the model can learn to store and retrieve information during the forward pass. The Memory Transformer <ref type="bibr" coords="9,416.59,511.98,83.12,8.64" target="#b2">(Burtsev et al., 2020)</ref>, closer to our work, presents a simple approach to improve transformer models using memory tokens added to the token sequence, improving translation performance. In follow-up work, <ref type="bibr" coords="9,450.29,533.90,53.72,8.64;9,108.00,544.86,26.56,8.64" target="#b1">Bulatov et al. (2022)</ref> address complex copy-repeat-reverse tasks. <ref type="bibr" coords="9,311.05,544.86,80.22,8.64" target="#b21">Sandler et al. (2022)</ref> extend this line to the vision domain for fine-tuning but observe that such tokens do not transfer well across tasks.</p><p>In contrast, we do not perform fine-tuning and employ additional tokens during the pretraining phase to improve the features obtained for all tasks downstream. More importantly, our study contributes the following new insight in Sec. 2: the mechanism implemented through memory tokens already appears naturally in Vision Transformers; our study shows that such tokens allow us not to create but to isolate this existing behavior, and thus avoid collateral side-effects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSION</head><p>In this work, we exposed artifacts in the feature maps of DINOv2 models, and found this phenomenon to be present in multiple existing popular models. We have described a simple method to detect these artifacts by observing that they correspond to tokens with an outlier norm value at the output of the Transformer model. Studying their location, we have proposed an interpretation that models naturally recycle tokens from low-informative areas and repurpose them into a different role for inference. Following this interpretation, we have proposed a simple fix, consisting of appending  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A INTERPOLATION ARTIFACTS AND OUTLIER POSITION DISTRIBUTION</head><p>We plot in Figure <ref type="figure" coords="12,181.11,451.88,9.96,8.64" target="#fig_10">10</ref> (left) the proportion of outlier tokens, characterized by a norm larger than the cutoff value defined manually, following the distribution of norms shown in Fig. <ref type="figure" coords="12,433.15,462.84,4.98,8.64" target="#fig_1">3</ref> (main text). We make two observations:</p><p>First, the distribution has a vertical-striped pattern. We investigate this phenomenon and notice that in the original DINOv2 implementation, during training the position embeddings are interpolated from a 16 × 16 map into a 7 × 7 map, without antialiasing. Propagating unit gradients through such an interpolation function (bicubic resize) leads to the following gradients, shown in Fig. <ref type="figure" coords="12,491.55,523.61,8.30,8.64" target="#fig_11">11</ref>. In this work, when producing results with DINOv2 (especially for the results in Tables <ref type="table" coords="12,466.27,534.57,11.34,8.64">2a,</ref><ref type="table" coords="12,477.61,534.57,3.78,8.64" target="#tab_3">3</ref>), we always apply antialiasing in the interpolation operator, removing the striping pattern, which gives an updated distribution of outlier positions as shown in Fig. <ref type="figure" coords="12,336.19,556.49,9.96,8.64" target="#fig_10">10</ref> (right).</p><p>Second, the outliers tend to appear in areas closer to the border of the feature map rather than in the center. Our interpretation is that the base model tends to recycle tokens in low-informative areas to use as registers: pictures produced by people tend to be object-centric, and in this case the border areas often correspond to background, which contains less information than the center.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B COMPLEXITY ANALYSIS</head><p>Since our proposed fix introduces new tokens, it also increases the number of learnable parameters and the FLOP count of the model. We show in Fig. <ref type="figure" coords="12,314.54,690.50,9.96,8.64" target="#fig_12">12</ref> the relationship between number of registers and increase in model FLOP count and parameter count. We observe that adding registers induces a negligible change in number of parameters, and a slight change in FLOP count. Still, for n = 4 registers, the increase in FLOPs stays below 2%. Adding registers can increase model FLOP count by up to 6% for 16 registers. However, in the more common case of using 4 registers, that we use in most of our experiments, this increase is below 2%. In all cases, the increase in model parameters is negligible. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C ANALYSIS OF LOST PERFORMANCE</head><p>The results presented in Sec. 3.3 show that adding registers allows us to obtain better object discovery performance with DINOv2 models. The conclusions for the two other models studied in this work could be more crisp. In order to understand why this is so, we qualitatively study the impact of removing artifacts on the intermediate computations in the LOST algorithm. We show the intermediate outputs of LOST for all models on a given input image in Fig. <ref type="figure" coords="13,410.07,515.62,8.30,8.64" target="#fig_13">13</ref>.</p><p>Adding registers improves the scores and the resulting seed expansion for DeiT-III and DINOv2. This observation is coherent with the improved numbers reported in Table <ref type="table" coords="13,402.24,543.52,3.74,8.64" target="#tab_3">3</ref>. For CLIP, however, the LOST algorithm seems robust to the type of outliers observed in the local features. Adding registers does remove artifacts (as clearly shown in Fig. <ref type="figure" coords="13,302.48,565.43,8.85,8.64" target="#fig_5">15</ref>) but does not have much impact on the LOST score. It is also worth noting that CLIP, with or without registers, provides comparable performance to DINOv2 without registers and DeiT-III with registers. The qualitative assessment is coherent with the numbers reported in Table <ref type="table" coords="13,229.77,598.31,3.74,8.64" target="#tab_3">3</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D QUALITATIVE RESULTS</head><p>We trained three popular models: DeiT-III, CLIP, DINOv2 with and without the introduction of register tokens. We observe in Fig. <ref type="figure" coords="13,235.88,661.82,9.96,8.64" target="#fig_3">14</ref> the attention maps in the last layer of the Vision Transformer, for all three cases. We see that our approach provides much cleaner attention maps, with considerably fewer artifacts, explaining the improvement on the downstream object discovery task mentioned in Sec. 3.3. The feature maps are also visibly improved, as shown in Fig. <ref type="figure" coords="13,388.82,694.70,8.30,8.64" target="#fig_5">15</ref>. Finally, we also show the norm of the patch tokens in Fig. <ref type="figure" coords="13,237.21,705.66,8.30,8.64" target="#fig_6">16</ref>, and confirm that in all three models, artifact patches correspond to norm outliers. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,108.00,314.56,396.00,8.64;2,108.00,325.52,396.00,8.64;2,108.00,336.48,396.00,8.64;2,108.00,347.44,365.45,8.64;2,110.87,249.74,51.48,51.48"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Illustration of artifacts observed in the attention maps of modern vision transformers. We consider ViTs trained with label supervision (DeiT-III), text-supervision (OpenCLIP) or selfsupervision (DINO and DINOv2). Interestingly, all models but DINO exhibit peaky outlier values in the attention maps. The goal of this work is to understand and mitigate this phenomenon.</figDesc><graphic coords="2,110.87,249.74,51.48,51.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,108.00,172.21,396.00,8.64;3,108.00,183.17,396.00,8.64;3,108.00,194.13,396.00,8.64;3,108.00,205.09,388.60,8.64;3,110.14,91.84,67.08,67.08"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Comparison of local feature norms for DINO ViT-B/16 and DINOv2 ViT-g/14.We observe that DINOv2 has a few outlier patches, whereas DINO does not present these artifacts. For DINOv2, although most patch tokens have a norm between 0 and 100, a small proportion of tokens have a very high norm. We measure the proportion of tokens with norm larger than 150 at 2.37%.</figDesc><graphic coords="3,110.14,91.84,67.08,67.08" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="4,108.00,193.17,396.00,8.64;4,108.00,203.74,396.00,9.03;4,108.00,214.70,396.00,9.03;4,108.00,226.05,393.38,8.64;4,111.74,247.36,118.80,77.00"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Illustration of several properties of outlier tokens in the 40-layer DINOv2 ViT-g model. (a): Distribution of output token norms along layers. (b): Distribution of norms along training iterations. (c): Distribution of norms for different model sizes. The outliers appear around the middle of the model during training; they appear with models larger than and including ViT-Large.</figDesc><graphic coords="4,111.74,247.36,118.80,77.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="4,108.50,331.48,122.79,7.77;4,330.03,269.39,75.00,8.64;4,445.76,269.39,57.00,8.64;4,313.22,284.84,108.63,8.96;4,454.06,284.84,40.39,8.96;4,261.08,301.12,28.22,8.64;4,322.90,300.73,17.43,8.96;4,383.19,300.73,17.43,8.96;4,463.05,300.73,22.42,8.96;4,261.08,312.08,26.01,8.64;4,322.89,312.08,17.43,8.64;4,383.18,312.08,17.43,8.64;4,463.04,312.08,22.42,8.64;4,307.96,331.48,145.43,7.77"><head></head><label></label><figDesc>Linear probing for local information.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5" coords="4,108.00,351.06,396.00,9.03;4,108.00,362.02,396.00,9.03;4,108.00,373.37,396.00,8.64;4,108.00,384.33,396.00,8.64;4,108.00,395.29,276.18,8.64"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: (a): Distribution of cosine similarity between input patches and their 4 neighbors. We plot separately artifact patches (norm of the output token over 150) and normal patches. (b): Local information probing on normal and outlier patch tokens. We train two models: one for predicting position, and one for reconstructing the input patch. Outlier tokens have much lower scores than the other tokens, suggesting they are storing less local patch information.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="5,108.00,329.82,395.99,8.96;5,108.00,340.91,396.00,8.82;5,108.00,352.05,359.79,8.64"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Illustration of the proposed remediation and resulting model. We add N additional learnable input tokens (depicted in yellow), that the model can use as registers. At the output of the model, only the patch tokens and CLS tokens are used, both during training and inference.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7" coords="6,108.00,170.14,396.00,8.64;6,108.00,181.10,367.00,8.64;6,108.00,81.86,396.03,77.13"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Effect of register tokens on the distribution of output norms on DINOv2, CLIP and DeiT-III. Using register tokens effectively removes the norm outliers that were present previously.</figDesc><graphic coords="6,108.00,81.86,396.03,77.13" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9" coords="7,108.00,440.24,396.00,9.03;7,108.00,451.20,396.00,9.03;7,108.00,462.54,396.00,8.64;7,108.00,473.50,396.00,8.64"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Ablation of the the number of register tokens used with a DINOv2 model. (top): qualitative visualization of artifacts appearing as a function of number of registers.(bottom): performance on three tasks (ImageNet, ADE-20k and NYUd) as a function of number of registers used. While one register is sufficient to remove artefacts, using more leads to improved downstream performance.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10" coords="12,108.00,175.95,396.00,8.64;12,108.00,186.90,396.00,8.64;12,108.00,197.86,305.92,8.64"><head>Figure 10 :</head><label>10</label><figDesc>Figure 10: Feature norms along locations: proportion of tokens with norm larger than the cutoff value at a given location. Left: official DINOv2 model (no antialiasing), right: our models (with antialiasing). At some positions, more than 20% of tokens have a high norm.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11" coords="12,108.00,364.52,396.00,8.96;12,108.00,375.80,306.84,8.64;12,226.80,231.09,158.39,122.60"><head>Figure 11 :</head><label>11</label><figDesc>Figure 11: Propagating unit gradients through a bicubic interpolation (16 × 16 → 7 × 7) without antialiasing. We observe a striping pattern similar to the one of Fig. 10 (left).</figDesc><graphic coords="12,226.80,231.09,158.39,122.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12" coords="13,108.00,188.69,396.00,8.64;13,108.00,199.65,396.00,8.64;13,108.00,210.61,396.00,8.64;13,108.00,221.57,234.20,8.64;13,246.60,81.86,118.80,95.68"><head>Figure 12 :</head><label>12</label><figDesc>Figure 12: Increase in model parameter and FLOP count when adding different numbers of registers.Adding registers can increase model FLOP count by up to 6% for 16 registers. However, in the more common case of using 4 registers, that we use in most of our experiments, this increase is below 2%. In all cases, the increase in model parameters is negligible.</figDesc><graphic coords="13,246.60,81.86,118.80,95.68" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13" coords="13,108.00,393.03,396.00,8.64;13,108.00,403.99,396.00,8.64;13,108.00,414.95,200.36,8.64;13,126.14,267.21,378.95,114.67"><head>Figure 13 :</head><label>13</label><figDesc>Figure 13: Illustration of the intermediate computations in the LOST algorithm for all models. Adding registers drastically improves the look of all intermediate steps for DeiT-III and DINOv2. The difference is less striking for the CLIP model.</figDesc><graphic coords="13,126.14,267.21,378.95,114.67" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14" coords="14,125.48,705.72,361.04,8.64;14,110.49,640.90,51.48,51.48"><head>Figure 14 :Figure 15 :</head><label>1415</label><figDesc>Figure 14: Attention maps of models trained without and with registers on various images.</figDesc><graphic coords="14,110.49,640.90,51.48,51.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="4,108.00,712.03,396.00,19.99"><head></head><label></label><figDesc>86.0 66.4 87.3 99.4 94.5 91.3 96.9 91.5 85.2 99.7 94.7 96.9 78.6 89.1 normal 65.8 53.1 17.1 97.1 81.3 18.6 73.2 10.8 63.1 59.5 74.2 47.8 37.7 70.8 outlier 69.0 55.1 79.1 99.3 93.7 84.9 97.6 85.2 84.9 99.6 93.5 94.1 78.5 89.7</figDesc><table coords="5,108.00,147.95,21.89,8.64"><row><cell>Table</cell></row></table><note coords="4,108.00,712.03,396.00,9.03;4,108.00,723.38,396.00,8.64;5,148.78,86.63,350.63,8.64;5,108.60,102.59,24.91,8.64"><p><p>Artifacts hold global information. In order to evaluate how much global information is gathered in the high-norm tokens, we propose to evaluate them on standard image representation learning IN1k P205 Airc. CF10 CF100 CUB Cal101 Cars DTD Flow. Food Pets SUN VOC</p>[CLS]   </p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,464.19,678.18,39.81,8.64"><head>Table 2b</head><label>2b</label><figDesc></figDesc><table coords="6,496.12,678.18,7.89,8.64"><row><cell></cell><cell cols="3">ImageNet ADE20k NYUd</cell></row><row><cell></cell><cell>Top-1</cell><cell>mIoU</cell><cell>rmse ↓</cell></row><row><cell>DeiT-III</cell><cell>84.7</cell><cell>38.9</cell><cell>0.511</cell></row><row><cell>DeiT-III+reg</cell><cell>84.7</cell><cell>39.1</cell><cell>0.512</cell></row><row><cell>OpenCLIP</cell><cell>78.2</cell><cell>26.6</cell><cell>0.702</cell></row><row><cell>OpenCLIP+reg</cell><cell>78.1</cell><cell>26.7</cell><cell>0.661</cell></row><row><cell>DINOv2</cell><cell>84.3</cell><cell>46.6</cell><cell>0.378</cell></row><row><cell>DINOv2+reg</cell><cell>84.8</cell><cell>47.9</cell><cell>0.366</cell></row><row><cell></cell><cell></cell><cell></cell><cell>),</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" coords="8,108.00,86.63,318.19,112.83"><head>Table 3 :</head><label>3</label><figDesc>Unsupervised Object Discovery using LOST</figDesc><table coords="8,185.81,86.63,240.39,89.40"><row><cell></cell><cell cols="3">VOC 2007 VOC 2012 COCO 20k</cell></row><row><cell>DeiT-III</cell><cell>11.7</cell><cell>13.1</cell><cell>10.7</cell></row><row><cell>DeiT-III+reg</cell><cell>27.1</cell><cell>32.7</cell><cell>25.1</cell></row><row><cell>OpenCLIP</cell><cell>38.8</cell><cell>44.3</cell><cell>31.0</cell></row><row><cell>OpenCLIP+reg</cell><cell>37.1</cell><cell>42.0</cell><cell>27.9</cell></row><row><cell>DINOv2</cell><cell>35.3</cell><cell>40.2</cell><cell>26.9</cell></row><row><cell>DINOv2+reg</cell><cell>55.4</cell><cell>60.0</cell><cell>42.0</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0" coords="6,124.14,703.12,215.19,6.31"><p>https://github.com/facebookresearch/deit</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1" coords="6,124.14,713.99,225.95,6.31"><p>https://github.com/mlfoundations/open_clip</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2" coords="6,124.14,724.87,225.95,6.31"><p>https://github.com/facebookresearch/dinov2</p></note>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>additional tokens to the input sequence that are not used as outputs, and have found that this entirely removes the artifacts, improving the performance in dense prediction and object discovery. Moreover, we have shown that the proposed solution also removes the same artifacts present in supervised models such as DeiT-III and OpenCLIP, confirming the generality of our solution. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,108.00,164.81,396.00,8.82" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="10,260.15,164.99,177.20,8.64">Beit: Bert pre-training of image transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Hangbo</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Furu</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,455.20,164.81,19.26,8.59">ICLR</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,183.95,396.00,8.82;10,117.96,195.09,22.42,8.64" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="10,322.60,184.13,123.25,8.64">Beyond Attention: Breaking the Limits of Transformer Context Length with Recurrent Memory</title>
+		<author>
+			<persName coords=""><forename type="first">Aydar</forename><surname>Bulatov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuri</forename><surname>Kuratov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yermek</forename><surname>Kapushev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mikhail</forename><surname>Burtsev</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v38i16.29722</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="17700" to="17708" />
+			<date type="published" when="2022">2022</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,214.24,396.00,8.64;10,117.96,225.02,159.58,8.82" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Preprint repository arXiv achieves milestone million uploads</title>
+		<author>
+			<persName coords=""><forename type="first">Yuri</forename><surname>Mikhail S Burtsev</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anton</forename><surname>Kuratov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Grigory</forename><forename type="middle">V</forename><surname>Peganov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Sapunov</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.028530</idno>
+		<idno type="arXiv">arXiv:2006.11527</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Memory transformer. arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,244.34,396.00,8.64;10,117.96,255.12,332.97,8.82" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="10,197.48,255.30,182.15,8.64">End-to-End Object Detection with Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Carion</surname></persName>
+			<idno type="ORCID">0000-0002-2308-9680</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+			<idno type="ORCID">0000-0003-0697-6664</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabriel</forename><surname>Synnaeve</surname></persName>
+			<idno type="ORCID">0000-0003-1715-3356</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Usunier</surname></persName>
+			<idno type="ORCID">0000-0002-9324-1457</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Kirillov</surname></persName>
+			<idno type="ORCID">0000-0003-3169-3199</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Zagoruyko</surname></persName>
+			<idno type="ORCID">0000-0001-9684-5240</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58452-8_13</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,398.07,255.12,22.36,8.59">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="213" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,274.45,396.00,8.64;10,117.96,285.23,366.71,8.82" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="10,183.54,285.41,232.61,8.64">Emerging Properties in Self-Supervised Vision Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Mathilde</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Jegou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Julien</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Armand</forename><surname>Joulin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00951</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,434.58,285.23,20.15,8.59">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,304.55,396.00,8.64;10,117.96,315.33,278.61,8.82" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="10,398.39,304.55,105.61,8.64;10,117.96,315.51,212.98,8.64">Bert: Pre-training of deep bidirectional transformers for language understanding</title>
+		<author>
+			<persName coords=""><forename type="first">Jacob</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming-Wei</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kenton</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kristina</forename><surname>Toutanova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="10,338.74,315.33,27.44,8.59">NAACL</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,334.66,396.00,8.64;10,117.96,345.44,139.03,8.82" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="10,315.95,334.66,188.05,8.64;10,117.96,345.62,70.66,8.64">Unsupervised Visual Representation Learning by Context Prediction</title>
+		<author>
+			<persName coords=""><forename type="first">Carl</forename><surname>Doersch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2015.167</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,206.90,345.44,20.15,8.59">2015 IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015-12">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,364.76,396.00,8.64;10,117.96,375.72,386.04,8.64;10,117.96,386.50,359.19,8.82" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="10,491.83,375.72,12.17,8.64;10,117.96,386.68,292.09,8.64">An image is worth 16x16 words: Transformers for image recognition at scale</title>
+		<author>
+			<persName coords=""><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lucas</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dirk</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaohua</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthias</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Georg</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sylvain</forename><surname>Gelly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,428.17,386.50,19.26,8.59">ICLR</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,405.82,396.00,8.64;10,117.96,416.78,386.04,8.64;10,117.96,427.56,115.10,8.82" xml:id="b8">
+	<monogr>
+		<title level="m" type="main" coord="10,172.67,416.78,331.34,8.64;10,117.96,427.74,35.11,8.64">You only look at one sequence: Rethinking transformer in vision through object detection</title>
+		<author>
+			<persName coords=""><forename type="first">Yuxin</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bencheng</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinggang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiemin</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiyang</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rui</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianwei</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wenyu</forename><surname>Liu</surname></persName>
+		</author>
+		<editor>NeurIPS</editor>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,446.89,396.00,8.64;10,117.96,457.67,242.10,8.82" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="10,406.38,446.89,97.62,8.64;10,117.96,457.85,171.52,8.64">Momentum Contrast for Unsupervised Visual Representation Learning</title>
+		<author>
+			<persName coords=""><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Haoqi</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuxin</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Saining</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr42600.2020.00975</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,307.76,457.67,21.92,8.59">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,476.99,396.00,8.64;10,117.96,487.77,231.84,8.82" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="10,472.56,476.99,31.44,8.64;10,117.96,487.95,161.38,8.64">Masked Autoencoders Are Scalable Vision Learners</title>
+		<author>
+			<persName coords=""><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xinlei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Saining</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yanghao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01553</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,297.50,487.77,21.92,8.59">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,507.10,396.00,8.64;10,117.96,518.06,386.04,8.64;10,117.96,529.02,189.94,8.64" xml:id="b11">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><forename type="first">Gabriel</forename><surname>Ilharco</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mitchell</forename><surname>Wortsman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ross</forename><surname>Wightman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cade</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicholas</forename><surname>Carlini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rohan</forename><surname>Taori</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Achal</forename><surname>Dave</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vaishaal</forename><surname>Shankar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hongseok</forename><surname>Namkoong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">John</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hannaneh</forename><surname>Hajishirzi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ali</forename><surname>Farhadi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ludwig</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Openclip</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,548.16,396.00,8.64;10,117.96,558.94,279.52,8.82" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="10,117.96,559.12,210.21,8.64">Middleton, Andy (eig. Andrew L.)</title>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Felix</forename><surname>Gimeno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andy</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joao</forename><surname>Carreira</surname></persName>
+		</author>
+		<idno type="DOI">10.1553/0x003e6d04</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,346.28,558.94,21.03,8.59">ICML</title>
+		<imprint>
+			<publisher>Osterreichische Akademie der Wissenschaften, Verlag</publisher>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,578.27,396.00,8.64;10,117.96,589.23,386.04,8.64;10,117.96,600.18,386.04,8.64;10,117.96,610.96,230.49,8.82" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="10,392.00,600.18,112.00,8.64;10,117.96,611.14,163.15,8.64">Perceiver io: A general architecture for structured inputs &amp; outputs</title>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sebastian</forename><surname>Borgeaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jean-Baptiste</forename><surname>Alayrac</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Carl</forename><surname>Doersch</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Catalin</forename><surname>Ionescu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Skanda</forename><surname>Koppula</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Evan</forename><surname>Shelhamer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Olivier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthew</forename><forename type="middle">M</forename><surname>H'enaff</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Botvinick</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">João</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Carreira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,299.47,610.96,19.26,8.59">ICLR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,630.29,396.00,8.64;10,117.96,641.07,386.04,8.82;10,117.96,652.03,134.95,8.82" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Segment Anything</title>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Kirillov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Eric</forename><surname>Mintun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nikhila</forename><surname>Ravi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hanzi</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chloe</forename><surname>Rolland</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laura</forename><surname>Gustafson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tete</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Spencer</forename><surname>Whitehead</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><forename type="middle">C</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wan-Yen</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollár</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.00371</idno>
+		<idno type="arXiv">arXiv:2304.02643</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Segment anything. arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,671.35,396.00,8.64;10,117.96,682.13,175.32,8.82" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="10,340.49,671.35,163.52,8.64;10,117.96,682.31,94.91,8.64">ImageNet classification with deep convolutional neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Krizhevsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3065386</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<title level="j" type="abbrev">Commun. ACM</title>
+		<idno type="ISSN">0001-0782</idno>
+		<idno type="ISSNe">1557-7317</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="84" to="90" />
+			<date type="published" when="2012">2012</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+	<note>In NeurIPS</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,701.46,396.00,8.64;10,117.96,712.42,386.04,8.64;10,117.96,723.20,94.08,8.82" xml:id="b16">
+	<monogr>
+		<title level="m" type="main" coord="10,348.61,712.42,155.40,8.64;10,117.96,723.38,14.39,8.64">Object-centric learning with slot attention</title>
+		<author>
+			<persName coords=""><forename type="first">Francesco</forename><surname>Locatello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dirk</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aravindh</forename><surname>Mahendran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Georg</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Kipf</surname></persName>
+		</author>
+		<editor>NeurIPS</editor>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,85.16,346.31,8.82" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="11,172.84,85.34,225.92,8.64">Distinctive image features from scale-invariant keypoints</title>
+		<author>
+			<persName coords=""><surname>David G Lowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,406.44,85.16,18.37,8.59">IJCV</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,104.27,396.00,8.64;11,117.96,115.23,386.04,8.64;11,117.96,126.01,332.04,8.82" xml:id="b18">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">Maxime</forename><surname>Oquab</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Timothée</forename><surname>Darcet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Théo</forename><surname>Moutakanni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huy</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Szafraniec</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vasil</forename><surname>Khalidov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pierre</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Haziza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alaaeldin</forename><surname>El-Nouby</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2304.07193</idno>
+		<title level="m" coord="11,468.04,115.23,35.97,8.64;11,117.96,126.19,164.84,8.64">Learning robust visual features without supervision</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="11,108.00,145.11,396.00,8.64;11,117.96,156.07,386.04,8.64;11,117.96,166.85,235.74,8.82" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="11,390.87,156.07,113.14,8.64;11,117.96,167.03,166.14,8.64">Learning transferable visual models from natural language supervision</title>
+		<author>
+			<persName coords=""><forename type="first">Alec</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jong</forename><forename type="middle">Wook</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chris</forename><surname>Hallacy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aditya</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabriel</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sandhini</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Girish</forename><surname>Sastry</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Amanda</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pamela</forename><surname>Mishkin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jack</forename><surname>Clark</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,302.51,166.85,21.03,8.59">ICML</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,185.96,396.00,8.64;11,117.96,196.92,386.04,8.64;11,117.96,207.70,250.48,8.82" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">ImageNet Large Scale Visual Recognition Challenge</title>
+		<author>
+			<persName coords=""><forename type="first">Olga</forename><surname>Russakovsky</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jia</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hao</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jonathan</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sanjeev</forename><surname>Satheesh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sean</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhiheng</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrej</forename><surname>Karpathy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aditya</forename><surname>Khosla</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><forename type="middle">C</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Li</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11263-015-0816-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision</title>
+		<title level="j" type="abbrev">Int J Comput Vis</title>
+		<idno type="ISSN">0920-5691</idno>
+		<idno type="ISSNe">1573-1405</idno>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="211" to="252" />
+			<date type="published" when="2015-04-11">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>Imagenet large scale visual recognition challenge. IJCV</note>
+</biblStruct>
+
+<biblStruct coords="11,108.00,226.81,396.00,8.64;11,117.96,237.59,217.65,8.82" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="11,429.38,226.81,74.62,8.64;11,117.96,237.77,145.97,8.64">Fine-tuning Image Transformers using Learnable Memory</title>
+		<author>
+			<persName coords=""><forename type="first">Mark</forename><surname>Sandler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrey</forename><surname>Zhmoginov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Max</forename><surname>Vladymyrov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Jackson</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01184</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,283.31,237.59,21.92,8.59">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,256.70,396.00,8.64;11,117.96,267.66,386.04,8.64;11,117.96,278.44,107.08,8.82" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="11,277.61,267.66,226.39,8.64;11,117.96,278.61,34.51,8.64">Localizing objects with self-supervised transformers and no labels</title>
+		<author>
+			<persName coords=""><forename type="first">Oriane</forename><surname>Siméoni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gilles</forename><surname>Puy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">V</forename><surname>Huy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Simon</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Spyros</forename><surname>Roburin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrei</forename><surname>Gidaris</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Patrick</forename><surname>Bursuc</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Renaud</forename><surname>Pérez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jean</forename><surname>Marlet</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Ponce</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,170.53,278.44,23.69,8.59">BMVC</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,297.54,396.00,8.64;11,117.96,308.50,386.04,8.64;11,117.96,319.28,124.23,8.82" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="11,277.25,308.50,226.76,8.64;11,117.96,319.46,57.09,8.64">Vidt: An efficient and effective fully transformer-based object detector</title>
+		<author>
+			<persName coords=""><forename type="first">Hwanjun</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Deqing</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sanghyuk</forename><surname>Chun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Varun</forename><surname>Jampani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dongyoon</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Byeongho</forename><surname>Heo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wonjae</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming-Hsuan</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,193.21,319.28,19.26,8.59">ICLR</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,338.21,341.98,8.82" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="11,264.60,338.39,115.00,8.64">Unbiased look at dataset bias</title>
+		<author>
+			<persName coords=""><forename type="first">Antonio</forename><surname>Torralba</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2011.5995347</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,397.68,338.21,21.92,8.59">CVPR 2011</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011-06">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,357.14,375.99,8.82" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="11,307.52,357.32,105.98,8.64">DeiT III: Revenge of the ViT</title>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthieu</forename><surname>Cord</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hervé</forename><surname>Jégou</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-20053-3_30</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,431.13,357.14,22.36,8.59">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="516" to="533" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,376.25,396.00,8.64;11,117.96,387.03,213.18,8.82" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="11,353.66,376.25,150.35,8.64;11,117.96,387.21,142.23,8.64">Cut and Learn for Unsupervised Object Detection and Instance Segmentation</title>
+		<author>
+			<persName coords=""><forename type="first">Xudong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rohit</forename><surname>Girdhar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stella</forename><forename type="middle">X</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52729.2023.00305</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,278.84,387.03,21.92,8.59">2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,406.14,396.00,8.64;11,117.96,416.92,266.62,8.82" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="11,117.96,417.09,196.71,8.64">Adaptive computation with elastic input sequence</title>
+		<author>
+			<persName coords=""><forename type="first">Fuzhao</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Valerii</forename><surname>Likhosherstov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Anurag</forename><surname>Arnab</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Neil</forename><surname>Houlsby</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yang</forename><surname>You</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,333.38,416.92,21.03,8.59">ICML</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,436.02,396.00,8.64;11,117.96,446.98,386.04,8.64;11,117.96,457.76,284.00,8.82" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="11,341.26,446.98,162.74,8.64;11,117.96,457.94,213.26,8.64">Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Sixiao</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiachen</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hengshuang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiatian</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zekun</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yabiao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yanwei</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jianfeng</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tao</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">H S</forename><surname>Torr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.00681</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,349.66,457.76,21.92,8.59">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,476.87,396.00,8.64;11,117.96,487.65,244.77,8.82" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="11,485.73,476.87,18.27,8.64;11,117.96,487.83,177.52,8.64">ibot: Image bert pre-training with online tokenizer</title>
+		<author>
+			<persName coords=""><forename type="first">Jinghao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chen</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Huiyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Wei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cihang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alan</forename><surname>Yuille</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tao</forename><surname>Kong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,313.75,487.65,19.26,8.59">ICLR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

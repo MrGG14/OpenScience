@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,108.43,82.34,390.10,14.93">LEARNING SUPER-FEATURES FOR IMAGE RETRIEVAL</title>
+				<funder ref="#_2ppgs6K">
+					<orgName type="full">unknown</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,113.98,117.78,87.81,8.96"><forename type="first">Philippe</forename><surname>Weinzaepfel</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">NAVER LABS Europe</orgName>
+								<address>
+									<settlement>Grenoble</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,208.81,117.78,60.11,8.96"><forename type="first">Thomas</forename><surname>Lucas</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">NAVER LABS Europe</orgName>
+								<address>
+									<settlement>Grenoble</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,276.07,117.78,53.73,8.96"><forename type="first">Diane</forename><surname>Larlus</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">NAVER LABS Europe</orgName>
+								<address>
+									<settlement>Grenoble</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,355.23,117.78,75.83,8.96"><forename type="first">Yannis</forename><surname>Kalantidis</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">NAVER LABS Europe</orgName>
+								<address>
+									<settlement>Grenoble</settlement>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,108.43,82.34,390.10,14.93">LEARNING SUPER-FEATURES FOR IMAGE RETRIEVAL</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">05EB9CA5E59BDA449AFE78D91BFFD2CB</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Methods that combine local and global features have recently shown excellent performance on multiple challenging deep image retrieval benchmarks, but their use of local features raises at least two issues. First, these local features simply boil down to the localized map activations of a neural network, and hence can be extremely redundant. Second, they are typically trained with a global loss that only acts on top of an aggregation of local features; by contrast, testing is based on local feature matching, which creates a discrepancy between training and testing. In this paper, we propose a novel architecture for deep image retrieval, based solely on mid-level features that we call Super-features. These Super-features are constructed by an iterative attention module and constitute an ordered set in which each element focuses on a localized and discriminant image pattern. For training, they require only image labels. A contrastive loss operates directly at the level of Super-features and focuses on those that match across images. A second complementary loss encourages diversity. Experiments on common landmark retrieval benchmarks validate that Super-features substantially outperform state-of-the-art methods when using the same number of features, and only require a significantly smaller memory footprint to match their performance. Code and models are available at: https://github.com/naver/FIRe.</p><p>1 The term 'query' has a precise meaning for retrieval; yet, for this subsection only, we overload the term to refer to one of the inputs of the dot-product attention, consistently with the terminology from seminal works on attention by <ref type="bibr" coords="4,376.80,688.83,58.03,6.05" target="#b42">Vaswani et al. (2017)</ref>. 2 The attention maps presented in Eq.( <ref type="formula" coords="4,225.92,699.11,2.94,6.05">4</ref>) are technically taken at iteration t, but we omit iteration superscripts for clarity. For the rest of the paper and visualizations, we use attention maps to refer to the attention maps of Eq.( <ref type="formula" coords="4,344.23,707.08,2.94,6.05">4</ref>) after the final (T -th) iteration of the iterative module. 3 The MLP function consists of a layer-norm, a fully-connected layer with half the dimensions of the features, a ReLU activation and a fully-connected layer that projects features back to their initial dimension.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>Image retrieval is a task that models exemplar-based recognition, i.e. a class-agnostic, fine-grained understanding task which requires to retrieve all images matching a query image over an (often very large) image collection. It requires learning features that are discriminative enough for a highly detailed visual understanding but also robust enough to extreme viewpoint/pose or illumination changes. A popular image retrieval task is landmark retrieval, whose goal is to single out pictures of the exact same landmark out of millions of images, possibly containing a different landmark from the exact same fine-grained class (e.g. 'gothic-era churches with twin bell towers').</p><p>While early approaches relied on handcrafted local descriptors, recent methods use image-level (global) or local Convolutional Neural Networks (CNN) features, see <ref type="bibr" coords="1,381.12,536.08,122.88,8.64" target="#b8">Csurka &amp; Humenberger (2018)</ref> for a review. The current state of the art performs matching or re-ranking using CNN-based local features <ref type="bibr" coords="1,143.04,558.00,73.05,8.64" target="#b25">(Noh et al., 2017;</ref><ref type="bibr" coords="1,219.59,558.00,68.63,8.64" target="#b3">Cao et al., 2020;</ref><ref type="bibr" coords="1,291.73,558.00,77.23,8.64" target="#b40">Tolias et al., 2020)</ref> and only learns with global (i.e. image-level) annotations and losses. This is done by aggregating all local features into a global representation on which the loss is applied, creating a discrepancy between training and inference.</p><p>Attention maps from modules like the ones proposed by <ref type="bibr" coords="1,339.41,596.85,86.38,8.64" target="#b42">Vaswani et al. (2017)</ref> are able to capture intermediate scene-level information, which makes them fundamentally similar to mid-level features <ref type="bibr" coords="1,130.53,618.77,74.21,8.64" target="#b46">(Xiao et al., 2015;</ref><ref type="bibr" coords="1,207.89,618.77,71.31,8.64" target="#b7">Chen et al., 2019)</ref>. Unlike individual neurons in CNNs which are highly localized, attention maps may span the full input tensor and focus on more global or semantic patterns. Yet, the applicability of mid-level features for instance-level recognition and image retrieval is currently underwhelming; we argue that this is due to the following reasons: generic attention maps are not localized and may fire on multiple unrelated locations; at the same time, object-centric attentions such as the one proposed by <ref type="bibr" coords="1,266.64,673.56,89.76,8.64" target="#b21">Locatello et al. (2020)</ref> produce too few attentional features and there is no mechanism to supervise them individually. In both cases, methods apply supervision at the global level, and the produced attentional features are simply not discriminative enough.</p><p>In this paper, we present a novel image representation and training framework based solely on attentional features we call Super-features. We introduce an iterative Local feature Integration Trans-Figure <ref type="figure" coords="2,136.09,266.37,3.88,8.64">1</ref>: Super-features attention maps produced by our iterative attention module (LIT) for three images (left), with the first two that match, for five Super-features. They tend to consistently fire on some semantic patterns, e.g. circular shapes, windows, building tops (second to fourth columns). former (LIT), which tailors existing attention modules to the task of image retrieval. Compared to the slot attention <ref type="bibr" coords="2,189.86,326.08,93.06,8.64" target="#b21">(Locatello et al., 2020)</ref> for example, it is able to output an ordered and much larger set of features, as it is based on learned templates, and has a simplified recurrence mechanism. For learning, we devise a loss that is applied directly to Super-features, yet it only requires imagelevel annotations. It pairs a contrastive loss on a set of matching Super-features across matching images, with a decorrelation loss on the attention maps of each image, to encourage Super-feature diversity. In the end, our network extracts for each image a fixed-size set of Super-features that are semantically ordered, i.e., each firing on different types of patterns; see Figure <ref type="figure" coords="2,419.58,391.84,4.98,8.64">1</ref> for some examples.</p><p>At test time, we follow the protocol of the best performing recent retrieval methods and use ASMK <ref type="bibr" coords="2,140.42,419.73,79.16,8.64" target="#b38">(Tolias et al., 2013)</ref>, except that we aggregate and match Super-features instead of local features. Our experiments show that the proposed method significantly outperforms the state of the art on common benchmarks like ROxford and RParis <ref type="bibr" coords="2,333.11,441.65,101.03,8.64">(Radenović et al., 2018a)</ref>, while requiring less memory. We further show that performance gains persist in the larger scale, i.e. after adding 1M distractor images. Exhaustive ablations suggest that Super-features are less redundant and more discriminative than local features.</p><p>Contributions. Our contribution is threefold: (a) an image representation based on Super-features and an iterative module to extract them; (b) a framework to learn such representations, based on a loss applied directly on Super-features yet only requiring image-level labels; (c) extensive evaluations that show significant performance gains over the state of the art for landmark image retrieval. We call our method Feature Integration-based Retrieval or FIRe for short.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">BACKGROUND: LEARNING LOCAL FEATURES WITH A GLOBAL LOSS</head><p>Let function f : I Ñ R W ˆHˆD denote a convolutional neural network (CNN) backbone that encodes an input image x P I into a pW ˆH ˆDq-sized tensor of D-dimensional local activations over a pW ˆHq spatial grid. After flattening the spatial dimensions, the output of f can also be seen as set of L " W ¨H feature vectors denoted by U " tu l P R D : l P 1 .. Lu; note that the size of this set varies with the resolution of the input image. These local features are then typically whitened and their dimension reduced, a process that we represent by function op¨q in this paper. Global representations, i.e. image-level feature vectors, are commonly produced by averaging all local features, e.g. via global average or max pooling <ref type="bibr" coords="2,327.65,673.56,123.46,8.64" target="#b0">(Babenko &amp; Lempitsky, 2015;</ref><ref type="bibr" coords="2,454.24,673.56,49.75,8.64;2,108.00,684.52,22.69,8.64" target="#b39">Tolias et al., 2016;</ref><ref type="bibr" coords="2,133.19,684.52,73.74,8.64" target="#b11">Gordo et al., 2016)</ref>.</p><p>A global contrastive loss for training. <ref type="bibr" coords="2,267.86,701.46,74.81,8.64" target="#b40">Tolias et al. (2020)</ref> argue that optimizing global representations is a good surrogate for learning local features to be used together with efficient match kernels for image retrieval. When building their global representation gpUq, they weight the contribution of  each local feature to the aggregated vector using its l 2 norm:</p><formula xml:id="formula_0" coords="3,205.87,326.15,298.13,29.56">gpUq " ĝpUq }ĝpUq} 2 , ĝpUq " L ÿ l"1 }u l } 2 ¨opu l q,<label>(1)</label></formula><p>where }¨} 2 denotes the l 2 norm. Given a database where each image pair is annotated as matching with each other or not, they minimize a contrastive loss over tuples of global representations. Intuitively, this loss encourages the global representations of matching images to be similar and those of non-matching images to be dissimilar. Let tuple pU, U `, V 1 , . . . , V ń q represent the sets of local features of images px, x `, y 1 , . . . , y ń q, where x and x `are matching images (i.e. a positive pair) and none of the images y 1 , . . . , y ń is matching with image x (i.e. they are negatives). Let r¨s denote the positive part and µ a margin hyper-parameter. They define a contrastive loss over global representations as:</p><formula xml:id="formula_1" coords="3,179.28,460.74,253.44,23.38">L global " › › gpUq ´gpU `q› › 2 2 `n ÿ j"1 " µ ´› › gpUq ´gpV j q › › 2 2 ‰ `.</formula><p>(2)</p><p>In HOW, <ref type="bibr" coords="3,144.81,489.78,73.30,8.64" target="#b40">Tolias et al. (2020)</ref> employ the global contrastive loss of Eq.( <ref type="formula" coords="3,382.29,489.78,4.20,8.64">2</ref>) to learn a model whose local features are then used with match kernels such as ASMK <ref type="bibr" coords="3,344.20,500.74,79.34,8.64" target="#b38">(Tolias et al., 2013)</ref> for image retrieval. ASMK is a matching process defined over selective matching kernels of local features; it is a much stricter and more precise matching function than comparing global representations, and is crucial for achieving good performance. By learning solely using a loss defined over global representations and directly using ASMK over local features U, HOW achieves excellent image retrieval performance.</p><p>3 LEARNING WITH SUPER-FEATURES Methods using a global loss for training but local features for matching have a number of disadvantages. First, using local activations as local features leads to high redundancy, as they exhaustively cover highly overlapping patches of the input image. Second, using ASMK on local features from a model trained with a global loss introduces a mismatch between training and testing: the local features used for ASMK are only trained implicitly, but are expected to individually match in the matching kernel. To obtain less redundant feature sets, we propose to learn Super-features using a loss function that operates directly on those features, and to also use the latter during retrieval; the train/testing discrepancy of the pipeline presented in Section 2 is thus eliminated.</p><p>In this section, we first introduce the Local feature Integration Transformer (LIT), an iterative attention module which produces an ordered set of Super-features (Section 3.1). We then present a framework for effectively learning such features (Section 3.2) that consists of two losses: A contrastive loss that matches individual Super-features across positive image pairs, and a decorrelation loss on the Super-feature attention maps that encourages them to be diverse. An overview of the pipeline is depicted in Figure <ref type="figure" coords="4,226.69,96.30,3.74,8.64" target="#fig_1">2</ref>. We refer to our approach as Feature Integration-based Retrieval or FIRe for short, an homage to the feature integration theory of <ref type="bibr" coords="4,354.65,107.26,105.62,8.64" target="#b41">Treisman &amp; Gelade (1980)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">LOCAL FEATURE INTEGRATION TRANSFORMER (LIT)</head><p>Inspired by the recent success of attention mechanisms for encoding semantics from global context in sequences <ref type="bibr" coords="4,160.58,163.53,86.24,8.64" target="#b42">(Vaswani et al., 2017)</ref> or images <ref type="bibr" coords="4,290.00,163.53,75.14,8.64" target="#b5">(Caron et al., 2021)</ref>, we rely on attention to design our Local feature Integration Transformer (LIT), a module that outputs an ordered set of Super-features.</p><p>Let LIT be represented by function ΦpUq : R LˆD Ñ R N ˆd that takes as input the set of local features U and outputs N Super-features. We define LIT as an iterative module:</p><formula xml:id="formula_2" coords="4,230.52,217.80,149.30,11.37">ΦpUq " Q T , Q t " φpU; Q t´1 q,</formula><p>(3) where φ denotes the core function of the module applied T times, and Q 0 P R N ˆd denotes a set of learnable templates, i.e. a matrix of learnable parameters. Super-features are progressively formed by iterative refinement of the templates, conditioned on the local features from the CNN.</p><p>The architecture of the core function φ is inspired by the Transformer architecture <ref type="bibr" coords="4,441.92,272.95,62.08,8.64;4,108.00,283.91,23.24,8.64" target="#b42">(Vaswani et al., 2017)</ref> and is composed of a dot-product attention function ψ, followed by a multi-layer perceptron (MLP). The dot-product attention function ψ receives three inputs, the key, the value and the query 1 which are passed through layer normalization and fed to linear projection functions K, V and Q that project them to dimensions d k , d v and d q , respectively. In practice, we set d k "d v "d q "d"1024.</p><p>The key and value inputs are set as the local features u l P U across all iterations. The query input is the set of templates Q t " tq t n P R d , n " 1 .. N u. It is initialized as the learnable templates Q 0 for iteration 0, and is set as the previous output of function φ for the following iterations. After projecting with the corresponding linear projection functions, the key and the query are multiplied to construct a set of N attention maps over the local features, i.e., the columns of matrix α P R LˆN , while the L rows α l of that matrix can be seen as the responsibility that each of the N templates has for each local feature l, and is given by 2 :</p><formula xml:id="formula_3" coords="4,132.08,414.90,371.92,40.56">α " » - - α 1 . . . α L fi ffi fl P R LˆN , α l " αl ř L i"1 αi , αl " e Ml ř N n"1 e M ln , M ln " Kpu l q ¨Qpq t n q ? d .<label>(4)</label></formula><p>The dot product between keys and templates can be interpreted as a tensor of compatibility scores between local features and templates. These scores are normalized across templates via a softmax function, and are further turned into attention maps by l 1 normalization across all L spatial locations. This is a common way of approximating a joint normalization function across rows and columns, also used by <ref type="bibr" coords="4,160.21,510.80,87.35,8.64" target="#b21">Locatello et al. (2020)</ref>. The input value is first projected with V , re-weighted with the attention maps and then residually fed to a MLP 3 to produce the output of function φ:</p><formula xml:id="formula_4" coords="4,117.82,536.11,386.18,11.37">Q t " φpU; Q t´1 q, φpU; Qq " MLPpψpU; Qqq `ψpU; Qq, ψpU; Qq " V pUq ¨α `Q. (5)</formula><p>Following standard image retrieval practice, we further whiten and l 2 -normalize the output of ΦpUq to get the final set of Super-features. Specifically, let ΦpUq " rŝ 1 ; . . . ; ŝN s P R N ˆd be the raw output of our iterative attention module, we define the ordered set of Super-features as:</p><formula xml:id="formula_5" coords="4,215.70,593.24,288.30,24.72">S " ! s n : s n " opŝ n q }opŝ n q} 2 , n " 1, .., N ) ,<label>(6)</label></formula><p>where, as in Section 2, op¨q denotes dimensionality reduction and whitening. Figure <ref type="figure" coords="4,447.62,621.53,4.98,8.64" target="#fig_1">2</ref> (right) illustrates the architecture of LIT. Note that all learnable parameters of φ are shared across all iterations.</p><p>What do Super-features attend to? Each Super-feature in S is a function of all local features in U, invariant to permutation of its elements, and can thus attend arbitrary regions of the image.</p><p>To visualize the patterns captured by Super-features, Figure <ref type="figure" coords="5,347.95,85.34,4.98,8.64">1</ref> shows the attention maps of the same five Super-features for three images, including two of the same landmark (first two rows). The type of patterns depends on the learned initialization templates Q 0 ; this explains why the Super-features form an ordered set, a property which allows to directly compare Super-features with the same ID.</p><p>We observe the attention maps to be similar across images of the same landmark and to contain some mid-level patterns (such as a half-circle on the second column, or windows on the third one).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">LEARNING WITH SUPER-FEATURES</head><p>We jointly fine-tune the parameters of the CNN and of the LIT module using contrastive learning. However, departing from recent approaches like HOW <ref type="bibr" coords="5,333.82,196.62,79.99,8.64" target="#b40">(Tolias et al., 2020)</ref> or DELG <ref type="bibr" coords="5,458.63,196.62,45.37,8.64;5,108.00,207.58,23.24,8.64" target="#b3">(Cao et al., 2020)</ref> that use a global contrastive loss similar to the one presented in Eq. ( <ref type="formula" coords="5,427.61,207.58,3.53,8.64">2</ref>), we introduce a contrastive loss that operates directly on Super-features, the representations we use at test time, and yet only requires image-level labels. Given a positive pair (i.e. matching images of the same landmark) and a set of negative images, we select promising Super-feature pairs by exploiting their ordered nature and without requiring any extra supervision signal. We then minimize their pairwise distance, while simultaneously reducing the spatial redundancy of Super-features within an image.</p><p>Selecting matching Super-features. Since we are only provided with pairs of matching images, i.e. image-level labels, defining correspondences at the Super-feature level is not trivial. Instead of approximating sophisticated metrics <ref type="bibr" coords="5,268.84,301.22,69.02,8.64" target="#b20">(Liu et al., 2020;</ref><ref type="bibr" coords="5,341.12,301.22,80.70,8.64" target="#b23">Mialon et al., 2021)</ref>-see Section 5 for a discussion-, we leverage the fact that Super-features are ordered and we select promising matches and filter out erroneous ones only relying on simple, nearest neighbor-based constraints.</p><p>For any s P S, let ipsq be the function that returns the position/order or Super-feature ID, i.e. ips i q " i, @s i P S. Further let function nps, Sq " arg min siPS }s ´si } 2 be the function that returns the nearest neighbor of s from set S. Now, given a positive pair of images x, x `, let s P S, s 1 P S 1 be two Super-features from their Super-feature sets S, S 1 , respectively. In order for Super-feature pair ps, s 1 q to be eligible, all of the following criteria must be met: a) s, s 1 have to be reciprocal nearest neighbors, b) they need to pass Lowe's first-to-second neighbor ratio test <ref type="bibr" coords="5,475.76,394.87,28.24,8.64;5,108.00,405.83,23.24,8.64" target="#b22">(Lowe, 2004)</ref> and c) they need to have the same Super-feature ID. Let P be the set of eligible pairs and τ the hyper-parameter that controls the ratio test; the conditions above can formally be written as:</p><p>ps, s 1 q P P ðñ " s " nps 1 , Sq s 1 " nps, S 1 q and " ipsq " ips 1 q }s ´s1 } 2 { }s 1 ´nps 1 , Sztsuq} 2 ě τ .</p><p>We set τ " 0.9. Our ablations (Section 4.1) show that all criteria are important. Note that the pair selection step is non-differentiable and no gradients are computed for Super-features not in P. We further discuss this in Appendix B.4 and empirically show that all Super-features are trained.</p><p>A contrastive loss on Super-features. Once the set P of all eligible Super-feature pairs has been constructed, we define a contrastive margin loss on these matches. Let pair p " ps, s `q P P be a pair of Super-features, selected from a pair of matching images x, x `, and let Npjq " tn k j : k " 1 .. nu for j " 1 .. N be the set of Super-features with Super-feature ID j extracted from negative images py 1 , . . . , y ń q. The contrastive Super-feature loss can be written as:</p><formula xml:id="formula_7" coords="5,180.28,564.87,323.72,25.20">L super " ÿ ps,s `qPP " › › s ´s`› › 2 2 `ÿ nPNpipsqq rµ 1 ´}s ´n} 2 2 s `ı,<label>(8)</label></formula><p>where µ 1 is a margin hyper-parameter and the negatives for each s are the Super-features from all n negative images of the training tuple with Super-feature ID equal to ipsq.</p><p>Reducing the spatial correlation between attention maps. To obtain Super-features that are as complementary as possible, we encourage them to attend to different local features, i.e. different locations of the image. To this end, we minimize the cosine similarity between the attention maps of all Super-features of every image.</p><p>Specifically, let matrix α " r α1 , . . . , αN s now be seen as column vectors denoting the N attention maps after the last iteration of LIT. The attention decorrelation loss is given by:  In other words, this loss minimizes the off-diagonal elements of the N ˆN self-correlation matrix of α. We ablate the benefit of this loss and others components presented in this section in Section 4.1.</p><formula xml:id="formula_8" coords="5,181.78,703.31,322.23,28.19">L attn pxq " 1 N pN ´1q ÿ i‰j α i ¨α j } αi } 2 } αj } 2 , i, j P t1, .., N u. (9)</formula><p>Image retrieval with Super-features. Our full pipeline, FIRe, is composed of a model that outputs Super-features, trained with the contrastive Super-feature loss of Eq.( <ref type="formula" coords="6,388.66,249.11,4.20,8.64" target="#formula_7">8</ref>) and the attention decorrelation loss of Eq.( <ref type="formula" coords="6,180.11,260.07,3.95,8.64">9</ref>). As our ablations show (see Section 4), the combination of these two losses is required for achieving state-of-the-art performance, while adding a third loss on the aggregated global features as in Eq.( <ref type="formula" coords="6,207.23,281.99,4.20,8.64">2</ref>) does not bring any gain.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">EXPERIMENTS</head><p>This section validates our proposed FIRe approach on standard landmark retrieval tasks. We use the SfM-120k dataset <ref type="bibr" coords="6,200.63,347.32,105.21,8.64">(Radenović et al., 2018b)</ref> following the 551/162 3D model train/val split from <ref type="bibr" coords="6,130.61,358.28,75.59,8.64" target="#b40">Tolias et al. (2020)</ref>. For testing, we evaluate instance-level search on the ROxford <ref type="bibr" coords="6,471.89,358.28,32.11,8.64;6,108.00,369.24,47.06,8.64" target="#b27">(Philbin et al., 2007)</ref> and the RParis <ref type="bibr" coords="6,218.85,369.24,81.40,8.64" target="#b28">(Philbin et al., 2008)</ref> datasets in their revisited version <ref type="bibr" coords="6,434.41,369.24,69.60,8.64;6,108.00,380.20,25.85,8.64">(Radenović et al., 2018a)</ref>, with and without the 1 million distractor set called R1M. They both contain 70 queries, with 4993 and 6322 images respectively. We report mean average precision (mAP) on the Medium (med) and Hard (hard) setups, or the average over these two setups (avg).</p><p>Image search with Super-features. At test time, we follow the exact procedure described by <ref type="bibr" coords="6,108.00,435.04,76.09,8.64" target="#b40">Tolias et al. (2020)</ref> and extract Super-features from each image at 7 resolutions/scales {2.0, 1.414, 1.0, 0.707, 0.5, 0.353, 0.25}. We then keep the top Super-features (the top 1000 unless otherwise stated) according to their L2 norm and use the binary version of ASMK with a codebook of 65536 clusters. Note that one can measure the memory footprint of a database image x via the number of non-empty ASMK clusters, i.e. clusters with at least one assignment, denoted as |Cpxq|.</p><p>Implementation details. We build our codebase on HOW <ref type="bibr" coords="6,346.62,495.81,78.51,8.64" target="#b40">(Tolias et al., 2020)</ref> <ref type="foot" coords="6,425.13,494.14,3.49,6.05" target="#foot_0">4</ref> and sample tuples composed of one query image, one positive image and 5 hard negatives. Each epoch is composed of 400 batches of 5 tuples each, while hard negatives are updated at each epoch using the global features of Eq.( <ref type="formula" coords="6,168.71,528.69,3.95,8.64" target="#formula_0">1</ref>). We train our model for 200 epochs on SfM-120k using an initial learning rate of 3.10 ´5 and random flipping as data augmentation. We multiply the learning rate by a factor of 0.99 at each epoch, and use an Adam optimizer with a weight decay of 10 ´4. We use a ResNet50 <ref type="bibr" coords="6,489.07,550.61,14.93,8.64;6,108.00,561.57,48.02,8.64" target="#b14">(He et al., 2016)</ref> without the last convolutional block as backbone (R50 ´). For LIT, we use D " d k " d q " d v " d " 1024. Following HOW, we reduce the dimensionality of features to 128 and initialize op¨q using PCA and whitening before training and keep it frozen. We pretrain the LIT module with the backbone on ImageNet-1K for image classification, see details in Appendix B.6. We use µ 1 " 1.1 in Eq.( <ref type="formula" coords="6,203.52,605.40,4.20,8.64" target="#formula_7">8</ref>) and weight L super and L attn with 0.02 and 0.1, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">ANALYSIS AND ABLATIONS</head><p>In this section, we analyze the proposed FIRe framework and perform exhaustive ablations on the training losses and the matching constraints. The impact of the number of iterations (T ) and templates (N ) in LIT is studied in Appendix A.1. For the rest of the paper, we set T " 6 and N " 256.</p><p>Matching constraints ablation.  and Lowe's ratio test significantly improves performance, which indicates that it reduces the number of incorrect matches. Keeping all pairs with the same ID yields lower performance: the ID constraint alone is not enough. One possible explanation is that two images from the same landmark may differ significantly, e.g. when some parts are visible in only one of the two images. In that case, the other constraints allow features attending non-overlapping regions of a positive image pair to be excluded from P. Finally, combining the selective ID constraint with the others yields the best performance.</p><p>In order to better understand the impact of the Super-feature ID constraint, a constraint only applicable for Super-features due to their ordered nature, we measure the quality of selected matches during training with and without it. Since there is no ground-truth for such localized matches on landmark retrieval datasets, we measure instead the ratio of matches coming from the positive pair, over all matches (from the positive and all negatives). Ideally, a minimal number of matches should come from the negatives, hence this ratio should be close to 1. In Figure <ref type="figure" coords="7,375.27,547.04,4.98,8.64" target="#fig_2">3</ref> we plot this match ratio for all epochs; we observe that it is significantly higher when using the Super-features ID constraint.</p><p>Training losses ablation. We study the impact of the different training losses in Table <ref type="table" coords="7,459.49,574.93,3.74,8.64" target="#tab_1">2</ref>. We start from a global loss similar to HOW (first row). We then add the decorrelation loss (second row) and observe a clear gain. It can be explained by the fact that without this loss, Super-features tend to be redundant (see the correlation matrices in Figure <ref type="figure" coords="7,334.65,607.81,3.60,8.64">4</ref>). Adding the loss operating directly on the Super-features further improves performance (third row). Next, we remove the global loss and keep only the loss on Super-features alone (fourth row) or with the decorrelation loss (last row). The latter performs best (fourth vs last row). Figure <ref type="figure" coords="7,328.71,640.69,4.98,8.64">4</ref> displays the correlation matrix of Superfeatures attention maps with and without L attn . Without it, we observe that most Super-features have correlated attentions. In contrast, training with L attn leads to uncorrelated attention maps. This is illustrated in Figure <ref type="figure" coords="7,189.09,673.56,4.98,8.64">1</ref> which shows several attention maps focusing on different areas.</p><p>Varying the number of features at test time. Figure <ref type="figure" coords="7,329.40,690.50,4.98,8.64">5</ref> compares HOW <ref type="bibr" coords="7,404.68,690.50,78.71,8.64" target="#b40">(Tolias et al., 2020)</ref> with our approach, as we vary the number of local features / Super-features. The x-axis shows the average number of clusters used in ASMK for the database images, i.e., which is proportional to the average memory footprint of an image. We observe that our approach does not only significantly improve Figure <ref type="figure" coords="8,136.41,177.26,3.88,8.64">6</ref>: Statistics on the feature selected across scales for HOW and FIRe, averaged over the 70 queries from ROxford. Left: Among the 1000 selected features, we show the percentage coming from each scale. Middle: For each scale, we show the ratio of features that are selected. Right: Total number of features per scale; we extract N " 256 Super-features regardless of scale. accuracy compared to HOW, but also requires overall less memory. Notably, FIRe matches the best performance of HOW with a memory footprint reduced by a factor of 4. For both methods, performance goes down once feature selection no longer discards background features. The gain in terms of performance is even larger when considering a single scale at test time (see Appendix B.1).</p><p>Statistics on the number of selected features per scale. The left plot of Figure <ref type="figure" coords="8,454.27,283.56,4.98,8.64">6</ref> shows the percentage of the 1000 selected features that comes from each scale, for HOW and FIRe. For HOW most selected features come from the higher resolution inputs; by contrast, selected Super-features are almost uniformly distributed across scales. Interestingly, Figure <ref type="figure" coords="8,388.12,316.44,4.98,8.64">6</ref> (middle) shows that HOW keeps a higher percentage of the features coming from coarser scales. Yet, the final feature selection for HOW is still dominated by features from higher scales, due to the fact that the number of local features significantly increases with the input resolution (see Figure <ref type="figure" coords="8,380.00,349.31,4.98,8.64">6</ref> right).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">COMPARISON TO THE STATE OF THE ART</head><p>We compare our method to the state of the art in Table <ref type="table" coords="8,341.78,395.41,3.74,8.64">3</ref>. All reported methods are trained on SfM-120k for a fair comparison. <ref type="foot" coords="8,236.52,404.70,3.49,6.05" target="#foot_1">5</ref> First, we observe that methods based on global descriptors <ref type="bibr" coords="8,476.58,406.37,27.43,8.64;8,108.00,417.33,47.28,8.64" target="#b39">(Tolias et al., 2016;</ref><ref type="bibr" coords="8,157.88,417.33,84.80,8.64">Revaud et al., 2019a)</ref> compared with a L2 distance tend to be less robust than methods based on local features <ref type="bibr" coords="8,201.37,428.28,69.91,8.64" target="#b25">(Noh et al., 2017;</ref><ref type="bibr" coords="8,273.73,428.28,72.29,8.64" target="#b40">Tolias et al., 2020)</ref>. DELG <ref type="bibr" coords="8,382.40,428.28,69.35,8.64" target="#b3">(Cao et al., 2020)</ref> shows better performance, owing to a re-ranking step based on local features, at the cost of re-extracting local features for the top-ranked images of a given query, given that local features would take too much memory to store. Our FIRe method outperforms DELF <ref type="bibr" coords="8,333.64,461.16,71.58,8.64" target="#b25">(Noh et al., 2017)</ref> as well as HOW <ref type="bibr" coords="8,476.58,461.16,27.43,8.64;8,108.00,472.12,49.99,8.64" target="#b40">(Tolias et al., 2020)</ref> by a significant margin when extracting 1000 features per image. Importantly, our approach also requires less memory, as it uses fewer ASMK clusters per image, as shown in Figure <ref type="figure" coords="8,496.25,483.08,3.88,8.64">5</ref>: for the whole R1M set, HOW uses 469 clusters per image while FIRe uses only 383, on average.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">RELATED WORK</head><p>Image descriptors for retrieval. The first approaches for image retrieval were based on handcrafted local descriptors and bag-of-words representations borrowed from text retrieval <ref type="bibr" coords="8,424.23,558.20,79.77,8.64;8,108.00,569.15,22.69,8.64" target="#b35">(Sivic &amp; Zisserman, 2003;</ref><ref type="bibr" coords="8,134.26,569.15,79.73,8.64" target="#b9">Csurka et al., 2004)</ref>, or other aggregation techniques like Fisher Vectors <ref type="bibr" coords="8,434.89,569.15,69.11,8.64;8,108.00,580.11,21.44,8.64" target="#b26">(Perronnin et al., 2010)</ref>, VLAD <ref type="bibr" coords="8,165.39,580.11,74.98,8.64" target="#b17">(Jégou et al., 2010)</ref> or ASMK <ref type="bibr" coords="8,283.29,580.11,74.06,8.64" target="#b38">(Tolias et al., 2013)</ref>. First deep learning techniques were extracting a global vector per image either directly or by aggregating local activations <ref type="bibr" coords="8,450.96,591.07,53.04,8.64;8,108.00,602.03,22.69,8.64" target="#b11">(Gordo et al., 2016;</ref><ref type="bibr" coords="8,134.25,602.03,100.71,8.64">Radenović et al., 2018b)</ref> and have shown to highly outperform handcrafted local features, see <ref type="bibr" coords="8,122.71,612.99,125.59,8.64" target="#b8">(Csurka &amp; Humenberger, 2018)</ref> for a review. Methods that perform matching or re-ranking using CNN-based local features are currently the state of the art in the area <ref type="bibr" coords="8,386.67,623.95,70.54,8.64" target="#b25">(Noh et al., 2017;</ref><ref type="bibr" coords="8,459.88,623.95,44.12,8.64;8,108.00,634.91,46.38,8.64" target="#b37">Teichmann et al., 2019;</ref><ref type="bibr" coords="8,156.53,634.91,64.59,8.64" target="#b3">Cao et al., 2020;</ref><ref type="bibr" coords="8,223.27,634.91,71.40,8.64" target="#b40">Tolias et al., 2020)</ref>. They are able to learn with global (i.e. image-level) annotations. Most of them use simple variants of attention mechanisms <ref type="bibr" coords="8,394.72,645.87,70.14,8.64" target="#b25">(Noh et al., 2017;</ref><ref type="bibr" coords="8,467.39,645.87,36.61,8.64;8,108.00,656.83,23.24,8.64" target="#b24">Ng et al., 2020)</ref> or simply the feature norm <ref type="bibr" coords="8,242.48,656.83,77.51,8.64" target="#b40">(Tolias et al., 2020)</ref> to weight local activations.</p><p>Low-level features aggregation. Aggregating local features into regional features has a long history. Crucial to the success of traditional approaches, popular methods include selecting discriminative patches in the input image <ref type="bibr" coords="8,242.48,695.68,76.57,8.64" target="#b34">(Singh et al., 2012;</ref><ref type="bibr" coords="8,321.70,695.68,52.04,8.64" target="#b10">Gordo, 2015)</ref> </p><formula xml:id="formula_9" coords="9,272.15,223.73,225.59,6.65">(Ò 3.5) (Ò 5.4) (Ò 2.9) (Ò 3.3) (Ò 5.2) (Ò 9.9) (Ò 9.2) (Ò 12.2)</formula><p>Table <ref type="table" coords="9,132.82,235.79,3.88,8.64">3</ref>: Comparison to the state of the art. All models are trained on SfM-120k. FCN denotes the fully-convolutional network backbone, with R50 ´denoting a ResNet-50 without the last block. Memory is reported for the image representation of the full R1M set (without counting local features for the global descriptors + reranking methods). ; result from <ref type="bibr" coords="9,363.18,268.66,77.79,8.64" target="#b40">(Tolias et al., 2020)</ref>. Bold denotes best performance, underlined second best among methods using ASMK, italics second best overall. at different resolutions <ref type="bibr" coords="9,202.37,303.21,74.57,8.64" target="#b18">(Jiang et al., 2013)</ref>, aggregating SIFT descriptors with coding and pooling schemes <ref type="bibr" coords="9,144.86,314.17,87.20,8.64" target="#b2">(Boureau et al., 2010)</ref>, or mining frequent patterns in sets of SIFT features <ref type="bibr" coords="9,451.85,314.17,52.15,8.64;9,108.00,325.13,21.44,8.64" target="#b34">(Singh et al., 2012)</ref>. More recently, <ref type="bibr" coords="9,197.31,325.13,81.89,8.64" target="#b13">Hausler et al. (2021)</ref> introduced a multi-scale fusion of patch features.</p><p>Supervision for local features. Several works provide supervision at the level of local features in the context of contrastive learning. <ref type="bibr" coords="9,255.01,353.02,67.81,8.64" target="#b47">Xie et al. (2021)</ref> and <ref type="bibr" coords="9,343.85,353.02,74.45,8.64" target="#b6">Chen et al. (2021)</ref> obtain several views of an input image using data augmentations with known pixel displacements. Similarly, <ref type="bibr" coords="9,467.23,363.98,36.77,8.64;9,108.00,374.94,26.56,8.64" target="#b20">Liu et al. (2020)</ref> train a model to predict the probability for a pair of local features to match, evaluated using known displacements. <ref type="bibr" coords="9,199.25,385.90,73.60,8.64" target="#b43">Wang et al. (2020)</ref> and <ref type="bibr" coords="9,292.02,385.90,71.63,8.64" target="#b49">Zhou et al. (2021)</ref> obtain local supervision by relying on epipolar coordinates and relative camera poses. Positive pairs in image retrieval depart from these setups, as pixel-level correspondences cannot be known. To build matches, <ref type="bibr" coords="9,407.86,407.82,73.63,8.64" target="#b44">Wang et al. (2021)</ref> use a standard nearest neighbor algorithm to build pairs of features, similarly to our approach, but without the use of filtering which is critical to our final performance. Using the current model predictions to define targets is reminiscent of modern self-supervised learning approaches which learn without any label <ref type="bibr" coords="9,146.33,451.65,76.81,8.64" target="#b5">(Caron et al., 2021;</ref><ref type="bibr" coords="9,225.50,451.65,66.72,8.64" target="#b12">Grill et al., 2020)</ref>. The additional filtering step can be seen as a way to keep only the most reliable model predictions, similar to self-distillation as in e.g. <ref type="bibr" coords="9,431.23,462.61,68.63,8.64" target="#b36">Sohn et al. (2020)</ref>.</p><p>Attention modules. Our LIT module is an iterative variant of standard attention <ref type="bibr" coords="9,435.72,479.55,68.27,8.64;9,108.00,490.51,22.69,8.64" target="#b1">(Bahdanau et al., 2015;</ref><ref type="bibr" coords="9,133.80,490.51,83.79,8.64" target="#b42">Vaswani et al., 2017)</ref>, adapted to map a variable number of input features to an ordered set of N output features, similar to <ref type="bibr" coords="9,240.13,501.47,66.53,8.64" target="#b19">Lee et al. (2019)</ref>. The Perceiver model <ref type="bibr" coords="9,406.95,501.47,80.50,8.64" target="#b16">(Jaegle et al., 2021)</ref> has demonstrated the flexibility of such constructions by using it to scale attention-based deep networks to large inputs. Our design was heavily inspired by slot-attention <ref type="bibr" coords="9,376.46,523.38,91.07,8.64" target="#b21">(Locatello et al., 2020)</ref>, but has some key differences that enable us to achieve high performance in more complex visual environments: a) unlike the slot attention which initializes its slots with i.i.d sampling, we learn the initial templates and therefore define an ordering on the output set, a crucial property for selecting promising matches; b) we replace the recurrent network gates with a residual connection across iterations. These modifications, together with the attention decorrelation loss enable our module to go from a handful of object-oriented slots to a much larger set of output features. For object detection, <ref type="bibr" coords="9,476.89,589.14,27.12,8.64;9,108.00,600.10,48.34,8.64" target="#b4">Carion et al. (2020)</ref> rely on a set of learned object queries to initialize a stack of transformer layers. Unlike ours, their module is not recurrent; Appendix A.1 experimentally shows substantial benefits from applying LIT T times, with weight sharing, to increase model flexibility without extra parameters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">CONCLUSIONS</head><p>We present an approach that aggregates local features into Super-features for image retrieval, a task that has up to now been dominated by approaches that work at the local feature level. We design an attention mechanism that outputs an ordered set of such features that are more discriminative and expressive than local features. Exploiting their ordered nature and without any extra supervision, we present a loss working directly on the proposed features. Our method not only significantly improves performance, but also requires less memory, a crucial requirement for scalable image retrieval.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.3 IMPACT OF THE UPDATE FUNCTION</head><p>The formula for ψ in Equation ( <ref type="formula" coords="15,237.29,106.13,3.87,8.64">5</ref>) sums the previous Q with the output of the attention component V pUq ¨α, i.e., with a residual connection. This is a different choice than the one made in the object-centric slot attention of <ref type="bibr" coords="15,235.05,128.05,90.44,8.64" target="#b21">Locatello et al. (2020)</ref>, which proposes to use a Gated Recurrent Unit: ψpU; Qq " GRUpV pUq ¨α, Q ). We thus compare the residual connection we use to a GRU function and report results in Table <ref type="table" coords="15,251.21,149.97,4.98,8.64" target="#tab_4">4</ref> with T " 3. We observe that the residual connection reaches a better performance in all datasets while having the interest of not adding extra parameters. Table <ref type="table" coords="15,132.93,248.00,3.88,8.64" target="#tab_4">4</ref>: Impact of the update function in the LIT module. We compare the performance of the residual combination of the previous template value with the cross-attention tensor compared to a GRU as used in slot attention <ref type="bibr" coords="15,227.15,269.92,89.23,8.64" target="#b21">(Locatello et al., 2020)</ref>. In this experiment, we use T " 3.</p><p>In summary, we propose the LIT module to obtain a few hundred features for image retrieval while slot attention handles a handful of object attentions. Technical differences to the slot attention include: a) we use a learned initialization of the templates instead of i.i.d. sampling, which allows to obtain an ordered set of features, and thus to apply the constraint on the ID for the matching, leading to a clear gain, see Table <ref type="table" coords="15,211.30,338.40,4.98,8.64" target="#tab_0">1</ref> and Figure <ref type="figure" coords="15,265.42,338.40,3.74,8.64" target="#fig_2">3</ref>, b) to handle a larger number of templates, we also add a decorrelation loss on the attention maps, which has clear benefit, see Table <ref type="table" coords="15,404.94,349.36,4.98,8.64" target="#tab_1">2</ref> and Figure <ref type="figure" coords="15,457.08,349.36,3.74,8.64">4</ref>, c) we use a residual connection with 6 iterations instead of a GRU, leading to improved performance for our task (see We show in Table <ref type="table" coords="15,180.31,589.24,4.98,8.64" target="#tab_5">5</ref> an extended version of Table <ref type="table" coords="15,303.16,589.24,4.98,8.64" target="#tab_0">1</ref> of the main paper, where we evaluate all possible combinations of constraints among reciprocity, Lowe's ratio test and the Super-feature ID. We observe that the reciprocity constraint and the Super-feature ID constraint are the two most important ones, while the Lowe's ratio only only brings a small improvement.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.5 IMPACT OF THE TEMPLATE INITIALIZATION</head><p>In the LIT module, initial templates Q 0 P R N ˆd are learned together with the LIT module. We can therefore assume that they are adapted to the task at hand. To explore the sensitivity to the initial templates, we run a variant of FIRe where the initializations are not fine-tuned, but instead frozen to the values after pretraining on ImageNet. We report performance in Table <ref type="table" coords="15,425.56,701.46,3.74,8.64" target="#tab_6">6</ref>. We observe that the two variants perform overall similarly. This ablation suggests that the initial templates are up to some point transferable to other tasks.  Figure <ref type="figure" coords="16,137.99,350.61,3.88,8.64">9</ref>: Performance versus memory when varying the number of selected features at a single scale for HOW and FIRe. The x-axis represents the average number of vectors per image in ASMK, which is proportional to the memory, when varying the number of selected features in p25, <ref type="bibr" coords="16,126.26,383.17,147.67,8.74">50, 100, 150, 200, 300, 400, 500, 600q</ref>, FIRe is limited to 256 features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B ANALYSIS AND DISCUSSIONS B.1 SINGLE-SCALE RESULTS</head><p>Similar to Figure <ref type="figure" coords="16,180.75,468.12,4.98,8.64">5</ref> of the main paper, we perform the same ablation in Figure <ref type="figure" coords="16,431.32,468.12,4.98,8.64">9</ref> when extracting features at a single scale (1.0). We observe that FIRe significantly improves the mAP on the two datasets compared to HOW. The average number of clusters, i.e. the memory footprint of images, remains similar for both methods at a same number of selected features. This stands in contrast to the multi-scale case where our approach allows to save memory (about 20%), which we hypothesize is due to the correlation of our features across scales that we discuss below.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.2 CONSISTENCY OF ATTENTION MAPS ACROSS SCALES</head><p>At test time, we extract Super-features at different image resolutions. We propose here to study if the attention maps of the Super-features across different image scales are correlated. We show in Figure <ref type="figure" coords="16,136.84,595.75,9.96,8.64" target="#fig_6">10</ref> the attention maps at the last iteration of LIT for the different image scales. We observe that they fire at the same image location at the different scales. Note that the attention maps are larger/smoother at small scales (right columns), as for visualization, we resize lower resolution attention maps to the original image size.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.3 REDUNDANCY IN SUPER-FEATURES</head><p>To evaluate the redundancy of Super-features versus local features, Figure <ref type="figure" coords="16,418.08,679.54,9.96,8.64">11</ref> displays the average cosine similarity between every local feature / Super-feature and its K nearest local features / Super-features from the same image, for different values of K. We observe that Super-features are significantly less correlated to the most similar other ones, compared to local features used in HOW. Figure <ref type="figure" coords="17,136.86,426.41,8.49,8.64">11</ref>: Measuring Super-feature redundancy. We compute the average cosine similarity between every feature (local feature from HOW or Super-feature from FIRe) and its K most similar features from the same image, for varying K. Results are averaged over the 70 query images of the ROxford dataset. Only 256 Super-features can be extracted per image, explaining its maximum x value.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.4 ARE ALL SUPER-FEATURES TRAINED?</head><p>The loss in Equation ( <ref type="formula" coords="17,199.09,534.68,3.87,8.64" target="#formula_7">8</ref>) only operates on a subset of the Super-feature pairs that pass the criteria of Equation ( <ref type="formula" coords="17,161.75,545.64,3.60,8.64" target="#formula_6">7</ref>); if a Super-feature ID is not matched, it receives no training signal. To investigate if all of the IDs contribute to the loss, we monitored how many times each ID is matched at each epoch and report the percentage over all 2000 training tuples per epoch. In Figure <ref type="figure" coords="17,451.71,567.55,9.96,8.64" target="#fig_1">12</ref> we report mean, standard deviation and minimum number of matches for the N Super-feature ID. We clearly observe that all Super-features receive training signals regularly and each Super-feature is matched about one quarter of the time on average.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.5 USING THE SUPER-FEATURE LOSS WITH LOCAL FEATURES</head><p>It is worth noting that the loss in Equation ( <ref type="formula" coords="17,289.53,657.62,3.87,8.64" target="#formula_7">8</ref>) could also theoretically be used over local feature activations. It could be computed on pairs of local features that pass the conditions described in Equation ( <ref type="formula" coords="17,149.98,679.54,3.53,8.64" target="#formula_6">7</ref>), after removing the constraint on having the same Super-feature ID. Unfortunately, we were unable to get any gains over HOW <ref type="bibr" coords="17,273.50,690.50,78.88,8.64" target="#b40">(Tolias et al., 2020)</ref> when appending such a loss side-byside with the global loss over local features. Empirically, our ablations (see Section 4.1) show that adding the constraint on the Super-features ID, which is only possible with ordered feature sets, is key to the success of our approach, and significantly improves the quality of the matching. Figure <ref type="figure" coords="18,136.56,233.27,8.49,8.64" target="#fig_1">12</ref>: Are all Super-features trained? As a sanity check, this plot shows the average number (in percentage) of times (with standard deviation) that the Super-features receive training signal, across training epochs. We also plot the minimum value, which is always significantly positive, showing that each Super-feature ID receives training signal. Thus our loss L super proposed in Equation (8) does not lead to degenerate solutions where some IDs are never selected and never trained.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.6 PRETRAINING THE BACKBONE TOGETHER WITH LIT</head><p>Before training on landmark retrieval, we pretrain the backbone network, with the proposed LIT module appended after the last layer, for image classification on ImageNet-1K. Given that we remove the last convolutional block similar to HOW, to avoid overfitting we further append a classification head composed of one fully-connected layer, batch norm, leaky ReLU, dropout and another fully-connected layer at the end of the network and train it for 80 epochs using a standard crossentropy loss and in addition the decorrelation loss L attn weighted by 0.1, the same weight as during fine-tuning. We start with a learning rate of 0.01 and divide it by 10 every 20 epochs. This new architecture reaches a top-1 (resp. top-5) accuracy of 73.48% (resp. 91.54%) on the ImageNet validation set. Note that this performance is a bit lower than a standard ResNet-50: this is because we have removed the last convolutional block which contains most parameters in the ResNet architecture.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.7 COMPUTATIONAL COST OF SUPER-FEATURES EXTRACTION</head><p>We report the time required for extracting multi-scale features for 5000 images, for HOW and FIRe. On our server, it took 157 seconds for HOW and 172 for FIRe, i.e. extraction for Super-features only requires 10% more wall-clock time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.8 IS GOOGLE LANDMARKS V2 CLEAN AN APPROPRIATE TRAINING DATASET FOR</head><p>TESTING ON ROXFORD AND RPARIS?</p><p>In the comparison to the state of the art (Table <ref type="table" coords="18,304.72,553.26,3.60,8.64">3</ref>), all reported methods are trained on the SfM-120k dataset. Several recent works have also released a model trained on the Google Landmarks v2 dataset <ref type="bibr" coords="18,137.95,575.18,85.03,8.64" target="#b45">(Weyand et al., 2020)</ref> or its clean version <ref type="bibr" coords="18,302.32,575.18,78.70,8.64" target="#b48">(Yokoo et al., 2020)</ref> with excellent performance on RParis. However, we find out that several of the query landmarks from RParis and ROxford were present in the training set of the cleaned version of Google Landmarks v2, such as 'La Defense', 'Eiffel Tower', 'Sacré Coeur' or 'Hotel les Invalides' for RParis or such as 'Mary Madgalen', 'Bodleian Library', 'All Souls College' or 'Radcliffe' for ROxford.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C APPLICATION TO VISUAL LOCALIZATION</head><p>In this section, we evaluate FIRe for the task of visual localization, where retrieval is used as a first-stage filtering and before more precise, local feature-based geometric matching. To this end, we follow the pipeline proposed by Kapture<ref type="foot" coords="18,283.70,691.78,3.49,6.05" target="#foot_2">6</ref>  <ref type="bibr" coords="18,290.26,693.45,108.25,8.64" target="#b15">(Humenberger et al., 2020)</ref> on the Aachen Day-Night v1.1 dataset <ref type="bibr" coords="18,160.49,704.41,81.22,8.64" target="#b33">(Sattler et al., 2018)</ref>. In this scenario, a global Structure-from-Motion map is built Retrieval method Day images Night images 0.25m, 2°0.5m, 5°5m, 10°0.25m, 2°0.5m, 5°5m, 10°A P-GeM <ref type="bibr" coords="19,152.21,111.18,81.71,8.04">(Revaud et al., 2019a)</ref> 88.8 96.6 99.6 72.3 86.9 97.9 HOW <ref type="bibr" coords="19,140.03,121.39,72.17,8.04" target="#b40">(Tolias et al., 2020)</ref> 90 Percentage of successfully localized images on the Aachen Day-Night v1.1 dataset when changing the retrieval method in the Kapture pipeline from <ref type="bibr" coords="19,471.36,165.14,27.21,8.64;19,108.00,176.10,78.53,8.64" target="#b15">Humenberger et al. (2020)</ref>. In the most challenging scenario, i.e. night images at strictest localization threshold, using FIRe yields a 2% improvement compared to AP-GeM and a 1.5% improvement compared to HOW. Bold number denotes the best performance, underlined indicates performance within a 0.1 margin to the best one.</p><p>from the training images using R2D2 local descriptors <ref type="bibr" coords="19,331.67,242.15,88.11,8.64">(Revaud et al., 2019b)</ref>. At test time, given a query image to localize, image retrieval is used to retrieve the top-50 nearest images. On these retrieved images, R2D2 local features are extracted and matched with the ones on the query image, and this is used to estimate the position of the camera. The percentage of successfully localized images within three levels of thresholds is then reported on the day or night images, following the visual localization benchmark protocol<ref type="foot" coords="19,264.30,295.27,3.49,6.05" target="#foot_3">7</ref> , the latter ones being more challenging as training images are taken during daytime.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,384.98,162.87,59.41,7.59;3,445.55,214.62,21.20,4.68;3,363.94,88.06,36.10,5.20;3,448.64,106.47,3.33,5.20;3,444.73,205.16,3.33,5.20;3,471.77,165.15,4.78,7.59;3,471.42,190.21,4.78,7.59;3,424.54,144.95,3.18,5.13;3,448.49,96.34,3.18,5.13;3,168.22,231.27,107.82,7.77;3,369.17,162.91,59.94,7.65;3,430.28,215.13,21.39,4.72;3,347.94,87.42,36.43,5.24;3,433.41,106.00,3.36,5.24;3,429.45,205.58,3.36,5.24;3,456.74,165.21,4.82,7.65;3,456.39,190.49,4.82,7.65;3,409.08,144.83,3.21,5.18;3,433.25,95.78,3.21,5.18;3,360.19,231.27,118.77,7.77"><head></head><label></label><figDesc>The LIT module architecture.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,108.00,243.88,396.00,9.03;3,108.00,255.23,396.00,8.64;3,108.00,266.19,396.00,8.64;3,108.00,277.14,396.00,8.64;3,108.00,288.10,349.65,8.64"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: An overview of FIRe. Given a pair of matching images encoded by a CNN encoder, the iterative attention module LIT (Section 3.1) outputs an ordered set of Super-features. A filtering process keeps only reliable Super-feature pairs across matching images (Section 3.2 §1), which are fed into a Super-feature-level contrastive loss (Section 3.2 §2), while a decorrelation loss reduces the spatial redundancy of the Super-features attention maps for each image (Section 3.2 §3).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="6,310.98,166.36,193.02,8.64;6,310.98,176.97,193.02,7.77;6,310.98,186.94,193.02,7.77"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Evolution of the matching quality measured as the ratio of matches coming from the positive pair over all pairs with the query in each training tuple.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="7,310.98,156.81,193.02,9.83;7,310.98,167.77,193.02,9.03;7,310.98,179.12,193.01,8.64;7,310.98,190.08,193.02,8.64;7,310.98,200.65,193.02,9.08;7,323.15,89.61,60.89,60.89"><head>Figure 4 :Figure 5 :</head><label>45</label><figDesc>Figure 4: Impact of L attn on the correlation matrix between attention maps (the darker, the lower is the correlation) at the last iteration of LIT when training with (left) and without (right). This is averaged over the 70 queries of ROxford.</figDesc><graphic coords="7,323.15,89.61,60.89,60.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6" coords="17,108.00,211.35,396.00,9.03;17,108.00,222.69,396.00,8.64;17,108.00,233.33,396.00,8.96;17,108.00,244.61,396.00,8.64;17,108.00,255.57,182.91,8.64"><head>Figure 10 :</head><label>10</label><figDesc>Figure10: Attention consistency across scales. For three images, we select one Super-feature per image and show the attention maps of the latest iteration of LIT for different image scales, with from left to right 0.25, 0.353, 0.5, 0.707, 1.0, 1.414 and 2.0. We clearly observe that attention maps are correlated. They show larger regions at small scales as for visualization, we resize the lower resolution attention to the original image size.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="6,108.00,88.82,390.98,106.44"><head>Table 1 :</head><label>1</label><figDesc>Ablation on matching constraints: Impact</figDesc><table coords="6,108.00,88.82,390.98,106.44"><row><cell cols="3">reci-ratio same SfM-120k</cell><cell>ROxford</cell><cell>RParis</cell><cell></cell><cell></cell><cell>0.7</cell></row><row><cell>proc. test</cell><cell>ID</cell><cell>val 68.3 79.6 80.8 75.9 89.7</cell><cell cols="2">med hard med hard 64.3 39.8 74.1 52.4 69.2 44.3 79.2 60.9 70.7 45.1 80.3 61.9 63.8 35.1 77.3 56.5 81.8 61.2 85.3 70.0</cell><cell></cell><cell cols="2">With same-ID constraint Without same-ID constraint</cell><cell>0.3 0.4 0.5 0.6</cell><cell>Match ratio</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>0</cell><cell>50</cell><cell>100</cell><cell>150</cell><cell>200</cell><cell>Epochs</cell></row><row><cell cols="5">of removing constraints on reciprocity, Lowe's ratio</cell><cell></cell><cell></cell></row><row><cell cols="3">test and the Super-feature ID.</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="6,108.00,691.38,396.00,19.60"><head>Table 2 :</head><label>2</label><figDesc>Ablation on loss components: Impact of removing L attn , using either a global loss L global or a loss directly on Super-features L super or a combination of both.</figDesc><table coords="7,113.55,80.49,384.92,73.13"><row><cell>Lglobal Lattn Lsuper</cell><cell>val 79.0 87.7 88.4 61.7 89.7 SfM-120k</cell><cell>64.3 38.0 75.4 51.7 75.8 51.2 79.0 57.0 79.0 57.2 83.0 65.6 81.9 61.5 85.3 70.1 59.3 32.8 69.9 47.3 med hard med hard ROxford RParis</cell><cell>256 1</cell><cell>1</cell><cell>256</cell><cell>256 1</cell><cell>1</cell><cell>256</cell><cell>high Correlation low</cell></row></table><note coords="6,244.57,691.38,259.43,8.64;6,108.00,702.34,396.00,8.64"><p>Table 1 reports the impact of the different matching constraints: nearest neighbor, reciprocity, Lowe ratio test and constraint on Super-features ID. Adding reciprocity</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" coords="8,373.74,695.68,130.27,8.64"><head></head><label></label><figDesc>, regressing saliency map scores</figDesc><table coords="9,114.29,85.11,380.99,145.00"><row><cell>method</cell><cell>FCN</cell><cell>Mem (GB)</cell><cell cols="2">ROxford med hard</cell><cell cols="2">ROxford +R1M med hard</cell><cell cols="2">RParis med hard</cell><cell cols="2">RParis +R1M med hard</cell></row><row><cell>Global descriptors</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>RMAC (Tolias et al., 2016)</cell><cell>R101</cell><cell>7.6</cell><cell>60.9</cell><cell>32.4</cell><cell>39.3</cell><cell>12.5</cell><cell>78.9</cell><cell>59.4</cell><cell>54.8</cell><cell>28.0</cell></row><row><cell>AP-GeM ; (Revaud et al., 2019a)</cell><cell>R101</cell><cell>7.6</cell><cell>67.1</cell><cell>42.3</cell><cell>47.8</cell><cell>22.5</cell><cell>80.3</cell><cell>60.9</cell><cell>51.9</cell><cell>24.6</cell></row><row><cell>GeM+SOLAR (Ng et al., 2020)</cell><cell>R101</cell><cell>7.6</cell><cell>69.9</cell><cell>47.9</cell><cell>53.5</cell><cell>29.9</cell><cell>81.6</cell><cell>64.5</cell><cell>59.2</cell><cell>33.4</cell></row><row><cell cols="3">Global descriptors + reranking with local features</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>DELG (Cao et al., 2020)</cell><cell>R50</cell><cell>7.6</cell><cell>75.1</cell><cell>54.2</cell><cell>61.1</cell><cell>36.8</cell><cell>82.3</cell><cell>64.9</cell><cell>60.5</cell><cell>34.8</cell></row><row><cell>DELG (Cao et al., 2020)</cell><cell>R101</cell><cell>7.6</cell><cell>78.5</cell><cell>59.3</cell><cell>62.7</cell><cell>39.3</cell><cell>82.9</cell><cell>65.5</cell><cell>62.6</cell><cell>37.0</cell></row><row><cell cols="5">Local features + ASMK matching (max. 1000 features per image)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>DELF (Noh et al., 2017)</cell><cell cols="2">R50 ´9.2</cell><cell>67.8</cell><cell>43.1</cell><cell>53.8</cell><cell>31.2</cell><cell>76.9</cell><cell>55.4</cell><cell>57.3</cell><cell>26.4</cell></row><row><cell>DELF-R-ASMK (Teichmann et al., 2019)</cell><cell cols="2">R50 ´27.4</cell><cell>76.0</cell><cell>52.4</cell><cell>64.0</cell><cell>38.1</cell><cell>80.2</cell><cell>58.6</cell><cell>59.7</cell><cell>29.4</cell></row><row><cell>HOW (Tolias et al., 2020)</cell><cell cols="2">R50 ´7.9</cell><cell>78.3</cell><cell>55.8</cell><cell>63.6</cell><cell>36.8</cell><cell>80.1</cell><cell>60.1</cell><cell>58.4</cell><cell>30.7</cell></row><row><cell>FIRe (ours)</cell><cell cols="2">R50 ´6.4</cell><cell>81.8</cell><cell>61.2</cell><cell>66.5</cell><cell>40.1</cell><cell>85.3</cell><cell>70.0</cell><cell>67.6</cell><cell>42.9</cell></row><row><cell>(standard deviation over 5 runs)</cell><cell></cell><cell></cell><cell>(˘0.6)</cell><cell>(˘1.0)</cell><cell>(˘0.8)</cell><cell>(˘1.1)</cell><cell>(˘0.4)</cell><cell>(˘0.6)</cell><cell>(˘0.7)</cell><cell>(˘0.8)</cell></row><row><cell>(mAP gains over HOW)</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" coords="15,108.25,371.27,323.43,165.53"><head>Table 4</head><label>4</label><figDesc></figDesc><table coords="15,108.25,371.27,323.43,165.53"><row><cell>).</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">A.4 EXTENDED ABLATION ON MATCHING CONSTRAINTS</cell></row><row><cell cols="3">reci-ratio same SfM-120k</cell><cell>ROxford</cell><cell>RParis</cell></row><row><cell>proc. test</cell><cell>ID</cell><cell>val</cell><cell cols="2">med hard med hard</cell></row><row><cell></cell><cell></cell><cell>68.3</cell><cell cols="2">64.3 39.8 74.1 52.4</cell></row><row><cell></cell><cell></cell><cell>79.6</cell><cell cols="2">69.2 44.3 79.2 60.9</cell></row><row><cell></cell><cell></cell><cell>89.9</cell><cell cols="2">81.9 61.1 85.1 69.6</cell></row><row><cell></cell><cell></cell><cell>73.5</cell><cell cols="2">64.6 39.0 75.5 55.0</cell></row><row><cell></cell><cell></cell><cell>84.2</cell><cell cols="2">75.0 49.8 79.4 61.1</cell></row><row><cell></cell><cell></cell><cell>80.8</cell><cell cols="2">70.7 45.1 80.3 61.9</cell></row><row><cell></cell><cell></cell><cell>75.9</cell><cell cols="2">63.8 35.1 77.3 56.5</cell></row><row><cell></cell><cell></cell><cell>89.7</cell><cell cols="2">81.8 61.2 85.3 70.0</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" coords="15,108.00,551.22,396.00,19.99"><head>Table 5 :</head><label>5</label><figDesc>Extended ablation on matching constraints. We study the impact of removing constraints on reciprocity, Lowe's ratio test and the Super-feature ID.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" coords="16,108.00,86.24,396.00,92.06"><head>Table 6 :</head><label>6</label><figDesc>Fine-tuning the initial templates. Comparison where we either fine-tune the initial templates Q 0 of LIT (bottom row, as in the main paper) or keep them frozen after ImageNet pretraining (top row).</figDesc><table coords="16,150.50,86.24,308.51,46.71"><row><cell>Template</cell><cell>SfM-120k</cell><cell>ROxford</cell><cell>RParis</cell></row><row><cell>Initialization</cell><cell>val</cell><cell cols="2">med hard med hard</cell></row><row><cell>Frozen from ImageNet pretraining</cell><cell>89.5</cell><cell cols="2">81.3 59.6 85.3 70.2</cell></row><row><cell>Fine-tuned for landmark retrieval</cell><cell>89.7</cell><cell cols="2">81.8 61.2 85.3 70.0</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" coords="19,108.00,121.02,381.51,41.79"><head>Table 7 :</head><label>7</label><figDesc>Visual localization results.</figDesc><table coords="19,115.88,121.02,373.63,18.61"><row><cell></cell><cell>.8</cell><cell>96.2</cell><cell>99.6</cell><cell>72.8</cell><cell>90.1</cell><cell>97.9</cell></row><row><cell>FIRe (ours)</cell><cell>90.7</cell><cell>96.5</cell><cell>99.5</cell><cell>74.3</cell><cell>90.1</cell><cell>98.4</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_0" coords="6,124.14,724.87,161.40,6.31"><p>https://github.com/gtolias/how</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_1" coords="8,124.14,717.35,379.86,6.05;8,108.00,725.05,396.00,6.35"><p>The GLDv2-clean dataset<ref type="bibr" coords="8,197.38,717.35,54.98,6.05" target="#b48">(Yokoo et al., 2020)</ref> is sometimes used for training. Yet, there is significant overlap between its training classes and the ROxford and RParis query landmarks. This departs from standard image retrieval evaluation protocols. See Appendix B.8 for details.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_2" coords="18,124.14,724.87,242.59,6.31"><p>https://github.com/naver/kapture-localization</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_3" coords="19,124.14,724.87,188.29,6.31"><p>https://www.visuallocalization.net/</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>We compare our retrieval method to AP-GeM (Revaud et al., 2019a) and HOW (Tolias et al., 2020) and report results in Table 7. AP-GeM is the default method used in Kapture (Humenberger et al., 2020). We observe that using FIRe leads to better visual localization, specially in the most challenging scenario of night image localization and the strictest localization threshold: Performance improves by <rs type="grantNumber">2%</rs> compared to AP-GeM and by 1.5% compared to HOW on night images at a threshold of 0.25m and <rs type="person">2°. Overall</rs>, for either day or night images, FIRe either improves or performs on par to both methods compared.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_2ppgs6K">
+					<idno type="grant-number">2%</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix</head><p>In this appendix, we present additional ablations (Appendix A), a deeper analysis of our framework (Appendix B) as well as results of the application of our FIRe framework for image retrieval to the task of visual localization (Appendix C). We briefly summarize the findings in the following paragraphs.</p><p>Ablations. We study the impact of some hyper-parameters of our model, namely the size N of the set of Super-features, and the number of iterations T in the LIT module, in Appendix A.1. We show that 256 Super-features and 6 iterations offer the best trade-off between performance and computational cost. We also show in Appendix A.2 that we obtain further performance gains of over 1% by increasing the number of negatives to 10 or 15. We then study the impact of replacing the residual connection inside the LIT module by a recurrent network (Appendix A.3). In Appendix A.4 we present an extended version of Table <ref type="table" coords="13,268.62,522.85,4.98,8.64">1</ref> with further matching constraints and we finally study the impact of the template initialization on performance in Appendix A.5.</p><p>Properties of Super-features. We show single-scale results in Appendix B.1. In Appendix B.2, we display the attention maps of Super-features, at different scales for a fixed Super-feature ID.</p><p>We further study the amount of redundancy in Super-features, compared to local features, in Appendix B.3. Next, we verify in Appendix B.4 that all Super-features receive training signal, as a sanity check. We discuss the case of applying a loss directly on local features in Appendix B.5 and give details about the pretraining on ImageNet in Appendix B.6. In Appendix B.7 we report the average extraction time for the proposed Super-features, while in Appendix B.8 we discuss the fact that there is an overlap between the queries from the common ROxford and RParis datasets and the Google Landmarks-v2-clean dataset that is commonly used as training set for retrieval on ROxford and RParis.</p><p>Application to visual localization. We further evaluate our model using a visual localization setting on the Aachen Day-Night v1.1 dataset <ref type="bibr" coords="13,263.82,677.27,79.71,8.64" target="#b33">(Sattler et al., 2018)</ref> in Appendix C. To do so, we leverage a retrieval + local feature matching pipeline, and show that it is beneficial to use our method, especially in hard settings.</p><p>A ADDITIONAL ABLATIONS</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.1 IMPACT OF THE ITERATION AND THE NUMBER OF TEMPLATES HYPER-PARAMETERS</head><p>In this section, we perform ablations on the number of Super-features N and the number of iterations T in the Local feature Integration Transformer. We first study the impact of the number N of Superfeatures extracted for each scale of each image in Figure <ref type="figure" coords="14,331.94,157.74,7.93,8.64">7a</ref>. We observe that the best value is 256 on both the validation and test sets (ROxford and RParis). We then study the impact of the number of iterations T in Figure <ref type="figure" coords="14,193.46,179.66,8.30,8.64">7b</ref>. While the performance decreases when doing 2 or 3 iterations compared to just 1, a better performance is reached for 6 iterations, after which the performance saturates while requiring more computations. We thus use T " 6. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.2 IMPACT OF HARD NEGATIVES</head><p>Each training tuple is composed of one image pair depicting the same landmark, and 5 negative images (i.e. from different landmarks). We plot the performance when varying this number in Figure <ref type="figure" coords="14,123.30,491.95,3.74,8.64">8</ref>. We observe that adding more negatives improves overall the performance on all datasets, i.e. by more than 1% when increasing it to 10 or 15 negatives, but at the cost of a longer training time as more images need to be processed at each iteration. This is why we use 5 negatives in the rest of the paper as it offers a good compromise between performance and cost. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="10,108.00,101.93,396.00,7.93;10,117.96,111.89,45.08,7.93" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="10,252.36,102.09,214.94,7.77">Aggregating deep convolutional features for image retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Artem</forename><surname>Babenko</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Victor</forename><surname>Lempitsky</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,484.73,101.93,19.27,7.73;10,117.96,111.89,18.13,7.73">Proc. ICCV</title>
+		<meeting>ICCV</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,130.28,396.00,7.77;10,117.96,140.09,146.52,7.93" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="10,325.44,130.28,178.56,7.77;10,117.96,140.25,64.72,7.77">Neural machine translation by jointly learning to align and translate</title>
+		<author>
+			<persName coords=""><forename type="first">Dzmitry</forename><surname>Bahdanau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kyunghyun</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,198.88,140.09,38.85,7.73">Proc. ICLR</title>
+		<meeting>ICLR</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,158.48,396.00,7.77;10,117.96,168.28,68.58,7.93" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="10,333.57,158.48,155.04,7.77">Learning mid-level features for recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Y-Lan</forename><surname>Boureau</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francis</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jean</forename><surname>Ponce</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2010.5539963</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,117.96,168.28,41.24,7.73">2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-06">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,186.51,396.00,7.93;10,117.96,196.47,47.58,7.93" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="10,263.11,186.67,204.14,7.77">Unifying Deep Local and Global Features for Image Search</title>
+		<author>
+			<persName coords=""><forename type="first">Bingyi</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">André</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jack</forename><surname>Sim</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58565-5_43</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,484.73,186.51,19.27,7.73;10,117.96,196.47,20.13,7.73">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="726" to="743" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,214.86,396.00,7.77;10,117.96,224.66,284.63,7.93" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="10,162.69,224.83,163.93,7.77">End-to-End Object Detection with Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Carion</surname></persName>
+			<idno type="ORCID">0000-0002-2308-9680</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+			<idno type="ORCID">0000-0003-0697-6664</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabriel</forename><surname>Synnaeve</surname></persName>
+			<idno type="ORCID">0000-0003-1715-3356</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Usunier</surname></persName>
+			<idno type="ORCID">0000-0002-9324-1457</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexander</forename><surname>Kirillov</surname></persName>
+			<idno type="ORCID">0000-0003-3169-3199</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sergey</forename><surname>Zagoruyko</surname></persName>
+			<idno type="ORCID">0000-0001-9684-5240</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58452-8_13</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,333.50,224.66,41.64,7.73">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="213" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,243.06,396.00,7.77;10,117.96,252.86,319.93,7.93" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="10,145.36,253.02,209.35,7.77">Emerging Properties in Self-Supervised Vision Transformers</title>
+		<author>
+			<persName coords=""><forename type="first">Mathilde</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hugo</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Jegou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Julien</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Armand</forename><surname>Joulin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00951</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,371.30,252.86,39.64,7.73">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,271.25,396.00,7.77;10,117.96,281.05,313.14,7.93" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="10,378.30,271.25,125.70,7.77;10,117.96,281.21,230.12,7.77">MultiSiam: Self-supervised Multi-instance Siamese Representation Learning for Autonomous Driving</title>
+		<author>
+			<persName coords=""><forename type="first">Kai</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lanqing</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hang</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhenguo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dit-Yan</forename><surname>Yeung</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00745</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,364.51,281.05,39.64,7.73">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,299.44,396.00,7.77;10,117.96,309.24,200.96,7.93" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="10,478.61,299.44,25.39,7.77;10,117.96,309.40,115.55,7.77">Graph-Based Global Reasoning Networks</title>
+		<author>
+			<persName coords=""><forename type="first">Yunpeng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marcus</forename><surname>Rohrbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zhicheng</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><surname>Shuicheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiashi</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yannis</forename><surname>Kalantidis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00052</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,250.34,309.24,41.24,7.73">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,327.47,396.00,7.93;10,117.96,337.43,90.16,7.93" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Preprint repository arXiv achieves milestone million uploads</title>
+		<author>
+			<persName coords=""><forename type="first">Gabriela</forename><surname>Csurka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Humenberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.5.028530</idno>
+		<idno type="arXiv">arXiv:1807.10254</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,355.83,396.00,7.77;10,117.96,365.63,202.67,7.93" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="10,427.52,355.83,76.48,7.77;10,117.96,365.79,79.77,7.77">Generic Visual Categorization Using Weak Geometry</title>
+		<author>
+			<persName coords=""><forename type="first">Gabriela</forename><surname>Csurka</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Christopher</forename><forename type="middle">R</forename><surname>Dance</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florent</forename><surname>Perronnin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jutta</forename><surname>Willamowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/11957959_11</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,214.36,365.63,79.73,7.73">Toward Category-Level Object Recognition</title>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="207" to="224" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,383.86,354.47,7.93" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="10,161.53,384.02,215.89,7.77">Supervised mid-level features for word image representation</title>
+		<author>
+			<persName coords=""><forename type="first">Albert</forename><surname>Gordo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2015.7298914</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,393.89,383.86,41.24,7.73">2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015-06">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,402.25,396.00,7.77;10,117.96,412.05,182.12,7.93" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="10,341.83,402.25,162.17,7.77;10,117.96,412.21,96.51,7.77">Deep Image Retrieval: Learning Global Representations for Image Search</title>
+		<author>
+			<persName coords=""><forename type="first">Albert</forename><surname>Gordo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jon</forename><surname>Almazán</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jerome</forename><surname>Revaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Diane</forename><surname>Larlus</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-46466-4_15</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,231.00,412.05,41.64,7.73">Computer Vision – ECCV 2016</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="241" to="257" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,430.44,396.00,7.77;10,117.96,440.24,386.04,7.93;10,117.96,450.37,20.17,7.77" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="10,173.63,440.40,257.16,7.77">Bootstrap your own latent: A new approach to self-supervised learning</title>
+		<author>
+			<persName coords=""><forename type="first">Jean-Bastien</forename><surname>Grill</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Florian</forename><surname>Strub</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Florent</forename><surname>Altché</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Corentin</forename><surname>Tallec</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kavukcuoglu</forename><surname>Koray</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rémi</forename><surname>Munos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michal</forename><surname>Valko</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,448.96,440.24,50.90,7.73">Proc. NeurIPS</title>
+		<meeting>NeurIPS</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,468.60,396.00,7.77;10,117.96,478.40,286.46,7.93" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="10,406.96,468.60,97.04,7.77;10,117.96,478.56,201.35,7.77">Patch-NetVLAD: Multi-Scale Fusion of Locally-Global Descriptors for Place Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><surname>Hausler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Sourav</forename><surname>Garg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ming</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Milford</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tobias</forename><surname>Fischer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.01392</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,335.84,478.40,41.24,7.73">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,496.79,396.00,7.77;10,117.96,506.59,68.58,7.93" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coord="10,327.29,496.79,161.38,7.77">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,117.96,506.59,41.24,7.73">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,524.98,396.00,7.77;10,117.96,534.94,386.04,7.77;10,117.96,544.75,197.65,7.93" xml:id="b15">
+	<monogr>
+		<title level="m" type="main" coord="10,332.20,534.94,171.81,7.77;10,117.96,544.91,47.16,7.77">Robust image retrieval-based visual localization using kapture</title>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Humenberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yohann</forename><surname>Cabon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicolas</forename><surname>Guerin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Julien</forename><surname>Morat</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jérôme</forename><surname>Revaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Philippe</forename><surname>Rerole</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noé</forename><surname>Pion</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cesar</forename><surname>De Souza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vincent</forename><surname>Leroy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Gabriela</forename><surname>Csurka</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2007.13867</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,563.14,396.00,7.77;10,117.96,572.94,234.31,7.93" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="10,468.01,563.14,35.99,7.77;10,117.96,573.10,150.42,7.77">Perceiver: General perception with iterative attention</title>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Felix</forename><surname>Gimeno</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Joao</forename><surname>Carreira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,284.68,572.94,40.44,7.73">Proc. ICML</title>
+		<meeting>ICML</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,591.33,396.00,7.77;10,117.96,601.13,158.71,7.93" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="10,345.67,591.33,158.33,7.77;10,117.96,601.29,73.66,7.77">Aggregating local descriptors into a compact image representation</title>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Jegou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Matthijs</forename><surname>Douze</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cordelia</forename><surname>Schmid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Perez</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2010.5540039</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,208.09,601.13,41.24,7.73">2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-06">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,619.52,396.00,7.77;10,117.96,629.32,297.33,7.93" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="10,430.32,619.52,73.69,7.77;10,117.96,629.48,211.91,7.77">Salient Object Detection: A Discriminative Regional Feature Integration Approach</title>
+		<author>
+			<persName coords=""><forename type="first">Huaizu</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jingdong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zejian</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nanning</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Shipeng</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2013.271</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,346.71,629.32,41.24,7.73">2013 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013-06">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,647.71,396.00,7.77;10,117.96,657.52,337.26,7.93" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="10,448.49,647.71,55.51,7.77;10,117.96,657.68,252.84,7.77">Set transformer a framework for attention-based permutation-invariant neural networks</title>
+		<author>
+			<persName coords=""><forename type="first">Juho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yoonho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jungtaek</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Adam</forename><forename type="middle">R</forename><surname>Kosiorek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Seungjin</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yee</forename><forename type="middle">Whye</forename><surname>Teh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,387.63,657.52,40.44,7.73">Proc. ICML</title>
+		<meeting>ICML</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="10,108.00,675.75,396.00,7.93;10,117.96,685.71,121.46,7.93" xml:id="b20">
+	<monogr>
+		<title level="m" type="main" coord="10,255.69,675.91,219.52,7.77">Robust Teacher: Self-Correcting Pseudo-Label-Guided Semi-Supervised Learning for Object Detection</title>
+		<author>
+			<persName><forename type="first">Shijie</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junmin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weilin</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianyong</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengli</forename><surname>Tan</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4327717</idno>
+		<idno type="arXiv">arXiv:2011.13677</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct coords="10,108.00,704.10,396.00,7.77;10,117.96,713.90,386.04,7.93;10,117.96,723.86,55.54,7.93" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="10,310.25,714.06,153.37,7.77">Object-centric learning with slot attention</title>
+		<author>
+			<persName coords=""><forename type="first">Francesco</forename><surname>Locatello</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dirk</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aravindh</forename><surname>Mahendran</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Georg</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Thomas</forename><surname>Kipf</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="10,484.73,713.90,19.27,7.73;10,117.96,723.86,28.98,7.73">Proc. NeurIPS</title>
+		<meeting>NeurIPS</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,85.83,311.68,7.94" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="11,166.35,85.99,203.33,7.77">Distinctive image features from scale-invariant keypoints</title>
+		<author>
+			<persName coords=""><surname>David G Lowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,376.59,85.83,16.53,7.73">IJCV</title>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,104.57,396.00,7.77;11,117.96,114.37,318.17,7.93" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="11,232.44,104.57,271.56,7.77;11,117.96,114.54,236.27,7.77">Alexandre d&apos;Aspremont, and Julien Mairal. A trainable optimal transport embedding for feature aggregation and its relationship to attention</title>
+		<author>
+			<persName coords=""><forename type="first">Grégoire</forename><surname>Mialon</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Dexiong</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,370.53,114.37,38.85,7.73">Proc. ICLR</title>
+		<meeting>ICLR</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,133.12,396.00,7.77;11,117.96,142.92,137.85,7.93" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="11,355.85,133.12,148.15,7.77;11,117.96,143.08,52.66,7.77">SOLAR: Second-Order Loss and Attention for Image Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Tony</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Vassileios</forename><surname>Balntas</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yurun</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Krystian</forename><surname>Mikolajczyk</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58595-2_16</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,186.73,142.92,41.64,7.73">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="253" to="270" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,161.67,396.00,7.77;11,117.96,171.47,181.76,7.93" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="11,388.83,161.67,115.17,7.77;11,117.96,171.63,98.82,7.77">Large-Scale Image Retrieval with Attentive Deep Local Features</title>
+		<author>
+			<persName coords=""><forename type="first">Hyeonwoo</forename><surname>Noh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andre</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jack</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tobias</forename><surname>Weyand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bohyung</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2017.374</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,233.13,171.47,39.64,7.73">2017 IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,190.22,396.00,7.77;11,117.96,200.02,131.69,7.93" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="11,341.26,190.22,162.74,7.77;11,117.96,200.18,46.67,7.77">Large-scale image retrieval with compressed Fisher vectors</title>
+		<author>
+			<persName coords=""><forename type="first">Florent</forename><surname>Perronnin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Sanchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Poirier</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2010.5540009</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,181.07,200.02,41.24,7.73">2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-06">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,218.77,396.00,7.77;11,117.96,228.57,220.27,7.93" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="11,408.88,218.77,95.12,7.77;11,117.96,228.73,134.80,7.77">Object retrieval with large vocabularies and fast spatial matching</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Philbin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ondrej</forename><surname>Chum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Isard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2007.383172</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,269.65,228.57,41.24,7.73">2007 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007-06">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,247.32,396.00,7.77;11,117.96,257.12,314.09,7.93" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="11,411.49,247.32,92.51,7.77;11,117.96,257.28,228.91,7.77">Lost in quantization: Improving particular object retrieval in large scale image databases</title>
+		<author>
+			<persName coords=""><forename type="first">James</forename><surname>Philbin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ondrej</forename><surname>Chum</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Michael</forename><surname>Isard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2008.4587635</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,363.47,257.12,41.24,7.73">2008 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008-06">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,275.87,396.00,7.77;11,117.96,285.67,238.76,7.93" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="11,219.20,275.87,284.80,7.77;11,117.96,285.83,149.14,7.77">Revisiting Oxford and Paris: Large-Scale Image Retrieval Benchmarking</title>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Radenovic</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ahmet</forename><surname>Iscen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Avrithis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ondrej</forename><surname>Chum</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00598</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,284.16,285.67,41.24,7.73">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">2018</date>
+		</imprint>
+	</monogr>
+	<note>Giorgos Tolias, Yannis Avrithis, and Ondřej Chum</note>
+</biblStruct>
+
+<biblStruct coords="11,108.00,304.42,396.00,7.77;11,117.96,314.22,93.95,7.93" xml:id="b30">
+	<analytic>
+		<title level="a" type="main" coord="11,294.65,304.42,205.70,7.77">Fine-Tuning CNN Image Retrieval with No Human Annotation</title>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Radenovic</surname></persName>
+			<idno type="ORCID">0000-0002-7122-2765</idno>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ondrej</forename><surname>Chum</surname></persName>
+			<idno type="ORCID">0000-0001-7042-1810</idno>
+		</author>
+		<idno type="DOI">10.1109/tpami.2018.2846566</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,117.96,314.22,62.48,7.73">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1655" to="1668" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,332.96,396.00,7.77;11,117.96,342.77,242.38,7.93" xml:id="b31">
+	<analytic>
+		<title level="a" type="main" coord="11,387.63,332.96,116.37,7.77;11,117.96,342.93,155.64,7.77">Learning With Average Precision: Training Image Retrieval With a Listwise Loss</title>
+		<author>
+			<persName coords=""><forename type="first">Jerome</forename><surname>Revaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Almazan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><surname>Rezende</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cesar</forename><forename type="middle">De</forename><surname>Souza</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2019.00521</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,289.77,342.77,39.64,7.73">2019 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-10">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,361.51,396.00,7.77;11,117.96,371.31,195.56,7.93" xml:id="b32">
+	<analytic>
+		<title level="a" type="main" coord="11,405.39,361.51,98.61,7.77;11,117.96,371.48,97.68,7.77">R2D2: Reliable and repeatable detector and descriptor</title>
+		<author>
+			<persName coords=""><forename type="first">Jerome</forename><surname>Revaud</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Cesar</forename><forename type="middle">De</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Martin</forename><surname>Humenberger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Philippe</forename><surname>Weinzaepfel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,232.00,371.31,50.49,7.73">Proc. NeurIPS</title>
+		<meeting>NeurIPS</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,390.06,396.00,7.77;11,117.96,400.02,386.04,7.77;11,117.96,409.83,156.24,7.93" xml:id="b33">
+	<analytic>
+		<title level="a" type="main" coord="11,322.59,400.02,181.42,7.77;11,117.96,409.99,71.12,7.77">Benchmarking 6DOF Outdoor Visual Localization in Changing Conditions</title>
+		<author>
+			<persName coords=""><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Will</forename><surname>Maddern</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Carl</forename><surname>Toft</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Akihiko</forename><surname>Torii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lars</forename><surname>Hammarstrand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Erik</forename><surname>Stenborg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Daniel</forename><surname>Safari</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Masatoshi</forename><surname>Okutomi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fredrik</forename><surname>Kahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pajdla</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00897</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,205.62,409.83,41.24,7.73">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,428.57,396.00,7.77;11,117.96,438.37,111.16,7.93" xml:id="b34">
+	<analytic>
+		<title level="a" type="main" coord="11,313.36,428.57,190.64,7.77;11,117.96,438.54,25.49,7.77">Unsupervised Discovery of Mid-Level Discriminative Patches</title>
+		<author>
+			<persName coords=""><forename type="first">Saurabh</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alexei</forename><forename type="middle">A</forename><surname>Efros</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-33709-3_6</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,160.03,438.37,41.64,7.73">Computer Vision – ECCV 2012</title>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="73" to="86" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,457.12,396.00,7.77;11,117.96,466.92,66.59,7.93" xml:id="b35">
+	<analytic>
+		<title level="a" type="main" coord="11,240.41,457.12,248.18,7.77">Video Google: a text retrieval approach to object matching in videos</title>
+		<author>
+			<persName><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2003.1238663</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,117.96,466.92,39.64,7.73">Proceedings Ninth IEEE International Conference on Computer Vision</title>
+		<meeting>Ninth IEEE International Conference on Computer Vision</meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,485.67,396.00,7.77;11,117.96,495.63,386.04,7.77;11,117.96,505.44,121.36,7.93" xml:id="b36">
+	<analytic>
+		<title level="a" type="main" coord="11,251.62,495.63,252.39,7.77;11,117.96,505.60,37.35,7.77">Fixmatch: Simplifying semi-supervised learning with consistency and confidence</title>
+		<author>
+			<persName coords=""><forename type="first">Kihyuk</forename><surname>Sohn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">David</forename><surname>Berthelot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chun-Liang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zizhao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Nicholas</forename><surname>Carlini</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ekin</forename><forename type="middle">D</forename><surname>Cubuk</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Alex</forename><surname>Kurakin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Han</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Colin</forename><surname>Raffel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,162.27,505.44,50.49,7.73">Proc. NeurIPS</title>
+		<meeting>NeurIPS</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,524.18,396.00,7.77;11,117.96,533.98,168.13,7.93" xml:id="b37">
+	<analytic>
+		<title level="a" type="main" coord="11,347.59,524.18,156.41,7.77;11,117.96,534.15,83.01,7.77">Detect-To-Retrieve: Efficient Regional Aggregation for Image Search</title>
+		<author>
+			<persName coords=""><forename type="first">Marvin</forename><surname>Teichmann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andre</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Menglong</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jack</forename><surname>Sim</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00525</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,217.51,533.98,41.24,7.73">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,552.73,396.00,7.77;11,117.96,562.53,141.52,7.93" xml:id="b38">
+	<analytic>
+		<title level="a" type="main" coord="11,294.71,552.73,209.28,7.77;11,117.96,562.69,58.40,7.77">To Aggregate or Not to aggregate: Selective Match Kernels for Image Search</title>
+		<author>
+			<persName coords=""><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yannis</forename><surname>Avrithis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Jegou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2013.177</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,192.89,562.53,39.64,7.73">2013 IEEE International Conference on Computer Vision</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013-12">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,581.28,396.00,7.77;11,117.96,591.08,119.18,7.93" xml:id="b39">
+	<analytic>
+		<title level="a" type="main" coord="11,287.20,581.28,216.80,7.77;11,117.96,591.24,37.26,7.77">Particular object retrieval with integral max-pooling of cnn activations</title>
+		<author>
+			<persName coords=""><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ronan</forename><surname>Sicre</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Hervé</forename><surname>Jégou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,171.55,591.08,38.85,7.73">Proc. ICLR</title>
+		<meeting>ICLR</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,609.83,396.00,7.77;11,117.96,619.63,144.42,7.93" xml:id="b40">
+	<analytic>
+		<title level="a" type="main" coord="11,288.04,609.83,215.96,7.77;11,117.96,619.79,58.81,7.77">Learning and Aggregating Deep Local Descriptors for Instance-Level Recognition</title>
+		<author>
+			<persName coords=""><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tomas</forename><surname>Jenicek</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Ondřej</forename><surname>Chum</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58452-8_27</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,193.30,619.63,41.64,7.73">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="460" to="477" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,638.22,387.93,7.93" xml:id="b41">
+	<analytic>
+		<title level="a" type="main" coord="11,244.87,638.38,142.67,7.77">A feature-integration theory of attention</title>
+		<author>
+			<persName coords=""><forename type="first">Anne</forename><forename type="middle">M</forename><surname>Treisman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Garry</forename><surname>Gelade</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0010-0285(80)90005-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="11,394.13,638.22,75.53,7.73">Cognitive Psychology</title>
+		<title level="j" type="abbrev">Cognitive Psychology</title>
+		<idno type="ISSN">0010-0285</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="97" to="136" />
+			<date type="published" when="1980-01">1980</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,656.96,396.00,7.77;11,117.96,666.77,258.09,7.93" xml:id="b42">
+	<analytic>
+		<title level="a" type="main" coord="11,195.67,666.93,86.57,7.77">Attention is all you need</title>
+		<author>
+			<persName coords=""><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Aidan</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Łukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,299.01,666.77,50.49,7.73">Proc. NeurIPS</title>
+		<meeting>NeurIPS</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,685.51,396.00,7.77;11,117.96,695.31,172.41,7.93" xml:id="b43">
+	<analytic>
+		<title level="a" type="main" coord="11,378.06,685.51,125.94,7.77;11,117.96,695.48,86.76,7.77">Learning Feature Descriptors Using Camera Pose Supervision</title>
+		<author>
+			<persName coords=""><forename type="first">Qianqian</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Xiaowei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bharath</forename><surname>Hariharan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Noah</forename><surname>Snavely</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58452-8_44</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,221.29,695.31,41.64,7.73">Computer Vision – ECCV 2020</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="757" to="774" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="11,108.00,714.06,396.00,7.77;11,117.96,723.86,190.35,7.93" xml:id="b44">
+	<analytic>
+		<title level="a" type="main" coord="11,374.00,714.06,130.00,7.77;11,117.96,724.02,105.40,7.77">Dense Contrastive Learning for Self-Supervised Visual Pre-Training</title>
+		<author>
+			<persName coords=""><forename type="first">Xinlong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Rufeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Chunhua</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Tao</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Lei</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.00304</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="11,239.73,723.86,41.24,7.73">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,108.00,85.99,396.00,7.77;12,117.96,95.79,256.51,7.94" xml:id="b45">
+	<analytic>
+		<title level="a" type="main" coord="12,323.72,85.99,180.28,7.77;12,117.96,95.95,171.82,7.77">Google Landmarks Dataset v2 – A Large-Scale Benchmark for Instance-Level Recognition and Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Tobias</forename><surname>Weyand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Andre</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Bingyi</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jack</forename><surname>Sim</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr42600.2020.00265</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="12,305.89,95.79,41.24,7.73">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,108.00,113.88,396.00,7.77;12,117.96,123.84,386.04,7.77;12,117.96,133.65,68.58,7.93" xml:id="b46">
+	<analytic>
+		<title level="a" type="main" coord="12,437.81,113.88,66.19,7.77;12,117.96,123.84,369.62,7.77">The application of two-level attention models in deep convolutional neural network for fine-grained image classification</title>
+		<author>
+			<persName coords=""><forename type="first">Tianjun</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yichong</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kuiyuan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Jiaxing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yuxin</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zheng</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="12,117.96,133.65,41.24,7.73">Proc. CVPR</title>
+		<meeting>CVPR</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,108.00,151.74,396.00,7.77;12,117.96,161.54,336.14,7.93" xml:id="b47">
+	<analytic>
+		<title level="a" type="main" coord="12,393.69,151.74,110.31,7.77;12,117.96,161.70,251.10,7.77">Propagate Yourself: Exploring Pixel-Level Consistency for Unsupervised Visual Representation Learning</title>
+		<author>
+			<persName coords=""><forename type="first">Zhenda</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yutong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Zheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Yue</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Stephen</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Han</forename><surname>Hu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.01641</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="12,385.52,161.54,41.24,7.73">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,108.00,179.64,396.00,7.77;12,117.96,189.44,227.40,7.93" xml:id="b48">
+	<analytic>
+		<title level="a" type="main" coord="12,359.86,179.64,144.14,7.77;12,117.96,189.60,105.52,7.77">Two-stage Discriminative Re-ranking for Large-scale Landmark Retrieval</title>
+		<author>
+			<persName coords=""><forename type="first">Shuhei</forename><surname>Yokoo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Kohei</forename><surname>Ozaki</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Edgar</forename><surname>Simo-Serra</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Satoshi</forename><surname>Iizuka</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvprw50498.2020.00514</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="12,239.59,189.44,79.23,7.73">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="12,108.00,207.53,396.00,7.77;12,117.96,217.33,78.29,7.93" xml:id="b49">
+	<analytic>
+		<title level="a" type="main" coord="12,299.47,207.53,200.66,7.77">Patch2Pix: Epipolar-Guided Pixel-Level Correspondences</title>
+		<author>
+			<persName coords=""><forename type="first">Qunjie</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Laura</forename><surname>Leal-Taixe</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.00464</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="12,127.67,217.33,41.24,7.73">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

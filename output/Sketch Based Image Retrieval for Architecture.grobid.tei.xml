@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="2,70.87,191.41,396.78,15.15;2,70.87,215.41,334.27,15.15">Sketch Based Image Retrieval for Architecture Images with Siamese Swin Transformer</title>
+				<funder ref="#_XekAESC">
+					<orgName type="full">Key Program Special Fund in XJTLU</orgName>
+				</funder>
+				<funder ref="#_vyEbBve">
+					<orgName type="full">Natural Science Foundation of Jiangsu Province)</orgName>
+				</funder>
+				<funder ref="#_RvRTksy">
+					<orgName type="full">National Natural Science Foundation of China</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IOP Publishing</publisher>
+				<availability status="unknown"><p>Copyright IOP Publishing</p>
+				</availability>
+				<date type="published" when="2022-05-01">2022-05-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="2,142.60,251.26,48.52,8.77"><forename type="first">Yuxin</forename><surname>Xu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Xi&apos;an Jiaotong-Liverpool University</orgName>
+								<address>
+									<addrLine>111 Ren&apos;ai Road, Suzhou Industrial Park</addrLine>
+									<settlement>Suzhou, Jiangsu Province</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,210.04,251.26,54.56,8.77"><forename type="first">Yuyao</forename><surname>Yan</surname></persName>
+							<email>yuyao.yan@0q.design</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Suzhou Bitspring Technology Co</orgName>
+								<address>
+									<settlement>Limited, Jiangsu Province</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,284.15,251.26,56.93,8.77"><forename type="first">Yiming</forename><surname>Lin</surname></persName>
+							<email>cyiming.lin21@student.xjtlu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Xi&apos;an Jiaotong-Liverpool University</orgName>
+								<address>
+									<addrLine>111 Ren&apos;ai Road, Suzhou Industrial Park</addrLine>
+									<settlement>Suzhou, Jiangsu Province</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,359.64,251.26,41.04,8.77"><forename type="first">Xi</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Xi&apos;an Jiaotong-Liverpool University</orgName>
+								<address>
+									<addrLine>111 Ren&apos;ai Road, Suzhou Industrial Park</addrLine>
+									<settlement>Suzhou, Jiangsu Province</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="2,420.23,251.26,72.06,8.77"><forename type="first">Kaizhu</forename><surname>Huang</surname></persName>
+							<email>ekaizhu.huang@xjtlu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Xi&apos;an Jiaotong-Liverpool University</orgName>
+								<address>
+									<addrLine>111 Ren&apos;ai Road, Suzhou Industrial Park</addrLine>
+									<settlement>Suzhou, Jiangsu Province</settlement>
+									<country key="CN">P. R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="2,70.87,191.41,396.78,15.15;2,70.87,215.41,334.27,15.15">Sketch Based Image Retrieval for Architecture Images with Siamese Swin Transformer</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Journal of Physics: Conference Series</title>
+						<title level="j" type="abbrev">J. Phys.: Conf. Ser.</title>
+						<idno type="ISSN">1742-6588</idno>
+						<idno type="eISSN">1742-6596</idno>
+						<imprint>
+							<publisher>IOP Publishing</publisher>
+							<biblScope unit="volume">2278</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<biblScope unit="page">012035</biblScope>
+							<date type="published" when="2022-05-01" />
+						</imprint>
+					</monogr>
+					<idno type="MD5">F49C6F38DA263E4890B58FEDA2ECD732</idno>
+					<idno type="DOI">10.1088/1742-6596/2278/1/012035</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Sketch-based image retrieval (SBIR) is an image retrieval task that takes a sketch as input and outputs colour images matching the sketch. Most recent SBIR methods utilise deep learning methods with complicated network designs, which are resource-intensive for practical use. This paper proposes a novel compact framework that takes the siamese network with image view angle information, targeting the SBIR task for architecture images. In particular, the proposed siamese network engages a compact SwinTiny transformer as the backbone encoder. View angle information of the architecture image is fed to the model to further improve search accuracy. To cope with the insufficient sketches issue, simulated building sketches are used in training, which are generated by a pre-trained edge extractor. Experiments show that our model achieves 0.859 top-one accuracy exceeding many baseline models for an architecture retrieval task.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.0" lry="842.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Image retrieval is a challenging task in computer vision aiming to search and retrieve images in a given image database. Content-based image retrieval (CBIR) and image-to-image retrieval are two classic image retrieval methods. They apply a semantic description or a reference image as the input, and retrieve relevant images. Both image retrieval methods are used widely in conventional search engines. Despite being a less popular image retrieval method than CBIR and image-to-image retrieval, Sketch-based image retrieval (SBIR) is a well-researched topic as well. It is more suitable than the other two methods in searching images that are hard to describe by words, or when no reference image is available as input. One example of such a task is finding building designs with a sketch. Architects may want to gain inspiration from existing buildings when creating new designs. However, buildings are hard to differentiate by simple language since they are abstract designs created by architects. With an SBIR model, architects could identify similar buildings by providing a single sketched image. Existing SBIR methods with high precisions would yield ideal results on this task. However, high-accuracy models are often resource-intensive, making them hard to apply in practical cases. To resolve this problem, we propose a compact SBIR model dedicated to building and architecture images. Fig. <ref type="figure" coords="2,93.08,713.69,5.45,9.57" target="#fig_0">1</ref> shows two sample sketches and their top matches produced by the proposed model. The majority of SBIR models can be categorised into feature descriptor models and deep learning models. The idea of feature descriptor models, such as Bag-of-Features Descriptors <ref type="bibr" coords="2,483.49,739.59,10.91,9.57" target="#b0">[1]</ref>, is to extract specific features (e.g. edge feature, HOG feature) from the inputs and compare them to each other for similarities using an indexing method or a classification method, such as a state vector machine <ref type="bibr" coords="3,146.35,141.80,10.91,9.57" target="#b1">[2]</ref>. Deep learning models have outstanding performance on computer vision tasks <ref type="bibr" coords="3,468.07,315.64,10.91,9.57" target="#b3">[5]</ref>, SBIR is no exception. Deep learning models rely on a data-driven approach to automatically learn the domain gap between images and sketches, making them more robust compared to hand-crafted feature extractors. Classic deep learning models developed for SBIR tasks exploit siamese networks with CNN backbones, such as Deep Shape Matching <ref type="bibr" coords="3,388.55,367.45,10.91,9.57" target="#b4">[6]</ref>. They have high image retrieval precisions while retaining clean and compact network designs. However, the lack of global information makes them less when retrieving architectural images from a sketch. Doodle to Search <ref type="bibr" coords="3,158.33,406.30,11.52,9.57" target="#b5">[7]</ref> is one of the latest deep learning models for SBIR tasks, where external semantic knowledge is embedded to help domain transformation. It utilises complicated deep neural networks and yields remarkable results, but is resource-intensive due to its sophisticated model designs.</p><p>In this paper, we propose a novel compact deep learning model for a practical SBIR task in the scenario of architecture images. The model exploits a siamese network with triplet loss and a view angle classifier. The backbone encoder for the siamese network is a compact vision transformer. Siamese network has long been proven to be an excellent deep learning method for metric learning <ref type="bibr" coords="3,163.83,509.91,10.91,9.57" target="#b6">[8]</ref>. The simple structure and the weight sharing mechanism of the siamese network allows us to make a compact SBIR model for practical use. As for the encoder, we choose to use a transformer instead of a CNN because transformers are capable of extracting better global features than CNN models.</p><p>Our contribution towards this model can be summarised into two points which the existing SBIR models have rarely considered: 1) improve the model's ability to capture global features by utilising a vision transformer; 2) view angle information of the architecture image is fed to the model to further increase the over precision. <ref type="bibr" coords="3,158.17,641.34,11.52,9.57" target="#b5">[7]</ref> is a sophisticated deep learning model published recently targeting zeroshot SBIR tasks. This model has two CNN encoders with attention mechanism for processing sketches and images, respectively. An external semantic input is introduced to assist the domain transfer from sketches to images. However, the trade-off for having a complicated network is that the training process is resource-intensive, making it difficult to apply in practical use cases. Deep Shape Matching <ref type="bibr" coords="3,180.73,706.10,11.52,9.57" target="#b4">[6]</ref> describes a simple and efficient deep learning model for SBIR tasks. It features an end-to-end process for training an SBIR model without having a single sketch in the dataset. An edge extractor is utilised to generate imitated edge maps in the training stage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related works Doodle to Search</head><p>Transformer <ref type="bibr" coords="3,148.60,744.95,11.52,9.57" target="#b7">[9]</ref> has recently outperformed CNN in computer vision tasks. They exploit a self-attention mechanism that allows them to outperform CNN models at global feature extraction <ref type="bibr" coords="4,123.61,115.90,16.00,9.57" target="#b8">[10]</ref>. A downside of using a transformer is that the calculation of self-attention is resource-heavy. The Swin transformer <ref type="bibr" coords="4,264.96,128.85,16.97,9.57" target="#b9">[11]</ref> is a variation of vision transformers. It reduces the computational complexity of the self-attention calculation step using a shifted-window mechanism. SwinTiny is a compact version of the Swin transformer. Replacing the CNN encoder with SwinTiny would likely increase the precision of the siamese model on SBIR tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Methodology</head><p>The proposed model is a siamese network with a view angle classifier, as shown in Fig. <ref type="figure" coords="4,515.92,208.34,4.24,9.57" target="#fig_2">2</ref>. When a training sample triplet is passed to the model, three inputs (anchor, positive example, and negative example) are each passed to an encoder branch of the siamese network, while the positive and negative examples are also passed to the classifier to determine their view angle tags.</p><p>In each encoder branch, the output embedding of the SwinTiny transformer is concatenated with the view angle tag and passed to a multilayer perceptron (MLP) network a final embedding. This embedding is then passed to a triplet loss function for loss calculation. Note that, during training, the view angle tag for the anchor is obtained by duplicating the view angle tag for the positive example. This is because the sketch used for the anchor is always a perfect match with the positive example in every training sample. </p><formula xml:id="formula_0" coords="4,248.31,620.73,48.98,10.63">x v = C(x)</formula><p>where C is the pre-trained view angle classifier described in section 3.2. The complete encoder is denoted by</p><formula xml:id="formula_1" coords="4,224.34,654.67,295.42,10.63">f (x, x v ) = ϕ(concat(σ(x), x v )), (<label>1</label></formula><formula xml:id="formula_2" coords="4,519.76,654.67,4.65,9.57">)</formula><p>where σ is a SwinTiny transformer network, and ϕ is an MLP network. The output embedding of the encoder f is a vector of size 256. The triplet loss function L is defined by</p><formula xml:id="formula_3" coords="4,238.01,709.61,281.75,10.63">L = max(δ p -δ n + α, 0). (<label>2</label></formula><formula xml:id="formula_4" coords="4,519.76,709.61,4.65,9.57">)</formula><p>α is a margin parameter for the loss, δ p and δ n are the euclidean distances between the embeddings, such that δ p = ∥f (x a , x av ) -f (x p , x pv )∥ 2 and δ n = ∥f (x a , x av ) -f (x n , x nv )∥ 2 . {x a , x p , x n } is a triplet denoting the anchor, the positive example, and the negative example. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">View angle classifier</head><p>Adding view angle information to the model helps the encoder create embeddings that better represent the input building designs. We train a classifier to categorise the input building image into one of five view angle classes (Fig. <ref type="figure" coords="5,254.44,293.75,4.24,9.57" target="#fig_3">3</ref>). The classifier is a SwinTiny transformer concatenated to an MLP network. The output is a view angle class vector of length five.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Experiment</head><p>To evaluate the proposed model, we create a sketch-to-image dataset collected from the internet. Following <ref type="bibr" coords="5,118.62,360.82,10.91,9.57" target="#b4">[6]</ref>, we use an edge extraction model to generate imitated sketches from a set of building images. Each training sample is a triplet containing one sketch and two photos, where the two photos are positive and negative matches of the sketch. One triplet training sample is shown on the left of Fig. <ref type="figure" coords="5,157.78,399.67,4.24,9.57" target="#fig_2">2</ref>. We use a pre-trained DexiNed model for edge extraction. It removes some textural details while leaving most structural information in the output sketch <ref type="bibr" coords="5,455.42,412.62,16.00,9.57" target="#b10">[12]</ref>. We train three baseline models with the same dataset and compare them against the proposed model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Experimental setup</head><p>The dataset used for training and testing contains 6,105 building images obtained from ArchDaily <ref type="bibr" coords="5,123.99,479.70,10.91,9.57" target="#b2">[4]</ref>, each image has a matching sketch generated by a pre-trained DexiNed model. The process for preparing the training sample triplets is broken into the following five steps. 1) Let the sketch-image pool be U , pick a sketch-image pair (u s , u r ) ∈ U , where u s is the sketch and u r is the real image. 2) Calculate the euclidean distances d between the HOG of u r and every u r i ∈ U r . 3) Let a distance threshold be θ, randomly select an image u r i where d(u r , u r i ) &gt; θ. Then create a complete training sample x = {x a , x p , x n }, where x a = u s , x p = u r , and x n = u r i . 4) Repeat step 3 for 40 times, creating 40 training samples for (u s , u r ). 5) Repeat step 1 to step 4 for every u i ∈ U , creating 5, 400 × 40 training samples in total. Unlike the training samples where each sample is a triplet, a test sample is a 2-tuple that contains a sketch and an image. Every test sample is created by matching each sketch with every image in the test data.</p><p>In order to assess the performance of the proposed model, we calculate the top-n accuracy using the test results. When processing a test sample, we calculate the Euclidean distance between the sketch and the feature embeddings extracted with a trained encoder. Results with the same sketch are grouped together and ranked by the calculated distances. The top-n accuracy is the average possibility of finding the original image of the sketch in the top-n results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Baselines</head><p>For comparison, we tested the following three baseline encoders with the same siamese network: ResNet50, SwinTiny with independent anchor branch, and SwinTiny without classifier. ResNet is a classic network structure in many computer vision tasks <ref type="bibr" coords="6,356.22,115.90,16.00,9.57" target="#b11">[13]</ref>. ResNet50 is a compact version of ResNet, and it has a similar number of parameters with the SwinTiny transformer, making it an ideal comparison. All branches in a siamese network share the same set of parameters. Isolating the parameters in the anchor branch provides more freedom to the anchor encoder. This strategy could improve the overall precision since the inputs for the anchor branch are sketches, which are in a different domain than the image inputs for the positive and negative branches. In order to quantify the effect of the view angle classifier on the model accuracy, we also test the encoder without the inputs from the view angle classifier. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Qualitative results</head><p>Fig. <ref type="figure" coords="6,93.23,496.86,5.45,9.57" target="#fig_4">4</ref> shows two real hand-drawn sketches and their top-six results produced by each encoder. The result images for the ResNet50 encoder have some resemblance to the sketched building. Some details in the sketch can be recognised in the resulting image. However, the overall structures of the buildings in the result do not match that of the sketch. The SwinTiny encoder with an independent anchor branch produces better results than the previous encoder does, but is still worse than the last two encoders. The reason could be that isolating the anchor parameters causes the model to overfit. The SwinTiny encoder with and without a classifier produces better results than the previous two encoders in terms of global and local feature matching. The structures of the buildings match the sketch to a large degree, reinforcing the assumption that Swin Transformer is effective at capturing global features. The overall similarity of the result images improves slightly with the extra view angle information from the classifier.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Quantitative results</head><p>Table <ref type="table" coords="6,101.92,667.24,5.45,9.57" target="#tab_1">1</ref> shows the top-n accuracy of the proposed model (last line) and the accuracy of the three baselines. The proposed model reaches 0.859, 0.947, and 0.972 for top-1, top-3, and top-5 accuracy, which is the highest compared to the results of the baseline. The accuracy of the ResNet50 encoder is lower than the second-worst baseline by a large margin. The encoder's accuracy with an independent anchor branch is the second-lowest, despite having double the number of parameters than other encoders. A possible explanation for this observation is that the model over-fits the training samples since the weights of the anchor encoder branch are not paired with the weights of the other two encoder branches. SwinTiny encoder without view angle </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>We design a siamese network with a Swin Transformer as the backbone encoder. Besides the Swin Transformer encoder, the model also applies a pre-trained Swin Transformer classifier which produces additional information to be sent to the siamese network. Compared to the three baseline models, the proposed model achieves the highest accuracy on a new building image dataset collected from the internet.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="3,70.87,275.46,453.54,9.60;3,70.87,288.45,410.67,9.57;3,127.56,166.22,340.16,93.81"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Results for the proposed model: top-six matches for two hand-drawn sketches [3] retrieved from a building image pool with 34,226 images collected from ArchDaily [4].</figDesc><graphic coords="3,127.56,166.22,340.16,93.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="4,70.00,58.27,55.53,8.77;4,70.00,72.27,151.51,8.77;4,274.33,72.27,80.66,8.77"><head></head><label></label><figDesc>CMVIT-2022 Journal of Physics: Conference Series 2278 (2022) 012035</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="4,70.87,501.59,453.54,9.60;4,70.87,514.58,262.48,9.57;4,93.55,348.19,408.18,137.98"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Network structure of the proposed model. The model consists of a siamese network with triplet loss and a pre-trained view angle classifier.</figDesc><graphic coords="4,93.55,348.19,408.18,137.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="5,70.87,205.31,453.54,9.60;5,70.87,218.29,416.61,9.57;5,93.55,113.39,408.16,76.49"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Examples of images (collected from ArchDaily [4]) in five different view angles: (left to right) top-down view, bird's-eye view, ground-level view, indoor view, close-up view.</figDesc><graphic coords="5,93.55,113.39,408.16,76.49" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4" coords="6,70.87,427.72,453.55,9.60;6,70.87,440.71,288.18,9.57;6,70.87,230.80,453.54,181.49"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Result comparison between different encoders: top-six matches for two real handdrawn sketches [3], tested in a separate building image pool.</figDesc><graphic coords="6,70.87,230.80,453.54,181.49" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" coords="1,37.50,651.32,520.00,139.51"><head></head><label></label><figDesc></figDesc><graphic coords="1,37.50,651.32,520.00,139.51" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,70.87,492.65,453.55,35.47"><head></head><label></label><figDesc>5,400 out of the 6,105 sketch-image pairs are used for training, and the other 705 pairs are used for testing. The qualitative results in section 4.3 are obtained by running the trained model on a separate building image pool with 34,226 images collected from ArchDaily.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" coords="7,70.00,58.27,455.00,742.36"><head>Table 1 .</head><label>1</label><figDesc>classifier inputs performs only slightly worse than the one with view angle inputs, indicating that, to a certain degree, Swin Transformer automatically learns the view angle information. Top-n accuracy and of the siamese network with different backbone encoders.</figDesc><table coords="7,70.00,58.27,455.00,22.77"><row><cell>CMVIT-2022</cell><cell></cell><cell>IOP Publishing</cell></row><row><cell>Journal of Physics: Conference Series</cell><cell>2278 (2022) 012035</cell><cell>doi:10.1088/1742-6596/2278/1/012035</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head n="6.">Acknowledgement</head><p>The work was partially supported by the following: <rs type="funder">National Natural Science Foundation of China</rs> under no.<rs type="grantNumber">61876155</rs>; <rs type="programName">Jiangsu Science and Technology Programme</rs> (<rs type="funder">Natural Science Foundation of Jiangsu Province)</rs> under no.<rs type="grantNumber">BE2020006-4</rs>; <rs type="funder">Key Program Special Fund in XJTLU</rs> under no.<rs type="grantNumber">KSF-T-06</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_RvRTksy">
+					<idno type="grant-number">61876155</idno>
+					<orgName type="program" subtype="full">Jiangsu Science and Technology Programme</orgName>
+				</org>
+				<org type="funding" xml:id="_vyEbBve">
+					<idno type="grant-number">BE2020006-4</idno>
+				</org>
+				<org type="funding" xml:id="_XekAESC">
+					<idno type="grant-number">KSF-T-06</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="7,90.19,480.88,434.22,7.86;7,100.15,491.84,173.78,7.86" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Sketch-Based Image Retrieval: Benchmark and Bag-of-Features Descriptors</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Eitz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Hildebrand</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Boubekeur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alexa</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tvcg.2010.266</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Visualization and Computer Graphics</title>
+		<title level="j" type="abbrev">IEEE Trans. Visual. Comput. Graphics</title>
+		<idno type="ISSN">1077-2626</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1624" to="1636" />
+			<date type="published" when="2011-11">2011</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,502.80,434.22,7.86;7,100.15,513.76,387.39,7.86" xml:id="b1">
+	<monogr>
+		<title level="m" type="main" coord="7,311.18,502.80,213.23,7.86;7,100.15,513.76,95.80,7.86">Biased support vector machine for relevance feedback in image retrieval IEEE</title>
+		<author>
+			<persName coords=""><forename type="first">C</forename><forename type="middle">H</forename><surname>Hoi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C H</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Lyu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>King</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<biblScope unit="page" from="3189" to="3194" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,535.68,157.00,7.86" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">presencia de animales en la fotografía de arquitectura en las redes sociales.</title>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>García Triviño</surname></persName>
+			<idno type="ORCID">0000-0003-0914-9584</idno>
+		</author>
+		<idno type="DOI">10.30827/sobre.v9i1.26784</idno>
+		<ptr target="https://www.archdaily.com/" />
+	</analytic>
+	<monogr>
+		<title level="j">SOBRE</title>
+		<title level="j" type="abbrev">sobre</title>
+		<idno type="ISSN">2387-1733</idno>
+		<idno type="ISSNe">2444-3484</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="43" to="59" />
+			<date type="published" when="2023-06-30" />
+			<publisher>Editorial de la Universidad de Granada</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,546.63,434.22,7.86;7,100.15,557.59,252.39,7.86" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Deep Learning: Fundamentals, Theory and Applications</title>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-06073-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="7,296.89,546.63,227.52,7.86;7,100.15,557.59,120.39,7.86">Deep Learning: Fundamentals, Theory and Applications Cognitive computation trends</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,568.55,434.22,7.86;7,100.15,579.51,45.56,7.86" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Deep Shape Matching</title>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Radenović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ondřej</forename><surname>Chum</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-01228-1_46</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="7,262.84,568.55,261.57,7.86;7,100.15,579.51,10.24,7.86">Computer Vision – ECCV 2018</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="774" to="791" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,590.47,434.22,7.86;7,100.15,601.43,377.58,7.86" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="7,319.07,590.47,205.33,7.86;7,100.15,601.43,59.69,7.86">Doodle to Search: Practical Zero-Shot Sketch-Based Image Retrieval</title>
+		<author>
+			<persName><forename type="first">Sounak</forename><surname>Dey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pau</forename><surname>Riba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anjan</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josep</forename><forename type="middle">Llados</forename><surname>Llados</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Zhe</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00228</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+			<biblScope unit="page" from="2174" to="2183" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,612.39,434.22,7.86;7,100.15,623.35,187.53,7.86" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Deep Metric Learning Using Triplet Network</title>
+		<author>
+			<persName><forename type="first">Elad</forename><surname>Hoffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nir</forename><surname>Ailon</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24261-3_7</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="7,200.93,612.39,323.48,7.86;7,100.15,623.35,161.43,7.86">Similarity-Based Pattern Recognition</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="84" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,634.31,434.22,7.86;7,100.15,645.26,424.26,7.86;7,100.15,656.22,306.88,7.86" xml:id="b7">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I ;</forename><surname>Polosukhin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Wallach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Vishwanathan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Garnett</surname></persName>
+		</author>
+		<title level="m" coord="7,100.15,645.26,419.53,7.86">Attention is all you need Advances in Neural Information Processing Systems ed Guyon I, Luxburg U V</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page">59986008</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,667.18,434.22,7.86;7,100.15,678.14,424.26,7.86;7,100.15,689.10,325.93,7.86" xml:id="b8">
+	<monogr>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">X</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Houlsby</surname></persName>
+		</author>
+		<title level="m" coord="7,319.93,678.14,204.48,7.86;7,100.15,689.10,325.93,7.86">An image is worth 16x16 words: Transformers for image recognition at scale International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,700.06,434.23,7.86;7,100.15,711.02,420.42,7.86" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="7,373.07,700.06,151.35,7.86;7,100.15,711.02,163.60,7.86">Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</title>
+		<author>
+			<persName><forename type="first">Ze</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixuan</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baining</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00986</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="page" from="10012" to="10022" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,721.98,434.23,7.86;7,100.15,732.94,349.13,7.86" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="7,234.32,721.98,290.09,7.86;7,100.15,732.94,62.22,7.86">Dense Extreme Inception Network: Towards a Robust CNN Model for Edge Detection</title>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Soria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edgar</forename><surname>Riba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Angel</forename><surname>Sappa</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/wacv45572.2020.9093290</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE Winter Conference on Applications of Computer Vision (WACV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-03">2020</date>
+			<biblScope unit="page" from="1912" to="1921" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,90.19,743.89,434.22,7.86;7,100.15,754.85,219.22,7.86" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="7,255.80,743.89,181.01,7.86">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

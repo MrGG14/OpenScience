@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,109.73,76.51,375.72,21.82">Role of Cloud Computing for Big Data</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,269.64,124.21,56.53,9.07"><forename type="first">Farhan</forename><surname>Aslam</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of the Cumberlands</orgName>
+								<address>
+									<region>KY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,109.73,76.51,375.72,21.82">Role of Cloud Computing for Big Data</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">No:-2456-2165</idno>
+					</monogr>
+					<idno type="MD5">BD411ABCBE5697CC9002E0C7A2CDCFA0</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:51+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cloud Computing</term>
+					<term>Big Data</term>
+					<term>Data processing</term>
+					<term>sql</term>
+					<term>query</term>
+					<term>Hadoop</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cloud computing has revolutionized the way businesses process, store and manage data. With the explosion of big data, cloud computing has become an integral tool in providing scalable and cost-effective solutions for handling large volumes of data. In this paper, we will explore the role of cloud computing in big data and its impact on businesses. We will start by defining cloud computing and its relation to big data. We will also examine the benefits of using cloud computing for big data processing and storage, as well as the challenges that come with implementing cloud computing for big data. Additionally, we will discuss the different cloud computing architecture models used in big data processing and storage and compare them to traditional on-premise computing architecture. We will analyze the advantages and disadvantages of each cloud computing architecture model for big data. Finally, we will explore the common applications of cloud computing for big data and the trends and future developments in cloud computing for big data, including the potential challenges and opportunities for using cloud computing for big data in the future.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.44" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.44" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.44" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.44" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.44" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION TO CLOUD COMPUTING FOR BIG DATA</head><p> What is cloud computing, and how does it relate to big data? Cloud computing has become a critical technology for big data analytics because it enables scalable analysis of enormous amounts of data <ref type="bibr" coords="1,151.35,549.85,10.70,9.07">[1]</ref>. Cloud computing provides Platform as a Service (PaaS) to support querying and processing of big data, making it cost-effective and efficient to store, process, and analyze large data sets <ref type="bibr" coords="1,233.95,584.41,10.53,9.07">[1]</ref>. It is a distributed IT architecture where client data is processed at the periphery of the network, eliminating the need to maintain expensive computing hardware, dedicated space, and software <ref type="bibr" coords="1,90.46,630.27,22.12,9.07">[2][3]</ref>. The cloud computing paradigm delivers computing services over the Internet, providing flexible resources, faster innovation, and economies of scale <ref type="bibr" coords="1,265.54,653.31,10.70,9.07">[1]</ref>. Cloud computing has revolutionized the way computing infrastructure is abstracted and used. It has extended to include anything that can be considered as a service <ref type="bibr" coords="1,545.07,170.29,10.70,9.07">[1]</ref>. Service providers such as Amazon, Google, and Microsoft offer their own big data systems in a cost-efficient manner <ref type="bibr" coords="1,315.48,204.63,10.70,9.07">[1]</ref>. BigQuery is a Platform as a Service that supports querying using ANSI SQL and is a serverless data warehouse in GCP that enables scalable analysis over petabytes of data. Google Cloud Platform provides services for analyzing and processing big data, with built-in machine learning capabilities <ref type="bibr" coords="1,399.89,262.23,10.70,9.07">[1]</ref>. However, the required resources to manage big data in a cloud-IoT environment are still a big challenge <ref type="bibr" coords="1,356.50,285.30,10.53,9.07">[2]</ref>.</p><p>Research has shown that cloud computing can significantly improve healthcare services and contribute to continuous and systematic innovation in a big data environment. A proposed model aims to optimize virtual machine selection in cloud-IoT health services applications to manage a large amount of data in integrated Industry 4.0 <ref type="bibr" coords="1,315.48,377.24,10.70,9.07">[2]</ref>. Cloud computing is also related to big data technologies, as it can be used to handle big data sets in biology and other fields <ref type="bibr" coords="1,434.08,400.28,10.53,9.07">[4]</ref>. Adopting a Sustainable Computational Cloud technology could provide an extra boost and competitiveness, offering many benefits to people in general, businesses, and Small and Medium Enterprises <ref type="bibr" coords="1,315.48,446.36,10.71,9.07">[2]</ref>.</p><p> What are the benefits of using cloud computing for big data processing and storage? Cloud computing has become an increasingly popular solution for big data processing and storage, offering numerous benefits to businesses. One key advantage is the ability to avoid the need for costly computing hardware, dedicated space and software, as cloud computing provides hardware and software services through the Internet <ref type="bibr" coords="1,533.74,549.85,21.91,9.07">[5][2]</ref>. Cloud computing can also provide secure big data processing and storage, using tools such as Hadoop, which offers security for big data <ref type="bibr" coords="1,440.80,584.41,26.80,9.07">[5][21]</ref>. In addition to cost savings, cloud computing can enable big data to be controlled and distributed efficiently, reducing product return costs by predicting the likelihood of product returns <ref type="bibr" coords="1,315.48,630.27,22.31,9.07">[5][1]</ref>. Another significant advantage of using cloud computing for big data processing and storage is the availability of big data tools like Hadoop or Spark, which offers cost advantages for storing, processing and analyzing large amounts of data <ref type="bibr" coords="1,404.43,676.35,10.53,9.07">[1]</ref>. Moreover, cloud computing provides various capabilities for storing and processing data in third-party data centers, such as BigQuery. BigQuery can help to reduce the load on relational databases, and offers pay-as-you-go services, where charges are made based on usage. Alternatively, BigQuery also provides a flat rate service with specific slot rates and charges in daily, monthly or yearly plans. In addition to offering different options and configurations to improve query performance, BigQuery is also suitable for scenarios where data does not change often as it has built-in cache [2][1]. Overall, cloud computing can provide cost-effective solutions for big data processing and storage, enabling businesses to leverage its benefits for better decision-making and more efficient operations <ref type="bibr" coords="2,246.86,438.20,16.20,9.07">[21]</ref>.</p><p> What are the challenges of implementing cloud computing for big data? Despite the benefits of cloud computing for big data, there are still some practical challenges that need to be addressed. One major challenge is the lack of suitable tools and adequate computing resources required for implementing cloud computing for big data. This can be attributed to the fact that big data entails massive amounts of information, which makes it difficult to manage and process without the necessary resources and tools. Another critical challenge of implementing cloud computing for big data is the issue of security. Although Hadoop provides security to big data, there is still a risk of data breaches and unauthorized access. To address this challenge, symmetric key encryption algorithms such as AES are commonly used in cloud computing to ensure secure data transmission and storage. Hence, while cloud computing offers many advantages for managing big data, there are still several challenges that need to be overcome to ensure its effective implementation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. CLOUD COMPUTING ARCHITECTURE FOR BIG DATA</head><p> What are the different cloud computing architecture models used in big data processing and storage? Cloud computing systems have emerged as a crucial technology in managing big data in business intelligence models <ref type="bibr" coords="2,347.14,369.32,10.70,9.07">[6]</ref>. In particular, Cloud Computing Architecture has been proposed as a viable solution for dealing with the processing and storage challenges associated with big data <ref type="bibr" coords="2,315.48,403.64,10.70,9.07">[6]</ref>. However, there are different cloud service layers involved in big data processing and storage <ref type="bibr" coords="2,500.85,415.16,10.53,9.07">[6]</ref>. While the text does not delve into the details of various cloud computing architecture models used in big data processing and storage, it highlights Fog Computing as a new computing paradigm that extends Cloud Computing to the edge of the network. The hierarchical distributed architecture of Fog Computing is presented as a way to integrate massive numbers of infrastructure components and services in smart cities <ref type="bibr" coords="2,427.23,507.34,10.53,9.07">[7]</ref>. Despite Fog Computing's potential in this regard, CC remains the baseline technology for big data processing and storage. Therefore, it is important to understand the different cloud computing architecture models that are currently being utilized to provide effective solutions for big data processing and storage needs. Unfortunately, the text does not provide any information on the different cloud computing architecture models that are used in this context <ref type="bibr" coords="2,459.16,599.29,10.53,9.07">[2]</ref>.</p><p> How does the cloud computing architecture differ from traditional on-premise computing architecture? One of the primary differences between cloud computing architecture and traditional on-premise computing architecture is the handling of real-time data processing. Cloud computing architecture offers real-time event processing, while traditional on-premise computing architecture may not have the processing power to handle real-time data processing <ref type="bibr" coords="2,419.36,714.30,10.53,9.07">[2]</ref>. Additionally, cloud computing architecture allows for authorized external users to access real-time data directly from IoT sensors, while traditional on-premise computing architecture may require access through internal networks, making it less accessible and more limited in its reach <ref type="bibr" coords="2,419.53,771.89,10.53,9.07">[2]</ref>. In cloud-driven IoT-based big data environments, the cloud-based platform can be considered as a big data warehouse, while in traditional onpremise computing architecture, data is typically stored in traditional databases <ref type="bibr" coords="3,127.11,106.66,10.70,9.07">[2]</ref>. Moreover, in cloud computing architecture, a cloud-based platform is used to store data generated by IoT devices, while in traditional on-premise computing architecture, data is stored on physical servers located on the premises of the organization <ref type="bibr" coords="3,228.18,152.77,10.53,9.07">[2]</ref>. Another significant difference is scalability. Cloud computing architecture is highly scalable, while traditional on-premise computing architecture may require additional physical servers to accommodate increased data storage needs, which can be costly and time-consuming [2]. These differences highlight the advantages of cloud computing architecture in terms of accessibility, scalability and real-time data processing capabilities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head> What are the advantages and disadvantages of each cloud computing architecture model for big data?</head><p>Cloud computing offers numerous advantages and disadvantages when it comes to big data architecture. One of the primary advantages is that cloud computing provides a solution for big data through cloud services and open-source cloud software tools that make handling large amounts of data more manageable <ref type="bibr" coords="3,138.87,348.18,10.70,9.07">[6]</ref>. However, the hardware and software requirements of big data can be cost-prohibitive for small and medium-sized businesses <ref type="bibr" coords="3,185.05,371.24,10.70,9.07">[8]</ref>. There are different types of cloud computing architectures that can support big data integration, including distributed cloud, smart grid, and hybrid cloud <ref type="bibr" coords="3,94.29,405.80,10.53,9.07">[9]</ref>. A cloud-based architecture can also be used with big data to offer greater control over data distribution and management. The MetaCloudDataStorage security architecture is one example of a proposed solution to protect big data against intruders, in which data is stored in multiple cloud data centers <ref type="bibr" coords="3,179.65,463.18,15.27,9.07">[10]</ref>. Cloud computing platforms, databases, and storage solutions are also essential components of big data processing <ref type="bibr" coords="3,177.53,486.22,15.27,9.07">[11]</ref>.</p><p>As big data tools continue to advance, cloud services are increasingly being used to implement big data applications. For example, the integration of services and cloud computing architectures has been proposed as a solution to handle big data in a digital environment <ref type="bibr" coords="3,260.63,555.13,15.27,9.07">[12]</ref>. However, there are also disadvantages to using cloud computing for big data, including concerns about security and privacy. Therefore, organizations must weigh the advantages and disadvantages of each cloud computing architecture model carefully when implementing big data solutions using cloud services <ref type="bibr" coords="3,158.10,624.27,31.90,9.07">[13][14]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. APPLICATIONS AND FUTURE OF CLOUD COMPUTING FOR BIG DATA</head><p> What are the common applications of cloud computing for big data? Cloud computing has become increasingly important in the big data domain, offering a variety of applications and services for managing and processing large volumes of data. The integration of cloud computing with Industry 4.0 has allowed for precise and fast analysis of large data sets, which is critical for effective decision-making. In healthcare applications, cloud computing and IoT have the potential to significantly improve healthcare services by providing continuous and systematic innovation in a big data environment. Cloud-based infrastructure is commonly used as a backbone for big data storage and analytics, which can extract beneficial information to provide better insights and guide better decisions across various fields, including business, healthcare, sciences, and engineering <ref type="bibr" coords="3,507.18,152.77,48.19,9.07">[15][16][15]</ref>. Cloud computing provides the necessary computation, storage, applications, and networking required to support big data applications and task scheduling in cloud computing environments has gained considerable attention <ref type="bibr" coords="3,540.39,198.61,15.27,9.07">[16]</ref>. Additionally, scalable database management systems are critical for cloud infrastructure to support update-intensive application workloads and decision support systems for descriptive and deep analytics <ref type="bibr" coords="3,438.05,244.71,15.45,9.07">[17]</ref>.</p><p>However, the use of cloud computing for big data also raises concerns regarding security and privacy, particularly regarding access control, authentication, and authorization requirements <ref type="bibr" coords="3,372.09,302.10,15.27,9.07">[15]</ref>. Overall, cloud computing is one of the common applications for big data processing and management, offering novel ideas and research outcomes on all aspects of Big Data, <ref type="bibr" coords="3,411.13,336.66,119.13,9.07">IoT and cloud computing [15]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head> What are the trends and future developments in cloud computing for big data?</head><p>Cloud computing is a valuable tool for big data storage and analysis, but it does have its limitations. Thus, research is currently being conducted to examine machine learningbased offloading from the Internet of Things (IoT) to fog and fog to cloud for big data processing <ref type="bibr" coords="3,517.19,428.60,15.27,9.07">[16]</ref>. Fog computing has been found to have lower latency than cloud computing, which has significant implications for processing big data tasks <ref type="bibr" coords="3,420.96,463.18,15.27,9.07">[16]</ref>. Data processing for big data occurs at two levels: fog and cloud, with machine learningbased methods being used in both cases <ref type="bibr" coords="3,482.36,486.22,15.27,9.07">[16]</ref>. However, the need to monitor, analyze, and act upon these large volumes of data brings with it various issues related to data confidentiality, verification, authorization, mining, secure communication, and computation <ref type="bibr" coords="3,455.77,532.30,15.27,9.07">[15]</ref>. With the increasing attention given to the IoT in recent years, there has been a trend towards IoT generating enormous amounts of new types of data <ref type="bibr" coords="3,374.24,566.65,15.27,9.07">[15]</ref>. The IoT enables scalability, flexibility, agility, and ubiquity in fields of massive scale multimedia data processing, storage, access, and communications, which opens up exciting new possibilities for the future of cloud computing and big data analysis <ref type="bibr" coords="3,450.23,612.73,15.45,9.07">[15]</ref>. However, no specific information is provided about future developments in cloud computing for big data in this article.</p><p> What are the potential challenges and opportunities for using cloud computing for big data in the future?</p><p>As the amount of data being generated continues to increase at an unprecedented pace, so do the challenges and opportunities for using cloud computing to manage and analyze big data. Efficiently managing workflow applications on cloud computing data centers is challenging due to the need to perform calculations on sensitive data <ref type="bibr" coords="3,315.48,750.77,15.45,9.07">[18]</ref>. However, cloud computing provides an opportunity for big data to be controlled and distributed efficiently, enabling cost advantages for storing, processing and analyzing large amounts of data <ref type="bibr" coords="4,105.52,83.62,15.27,9.07">[19]</ref>. With the advent of internet of things (IoT) technology, such an application has all features of the 5Vs for Big Data and can be addressed by cloud computing <ref type="bibr" coords="4,36.02,118.21,15.45,9.07">[13]</ref>. To improve performance of big data applications and frameworks, researchers have proposed methods such as job scheduling and resource allocation algorithms <ref type="bibr" coords="4,260.74,141.25,15.27,9.07">[15]</ref>. Furthermore, cloud computing can facilitate innovation in healthcare services and contribute to its continuous and systematic innovation <ref type="bibr" coords="4,129.53,175.57,15.27,9.07">[16]</ref>. However, with the plethora of systems available and the varying application requirements, research challenges still exist in data management for the cloud <ref type="bibr" coords="4,61.21,210.15,15.45,9.07">[17]</ref>. Thus, it is important to carefully consider which options for cloud processing are suitable for a given application, with the goal of optimizing the potential of cloud computing as it relates to processing of Big Data <ref type="bibr" coords="4,258.09,244.71,15.27,9.07">[20]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. CONCLUSION</head><p>The role of cloud computing in big data management has become increasingly important in recent years. The scalability and cost-effectiveness of cloud computing has made it a critical technology for big data analytics, enabling the processing and analysis of amounts of data. Cloud computing offers various benefits to businesses, including the flexibility of resources, faster innovation, and economies of scale. The use of cloud computing services such as BigQuery, Hadoop, and Spark has become increasingly popular in implementing big data applications. The cloud-based platform can be considered as a big data warehouse, while in traditional on-premise computing architecture, data is typically stored in traditional databases.</p><p>However, one of the significant challenges of implementing cloud computing for big data is the issue of security, which must be addressed to ensure safe and secure data processing and storage. Efficiently managing workflow applications on cloud computing data centers is also challenging due to the need to perform calculations on sensitive data. Future research should focus on addressing these challenges and exploring the potential of cloud computing for big data analytics in various fields, including healthcare, biology, and other industries.</p><p>Despite the numerous advantages of cloud computing, there are still gaps in our understanding of how it can be used to manage and analyze big data efficiently. Therefore, further research is needed to explore the full potential of cloud computing in big data management and to develop more effective and secure cloud-based solutions for big data analytics. Overall, the use of cloud computing for big data management is a rapidly evolving field, and future developments are likely to continue to revolutionize the way we analyze and manage big data.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,231.22,265.59,133.01,9.07;2,63.68,69.90,468.00,193.00"><head>Fig 1 .</head><label>1</label><figDesc>Fig 1.: Query Types for Big Data</figDesc><graphic coords="2,63.68,69.90,468.00,193.00" type="bitmap" /></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,336.86,95.14,222.71,9.07;4,336.86,106.66,222.31,9.07;4,336.86,118.21,28.96,9.07;4,412.46,118.21,12.36,9.07;4,471.27,118.21,22.44,9.07;4,540.39,118.21,19.11,9.07;4,336.86,129.73,222.88,9.07;4,315.48,141.25,14.28,9.07" xml:id="b0">
+	<monogr>
+		<title level="m" type="main" coord="4,477.31,95.14,82.26,9.07;4,336.86,106.66,140.15,9.07">Big data analytics in Cloud computing: an overview</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Berisha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Mëziu</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Shabani</surname></persName>
+		</author>
+		<idno type="DOI">springer.com/article/10.1186/s13677-022-00301-w[2</idno>
+		<imprint>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,141.25,222.94,9.07;4,336.86,152.77,222.54,9.07;4,336.86,164.05,222.46,9.07;4,336.86,175.57,217.83,9.07;4,336.86,187.09,40.32,9.07" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="4,489.79,141.25,70.01,9.07;4,336.86,152.77,222.54,9.07;4,336.86,164.05,46.54,9.07">Security, privacy &amp; efficiency of sustainable Cloud Computing for Big Data &amp; IoT</title>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Stergiou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kostas</forename><forename type="middle">E</forename><surname>Psannis</surname></persName>
+			<idno type="ORCID">0000-0003-0020-6394</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brij</forename><forename type="middle">B</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutaka</forename><surname>Ishibashi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.suscom.2018.06.003</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S22105379" />
+	</analytic>
+	<monogr>
+		<title level="j">Sustainable Computing: Informatics and Systems</title>
+		<title level="j" type="abbrev">Sustainable Computing: Informatics and Systems</title>
+		<idno type="ISSN">2210-5379</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="174" to="184" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,198.61,222.84,9.07;4,336.86,210.04,222.38,9.17;4,336.86,221.67,222.74,9.07;4,336.86,233.19,22.68,9.07;4,540.44,233.19,19.11,9.07;4,336.86,244.71,217.83,9.07;4,336.86,256.23,40.32,9.07" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="4,349.10,210.04,85.15,9.16">The rise of “big data” on cloud computing: Review and open research issues</title>
+		<author>
+			<persName><forename type="first">Ibrahim</forename><forename type="middle">Abaker Targio</forename><surname>Hashem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ibrar</forename><surname>Yaqoob</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nor</forename><forename type="middle">Badrul</forename><surname>Anuar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salimah</forename><surname>Mokhtar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdullah</forename><surname>Gani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samee</forename><surname>Ullah Khan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.is.2014.07.006</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S03064379" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems</title>
+		<title level="j" type="abbrev">Information Systems</title>
+		<idno type="ISSN">0306-4379</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="page" from="98" to="115" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,267.75,43.76,9.07;4,401.12,267.75,12.11,9.07;4,433.50,267.75,45.68,9.07;4,499.68,267.75,8.75,9.07;4,528.70,267.75,30.82,9.07;4,336.86,279.16,222.84,9.17;4,336.86,290.58,222.48,9.07;4,336.86,302.10,12.60,9.07;4,433.60,302.10,22.44,9.07;4,540.41,302.10,19.11,9.07;4,336.86,313.62,217.83,9.07;4,336.86,325.14,40.32,9.07" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="4,348.62,279.16,211.08,9.17;4,336.86,290.58,118.87,9.07">‘Big data’, Hadoop and cloud computing in genomics</title>
+		<author>
+			<persName><forename type="first">Aisling</forename><surname>O’driscoll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jurate</forename><surname>Daugelaite</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roy</forename><forename type="middle">D</forename><surname>Sleator</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jbi.2013.07.001</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S15320464" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Biomedical Informatics</title>
+		<title level="j" type="abbrev">Journal of Biomedical Informatics</title>
+		<idno type="ISSN">1532-0464</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="774" to="781" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,336.66,222.69,9.07;4,336.86,348.18,222.67,9.07;4,336.86,359.70,223.04,9.07;4,336.86,371.24,43.68,9.07" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="4,416.33,336.66,143.22,9.07;4,336.86,348.18,67.41,9.07">Role of Cloud Computing for Big Data: A Review</title>
+		<author>
+			<persName><forename type="first">Madhusmita</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rasmita</forename><surname>Dash</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-981-15-6202-0_18</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Smart Innovation, Systems and Technologies</title>
+		<imprint>
+			<publisher>Springer Singapore</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<biblScope unit="page" from="171" to="179" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,382.76,222.92,9.07;4,336.86,394.28,222.69,9.07;4,336.86,405.80,223.03,9.07;4,336.86,417.32,66.96,9.07" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="4,443.45,382.76,116.33,9.07;4,336.86,394.28,97.51,9.07">The Role of Cloud Computing Architecture in Big Data</title>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Bahrami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mukesh</forename><surname>Singhal</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-08254-7_13</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Studies in Big Data</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<biblScope unit="page" from="275" to="295" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,428.60,222.88,9.07;4,336.86,440.12,222.30,9.07;4,336.86,451.64,222.31,9.07;4,336.86,463.18,28.96,9.07;4,412.46,463.18,12.36,9.07;4,471.27,463.18,22.44,9.07;4,540.39,463.18,19.11,9.07;4,336.86,474.70,185.17,9.07" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="4,552.46,428.60,7.28,9.07;4,336.86,440.12,222.30,9.07;4,336.86,451.64,145.22,9.07">A Hierarchical Distributed Fog Computing Architecture for Big Data Analysis in Smart Cities</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><surname>Hefferman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haibo</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2818869.2818898</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ASE BigData &amp; SocialInformatics 2015</title>
+		<meeting>the ASE BigData &amp; SocialInformatics 2015</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,486.22,222.69,9.07;4,336.86,497.74,222.55,9.07;4,336.86,509.26,81.08,9.07" xml:id="b7">
+	<monogr>
+		<title level="m" type="main" coord="4,395.64,486.22,163.91,9.07;4,336.86,497.74,40.91,9.07">Graphic technology. Prepress digital data exchange using PDF</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Purcell</surname></persName>
+		</author>
+		<idno type="DOI">10.3403/30215076</idno>
+		<imprint>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>BSI British Standards</publisher>
+		</imprint>
+	</monogr>
+	<note>from citeseerx.ist.psu.edu</note>
+</biblStruct>
+
+<biblStruct coords="4,336.86,520.78,222.55,9.07;4,336.86,532.30,222.72,9.07;4,336.86,543.85,222.49,9.07;4,336.86,555.13,192.78,9.07" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="4,492.43,520.78,66.98,9.07;4,336.86,532.30,222.72,9.07;4,336.86,543.85,32.93,9.07">A cloud-based architecture for Big-Data analytics in smart grid: A proposal</title>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Mayilvaganan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Sabitha</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccic.2013.6724168</idno>
+		<ptr target="ieeexplore.ieee.org/abstract/document/6724168/" />
+	</analytic>
+	<monogr>
+		<title level="m">2013 IEEE International Conference on Computational Intelligence and Computing Research</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,566.65,48.11,9.07;4,408.83,566.65,12.11,9.07;4,444.56,566.65,25.77,9.07;4,493.97,566.65,11.63,9.07;4,529.23,566.65,30.35,9.07;4,336.86,578.17,222.70,9.07;4,336.86,589.69,222.50,9.07;4,336.86,601.21,12.60,9.07;4,433.60,601.21,22.44,9.07;4,540.41,601.21,19.11,9.07;4,336.86,612.73,217.83,9.07;4,336.86,624.27,42.56,9.07" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="4,351.02,578.17,208.54,9.07;4,336.86,589.69,115.53,9.07">MetaCloudDataStorage Architecture for Big Data Security in Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Gunasekaran</forename><surname>Manogaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chandu</forename><surname>Thota</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><forename type="middle">Vijay</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.procs.2016.05.138</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S187705091630477X" />
+	</analytic>
+	<monogr>
+		<title level="j">Procedia Computer Science</title>
+		<title level="j" type="abbrev">Procedia Computer Science</title>
+		<idno type="ISSN">1877-0509</idno>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="128" to="133" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,635.79,222.93,9.07;4,336.86,647.31,222.79,9.07;4,336.86,658.83,38.63,9.07;4,400.68,658.83,28.96,9.07;4,454.90,658.83,12.60,9.07;4,492.57,658.83,22.44,9.07;4,540.30,658.83,19.11,9.07;4,336.86,670.35,192.78,9.07" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="4,523.90,635.79,35.89,9.07;4,336.86,647.31,190.96,9.07">Big Data Processing in Cloud Computing Environments</title>
+		<author>
+			<persName><forename type="first">Changqing</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenming</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uchechukwu</forename><surname>Awada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keqiu</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/i-span.2012.9</idno>
+		<ptr target="ieeexplore.ieee.org/abstract/document/6428800/" />
+	</analytic>
+	<monogr>
+		<title level="m">2012 12th International Symposium on Pervasive Systems, Algorithms and Networks</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,336.86,681.87,222.74,9.07;4,336.86,693.15,222.72,9.07;4,336.86,704.67,222.45,9.07;4,336.86,716.22,28.96,9.07;4,412.46,716.22,12.36,9.07;4,471.27,716.22,22.44,9.07;4,540.39,716.22,19.11,9.07;4,336.86,727.74,192.78,9.07" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="4,349.10,693.15,210.48,9.07;4,336.86,704.67,151.09,9.07">Towards Service-Oriented Enterprise Architectures for Big Data Applications in the Cloud</title>
+		<author>
+			<persName><forename type="first">Alfred</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Pretz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gertrud</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">G</forename><surname>Firesmith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilia</forename><surname>Petrov</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/edocw.2013.21</idno>
+		<ptr target="ieeexplore.ieee.org/abstract/document/6690543/" />
+	</analytic>
+	<monogr>
+		<title level="m">2013 17th IEEE International Enterprise Distributed Object Computing Conference Workshops</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,72.10,222.91,9.07;5,57.38,83.62,222.79,9.07;5,57.38,95.14,222.49,9.07;5,57.38,106.66,221.62,9.07;5,57.38,118.21,37.67,9.07" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="5,243.46,72.10,36.83,9.07;5,57.38,83.62,222.79,9.07;5,57.38,95.14,40.68,9.07">Big Data and cloud computing: innovation opportunities and challenges</title>
+		<author>
+			<persName><forename type="first">Chaowei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qunying</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenlong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Hu</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/17538947.2016.1239771</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Digital Earth</title>
+		<title level="j" type="abbrev">International Journal of Digital Earth</title>
+		<idno type="ISSN">1753-8947</idno>
+		<idno type="ISSNe">1753-8955</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="13" to="53" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,129.73,222.72,9.07;5,57.38,141.25,222.28,9.07;5,57.38,152.77,28.96,9.07;5,132.98,152.77,12.36,9.07;5,191.79,152.77,22.44,9.07;5,260.91,152.77,19.11,9.07;5,57.38,164.05,192.78,9.07" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="5,180.55,129.73,99.55,9.07;5,57.38,141.25,151.91,9.07">Strategic Alignment of Cloud-Based Architectures for Big Data</title>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Mohring</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/edocw.2013.22</idno>
+		<ptr target="ieeexplore.ieee.org/abstract/document/6690544/" />
+	</analytic>
+	<monogr>
+		<title level="m">2013 17th IEEE International Enterprise Distributed Object Computing Conference Workshops</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,175.46,222.87,9.17;5,57.38,187.09,222.76,9.07;5,57.38,198.61,222.75,9.07;5,57.38,210.15,22.68,9.07;5,260.96,210.15,19.11,9.07;5,57.38,221.67,220.07,9.07;5,57.38,233.19,40.32,9.07" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coord="5,209.86,175.57,70.40,9.07;5,57.38,187.09,222.76,9.07;5,57.38,198.61,90.38,9.07">Emerging trends, issues and challenges in Internet of Things, Big Data and cloud computing</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Kobusińska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carson</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ching-Hsien</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raghavendra</forename><surname>S.</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2018.05.021</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S0167739X18311270" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">87</biblScope>
+			<biblScope unit="page" from="416" to="419" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,244.71,222.89,9.07;5,57.38,256.23,222.80,9.07;5,57.38,267.75,222.63,9.07;5,57.38,279.27,21.81,9.07;5,95.03,279.27,38.39,9.07;5,149.25,279.27,28.96,9.07;5,194.11,279.27,12.60,9.07;5,222.41,279.27,22.44,9.07;5,260.79,279.27,19.11,9.07;5,57.38,290.58,220.07,9.07;5,57.38,302.10,40.32,9.07" xml:id="b15">
+	<analytic>
+		<title level="a" type="main" coord="5,273.00,244.71,7.28,9.07;5,57.38,256.23,222.80,9.07;5,57.38,267.75,218.71,9.07">A hybrid model of Internet of Things and cloud computing to manage big data in health services applications</title>
+		<author>
+			<persName><forename type="first">Mohamed</forename><surname>Elhoseny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Abdelaziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><forename type="middle">S</forename><surname>Salama</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">M</forename><surname>Riad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khan</forename><surname>Muhammad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arun</forename><forename type="middle">Kumar</forename><surname>Sangaiah</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2018.03.005</idno>
+		<ptr target="www.sciencedirect.com/science/article/pii/S0167739X17322021" />
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="1383" to="1394" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,313.62,222.79,9.07;5,57.38,325.14,222.79,9.07;5,57.38,336.66,38.63,9.07;5,121.20,336.66,28.96,9.07;5,175.42,336.66,12.60,9.07;5,213.09,336.66,22.44,9.07;5,260.83,336.66,19.11,9.07;5,57.38,348.18,185.17,9.07" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="5,204.55,313.62,75.63,9.07;5,57.38,325.14,194.51,9.07">Big data and cloud computing</title>
+		<author>
+			<persName><forename type="first">Divyakant</forename><surname>Agrawal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sudipto</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amr</forename><surname>El Abbadi</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1951365.1951432</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 14th International Conference on Extending Database Technology</title>
+		<meeting>the 14th International Conference on Extending Database Technology</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,359.70,222.86,9.07;5,57.38,371.24,222.58,9.07;5,57.38,382.76,222.76,9.07;5,57.38,394.28,105.69,9.07" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="5,147.91,359.70,132.33,9.07;5,57.38,371.24,222.58,9.07;5,57.38,382.76,70.13,9.07">Enterprise financial management information system based on cloud computing in big data environment</title>
+		<author>
+			<persName><forename type="first">Xuanjun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Metawa</surname></persName>
+		</author>
+		<idno type="DOI">10.3233/jifs-189007</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Intelligent &amp; Fuzzy Systems</title>
+		<title level="j" type="abbrev">IFS</title>
+		<idno type="ISSN">1064-1246</idno>
+		<idno type="ISSNe">1875-8967</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="5223" to="5232" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>IOS Press</publisher>
+		</imprint>
+	</monogr>
+	<note>from content.iospress.com</note>
+</biblStruct>
+
+<biblStruct coords="5,57.38,405.80,222.70,9.07;5,57.38,417.32,222.61,9.07;5,57.38,428.60,222.53,9.07;5,57.38,440.12,73.07,9.07" xml:id="b18">
+	<monogr>
+		<title level="m" type="main" coord="5,172.68,405.80,107.40,9.07;5,57.38,417.32,222.61,9.07;5,57.38,428.60,28.27,9.07">Handbook of Research on Cloud Computing and Big Data Applications in IoT</title>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Agrawal</surname></persName>
+		</author>
+		<idno type="DOI">10.4018/978-1-5225-8407-0</idno>
+		<imprint>
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>IGI Global</publisher>
+		</imprint>
+	</monogr>
+	<note>from books.google.com</note>
+</biblStruct>
+
+<biblStruct coords="5,57.38,451.64,222.34,9.07;5,57.38,463.18,222.71,9.07;5,57.38,474.70,222.74,9.07;5,57.38,486.22,222.49,9.07;5,57.38,497.74,174.92,9.07" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="5,74.94,463.18,205.16,9.07;5,57.38,474.70,222.74,9.07;5,57.38,486.22,47.73,9.07">Cloud Computing and Big Data: A Review of Current Service Models and Hardware Perspectives</title>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Branch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><surname>Tjeerdsma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cody</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Hurley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabine</forename><surname>Mcconnell</surname></persName>
+		</author>
+		<idno type="DOI">10.4236/jsea.2014.78063</idno>
+		<ptr target="www.scirp.org/html/7-9301899_48106.htm" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Software Engineering and Applications</title>
+		<title level="j" type="abbrev">JSEA</title>
+		<idno type="ISSN">1945-3116</idno>
+		<idno type="ISSNe">1945-3124</idno>
+		<imprint>
+			<biblScope unit="volume">07</biblScope>
+			<biblScope unit="issue">08</biblScope>
+			<biblScope unit="page" from="686" to="693" />
+			<date type="published" when="2023-08-11">August 11, 2023</date>
+			<publisher>Scientific Research Publishing, Inc.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,57.38,509.26,222.58,9.07;5,57.38,520.78,222.78,9.07;5,57.38,532.30,222.49,9.07;5,57.38,543.85,76.47,9.07;5,174.06,543.85,10.08,9.07;5,224.26,543.85,3.36,9.07;5,267.72,543.85,12.60,9.07;5,57.38,555.13,149.91,9.07" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="5,144.93,509.26,135.03,9.07;5,57.38,520.78,176.67,9.07">The Benefits and Challenges of Customization within SaaS Cloud Solutions</title>
+		<author>
+			<persName coords=""><forename type="first">Farhan</forename><surname>Aslam</surname></persName>
+		</author>
+		<idno type="DOI">10.47672/ajdikm.1543</idno>
+		<ptr target="https://doi.org/10.47672/ajdikm.1543" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="5,240.82,520.78,39.34,9.07;5,57.38,532.30,222.49,9.07;5,57.38,543.85,49.83,9.07">American Journal of Data, Information and Knowledge Management</title>
+		<title level="j" type="abbrev">AJDIKM</title>
+		<idno type="ISSNe">2789-3146</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="14" to="22" />
+			<date type="published" when="2023-07-28">2023</date>
+			<publisher>AJPO JOURNALS</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

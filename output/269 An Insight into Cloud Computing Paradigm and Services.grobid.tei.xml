@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,85.68,125.03,440.32,15.77;1,201.72,13.86,313.61,16.15;1,221.28,35.70,274.51,16.15;1,85.80,125.03,440.32,15.77">An Insight into Cloud Computing Paradigm and Services</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,224.16,157.16,83.91,11.36"><forename type="first">Heena</forename><surname>Girdher</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Computer Applications Chandigarh Group of Colleges</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,319.07,157.16,64.38,11.36"><forename type="first">Jagjit</forename><surname>Kaur</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Department of Computer Science and Engineering Chandigarh Group of Colleges</orgName>
+								<address>
+									<settlement>Landran, Mohali</settlement>
+									<region>Punjab</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Applications</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,85.68,125.03,440.32,15.77;1,201.72,13.86,313.61,16.15;1,221.28,35.70,274.51,16.15;1,85.80,125.03,440.32,15.77">An Insight into Cloud Computing Paradigm and Services</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">No: 2456</idno>
+					</monogr>
+					<idno type="MD5">D85233C8C2F5CE6B1565C1D652DE33CA</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T12:49+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cloud computing</term>
+					<term>Iaas</term>
+					<term>Saas</term>
+					<term>Paas</term>
+					<term>Virtualization</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cloud computing is a computing model which provides the computing services over the internet on pay-as-you-go basis. You can take the services on rent instead of building your own ITwhich results in cost saving. In this paper, we have discussed the differences between traditional IT infrastructure and cloud computing. We have also discussed the benefits of cloud, risks associated with cloud computing and the cloud models.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Traditional applications require capacity planning before using the application. We buy more servers so that at peak time they can meet our demands but at other times our servers will be idle. Suppose if we talk about online shopping site, we know that during festival days there will be more users of the site. So our site should be able to handle that load also. In cloud computing, our application may scale up or down elastically. There is no need to do capacity planning in advance. We can rent more servers based upon usage.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. BENEFITS OF CLOUD</head><p>There are three main benefits of cloud:</p><p>Cost: -cloud provides services at low cost than building your own IT infrastructure. In cloud, you have to pay only for the amount of services you use.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Self-service:</head><p>-With cloud, you can get the services with just few clicks. You don't have to be depend upon others for services.</p><p>Elasticity: -With the help of cloud, services can be scaled up or down on demand.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. RISKS IN CLOUD COMPUTING</head><p>There are various risks associated with cloud computing:-Security: -In cloud computing, our data and applications are managed by third party but it is the higher risk to give control of your data to third party.</p><p>Data Location: -In cloud, we don't know the location of data. We don't know at which location our data is placed on the server.</p><p>There are security benefits of cloud also. In cloud, multiple copies of data is placed at many places. In the case of failure, data can be easily recovered. , Punjab, India at other times our servers will be idle. Suppose if we talk about online shopping site, we know that during festival days there will be more users of the ite. So our site should be able to handle that load also. In cloud computing, our application may scale up or down elastically. There is no need to do capacity planning in advance. We can rent more three main benefits of cloud:cloud provides services at low cost than building your own IT infrastructure. In cloud, you have to pay only for the amount of services you use.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>With cloud, you can get the services s. You don't have to be depend</head><p>With the help of cloud, services can be scaled up or down on demand.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RISKS IN CLOUD COMPUTING</head><p>There are various risks associated with cloud computing, our data and applications are managed by third party but it is the higher risk to give control of your data to third In cloud, we don't know the location of data. We don't know at which location server.</p><p>There are security benefits of cloud also. In cloud, multiple copies of data is placed at many places. In the case of failure, data can be easily recovered. Iaas: -In infrastructure as a service, we can take infrastructure like servers, storage, databases on rent from cloud service providers. Virtualization is the process through which we can access remote servers. AWS provide Amazon EC2 to use infrastructure as a service. In Iaas you can use the remote servers without worrying about the hardware maintenance.</p><p>Paas: -In platform as a service, we can take the platform on rent from service providers. Suppose if a student writes a first java program and he has not installed JVM on his machine. He can directly copy the java code and run the code online by using online java compiler. Paas is used by developers to develop, test and deploy software applications.</p><p>Saas:-In software as a service, we can use the software online without purchasing the license of software and installing it on computer. In saas, software upgrades and security patching is managed by the service providers. In saas, users do not have their own software. They are using the company software. Gmail is the example of saas where Gmail is the software and Google is the service provider.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSION</head><p>In this paper, we have discussed the concept of cloud computing which has gained lot of popularity now a days. Organizations are moving their data to cloud due to its various benefits over traditional IT infrastructure. But there is security issues related to cloud also. So there is a need to focus on the security problems to maintain the trust level of the organization</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="1,430.20,772.55,43.72,10.52;1,521.46,772.55,53.48,10.52;1,300.36,85.95,255.62,13.46;1,447.84,13.86,67.37,16.15;1,435.00,35.70,60.67,16.15;1,243.24,58.95,226.15,14.32;1,85.68,125.03,440.32,15.77;1,286.56,171.83,242.58,10.52"><head></head><label></label><figDesc>An Insight into Cloud Computing Paradigm and ServicesDepartment of Computer Science and Engineering</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="2,66.84,11.99,477.52,10.52;2,33.48,769.07,450.14,10.52;2,511.42,769.07,53.42,10.52;2,47.04,31.91,117.41,10.52;2,47.04,45.47,251.72,10.52;2,47.04,59.39,155.07,10.52;2,47.04,83.15,251.60,10.52;2,47.04,97.07,147.11,10.52"><head>International</head><label></label><figDesc>Journal of Trend in Scientific Research and Development (IJTSRD) ISSN: 2456-6470 @ IJTSRD | Available Online @ www.ijtsrd.com | Volume -2 | Issue -4 | May-Jun 2018 Page: 1574 IV. CLOUD MODELS There are two types of cloud models i.e.service models and deployment models. Cloud service models are divided into three categories Iaas, Paas and Saas.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2" coords="2,36.84,564.47,148.77,10.52;2,36.84,587.99,261.69,10.52;2,36.84,601.79,261.66,10.52;2,36.84,615.71,27.60,10.52;2,36.84,639.35,261.69,10.52;2,36.84,653.15,261.62,10.52;2,36.84,666.95,261.81,10.52;2,36.84,680.75,261.78,10.52;2,36.84,694.55,261.80,10.52;2,36.84,708.47,70.75,10.52"><head></head><label></label><figDesc>V. DEPLOYMENT MODEL Public cloud: -It is available to the general public. It provides the sharable storage. Example: -Google drive. Private cloud: -It is available to an organization. It provides the dedicated storage to an organization. If an organization doesn't want to put its crucial data on public cloud, it can hire private cloud. Private clouds can be deployed at company's own data centres or on the third party.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3" coords="2,313.08,587.99,261.91,10.52;2,313.08,601.79,261.86,10.52;2,313.08,615.59,261.68,10.52;2,313.08,629.39,261.81,10.52;2,313.08,643.31,120.46,10.52;2,313.08,666.95,262.05,10.52;2,313.08,680.75,261.90,10.52;2,313.08,694.55,261.71,10.52;2,313.08,708.47,168.93,10.52;3,66.84,11.99,477.52,10.52;3,23.28,769.07,450.14,10.52;3,521.46,769.07,53.48,10.52;3,36.84,269.51,261.72,10.52;3,36.84,283.31,261.73,10.52;3,36.84,297.11,261.83,10.52;3,36.84,310.91,261.75,10.52;3,36.84,324.71,261.57,10.52;3,36.84,338.51,261.77,10.52;3,36.84,352.31,261.77,10.52;3,36.84,366.11,54.11,10.52"><head></head><label></label><figDesc>Hybrid cloud: -It is the combination of both public and private cloud. Suppose ABC institute puts its crucial lecture videos in a private cloud but it replies to its students via email using public cloud, is an example of hybrid cloud. Community cloud: -Community cloud is used by number of organizations. Multiple organizations purchase the sharable storage from service providers is an example of community cloud. International Journal of Trend in Scientific Research and Development (IJTSRD) ISSN: 2456-6470 @ IJTSRD | Available Online @ www.ijtsrd.com | Volume -2 | Issue -4 | May-Jun 2018 Page: 1575 To understand the concept of cloud, let us take an example. Suppose you want to open an E-commerce company and you have to manage sales, marketing department and IT infrastructure but you have limited amount of money. In this case you want someone to manage your infrastructure so that you may focus on other departments. It is possible through cloud computing.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="2,114.00,263.99,383.95,259.40"><head>Table 4 . 1</head><label>41</label><figDesc></figDesc><table coords="2,114.00,263.99,383.95,259.40"><row><cell></cell><cell></cell><cell></cell><cell cols="3">: Cloud Service Models</cell></row><row><cell>Services</cell><cell>Use</cell><cell></cell><cell></cell><cell></cell><cell>Users</cell><cell>Examples</cell></row><row><cell>Iaas</cell><cell cols="2">Outsource</cell><cell>the</cell><cell></cell><cell>Network</cell><cell>IBM</cell><cell>SoftLayer,</cell></row><row><cell></cell><cell cols="2">elements</cell><cell>of</cell><cell></cell><cell>architects</cell><cell>Amazon</cell><cell>EC2,</cell></row><row><cell></cell><cell cols="2">infrastructure</cell><cell>like</cell><cell></cell><cell></cell><cell>Rackspace</cell></row><row><cell></cell><cell>servers,</cell><cell></cell><cell>storage,</cell><cell></cell><cell></cell></row><row><cell></cell><cell cols="2">databases</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Paas</cell><cell cols="4">Here, the platform used to</cell><cell>Application</cell><cell>IBM</cell><cell>BlueMix,</cell></row><row><cell></cell><cell cols="4">design, develop, build and</cell><cell>developers</cell><cell>Microsoft</cell><cell>Azure,</cell></row><row><cell></cell><cell>test</cell><cell cols="2">applications</cell><cell>are</cell><cell></cell><cell>Cloudbees</cell></row><row><cell></cell><cell cols="4">provided by the cloud</cell><cell></cell></row><row><cell></cell><cell cols="2">infrastructure.</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Saas</cell><cell cols="4">A software distribution</cell><cell>End users</cell><cell>SendGrid,</cell><cell>Tivoli</cell></row><row><cell></cell><cell cols="4">model in which a third-</cell><cell></cell><cell>Live,</cell></row><row><cell></cell><cell>party</cell><cell cols="2">provider</cell><cell>hosts</cell><cell></cell><cell>Salesforce.com</cell></row><row><cell></cell><cell cols="4">applications and make them</cell><cell></cell></row><row><cell></cell><cell cols="4">available to customers over</cell><cell></cell></row><row><cell></cell><cell cols="2">the internet.</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="3,41.33,545.39,257.24,10.52;3,54.84,559.19,243.64,10.52;3,54.84,572.99,243.70,10.52;3,54.84,586.79,243.76,10.52;3,54.84,600.59,243.82,10.52;3,54.84,614.39,243.73,10.52;3,54.84,628.19,243.76,10.52;3,54.84,641.99,243.69,10.52;3,54.84,655.79,186.56,10.52" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Intelligent End-To-End Resource Virtualization Using Service Oriented Architecture</title>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Onur</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Sfakianakis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Papagianni</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Karagiannis</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Kontos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Niemegeers</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><forename type="middle">P</forename><surname>Chochliouros</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">Heemstra</forename><surname>De Groot</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Sjodin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Hidell</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">T</forename><surname>Cinkler</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Maliosz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">I</forename><surname>Kaklamani</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Carapinha</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Belesioti</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">E</forename><surname>Fytros</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/glocomw.2009.5360701</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,59.93,614.39,238.64,10.52;3,54.84,628.19,179.58,10.52;3,231.27,641.99,67.26,10.52;3,54.84,655.79,51.91,10.52">2009 IEEE Globecom Workshops</title>
+		<meeting><address><addrLine>Delft, Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-12-28">28 December 2009</date>
+		</imprint>
+		<respStmt>
+			<orgName>Delft Univ. of Technol.</orgName>
+		</respStmt>
+	</monogr>
+	<note>GLOBECOM Workshops</note>
+</biblStruct>
+
+<biblStruct coords="3,41.33,675.59,257.12,10.52;3,54.84,689.39,243.85,10.52;3,54.84,703.19,243.74,10.52;3,54.84,716.99,243.75,10.52;3,54.84,730.79,122.75,10.52" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Market-Oriented Cloud Computing: Vision, Hype, and Reality of Delivering Computing as the 5th Utility</title>
+		<author>
+			<persName coords=""><forename type="first">Rajkumar</forename><surname>Buyya</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ccgrid.2009.97</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,117.27,675.59,181.18,10.52;3,54.84,689.39,243.85,10.52;3,54.84,703.19,243.74,10.52;3,54.84,716.99,243.75,10.52;3,54.84,730.79,57.75,10.52">2009 9th IEEE/ACM International Symposium on Cluster Computing and the Grid</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,317.57,31.67,257.37,10.52;3,331.08,45.47,147.03,10.52" xml:id="b2">
+	<analytic>
+		<title level="a" type="main" coord="3,412.67,31.67,162.27,10.52;3,331.08,45.47,27.42,10.52">What cloud computing really means</title>
+		<author>
+			<persName coords=""><forename type="first">G</forename><surname>Gruman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="3,372.70,45.47,48.05,10.52">InfoWorld</title>
+		<imprint>
+			<date type="published" when="2009-01">Jan. 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,317.57,65.27,257.23,10.52;3,331.08,79.07,243.71,10.52;3,331.08,92.87,243.88,10.52;3,331.08,106.67,243.72,10.52;3,331.08,120.47,243.71,10.52;3,331.08,134.27,188.20,10.52" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Market-Oriented Cloud Computing: Vision, Hype, and Reality for Delivering IT Services as Computing Utilities</title>
+		<author>
+			<persName><forename type="first">Rajkumar</forename><surname>Buyya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chee</forename><forename type="middle">Shin</forename><surname>Yeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srikumar</forename><surname>Venugopal</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/hpcc.2008.172</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,336.86,79.07,237.93,10.52;3,331.08,92.87,243.88,10.52;3,331.08,106.67,102.45,10.52">2008 10th IEEE International Conference on High Performance Computing and Communications</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008-07">July 2008</date>
+			<biblScope unit="page">9</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Computer Science and Software Engineering, University of Melbourne, Australia</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,317.57,154.07,257.43,10.52;3,331.08,167.87,243.87,10.52;3,331.08,181.67,243.51,10.52;3,331.08,195.47,26.95,10.52" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Cloud Computing</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Baun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcel</forename><surname>Kunze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jens</forename><surname>Nimis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Tai</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-20917-8</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,337.98,167.87,236.98,10.52;3,331.08,181.67,39.02,10.52">Cloud Computing, Web-based Dynamic IT-Services</title>
+		<meeting><address><addrLine>Berlin, Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,317.57,215.27,257.29,10.52;3,331.08,229.07,243.83,10.52;3,331.08,242.87,243.85,10.52;3,331.08,256.67,243.65,10.52;3,331.08,270.47,243.75,10.52;3,331.08,284.27,133.80,10.52" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="3,548.94,242.87,25.99,10.52;3,331.08,256.67,243.65,10.52;3,331.08,270.47,102.51,10.52">From virtualized resources to virtual computing grids: the In-VIGO system</title>
+		<author>
+			<persName><forename type="first">Sumalatha</forename><surname>Adabala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vineet</forename><surname>Chadha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Puneet</forename><surname>Chawla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Renato</forename><surname>Figueiredo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><surname>Fortes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Krsul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Matsunaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Tsugawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liping</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomin</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.future.2003.12.021</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="3,445.26,270.47,129.57,10.52;3,331.08,284.27,22.23,10.52">Future Generation Computer Systems</title>
+		<title level="j" type="abbrev">Future Generation Computer Systems</title>
+		<idno type="ISSN">0167-739X</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="896" to="909" />
+			<date type="published" when="2005-06">2005</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,317.57,304.07,257.14,10.52;3,331.08,317.87,243.88,10.52;3,331.08,331.67,243.76,10.52;3,331.08,345.47,243.85,10.52;3,331.08,359.27,243.65,10.52;3,331.08,373.07,142.50,10.52" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="3,383.31,331.67,170.54,10.52">Xen and the art of virtualization</title>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Barham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Dragovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keir</forename><surname>Fraser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Hand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rolf</forename><surname>Neugebauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Pratt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Warfield</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/945445.945462</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,331.08,345.47,243.85,10.52;3,331.08,359.27,150.48,10.52">Proceedings of the nineteenth ACM symposium on Operating systems principles</title>
+		<meeting>the nineteenth ACM symposium on Operating systems principles<address><addrLine>NewYork, U. S. A.</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2003-10-19">Oct.2003</date>
+			<biblScope unit="page" from="164" to="177" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,36.00,149.18,523.44,14.25;1,36.12,170.42,371.05,14.25;2,36.00,38.64,523.56,11.04;2,36.12,52.56,56.51,11.04">Ethics and Regulation for Artificial Intelligence in Healthcare: Empowering Clinicians to Ensure Equitable and High-Quality Care</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2023-07-07">07 July 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,36.00,203.63,68.26,9.86"><forename type="first">Ahmad</forename><surname>Fawzy</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Surgery</orgName>
+								<orgName type="department" key="dep2">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Jenderal Soedirman -Margono Soekarjo County Hospital</orgName>
+								<address>
+									<country key="ID">Indonesia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,113.30,203.63,119.71,9.86"><forename type="first">Danastri</forename><surname>Cantya Nirmala</surname></persName>
+						</author>
+						<author>
+							<persName coords="1,242.09,203.63,74.24,9.86"><forename type="first">Denaya</forename><surname>Khansa</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Medicine</orgName>
+								<orgName type="institution">University of Jenderal Soedirman</orgName>
+								<address>
+									<country key="ID">Indonesia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,324.79,203.63,119.62,9.86"><forename type="first">Yudhistira</forename><forename type="middle">Tri</forename><surname>Wardhana</surname></persName>
+						</author>
+						<author>
+							<persName coords="2,439.27,796.14,119.84,9.86"><forename type="first">Danastri</forename><forename type="middle">Cantya</forename><surname>Nirmala</surname></persName>
+						</author>
+						<title level="a" type="main" coord="1,36.00,149.18,523.44,14.25;1,36.12,170.42,371.05,14.25;2,36.00,38.64,523.56,11.04;2,36.12,52.56,56.51,11.04">Ethics and Regulation for Artificial Intelligence in Healthcare: Empowering Clinicians to Ensure Equitable and High-Quality Care</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-07-07">07 July 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D68DD8AAE1083F34E786A0781E1652F9</idno>
+					<idno type="DOI">10.47191/ijmscrs/v3</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Artificial intelligence</term>
+					<term>healthcare</term>
+					<term>ethical guideline</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ARTICLE DETAILS</head><p>As artificial intelligence (AI) technology becomes increasingly integrated into healthcare, it is crucial for clinicians to possess a comprehensive understanding of its capabilities, limitations, and ethical implications. This literature review explores the reasons why clinicians need to be better informed about artificial intelligence, emphasizes the potential benefits of artificial intelligence in healthcare, raises awareness regarding the risks and unintended consequences associated with its use, discusses the development of machine learning and artificial intelligence in healthcare, and underscores the need for ethical guidelines and regulation to harness the potential of artificial intelligence in a responsible manner.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION</head><p>Artificial Intelligence (AI) is a phrase that inferred the use of a computer to model intelligent behavior with minimal human intervention. Artificial Intelligence in medicine consist of two main branches, virtual and physical. The virtual branch involves informatics approaches, including electronic health records and active guidance of physicians in their treatment decisions. Robots that used to assist the elderly patient or the attending surgeon is the example of physical branch artificial intelligence in medicine. <ref type="bibr" coords="1,237.89,554.54,3.24,5.89">1</ref> Artificial Intelligence can replace human tasks and activities. Artificial Intelligence can complete specific tasks and overcome some of the computationally intensive and intellectual limitations of humans. <ref type="bibr" coords="1,80.54,607.70,3.24,5.89">2</ref> Recently, artificial intelligence make a big impact in healthcare. Artificial Intelligence can definitely help physicians to make better clinical decisions or even replace human judgement in certain functional areas of healthcare (eg, radiology). Applications of artificial intelligence increase the availability of healthcare data and give rapid developement of big data analytic methods. It shows the successfull applications of artificial intelligence in healthcare. Artificial intelligence techniques can solve clinically relevant information hidden in the massive amount of data led by relevant questions and help clinical decision making. <ref type="bibr" coords="1,68.54,767.21,3.24,5.89">3</ref> categories and stratifying the severity of ailments and health for non-operative patients. Artificial intelligence tools can replace traditional vital signs and laboratory values, then continuously monitoring and updating that components to give signal alarms for an acutely decompensating patient. Artificial intelligence may help overcome challenges with multiple outcome optimization limitations or sequential decision-making protocols that limit individualized patient care. <ref type="bibr" coords="2,55.32,177.33,3.24,5.89">6</ref> Artificial intelligence in biomedicine have a big role in the diagnostics of diseases. Artificial intelligence allows health professionals to give earlier and more accurate diagnostics for many kinds of diseases. One major class of diagnosis is based on in vitro diagnostics using biosensors or biochips. Integrated Artificial intelligence can diagnose cardiovascular diseases in the early stage with biosensors and related pointof-care testing (POCT) systems. Artificial intelligence can help to predict the survival rates of cancer patients. Artificial intelligence also have role on medical imaging (twodimensional) and signal (one-dimensional) processing for disease diagnostic. <ref type="bibr" coords="2,111.02,336.96,3.24,5.89">7</ref> Artificial intelligence in healthcare influence patient outcomes. Artificial intelligence for drug discovery, artificial intelligence for clinical trials and patient care are some applications of medical artificial intelligence applications utilized in the healthcare industry. Clinical intelligence also analyzes patient's medical data and delivers insights to help them increase their quality of life. Maternal care, healthcare robotics, genetics artificial intelligence data-drive, artificial intelligence-powered stethoscope are significant clinical intelligence systems that improve patient care. 8 Application of artificial intelligence and the analytics of big data in healthcare are considered as one of the important achievements for the intelligent healthcare system. Big data in the healthcare contains the medical images, clinical data of doctor, doctors' prescriptions and notes, computed tomography (CT) images, magnetic resonance imaging (MRI) scans, laboratory data, documents from the drugstore, files from the insurance electronic patient record data, and other data related to the administrative operations. Big data analytics is the process of scrutinizing huge volume of data from various kinds of sources of data. Various analytical methods such as data mining and artificial intelligence can be put in to examine the data. Approaches for big data analytics can be used to identify the abnormalities obtained as a result of combining large volume of data from different sources of data. 9 Artificial intelligence is need to identify the risk of noncommunicable disease, such as heart disease and diabetes. A non-communicable disease risk prediction closed-loop system can predict the risk of developing life-threatening disease (e.g. diabetes, thyroid, and stroke) at early stage then the public health of any community can be improved significantly, which can extend the life span of individuals as well. Recently, there has been growing interest to incorporate machine learning into cyber-physical systems, which can facilitate the disease classification, detection, monitoring, and prediction of several non-communicable diseases. The multistage conversion of heterogeneous internet of things sensor data into a meaningful dataset opens new door to predict the risk of non-communicable diseases from the lowlevel sensor data in human-cyber-physical systems. This has enabled the machine learning classification algorithms random forest and random tree to perform with 94% accuracy or more. <ref type="bibr" coords="2,349.63,203.97,6.48,5.89">10</ref> In healthcare, traditional machine can predicting what treatment protocols are likely to succeed on a patient based on various patient attributes and the treatment context. 11 There is a very large amount of unstructured textual data consist of doctors' notes, test results, lab reports, medication orders, and discharge instructions in healthcare. Artificial intelligence can extract critical information about patients from such rich descriptive data, helping improve diagnoses and treatment recommendations. The capacity for machines to digest huge amounts of imagery and textual data quickly through machine learning and natural language processing will enable physicians to make timely diagnoses and treatment decisions, which can give advantage on health service delivery. 12 RISK AND UNINTENDED CONSEQUENSES Health care industry adopts artificial intelligence, machine learning, and other modeling techniques that give benefits to both patient outcomes and cost reduction. However, we have to aware and ensure the risk and the unintended consequenses. Other industries provide a framework for acknowledging and managing data, machine, and human biases to manage the risk while implementing artificial intelligence. <ref type="bibr" coords="2,364.87,523.10,6.48,5.89">13</ref> Application of machine learning (ML) as the part of artificial intelligence developement is a great area of research. Rapid pace of change, diversity of different techniques and multiplicity of tuning parameters make it difficult to get a clear picture of how accurate these systems might be in clinical practice or how reproducible they are in different clinical contexts. Lack of consensus about how machine learning studies should report potential bias make the condition worse. Researchers need to consider how machine learning models, like scientific data sets, can be licensed and distributed to facilitate reproduction of research results in different settings. <ref type="bibr" coords="2,385.51,682.61,6.48,5.89">14</ref> The lack of interpretability in artificial intelligence models is an obstacle to their widespread adoption in the healthcare domain. The absence of understandability and transparency frequently cause inadequate accountability and a consequent reduction in the quality of the predictive results of the models. On the other hand, the existence of interpretability in the predictions of artificial intelligence models will facilitate the understanding and trust of the clinicians in these complex models. The data protection regulations worldwide emphasize the relevance of the plausibility and verifiability of artificial intelligence models' predictions. <ref type="bibr" coords="3,213.29,110.85,6.48,5.89">15</ref> Many private entities own and controll artificial intelligence technologies. The nature of the implementation of artificial intelligence could mean such corporations, clinics and public bodies will have a greater than typical role in obtaining, utilizing and protecting patient health information. This raises privacy issues relating to implementation and data security. The first set of concerns includes access, use and control of patient data in private hands. Some recent public-private partnerships that implementing artificial intelligence have poor protection of privacy. Appropriate safeguards must be conducted to maintain privacy and patient agency. Another set of concerns is the external risk of privacy breaches through artificial intelligence-driven methods. Regulation should confirm patient agency and consent, and should encourage increasingly sophisticated methods of data anonymization and protection. <ref type="bibr" coords="3,158.06,323.64,6.48,5.89">16</ref> Job displacement from automation and management of human-machine interactions is the anticipated implication of the use of artificial intelligence applications. 17 Artificial intelligence applications must be implemented with care regarding potential loss of jobs or professional reputation, highlighting the potential of artificial intelligence to remove the tedious aspects of work, improve job satisfaction and provide new skills. This must be coupled with careful attention to clinicians' training needs and career development. 18</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DEVELOPMENT OF MACHINE LEARNING AND AI IN HEALTHCARE</head><p>The history of artificial intelligence started in 1950 when Alan Turing and his proposed machine that can learn and capable of becoming artificial intelligence are brought into public eyes. <ref type="bibr" coords="3,86.66,549.62,6.48,5.89">19</ref> Since then, artificial intelligence has been developed and applied in many aspects of life including healthcare. There are two distinct major categories of artificial intelligence devices that we used. First category being machine learning techniques with capabilities to analyze structured data. In relation to healthcare use, machine learning can be used to classify patients condition and draw a probable outcomes of the patients condition. Machine learning was applied in processing radiology data, genetic research, and epidemiological studies. <ref type="bibr" coords="3,197.45,669.29,3.24,5.89">3</ref> Second category being natural language processing which extract information from unstructured data. Natural language processing produres capable of processing random data and texts to machine-readable structured data. After which, the data can be processed by machine learning techniques. <ref type="bibr" coords="3,219.41,735.77,6.48,5.89">20</ref> Machine learning techniques comprised of two categories: unsupervised learning, which capable of feature extraction, and supervised learning which is used to predict relationship between patient condition (input) and patient prognosis or diagnosis (output). <ref type="bibr" coords="3,392.59,84.33,3.24,5.89">3</ref> Artificial intelligence developments in healthcare generally used supervised learning method which provide more relevant clinical results. Some analytical techniques that were used in conjunction to supervised learning machine learning were support vector machine, neural networks, and the most recent and advanced technique, deep learning. Deep learning is superior to other machine learning techniques because it can overcome one of machine learning biggest weakness in analyzing data with high number of traits, which is very relevant in clinical settings. To give some example, one of deep learning's sub-technique, convolutional neural network was tested in clinical settings and reported over 90% diagnose accuracy in congenital cataract disease by analyzing ocular images. <ref type="bibr" coords="3,424.51,270.45,6.48,5.89">21</ref> Study also reported use of convolutional neural network with over 90% accuracy in identifying and differentiating benign and malignant skin cancer from images. <ref type="bibr" coords="3,413.83,310.32,6.48,5.89">22</ref> These results showed that convolutional neural network were comparable to experience physicians in accuracy to diagnose diseases in clinical settings. <ref type="bibr" coords="3,348.79,350.28,3.24,5.89">3</ref> Natural Language Processing is no less important compared to machine learning techniques. Natural language processing function pivoting role to extract unstructured clinical data with wide variety of traits into a useful variables that machine learning techniques can analyze to infer the likely outcome of certain patient or condition. <ref type="bibr" coords="3,431.59,429.96,6.48,5.89">23</ref> Core components of natural language processing processes are text processing and classification. Keywords that significant in relation to certain diseases are selected and then processed with machine learning techniques. <ref type="bibr" coords="3,398.23,483.14,6.48,5.89">24</ref> Studies reported that use of natural language processing in clinical settings regarding laboratorybased adverse effects can be automated thanks to natural language processing algorithm. <ref type="bibr" coords="3,461.26,523.10,6.60,5.89">25</ref> Natural language processing also reported to have successfully identified 14 variables relating to brain aneurysm after it was given with clinical notes of patients with brain aneurysm. <ref type="bibr" coords="3,504.70,562.94,6.48,5.89">26</ref> This shows that natural language processing can be used in determining complex disease and variables related to it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPLICATIONS OF AI IN HEALTHCARE</head><p>Problems such as difficult and complex cases, increasing variables involved in pathogenesis of diseases in relation with modern life style, war on antibiotics resistancy, to name a few, are growing in number. Mass of misinformation, short-staffed and short-resourced environment are not uncommon. Artificial intelligence use acts as an alternative problem solving method in a wide aspects of healthcare system and as a tool to help healthcare provider to give better treatment to patient. <ref type="bibr" coords="3,345.43,735.77,6.48,5.89">27</ref> In field of electronic health record, recent study stated that use of deep neural network, researchers has managed to produce artificial intelligence algorithm sith 90.5% to 92.8% Corresponding Author: Danastri Cantya Nirmala accuracy in predicting pneumonia cases following stroke based on previous clinical notes and relevant symptoms. <ref type="bibr" coords="4,273.05,84.33,6.60,5.89">28</ref> Another study have managed to show artificial intelligence model that predict mortality in paralytic ileus with 81.30% accuracy , and intensive care unit patients mortality rate based on previous electronic health records. <ref type="bibr" coords="4,190.13,137.49,8.78,5.89">27,</ref><ref type="bibr" coords="4,198.91,137.49,5.85,5.89">29</ref> With documented prognosis of patient with specific condition, physician can decide the more likely treatment and outcome of that certain patient. Artificial intelligence has also been shown to be capable to help identify specific-marker molecules in cancer and other genetic diseases. Study reported that support vector machine machine learning developed using various genomic data to match and classify cancer protein and drug targets were able to identify 53 new global cancer targets, 266 specific to breast cancers, 355 to ovarian cancers, and 462 targets in pancreatic cancers. <ref type="bibr" coords="4,68.54,283.80,6.48,5.89">30</ref> Another study managed to explain 46.9% of gene variance in height, and 32.7% gene variations in body mass index in patient with rheumatoid arthritis. <ref type="bibr" coords="4,215.21,310.32,6.48,5.89">31</ref> Recent study regarding coronavirus disease-19 proteomes shown that machine learning algorithm is able to predict antigens that require human leukocyte antigens-binding, processing, presentation to the cell surface, and it's potential to be recognized by T cells in immunotherapy targets. <ref type="bibr" coords="4,229.13,376.80,6.48,5.89">27</ref> Studies reported that artificial intelligence have managed to do identification of melanoma based on clinical images with 91.3% accuracy, squamous cell carcinoma with 86.6% accuracy, and basal cell carcinoma with 87.6% accuracy. Same studies also reported classification of benign and malignant skin cancer with 89.5% accuracy, 85.1% sensitivity, and 89.2% specificity. <ref type="bibr" coords="4,176.06,469.94,6.48,5.89">32</ref> Other studies reported that histology-based convolutional neural network type of machine learning were capable of automatically grade prostate cancer, breast cancer, colon cancer, and lymphoma in par with experienced pathologist. 33 A study using support vector machine algorithm in early detection of unknown primary cancer shown that it is capable to predict the origins of metastatic adenoid cystic carcinoma, which is a rare cases that are likely to confuse physician. <ref type="bibr" coords="4,178.22,576.26,6.48,5.89">34</ref> In radiology and imaging, artificial intelligence also shown great results and potential. Study using machine learningbased magnetic resonance imaging analysis reported it is capability to predict Alzheimer's disease progression with 91.6% accuracy, 90.59% sensitivity, and 92.96% specificity. <ref type="bibr" coords="4,273.17,642.74,6.48,5.89">35</ref> Another study about convolutional neural network capabilities in detecting irregularities and diagnose patients based on chest X-ray shown 81% accuracy, 2% higher than radiologist. <ref type="bibr" coords="4,81.38,695.93,6.48,5.89">36</ref> Convoluted neural network were also reported to help find microaneurism in diabetic retinopathy patient that may elude ophthalmologist examination. <ref type="bibr" coords="4,199.37,722.57,6.48,5.89">37</ref> An artificial intelligence model developed by John Hopkins University, Smart Tissue Autonomous Robot (STAR) were reported to match and or outperform human surgeon in exvivo and in-vivo anastomosis of the bowl done with animal models. <ref type="bibr" coords="4,347.11,70.99,6.48,5.89">38</ref> Not limited to the surgery process itself, artificial intelligence can also be used in predicting post operative patient likely outcomes. Study reported that machine learning and natural language processing were capable of predicting with 92% accuracy, leakage of anastomosis in post operative patients. <ref type="bibr" coords="4,349.27,137.49,6.48,5.89">39</ref> This will help surgeon and postoperative team to decide what the next treatment will be. Telemedicine, one of new frontier in healthcare service is also a potential field for artificial intelligence use. Increase in awareness during coronavirus disease-19 pandemic results in greater interest of artificial intelligence use in telemedicine. Studies regarding use of artificial intelligence in perioperative anesthesia telemedicine shown mixed results with potential to reduce disturbance on patient while also possesing potential weaknesses such as lack of related electronic health records and patient with unique and different clinical sign. <ref type="bibr" coords="4,418.39,283.80,6.48,5.89">40</ref> Another study proposed a telemedicine algorithm in eye diseases such as diabetic retinopathy and age-related macular disease. This new algorithm uses the advancements of internet to help data gathering from patients to then processed by artificial intelligence after which the results will be consulted on ophthalmologist. Though there were still lots of weaknesses to overcome before this algorithm is viable. 41</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>THE NEED FOR ETHICAL GUIDELINES AND REGULATION</head><p>Ethical guidelines and regulations regarding artificial intellegence in healthcare play a crucial role in ensuring the responsible and safe use of these technologies. In the past five years, private companies, research institutions and public sector organizations have issued principles and guidelines for ethical artificial intelligence. <ref type="bibr" coords="4,434.47,496.46,6.60,5.89">42</ref> These guidelines provide a framework for addressing various ethical considerations and potential risks associated with artificial intellegence implementation. <ref type="bibr" coords="4,380.95,536.42,6.48,5.89">43</ref> According to a report by the World Health Organization (WHO) <ref type="bibr" coords="4,406.75,549.62,6.48,5.89">44</ref> , ethical guidelines and regulations should focus on principles like beneficence, non-maleficence, justice, and respect for autonomy when integrating artificial intellegence into healthcare. These guidelines aim to uphold patient rights, minimize biases, promote accountability, and maintain the trustworthiness of artificial intellegence systems. According to a study by Mittelstadt et al. <ref type="bibr" coords="4,522.10,629.42,6.48,5.89">45</ref> , robust ethical guidelines and regulations are essential to ensure the responsible and beneficial deployment of artificial intellegence in healthcare, fostering a balance between innovation and safeguarding human well-being. Also, artificial intellegence technologies can be used ethically, responsibly, and in the best interest of patients and society at large. Addressing issues such as transparency, accountability, fairness, privacy, consent, and human oversight is crucial in the context of artificial intellegence 's healthcare applications. These aspects are essential for ensuring the ethical and  <ref type="bibr" coords="5,254.21,164.13,6.48,5.89">47</ref> One of the key accountability issues in artificial intellegence healthcare is the allocation of responsibility. As artificial intellegence systems become more integrated into healthcare processes, it becomes crucial to determine who is accountable for the decisions made by these systems. Healthcare providers, developers, regulatory bodies, and even artificial intellegence algorithms themselves may all have different levels of responsibility depending on their roles and contributions to the artificial intellegence technology. Fairness focuses on preventing biases and discrimination in artificial intellegence algorithms, ensuring equitable access to healthcare services for all individuals. <ref type="bibr" coords="5,192.53,323.64,6.48,5.89">48</ref> Privacy safeguards personal health information and ensures that artificial intellegence systems handle data securely and confidentially. Consent ensures that individuals have the right to make informed decisions about their involvement in artificial intellegence-driven healthcare interventions. Lastly, human oversight is critical to ensure that artificial intellegence is used as a tool to augment human decision-making rather than replacing human judgment altogether. Clinicians play a vital role in shaping guidelines and ensuring the responsible use of artificial intelligence (AI) for the benefit of patients and the delivery of equitable, high-quality care. As the frontline providers of healthcare, clinicians bring invaluable expertise and insights into the development, implementation, and evaluation of artificial intellegence systems in clinical settings. <ref type="bibr" coords="5,144.02,523.10,6.48,5.89">49</ref> Their active involvement during the guideline development process helps formulate guidelines that are practical, effective, and aligned with ethical principles. Additionally, clinicians contribute to the responsible implementation of artificial intellegence technologies by assessing feasibility, providing feedback on user-friendliness, and optimizing artificial intellegence algorithms to enhance safety and effectiveness. As gatekeepers of patient-centered care, clinicians critically evaluate artificial intellegence outputs, exercise clinical judgment, and advocate for equitable access and ethical use of artificial intellegence in healthcare. <ref type="bibr" coords="5,191.21,669.29,6.48,5.89">50</ref> Their expertise and dedication are instrumental in ensuring that artificial intellegence technologies are integrated ethically, responsibly, and effectively into clinical practice, ultimately improving healthcare outcomes for patients.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>EMPOWERING CLINICIANS</head><p>Clinicians play a crucial role in various stages of artificial intellegence development, implementation, and evaluation processes in healthcare. In the development phase, clinicians provide valuable insights into the specific clinical needs, workflows, and challenges faced in their respective specialties. Their expertise helps in identifying areas where artificial intellegence can be most beneficial and guiding the design of artificial intellegence algorithms and systems that align with clinical requirements. Clinicians can collaborate with artificial intellegence developers, providing feedback, testing prototypes, and ensuring that the technology is intuitive, user-friendly, and aligned with clinical practices. <ref type="bibr" coords="5,552.82,190.65,6.60,5.89">51</ref> During the implementation stage, clinicians actively participate in integrating artificial intellegence into their daily workflow and patient care processes. They work closely with technology teams to ensure seamless integration, evaluate the impact on workflow efficiency, and provide feedback on usability and practicality. Clinicians can also assist in training their peers on how to effectively use artificial intellegence systems and address any concerns or resistance that may arise during the implementation process. <ref type="bibr" coords="5,479.98,310.32,6.48,5.89">52</ref> Clinicians are instrumental in evaluating the effectiveness and safety of artificial intellegence systems. They can contribute to the monitoring and validation of artificial intellegence algorithms, assessing their accuracy, sensitivity, specificity, and performance in real-world clinical settings. <ref type="bibr" coords="5,508.90,376.80,6.48,5.89">53</ref> Clinicians also play a vital role in assessing the clinical outcomes and patient experiences associated with artificial intellegence implementation, helping to determine whether the technology achieves its intended goals and benefits patients. Continuous education and training programs should be established to enhance clinicians' artificial intellegence literacy, enabling them to critically assess artificial intellegence algorithms, challenge biases, and identify potential pitfalls. <ref type="bibr" coords="5,506.38,483.14,6.48,5.89">54</ref> By staying updated on artificial intellegence advancements and ethical considerations, clinicians can effectively navigate the complexities of artificial intellegence-driven healthcare and contribute to responsible and informed decision-making. Clinicians' engagement in the development and implementation of artificial intelligence (AI) technologies will foster trust, promote responsible artificial intellegence use, and safeguard against undue reliance on technology. By actively participating in the design and evaluation of artificial intellegence systems, clinicians contribute their clinical expertise and contextual knowledge, ensuring that artificial intellegence is aligned with patient needs and the complexities of healthcare settings. <ref type="bibr" coords="5,456.94,656.09,6.48,5.89">55</ref> Clinicians' engagement helps establish transparency, explainability, and accountability in artificial intellegence systems, addressing concerns about the "black box" nature of algorithms. This active involvement also promotes a human-centered approach to artificial intellegence, where technology complements and augments the clinical decision-making process rather than replacing it. <ref type="bibr" coords="5,441.58,749.09,6.48,5.89">56</ref> By being actively engaged, clinicians can ensure that the benefits and limitations of artificial intellegence are appropriately communicated to</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" coords="5,35.88,38.64,523.68,767.36"><head>Ethics and Regulation for Artificial Intelligence in Healthcare: Empowering Clinicians to Ensure Equitable and High- Quality Care 1354 Volume 03 Issue 07 July 2023 Corresponding Author: Danastri Cantya Nirmala</head><label></label><figDesc></figDesc><table coords="5,36.12,72.18,243.53,102.19"><row><cell cols="5">responsible use of artificial intelligence in healthcare</cell></row><row><cell cols="5">systems. Transparency involves the opennes and clarity of</cell></row><row><cell cols="5">making artificial intellegence algorithms, systems, and</cell></row><row><cell cols="5">decision-making processes understandable and explainable to</cell></row><row><cell cols="5">healthcare professionals, patients, and other stakeholders. 46</cell></row><row><cell>Accountability,is</cell><cell>necessary</cell><cell>to</cell><cell>hold</cell><cell>individuals,</cell></row><row><cell cols="5">organizations, and systems responsible for the outcomes and</cell></row><row><cell cols="5">actions facilitated by artificial intellegence technology.</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="6,51.48,577.55,5.85,8.96;6,75.38,577.45,204.08,9.05;6,75.38,590.77,129.55,9.05;6,75.38,604.09,140.33,9.05" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="6,176.31,577.45,103.16,9.05;6,75.38,590.77,34.62,9.05">Artificial intelligence in medicine</title>
+		<author>
+			<persName><forename type="first">Pavel</forename><surname>Hamet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanne</forename><surname>Tremblay</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.metabol.2017.01.011</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,116.88,590.77,45.64,9.05">Metabolism</title>
+		<title level="j" type="abbrev">Metabolism</title>
+		<idno type="ISSN">0026-0495</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="S36" to="S40" />
+			<date type="published" when="2017-04">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,48.12,617.39,9.21,8.96;6,75.38,617.29,204.26,9.05;6,75.38,630.61,204.23,9.05;6,75.38,643.93,46.03,9.05;6,138.02,643.93,51.89,9.05;6,207.32,643.93,22.21,9.05;6,246.90,643.93,32.72,9.05;6,75.38,657.28,204.10,9.05;6,75.38,670.60,133.53,9.05;6,44.76,683.90,12.57,8.96;6,75.38,683.80,204.27,9.05;6,75.38,697.12,204.03,9.05;6,75.38,710.44,204.05,9.05;6,75.38,723.76,139.76,9.05;6,75.38,736.95,204.21,9.05;6,75.38,750.27,95.73,9.05" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="6,154.86,617.29,124.78,9.05;6,75.38,630.61,204.23,9.05;6,75.38,643.93,46.03,9.05;6,138.02,643.93,47.90,9.05;6,193.72,697.12,85.70,9.05;6,75.38,710.44,149.91,9.05">Use of AI-based tools for healthcare purposes: A survey study from consumers&apos; perspectives</title>
+		<author>
+			<persName coords=""><surname>Ii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Esmaeilzadeh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Iii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Zhi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Q</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s12911-020-01191-1</idno>
+		<idno type="PMID">29507784</idno>
+		<idno type="PMCID">PMC5829945</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,207.32,643.93,22.21,9.05;6,246.90,643.93,32.72,9.05;6,75.38,657.28,145.42,9.05;6,231.94,710.44,47.50,9.05;6,75.38,723.76,25.88,9.05">BMC Medical Informatics and Decision Making</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="230" to="243" />
+			<date type="published" when="2017-06-21">2020. 2017 Jun 21</date>
+		</imprint>
+	</monogr>
+	<note>Stroke Vasc Neurol</note>
+</biblStruct>
+
+<biblStruct coords="6,44.28,763.69,13.03,8.96;6,75.38,763.59,204.33,9.05;6,75.38,776.91,204.10,9.05;6,355.03,72.18,204.20,9.05;6,355.03,85.52,157.79,9.05;6,355.03,98.84,150.12,9.05" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Ethics of Artificial Intelligence in Medicine and Ophthalmology</title>
+		<author>
+			<persName><forename type="first">Yasser</forename><forename type="middle">Ibraheem</forename><surname>Abdullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">S</forename><surname>Schuman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ridwan</forename><surname>Shabsigh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Caplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lama</forename><forename type="middle">A</forename><surname>Al-Aswad</surname></persName>
+		</author>
+		<idno type="DOI">10.1097/apo.0000000000000397</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,477.18,72.18,82.05,9.05;6,355.03,85.52,70.64,9.05">Asia-Pacific Journal of Ophthalmology</title>
+		<title level="j" type="abbrev">Asia-Pacific Journal of Ophthalmology</title>
+		<idno type="ISSN">2162-0989</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="289" to="298" />
+			<date type="published" when="2021-05">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,327.19,112.14,9.69,8.96;6,355.03,112.04,204.08,9.05;6,355.03,125.36,204.29,9.05;6,355.03,138.68,204.06,9.05;6,355.03,152.00,35.72,9.05;6,406.83,152.00,44.60,9.05;6,467.65,152.00,61.15,9.05;6,544.88,152.00,14.34,9.05;6,355.03,165.32,204.04,9.05;6,355.03,178.52,125.68,9.05;6,355.03,191.84,121.55,9.05" xml:id="b3">
+	<analytic>
+		<title level="a" type="main" coord="6,430.47,125.36,128.85,9.05;6,355.03,138.68,204.06,9.05;6,355.03,152.00,35.72,9.05;6,406.83,152.00,44.60,9.05;6,467.65,152.00,61.15,9.05;6,544.88,152.00,14.34,9.05;6,355.03,165.32,55.86,9.05">A systematic literature review of artificial intelligence in the healthcare sector: Benefits, challenges, methodologies, and functionalities</title>
+		<author>
+			<persName><forename type="first">Omar</forename><surname>Ali</surname></persName>
+			<idno type="ORCID">0000-0001-5386-8100</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wiem</forename><surname>Abdelbaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anup</forename><surname>Shrestha</surname></persName>
+			<idno type="ORCID">0000-0002-2952-0072</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ersin</forename><surname>Elbasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Abdallah Ali</forename><surname>Alryalat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yogesh</forename><forename type="middle">K</forename><surname>Dwivedi</surname></persName>
+			<idno type="ORCID">0000-0002-5547-9990</idno>
+		</author>
+		<idno type="DOI">10.1016/j.jik.2023.100333</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,418.58,165.32,114.04,9.05">Journal of Innovation &amp; Knowledge</title>
+		<title level="j" type="abbrev">Journal of Innovation &amp; Knowledge</title>
+		<idno type="ISSN">2444-569X</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">100333</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.95,205.26,13.04,8.96;6,355.03,205.16,204.30,9.05;6,355.03,218.48,204.12,9.05;6,355.03,231.68,204.21,9.05;6,355.03,245.00,204.00,9.05;6,355.03,258.32,203.97,9.05;6,355.03,271.67,204.17,9.05;6,355.03,284.99,204.12,9.05;6,355.03,298.19,204.28,9.05;6,355.03,311.51,134.04,9.05;6,355.03,324.83,101.17,9.05;6,320.59,338.25,16.38,8.96;6,355.03,338.15,204.06,9.05;6,355.03,351.47,204.21,9.05;6,355.03,364.67,147.18,9.05;6,357.55,377.99,79.75,9.05;6,355.03,391.31,125.64,9.05;6,317.23,404.73,19.73,8.96;6,355.03,404.63,204.04,9.05;6,355.03,417.83,204.19,9.05;6,355.03,431.15,176.55,9.05" xml:id="b4">
+	<analytic>
+		<title level="a" type="main" coord="6,433.37,218.48,125.78,9.05;6,355.03,231.68,114.82,9.05;6,492.81,258.32,66.19,9.05;6,355.03,271.67,204.17,9.05;6,355.03,284.99,204.12,9.05;6,355.03,298.19,126.05,9.05;6,355.03,351.47,204.21,9.05;6,355.03,364.67,89.64,9.05">Accessing Artificial Intelligence for Clinical Decision-Making</title>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Giordano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meghan</forename><surname>Brennan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Basma</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parisa</forename><surname>Rashidi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">François</forename><surname>Modave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Tighe</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fdgth.2021.645232</idno>
+		<idno>doi:10.14293/s2199-1006.1.sor-.ppvry8k.v1</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,478.86,231.68,80.38,9.05;6,355.03,245.00,24.85,9.05;6,491.84,298.19,67.47,9.05;6,355.03,311.51,29.85,9.05;6,450.94,364.67,46.99,9.05">Frontiers in Digital Health</title>
+		<title level="j" type="abbrev">Front. Digit. Health</title>
+		<idno type="ISSNe">2673-253X</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="291" to="301" />
+			<date type="published" when="2020">2021. 2021 Jul. 2020. 2021</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>Engineering</note>
+</biblStruct>
+
+<biblStruct coords="6,323.95,444.57,13.03,8.96;6,355.03,444.47,204.18,9.05;6,355.03,457.79,204.82,9.05;6,355.03,471.13,204.14,9.05;6,355.03,484.33,167.87,9.05;6,355.03,497.65,108.17,9.05" xml:id="b5">
+	<analytic>
+		<title level="a" type="main" coord="6,455.38,444.47,103.83,9.05;6,355.03,457.79,204.82,9.05;6,355.03,471.13,137.45,9.05">Applications of artificial intelligence and big data analytics in M-Health: A healthcare system perspective</title>
+		<author>
+			<persName coords=""><surname>Ix. Khan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Zf</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">R</forename><surname>Alotaibi</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2020/8894694</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,508.98,471.13,50.19,9.05;6,355.03,484.33,92.67,9.05">Journal of Healthcare Engineering</title>
+		<imprint>
+			<biblScope unit="volume">2020</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,327.19,511.07,9.69,8.96;6,355.03,510.97,204.25,9.05;6,355.03,524.29,204.21,9.05;6,355.03,537.61,204.09,9.05;6,355.03,550.81,106.54,9.05;6,355.03,564.13,138.39,9.05" xml:id="b6">
+	<analytic>
+		<title level="a" type="main" coord="6,460.18,510.97,99.10,9.05;6,355.03,524.29,204.21,9.05;6,355.03,537.61,171.50,9.05">Early-Stage Risk Prediction of Non-Communicable Disease Using Machine Learning in Health CPS</title>
+		<author>
+			<persName><forename type="first">Rahatara</forename><surname>Ferdousi</surname></persName>
+			<idno type="ORCID">0000-0003-1143-2370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Anwar</forename><surname>Hossain</surname></persName>
+			<idno type="ORCID">0000-0002-7673-8410</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abdulmotaleb</forename><surname>El Saddik</surname></persName>
+			<idno type="ORCID">0000-0002-7690-8547</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2021.3094063</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,537.48,537.61,21.64,9.05;6,355.03,550.81,26.30,9.05">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="96823" to="96837" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,323.95,577.55,13.04,8.96;6,355.03,577.45,204.25,9.05;6,355.03,590.77,204.04,9.05;6,355.03,603.97,99.24,9.05;6,355.03,617.29,125.28,9.05" xml:id="b7">
+	<analytic>
+		<title level="a" type="main" coord="6,457.57,577.45,101.71,9.05;6,355.03,590.77,113.18,9.05">The potential for artificial intelligence in healthcare</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Davenport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ravi</forename><surname>Kalakota</surname></persName>
+		</author>
+		<idno type="DOI">10.7861/futurehosp.6-2-94</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,481.15,590.77,77.92,9.05;6,355.03,603.97,27.87,9.05">Future Healthcare Journal</title>
+		<title level="j" type="abbrev">Future Healthcare Journal</title>
+		<idno type="ISSN">2514-6645</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="94" to="98" />
+			<date type="published" when="2019-06">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,320.59,630.71,16.38,8.96;6,355.03,630.61,204.13,9.05;6,355.03,643.93,204.18,9.05;6,355.03,657.28,202.08,9.05;6,357.55,670.48,130.34,9.05" xml:id="b8">
+	<analytic>
+		<title level="a" type="main" coord="6,454.07,630.61,105.09,9.05;6,355.03,643.93,200.33,9.05">Artificial intelligence in healthcare: An essential guide for health leaders</title>
+		<author>
+			<persName><forename type="first">Mei</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-4414-8835</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michel</forename><surname>Decary</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0840470419873123</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,355.03,657.28,124.60,9.05">Healthcare Management Forum</title>
+		<title level="j" type="abbrev">Healthc Manage Forum</title>
+		<idno type="ISSN">0840-4704</idno>
+		<idno type="ISSNe">2352-3883</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="10" to="18" />
+			<date type="published" when="2019-09-24">2019</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,317.23,683.90,19.73,8.96;6,352.15,683.80,206.97,9.05;6,355.03,697.12,204.10,9.05;6,355.03,710.44,204.23,9.05" xml:id="b9">
+	<analytic>
+		<title level="a" type="main" coord="6,352.15,683.80,206.97,9.05;6,355.03,697.12,58.35,9.05">Hague DC. Benefits, pitfalls, and potential bias in health care AI</title>
+		<author>
+			<persName coords=""><surname>Xiii</surname></persName>
+		</author>
+		<idno type="DOI">10.18043/ncm.80.4.219</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,422.50,697.12,132.65,9.05">North Carolina Medical Journal</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="219" to="223" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="6,355.03,723.76,204.16,9.05;6,355.03,736.95,204.15,9.05;6,355.03,750.27,204.47,9.05;6,355.03,763.59,174.95,9.05" xml:id="b10">
+	<analytic>
+		<title level="a" type="main" coord="6,514.27,723.76,44.92,9.05;6,355.03,736.95,204.15,9.05;6,355.03,750.27,48.68,9.05">Creation of a novel inflatable vaginal stent for McIndoe vaginoplasty</title>
+		<author>
+			<persName coords=""><forename type="first">P</forename><forename type="middle">A</forename><surname>Romanski</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bortoletto</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">M</forename><surname>Pfeifer</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.fertnstert.2020.09.030l</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="6,413.30,750.27,51.17,9.05">Fertil Steril</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="804" to="806" />
+			<date type="published" when="2021-03">2021 Mar</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,330.79,795.99,228.32,10.01;7,37.08,72.28,20.23,8.96;7,72.50,72.18,207.07,9.05;7,75.38,85.52,204.08,9.05;7,75.38,98.84,204.10,9.05;7,75.38,112.04,204.34,9.05;7,75.38,125.36,53.31,9.05" xml:id="b11">
+	<analytic>
+		<title level="a" type="main" coord="7,330.79,795.99,228.32,10.01;7,37.08,72.28,15.17,8.96;7,169.04,85.52,110.43,9.05;7,75.38,98.84,80.75,9.05">Artificial intelligence, bias and clinical safety</title>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Challen</surname></persName>
+			<idno type="ORCID">0000-0002-5504-7768</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><surname>Denny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Pitt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luke</forename><surname>Gompels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krasimira</forename><surname>Tsaneva-Atanasova</surname></persName>
+		</author>
+		<idno type="DOI">10.1136/bmjqs-2018-008370</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,167.36,98.84,56.90,9.05">BMJ Quality &amp; Safety</title>
+		<title level="j" type="abbrev">BMJ Qual Saf</title>
+		<idno type="ISSN">2044-5415</idno>
+		<idno type="ISSNe">2044-5423</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="231" to="237" />
+			<date type="published" when="2019-01-12">2019</date>
+			<publisher>BMJ</publisher>
+		</imprint>
+	</monogr>
+	<note>Artificial Intelligence, Bias and clinical safety</note>
+</biblStruct>
+
+<biblStruct coords="7,40.32,138.78,16.89,8.96;7,72.50,138.68,207.22,9.05;7,75.38,152.00,204.05,9.05;7,75.38,165.32,153.30,9.05;7,75.38,178.52,69.70,9.05;7,75.38,191.84,135.73,9.05;7,37.08,205.26,20.24,8.96;7,72.50,205.16,206.98,9.05;7,75.38,218.48,204.16,9.05;7,75.38,231.68,204.14,9.05;7,75.38,245.00,134.37,9.05;7,33.72,258.42,23.59,8.96;7,72.50,258.32,206.87,9.05;7,75.38,271.67,204.15,9.05;7,75.38,284.99,124.67,9.05;7,75.38,298.19,96.03,9.05;7,30.36,311.61,26.93,8.96;7,72.50,311.51,206.99,9.05;7,75.38,324.83,204.06,9.05;7,75.38,338.15,203.99,9.05;7,75.38,351.47,184.36,9.05;7,37.08,364.77,20.23,8.96;7,72.38,364.67,207.01,9.05;7,75.38,377.99,130.90,9.05" xml:id="b12">
+	<analytic>
+		<title level="a" type="main" coord="7,162.01,138.68,117.72,9.05;7,75.38,152.00,204.05,9.05;7,75.38,165.32,96.96,9.05;7,131.50,205.16,147.99,9.05;7,75.38,218.48,204.16,9.05;7,75.38,231.68,36.21,9.05;7,118.64,258.32,160.73,9.05;7,75.38,271.67,72.10,9.05;7,239.64,311.51,39.85,9.05;7,75.38,324.83,204.06,9.05;7,75.38,338.15,30.33,9.05">Designing an Interpretability-Based Model to Explain the Artificial Intelligence Algorithms in Healthcare</title>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Ennab</surname></persName>
+			<idno type="ORCID">0000-0001-7117-6271</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamid</forename><surname>Mcheick</surname></persName>
+			<idno type="ORCID">0000-0002-2589-8609</idno>
+		</author>
+		<idno type="DOI">10.3390/diagnostics12071557</idno>
+		<idno>doi:10.1136/bmjhci-2021-100450 XIX</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,179.06,165.32,45.49,9.05;7,124.07,231.68,95.86,9.05;7,154.71,271.67,124.83,9.05;7,75.38,284.99,35.62,9.05;7,115.29,338.15,160.04,9.05;7,72.38,364.67,207.01,9.05;7,75.38,377.99,19.27,9.05">Diagnostics</title>
+		<title level="j" type="abbrev">Diagnostics</title>
+		<idno type="ISSNe">2075-4418</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">1557</biblScope>
+			<date type="published" when="1950">2022. 2021. 2019. 2021. 1950</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note>American Journal of Industrial Medicine</note>
+</biblStruct>
+
+<biblStruct coords="7,40.32,391.41,16.89,8.96;7,72.50,391.31,206.95,9.05;7,75.38,404.63,204.01,9.05;7,75.38,417.83,192.26,9.05;7,37.08,431.25,20.24,8.96;7,72.50,431.15,206.88,9.05;7,75.38,444.47,204.27,9.05;7,75.38,457.79,204.04,9.05;7,75.38,471.13,197.55,9.05;7,33.72,484.43,23.59,8.96;7,72.50,484.33,206.99,9.05;7,75.38,497.65,204.14,9.05;7,75.38,510.97,204.15,9.05;7,75.38,524.29,43.77,9.05;7,134.98,524.29,39.70,9.05;7,190.53,524.29,27.09,9.05;7,233.47,524.29,46.04,9.05;7,75.38,537.61,204.58,9.05;7,75.38,550.81,20.10,9.05;7,30.36,564.23,26.93,8.96;7,72.50,564.13,207.01,9.05;7,75.38,577.45,114.70,9.05;7,75.38,590.77,145.31,9.05" xml:id="b13">
+	<analytic>
+		<title level="a" type="main" coord="7,244.57,391.31,34.88,9.05;7,75.38,404.63,165.61,9.05;7,143.57,444.47,136.09,9.05;7,75.38,457.79,167.46,9.05;7,75.38,497.65,204.14,9.05;7,75.38,510.97,204.15,9.05;7,75.38,524.29,43.77,9.05;7,134.98,524.29,35.73,9.05;7,72.50,564.13,123.45,9.05">Machine Learning and the Profession of Medicine</title>
+		<author>
+			<persName><forename type="first">Alison</forename><forename type="middle">M</forename><surname>Darcy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">K</forename><surname>Louie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><forename type="middle">Weiss</forename><surname>Roberts</surname></persName>
+		</author>
+		<idno type="DOI">10.1001/jama.2015.18421</idno>
+		<idno>doi:10.4135/9781526421036879118</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,249.67,404.63,23.78,9.05;7,249.84,457.79,25.36,9.05;7,190.53,524.29,27.09,9.05;7,233.47,524.29,46.04,9.05;7,75.38,537.61,46.89,9.05;7,208.47,564.13,71.04,9.05;7,75.38,577.45,84.96,9.05">JAMA</title>
+		<title level="j" type="abbrev">JAMA</title>
+		<idno type="ISSN">0098-7484</idno>
+		<imprint>
+			<biblScope unit="volume">315</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">551</biblScope>
+			<date type="published" when="2016-02-09">2016. 2017. 2017. 2020</date>
+			<publisher>American Medical Association (AMA)</publisher>
+		</imprint>
+	</monogr>
+	<note>Nature Biomedical Engineering</note>
+</biblStruct>
+
+<biblStruct coords="7,29.76,604.07,27.43,8.96;7,75.02,603.97,204.37,9.05;7,75.38,617.29,204.18,9.05;7,75.38,630.61,204.08,9.05;7,75.38,643.93,203.98,9.05;7,75.38,657.28,84.80,9.05;7,75.38,670.48,119.77,9.05;7,33.12,683.90,24.09,8.96;7,72.50,683.80,207.00,9.05;7,75.38,697.12,204.22,9.05;7,75.38,710.44,204.10,9.05;7,75.38,723.76,204.36,9.05;7,75.38,736.95,89.96,9.05;7,29.76,750.37,27.44,8.96;7,72.50,750.27,207.22,9.05;7,75.38,763.59,204.25,9.05;7,75.38,776.91,204.10,9.05;7,355.03,72.18,204.45,9.05;7,355.03,85.52,158.12,9.05;7,306.17,98.94,30.79,8.96;7,354.67,98.84,204.51,9.05;7,355.03,112.04,45.64,9.05;7,416.05,112.04,18.19,9.05;7,449.50,112.04,42.94,9.05;7,507.68,112.04,20.07,9.05;7,543.03,112.04,16.04,9.05;7,355.03,125.36,73.14,9.05;7,355.03,138.68,178.36,9.05;7,355.03,152.00,171.03,9.05;7,302.81,165.42,34.13,8.96;7,352.15,165.32,207.03,9.05;7,355.03,178.52,204.18,9.05;7,355.03,191.84,204.13,9.05;7,355.03,205.16,159.36,9.05;7,355.03,218.48,144.89,9.05;7,309.41,231.78,27.43,8.96;7,352.15,231.68,207.18,9.05;7,355.03,245.00,204.11,9.05;7,355.03,258.32,204.01,9.05;7,355.03,271.67,204.15,9.05;7,355.03,284.99,150.09,9.05" xml:id="b14">
+	<analytic>
+		<title level="a" type="main" coord="7,123.62,617.29,155.94,9.05;7,75.38,630.61,204.08,9.05;7,75.38,643.93,83.69,9.05;7,152.89,697.12,126.71,9.05;7,75.38,710.44,168.02,9.05;7,159.07,763.59,120.57,9.05;7,75.38,776.91,204.10,9.05;7,355.03,72.18,80.75,9.05;7,369.53,178.52,189.68,9.05;7,355.03,191.84,104.90,9.05">Mining peripheral arterial disease cases from narrative clinical notes using natural language processing</title>
+		<author>
+			<persName><forename type="first">Naveed</forename><surname>Afzal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunghwan</forename><surname>Sohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Abram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">G</forename><surname>Scott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Chaudhry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongfang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iftikhar</forename><forename type="middle">J</forename><surname>Kullo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adelaide</forename><forename type="middle">M</forename><surname>Arruda-Olson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jvs.2016.11.031</idno>
+		<idno type="PMID">35273459</idno>
+		<idno type="PMCID">PMC8822225</idno>
+		<idno>doi:10.1101/19006254</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,166.00,643.93,109.22,9.05;7,252.32,710.44,27.16,9.05;7,75.38,723.76,109.37,9.05;7,443.61,72.18,40.10,9.05;7,416.05,112.04,18.19,9.05;7,449.50,112.04,38.17,9.05;7,466.29,191.84,92.87,9.05;7,355.03,205.16,79.64,9.05">Journal of Vascular Surgery</title>
+		<title level="j" type="abbrev">Journal of Vascular Surgery</title>
+		<idno type="ISSN">0741-5214</idno>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1753" to="1761" />
+			<date type="published" when="2016">2017. 2017. 2016. 2021 Dec 16. 2019. 2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>British Journal of Haematology. A hybrid machine learning framework to predict early risk of mortality in paralytic ileus patients using electronic health records</note>
+</biblStruct>
+
+<biblStruct coords="7,312.77,298.29,24.09,8.96" xml:id="b15">
+	<monogr>
+		<title/>
+		<author>
+			<persName coords=""><surname>Xxx</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,349.63,298.19,209.55,9.05;7,355.03,311.51,204.11,9.05;7,355.03,324.83,204.07,9.05;7,355.03,338.15,204.17,9.05;7,355.03,351.47,204.36,9.05;7,355.03,364.67,204.32,9.05;7,355.03,377.99,95.63,9.05;7,309.41,391.41,27.44,8.96;7,354.55,391.31,204.78,9.05;7,355.03,404.63,204.24,9.05;7,355.03,417.83,172.53,9.05;7,306.17,431.25,30.79,8.96;7,354.55,431.15,204.52,9.05;7,355.03,444.47,204.31,9.05;7,355.03,457.79,204.15,9.05;7,355.03,471.13,204.05,9.05;7,355.03,484.33,204.12,9.05;7,355.03,497.65,204.07,9.05;7,355.03,510.97,204.02,9.05;7,355.03,524.29,204.59,9.05;7,355.03,537.61,147.71,9.05;7,302.81,550.91,34.13,8.96;7,354.55,550.81,204.57,9.05;7,355.03,564.13,204.13,9.05;7,355.03,577.45,204.15,9.05;7,355.03,590.77,204.38,9.05;7,355.03,603.97,204.31,9.05;7,355.03,617.29,95.63,9.05" xml:id="b16">
+	<analytic>
+		<title level="a" type="main" coord="7,451.55,324.83,107.55,9.05;7,355.03,338.15,181.31,9.05;7,477.79,391.31,81.54,9.05;7,355.03,404.63,204.24,9.05;7,355.03,417.83,61.04,9.05;7,470.75,471.13,88.33,9.05;7,355.03,484.33,204.12,9.05;7,355.03,497.65,204.07,9.05;7,355.03,510.97,113.83,9.05;7,458.72,564.13,100.44,9.05;7,355.03,577.45,200.35,9.05">Applications of machine learning in drug discovery and development</title>
+		<author>
+			<persName><forename type="first">Jessica</forename><surname>Vamathevan</surname></persName>
+			<idno type="ORCID">0000-0003-2016-9754</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dominic</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Czodrowski</surname></persName>
+			<idno type="ORCID">0000-0002-7390-8795</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Dunham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edgardo</forename><surname>Ferran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anant</forename><surname>Madabhushi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parantu</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michaela</forename><surname>Spitzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanrong</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41573-019-0024-5</idno>
+		<idno type="PMID">30976107</idno>
+		<idno type="PMCID">PMC6552674</idno>
+		<idno>PMCID: PMC8477474</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,544.82,338.15,14.38,9.05;7,355.03,351.47,72.42,9.05;7,476.23,510.97,82.82,9.05;7,355.03,590.77,58.20,9.05">Nature Reviews Drug Discovery</title>
+		<title level="j" type="abbrev">Nat Rev Drug Discov</title>
+		<idno type="ISSN">1474-1776</idno>
+		<idno type="ISSNe">1474-1784</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="463" to="477" />
+			<date type="published" when="2017">2019 Jun. 2017. 2022 Jun. 2021 Sep 27</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>Genome Med</note>
+</biblStruct>
+
+<biblStruct coords="7,302.21,630.71,34.63,8.96;7,357.19,630.61,201.89,9.05;7,355.03,643.93,97.17,9.05;7,305.57,657.38,31.29,8.96;7,357.19,657.28,201.92,9.05;7,355.03,670.48,204.26,9.05;7,355.03,683.80,204.87,9.05;7,355.03,697.12,129.89,9.05;7,355.03,710.44,200.69,9.05" xml:id="b17">
+	<analytic>
+		<title level="a" type="main" coord="7,357.19,657.28,201.92,9.05;7,355.03,670.48,204.26,9.05;7,355.03,683.80,171.41,9.05">Application of a neural network whole transcriptome-based pan-cancer method for diagnosis of primary and metastatic cancers</title>
+		<author>
+			<persName coords=""><forename type="first">Xxxiv</forename><surname>Grewal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">K</forename><surname>Tessier-Cloutier</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Gakkhar</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Y</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename></persName>
+		</author>
+		<idno type="DOI">10.1001/jamanetworkopen.2019.25</idno>
+		<ptr target="https://doi.org/10.1001/jamanetworkopen.2019.25" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="7,532.56,683.80,27.34,9.05;7,355.03,697.12,43.37,9.05">JAMA Netw Open</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2019">2019. 192597</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="7,363.41,723.76,4.19,9.05;7,302.21,737.05,34.63,8.96;7,354.67,736.95,204.56,9.05;7,355.03,750.27,204.30,9.05;7,355.03,763.59,204.28,9.05;7,355.03,776.91,204.09,9.05;8,330.79,795.99,228.32,10.01;8,75.38,72.18,204.02,9.05;8,75.38,85.52,88.09,9.05;8,75.38,98.84,124.23,9.05;8,19.20,112.14,37.98,8.96;8,74.90,112.04,204.61,9.05;8,75.38,125.36,204.11,9.05;8,75.38,138.68,204.10,9.05;8,75.38,152.00,35.97,9.05" xml:id="b18">
+	<analytic>
+		<title level="a" type="main" coord="7,355.03,750.27,204.30,9.05;7,355.03,763.59,177.21,9.05;8,75.38,125.36,204.11,9.05;8,75.38,138.68,65.64,9.05">Structural MRI classification for alzheimer&apos;s disease detection using Deep Belief Network</title>
+		<author>
+			<persName coords=""><surname>Xxxvi. Faturrahman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Moh</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Wasito</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">N</forename><surname>Hanifah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Mufidah</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Xxxvii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">W</forename><surname>Jansson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">O</forename><surname>Hufthammer</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Krohn</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icts.2017.8265643</idno>
+	</analytic>
+	<monogr>
+		<title level="m" coord="7,355.03,776.91,204.09,9.05;8,330.79,795.99,228.32,10.01;8,75.38,72.18,204.02,9.05;8,75.38,85.52,58.23,9.05">11th International Conference on Information Corresponding Author: Danastri Cantya Nirmala &amp;amp; Communication Technology and System (ICTS)</title>
+		<imprint>
+			<date type="published" when="2017">2017. 2017. 2018</date>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page" from="465" to="474" />
+		</imprint>
+	</monogr>
+	<note>Diabetic retinopathy in type 1 diabetes patients in Western Norway</note>
+</biblStruct>
+
+<biblStruct coords="8,15.96,165.42,41.32,8.96;8,75.02,165.32,204.46,9.05;8,75.38,178.52,204.09,9.05;8,75.38,191.84,204.09,9.05;8,75.38,205.16,94.64,9.05;8,75.38,218.48,137.32,9.05;8,22.56,231.78,34.63,8.96;8,75.02,231.68,204.67,9.05;8,75.38,245.00,204.02,9.05;8,75.38,258.32,204.11,9.05;8,75.38,271.67,204.08,9.05;8,75.38,284.99,204.01,9.05;8,75.38,298.19,184.69,9.05" xml:id="b19">
+	<analytic>
+		<title level="a" type="main" coord="8,179.56,178.52,99.92,9.05;8,75.38,191.84,110.67,9.05;8,91.69,258.32,187.80,9.05;8,75.38,271.67,204.08,9.05;8,75.38,284.99,31.77,9.05">Predicting colorectal surgical complications using heterogeneous clinical data and kernel methods</title>
+		<author>
+			<persName coords=""><forename type="first">Xxxviii</forename><surname>Shademan</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Decker</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">S</forename><surname>Opfermann</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">D</forename><surname>Leonard</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Krieger</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">Pc ;</forename><surname>Soguero-Ruiz</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">C</forename><surname>Hindberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><surname>Mora-Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Rojo-Álvarez</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><forename type="middle">L</forename><surname>Skrøvseth</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><forename type="middle">O</forename><surname>Godtliebsen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">F</forename></persName>
+		</author>
+		<idno type="DOI">10.1126/scitranslmed.aad9398XXXIX</idno>
+		<idno>doi:10.1016/j.jbi.2016.03.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,193.24,191.84,86.23,9.05;8,75.38,205.16,35.67,9.05;8,120.58,284.99,154.77,9.05">Journal of Biomedical Informatics</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">337</biblScope>
+			<biblScope unit="page" from="87" to="96" />
+			<date type="published" when="2016">2016. 2016</date>
+		</imprint>
+	</monogr>
+	<note>Science Translational Medicine</note>
+</biblStruct>
+
+<biblStruct coords="8,41.52,311.61,15.69,8.96;8,77.42,311.51,201.90,9.05;8,75.38,324.83,204.02,9.05;8,75.38,338.15,204.08,9.05;8,75.38,351.47,33.69,9.05;8,137.40,351.47,66.27,9.05;8,232.75,351.47,46.93,9.05;8,75.38,364.67,151.41,9.05;8,38.16,378.09,19.03,8.96;8,77.54,377.99,202.13,9.05;8,75.38,391.31,204.30,9.05;8,75.38,404.63,204.01,9.05;8,75.38,417.83,204.02,9.05;8,75.38,431.15,68.04,9.05;8,75.38,444.47,152.01,9.05;8,34.80,457.89,22.38,8.96;8,74.90,457.79,204.56,9.05;8,75.38,471.12,204.23,9.06;8,75.38,484.32,145.56,9.06" xml:id="b20">
+	<analytic>
+		<title level="a" type="main" coord="8,162.43,324.83,116.97,9.05;8,75.38,338.15,199.69,9.05;8,117.93,391.31,161.75,9.05;8,75.38,404.63,204.01,9.05;8,75.38,417.83,43.92,9.05;8,264.00,457.79,15.46,9.05;8,75.38,471.13,168.08,9.05">Artificial intelligence and telemedicine in anesthesia: potential and problems</title>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Bellini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marina</forename><surname>Valente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><forename type="middle">V</forename><surname>Gaddi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Pelosi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Bignami</surname></persName>
+		</author>
+		<idno type="DOI">10.23736/s0375-9393.21.16241-8</idno>
+		<idno>doi:10.1016/j.preteyeres.2020.100900</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,75.38,351.47,33.69,9.05;8,137.40,351.47,62.13,9.05;8,126.09,417.83,148.99,9.05;8,252.29,471.12,27.32,9.06;8,75.38,484.32,81.86,9.06">Minerva Anestesiologica</title>
+		<title level="j" type="abbrev">Minerva Anestesiol</title>
+		<idno type="ISSN">0375-9393</idno>
+		<idno type="ISSNe">1827-1596</idno>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="389" to="399" />
+			<date type="published" when="2019">2022. 2021. 2019</date>
+			<publisher>Edizioni Minerva Medica</publisher>
+		</imprint>
+	</monogr>
+	<note>Nature machine intelligence</note>
+</biblStruct>
+
+<biblStruct coords="8,31.44,497.75,25.73,8.96;8,75.02,497.65,204.48,9.05;8,75.38,510.96,204.37,9.06;8,75.38,524.28,204.10,9.06;8,75.38,537.61,98.64,9.05;8,30.96,550.91,26.22,8.96;8,77.54,550.81,201.99,9.05;8,75.38,564.12,204.36,9.06;8,75.38,577.44,62.25,9.06" xml:id="b21">
+	<analytic>
+		<title level="a" type="main" coord="8,187.56,497.65,91.94,9.05;8,75.38,510.97,135.78,9.05;8,179.41,550.81,100.12,9.05;8,75.38,564.13,79.85,9.05">Ethical challenges of integrating ai into healthcare</title>
+		<author>
+			<persName coords=""><surname>Xliii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><forename type="middle">S</forename><surname>Lehmann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="8,243.77,510.96,35.99,9.06;8,75.38,524.28,97.44,9.06">Artificial Intelligence in Medicine</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2019">2021. 2019</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="501" to="507" />
+		</imprint>
+	</monogr>
+	<note>XLIV. Mittelstadt, B</note>
+</biblStruct>
+
+<biblStruct coords="8,34.20,590.87,22.88,8.96;8,77.54,590.77,202.06,9.05;8,75.38,603.97,204.18,9.05;8,75.38,617.29,204.09,9.05;8,75.38,630.60,204.29,9.06;8,75.38,643.92,133.34,9.06;8,30.96,657.38,26.23,8.96;8,74.90,657.28,204.60,9.05;8,75.38,670.48,204.32,9.05;8,75.38,683.79,204.21,9.06;8,75.38,697.11,204.09,9.06;8,75.38,710.43,204.18,9.06;8,75.38,723.75,117.71,9.06;8,27.60,737.05,29.58,8.96;8,75.02,736.95,204.40,9.05;8,75.38,750.27,204.10,9.05;8,75.38,763.58,204.30,9.06;8,75.38,776.90,204.11,9.06;8,355.03,72.17,204.47,9.06;8,355.03,85.52,25.85,9.05" xml:id="b22">
+	<analytic>
+		<title level="a" type="main" coord="8,75.38,603.97,204.18,9.05;8,75.38,617.29,204.09,9.05;8,75.38,630.61,150.67,9.05;8,215.78,670.48,63.93,9.05;8,75.38,683.80,116.01,9.05;8,198.09,750.27,81.39,9.05;8,75.38,763.59,89.73,9.05">Transparency of AI in healthcare as a multilayered system of accountabilities: between legal requirements and technical limitations</title>
+		<author>
+			<persName coords=""><surname>Xlv</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Kiseleva</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><surname>Kotzinos</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>De Hert</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><surname>Xlvi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Bagave</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Westberg</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Dobbe</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">M</forename><surname>Janssen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">Y</forename><surname>Ding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="8,214.97,683.79,64.62,9.06;8,75.38,697.11,204.09,9.06;8,75.38,710.43,204.18,9.06;8,183.50,763.58,96.18,9.06;8,75.38,776.90,204.11,9.06;8,355.03,72.17,154.84,9.06">2022 IEEE 4th International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications</title>
+		<editor>
+			<persName><forename type="middle">Xlvii</forename><surname>Ieee</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Ahmad</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Patel</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Eckert</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><surname>Kumar</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Teredesai</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>TPS-ISA</publisher>
+			<date type="published" when="2020-08">2022. 2022. December. 2020. August</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="3529" to="3530" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery &amp; data mining</note>
+</biblStruct>
+
+<biblStruct coords="8,303.89,98.94,32.93,8.96;8,354.55,98.84,204.48,9.05;8,355.03,112.03,204.25,9.06;8,355.03,125.35,204.19,9.06;8,355.03,138.67,204.12,9.06;8,355.03,151.99,204.47,9.06;8,355.03,165.32,153.85,9.05;8,310.61,178.62,26.22,8.96" xml:id="b23">
+	<analytic>
+		<title level="a" type="main" coord="8,439.84,98.84,119.19,9.05;8,355.03,112.04,76.51,9.05">AI in healthcare: Ethical and privacy challenges</title>
+		<author>
+			<persName coords=""><surname>Xlviii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">I</forename><surname>Bartoletti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m" coord="8,456.22,112.03,103.06,9.06;8,355.03,125.35,204.19,9.06;8,355.03,138.67,102.73,9.06">Artificial Intelligence in Medicine: 17th Conference on Artificial Intelligence in Medicine</title>
+		<meeting><address><addrLine>AIME; Poznan, Poland</addrLine></address></meeting>
+		<imprint>
+			<publisher>XLIX</publisher>
+			<date type="published" when="2019-06-26">2019. 2019. June 26-29, 2019</date>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="7" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,357.19,178.52,201.89,9.05;8,355.03,191.84,204.12,9.05;8,355.03,205.15,204.32,9.06;8,355.03,218.47,132.02,9.06" xml:id="b24">
+	<analytic>
+		<title level="a" type="main" coord="8,355.03,191.84,204.12,9.05;8,355.03,205.16,121.27,9.05">Artificial Intelligence and Human Trust in Healthcare: Focus on Clinicians</title>
+		<author>
+			<persName><forename type="first">Onur</forename><surname>Asan</surname></persName>
+			<idno type="ORCID">0000-0002-9239-3723</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alparslan</forename><forename type="middle">Emrah</forename><surname>Bayrak</surname></persName>
+			<idno type="ORCID">0000-0002-8524-2265</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Avishek</forename><surname>Choudhury</surname></persName>
+			<idno type="ORCID">0000-0002-5342-0709</idno>
+		</author>
+		<idno type="DOI">10.2196/15154</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,483.10,205.15,76.25,9.06;8,355.03,218.47,66.81,9.06">Journal of Medical Internet Research</title>
+		<title level="j" type="abbrev">J Med Internet Res</title>
+		<idno type="ISSNe">1438-8871</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e15154</biblScope>
+			<date type="published" when="2020-06-19">2020</date>
+			<publisher>JMIR Publications Inc.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,328.39,231.78,8.49,8.96;8,354.55,231.68,204.56,9.05;8,355.03,245.00,203.93,9.05;8,355.03,258.32,204.30,9.05;8,355.03,271.67,204.12,9.05;8,355.03,284.99,17.57,9.05" xml:id="b25">
+	<analytic>
+		<title level="a" type="main" coord="8,391.09,258.32,164.48,9.05">Health care and artificial intelligence</title>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">W</forename><surname>Landman</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Levine</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">M</forename><surname>Mcafee</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Nichols</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">B</forename><surname>Pawlson</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">G</forename><forename type="middle">T</forename><surname>Blumenthal</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,355.03,271.67,178.08,9.05">National Academy of Medicine Perspectives</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,325.03,298.29,11.83,8.96;8,354.67,298.19,204.47,9.05;8,355.03,311.51,204.05,9.05;8,355.03,324.83,204.07,9.05;8,355.03,338.14,123.47,9.06" xml:id="b26">
+	<analytic>
+		<title level="a" type="main" coord="8,429.89,311.51,129.19,9.05;8,355.03,324.83,199.74,9.05">The practical implementation of artificial intelligence technologies in medicine</title>
+		<author>
+			<persName><forename type="first">Jianxing</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sally</forename><forename type="middle">L</forename><surname>Baxter</surname></persName>
+			<idno type="ORCID">0000-0002-5271-7690</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiming</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingtao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-018-0307-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,355.03,338.14,64.20,9.06">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="30" to="36" />
+			<date type="published" when="2019-01">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,321.67,351.57,15.18,8.96;8,354.55,351.47,204.68,9.05;8,355.03,364.67,204.08,9.05;8,355.03,377.99,204.11,9.05;8,355.03,391.30,204.36,9.06;8,355.03,404.62,136.16,9.06" xml:id="b27">
+	<analytic>
+		<title level="a" type="main" coord="8,440.60,364.67,118.51,9.05;8,355.03,377.99,204.11,9.05;8,355.03,391.31,82.18,9.05">Reporting and implementing interventions involving machine learning and artificial intelligence</title>
+		<author>
+			<persName coords=""><surname>Lii</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename><forename type="middle">W</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Auerbach</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">P</forename><surname>Schulam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Saria</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,444.22,391.30,110.88,9.06">Annals of internal medicine</title>
+		<imprint>
+			<biblScope unit="volume">172</biblScope>
+			<biblScope unit="issue">11_Supplement</biblScope>
+			<biblScope unit="page" from="137" to="S144" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="8,318.43,417.93,18.53,8.96;8,354.67,417.83,204.54,9.05;8,355.03,431.15,204.24,9.05;8,355.03,444.46,204.36,9.06;8,355.03,457.78,166.13,9.06;8,317.83,471.23,19.02,8.96;8,354.67,471.13,204.48,9.05;8,355.03,484.33,204.08,9.05;8,355.03,497.65,11.58,9.05;8,385.72,497.65,45.97,9.05;8,449.85,497.65,12.92,9.05;8,481.98,497.65,38.67,9.05;8,539.80,497.65,19.48,9.05;8,355.03,510.97,176.15,9.05;8,355.03,524.29,92.59,9.05;8,321.19,537.71,15.68,8.96;8,354.67,537.61,204.48,9.05;8,355.03,550.81,204.06,9.05;8,355.03,564.13,204.08,9.05;8,355.03,577.45,204.32,9.05;8,355.03,590.77,172.92,9.05" xml:id="b28">
+	<analytic>
+		<title level="a" type="main" coord="8,529.51,417.83,29.70,9.05;8,355.03,431.15,204.24,9.05;8,355.03,444.47,148.98,9.05;8,317.83,471.23,14.27,8.96;8,354.67,471.13,204.48,9.05;8,355.03,484.33,97.13,9.05;8,490.48,484.33,68.62,9.05;8,355.03,497.65,11.58,9.05;8,385.72,497.65,45.97,9.05;8,449.85,497.65,8.61,9.05;8,355.03,564.13,204.08,9.05;8,355.03,577.45,24.75,9.05">Role of artificial intelligence applications in real-life clinical practice: systematic review</title>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Liii. Yin</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">Y</forename><surname>Ngiam</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">H</forename><surname>Teo</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">L</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">G</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">H</forename><forename type="middle">L</forename><surname>Kocaballi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">A</forename><forename type="middle">B</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">J</forename><surname>Bashir</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><surname>Surian</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">D</forename></persName>
+		</author>
+		<ptr target="https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelinesLV" />
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,514.42,444.46,44.97,9.06;8,355.03,457.78,101.03,9.06;8,394.71,577.45,164.64,9.05;8,355.03,590.77,93.44,9.05">Journal of the American Medical Informatics Association</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1248" to="1258" />
+			<date type="published" when="2018">2021. 25759. 2019. 2018</date>
+		</imprint>
+	</monogr>
+	<note>Journal of medical Internet research</note>
+</biblStruct>
+
+<biblStruct coords="8,317.83,604.07,19.03,8.96;8,354.67,603.97,204.42,9.05;8,355.03,617.29,204.35,9.05;8,355.03,630.61,157.92,9.05" xml:id="b29">
+	<analytic>
+		<title level="a" type="main" coord="8,355.03,617.29,204.35,9.05;8,355.03,630.61,51.63,9.05">Harnessing artificial intelligence for patientcentered care</title>
+		<author>
+			<persName coords=""><surname>Lvi</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">S</forename><surname>Nundy</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">K</forename><forename type="middle">K</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName coords=""><forename type="first">R</forename><forename type="middle">J</forename><surname>Baron</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="8,413.04,630.61,23.59,9.05">JAMA</title>
+		<imprint>
+			<biblScope unit="volume">323</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="707" to="708" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

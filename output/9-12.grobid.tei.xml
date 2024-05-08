@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main" coord="1,173.65,88.20,265.04,19.40;1,173.65,110.20,202.22,19.40;1,173.65,132.20,139.46,19.40">Challenges and Opportunity of Artificial Intelligence in Banking Sectors</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName coords="1,173.65,172.67,42.47,10.67"><forename type="first">Ms</forename><surname>Mani</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Business Administration Jayaraj Annapackiam College for Women (Autonomous) Periyakulam</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName coords="1,218.87,172.67,82.37,10.67"><roleName>MBA</roleName><forename type="first">Fatima</forename><surname>Raju</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Business Administration Jayaraj Annapackiam College for Women (Autonomous) Periyakulam</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main" coord="1,173.65,88.20,265.04,19.40;1,173.65,110.20,202.22,19.40;1,173.65,132.20,139.46,19.40">Challenges and Opportunity of Artificial Intelligence in Banking Sectors</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">2320-4168</idno>
+					</monogr>
+					<idno type="MD5">525FF705A1722228A67D25FEC77BC972</idno>
+					<idno type="DOI">10.5281/zenodo.2529638</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-05-06T16:51+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Artificial intelligence</term>
+					<term>digitalization</term>
+					<term>technology</term>
+					<term>blockchain</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Artificial Intelligence is making a machine behave in a way that would be intelligent if a human were so behaving. Many industrial sectors have adopted artificial intelligence for the development and customer satisfaction. Banking sectors were lagging back in adopting this intelligence as this sector requires dependence of human workforce to think and decide. Banks are now implementing Artificial intelligence for managing risk, financial analytics and portfolio/investment management. It helps to make decision based on the various data the banks have supplied to the Artificial intelligence device. This is useful for the banks internally and for the clients externally. Most of the work will become digitalized in future. It will decrease the work load and it will save various processing cost. There is lot of advantages with the adaption of Artificial intelligence. At the same time, Technology may replace human intelligence where machine may overtake human being. They will also face some problem regarding unemployment; responsibility of the transaction, decision taken by the artificial intelligence won't be fully trusted, and many more. This paper discusses about the various opportunities and challenges a banking sectors may face due to artificial intelligence.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="516.24" lry="728.64"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="516.24" lry="728.64"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="516.24" lry="728.64"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="516.24" lry="728.64"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>In the early decade, banks were functioning with the traditional method following various process and procedures for banking transaction and making decision regarding investment. Later with the development of technology and adaptation of automation, banking sectors came out with ATM's, online banking, core banking, eKYC and many more for the convenience of the customers. With the help of these technology banks are now able to reach out with lots of customers and provide better service to them. Banks generate lots of data of the customer, it handle lots of transaction and offer various service to them. To manage all this work in an effective way and at right time, banks have adopted using Artificial intelligence. It helps them to offer more personalized and effective customer service.</p><p>Artificial intelligence is a form of computer science used to create intelligent machine that can recognize speech, object and can learn plan and solve problem like human. The various AI applied technology are machine learning, deep learning, predictive/ prescriptive analytics, virtual agents and natural language understanding technologies (Siri, Alexa, Google home, Amelia, etc). Banks are implementing this technology in front end and back end process for offering solution for both financial and business management operations. This helps to save cost by eliminating a lot of back office and operations staff who manually reconcile transaction and conduct investigation. Some research shows that the adaptation of AI has the potential to add nearly $ 1 trillion to the Indian economy in 2035.</p><p>Many banks have started implementing some AI technology like Bank of America launched ERICA to help customer manage their saving, City banks acquired FEEDZAI, a data science company that works in real time to identify and eliminate frauds, HDFC bank has developed an AI based chatbot EVA (electronic Virtual Assistant). It gains knowledge from various sources and provide answers within a second. It was helpful for the customer to clear their queries.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Application of AI</head><p>The various area were AI are applied in banks are</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Digital Wallets</head><p>Digital wallets are the future payment technology which helps the customer to make the transaction through Smartphone and not be dependent on physical cash. It will expand the transaction of money at higher level in the future period. Eg: Paytm, BHIM App, etc</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chatbot</head><p>It is an AI software that can understand human conversation (voice/text) and respond accordingly. This help to sort out customers' queries in large number. HDFC launched its first Chatbot EVA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Blockchain</head><p>It is a decentralized financial management from a centre authority to a widespread network of computer. Financial transactions are broken down into encrypted packet or blocks which are then added to the chain of computer code and encrypted for enhancing cyber security. It is to inculcate the advantage of real time payment process, hastening up the procedure of payment thereby increasing support and satisfaction. It could decrease billions of cash by reducing processing cost.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fraud Detection and Security</head><p>Securing the money of customers is one of the primary functions of bank. AI will provide security to the customer by using Image/face recognition in ATM's to detect and prevent fraud crimes. Anomaly detection will increase the accuracy of credit card fraud and anti money laundering.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Digitalization and automation in back office</head><p>Digitalization is simplified banking experience and enhances productivity. All the procedure and documentation will be digitalized which in turn will cut down back office processing time and cost.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Challenges</head><p>There is lot of benefits using AI. Apart from this there are some challenges which people might face by implanting AI in banking sectors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Unemployment</head><p>With the development of AI many jobs will be automated which will lead to unemployment. Machine will take over the jobs of human which will shrink the opportunity for the job seekers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Low Digital Literacy in Rural Area</head><p>It has been stated that there will be growth in the usage of digitilization in the upcoming years. So the people in rural area will not have good knowledge of using and dealing bank transaction with digital software. They might face problem handling their personal banking works with automated device.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Quality Data</head><p>Traditional banking methods are performed by some clear rules defined in advance. But AI application makes decision based on the data supplied to them. This means the quality of decision made is based on the quality and quantity of data used. The outcome (decision) will be dependent on the input (data). So the data should be clear and sufficient to make decision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Scarcity of Skilled Workforce</head><p>To work with AI banks need well trained employee to handle AI application. Customers can gain the benefits of AI when the employee makes use of the application in an effective way.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Voice recognition</head><p>India is having diversity of language so the AI application has to be set according to their regional language which is a biggest task. When people starts conversing with automated device the usage of online banking and employee work will decrease.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Technology has made our work easier; from home to office everything has become automated. People are now more dependent on it. Like every sector using latest technology, banking sector has also used latest technology of Artificial intelligence to make their work digitalized and reduce their time and cost. This method also helps to serve their customer more effectively. There are lots of benefits with regards to Artificial intelligence. Despite this benefits, there are lots of challenges if AI is implemented in banking sectors. The bank have to make their employee skilled in using AI application. They have to give training for their employee to make use of the benefits properly. The banks also have to give awareness program to the rural area as the people in rural area won't be able to use the digitalized and automate device for their banking transaction. AI should be implemented in limited device and area. As automated device can take decision but it cannot take the responsibilities for the decision which in turn may affect the customers' decision on investment. At the same time it may also affect the employability of the workers. If all the works have become automated the jobs of the workers will be affected which is not good for the development of our country. The AI application should be implemented in a limited source so that it may be beneficial for the customers and not affect anyone.</p></div>		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="3,42.52,564.76,431.20,10.67;3,69.52,577.76,124.05,10.67" xml:id="b0">
+	<analytic>
+		<title level="a" type="main" coord="3,131.60,564.76,272.50,10.67">ICT innovation in Indian Banking sector: trends and challenges</title>
+		<author>
+			<persName coords=""><forename type="first">Madhura</forename><surname>Ayachit</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j" coord="3,415.30,564.76,58.42,10.67;3,69.52,577.76,118.70,10.67">IOSR journal of business and mangement</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="3,42.52,590.76,431.20,10.67;3,69.52,603.76,372.85,10.67;3,42.52,616.76,431.20,10.67;3,69.52,629.76,159.17,10.67;3,42.52,642.76,331.46,10.67;3,42.52,655.76,315.38,10.67;4,42.52,57.93,383.51,10.67;4,42.52,70.93,382.41,10.67;4,42.52,83.93,431.14,10.67;4,69.52,96.93,87.06,10.67;4,42.52,109.93,431.20,10.67;4,69.52,122.93,209.04,10.67;4,42.52,135.93,366.33,10.67;4,42.52,148.93,431.20,10.67;4,69.52,161.93,124.03,10.67" xml:id="b1">
+	<analytic>
+		<title level="a" type="main" coord="3,146.02,590.76,278.67,10.67">The use of AI based technological application by Indian banks</title>
+		<author>
+			<persName coords=""><forename type="first">Munnish</forename><surname>Sabharwal</surname></persName>
+		</author>
+		<ptr target="https://www2.deloitte.com/content/dam/Deloitte/in/Documents/financial-services/in-fs-de-loitte-banking-colloquium-thoughtpaper-cii.pdfhttps://thefinancialbrand.com/72653/artificial-intelligence-trends-banking-industry/https://medium.com/h-farm-industry/how-artificial-intelligence-will-impact-banking-and-finan-cial-services-b2156bc79816" />
+	</analytic>
+	<monogr>
+		<title level="m" coord="3,437.67,590.76,36.05,10.67;3,69.52,603.76,261.83,10.67;3,307.47,616.76,166.25,10.67;3,69.52,629.76,135.05,10.67">International journal of artificial intelligence and agent technology</title>
+		<imprint>
+			<date type="published" when="2014">2014. 0Nd6Xkv0nINDG4wQ2JOvK/</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+	<note>Artificial-Intelligence-in-Indian-banking-Challenges-and-op</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
