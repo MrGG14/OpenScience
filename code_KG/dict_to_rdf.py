@@ -13,43 +13,56 @@ with open('./papers_metadata.pickle', 'rb') as f:
     papers = pickle.load(f)
 
 
-# Crear un grafo RDF. LO HACE AUTOMATICAMENTE Y HAY QUE REFINARLO. NO ESTA BIEN AUN
+# Definir namespaces
+SCHEMA = Namespace("http://schema.org/")
+EXAMPLE = Namespace("http://example.org/")
+
+# Crear grafo RDF
 g = Graph()
 
-# Definir un namespace para los términos específicos del diccionario
-vocab = Namespace("http://example.org/vocab/")
+# Iterar sobre el diccionario
+for paper_title, paper_info in papers.items():
+    # Crear URI para el paper
+    paper_uri = EXAMPLE[paper_title]
 
-# Iterar sobre las claves del diccionario y agregar triples RDF al grafo
-for key, value in papers.items():
-    # Agregar el título como el sujeto principal
-    subject = URIRef(vocab[key.replace(" ", "_")])
-    g.add((subject, RDF.type, FOAF.Document))
-    g.add((subject, vocab.title, Literal(key)))
-    
-    # Agregar el abstract como objeto
-    g.add((subject, vocab.abstract, Literal(value['abstract'])))
-    
-    # Agregar los autores como objetos vinculados
-    for author in value['written_by']:
-        author_uri = URIRef(vocab[author.replace(" ", "_")])
-        g.add((subject, vocab.author, author_uri))
-        g.add((author_uri, RDF.type, FOAF.Person))
-        g.add((author_uri, FOAF.name, Literal(author)))
-        
-    # Agregar las organizaciones como objetos vinculados
-    for org in value['acknowledgeOrg']:
-        org_uri = URIRef(vocab[org.replace(" ", "_")])
-        g.add((subject, vocab.organization, org_uri))
-        g.add((org_uri, RDF.type, FOAF.Organization))
-        g.add((org_uri, FOAF.name, Literal(org)))
-        
-    # Agregar las probabilidades de los temas como objetos vinculados
-    for topic, prob in value['topics_prob'].items():
-        topic_uri = URIRef(vocab[topic.replace(" ", "_")])
-        g.add((subject, vocab.topic, topic_uri))
-        g.add((topic_uri, RDF.type, vocab.Topic))
-        g.add((topic_uri, RDFS.label, Literal(topic)))
-        g.add((topic_uri, vocab.probability, Literal(prob)))
+    # Agregar triples para el paper
+    g.add((paper_uri, RDF.type, SCHEMA.Paper))
+    g.add((paper_uri, SCHEMA.Title, Literal(paper_title)))
+    g.add((paper_uri, SCHEMA.abstract, Literal(paper_info['abstract'])))
+    g.add((paper_uri, SCHEMA["ID"], Literal(paper_info['id'])))
+    if paper_info.get('published_date'):
+        g.add((paper_uri, SCHEMA["Publication_Date"], Literal(paper_info['published_date'])))
+    # Agregar relaciones para los autores
+    for author_name in paper_info['written_by']:
+        author_uri = EXAMPLE[author_name]
+        g.add((paper_uri, SCHEMA.author, author_uri))
+        g.add((author_uri, RDF.type, SCHEMA.Person))
+        g.add((author_uri, SCHEMA.name, Literal(author_name)))
+
+    # Agregar relaciones para las organizaciones
+    for org_name in paper_info['acknowledgeOrg']:
+        org_uri = EXAMPLE[org_name]
+        g.add((paper_uri, SCHEMA.acknowledges, org_uri))
+        g.add((org_uri, RDF.type, SCHEMA.Organization))
+        g.add((org_uri, SCHEMA.name, Literal(org_name)))
+
+    # Agregar relaciones para las probabilidades de temas
+    for topic_name, probability_percentage in paper_info['topics_prob'].items():
+        topic_uri = EXAMPLE[topic_name]
+        g.add((paper_uri, SCHEMA.has, topic_uri))
+        g.add((topic_uri, RDF.type, SCHEMA.Topic))
+        g.add((topic_uri, SCHEMA.name, Literal(topic_name)))
+        g.add((topic_uri, SCHEMA.probability, Literal(probability_percentage)))
+
+    # Agregar relaciones de similitud con otros papers
+    try:
+        for similar_paper_title, similarity_percentage in paper_info['has_Similarity'].items():
+            similar_paper_uri = EXAMPLE[similar_paper_title]
+            g.add((paper_uri, SCHEMA.has, similar_paper_uri))
+            g.add((similar_paper_uri, RDF.type, SCHEMA.Paper))
+            g.add((similar_paper_uri, SCHEMA.similarity, Literal(similarity_percentage)))
+    except:
+        print(f'El paper  {paper_title} no tiene ningun otro paper que haya superado el umbral de similitud.')
 
 # Serializar y guardar el grafo RDF
 g.serialize("knowledge_graph.rdf", format="xml")
