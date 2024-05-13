@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://schema.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/cloud computing model smbs significant">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>cloud computing model smbs significant</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9732263018798548</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05899560923412221</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.04084557922835091</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9735373743482115</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05783175418989497</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9260690480893707</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.024499935736783662</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.023666005930298734</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001923396098709174</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.017471574392090815</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001960866592231085</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.014969980548750036</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02035430318819348</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.857177742714678</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.04515860092134518</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9624419965572738</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9273838626085419</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8203223099452152</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.018832832261779748</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/269 An Insight into Cloud Computing Paradigm and Services">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.67410666</ns1:similarity>
+    <ns1:similarity>0.75966376</ns1:similarity>
+    <ns1:similarity>0.7465469</ns1:similarity>
+    <ns1:similarity>0.67236996</ns1:similarity>
+    <ns1:Title>269 An Insight into Cloud Computing Paradigm and Services</ns1:Title>
+    <ns1:abstract>Cloud computing is a computing model which provides the computing services over the internet on pay-as-you-go basis. You can take the services on rent instead of building your own ITwhich results in cost saving. In this paper, we have discussed the differences between traditional IT infrastructure and cloud computing. We have also discussed the benefits of cloud, risks associated with cloud computing and the cloud models.</ns1:abstract>
+    <ns1:ID>D85233C8C2F5CE6B1565C1D652DE33CA</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Heena Girdher"/>
+    <ns1:author rdf:resource="http://example.org/Jagjit Kaur"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Jyoti Nivas College Autonomous"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/11621ijccsa02"/>
+    <ns1:has rdf:resource="http://example.org/6114nsa03"/>
+    <ns1:has rdf:resource="http://example.org/IJISRT23AUG773"/>
+    <ns1:has rdf:resource="http://example.org/Paper11879"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1802.05799">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>1802.05799</ns1:Title>
+    <ns1:abstract>Training modern deep learning models requires large amounts of computation, often provided by GPUs. Scaling computation from one GPU to many can enable much faster training and research progress but entails two complications. First, the training library must support inter-GPU communication. Depending on the particular methods employed, this communication may entail anywhere from negligible to significant overhead. Second, the user must modify his or her training code to take advantage of inter-GPU communication. Depending on the training library's API, the modification required may be either significant or minimal.</ns1:abstract>
+    <ns1:ID>3BA7C99FDF38C3D1737A400F5911AD93</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Alexander Sergeev"/>
+    <ns1:author rdf:resource="http://example.org/Mike Balso"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Uber Technologies, Inc"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/2007.03051"/>
+    <ns1:has rdf:resource="http://example.org/hir-22-351"/>
+    <ns1:similarity>0.6693547</ns1:similarity>
+    <ns1:similarity>0.62810826</ns1:similarity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/computing cloud big data processing">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>computing cloud big data processing</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011766584451895908</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012200403948801465</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949285118919356</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905580000602385</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011111213036089059</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028577675365451683</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010003544204172312</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010006024260210593</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019230921933170281</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011363863063623882</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019607926228339314</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905265310769686</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.957071730224857</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017242968237065114</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008196873771049515</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143973007354673</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011236327591524124</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009804492987483425</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.019103182445820297</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/computer deep learning knowledge learn">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>computer deep learning knowledge learn</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011765372476227212</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012195407373191613</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949699501212989</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905340044746592</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011113449409101614</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002857195100866009</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000155498840059</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000210145211475</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019231279383665554</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001136366377630195</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9823525269001965</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905021661834283</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259297584574487</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017241380751585435</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008196784607347743</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143067501246292</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011236453558795797</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009804892432951086</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012658585162933895</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/INRIA">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>INRIA</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Jagjit Kaur">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Jagjit Kaur</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/CBIR USING FEATURES DERIVED BY DEEP LEARNING">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>CBIR USING FEATURES DERIVED BY DEEP LEARNING</ns1:Title>
+    <ns1:abstract>In a Content Based Image Retrieval (CBIR) System, the task is to retrieve similar images from a large database given a query image. The usual procedure is to extract some useful features from the query image, and retrieve images which have similar set of features. For this purpose, a suitable similarity measure is chosen, and images with high similarity scores are retrieved. Naturally the choice of these features play a very important role in the success of this system, and high level features are required to reduce the "semantic gap". In this paper, we propose to use features derived from pre-trained network models from a deeplearning convolution network trained for a large image classification problem. This approach appears to produce vastly superior results for a variety of databases, and it outperforms many contemporary CBIR systems. We analyse the retrieval time of the method, and also propose a pre-clustering of the database based on the above-mentioned features which yields comparable results in a much shorter time in most of the cases.</ns1:abstract>
+    <ns1:ID>F3A6008980126DE4F1DAF81EE0C67819</ns1:ID>
+    <ns1:Publication_Date>February 20, 2020</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Subhadip Maji"/>
+    <ns1:author rdf:resource="http://example.org/Smarajit Bose"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of Jenderal Soedirman"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Indian Statistical Institute"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Interdisciplinary Statistical Research Unit Indian Statistical Institute"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/Sketch Based Image Retrieval for Architecture"/>
+    <ns1:similarity>0.7249884</ns1:similarity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/IMAGEBERT CROSS-MODAL PRE-TRAINING WITH">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>IMAGEBERT CROSS-MODAL PRE-TRAINING WITH</ns1:Title>
+    <ns1:abstract>In this paper, we introduce a new vision-language pre-trained model -ImageBERT -for image-text joint embedding. Our model is a Transformer[1]-based model, which takes different modalities as input and models the relationship between them. The model is pre-trained on four tasks simultaneously: Masked Language Modeling (MLM), Masked Object Classification (MOC), Masked Region Feature Regression (MRFR), and Image Text Matching (ITM). To further enhance the pre-training quality, we have collected a Large-scale weAk-supervised Image-Text (LAIT) dataset from Web. We first pre-train the model on this dataset, then conduct a second stage pre-training on Conceptual Captions[2] and SBU Captions </ns1:abstract>
+    <ns1:ID>FF286389D42D1D99F32FAFDB2879C775</ns1:ID>
+    <ns1:Publication_Date>23 Jan 2020</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Di Qi"/>
+    <ns1:author rdf:resource="http://example.org/Lin Su"/>
+    <ns1:author rdf:resource="http://example.org/Jia Song"/>
+    <ns1:author rdf:resource="http://example.org/Edward Cui"/>
+    <ns1:author rdf:resource="http://example.org/Taroon Bharti"/>
+    <ns1:author rdf:resource="http://example.org/Arun Sacheti"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Bing Multimedia Team"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Sketch Based Image Retrieval for Architecture">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.7249884</ns1:similarity>
+    <ns1:Title>Sketch Based Image Retrieval for Architecture</ns1:Title>
+    <ns1:abstract>Sketch-based image retrieval (SBIR) is an image retrieval task that takes a sketch as input and outputs colour images matching the sketch. Most recent SBIR methods utilise deep learning methods with complicated network designs, which are resource-intensive for practical use. This paper proposes a novel compact framework that takes the siamese network with image view angle information, targeting the SBIR task for architecture images. In particular, the proposed siamese network engages a compact SwinTiny transformer as the backbone encoder. View angle information of the architecture image is fed to the model to further improve search accuracy. To cope with the insufficient sketches issue, simulated building sketches are used in training, which are generated by a pre-trained edge extractor. Experiments show that our model achieves 0.859 top-one accuracy exceeding many baseline models for an architecture retrieval task.</ns1:abstract>
+    <ns1:ID>F49C6F38DA263E4890B58FEDA2ECD732</ns1:ID>
+    <ns1:Publication_Date>2022-05-01</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Yuxin Xu"/>
+    <ns1:author rdf:resource="http://example.org/Yuyao Yan"/>
+    <ns1:author rdf:resource="http://example.org/Yiming Lin"/>
+    <ns1:author rdf:resource="http://example.org/Xi Yang"/>
+    <ns1:author rdf:resource="http://example.org/Kaizhu Huang"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Xi'an Jiaotong-Liverpool University"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Suzhou Bitspring Technology Co"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/CBIR USING FEATURES DERIVED BY DEEP LEARNING"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/time intelligence series artificial features">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>time intelligence series artificial features</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011765439701978864</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.912321475882932</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949797264374019</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011907016974029333</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8359235108068683</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028572945076065</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001000012956544604</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.013645163162198895</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.023303620609507088</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9491985823581538</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019608738773950842</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.015724110242742007</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259493425838202</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.061916953763127704</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008201406077751667</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143183909651898</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001123858374173729</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.11202931512323627</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03998942458195474</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/provides infrastructure associated risks models">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>provides infrastructure associated risks models</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011764706875817335</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012195123867146307</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949154750191086</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00119047629869524</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011111112521993542</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028571430806476118</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000000624252815</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000001011189186</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001923077005035339</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011363638307022345</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019607843470052354</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011904765601386319</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259259977652519</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017241381674130347</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008196722343053672</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007142857677487009</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001123595630073942</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009803923228565283</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001265823004124295</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/hir-22-351">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.62810826</ns1:similarity>
+    <ns1:similarity>0.6317008</ns1:similarity>
+    <ns1:Title>hir-22-351</ns1:Title>
+    <ns1:abstract>Deep learning is a form of machine learning that enables computers to learn from experience and understand the world in terms of a hierarchy of concepts. Because the computer gathers knowledge from experience, there is no need for a human computer operator formally to specify all of the knowledge needed by the computer. The hierarchy of concepts allows the computer to learn complicated concepts by building them out of simpler ones; a graph of these hierarchies would be many layers deep. This book introduces a broad range of topics in relation to deep learning.</ns1:abstract>
+    <ns1:ID>830419BE6788B42AE98C4FE7562F2F53</ns1:ID>
+    <ns1:Publication_Date>2016</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Kwang Kim"/>
+    <ns1:author rdf:resource="http://example.org/Ian Goodfellow"/>
+    <ns1:author rdf:resource="http://example.org/Yoshua Bengio"/>
+    <ns1:author rdf:resource="http://example.org/Aaron Courville"/>
+    <ns1:acknowledges rdf:resource="http://example.org/National Cancer Center"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/1802.05799"/>
+    <ns1:has rdf:resource="http://example.org/2007.03051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/intelligence artificial generated images may">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>intelligence artificial generated images may</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001176619341608529</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02014563555887864</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949882829724856</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01693801912436429</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.09846612875133112</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028572624921703155</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01358091978194056</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9556880447524595</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019232159289220333</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.025374775124802237</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001960882620878628</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9081051051055276</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009261824896043419</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017244565992531036</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008204000009556064</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143114751111193</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011238540199366913</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.011501465626631506</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001266234901813273</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Prudhvi Parne">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Prudhvi Parne</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2007.03051">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.6693547</ns1:similarity>
+    <ns1:similarity>0.6317008</ns1:similarity>
+    <ns1:Title>2007.03051</ns1:Title>
+    <ns1:abstract>Deep learning (DL) can achieve impressive results across a wide variety of tasks, but this often comes at the cost of training models for extensive periods on specialized hardware accelerators. This energy-intensive workload has seen immense growth in recent years. Machine learning (ML) may become a significant contributor to climate change if this exponential trend continues. If practitioners are aware of their energy and carbon footprint, then they may actively take steps to reduce it whenever possible. In this work, we present carbontracker, a tool for tracking and predicting the energy and carbon footprint of training DL models. We propose that energy and carbon footprint of model development and training is reported alongside performance metrics using tools like carbontracker. We hope this will promote responsible computing in ML and encourage research into energy-efficient deep neural networks. 1  </ns1:abstract>
+    <ns1:ID>C4340CAFBEC3FBA1CCDC55A4994DCB03</ns1:ID>
+    <ns1:Publication_Date>6 Jul 2020</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Lasse Wolff Anthony"/>
+    <ns1:author rdf:resource="http://example.org/Benjamin Kanding"/>
+    <ns1:author rdf:resource="http://example.org/Raghavendra Selvan"/>
+    <ns1:author rdf:resource="http://example.org/Lasse Wolff"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of Copenhagen"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/1802.05799"/>
+    <ns1:has rdf:resource="http://example.org/hir-22-351"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/208">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>208</ns1:Title>
+    <ns1:abstract>Artificial Intelligence (AI), sometimes called machine intelligence, is the integration of the human mind into a machine. This is a machine that is smarter than the intelligence of human nature. From Secrets to self-driving cars, the artificial intelligence is rapidly evolving. Artificial intelligence generally has two main ideas. First, it mimics the human brain in how mental processes work, and second, it helps to visualize these processes through machine learning. Fake Financial Advice is for chat machines only. Artificial intelligence has dealt with many sectors, including the banking sector. The main objective of this study was to understand the effects of artificial intelligence in modern banks. This study focuses on the perception of artificial intelligence in the banking sector, how it has transformed banks dramatically, and its impact on human resources. Knowing that human beings have a faulty tendency but the world is changing, and creativity, a lack of knowledge is needed for automation. Much of the work and craftsmanship that has ever been done by humans has now been improved by the use of advanced technology.</ns1:abstract>
+    <ns1:ID>6BCE905A51DD154E3E95A0995B076798</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Rashmi Bh"/>
+    <ns1:author rdf:resource="http://example.org/Mr Ram"/>
+    <ns1:author rdf:resource="http://example.org/Kumar Kuncha"/>
+    <ns1:author rdf:resource="http://example.org/Mr Manu"/>
+    <ns1:author rdf:resource="http://example.org/Vasudevan Unni"/>
+    <ns1:author rdf:resource="http://example.org/Philcy Antony"/>
+    <ns1:author rdf:resource="http://example.org/Priya Vinod"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Christ University"/>
+    <ns1:acknowledges rdf:resource="http://example.org/St. Claret College"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Jyoti Nivas College Autonomous"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/9-12"/>
+    <ns1:has rdf:resource="http://example.org/907-Article Text-2692-1-10-20230720"/>
+    <ns1:similarity>0.8266421</ns1:similarity>
+    <ns1:similarity>0.73094726</ns1:similarity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Paper11879">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.648319</ns1:similarity>
+    <ns1:similarity>0.67236996</ns1:similarity>
+    <ns1:similarity>0.68438274</ns1:similarity>
+    <ns1:similarity>0.72605824</ns1:similarity>
+    <ns1:Title>Paper11879</ns1:Title>
+    <ns1:abstract>Cloud computing has had a significant impact on small and medium-sized businesses (SMBs). The benefits of cloud computing adoption, including cost savings, scalability, flexibility, and improved data security, have made this technology increasingly popular among SMBs. However, several challenges prevent SMBs from adopting cloud computing, including a lack of technical knowledge and expertise, security concerns, and concerns around the reliability and availability of cloud computing services. Despite these challenges, many SMBs have successfully implemented cloud computing and have seen significant improvements in their operations. Case studies have shown that SMBs that migrated to cloud-based services experienced a reduction in IT costs and an increase in revenue. Additionally, SMBs that adopted cloud computing services saw a reduction in downtime and improved disaster recovery capabilities. The impact of cloud computing on SMBs extends beyond operational improvements. Cloud computing has also improved the competitiveness and profitability of SMBs, enabling them to access enterprise-grade technology at an affordable cost and allowing them to scale their operations quickly and efficiently. Cloud computing has also enabled SMBs to compete with larger businesses by providing them with the same technological capabilities. Cloud computing has had a significant impact on SMBs by providing them with cost-effective access to enterprise-grade technology, improving operational efficiency, and enhancing competitiveness and profitability. While several challenges prevent SMBs from adopting cloud computing, successful implementation can bring significant benefits to their operations</ns1:abstract>
+    <ns1:ID>8B99D6F866B6D0679F8B7A583992EB03</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Bismah Killedar"/>
+    <ns1:author rdf:resource="http://example.org/Maaz Datey"/>
+    <ns1:acknowledges rdf:resource="http://example.org/NAVER LABS Europe"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Anjuman Islam Janjira Degree College of Science"/>
+    <ns1:acknowledges rdf:resource="http://example.org/International Journal of Advanced Research in Science"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/11621ijccsa02"/>
+    <ns1:has rdf:resource="http://example.org/269 An Insight into Cloud Computing Paradigm and Services"/>
+    <ns1:has rdf:resource="http://example.org/6114nsa03"/>
+    <ns1:has rdf:resource="http://example.org/IJISRT23AUG773"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/11621ijccsa02">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>11621ijccsa02</ns1:Title>
+    <ns1:abstract>With recent advances in technology, internet has drastically changed the computing world from the concept of parallel computing to distributed computing to grid computing and now to cloud computing. The evolution of cloud computing over the past few years is potentially one of the major advances in the history of computing. Unfortunately, many banks are still hesitant to adopt cloud technology. New credit unions wanting to achieve greater business agility, cloud technology enables organizations to respond instantly to changing market conditions, leveraging data and applied analytics to achieve customer experience and operational productivity benefits. As a result, cloud computing comes in to provide a solution to such challenges making banking a reliable and trustworthy service. This paper aims at cloud computing strategy, impact in banking and financial institutions and discusses the significant reliance of cloud computing.</ns1:abstract>
+    <ns1:ID>2BF648A09854B4D4D57C190C7F6AEA83</ns1:ID>
+    <ns1:Publication_Date>2021-12-31</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Prudhvi Parne"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Bank of Hope"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/269 An Insight into Cloud Computing Paradigm and Services"/>
+    <ns1:has rdf:resource="http://example.org/6114nsa03"/>
+    <ns1:has rdf:resource="http://example.org/IJISRT23AUG773"/>
+    <ns1:has rdf:resource="http://example.org/Paper11879"/>
+    <ns1:similarity>0.67410666</ns1:similarity>
+    <ns1:similarity>0.778106</ns1:similarity>
+    <ns1:similarity>0.7527927</ns1:similarity>
+    <ns1:similarity>0.648319</ns1:similarity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Lasse Wolff Anthony">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Lasse Wolff Anthony</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/VISION TRANSFORMERS NEED REGISTERS">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>VISION TRANSFORMERS NEED REGISTERS</ns1:Title>
+    <ns1:abstract>Transformers have recently emerged as a powerful tool for learning visual representations. In this paper, we identify and characterize artifacts in feature maps of both supervised and self-supervised ViT networks. The artifacts correspond to high-norm tokens appearing during inference primarily in low-informative background areas of images, that are repurposed for internal computations. We propose a simple yet effective solution based on providing additional tokens to the input sequence of the Vision Transformer to fill that role. We show that this solution fixes that problem entirely for both supervised and self-supervised models, sets a new state of the art for self-supervised visual models on dense visual prediction tasks, enables object discovery methods with larger models, and most importantly leads to smoother feature maps and attention maps for downstream visual processing.</ns1:abstract>
+    <ns1:ID>954E212A4FDFADDA823560E427D0EB83</ns1:ID>
+    <ns1:Publication_Date>28 Sep 2023</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Timothée Darcet"/>
+    <ns1:author rdf:resource="http://example.org/Maxime Oquab"/>
+    <ns1:author rdf:resource="http://example.org/Julien Mairal"/>
+    <ns1:author rdf:resource="http://example.org/Piotr Bojanowski"/>
+    <ns1:author rdf:resource="http://example.org/Meta Fair"/>
+    <ns1:acknowledges rdf:resource="http://example.org/INRIA"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/907-Article Text-2692-1-10-20230720">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.73094726</ns1:similarity>
+    <ns1:similarity>0.683918</ns1:similarity>
+    <ns1:Title>907-Article Text-2692-1-10-20230720</ns1:Title>
+    <ns1:abstract>As artificial intelligence (AI) technology becomes increasingly integrated into healthcare, it is crucial for clinicians to possess a comprehensive understanding of its capabilities, limitations, and ethical implications. This literature review explores the reasons why clinicians need to be better informed about artificial intelligence, emphasizes the potential benefits of artificial intelligence in healthcare, raises awareness regarding the risks and unintended consequences associated with its use, discusses the development of machine learning and artificial intelligence in healthcare, and underscores the need for ethical guidelines and regulation to harness the potential of artificial intelligence in a responsible manner.</ns1:abstract>
+    <ns1:ID>D68DD8AAE1083F34E786A0781E1652F9</ns1:ID>
+    <ns1:Publication_Date>07 July 2023</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Ahmad Fawzy"/>
+    <ns1:author rdf:resource="http://example.org/Danastri Cantya Nirmala"/>
+    <ns1:author rdf:resource="http://example.org/Denaya Khansa"/>
+    <ns1:author rdf:resource="http://example.org/Yudhistira Wardhana"/>
+    <ns1:author rdf:resource="http://example.org/Danastri Nirmala"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of Jenderal Soedirman -Margono Soekarjo County Hospital"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of Jenderal Soedirman"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/208"/>
+    <ns1:has rdf:resource="http://example.org/9-12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Philippe Weinzaepfel">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Philippe Weinzaepfel</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/LEARNING SUPER-FEATURES FOR IMAGE RETRIEVAL">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>LEARNING SUPER-FEATURES FOR IMAGE RETRIEVAL</ns1:Title>
+    <ns1:abstract>Methods that combine local and global features have recently shown excellent performance on multiple challenging deep image retrieval benchmarks, but their use of local features raises at least two issues. First, these local features simply boil down to the localized map activations of a neural network, and hence can be extremely redundant. Second, they are typically trained with a global loss that only acts on top of an aggregation of local features; by contrast, testing is based on local feature matching, which creates a discrepancy between training and testing. In this paper, we propose a novel architecture for deep image retrieval, based solely on mid-level features that we call Super-features. These Super-features are constructed by an iterative attention module and constitute an ordered set in which each element focuses on a localized and discriminant image pattern. For training, they require only image labels. A contrastive loss operates directly at the level of Super-features and focuses on those that match across images. A second complementary loss encourages diversity. Experiments on common landmark retrieval benchmarks validate that Super-features substantially outperform state-of-the-art methods when using the same number of features, and only require a significantly smaller memory footprint to match their performance. Code and models are available at: https://github.com/naver/FIRe.</ns1:abstract>
+    <ns1:ID>05EB9CA5E59BDA449AFE78D91BFFD2CB</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Philippe Weinzaepfel"/>
+    <ns1:author rdf:resource="http://example.org/Thomas Lucas"/>
+    <ns1:author rdf:resource="http://example.org/Diane Larlus"/>
+    <ns1:author rdf:resource="http://example.org/Yannis Kalantidis"/>
+    <ns1:acknowledges rdf:resource="http://example.org/NAVER LABS Europe"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1709.01907">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>1709.01907</ns1:Title>
+    <ns1:abstract>Reliable uncertainty estimation for time series prediction is critical in many fields, including physics, biology, and manufacturing. At Uber, probabilistic time series forecasting is used for robust prediction of number of trips during special events, driver incentive allocation, as well as real-time anomaly detection across millions of metrics. Classical time series models are often used in conjunction with a probabilistic formulation for uncertainty estimation. However, such models are hard to tune, scale, and add exogenous variables to. Motivated by the recent resurgence of Long Short Term Memory networks, we propose a novel end-to-end Bayesian deep model that provides time series prediction along with uncertainty estimation. We provide detailed experiments of the proposed solution on completed trips data, and successfully apply it to large-scale time series anomaly detection at Uber.</ns1:abstract>
+    <ns1:ID>894FE675FB722482B94D363A80F2C8E4</ns1:ID>
+    <ns1:Publication_Date>6 Sep 2017</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Lingxue Zhu"/>
+    <ns1:author rdf:resource="http://example.org/Nikolay Laptev"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Bank of Hope"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Carnegie Mellon University Pittsburgh"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Uber Technologies San Francisco"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Benjamin Kanding">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Benjamin Kanding</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/cloud based computing visual security">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>cloud based computing visual security</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01736138688801752</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00121954991214648</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949337587891691</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905234040633507</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011111478875557794</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05107249213510134</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9549185032976606</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000439157489976</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019230889124709286</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011366756528471138</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019608044245522514</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.02776870657700251</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01609217111117895</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0688347043131568</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.03135305800658558</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.031843477730822016</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011238972058842103</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009805889777343482</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9144790571022567</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/How good are deep models in understanding generated images">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>How good are deep models in understanding generated images</ns1:Title>
+    <ns1:abstract>My goal in this paper is twofold: to study how well deep models can understand the images generated by DALL-E 2 and Midjourney, and to quantitatively evaluate these generative models. Two sets of generated images are collected for object recognition and visual question answering (VQA) tasks. On object recognition, the best model, out of 10 state-of-the-art object recognition models, achieves about 60% and 80% top-1 and top-5 accuracy, respectively. These numbers are much lower than the best accuracy on the ImageNet dataset (91% and 99%). On VQA, the OFA model scores 77.3% on answering 241 binary questions across 50 images. This model scores 94.7% on the binary VQA-v2 dataset. Humans are able to recognize the generated images and answer questions on them easily. We conclude that a) deep models struggle to understand the generated content, and may do better after fine-tuning, and b) there is a large distribution shift between the generated images and the real photographs. The distribution shift appears to be category-dependent. Data is available at: link.</ns1:abstract>
+    <ns1:ID>AA1CD957FD5DE23AE8B3E79318504123</ns1:ID>
+    <ns1:Publication_Date>August 26, 2022</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Ali Borji"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Quintic AI"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/training may significant depending must">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>training may significant depending must</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001176500286796554</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012195462906354191</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9455939525001698</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011906870528413536</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001111198056184001</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028572136236974313</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000059016000724</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001000019121639771</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001923088423120288</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011363912779068996</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019608228171632772</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905280189637973</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259331078441015</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017244860894439881</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008197273839158709</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007142948353861728</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.014308064692744163</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.000980414115776515</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012658682181201394</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/artificial intelligence need potential ethical">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>artificial intelligence need potential ethical</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011765106238848363</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012195123080225695</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016949242058344742</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905431309317017</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011113118233437706</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0028574244952587393</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010001454523750099</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000890498346646</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9613107592577718</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011363637508823477</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001960837606257932</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001190485577642335</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259386498346827</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00172413807032627</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0008196753114501768</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143024695255622</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011235990149088583</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.000980395236752343</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012658327177492536</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Fatima Raju">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Fatima Raju</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/tft">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:Title>tft</ns1:Title>
+    <ns1:abstract>Multi-horizon forecasting often contains a complex mix of inputs -including static (i.e. time-invariant) covariates, known future inputs, and other exogenous time series that are only observed in the past -without any prior information on how they interact with the target. Several deep learning methods have been proposed, but they are typically 'black-box' models that do not shed light on how they use the full range of inputs present in practical scenarios. In this paper, we introduce the Temporal Fusion Transformer (TFT) -a novel attention-based architecture that combines high-performance multi-horizon forecasting with interpretable insights into temporal dynamics. To learn temporal relationships at different scales, TFT uses recurrent layers for local processing and interpretable self-attention layers for long-term dependencies. TFT utilizes specialized components to select relevant features and a series of gating layers to suppress unnecessary components, enabling high performance in a wide range of scenarios. On a variety of real-world datasets, we demonstrate significant performance improvements over existing benchmarks, and highlight three practical interpretability use cases of TFT.</ns1:abstract>
+    <ns1:ID>DF3C041DAF1F44917AA21BFB425CAFE6</ns1:ID>
+    <ns1:Publication_Date>2021-10</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Bryan Lim"/>
+    <ns1:author rdf:resource="http://example.org/Sercan Arık"/>
+    <ns1:author rdf:resource="http://example.org/Nicolas Loeff"/>
+    <ns1:author rdf:resource="http://example.org/Tomas Pfister"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of Oxford"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Google Cloud AI"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Lin Su">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Lin Su</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Edward Cui">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Edward Cui</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Sercan Arık">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Sercan Arık</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Bank of Hope">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Bank of Hope</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/6114nsa03">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.778106</ns1:similarity>
+    <ns1:similarity>0.75966376</ns1:similarity>
+    <ns1:similarity>0.75184834</ns1:similarity>
+    <ns1:similarity>0.68438274</ns1:similarity>
+    <ns1:Title>6114nsa03</ns1:Title>
+    <ns1:abstract>Cloud computing has formed the conceptual and infrastructural basis for tomorrow's computing. The global computing infrastructure is rapidly moving towards cloud based architecture. While it is important to take advantages of could based computing by means of deploying it in diversified sectors, the security aspects in a cloud based computing environment remains at the core of interest. Cloud based services and service providers are being evolved which has resulted in a new business trend based on cloud technology. With the introduction of numerous cloud based services and geographically dispersed cloud service providers, sensitive information of different entities are normally stored in remote servers and locations with the possibilities of being exposed to unwanted parties in situations where the cloud servers storing those information are compromised. If security is not robust and consistent, the flexibility and advantages that cloud computing has to offer will have little credibility. This paper presents a review on the cloud computing concepts as well as security issues inherent within the context of cloud computing and cloud infrastructure.</ns1:abstract>
+    <ns1:ID>38B4A0BC41A3AA7645B3FA043D1851FD</ns1:ID>
+    <ns1:Publication_Date>2014-01-31</ns1:Publication_Date>
+    <ns1:author rdf:resource="http://example.org/Monjur Ahmed"/>
+    <ns1:author rdf:resource="http://example.org/Mohammad Ashraf Hossain"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Daffodil Institute of IT"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/11621ijccsa02"/>
+    <ns1:has rdf:resource="http://example.org/269 An Insight into Cloud Computing Paradigm and Services"/>
+    <ns1:has rdf:resource="http://example.org/IJISRT23AUG773"/>
+    <ns1:has rdf:resource="http://example.org/Paper11879"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/IJISRT23AUG773">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.7527927</ns1:similarity>
+    <ns1:similarity>0.7465469</ns1:similarity>
+    <ns1:similarity>0.75184834</ns1:similarity>
+    <ns1:similarity>0.72605824</ns1:similarity>
+    <ns1:Title>IJISRT23AUG773</ns1:Title>
+    <ns1:abstract>Cloud computing has revolutionized the way businesses process, store and manage data. With the explosion of big data, cloud computing has become an integral tool in providing scalable and cost-effective solutions for handling large volumes of data. In this paper, we will explore the role of cloud computing in big data and its impact on businesses. We will start by defining cloud computing and its relation to big data. We will also examine the benefits of using cloud computing for big data processing and storage, as well as the challenges that come with implementing cloud computing for big data. Additionally, we will discuss the different cloud computing architecture models used in big data processing and storage and compare them to traditional on-premise computing architecture. We will analyze the advantages and disadvantages of each cloud computing architecture model for big data. Finally, we will explore the common applications of cloud computing for big data and the trends and future developments in cloud computing for big data, including the potential challenges and opportunities for using cloud computing for big data in the future.</ns1:abstract>
+    <ns1:ID>BD411ABCBE5697CC9002E0C7A2CDCFA0</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Farhan Aslam"/>
+    <ns1:acknowledges rdf:resource="http://example.org/University of the Cumberlands"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/11621ijccsa02"/>
+    <ns1:has rdf:resource="http://example.org/269 An Insight into Cloud Computing Paradigm and Services"/>
+    <ns1:has rdf:resource="http://example.org/6114nsa03"/>
+    <ns1:has rdf:resource="http://example.org/Paper11879"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/local image features loss deep">
+    <rdf:type rdf:resource="http://schema.org/Topic"/>
+    <ns1:name>local image features loss deep</ns1:name>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011764706292459511</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012195772943486539</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0016958283604133527</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011905829389548862</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011113709881036384</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.002857158938736029</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010001068403691993</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0010000105261585043</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0019235336327797013</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0011365209286219897</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.001960808191486104</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.027479578671972725</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0009259361296808186</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0017249453837361978</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9177493596958274</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0007143087223073083</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05044199033870436</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05026418010975388</ns1:probability>
+    <ns1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0012658862500881482</ns1:probability>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Danastri Nirmala">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Danastri Nirmala</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Diane Larlus">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Diane Larlus</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/9-12">
+    <rdf:type rdf:resource="http://schema.org/Paper"/>
+    <ns1:similarity>0.8266421</ns1:similarity>
+    <ns1:similarity>0.683918</ns1:similarity>
+    <ns1:Title>9-12</ns1:Title>
+    <ns1:abstract>Artificial Intelligence is making a machine behave in a way that would be intelligent if a human were so behaving. Many industrial sectors have adopted artificial intelligence for the development and customer satisfaction. Banking sectors were lagging back in adopting this intelligence as this sector requires dependence of human workforce to think and decide. Banks are now implementing Artificial intelligence for managing risk, financial analytics and portfolio/investment management. It helps to make decision based on the various data the banks have supplied to the Artificial intelligence device. This is useful for the banks internally and for the clients externally. Most of the work will become digitalized in future. It will decrease the work load and it will save various processing cost. There is lot of advantages with the adaption of Artificial intelligence. At the same time, Technology may replace human intelligence where machine may overtake human being. They will also face some problem regarding unemployment; responsibility of the transaction, decision taken by the artificial intelligence won't be fully trusted, and many more. This paper discusses about the various opportunities and challenges a banking sectors may face due to artificial intelligence.</ns1:abstract>
+    <ns1:ID>525FF705A1722228A67D25FEC77BC972</ns1:ID>
+    <ns1:author rdf:resource="http://example.org/Ms Mani"/>
+    <ns1:author rdf:resource="http://example.org/Fatima Raju"/>
+    <ns1:acknowledges rdf:resource="http://example.org/Daffodil Institute of IT"/>
+    <ns1:has rdf:resource="http://example.org/computing cloud big data processing"/>
+    <ns1:has rdf:resource="http://example.org/training may significant depending must"/>
+    <ns1:has rdf:resource="http://example.org/local image features loss deep"/>
+    <ns1:has rdf:resource="http://example.org/cloud computing model smbs significant"/>
+    <ns1:has rdf:resource="http://example.org/intelligence artificial generated images may"/>
+    <ns1:has rdf:resource="http://example.org/computer deep learning knowledge learn"/>
+    <ns1:has rdf:resource="http://example.org/artificial intelligence need potential ethical"/>
+    <ns1:has rdf:resource="http://example.org/cloud based computing visual security"/>
+    <ns1:has rdf:resource="http://example.org/time intelligence series artificial features"/>
+    <ns1:has rdf:resource="http://example.org/provides infrastructure associated risks models"/>
+    <ns1:has rdf:resource="http://example.org/208"/>
+    <ns1:has rdf:resource="http://example.org/907-Article Text-2692-1-10-20230720"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Philcy Antony">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Philcy Antony</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mr Manu">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Mr Manu</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Danastri Cantya Nirmala">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Danastri Cantya Nirmala</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Uber Technologies San Francisco">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Uber Technologies San Francisco</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University of Jenderal Soedirman -Margono Soekarjo County Hospital">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>University of Jenderal Soedirman -Margono Soekarjo County Hospital</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Nikolay Laptev">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Nikolay Laptev</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Maxime Oquab">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Maxime Oquab</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Suzhou Bitspring Technology Co">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Suzhou Bitspring Technology Co</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Xi'an Jiaotong-Liverpool University">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Xi'an Jiaotong-Liverpool University</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/St. Claret College">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>St. Claret College</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Taroon Bharti">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Taroon Bharti</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Raghavendra Selvan">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Raghavendra Selvan</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Farhan Aslam">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Farhan Aslam</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yuyao Yan">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yuyao Yan</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Di Qi">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Di Qi</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Interdisciplinary Statistical Research Unit Indian Statistical Institute">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Interdisciplinary Statistical Research Unit Indian Statistical Institute</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yannis Kalantidis">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yannis Kalantidis</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ian Goodfellow">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Ian Goodfellow</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yiming Lin">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yiming Lin</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Kwang Kim">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Kwang Kim</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University of Oxford">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>University of Oxford</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University of Jenderal Soedirman">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>University of Jenderal Soedirman</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Bing Multimedia Team">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Bing Multimedia Team</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Tomas Pfister">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Tomas Pfister</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University of Copenhagen">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>University of Copenhagen</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Subhadip Maji">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Subhadip Maji</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Julien Mairal">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Julien Mairal</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/International Journal of Advanced Research in Science">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>International Journal of Advanced Research in Science</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Anjuman Islam Janjira Degree College of Science">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Anjuman Islam Janjira Degree College of Science</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mike Balso">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Mike Balso</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Heena Girdher">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Heena Girdher</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yuxin Xu">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yuxin Xu</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Uber Technologies, Inc">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Uber Technologies, Inc</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Lingxue Zhu">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Lingxue Zhu</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Priya Vinod">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Priya Vinod</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Monjur Ahmed">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Monjur Ahmed</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ali Borji">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Ali Borji</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yoshua Bengio">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yoshua Bengio</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Aaron Courville">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Aaron Courville</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Meta Fair">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Meta Fair</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Vasudevan Unni">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Vasudevan Unni</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Jyoti Nivas College Autonomous">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Jyoti Nivas College Autonomous</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Thomas Lucas">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Thomas Lucas</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Google Cloud AI">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Google Cloud AI</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ahmad Fawzy">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Ahmad Fawzy</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Timothée Darcet">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Timothée Darcet</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Bryan Lim">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Bryan Lim</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Yudhistira Wardhana">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Yudhistira Wardhana</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Daffodil Institute of IT">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Daffodil Institute of IT</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Christ University">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Christ University</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Kaizhu Huang">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Kaizhu Huang</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Lasse Wolff">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Lasse Wolff</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Piotr Bojanowski">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Piotr Bojanowski</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/National Cancer Center">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>National Cancer Center</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Quintic AI">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Quintic AI</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Xi Yang">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Xi Yang</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Denaya Khansa">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Denaya Khansa</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mr Ram">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Mr Ram</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University of the Cumberlands">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>University of the Cumberlands</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Ms Mani">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Ms Mani</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Jia Song">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Jia Song</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Smarajit Bose">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Smarajit Bose</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Alexander Sergeev">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Alexander Sergeev</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Carnegie Mellon University Pittsburgh">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Carnegie Mellon University Pittsburgh</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/NAVER LABS Europe">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>NAVER LABS Europe</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Rashmi Bh">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Rashmi Bh</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Kumar Kuncha">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Kumar Kuncha</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Mohammad Ashraf Hossain">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Mohammad Ashraf Hossain</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Bismah Killedar">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Bismah Killedar</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Nicolas Loeff">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Nicolas Loeff</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Arun Sacheti">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Arun Sacheti</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Indian Statistical Institute">
+    <rdf:type rdf:resource="http://schema.org/Organization"/>
+    <ns1:name>Indian Statistical Institute</ns1:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Maaz Datey">
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <ns1:name>Maaz Datey</ns1:name>
+  </rdf:Description>
+</rdf:RDF>
