@@ -14,7 +14,7 @@ def get_orcid_uri(nombre):
     }
     response = requests.get(url, headers=headers, params=params)
     data = response.json()
-    if data['result']:
+    if 'result' in data:
         return data['result'][0]['orcid-identifier']['uri']
     else:
         return None
@@ -79,7 +79,7 @@ for paper_title, paper_info in papers.items():
     # Agregar relaciones para las organizaciones
     for org_name in paper_info['acknowledgeOrg']:
         org_uri = EXAMPLE[org_name]
-        g.add((paper_uri, SCHEMA.acknowledges, org_uri))
+        g.add((paper_uri, SCHEMA.acknowledgesOrg, org_uri))
         g.add((org_uri, RDF.type, SCHEMA.Organization))
         g.add((org_uri, SCHEMA.name, Literal(org_name)))
         org_wikidata = get_wikidata_uri(org_name)
@@ -88,6 +88,19 @@ for paper_title, paper_info in papers.items():
             g.add((org_uri, OWL.sameAs, URIRef(org_wikidata)))
         if org_orcid:
             g.add((org_uri, OWL.sameAs, URIRef(org_orcid)))
+
+    # Agregar relaciones para las las personas reconocidas
+    for ack_person in paper_info['acknowledgePerson']:
+        ack_person_uri = EXAMPLE[ack_person]
+        g.add((paper_uri, SCHEMA.acknowledgesPerson, ack_person_uri))
+        g.add((ack_person_uri, RDF.type, SCHEMA.Person))
+        g.add((ack_person_uri, SCHEMA.name, Literal(org_name)))
+        ack_person_wikidata = get_wikidata_uri(ack_person)
+        ack_person_orcid = get_orcid_uri(ack_person)
+        if ack_person_wikidata:
+            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_wikidata)))
+        if ack_person_orcid:
+            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_orcid)))
 
     # Agregar relaciones para las probabilidades de temas
     for topic_name, probability_percentage in paper_info['topics_prob'].items():
