@@ -1,7 +1,38 @@
 from rdflib import Graph, URIRef, Literal, Namespace
-from rdflib.namespace import RDF, FOAF, RDFS
+from rdflib.namespace import RDF, OWL
 import pickle
 import os
+import requests
+
+def get_orcid_uri(nombre):
+    url = "https://pub.orcid.org/v3.0/search"
+    headers = {
+        "Accept": "application/json"
+    }
+    params = {
+        "q": f"given-names:{nombre} OR family-name:{nombre}"
+    }
+    response = requests.get(url, headers=headers, params=params)
+    data = response.json()
+    if 'result' in data:
+        return data['result'][0]['orcid-identifier']['uri']
+    else:
+        return None
+    
+def get_wikidata_uri(nombre):
+    url = "https://www.wikidata.org/w/api.php"
+    params = {
+        "action": "wbsearchentities",
+        "search": nombre,
+        "language": "en",
+        "format": "json"
+    }
+    response = requests.get(url, params=params)
+    data = response.json()
+    if len(data['search']) > 0:
+        return 'https:' + data['search'][0]['url']
+    return None
+    
 
 # Obtener el directorio del archivo actual
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -38,13 +69,38 @@ for paper_title, paper_info in papers.items():
         g.add((paper_uri, SCHEMA.author, author_uri))
         g.add((author_uri, RDF.type, SCHEMA.Person))
         g.add((author_uri, SCHEMA.name, Literal(author_name)))
+        author_wikidata = get_wikidata_uri(author_name)
+        author_orcid = get_orcid_uri(author_name)
+        if author_wikidata:
+            g.add((author_uri, OWL.sameAs, URIRef(author_wikidata)))
+        if author_orcid:
+            g.add((author_uri, OWL.sameAs, URIRef(author_orcid)))
 
     # Agregar relaciones para las organizaciones
     for org_name in paper_info['acknowledgeOrg']:
         org_uri = EXAMPLE[org_name]
-        g.add((paper_uri, SCHEMA.acknowledges, org_uri))
+        g.add((paper_uri, SCHEMA.acknowledgesOrg, org_uri))
         g.add((org_uri, RDF.type, SCHEMA.Organization))
         g.add((org_uri, SCHEMA.name, Literal(org_name)))
+        org_wikidata = get_wikidata_uri(org_name)
+        org_orcid = get_orcid_uri(org_name)
+        if org_wikidata:
+            g.add((org_uri, OWL.sameAs, URIRef(org_wikidata)))
+        if org_orcid:
+            g.add((org_uri, OWL.sameAs, URIRef(org_orcid)))
+
+    # Agregar relaciones para las las personas reconocidas
+    for ack_person in paper_info['acknowledgePerson']:
+        ack_person_uri = EXAMPLE[ack_person]
+        g.add((paper_uri, SCHEMA.acknowledgesPerson, ack_person_uri))
+        g.add((ack_person_uri, RDF.type, SCHEMA.Person))
+        g.add((ack_person_uri, SCHEMA.name, Literal(org_name)))
+        ack_person_wikidata = get_wikidata_uri(ack_person)
+        ack_person_orcid = get_orcid_uri(ack_person)
+        if ack_person_wikidata:
+            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_wikidata)))
+        if ack_person_orcid:
+            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_orcid)))
 
     # Agregar relaciones para las probabilidades de temas
     for topic_name, probability_percentage in paper_info['topics_prob'].items():
@@ -65,4 +121,4 @@ for paper_title, paper_info in papers.items():
         print(f'El paper  {paper_title} no tiene ningun otro paper que haya superado el umbral de similitud.')
 
 # Serializar y guardar el grafo RDF
-g.serialize("knowledge_graph.rdf", format="xml")
+g.serialize("knowledge_graph_linked.rdf", format="xml")
