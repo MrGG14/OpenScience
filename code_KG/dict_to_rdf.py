@@ -32,6 +32,9 @@ def get_wikidata_uri(nombre):
     if len(data['search']) > 0:
         return 'https:' + data['search'][0]['url']
     return None
+
+def quitar_espacios(cadena):
+    return cadena.replace(' ', '_')
     
 
 # Obtener el directorio del archivo actual
@@ -54,7 +57,7 @@ g = Graph()
 # Iterar sobre el diccionario
 for paper_title, paper_info in papers.items():
     # Crear URI para el paper
-    paper_uri = EXAMPLE[paper_title]
+    paper_uri = EXAMPLE[quitar_espacios(paper_title)]
 
     # Agregar triples para el paper
     g.add((paper_uri, RDF.type, SCHEMA.Paper))
@@ -65,7 +68,7 @@ for paper_title, paper_info in papers.items():
         g.add((paper_uri, SCHEMA["Publication_Date"], Literal(paper_info['published_date'])))
     # Agregar relaciones para los autores
     for author_name in paper_info['written_by']:
-        author_uri = EXAMPLE[author_name]
+        author_uri = EXAMPLE[quitar_espacios(author_name)]
         g.add((paper_uri, SCHEMA.author, author_uri))
         g.add((author_uri, RDF.type, SCHEMA.Person))
         g.add((author_uri, SCHEMA.name, Literal(author_name)))
@@ -78,7 +81,7 @@ for paper_title, paper_info in papers.items():
 
     # Agregar relaciones para las organizaciones
     for org_name in paper_info['acknowledgeOrg']:
-        org_uri = EXAMPLE[org_name]
+        org_uri = EXAMPLE[quitar_espacios(org_name)]
         g.add((paper_uri, SCHEMA.acknowledgesOrg, org_uri))
         g.add((org_uri, RDF.type, SCHEMA.Organization))
         g.add((org_uri, SCHEMA.name, Literal(org_name)))
@@ -90,8 +93,8 @@ for paper_title, paper_info in papers.items():
             g.add((org_uri, OWL.sameAs, URIRef(org_orcid)))
 
     # Agregar relaciones para las las personas reconocidas
-    for ack_person in paper_info['acknowledgePerson']:
-        ack_person_uri = EXAMPLE[ack_person]
+    """for ack_person in paper_info['acknowledgePerson']:
+        ack_person_uri = EXAMPLE[quitar_espacios(ack_person)]
         g.add((paper_uri, SCHEMA.acknowledgesPerson, ack_person_uri))
         g.add((ack_person_uri, RDF.type, SCHEMA.Person))
         g.add((ack_person_uri, SCHEMA.name, Literal(org_name)))
@@ -100,11 +103,11 @@ for paper_title, paper_info in papers.items():
         if ack_person_wikidata:
             g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_wikidata)))
         if ack_person_orcid:
-            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_orcid)))
+            g.add((ack_person_uri, OWL.sameAs, URIRef(ack_person_orcid)))"""
 
     # Agregar relaciones para las probabilidades de temas
     for topic_name, probability_percentage in paper_info['topics_prob'].items():
-        topic_uri = EXAMPLE[topic_name]
+        topic_uri = EXAMPLE[quitar_espacios(topic_name)]
         g.add((paper_uri, SCHEMA.has, topic_uri))
         g.add((topic_uri, RDF.type, SCHEMA.Topic))
         g.add((topic_uri, SCHEMA.name, Literal(topic_name)))
@@ -113,7 +116,7 @@ for paper_title, paper_info in papers.items():
     # Agregar relaciones de similitud con otros papers
     try:
         for similar_paper_title, similarity_percentage in paper_info['has_Similarity'].items():
-            similar_paper_uri = EXAMPLE[similar_paper_title]
+            similar_paper_uri = EXAMPLE[quitar_espacios(similar_paper_title)]
             g.add((paper_uri, SCHEMA.has, similar_paper_uri))
             g.add((similar_paper_uri, RDF.type, SCHEMA.Paper))
             g.add((similar_paper_uri, SCHEMA.similarity, Literal(similarity_percentage)))
