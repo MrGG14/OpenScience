@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">THE CLOUDY FUTURE OF GOVERNMENT IT: CLOUD COMPUTING AND THE PUBLIC SECTOR AROUND THE WORLD</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">David</forename><forename type="middle">C</forename><surname>Wyld</surname></persName>
+							<email>dwyld@selu.edu</email>
+						</author>
+						<title level="a" type="main">THE CLOUDY FUTURE OF GOVERNMENT IT: CLOUD COMPUTING AND THE PUBLIC SECTOR AROUND THE WORLD</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">34C4144FA95CCECB28B14B8159AB4498</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-05-21T16:50+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cloud computing</term>
+					<term>information technology</term>
+					<term>public sector</term>
+					<term>government</term>
+					<term>workforce</term>
+					<term>change</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Cloud computing is fast creating a revolution in the way information technology is used and procured by organizations and by individuals. In this article, we examine what cloud computing is and the importance of this new model of computing. We then examine non-military uses of cloud computing in governments across the globe, from the Unites States to Europe and Asia. Then, we look at the resource -people and computing -issues involved in shirting to cloud computing. The author then presents his six-step "Cloud Migration Strategy" for governmental agencies to shift to cloud computing. Finally, we look "over the horizon" to the implications for public sector organizations and the information technology community as the cloud computing revolution progresses.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION 1.Overview</head><p>We are at an inflection point -a true paradigm change -in the evolution of computing. The history of computing consists of a series of such shifts, from the era of the mainframe to the advent of the personal computer (and now, to mobile devices and netbooks), from the clientserver model to the networked model, and from the age of isolation to the age of the Internet. While there are many uncertainties regarding the speed and ultimate reach of cloud computing, one thing that does appear very certain is that "business as usual" is soon going to be very different in our work and personal lives because of the advent of cloud computing.</p><p>Cloud computing certainly seems to be the phrase du jour in much of the computing world today, and many experts now think that cloud computing will be "the next big thing." Indeed, Gartner, a leading computer market analyst firm, believes that in the end, the impact of the cloud model will be "no less influential than e-business" <ref type="bibr" target="#b0">[1]</ref>. Thus, it should not be surprising that in an October 2009 survey of IT executives, conducted by CIO Research, cloud computing was the number one subject of interest amongst an international panel of information technology decision-makers <ref type="bibr" target="#b1">[2]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2.">Cloud Computing 101</head><p>What is cloud computing? Cloud computing encompasses a whole range of services (as shown in Table <ref type="table" target="#tab_0">1</ref>) and can be hosted in a variety of manners (as shown in Table <ref type="table">2</ref>), depending on the nature of the service involved and the data/security needs of the contracting organization. However, the basic idea behind the cloud model is that anything that could be done in computing -whether on an individual PC or in a corporate data center -from storing data to collaborating on documents or crunching numbers on large data sets can be shifted to the cloud. Certainly, cloud computing enables a new platform and location-independent perspective on how we communicate, collaborate and work. So long as you can access the Web, you are able to work when and where you wish. With fast, reliable Internet connectivity and computer power, it does not matter where the document, the e-mail or the data the user sees on the screen comes from. Cloud computing enables providers to use distant data centers for cloud computing. Still, while some have predicted the end of the PC era with the rise of the cloud computing model, many believe that most organizations and even individuals will continue to make use of traditional PCs and laptops, even if more and more of their use will be to access the cloud <ref type="bibr" target="#b2">[3]</ref>.</p><p>For individuals, cloud computing means accessing web-based email, photo sharing and productivity software, much of it for free <ref type="bibr" target="#b3">[4]</ref>. For organizations, shifting to the cloud means having the ability to contract for computing services on-demand, rather than having to invest to host all the necessary hardware, software and support personnel necessary to provide a given level of services <ref type="bibr" target="#b4">[5]</ref>. And for governments, the value proposition of the cloud is especially appealing, given both changing demands for IT and challenging economic conditions <ref type="bibr" target="#b5">[6]</ref>. The capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through a thin client interface such as a web browser (e.g., web-based email). The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited userspecific application configuration settings. Platform as a Service (PaaS)</p><p>The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly application hosting environment configurations. Infrastructure as a Service (IaaS)</p><p>The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly limited control of select networking components (e.g., host firewalls).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2. Types of Clouds</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Category</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Description Private cloud</head><p>The cloud infrastructure is operated solely for an organization. It may be managed by the organization or a third party and may exist on premise or off premise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Community cloud</head><p>The cloud infrastructure is shared by several organizations and supports a specific community that has shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be managed by the organizations or a third party and may exist on premise or off premise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Public cloud</head><p>The cloud infrastructure is made available to the general public or a large industry group and is owned by an organization selling cloud services.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hybrid cloud</head><p>The cloud infrastructure is a composition of two or more clouds (private, community, or public) that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load-balancing between clouds).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3.">The Growth of Cloud Computing</head><p>Global IT spending hit $3.4 trillion in 2008, although the aggregate total is expected to decline for the first time since 2001 in the current year -and perhaps for 2010 as well <ref type="bibr" target="#b6">[7]</ref>. Indeed, across the private sector, IT spending is under fire. In fact, due to the interrelated impacts of the recession and the credit crisis, capital budgeting and credit availability for large IT projects has declined significantly. Thus, the only areas of IT that are growing in the wake of the economic crisis are outsourced IT and IT services <ref type="bibr" target="#b7">[8]</ref>. Additionally, as new entrants, many of them tied to cloud services, enter the marketplace, the prices for outsourced IT are likely to decline over the next few years as competition intensifies between larger, entrenched competitors and these upstart firms <ref type="bibr" target="#b8">[9]</ref>.</p><p>IDC estimates that roughly 10 percent of the approximately $64 billion spent on business applications worldwide in 2008 was spent on cloud computing applications-those being entirely delivered on a remote basis <ref type="bibr" target="#b9">[10]</ref>. Many analysts, including Gartner, project growth rates for cloud computing in excess of 20 percent or more for years to come <ref type="bibr" target="#b10">[11]</ref>. The growth rate over the next few years could be as high as 30 percent, with analysts estimating that the global market for cloud computing services could reach $42 billion by 2012 <ref type="bibr" target="#b11">[12]</ref>. Gartner sees the cloud computing marketplace as an even larger, more broadly defined market, and the firm predicts that the overall market for cloud services already surpasses $40 billion today, and will grow to over $150 billion annually by 2013 <ref type="bibr" target="#b12">[13]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4.">Cloud Computing in Government</head><p>Today, we are seeing implementations of cloud computing across the public sector all around the world. Indeed, in many instances, government will be the leading sector in the development of cloud computing across the wider economy. In this article, we examine non-military uses of cloud computing in governments across the globe, from the Unites States to Europe and Asia. Then, we look at the resource -people and computing -issues involved in shirting to cloud computing. The author then presents his six-step "Cloud Migration Strategy" for governmental agencies to shift to cloud computing. Finally, we look "over the horizon" to the implications for public sector organizations and the information technology community as the cloud computing revolution progresses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">CLOUD COMPUTING IN THE U.S. GOVERNMENT</head><p>In the Unites States, there have been early efforts at shifting IT to the cloud across the US federal government, led by the country's first CIO, Vivek Kundra. The CIO is attempting to institute massive strategic changes, both in mindsets and operations, in the federal information technology area. Indeed, Kundra believes that cloud computing represents a "tectonic shift" in computing technology <ref type="bibr" target="#b13">[14]</ref>, and he has predicted that ultimately, "the cloud will do for government what the Internet did in the '90s" <ref type="bibr" target="#b14">[15]</ref>.</p><p>In this article, we will focus on the efforts made in the federal government, outside of the Department of Defense's military applications (for info on these, please see <ref type="bibr" target="#b5">[6]</ref>). This includes cloud efforts in the:</p><p>• General Services Administration (GSA)</p><p>• National Aeronautics and Space Administration (NASA)</p><p>• Department of the Interior</p><p>• Department of Health and Human Services (HHS)</p><p>• Census Bureau</p><p>• White House.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">General Services Administration (GSA)</head><p>The General Services Administration (GSA) has been an active area for cloud computing in the federal government, seeking to build upon its present role as a provisioning hub for the future, and is poised for more -perhaps much more -in the shift to cloud computing. In February 2009, the GSA announced that it had contracted with Miami-based Terremark Worldwide to provide cloud-based hosting of the federal government's primary e-government portals -USA.gov and its Spanish-language companion site, GobiernoUSA.gov. While the two sites draw in excess of 140 million visits annually (averaging 342,000 visits daily), the traffic can see significant "spikes" due to external events, ranging from natural disasters to the release of the monthly unemployment statistics. With the shift to cloud-based hosting, the GSA can use "cloudbursts" to increase capacity as needed, rather than having to host server capacity (and the costs-in personnel and energy-necessary to support this largely idle capacity) to handle the web traffic experienced only at these peak times. Likewise, the GSA reports that, with external hosting, changes to the site that formerly took six months can now be accomplished in a single day <ref type="bibr" target="#b15">[16]</ref>! GSA expects that the shift to cloud computing will halve the agency's administration costs for the sites and cut its infrastructure costs by 90 percent, while delivering improved and scalable web offerings. The changeover is expected to be completed in late 2009 <ref type="bibr" target="#b16">[17,</ref><ref type="bibr" target="#b17">18]</ref>. And while some may question whether such a web-hosting agreement is truly "cloud computing" <ref type="bibr" target="#b18">[19]</ref>, the GSA's move to hosting beyond its own "four walls" would fit within a broad definition of the cloud model. The GSA is exploring moving other web sites and portals it hosts to external hosting, and hopes that the transition of USA.gov to the cloud will serve as a model for other federal agencies. From the perspective of Martha Dorris, deputy associate administrator for the GSA's Office of Citizen Services, which oversees USA.gov, "Government-wide this is a great opportunity for agencies to take advantage and save some of the IT infrastructure money spent on low-risk web sites" <ref type="bibr" target="#b15">[16]</ref>.</p><p>In May 2009, the GSA issued a Request for Information for interoperability and operational practices from potential vendors <ref type="bibr" target="#b19">[20]</ref>. The vision of the GSA's CIO Casey Coleman is to be able to provide Infrastructure as a Service (IaaS) on demand for all federal agencies through prequalified vendors who have been certified for their security, privacy, and operational capabilities <ref type="bibr" target="#b20">[21]</ref>. One of the challenges going forward will be to make provisioning cloud-based services as easy as possible. To that end, federal CIO Kundra worked with the GSA to establish a "cloud computing storefront." According to Kundra, the storefront will "allow the agencies to quickly find cloud solutions" <ref type="bibr" target="#b21">[22]</ref>. Such a storefront-mirroring best practices from the private sector, such as those of Amazon and eBay-will simplify IT procurement while also enabling government agencies to dramatically shorten their cycle times for IT acquisitions, which too often result in lead times so long that, by the time the technology is actually in place, it is outdated <ref type="bibr" target="#b22">[23]</ref>.</p><p>In mid-September 2009, this storefront went "live" in the form of Apps.gov. The first reactions to the Apps.gov storefront generally gave kudos to Kundra and the GSA for fulfilling this vision to make cloud computing easy to acquire and use, taking a user-based perspective to enable agencies to test-drive cloud offerings <ref type="bibr" target="#b23">[24]</ref>. In fact, Craig Newmark, founder of Craigslist, commented that the introduction of Apps.gov is "a big improvement in the way the U.S. government manages data and gets stuff done. This really is big" <ref type="bibr" target="#b24">[25]</ref>. However, the effort has also been criticized for its limited offerings and for not going far enough to make acquiring cloud-based offerings as easy as it is in the commercial world. This led the GSA's CIO, Casey</p><p>Coleman, to comment that Apps.gov is still "a work in progress." Coleman recently noted that, "this (Apps.gov) is not the final solution. It's the beginning of the final solution" <ref type="bibr" target="#b24">[25]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">National Aeronautics and Space Administration (NASA)</head><p>The National Aeronautics and Space Administration (NASA) recently launched the NEBULA cloud computing platform. Created at the NASA Ames Research Center in Mountain View, California, the NEBULA cloud (nebula.nasa.gov) has been designed to allow for greater transparency and public involvement with space efforts, while serving as a "seamless, selfservice platform" that will not just consolidate the agency's web offerings into a single portal, but provide NASA personnel with "high capacity computing, storage, and network connectivity and…a virtualized, scalable approach to achieve cost and energy efficiencies" <ref type="bibr" target="#b25">[26]</ref>.</p><p>Chris Kemp, CIO of the NASA Ames Research Center, has stated that the NEBULA could be used as a "single facility" in which to consolidate NASA's many websites, promoting the public to be more actively engaged with NASA's space missions, and allowing for user-generated blogs, wikis, and other content <ref type="bibr" target="#b26">[27]</ref>. According to NASA's description, the NEBULA platform "offers a turnkey Software-as-a-Service (SaaS) experience that can rapidly address the requirements of a large number of projects. However, each component of the NEBULA platform is also available individually; thus, NEBULA can also serve in Platform-as-a-Service (PaaS) or Infrastructure-as-a-Service capacities (IaaS)" <ref type="bibr" target="#b27">[28]</ref>. NEBULA uniquely makes use of open-source components as major building blocks of its cloud offerings <ref type="bibr" target="#b26">[27]</ref>.</p><p>The NEBULA platform makes use of Eucalyptus, which is "an API-compatible open-source clone of the Amazon AWS (Amazon Web Services) cloud platform." The use of Eucalyptus, which was originally developed by researchers at the University of California at Santa Barbara, "provides NASA researchers, should they require it, with the simplest possible approach to ondemand computing capacity [as] all AWS-compatible tools will work 'out-of-the box' or with minor customization" <ref type="bibr" target="#b28">[29]</ref>. Eucalyptus' advantage of allowing open source programming, while mimicking the cloud environment and providing for the access advantages, is finding acceptance in the academic and scientific communities for those reasons <ref type="bibr" target="#b28">[29]</ref>. The NEBULA platform offers what NASA describes as "super-computer class storage" through the use of the open source LUSTRE clustering file system. This allows for "highly scalable storage capacity in the hundreds and thousands of terabytes," with "nearly unlimited individual file sizes" <ref type="bibr" target="#b27">[28]</ref>.</p><p>According to NASA: "Never before has such research-grade computing been available in a web application platform" <ref type="bibr" target="#b27">[28]</ref>.</p><p>Through the NEBULA platform, NASA could open up many new possibilities for collaboration and research. For instance, Tomas Soderstrom, IT CTO for NASA's Jet Propulsion Lab, suggested that, once the legal and policy issues have been resolved, all data from NASA missions could be loaded into the NEBULA cloud <ref type="bibr" target="#b29">[30]</ref>.</p><p>NEBULA also creates a number of possibilities for NASA to provide cloud services both within the space agency (possibly allowing the agency to consolidate the 70 internal data centers), and quite possibly, to allow NASA to provide cloud computing services to other federal agencies.</p><p>Since NEBULA is based at the Ames site, giving it proximity to the technology companies and talent located in the Silicon Valley, NEBULA could develop into both a model and a hub for federal government-wide cloud computing efforts <ref type="bibr" target="#b30">[31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Department of the Interior</head><p>The U.S. Department of Interior's National Business Center (NBC) is a service provider for numerous federal agencies, and today it is seeking to build upon that strength as a cloud service provider. The NBC presently operates two data centers that handle a variety of computing tasks, including payroll, human resources, and accounting for dozens of federal agencies. It is introducing several cloud-based human resource management applications, including web-based training, staffing, and recruitment programs. The NBC is also beginning to offer cloud-based financial and procurement software. The director of the NBC, Doug Bourgeois, reports that shifting to cloud-based programs has produced both marked gains in productivity and significant savings in power consumption. Additionally, the shift to more cloud-based offerings affords the NBC the ability to expand its service offerings while not having to expand its physical operations-and thus up its cost structure. As Bourgeois recently commented, "For us, like other data centers, the volume of data continues to explode. We want to solve some of those problems with cloud computing, so we don't have to build another $20 million data center" <ref type="bibr" target="#b31">[32]</ref>. In August 2009, the NBC released a cloud computing strategy and established a cloud portal (www.cloud.nbc.gov/) through which it will consolidate its cloud offerings <ref type="bibr" target="#b32">[33]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Department of Health and Human Services (HHS)</head><p>The Department of Health and Human Services (HHS) Program Support Center (PSC) offers over 60 services to HHS and other federal agencies. In late 2008, Robert Spector, who directs the agency's business process improvement efforts, was tasked with examining how to create an online product request system for users. After selecting Salesforce.com for the SaaS pilot, the center had a working pilot online within just a few weeks <ref type="bibr" target="#b33">[34]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Census Bureau</head><p>The U.S. Census Bureau is employing Salesforce.com's SaaS to manage the activities of about 100,000 partner organizations. To date however, the agency has chosen to store citizens' census data on its own internal servers. From the perspective of J.R. Wycinsky, who is a program analyst for the Census Bureau, it has not made use of cloud storage because of security and privacy concerns. He stated that, "People have to trust us, otherwise they won't give us the data" <ref type="bibr" target="#b34">[35]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6.">The White House</head><p>The White House has taken steps to integrate cloud computing tools into its operations. It made use of Google Moderator, a simple tool that helps groups determine which questions should be asked, to solicit questions from the general public and then allow for public voting to then determine what questions would be asked of President Obama at a March 2009 online town hall meeting. The cloud-based application allowed for hundreds of thousands of votes to be cast on the almost ten thousand questions that were submitted for possible use in the live event with the president <ref type="bibr" target="#b35">[36]</ref>. Also, the Office of Management and Budget is looking to cloud computing as a way for state and local agencies receiving stimulus funds to report on their uses of the monies via the cloud … and allowing for citizens to track the results online <ref type="bibr" target="#b36">[37]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">CLOUD COMPUTING IN EUROPEAN GOVERNMENTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">United Kingdom: Digital Britain</head><p>The UK government has made the creation of the "G-cloud," which is to be a government-wide cloud computing network, a strategic priority <ref type="bibr" target="#b37">[38]</ref>. The Digital Britain Report, issued jointly in June 2009 by the Department for Business Innovation &amp; Skills and the Department for Culture, Media and Sport <ref type="bibr" target="#b38">[39]</ref>, calls for the UK government to take the lead in a wide-ranging digital strategy for the country. As Prime Minister Gordon Brown announced the issuance of the report: "Digital Britain is about giving the country the tools to succeed and lead the way in the economy of the future" <ref type="bibr" target="#b39">[40]</ref>. An important aspect of the Digital Britain strategy is to improve governmental IT and allow for more services to migrate online. To support this action, the UK's IT procurement efforts will be focused on enabling the government to become a leading force in the use of cloud computing. The report states that: "The Government's impact on the digital economy goes way beyond its role as policy maker. In delivering public services, as a large customer of ICT products and services and as the owner of data systems, the public sector has enormous influence on the market. In many areas, such as education, health and defence, Government can use its position as the leading procurer of services, to drive up standards -in some cases to set standards -and to provide an investment framework for research and development" <ref type="bibr" target="#b38">[39]</ref>. The Digital Britain team from both cabinet offices has an official forum, where interested parties can learn more about the plan and comment on it, located at http://digitalbritainforum.org.uk/.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">EU-Initiatives</head><p>There have been other cloud computing efforts initiated in Europe as well. Oleg Petrov of the World Bank's Government Transformation Initiative recently completed a project cataloging active cloud computing initiatives in countries around the world, and in Europe, he identified cloud efforts underway specifically in Sweden, France, and Spain <ref type="bibr" target="#b40">[41]</ref>. He found that in addition to setting-up internal, private cloud environments (as Spain is presently working on), European nations were beginning to explore the use of cloud-based computing in the following areas:</p><p>• management of public sector housing</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>• transportation service networks</head><p>• economic development</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>• census</head><p>• health services</p><p>• contracting and</p><p>• education services <ref type="bibr" target="#b40">[41]</ref>.</p><p>Likewise, in Denmark, the National IT and Telecom Agency has recently released the results of a pilot effort in which two of its systems, Digitalisér.dk and NemHandel, were shifted from a traditional in-house environment to cloud hosting. The agency reported both significant cost and energy savings through the effort <ref type="bibr" target="#b41">[42]</ref>. Presently, the National IT and Telecom Agency is working with Local Government Denmark (LGDK), a voluntary association consisting of all 98 Danish municipalities, to explore using cloud computing as part of their national and local IT strategies <ref type="bibr" target="#b42">[43]</ref>.</p><p>On the European Union (EU)-wide level, we will likely see emerging cooperation of member states on an EU-wide cloud computing effort, which analysts say could well lead towards the creation of a cloud-based, common infrastructure for IT in member states <ref type="bibr" target="#b43">[44]</ref>. With many of the same pressures and forces operating on EU governments as in the United States, we will likely see just as many -if not more -cooperative efforts and innovative experiments in cloud computing on the national and even transnational level in Europe.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">CLOUD COMPUTING IN ASIA</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Japan: The "Kasumigaseki Cloud"</head><p>In Japan, the national government is undertaking a major cloud computing initiative, dubbed the "Kasumigaseki Cloud" (named for the section of Tokyo where many Japanese government ministerial offices are located) <ref type="bibr" target="#b44">[45]</ref>. The initiative seeks to develop a private cloud environment that would eventually host all of the Japanese government's computing (Ng, 2009). According to Japan's Ministry of Internal Affairs and Communications (MIC) [46], the Kasumigaseki Cloud (shown in Figure <ref type="figure">2</ref>) will allow for greater information and resource sharing and promote more standardization and consolidation in the government's IT resources.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Source: Government of Japan, Ministry of Internal Affairs and Communications (2009).</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 2. The Japanese Government's Kasumigaseki Cloud</head><p>By consolidating all governmental IT under a single cloud infrastructure, the Japanese government believes it will see not just reduced costs and operational benefits, but more "green," environmentally friendly IT operations <ref type="bibr" target="#b45">[47]</ref>. The Kasumigaseki Cloud is part of the Digital Japan Creation Project. This represents a governmental effort aimed at using IT investments (valued at just under 100 trillion yen) to help spur economic recovery by creating several hundred thousand new IT jobs in the next few years and doubling the size of Japan's IT market by 2020 <ref type="bibr" target="#b46">[48]</ref>. The MIC believes that "accelerating the use of ICT nationwide will require the government to take the initiative in implementing measures," and that the national government's promotion of cloud computing will not just help spur ICT development, but to help diminish the digital divide in that country [46].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">China</head><p>In China, cloud efforts have thus far been spearheaded by local leaders. The city of Dongying in the northern region of the country is undertaking a cloud computing initiative aimed at improving not only its e-government offerings, but economic development, by leading the effort to create what is known as The Yellow River Delta Cloud Computing Center. The vice mayor of Dongying, Li Jinkun, envisions that Dongying can "become a 'city of digital innovation'" through the IBM-developed cloud platform that is at the heart of this initiative <ref type="bibr" target="#b47">[49]</ref>. Likewise, in the city of Wuxi, located in Southeastern China, the municipal government has set up a "cloud services factory" to improve the computing resources available to local companies. The many start-up firms in the city's "software park" faced a common problem of not having the financial resources to acquire the IT infrastructure necessary to compete effectively. In response to this need, and to attract more firms to its economic development project, the government of Wuxi worked with IBM to build a cloud computing center to provide on-demand computing resources for firms in the software park. Using the cloud services factory, software developers can readily access the computer resources they require for projects. Participating firms have a ready-made, on-demand computing infrastructure, freeing financial resources for other needs and making the start-ups more likely to thrive and create new economic wealth and jobs in the city <ref type="bibr" target="#b48">[50]</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Thailand</head><p>In Thailand, the Government Information Technology Service (GITS) is establishing a private cloud for use by Thai government agencies. The GITS has already established a cloud-based email service, and it plans to add SaaS offerings in the near future. GITS believes that such consolidation will improve service offerings for government agencies, while simultaneously cutting their overall IT costs "considerably" <ref type="bibr" target="#b49">[51]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Vietnam</head><p>IBM is working with the Vietnamese government and universities to help the country leverage the power of cloud computing across the public and private sectors of this rapidly changing, formerly agrarian, economy <ref type="bibr" target="#b50">[52]</ref>. Willy Chiu of IBM Cloud Labs recently observed that the country's commitment to the new model is due to the fact that "the government views cloud computing as a way to move to a services-lead economy" <ref type="bibr" target="#b51">[53]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.">New Zealand</head><p>In New Zealand, the Ministry of Commerce announced in June 2009 that it would be consolidating IT procurement for all government agencies, looking to form "centres of expertise" focused on rationalizing IT acquisition and investigating how cloud computing and SaaS can play a more significant role in the future <ref type="bibr" target="#b52">[54]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">ANALYSIS: MANAGING GOVERNMENT IT IN THE CLOUDS</head><p>Today, we are in a transitional stage in the history of computing. Cloud computing does appear to be poised for rapid growth in the personal, corporate and governmental realms. Indeed, developments and expectations in the consumer realm are becoming drivers of what can and what is expected to be done in both public and private sector organizations. US federal CIO Kundra, discussing his decision to emphasize greater use of cloud technologies, recently stated: "When employees go home, they have access to more technology at home than they do at work. I said 'wait a minute, people have this access at home, how can I bring it to the government?' It made a compelling reason for us to move that direction" <ref type="bibr" target="#b53">[55]</ref>.</p><p>IT leaders should recognize that there are eight fundamental elements that are vital in enabling the cloud computing concept. These are depicted in Figure <ref type="figure">3</ref>. For the cloud model to work in the public or private sector, it is essential that there be:</p><p>1. Universal Connectivity -users must have near-ubiquitous access to the internet 2. Open Access -users must have fair, non-discriminatory access to the internet 3. Reliability -the cloud must function at levels equal to or better than current standalone systems 4. Interoperability and User Choice -users must be able to move among cloud platforms 5. Security -users' data must be safe 6. Privacy -users' rights to their data must be clearly defined and protected 7. Economic value -the cloud must deliver tangible savings and benefits 8. Sustainability -the cloud must raise energy efficiency and reduce ecological impact <ref type="bibr" target="#b54">[56]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 3. The 8 Fundamental Elements of Cloud Computing</head><p>There are many issues that remain to be worked out from a technology standpoint. Yet it is highly likely that as with other major technological changes, the most important issues to be resolved will be people-based, not tech-based <ref type="bibr" target="#b55">[57]</ref>. Resistance to cloud computing from endusers is likely to be limited, so long as they can count on the same type of IT resources as they have had in the past. As once commentator put it, the key metric for them will be: "When I sit down at that computer, do I see the functionality I need?" <ref type="bibr" target="#b56">[58]</ref>. There will undoubtedly however be some resistance among the IT workforce to the advent of cloud computing. Traditional IT staffers are likely to be the most resistant, while those with experience with web development are likely to be supportive of cloud efforts <ref type="bibr" target="#b57">[59]</ref>. However, the rising generation in the IT workforce -comfortable in their use of and reliance upon a whole host of web-based tools and services -will be more willing to shift operations and data to the cloud than will be the current generation of IT decision makers. They will likely see their older colleagues' concerns about reliability and security issues regarding the use of cloud computing as "exaggerated and quaint" <ref type="bibr" target="#b58">[60]</ref>.</p><p>Many in IT may also perceive the shift as not just changing what they do in their jobs, but as a threat to their very jobs. Martha Dorris, Deputy Associate Administrator for the GSA's Office of Citizen Services in the US federal government, commented that the biggest issue in her agency's changeover to a cloud-based platform was that: "Our technology team did not want to give up the servers." She observed that in the end: "This isn't a story about technology. It's a story of culture" <ref type="bibr" target="#b17">[18]</ref>. As we have seen with so many technological shifts that have previously occurred, it is essential to gain cultural buy-in from employees to get them to do something differently, as it absolutely essential for cultural change to accompany the technology shift. Indeed, many in IT will have to overcome their fear of data and applications not residing within their realm of control within their own four walls.</p><p>Many IT professionals are growing more receptive to the concept overall, as these cloud computing tools may in fact make their jobs better by freeing them from the "day-to-day hassles" of maintaining software <ref type="bibr" target="#b59">[61]</ref>. Certainly, the nature of IT jobs and the skills required to perform them will change markedly over the next decade. There will be less manual work needed internally, both in data centers ("racking and stacking") and in the field (doing installations and upgrades). At the same time, there will be a greater emphasis on the negotiation, conceptual and people skills needed to manage contracted cloud services. Indeed, in the near future, there will be a great need for developing expertise in specifying, negotiating, and managing service-level and organizational agreements <ref type="bibr" target="#b60">[62]</ref>. On the executive level, the shift to greater use of cloud computing will enable IT managers to be able to focus on how to best deliver services, rather than where they are hosted or how they are implemented <ref type="bibr" target="#b61">[63]</ref>. This will, of necessity, lead to changes in how IT and IT managers are evaluated for their performance.</p><p>How will this impact IT employment overall? Cloud computing will undoubtedly create jobs in the near-term. Yet over the next decade, there will be both new companies and new jobs emerging in the area of cloud services, countered by a significant displacement of many of the "nuts and bolts" technology jobs in IT -doing "hands-on" work in maintenance, upgrades and the like internally for organizations. Overall, the technical skills needed for IT jobs will likely decrease, as many jobs in the field become more administrative in nature, such as overseeing contracts and handling customer inquiries. Some have referred to this as a shift away from "blue-collar" IT jobs and careers towards a more white-collar IT workforce <ref type="bibr" target="#b62">[64]</ref>.</p><p>While IT has certainly seen platform transitions before, from mainframe to Windows to the Web, the fact is that "human capital is the most difficult kind to upgrade" <ref type="bibr" target="#b63">[65]</ref>. Thus, at a time when cloud computing is emerging so quickly, it will be difficult to train IT professionals on cloud technologies and then to retain them. This will require retraining of many present IT workers, and those jobs that are found with cloud providers will indeed be away from "traditional" tech centers and major cities and more located in the rural, power-friendly areas where major cloud data centers will tend to be more commonly located. Indeed, some European governments and companies have expressed concern about working with U.S. based cloud computing providers out of concern that their data-housed at least partially on American soil-could be subject to U.S. governmental review due to the provisions of the Patriot Act <ref type="bibr" target="#b64">[66]</ref>. And, in order to encourage economic development, national and regional governments may require cloud providers to either manage operations in government data centers or to even locate data centers within their jurisdictions-so that the money and jobs stay in their own local area! Thus, cloud computing may indeed be a way to promote growth in areas that have a properly trained IT workforce, cheap electrical power and reliable connectivity. This will occur in developed nations for now, but eventually, as we have seen in other aspects of technology, such operations and their jobs will likely migrate from the first to the third world over time -so long as the Internet and security concerns are addressed.</p><p>As government executives consider the move to cloud environments, they must weigh the potential savings, increased collaborative capabilities and operational advantages with the security, reliability, and privacy concerns that "cloud" the overall outlook for cloud computing. Still, cloud computing represents a revolutionary change in the way computing power will be used and procured, and as such, it will have significant impact both in the developed world and in developing nations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">CLOUD MIGRATION STRATEGY</head><p>One observer correctly admonished IT executives that, when it comes to the shift to cloud computing, "Standing pat means being left behind" <ref type="bibr" target="#b63">[65]</ref>. As Linda Cureton, NASA's CIO, framed the matter: "I'd like to say it a little more bluntly. If CIOs don't get ready, manage fears and manage their risk, they will get run over by this disruptive technology. Your organization is doing it anyway-without you! So do something! You don't have to move your entire enterprise into the cloud, just take the first step and look at some appropriate data sets. This doesn't have to be an all or none decision" <ref type="bibr" target="#b65">[67]</ref>.</p><p>It is important to bear in mind that "cloud computing is a tool, not a strategy" <ref type="bibr" target="#b66">[68]</ref>. Government IT leaders thus will be well-advised to take a programmed assessment of how cloud computing can fit into their overall IT strategy, in support of the mission and overall strategy of their agency. This should take a six-step process, as shown in Figure <ref type="figure" target="#fig_1">4</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1.">Step One: Learning</head><p>The Cloud Migration Strategy begins with learning about the basics of cloud computingthrough attending seminars, networking, talking with vendors, and reading. Given that cloud computing represents a new paradigm in computing technology, it will be important for technology transfer to occur-the "techies" in and outside of government will need to go the extra mile to educate and inform the "non-techie" policymakers (agency executives, staffers, and lawmakers) as to the merits and value of cloud computing. It will be especially important to devote sufficient funding for research to establish how cloud computing is working -or not -in various areas and at all levels of government, so as to ground policy and practices in regard to governmental use of cloud computing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2.">Step Two: Organizational Assessment</head><p>Then, IT managers should conduct an assessment of their present IT needs, structure, and capacity utilization. In a cloud computing environment, where resources can be added-or subtracted-based on needs and demand, it will be critical for IT managers to honestly assess their IT baseline. In looking at data center utilization, it will be vital to look at what resources are used all the time and are necessary for day-to-day operations in order to establish a baseline for internally hosted operations. Only then can one look at whether to continue to host "excess" capacity in the data center or to contract for cloud services as needed to scale up to meet seasonal, cyclical, or event-based demand for greater amounts of computing resources.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3.">Step Three: Cloud Pilot</head><p>Next, IT managers should pick one area-even one specific project-to "cloud pilot" and assess their ability to manage and bring such a project to fruition. As with any new technology, we are seeing a great deal of pure experimentation with cloud computing. All of us who use the Internet are ourselves experimenting with cloud applications in our daily lives-from Twittering to Gmail to using photo-sharing sites. In the same way, we are seeing organizations conducting Many times-even in the public sector-such experiments may be "rogue" operations taken on by individuals and units to test the utility of the technology. These are important efforts, and they should be supported-and reported within and outside the organization-so that others in IT and wider community can learn of the successes and the downsides of operating in the clouds. Thus, it will be vitally important to share both "best practices" and "lessons learned" in cloud computing. Indeed, many predict that such demonstration -or "science" projects -in large and small organizations will drive the eventual acceptance and adoption of cloud computing <ref type="bibr" target="#b67">[69]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.4.">Step Four: Cloud-Readiness Assessment</head><p>After the internal assessment and external outreach stemming from the pilot effort, IT managers should then conduct an overall IT cloud-readiness assessment to determine if their organization has data and applications that could readily move to a cloud environment, and if a public/private/hybrid cloud would be suitable or usable for these purposes and rank-order potential projects. As this assessment progresses, IT decision makers must focus on establishing decision rules as to which data and applications can -and cannot -be housed in any form of cloud environment. In doing so, they will discover a definite field of "cloud-eligible" and "cloud-ineligible" data and applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.5.">Step Five: Cloud Rollout Strategy</head><p>At this stage, it is time to begin rolling-out your cloud computing strategy -gaining buy-in from both organizational leadership and IT staffers, and communicating with both internal and external stakeholders as to the goals, progress, and costs/benefits of each cloud project. This is where the cloud goes from being a test effort to become more mainstream in the way the agency manages its data, its operations, and its people. It becomes part of "normal" organizational operations, just as other prior tech innovations (from telephony to fax to the Internet to e-mail and to social media) have become IT tools, used in support of the agency's IT strategy, and more importantly, its overall strategy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.6.">Step Six: Continuous Cloud Improvement</head><p>At this point, the process enters the final stage -call it "continuous cloud improvement" -where the agency/organization/unit continues to move appropriate data and applications to the cloud and perhaps even back from the cloud to internally hosted operations, if necessary, based on a thorough and continuous assessment of the appropriate use of cloud technologies for the particular agency. The shift to more cloud-based applications will indeed bring to government agencies newfound capabilities to communicate and collaborate. However, it will also necessitate a flurry of policy decisions that will need to be made and operational rules that will need to implemented. For instance, there will have to be decisions made as to who can access what files and what type of access they will have (e.g., read-only, editing access) <ref type="bibr" target="#b68">[70]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.">CONCLUSION</head><p>We may look back on the latter portion of this first decade of the new millennium as a true turning point in the history of computing. The transition, however, will take years, perhaps even decades, and as Nicholas Carr observed, "We're not going to wake up tomorrow and get all our computing requirements through a socket in the wall" <ref type="bibr" target="#b69">[71]</ref>. Pick your weather analogybetween "the perfect storm," a "cloudy day ahead," a "cloudburst," or the like-to represent the vast possibilities that are being brought about by the adoption of cloud computing.</p><p>The cloud model will ultimately serve to transform -in a big way -not just government information technology, but IT in the corporate world as well. And so, with hundreds of billions of dollars being spent domestically across the public sector in the U.S. -and many times that worldwide -the shift from procuring IT "stuff" to IT services will be transformational. It will transform not just how government-and the people within and interacting with it-computes, operates, communicates, and collaborates, but it will greatly impact the companies that are involved in supplying a vast array of IT equipment, software, support, and services. New, whole "industries" will likely be birthed over the next decade by the shift to more cloud-based computing (who would have had an inkling even three years ago of what a cloud service provider might do-other than fog machines for high school dances and movie-making?). And with the purchasing and standards-setting power of government, the public sector can this time being a leader -not a laggard -in this computing revolution.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. From the Internet to Cloud Computing</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. The Six-Step Cloud Migration Strategy cloud computing experiments-efforts that are far away from their core IT operations and many times on the periphery of (or trying to connect to) the organization.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head/><label/><figDesc/><graphic coords="9,153.36,224.04,304.56,199.32" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Categories of Cloud Services</figDesc><table><row><cell>Category</cell><cell>Description</cell></row><row><cell>Software as a Service (SaaS)</cell><cell/></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author</head><p>David C. <ref type="bibr">Wyld</ref>  </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Copyright Page</title>
+		<author>
+			<persName><surname>Gartner</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cloud.2009.46</idno>
+		<ptr target="http://www.gartner.com/it/page.jsp?id=707508"/>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE International Conference on Cloud Computing</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008-06-26">June 26, 2008. February 24, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Government CIO Survey Results</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Johnson</surname></persName>
+		</author>
+		<idno type="DOI">10.3233/gov-2011-0235</idno>
+		<ptr target="http://www.cio.com/article/503874/CIO_Technology_Survey_Results"/>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of E-Governance</title>
+		<idno type="ISSN">1878-7673</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="9" to="10"/>
+			<date type="published" when="2009-10-01">October 1, 2009. October 30, 2009</date>
+			<publisher>IOS Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Key Nursing Books Available at the AORN Congress Bookstore</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ulanoff</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.aorn.2009.01.014</idno>
+		<ptr target="http://www.pcmag.com/article2/0"/>
+	</analytic>
+	<monogr>
+		<title level="j">AORN Journal</title>
+		<title level="j" type="abbrev">AORN Journal</title>
+		<idno type="ISSN">0001-2092</idno>
+		<idno type="ISSNe">1878-0369</idno>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="365" to="365"/>
+			<date type="published" when="2009-02-04">February 4, 2009. 2817,2340325,00. March 10, 2009</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Anderson</surname></persName>
+		</author>
+		<title level="m">Free: The future of a radical price</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Hyperion</publisher>
+			<date type="published" when="2009-04">April 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Pepper, George Wharton, (16 March 1867–24 May 1961), Attorney-at-law Senator from Pennsylvania, 1922–27</title>
+		<author>
+			<persName><forename type="first">@</forename><surname>Knowledge</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wharton</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/ww/9780199540884.013.u48304</idno>
+		<ptr target="http://knowledge.wharton.upenn.edu/article.cfm?articleid=2169"/>
+		<imprint>
+			<date type="published" when="2009-03-04">March 4, 2009. March 10, 2009</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>University of Pennsylvania</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Knowledge@Wharton</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Moving to the cloud: An introduction to cloud computing in government</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Wyld</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009-11">November 2009</date>
+			<pubPlace>Washington, DC</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>IBM Center for the Business of Government</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Worldwide semiconductor industry capital spending will decline by 47.9 percent to $22.9 billion in 2009 – Gartner</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ferguson</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/mi.2010.21827aab.004</idno>
+		<ptr target="http://www.eweek.com/index2.php?option=content&amp;task=view&amp;id=52598&amp;pop=1&amp;hide_ads=1&amp;page=0&amp;hide_js=1"/>
+	</analytic>
+	<monogr>
+		<title level="j">Microelectronics International</title>
+		<idno type="ISSN">1356-5362</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2009-03-31">March 31, 2009. April 2, 2009</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Worldwide semiconductor industry capital spending will decline by 47.9 percent to $22.9 billion in 2009 – Gartner</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Davis</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/mi.2010.21827aab.004</idno>
+		<ptr target="http://www.channelinsider.com/c/a/News/Gartner-and-Forrester-Now-Forecast-2009-Decline-in-IT-Spending-204121/"/>
+	</analytic>
+	<monogr>
+		<title level="j">Microelectronics International</title>
+		<idno type="ISSN">1356-5362</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2009-04-01">April 1, 2009. April 10, 2009</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Tender prices continue to fall</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Davis</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/ss.2009.11027cab.005</idno>
+		<ptr target="http://www.channelinsider.com/c/a/News/Gartner-Outsourced-IT-Services-Prices-Could-Fall-20-145259/"/>
+	</analytic>
+	<monogr>
+		<title level="j">Structural Survey</title>
+		<idno type="ISSN">0263-080X</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2009-03-27">March 27, 2009. April 10, 2009</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A fortune yet: money in the art of F. Scott Fitzgerald's short stories</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">V</forename><surname>Copeland</surname></persName>
+		</author>
+		<idno type="DOI">10.5860/choice.29-0786</idno>
+		<ptr target="http://money.cnn.com/2009/02/16/technology/copeland_oracle.fortune/index.htm"/>
+	</analytic>
+	<monogr>
+		<title level="j">Choice Reviews Online</title>
+		<title level="j" type="abbrev">Choice Reviews Online</title>
+		<idno type="ISSN">0009-4978</idno>
+		<idno type="ISSNe">1523-8253</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">02</biblScope>
+			<biblScope unit="page">29-0786-29-0786</biblScope>
+			<date type="published" when="2009-02-16">February 16, 2009. July 23, 2009</date>
+			<publisher>American Library Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Appendix II Washington Declaration, 31 July–1 August 2008 311</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">O</forename><surname>Gara</surname></persName>
+		</author>
+		<idno type="DOI">10.3726/978-3-0353-0148-9/10</idno>
+		<ptr target="http://govit.sys-con.com/node/1055764"/>
+	</analytic>
+	<monogr>
+		<title level="m">Warriors after War</title>
+		<imprint>
+			<publisher>Peter Lang</publisher>
+			<date type="published" when="2009-07-31">July 31, 2009. August 4, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The Change of Land Cover/Land Use in Ejina Oasis over 20 Years</title>
+		<author>
+			<persName><forename type="first">Xiaoyou</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tongtong</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maoxian</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4419-0209-2_7</idno>
+		<ptr target="http://www.idc.com/getdoc.jsp?containerId=prUS21480708"/>
+	</analytic>
+	<monogr>
+		<title level="m">IFIP Advances in Information and Communication Technology</title>
+		<imprint>
+			<publisher>Springer US</publisher>
+			<date type="published" when="2008-10-20">October 20, 2008. January 24, 2009</date>
+			<biblScope unit="page" from="59" to="67"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">How cloud computing will change business</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hamm</surname></persName>
+		</author>
+		<ptr target="http://www.businessweek.com/print/magazine/content/09_24/b4135042942270.htm"/>
+	</analytic>
+	<monogr>
+		<title level="j">Business Week</title>
+		<imprint>
+			<date type="published" when="2009-06-04">June 4, 2009. July 18, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Federal CIO: Government needs to rethink technology for 21st Century</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Campbell</surname></persName>
+		</author>
+		<ptr target="http://www.crn.com/government/217201051;jsessionid=J24L30FS4QIG2QSNDLPSKH0CJUNN2"/>
+	</analytic>
+	<monogr>
+		<title level="j">ChannelWeb</title>
+		<imprint>
+			<date type="published" when="2009-04-30">April 30, 2009. May 5, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Agencies predicted to move to cloud computing cautiously</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Nagesh</surname></persName>
+		</author>
+		<ptr target="http://www.nextgov.com/nextgov/ng_20090422_7939.php"/>
+	</analytic>
+	<monogr>
+		<title level="j">NextGov</title>
+		<imprint>
+			<date type="published" when="2009-04-22">April 22, 2009. May 30, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Web Services Delivered from the Cloud</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Nagesh</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439806814.ch2</idno>
+		<ptr target="http://www.nextgov.com/site_services/print_article.php?StoryID=ng_20090929_3601"/>
+	</analytic>
+	<monogr>
+		<title level="m">Cloud Computing</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2009-09-29">September 29, 2009. October 2, 2009</date>
+			<biblScope unit="page" from="29" to="55"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">USA.gov will move to cloud computing</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Beizer</surname></persName>
+		</author>
+		<ptr target="http://fcw.com/articles/2009/02/23/usagov-moves-to-the-cloud.aspx"/>
+	</analytic>
+	<monogr>
+		<title level="j">Federal Computer Week</title>
+		<imprint>
+			<date type="published" when="2009-02-23">February 23, 2009. March 19, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Federal web portal moves to cloud computing platform</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Towns</surname></persName>
+		</author>
+		<ptr target="http://www.govtech.com/gt/articles/654240"/>
+	</analytic>
+	<monogr>
+		<title level="j">Government Technology</title>
+		<imprint>
+			<date type="published" when="2009-05-01">May 1, 2009. June 29, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">But is it really cloud computing?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jackson</surname></persName>
+		</author>
+		<ptr target="http://gcn.com/blogs/tech-blog/2009/05/gsa-cloudy.aspx"/>
+	</analytic>
+	<monogr>
+		<title level="j">Government Computer News</title>
+		<imprint>
+			<date type="published" when="2009-05-18">May 18, 2009. August 16, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Federal government considering cloud computing: The GSA's request about 'infrastructure as a service' includes 45 questions that may already eliminate some vendors</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Hoover</surname></persName>
+		</author>
+		<ptr target="http://www.informationweek.com/story/showArticle.jhtml?articleID=217500172"/>
+	</analytic>
+	<monogr>
+		<title level="j">InformationWeek</title>
+		<imprint>
+			<date type="published" when="2009-05-14">May 14, 2009. June 24, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Cloud Computing, SaaS, and Other Data Protection Services</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Hoover</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439806937.ch18</idno>
+		<ptr target="http://www.informationweek.com/news/showArticle.jhtml?articleID=217800986"/>
+	</analytic>
+	<monogr>
+		<title level="m">Data Protection</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2009-06-12">June 12, 2009. July 11, 2009</date>
+			<biblScope unit="page" from="225" to="247"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">ABC News/Washington Post Poll, July 2007</title>
+		<idno type="DOI">10.3886/icpsr24589.v1</idno>
+		<ptr target="http://www.bisnow.com/washington_dc_tech_news_story.php?p=4787"/>
+	</analytic>
+	<monogr>
+		<title level="j">Washington TechBisNow</title>
+		<imprint>
+			<date type="published" when="2009-07-16">July 16, 2009. September 2, 2009</date>
+			<publisher>Inter-university Consortium for Political and Social Research (ICPSR)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Michigan Governor, Jennifer M. Granholm, Proclaims the Week of July 25, 2009 as Physics Education Week</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Weigelt</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/pt.4.0545</idno>
+		<ptr target="http://fcw.com/Articles/2009/08/03/WEEK-Kundra-aids-OFPP-search.aspx"/>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Today</title>
+		<title level="j" type="abbrev">Phys. Today</title>
+		<idno type="ISSNe">1945-0699</idno>
+		<imprint>
+			<date type="published" when="2009-07-31">July 31, 2009. September 7, 2009</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">PQRI Report Is Available Online</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Urquhart</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0037-6337(09)70153-6</idno>
+		<ptr target="http://www.news.cnet.com/8301-19413_3-10353469-240.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">Skin &amp; Allergy News</title>
+		<title level="j" type="abbrev">Skin &amp; Allergy News</title>
+		<idno type="ISSN">0037-6337</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">42</biblScope>
+			<date type="published" when="2009-09-18">September 18, 2009. October 25, 2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Referees 2009</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Weigelt</surname></persName>
+		</author>
+		<idno type="DOI">10.1068/c28rfx</idno>
+		<ptr target="http://fcw.com/Articles/2009/09/28/FEAT-Apps.gov-cloud-computing.aspx?p=1"/>
+	</analytic>
+	<monogr>
+		<title level="j">Environment and Planning C: Government and Policy</title>
+		<title level="j" type="abbrev">Environ Plann C Gov Policy</title>
+		<idno type="ISSN">0263-774X</idno>
+		<idno type="ISSNe">1472-3425</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="186" to="187"/>
+			<date type="published" when="2009-09-28">September 28, 2009. October 2, 2009</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">National Aeronautics and Space Administration (NASA)</title>
+		<idno type="DOI">10.4135/9781412939591.n797</idno>
+		<ptr target="http://nebula.nasa.gov/about"/>
+		<imprint>
+			<date type="published" when="2009-07-12">July 12, 2009</date>
+			<publisher>SAGE Publications, Inc.</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>National Aeronautics and Space Administration (NASA)</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">NASA creates a new NEBULA: Cloud computing project</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Atkinson</surname></persName>
+		</author>
+		<ptr target="http://www.universetoday.com/2009/06/04/nasa-creates-a-new-nebula-cloud-computing-project/"/>
+	</analytic>
+	<monogr>
+		<title level="m">Universe Today</title>
+		<imprint>
+			<date type="published" when="2009-06-04">June 4, 2009. July 13, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">National Aeronautics and Space Administration (NASA)</title>
+		<idno type="DOI">10.4135/9781412939591.n797</idno>
+		<ptr target="http://nebula.nasa.gov/services"/>
+		<imprint>
+			<date type="published" when="2009-07-12">July 12, 2009</date>
+			<publisher>SAGE Publications, Inc.</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>National Aeronautics and Space Administration (NASA)</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Common Standards in Cloud Computing</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Naone</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439806814.ch7</idno>
+		<ptr target="http://www.technologyreview.com/computing/22611/"/>
+	</analytic>
+	<monogr>
+		<title level="m">Cloud Computing</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2009-08-17">July/August 2009. September 10, 2009</date>
+			<biblScope unit="page" from="183" to="212"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">NASA launches 'Nebula' compute cloud</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Foley</surname></persName>
+		</author>
+		<ptr target="http://www.informationweek.com/news/government/federal/showArticle.jhtml?articleID=217600714"/>
+	</analytic>
+	<monogr>
+		<title level="j">Information Week</title>
+		<imprint>
+			<date type="published" when="2009-05-22">May 22, 2009. July 28, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">White House mulls making NASA a center for federal cloud computing</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sternstein</surname></persName>
+		</author>
+		<ptr target="http://www.nextgov.com/site_services/print_article.php?StoryID=ng_20090724_6498"/>
+	</analytic>
+	<monogr>
+		<title level="j">NextGov</title>
+		<imprint>
+			<date type="published" when="2009-07-24">July 24, 2009. August 3, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">New York Times New York State Poll, June 2008</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lohr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">"</forename><forename type="middle">I B M</forename></persName>
+		</author>
+		<idno type="DOI">10.3886/icpsr26164</idno>
+		<ptr target="http://www.nytimes.com/2009/06/15/technology/business-computing/15blue.html?_r=1&amp;emc=eta1"/>
+	</analytic>
+	<monogr>
+		<title level="j">New York Times</title>
+		<imprint>
+			<date type="published" when="2009-06-15">June 15, 2009. July 5, 2009</date>
+			<publisher>Inter-university Consortium for Political and Social Research (ICPSR)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">NBV/NBC Planning Considering Confidence Obtained from Shape Completion Learning_supp2-3358753.pdf</title>
+		<author>
+			<persName><forename type="first">Weiwei</forename><surname>Wan</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/lra.2024.3358753/mm1</idno>
+		<ptr target="http://cloud.nbc.gov/PDF/NBC%20Cloud%20White%20Paper%20Final%20(Web%20Res).pdf"/>
+		<imprint>
+			<date type="published" when="2009-08">August 2009. October 31, 2009</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>U.S. Department of the Interior ; National Business Center (NBC)</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Gov't agencies embrace cloud computing: Government agencies say they're moving toward an embrace of cloud computing and software-as-a-service</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gross</surname></persName>
+		</author>
+		<ptr target="http://www.pcworld.com/printable/article/id,160233/printable.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">PC World</title>
+		<imprint>
+			<date type="published" when="2009-02-25">February 25, 2009. May 22, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Sitwell, Sir (Sacheverell) Reresby, (15 April 1927–31 March 2009)</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hart</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/ww/9780199540884.013.u35043</idno>
+		<ptr target="http://www.washingtonpost.com/wp-dyn/content/article/2009/03/30/AR2009033002848_pf.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">The Washington Post</title>
+		<imprint>
+			<date type="published" when="2009-03-31">March 31, 2009. April 21, 2009</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">White House Online Town Hall</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Arrington</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/9781137378354.0009</idno>
+		<ptr target="http://www.techcrunch.com/2009/03/24/white-house-using-google-moderator-for-town-hall-meeting/"/>
+	</analytic>
+	<monogr>
+		<title level="m">The Social Media President</title>
+		<imprint>
+			<publisher>Palgrave Macmillan</publisher>
+			<date type="published" when="2009-03-24">March 24, 2009. June 28, 2009</date>
+		</imprint>
+		<respStmt>
+			<orgName>Tech Crunch</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Stimulus plan could fast track wastewater</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sternstein</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0015-1882(09)70018-7</idno>
+		<ptr target="http://www.nextgov.com/nextgov/ng_20090430_4418.php"/>
+	</analytic>
+	<monogr>
+		<title level="j">Filtration &amp; Separation</title>
+		<title level="j" type="abbrev">Filtration &amp; Separation</title>
+		<idno type="ISSN">0015-1882</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">8</biblScope>
+			<date type="published" when="2009-04-30">April 30, 2009. May 25, 2009</date>
+			<publisher>Mark Allen Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">UK government launches Digital Britain</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glick</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1754-4548(09)70097-x</idno>
+		<ptr target="http://www.computing.co.uk/computing/news/2244229/digital-britain-commits"/>
+	</analytic>
+	<monogr>
+		<title level="j">Infosecurity</title>
+		<title level="j" type="abbrev">Infosecurity</title>
+		<idno type="ISSN">1754-4548</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">7</biblScope>
+			<date type="published" when="2009-06-16">June 16, 2009. July 28, 2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Young, Andrea, (born 30 July 1964), Director, Digital Economy Unit, Department for Culture, Media and Sport and Department for Business, Innovation and Skills, since 2014</title>
+		<idno type="DOI">10.1093/ww/9780199540884.013.u250069</idno>
+		<ptr target="http://www.culture.gov.uk/images/publications/digitalbritain-finalreport-jun09.pdf"/>
+		<imprint>
+			<date type="published" when="2009-06-16">June 16, 2009. June 25, 2009</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Young, Andrea, (born 30 July 1964), Director, Digital Economy Unit, Department for Culture, Media and Sport and Department for Business, Innovation and Skills, since 2014</title>
+		<idno type="DOI">10.1093/ww/9780199540884.013.u250069</idno>
+		<ptr target="http://www.culture.gov.uk/reference_library/media_releases/6220.aspx"/>
+		<imprint>
+			<date type="published" when="2009-06-16">June 16, 2009. June 25, 2009</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>Government of the United Kingdom, Department for Business Innovation &amp; Skills and Department for Culture</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Backgrounder: Financial crisis and cloud computing -Delivering more for less. Demystifying cloud computing as enabler of government transformation</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Petrov</surname></persName>
+		</author>
+		<ptr target="http://www.siteresources.worldbank.org/.../BackgrounderFinancialCrisisCloudComputing.doc"/>
+	</analytic>
+	<monogr>
+		<title level="m">World Bank, Government Transformation Initiative</title>
+		<imprint>
+			<date type="published" when="2009-06-16">June 16, 2009. September 30, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Services University: Fall School on Cloud Computing</title>
+		<idno type="DOI">10.1109/cloud.2009.52</idno>
+		<ptr target="http://www.itst.dk/nyheder/nyhedsarkiv/2009/opleg-til-dialog-om-cloud-computing-i-det-offentlige"/>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE International Conference on Cloud Computing</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-07-17">July 17, 2009. October 2, 2009</date>
+		</imprint>
+		<respStmt>
+			<orgName>Government of Denmark, IT and Telecom Agency</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">AirSet: Cloud Computing and All-in-One Resource http://www.airset.com</title>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Dupree</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">ePractice Editorial Team</orgName>
+			</affiliation>
+		</author>
+		<idno type="DOI">10.1080/15228950903288611</idno>
+		<ptr target="http://www.epractice.eu/en/news/292790"/>
+	</analytic>
+	<monogr>
+		<title level="j">Public Services Quarterly</title>
+		<title level="j" type="abbrev">Public Services Quarterly</title>
+		<idno type="ISSN">1522-8959</idno>
+		<idno type="ISSNe">1522-9114</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="266" to="267"/>
+			<date type="published" when="2009-08-17">August 17, 2009. September 30, 2009</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Is there a European government cloud?</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dimaio</surname></persName>
+		</author>
+		<ptr target="http://blogs.gartner.com/andrea_dimaio/2009/05/19/is-there-a-european-government-cloud/"/>
+	</analytic>
+	<monogr>
+		<title level="j">Gartner</title>
+		<imprint>
+			<date type="published" when="2009-05-19">May 19, 2009. June 22, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Government Cloud Adoption</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hicks</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/9781108942485.004</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Government Cloud Procurement</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2009-05">May 2009</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="31" to="58"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">AAA Executive Board Actions: May–July 2009</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rosenberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1556-3502.2009.50620_1.x</idno>
+		<ptr target="http://news.cnet.com/8301-13846_3-10241081-62.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">Anthropology News</title>
+		<title level="j" type="abbrev">Anthropology News</title>
+		<idno type="ISSN">1541-6151</idno>
+		<idno type="ISSNe">1556-3502</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="20" to="20"/>
+			<date type="published" when="2009-05-14">May 14, 2009. July 1, 2009</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">deteriorating situation of the mountain peasantry became a defense problem, did this question of 'rural exchange' receive high priority in the Economic Programme of the government [SPP, 1985]. Agrarian investment in the 1980-84 period was maintained at a high level, equivalent to about half the national total. This was almost exclusively concentrated on the APP: that is, in about half the modern sector or about a quarter of the whole of agriculture. This investment included extensive irrigation works, imports of tractors and combine harvesters, coffee reno-vation, a sugar mill, palm oil plantations, intensive dairy and beef breeding units, as well as the recapitalisation of the new state farms ruined by their previous owners. It formed part of a long-term strategy discussed below and thus did not itself add much to production during the first five years, although it did help compensate declines in the large private production sector. Given the external terms of trade (which had deteriorated by 40 per cent between 1977 and 1983 [CEPAL, 1984]) and the gradual recovery of production, the agricultural sector was not in a position to generate a sufficiently large surplus to finance its own investment. Even though the sector generated three times more exports than it absorbed imports [MIDINRA, 1985], the foreign exchange thus released was needed to maintain basic consumption elsewhere in the economy. Similarly, food supplies over and above the requirements of the agrarian workforce were needed to maintain the rest of the population; there was no significant capital goods sector to absorb these wagegoods [FitzGerald, 1982]. Thus, this investment was basically financed from abroad, initially with long-term development loans from multilateral institutions, but as US agression increased these funds were cut off and replaced by commercial credits from both capitalist and socialist suppliers. This was economically justifiable in that the increment in exports (or substituted imports) would have a compensatory balance of payments effect within a few years. Eventually, however, a net exchange surplus would have to be generated so that agroexports should expand more rapidly than domestic foodstuffs rather than the reverse, as had been the case between 1980 and 1984, when popular living standards had a higher priority than the trade balance. None the less, the major shortcoming of this accumulation model was undoubtedly its almost exclusive concentration on the APP as the focus of modernisation. Large private farmers might not wish to invest, but the middle farmers and the co-operatives were also neglected in machinery assignment, cattle restocking, and irrigation equipment. The political objective of preventing the re-emergence of capitalist accumulation or the reconstruc-tion of a rural bourgeoisie (albeit on a petty scale) appears to have been the main justification. However, the cost in terms of production was high, and in any case such a sector could have been simply controlled through the existing fiscal, banking and commercial mechanisms, let alone the eventual application of the Agrarian Reform laws.</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Hoover</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203043493-39</idno>
+		<ptr target="http://www.informationweek.com/shared/printableArticle.jhtml?articleID=217500403"/>
+	</analytic>
+	<monogr>
+		<title level="m">The Agrarian Question in Socialist Transitions</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2009-05-15">May 15, 2009. June 3, 2009</date>
+			<biblScope unit="page" from="226" to="229"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Chinese city builds public cloud to aid innovation</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hicks</surname></persName>
+		</author>
+		<ptr target="http://www.futuregov.net/articles/2009/sep/29/oil-rich-chinesecity-builds-public-cloud-aid-inno/"/>
+	</analytic>
+	<monogr>
+		<title level="j">FutureGov</title>
+		<imprint>
+			<date type="published" when="2009-09-29">September 29, 2009. October 9, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">User-perceived FTP service QoS parameters and measurement</title>
+		<author>
+			<persName><surname>Zhihui Luo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Feng Liu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yun Xie</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icnidc.2009.5360792</idno>
+		<ptr target="ftp://ftp.software.ibm.com/common/ssi/sa/wh/n/oiw03022usen/OIW03022USEN"/>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE International Conference on Network Infrastructure and Digital Content</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-02">February 2009. March 1, 2009</date>
+		</imprint>
+		<respStmt>
+			<orgName>IBM</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">thailand-end-violence-now-may-25-2010</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hicks</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/2210-7975_hrd-9943-0142</idno>
+		<ptr target="http://www.futuregov.net/articles/2009/may/25/thailand-plans-private-cloud-e-gov/"/>
+	</analytic>
+	<monogr>
+		<title level="j">FutureGov</title>
+		<imprint>
+			<date type="published" when="2009-05-25">May 25, 2009. June 17, 2009</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">NanoHorizons expands global market presence</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Nystedt</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1369-7021(09)70125-7</idno>
+		<ptr target="http://www.pcworld.com/article/165378/ibm_expands_presence_in_vietnam.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">Materials Today</title>
+		<title level="j" type="abbrev">Materials Today</title>
+		<idno type="ISSN">1369-7021</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">41</biblScope>
+			<date type="published" when="2009-05-22">May 22, 2009. September 14, 2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">IBM talks up cloud computing: 'Cloud computing is a new way of consuming IT</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Babcock</surname></persName>
+		</author>
+		<ptr target="http://www.informationweek.com/news/software/hosted/showArticle.jhtml?articleID=218101617"/>
+	</analytic>
+	<monogr>
+		<title level="j">InformationWeek</title>
+		<imprint>
+			<date type="published" when="2009-06-27">June 27, 2009. October 1, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">icons-call-for-shake-up-of-global-climate-funds-2009-1pp</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">P</forename><surname>Strecker</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/2210-7975_hrd-0153-0045</idno>
+		<ptr target="http://www.stuff.co.nz/technology/2521317/Govt-IT-procurement-in-for-shake-up"/>
+	</analytic>
+	<monogr>
+		<title level="j">The Dominion Post</title>
+		<imprint>
+			<date type="published" when="2009-06-22">June 22, 2009. September 11, 2009</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">How Vivek Kundra fought government waste one Google App at a time</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">G</forename><surname>Lynch</surname></persName>
+		</author>
+		<ptr target="http://www.cio.com/article/print/450636"/>
+	</analytic>
+	<monogr>
+		<title level="j">CIO</title>
+		<imprint>
+			<date type="published" when="2008-09-22">September 22, 2008. March 12, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">White paper: Envisioning the cloud: The next computing paradigm, a Marketspace point of view</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Rayport</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heyward</surname></persName>
+		</author>
+		<ptr target="http://www.marketspaceadvisory.com/cloud/Envisioning-the-Cloud.pdf"/>
+		<imprint>
+			<date type="published" when="2009-03-20">March 20, 2009. April 24, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">[PDF Reader FAQ and support]</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Erlichman</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cloud.2009.5071523</idno>
+		<ptr target="http://www.1105govinfo.com/pdfs/custom/Snap-Cloud-final.pdf"/>
+	</analytic>
+	<monogr>
+		<title level="m">2009 ICSE Workshop on Software Engineering Challenges of Cloud Computing</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009-05">May 2009. June 18, 2009</date>
+		</imprint>
+	</monogr>
+	<note>1105 Media</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">New metrics needed for cloud computing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jackson</surname></persName>
+		</author>
+		<ptr target="http://gcn.com/Articles/2009/07/30/New-metrics-for-cloud-computing.aspx?p=1"/>
+	</analytic>
+	<monogr>
+		<title level="j">Government Computer News</title>
+		<imprint>
+			<date type="published" when="2009-07-30">July 30, 2009. August 30, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">The Evolution of Cloud Computing</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gruman</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9781439806814.ch1</idno>
+		<ptr target="http://www.infoworld.com/infoworld/article/08/04/07/15FE-cloud-computing-utility_1.html"/>
+	</analytic>
+	<monogr>
+		<title level="m">Cloud Computing</title>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2008-04-07">April 7, 2008. March 28, 2009</date>
+			<biblScope unit="page" from="1" to="28"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">The future of cloud computing: A long-term forecast</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gardiner</surname></persName>
+		</author>
+		<ptr target="http://www.portfolio.com/views/columns/dual-perspectives/2009/03/09/A-Long-Term-Forecast"/>
+		<imprint>
+			<date type="published" when="2009-03-09">March 9, 2009. May 8, 2009</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Portfolio</note>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Quo vadis CIO?</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kaplan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-74589-1</idno>
+		<ptr target="http://www.cio.com/article/print/486091"/>
+	</analytic>
+	<monogr>
+		<title level="j">CIO</title>
+		<idno type="ISSN">1439-5428</idno>
+		<imprint>
+			<date type="published" when="2009-03-23">March 23, 2009. June 13, 2009</date>
+			<publisher>Springer Berlin Heidelberg</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Maruzen taking steps to lift EO output at Chiba EO/EG facility</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Robinson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1351-4210(09)70106-4</idno>
+		<ptr target="http://fcw.com/articles/2009/01/12/3-steps-to-lift-the-cloud.aspx"/>
+	</analytic>
+	<monogr>
+		<title level="j">Focus on Surfactants</title>
+		<title level="j" type="abbrev">Focus on Surfactants</title>
+		<idno type="ISSN">1351-4210</idno>
+		<imprint>
+			<biblScope unit="volume">2009</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">2</biblScope>
+			<date type="published" when="2009-01-12">January 12, 2009. August 23, 2009</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Keep an eye on cloud computing: Cloud computing confusion leads to opportunity</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schurr</surname></persName>
+		</author>
+		<ptr target="http://www.networkworld.com/newsletters/itlead/2008/070708itlead1.html"/>
+	</analytic>
+	<monogr>
+		<title level="j">Network World</title>
+		<imprint>
+			<date type="published" when="2008-07-08">July 8, 2008. February 24, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Quo vadis CIO?</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Erlanger</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-74589-1</idno>
+		<ptr target="http://www.cio.com/article/print/497824"/>
+	</analytic>
+	<monogr>
+		<title level="j">CIO</title>
+		<idno type="ISSN">1439-5428</idno>
+		<imprint>
+			<date type="published" when="2009-07-22">July 22, 2009. September 29, 2009</date>
+			<publisher>Springer Berlin Heidelberg</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">The case against cloud computing, part one</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Golden</surname></persName>
+		</author>
+		<ptr target="http://www.cio.com/article/477473/The_Case_Against_Cloud_Computing_Part_One"/>
+	</analytic>
+	<monogr>
+		<title level="j">CIO</title>
+		<imprint>
+			<date type="published" when="2009-01-22">January 22, 2009. March 4, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">taiwan-amended-assembly-and-parade-act-suppresses-freedom-of-people-july-30-2009-1pp</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Mitchell</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/2210-7975_hrd-0188-0032</idno>
+		<ptr target="http://blogs.computerworld.com/patriot_act_rains_on_cloud_storage_parade"/>
+	</analytic>
+	<monogr>
+		<title level="j">Computerworld</title>
+		<imprint>
+			<date type="published" when="2009-07-13">July 13, 2009. August 18, 2009</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">The Most-Read Blog Posts For October</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cureton</surname></persName>
+		</author>
+		<idno type="DOI">10.1377/forefront.20091105.002726</idno>
+		<ptr target="http://blogs.nasa.gov/cm/blog/Goddard-CIO-Blog.blog/posts/post_1237089048316.html"/>
+	</analytic>
+	<monogr>
+		<title level="m">Goddard CIO Blog</title>
+		<imprint>
+			<publisher>Health Affairs (Project Hope)</publisher>
+			<date type="published" when="2009-03-14">March 14, 2009. July 16, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Cloud computing is a tool, not a strategy</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Higginbotham</surname></persName>
+		</author>
+		<ptr target="http://gigaom.com/2009/02/19/cloud-computing-is-a-tool-not-a-strategy/"/>
+	</analytic>
+	<monogr>
+		<title level="j">GigaOm</title>
+		<imprint>
+			<date type="published" when="2009-02-19">February 19, 2009. June 2, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Access Cloud Table Storage</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>King</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4302-2470-9_2</idno>
+		<ptr target="http://www.computerworld.com/s/article/340471/Cloud_Storage_Illuminated"/>
+	</analytic>
+	<monogr>
+		<title level="m">Introduction to Windows Azure</title>
+		<imprint>
+			<publisher>Apress</publisher>
+			<date type="published" when="2009-07-13">July 13, 2009. August 6, 2009</date>
+			<biblScope unit="page" from="25" to="65"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Cloud computing comes into focus</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Beizer</surname></persName>
+		</author>
+		<ptr target="http://gcn.com/articles/2008/06/11/cloud-computing-comes-into-focus.aspx"/>
+	</analytic>
+	<monogr>
+		<title level="j">Government Computer News</title>
+		<imprint>
+			<date type="published" when="2008-06-11">June 11, 2008. February 7, 2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">existing code correlating a whistle with the information that now is the moment to attack. The information is obvious enough: it is the only information that A could conceivably have intended to make manifest in the circumstances. Could not the repetition of such a situation lead to the development of a code? Imagine that the two prisoners, caught again, ﬁnd themselves in the same predicament: again a whistle, again an escape, and again they are caught. The next time, prisoner B, who has not realised that both guards are distracted, hears pris-oner A whistle: this time, fortunately, B does not have to infer what the whistle is intended to make manifest: he knows. The whistle has become a signal associ-ated by an underlying code to the message ‘Let us overpower our guards now!’ Inferential theorists might be tempted to see language as a whole as having developed in this way: to see conventional meanings as growing out of natural inferences. This is reminiscent of the story of how Rockefeller became a million-aire. One day, when he was young and very poor, Rockefeller found a one-cent coin in the street. He bought an apple, polished it, sold it for two cents, bought two apples, polished them, sold them for four cents . . . After one month he bought a cart, after two years he was about to buy a grocery store, when he inherited the fortune of his millionaire uncle. We will never know how far hominid efforts at conventionalising inference might have gone towards establishing a full-ﬂedged human language. The fact is that the development of human languages was made possible by a specialised biological endowment. Whatever the origin of the language or code employed, a piece of coded behaviour may be used ostensively – that is, to provide two layers of information: a basic layer of information, which may be about anything at all, and a second layer con-sisting of the information that the ﬁrst layer of information has been intentionally made manifest. When a coded signal, or any other arbitrary piece of behaviour, is used ostensively, the evidence displayed bears directly on the individual’s intention, and only indirectly on the basic layer of information that she intends to make manifest. We are now, of course, dealing with standard cases of Gricean communication. Is there a dividing line between instances of ostension which one would be more inclined to describe as ‘showing something’, and clear cases of communica-tion where the communicator unquestionably ‘means something’? One of Grice’s main concerns was to draw such a line: to distinguish what he called ‘natural meaning’ – smoke meaning ﬁre, clouds meaning rain, and so on – from ‘non-natural meaning’: the word ‘ﬁre’ meaning ﬁre, Peter’s utterance meaning that it will rain, and so on. Essential to this distinction was the third type of communi-cator’s intention Grice mentioned in his analysis: a true communicator intends the recognition of his informative intention to function as at least part of the audi-ence’s reason for fulﬁlling that intention. In other words, the ﬁrst, basic, layer of information must not be entirely recoverable without reference to the second. What we have tried to show so far in this section is that there are not two distinct and well-deﬁned classes, but a continuum of cases of ostension ranging from ‘showing’, where strong direct evidence for the basic layer of information is provided, to ‘saying that’, where all the evidence is indirect. Even in our very</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Melymuka</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203994597-29</idno>
+		<ptr target="http://www.computerworld.com/managementtopics/management/story/0,10801,101573,00.html"/>
+	</analytic>
+	<monogr>
+		<title level="m">Pragmatics and Discourse</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2005-05-09">May 9, 2005. February 10, 2009</date>
+			<biblScope unit="page" from="158" to="158"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

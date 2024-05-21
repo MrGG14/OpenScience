@@ -1,0 +1,2558 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">LightGlue: Local Feature Matching at Light Speed</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2023-06-23">23 Jun 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Philipp</forename><surname>Lindenberger</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+						</author>
+						<title level="a" type="main">LightGlue: Local Feature Matching at Light Speed</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-06-23">23 Jun 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">E0781E9C103AB5082A85AF160E533BD7</idno>
+					<idno type="arXiv">arXiv:2306.13643v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-05-21T17:10+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We introduce LightGlue, a deep neural network that learns to match local features across images. We revisit multiple design decisions of SuperGlue, the state of the art in sparse matching, and derive simple but effective improvements. Cumulatively, they make LightGlue more efficient -in terms of both memory and computation, more accurate, and much easier to train. One key property is that LightGlue is adaptive to the difficulty of the problem: the inference is much faster on image pairs that are intuitively easy to match, for example because of a larger visual overlap or limited appearance change. This opens up exciting prospects for deploying deep matchers in latency-sensitive applications like 3D reconstruction.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Finding correspondences between two images is a fundamental building block of many computer vision applications like camera tracking and 3D mapping. The most common approach to image matching relies on sparse interest points that are matched using high-dimensional representations encoding their local visual appearance. Reliably describing each point is challenging in conditions that exhibit symmetries, weak texture, or appearance changes due to varying viewpoint and lighting. To reject outliers that arise from occlusion and missing points, such representations should also be discriminative. This yields two conflicting objectives, robustness and uniqueness, that are hard to satisfy.</p><p>To address these limitations, SuperGlue <ref type="bibr" target="#b55">[56]</ref> introduced a new paradigm -a deep network that considers both images at the same time to jointly match sparse points and reject outliers. It leverages the powerful Transformer model <ref type="bibr" target="#b73">[74]</ref> to learn to match challenging image pairs from large datasets. This yields robust image matching in both indoor and outdoor environments. SuperGlue is highly effective for visual localization in challenging conditions <ref type="bibr" target="#b58">[59,</ref><ref type="bibr" target="#b54">55,</ref><ref type="bibr" target="#b57">58,</ref><ref type="bibr" target="#b56">57]</ref> and generalizes well to other tasks like aerial matching <ref type="bibr" target="#b82">[83]</ref>, object pose estimation <ref type="bibr" target="#b68">[69]</ref>, and even fish re-identification <ref type="bibr" target="#b46">[47]</ref>.</p><p>These improvements are however computationally ex-0 10 20 30 <ref type="bibr">40 50</ref> Image Pairs Per Second pensive, while the efficiency of image matching is critical for tasks that require a low latency, like tracking, or a high processing volume, like large-scale mapping. Additionally, SuperGlue, as with other Transformer-based models, is notoriously hard to train, requiring computing resources that are inaccessible to many practitioners. Follow-up works <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b64">65]</ref> have thus failed to reach the performance of the original Su-perGlue model. Yet, since its initial publication, Transformers have been extensively studied, improved, and applied to numerous language <ref type="bibr">[17,</ref><ref type="bibr" target="#b50">51,</ref><ref type="bibr" target="#b12">13]</ref> and vision <ref type="bibr" target="#b17">[18,</ref><ref type="bibr">6,</ref><ref type="bibr" target="#b28">29]</ref> tasks.</p><p>In this paper, we draw on these insights to design Light-Glue, a deep network that is more accurate, more efficient, and easier to train than SuperGlue. We revisit its design decisions and combine numerous simple, yet effective, architecture modifications. We distill a recipe to train highperformance deep matchers with limited resources, reaching state-of-the-art accuracy within just a few GPU-days. As shown in Figure <ref type="figure" target="#fig_0">1</ref>, LightGlue is Pareto-optimal on the efficiency-accuracy trade-off when compared to existing sparse and dense matchers.</p><p>Unlike previous approaches, LightGlue is adaptive to the difficulty of each image pair, which varies based on the amount of visual overlap, appearance changes, or discriminative information. Figure <ref type="figure" target="#fig_1">2</ref> shows that the inference is thus much faster on pairs that are intuitively easy to match than on challenging ones, a behavior that is reminiscent of how humans process visual information. This is achieved by 1) predicting a set of correspondences after each computational blocks, and 2) enabling the model to introspect them and predict whether further computation is required. LigthGlue also discards at an early stage points that are not matchable, thus focusing its attention on the covisible area.</p><p>Our experiments show that LightGlue is a plug-and-play replacement to SuperGlue: it predicts strong matches from two sets of local features, at a fraction of the run time. This opens up exciting prospects for deploying deep matchers in latency-sensitive applications like SLAM <ref type="bibr" target="#b44">[45,</ref><ref type="bibr" target="#b4">5]</ref> or reconstructing larger scenes from crowd-sourced data [25, <ref type="bibr" target="#b59">60,</ref><ref type="bibr" target="#b38">39,</ref><ref type="bibr" target="#b56">57]</ref>. The LightGlue model and its training code will be released publicly with a permissive license.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related work</head><p>Matching images that depict the same scene or object typically relies on local features, which are sparse keypoints each associated with a descriptor of its local appearance. While classical algorithms rely on hand-crafted criteria and gradient statistics <ref type="bibr" target="#b40">[41,</ref><ref type="bibr" target="#b22">23,</ref><ref type="bibr" target="#b3">4,</ref><ref type="bibr" target="#b52">53]</ref>, much of the recent research has focused on designing Convolutional Neural Networks (CNNs) for both detection <ref type="bibr" target="#b80">[81,</ref><ref type="bibr" target="#b15">16,</ref><ref type="bibr" target="#b18">19,</ref><ref type="bibr" target="#b51">52,</ref><ref type="bibr">73]</ref> and description <ref type="bibr" target="#b41">[42,</ref><ref type="bibr" target="#b71">72]</ref>. Trained with challenging data, CNNs largely improve the accuracy and robustness of matching. Local features now come in many flavors: some are better localized <ref type="bibr" target="#b40">[41]</ref>, highly repeatable <ref type="bibr" target="#b15">[16]</ref>, cheap to store and match <ref type="bibr" target="#b53">[54]</ref>, invariant to specific changes <ref type="bibr" target="#b45">[46]</ref>, or ignore unreliable objects <ref type="bibr">[73]</ref>.</p><p>Local features are then matched with a nearest neighbor search in descriptor space. Because of non-matchable key-points and imperfect descriptors, some correspondences are incorrect. Those are filtered out by heuristics, like Lowe's ratio test <ref type="bibr" target="#b40">[41]</ref> or the mutual check, inlier classifiers <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b81">82]</ref>, and by robustly fitting geometric models <ref type="bibr" target="#b21">[22,</ref><ref type="bibr">7]</ref>. This process requires extensive domain expertise and tuning and is prone to failure when conditions are too challenging. These limitations are largely solved by deep matchers.</p><p>Deep matchers are deep networks trained to jointly match local features and reject outliers given an input image pair. The first of its kind, SuperGlue <ref type="bibr" target="#b55">[56]</ref> combines the expressive representations of Transformers <ref type="bibr" target="#b73">[74]</ref> with optimal transport <ref type="bibr" target="#b47">[48]</ref> to solve a partial assignment problem. It learns powerful priors about scene geometry and camera motion and is thus robust to extreme changes and generalizes well across data domains. Inheriting the limitations of early Transformers, SuperGlue is hard to train and its complexity grows quadratically with the number of keypoints.</p><p>Subsequent works make it more efficient by reducing the size of the attention mechanism. They restrict it to a small set of seed matches <ref type="bibr" target="#b7">[8]</ref> or within clusters of similar keypoints <ref type="bibr" target="#b64">[65]</ref>. This largely reduces the run time for large numbers of keypoints but yields no gains for smaller, standard input sizes. This also impairs the robustness in the most challenging conditions, failing to reach the performance of the original SuperGlue model. LightGlue instead brings large improvements for typical operating conditions, like in SLAM, without compromising on performance for any level of difficulty. This is achieved by dynamically adapting the network size instead of reducing its overall capacity.</p><p>Conversely, dense matchers like LoFTR <ref type="bibr" target="#b67">[68]</ref> and followups <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b77">78]</ref> match points distributed on dense grids rather than sparse locations. This boosts the robustness to impressive levels but is generally much slower because it processes many more elements. This limits the resolution of the input images and, in turn, the spatial accuracy of the correspondences. While LightGlue operates on sparse inputs, we show that fair tuning and evaluation makes it competitive with dense matchers, for a fraction of the run time.</p><p>Making Transformers efficient has received significant attention following their success in language processing. As the memory footprint of attention is a major limitation to handling long sequences, many works reduce it using linear formulations <ref type="bibr" target="#b78">[79,</ref><ref type="bibr" target="#b31">32,</ref><ref type="bibr" target="#b32">33]</ref> or bottleneck latent tokens <ref type="bibr" target="#b34">[35,</ref><ref type="bibr" target="#b29">30]</ref>. This enables long-range context but can impair the performance for small input sizes. Selective checkpointing <ref type="bibr" target="#b48">[49]</ref> reduces the memory footprint of attention and optimizing the memory access also drastically speeds it up <ref type="bibr">[14]</ref>.</p><p>Other, orthogonal works instead adaptively modulate the network depth by predicting whether the prediction of a token at a given layer is final or requires further computations <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b61">62]</ref> . This is mostly inspired by adaptive schemes developed for CNNs by the vision commu- </p><formula xml:id="formula_0">V z i v K i h l b k x 5 X + b f M = " &gt; A A A C R H i c b V D L T s M w E H R 4 l v I q c O Q S U S F B D 1 W C K u D I 4 8 K x S B Q q N a F y n G 1 r 1 X Y i 2 y l U U b 6 B K / w Q / 8 A / c E N c E W 6 b A 2 1 Z y d J 4 Z n c 9 n i B m V G n H + b A W F p e W V 1 Y L a 8 X 1 j c 2 t 7 d L O 7 r 2 K E k m g Q S I W y W a A F T A q o K G p Z t C M J W A e M H g I + t c j / W E A U t F I 3 O l h D D 7 H X U E 7 l G B t q I Z X i R 8 v 2 6 W y U 3 X G Z c 8 D N w d l l F e 9 v W M d e 2 F E E g 5 C E 4 a V a</formula><p>r l O r P 0 U S 0 0 J g 6 z o J Q p i T P q 4 C y 0 D B e a g / H T s N r M P D R P a n U i a I 7 Q 9 Z v 9 O p J g r N e S B 6 e R Y 9 9 S s N i L / 0 1 q J 7 p z 7 </p><formula xml:id="formula_1">K R V x o k G Q y U O d h N k 6 s k d f t 0 M q g W g 2 N A A T S Y 1 X m / S w x E S b g K Y 2 h Q M a q 9 z 1 8 8 T 2 l I u A m 7 s E A U 8 k 4 h y L M P U q W c v 1 U y / g q T d y J n l a d r M s K 5 p w 3 d k o 5 8 H 9 S d U 9 r d Z u a + W L q z z m A t p H B + g I u e g M X a A b V E c N R B B F L + g V v V n v 1 q f 1 Z X 1 P W h e s f G Y P T Z X 1 8 w v 2 b L G 6 &lt; / l a t e x i t &gt; p A &lt; l a t e x i t s h a 1 _ b a s e 6 4 = " A T 4 F W D S 3 v m t 4 C L G / e z I 1 4 8 t R 5 A Q = " &gt; A A A C R H i c b V D L T s M w E H R 4 U 5 6 F I 5 e I C A l 6 q B K E g G N V L h x B o l C p C Z X j b I q F 7 U S 2 U 6 i i f A N X + C H + g X / g h r g i 3 D Y H 2 r K S p f H M 7 n o 8 Y c q o 0 q 7 7 Y c 3 N L y w u L a + s V t b W N z a 3 t q s 7 t y r J J I E W S V g i 2 y F W w K i A l q a a Q T u V g H n I 4 C 5 8 v B j q d 3 2 Q i i b i R g 9 S C D j u C R p T g r W h W n 4 t v W 9 2 t x 2 3 7 o 7 K n g V e C R x U 1 l W 3 a h 3 5 U U I y D k I T h p X q e G 6 q g x x L T Q m D o u J n C l J M H n E P O g Y K z E E F + c h t Y R 8 Y J r L j R J o j t D 1 i / 0 7 k m C s 1 4 K H p 5 F g / q G l t S P 6 n d T I d n w c 5 F W m m Q Z D x Q 3 H G b J 3 Y w 6 / b E Z V A N B s Y g I m k x q t N H r D E R J u A J j Z F f Z q q 0 v X</formula><formula xml:id="formula_2">B K E g G N V L h x B o l C p C</formula><p>Z X j b I q F 7 U S 2 U 6 i i f A N X + C H + g X / g h r g i 3 D Y H 2 r K S p f H M 7 n o 8 Y c q o 0 q 7 7 Y c 3 N L y w u L a + s V t b W N z a 3 t q s 7 t y r J J I E W S V g i 2 y F W w K i A l q a a Q T u V g H n I 4 C 5 8 v B j q d 3 2 Q i i b i R g 9 S C D j u C R p T g r W h W n 4 t u m 9 2 t x 2 3 7 o 7 K n g V e C R x U 1 l W 3 a h 3 5 U U I y D k I T h p X q e G 6 q g </p><formula xml:id="formula_3">x x L T Q m D o u J n C l J M H n E P O g Y K z E E F + c h t Y R 8 Y J r L j R J o j t D 1 i / 0 7 k m C s 1 4 K H p 5 F g / q G l t S P 6 n d T I d n w c 5 F W m m Q Z D x Q 3 H G b J 3 Y w 6 / b E Z V A N B s Y g I m k x q t N H r D E R J u A J j Z F f Z q q 0 v X</formula><formula xml:id="formula_4">= " &gt; A A A C R H i c b V D L T s M w E H R 4 l v I q c O Q S U S F B D 1 W C K u D I 4 8 K x S B Q q N a F y n G 1 r 1 X Y i 2 y l U U b 6 B K / w Q / 8 A / c E N c E W 6 b A 2 1 Z y d J 4 Z n c 9 n i B m V G n H + b A W F p e W V 1 Y L a 8 X 1 j c 2 t 7 d L O 7 r 2 K E k m g Q S I W y W a A F T A q o K G p Z t C M J W A e M H g I + t c j / W E A U t F I 3 O l h D D 7 H X U E 7 l G B t q I Z X C R 8 v 2 6 W y U 3 X G Z c 8 D N w d l l F e 9 v</formula><p>W M d e 2 F E E g 5 C E 4 a V a r l O r P 0 U S 0 0 J g 6 z o J Q p i T P q 4 C y 0 D B e a g / H T s N r M P D R P a n U i a I 7 Q 9 Z v 9 O p J g r N e S B 6 e R Y 9 9 S s N i L / 0 1 q J 7 p z 7 K R V x o k G Q y U O d h N k 6 s k d f t 0 M q g W g 2 N A A T S Y 1 X m / S w x E S b g K Y 2 h Q M a q 9 z 1 8 8 T 2 l I u A m 7 s E A U 8 k 4 h y L M P U q W c v 1 U y / g q T d y J n l a d r M s K 5 p w 3 d k o 5 8 H 9 S d U 9 r d Z u a + W L q z z m A t p H B + g I u e g M X a A b V E c N R B B F L + g V v V n v 1 q f 1 Z X 1 P W h e s f G Y P T Z X 1 8 w v g B L G u &lt; / l a t e x i t &gt; d A cross assignment &lt; l a t e x i t s h a 1 _ b a s e 6 4 = " + R 8 E T E 7 H i j 8 x 8 H N V d p g g h 7 A o 4 p 8 = " &gt;   nity <ref type="bibr" target="#b70">[71,</ref><ref type="bibr">80,</ref><ref type="bibr" target="#b39">40,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b35">36,</ref><ref type="bibr" target="#b75">76]</ref>. In Transformers, the type of positional encoding has a large impact on the accuracy. While absolute sinusoidal <ref type="bibr" target="#b73">[74]</ref> or learned encodings <ref type="bibr">[17,</ref><ref type="bibr" target="#b50">51]</ref> were initially prevalent, recent works have studied relative encodings <ref type="bibr" target="#b62">[63,</ref><ref type="bibr" target="#b66">67]</ref> to stabilize the training and better capture long-range dependencies.</p><formula xml:id="formula_5">A A A C Q H i c b V C 7 T s M w F H V 4 l v J q Y W S J q J C A o U p Q B Y w V L I y t R B 9 S E 1 W O c 0 u t 2 k 5 k O 4 U q y h e w w g / x F / w B G 2 J l w m 0 z U M q V L B 2 f c + / 1 8 Q l i R p V 2 n H d r Z X V t f W O z s F X c 3 t n d 2 y + V D 9 o q S i S B F o l Y J L s B V s C o g J a m m k E 3 l o B 5 w K A T j G 6 n e m c M U t F I 3 O t J D D 7 H D 4 I O K M H a U E 3 S L 1 W c q j M r e x m 4 O a i g v B r 9 s n X m h R F J O A h N G F a q 5 z q x 9 l M s N S U M s q K X K I g x G e E H 6 B k o M A f l p z O n m X 1 i m N A e R N I c o e 0 Z + 3 s i x V y p C Q 9 M J 8 d 6 q P 5 q U / I / r Z f o w b W f U h E n G g S Z P z R I m K 0 j e / p t O 6 Q S i G Y T A z C R 1 H i 1 y R B L T L Q J Z 2 F T O K a x y l 0 / z W 0 v u A i 4 u U s Q 8 E g i z r E I U + 8 8 6 7 l + 6 g U 8 9 a b O J E 8 r b p Z l R R O u + z f K Z d C + q L q X 1 V q z V q n f 5 D E X 0 B E 6 R q f I R V e o j u 5 Q A 7 U Q Q Y C e 0 Q t</formula><formula xml:id="formula_6">A A C Q H i c b V C 7 T s M w F H V 4 l v J q Y W S J q J C A o U p Q B Y w V L I y t R B 9 S E 1 W O c 0 u t 2 k 5 k O 4 U q y h e w w g / x F / w B G 2 J l w m 0 z U M q V L B 2 f c + / 1 8 Q l i R p V 2 n H d r Z X V t f W O z s F X c</formula><formula xml:id="formula_7">S i G Y T A z C R 1 H i 1 y R B L T L Q J Z 2 F T O K a x y l 0 / z W 0 v u A i 4 u U s Q 8 E g i z r E I U + 8 8 6 7 l + 6 g U 8 9 a b O J E 8 r b p Z l R R O u + z f K Z d C + q L q X 1 V q z V q n f 5 D E X 0 B E 6 R q f I R V e o j u 5 Q A 7 U Q Q Y C e 0 Q t</formula><p>LightGlue adapts some of these innovations to 2D feature matching and shows gains in both efficiency and accuracy. We design LightGlue to output a set of correspondences</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Fast feature matching</head><formula xml:id="formula_8">M = {(i, j)} ⊂ A × B.</formula><p>Each point is matchable at least once, as it stems from a unique 3D point, and some keypoints are unmatchable, due to occlusion or non-repeatability. As in previous works, we thus seek a soft partial assignment matrix P ∈ [0, 1] M ×N between local features in A and B, from which we can extract correspondences.</p><p>Overview -Figure <ref type="figure" target="#fig_7">3</ref>: LightGlue is made of a stack of L identical layers that process the two sets jointly. Each layer is composed of self-and cross-attention units that update the representation of each point. A classifier then decides, at each layer, whether to halt the inference, thus avoiding unnecessary computations. A lightweight head finally computes a partial assignment from the set of representations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Transformer backbone</head><p>We associate each local feature i in image I ∈ {A, B} with a state x I i ∈ R d . The state is initialized with the cor-responding visual descriptor x I i ← d I i and subsequently updated by each layer. We define a layer as a succession of one self-attention and one cross-attention units.</p><p>Attention unit: In each unit, a Multi-Layer Perceptron (MLP) updates the state given a message m I←S i aggregated from a source image S ∈ {A, B}:</p><formula xml:id="formula_9">x I i ← x I i + MLP x I i | m I←S i ,<label>(1)</label></formula><p>where [• | •] stacks two vectors. This is computed for all points in both images in parallel. In a self-attention unit, each image I pulls information from points of the same image and thus S = I. In a cross-attention unit, each image pulls information from the other image and S = {A, B}\I.</p><p>The message is computed by an attention mechanism as the weighted average of all states j of image S:</p><formula xml:id="formula_10">m I←S i = j∈S Softmax k∈S a IS ik j Wx S j ,<label>(2)</label></formula><p>where W is a projection matrix and a IS ij is an attention score between points i and j of images I and S. How this score is computed differs for self-and cross-attention units.</p><p>Self-attention: Each point attends to all points of the same image. We perform the same following steps for each image I and thus drop the superscript I for clarity. For each point i, the current state x i is first decomposed into key and query vectors k i and q i via different linear transformations. We then define the attention score between points i and j as</p><formula xml:id="formula_11">a ij = q ⊤ i R p j -p i k j ,<label>(3)</label></formula><p>where R(•) ∈ R d×d is a rotary encoding <ref type="bibr" target="#b66">[67]</ref> of the relative position between the points. We partition the space into d/2 2D subspaces and rotate each of them by an angle corresponding, following Fourier Features [37], to the projection onto a learned basis b k ∈ R 2 :</p><formula xml:id="formula_12">R(p) =   R(b ⊤ 1 p) 0 . . . 0 R(b ⊤ d/2 p)   , R(θ) = cos θ -sin θ sin θ cos θ .</formula><p>(4) Positional encoding is a critical part of attention as it allows addressing different elements based on their position. We note that, in projective camera geometry, the position of visual observations is equivariant w.r.t. a translation of the camera within the image plane: 2D points that stem from 3D points on the same fronto-parallel plane are translated in an identical way and their relative distance remains constant. This calls for an encoding that only captures the relative but not the absolute position of points.</p><p>The rotary encoding <ref type="bibr" target="#b66">[67]</ref> enables the model to retrieve points j that are located at a learned relative position from i. The positional encoding is not applied to the value v j and thus does not spill into the state x i . The encoding is identical for all layers and is thus computed once and cached.</p><p>Cross-attention: Each point in I attends to all points of the other image S. We compute a key k i for each element but no query. This allows to express the score as</p><formula xml:id="formula_13">a IS ij = k I i ⊤ k S j ! = a SI ji .<label>(5)</label></formula><p>We thus need to compute the similarity only once for both I ← S and S ← I messages. This trick has been previously referred to as bidirectional attention <ref type="bibr" target="#b76">[77]</ref>. Since this step is expensive, with a complexity of O(NMd), it saves a significant factor of 2. We do not add any positional information as relative positions are not meaningful across images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Correspondence prediction</head><p>We design a lightweight head that predicts an assignment given the updated state at any layer.</p><p>Assignment scores: We first compute a pairwise score matrix S ∈ R M ×N between the points of both images:</p><formula xml:id="formula_14">S ij = Linear x A i ⊤ Linear x B j ∀(i, j) ∈ A×B, (6)</formula><p>where Linear(•) is a learned linear transformation with bias. This score encodes the affinity of each pair of points to be in correspondence, i.e. 2D projections of the same 3D point. We also compute, for each point, a matchability score as</p><formula xml:id="formula_15">σ i = Sigmoid (Linear(x i )) ∈ [0, 1] . (<label>7</label></formula><formula xml:id="formula_16">)</formula><p>This score encodes the likelihood of i to have a corresponding point. A point that is not detected in the other image, e.g. when occluded, is not matchable and thus has σ i → 0.</p><p>Correspondences: We combine both similarity and matchability scores into a soft partial assignment matrix P as A pair of points (i, j) yields a correspondence when both points are predicted as matchable and when their similarity is higher than any other point in both images. We select pairs for which P ij is larger than a threshold τ and than any other element along both its row and column.</p><formula xml:id="formula_17">P ij = σ A i σ B j Softmax k∈A (S kj ) i Softmax k∈B (S ik ) j .<label>(8)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Adaptive depth and width</head><p>We add two mechanisms that avoid unnecessary computations and save inference time: i) we reduce the number of layers depending on the difficulty of the input image pair; ii) we prune out points that are confidently rejected early.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Confidence classifier:</head><p>The backbone of LightGlue augments input visual descriptors with context. These are often reliable if the image pair is easy, i.e. has high visual overlap and little appearance changes. In such case, predictions from early layers are confident and identical to those of late layers. We can then output these predictions and halt the inference.</p><p>At the end of each layer, LightGlue infers the confidence of the predicted assignment of each point:</p><formula xml:id="formula_18">c i = Sigmoid (MLP(x i )) ∈ [0, 1] .<label>(9)</label></formula><p>A higher value indicates that the representation of i is reliable and final -it is confidently either matched or unmatchable. This is inspired by multiple works that successfully apply this strategy to language and vision tasks <ref type="bibr" target="#b61">[62,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b70">71,</ref><ref type="bibr">80,</ref><ref type="bibr" target="#b39">40]</ref>.</p><p>The compact MLP adds only 2% of inference time in the worst case but most often saves much more.</p><p>Exit criterion: For a given layer ℓ, a point is deemed confident if c i &gt; λ ℓ . We halt the inference if a sufficient ratio α of all points is confident:</p><formula xml:id="formula_19">exit =   1 N +M I∈{A,B} i∈I c I i &gt; λ ℓ   &gt; α . (<label>10</label></formula><formula xml:id="formula_20">)</formula><p>We observe, as in <ref type="bibr" target="#b61">[62]</ref>, that the classifier itself is less confident in early layers. We thus decay λ ℓ throughout the layers based on the validation accuracy of each classifier. The exit threshold α directly controls the trade-off between accuracy and inference time.</p><p>Point pruning: When the exit criterion is not met, points that are predicted as both confident and unmatchable are unlikely to aid the matching of other points in subsequent layers. Such points are for example in areas that are clearly not covisible across the images. We therefore discard them at each layer and feed only the remaining points to the next one. This significantly reduces computation, given the quadratic complexity of attention, and does not impact the accuracy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Supervision</head><p>We train LightGlue in two stages: we first train it to predict correspondences and only after train the confidence classifier. The latter thus does not impact the accuracy at the final layer or the convergence of the training.</p><p>Correspondences: We supervise the assignment matrix P with ground truth labels estimated from two-view transformations. Given a homography or pixel-wise depth and a relative pose, we wrap points from A to B and conversely. Ground truth matches M are pairs of points with a low reprojection error in both images and a consistent depth. Some points Ā ⊆ A and B ⊆ B are labeled as unmatchable when their reprojection or depth errors are sufficiently large with all other points. We then minimize the log-likelihood of the assignment predicted at each layer ℓ, pushing LightGlue to predict correct correspondences early:</p><formula xml:id="formula_21">loss = - 1 L ℓ 1 |M| (i,j)∈M log ℓ P ij + 1 2| Ā| i∈ Ā log 1 -ℓ σ A i + 1 2| B| j∈ B log 1 -ℓ σ B j . (<label>11</label></formula><formula xml:id="formula_22">)</formula><p>The loss is balanced between positive and negative labels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Confidence classifier:</head><p>We then train the MLP of Eq. ( <ref type="formula" target="#formula_18">9</ref>) to predict whether the prediction of each layer is identical to the final one. Let</p><formula xml:id="formula_23">ℓ m A i ∈ B ∪ {•} be the index of the point in B matched to i at layer ℓ, with ℓ m A i = • if i is unmatchable. The ground truth binary label of each point is ℓ m A i = L m A</formula><p>i and identically for B. We then minimize the binary cross-entropy of the classifiers of layers ℓ ∈ {1, ..., L-1}.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Comparison with SuperGlue</head><p>LightGlue is inspired by SuperGlue but differs in aspects critical to its accuracy, efficiency, and ease of training.</p><p>Positional encoding: SuperGlue encodes the absolute point positions with an MLP and fuses them early with the descriptors. We observed that the model tends to forget this positional information throughout the layers. LightGlue instead relies on a relative encoding that is better comparable across images and is added in each self-attention unit. This makes it easier to leverage the positions and improves the accuracy of deeper layers.</p><p>Prediction head: SuperGlue predicts an assignment by solving a differentiable optimal transport problem using the Sinkhorn algorithm <ref type="bibr" target="#b65">[66,</ref><ref type="bibr" target="#b47">48]</ref>. It consists in many iterations of row-wise and column-wise normalization, which is expensive in terms of both compute and memory. SuperGlue adds a dustbin to reject unmatchable points. We found that the dustbin entangles the similarity score of all points and thus yields suboptimal training dynamics. LightGlue disentangles similarity and matchability, which are much more efficient to predict. This also yields cleaner gradients.</p><p>Deep supervision: Because of how expensive Sinkhorn is, SuperGlue cannot make predictions after each layer and is supervised only at the last one. The lighter head of LightGlue makes it possible to predict an assignment at each layer and to supervise it. This speeds up the convergence and enables exiting the inference after any layer, which is key to the efficiency gains of LightGlue.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Details that matter</head><p>Recipe: LightGlue follows the supervised training setup of SuperGlue. We first pre-train the model with synthetic homographies sampled from 1M images <ref type="bibr" target="#b49">[50]</ref>. Such augmentations provide full and noise-free supervision but require careful tuning. LightGlue is then fine-tuned with the MegaDepth dataset <ref type="bibr" target="#b37">[38]</ref>, which includes 1M crowd-sourced images depicting 196 tourism landmarks, with camera calibration and poses recovered by SfM and dense depth by multi-view stereo. Because large models easily overfit to such distinctive scenes, the pre-training is critical to the generalization of the model but was omitted in recent follow-ups <ref type="bibr" target="#b7">[8,</ref><ref type="bibr" target="#b64">65]</ref>.</p><p>Training tricks: While the LightGlue architecture improves the training speed, stability, and accuracy, we found that some details have a large impact too. Figure <ref type="figure" target="#fig_10">5</ref> shows that this reduces the resources required to train a model compared to SuperGlue. This lowers the cost of training and makes deep matchers more accessible to the broader community.</p><p>Since the depth maps of MegaDepth are often incomplete, we also label points with a large epipolar error as unmatchable. Carefully tuning and annealing the learning rate boosts the accuracy. Training with more points also does: we use 2k per image instead of 1k. The batch size matters: we use gradient checkpointing <ref type="bibr" target="#b9">[10]</ref> and mixed-precision to fit 32 image pairs on a single GPU with 24GB VRAM.</p><p>Implementation details: LighGlue has L=9 layers. Each attention unit has 4 heads. All representations have dimension d=256. Throughout the paper, run-time numbers labeled as optimized use an efficient implementation of selfattention <ref type="bibr">[14]</ref>. More details are given in the Appendix.</p><p>We train LightGlue with both SuperPoint <ref type="bibr" target="#b15">[16]</ref> and SIFT <ref type="bibr" target="#b40">[41]</ref> local features but it is compatible with any other type. When fine-tuning the model on MegaDepth <ref type="bibr" target="#b37">[38]</ref>, we use the data splits of Sun et al. <ref type="bibr" target="#b67">[68]</ref> to avoid training on scenes included in the Image Matching Challenge <ref type="bibr" target="#b30">[31]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Experiments</head><p>We evaluate LightGlue for the tasks of homography estimation, relative pose estimation, and visual localization. We also analyze the impacts of our design decisions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Homography estimation</head><p>We evaluate the quality of correspondences estimated by LightGlue on planar scenes of the HPatches <ref type="bibr" target="#b1">[2]</ref> dataset. This dataset is composed of sequences of 5 image pairs, each under either illumination or viewpoint changes.</p><p>Setup: Following SuperGlue <ref type="bibr" target="#b55">[56]</ref>, we report the precision and recall compared to GT matches at a reprojection error of 3px. We also evaluate the accuracy of homographies estimated from the correspondences using robust and non-robust solvers: RANSAC <ref type="bibr" target="#b21">[22]</ref> and the weighted DLT <ref type="bibr" target="#b23">[24]</ref>. For each image pair, we compute the mean reprojection error of the four image corners and report the area under the cumulative error curve (AUC) up to values of 1px and 5px. Following best practices in benchmarking <ref type="bibr" target="#b30">[31]</ref> and unlike past works <ref type="bibr" target="#b55">[56,</ref><ref type="bibr" target="#b67">68]</ref>, we use a state-of-the-art robust estimator <ref type="bibr" target="#b2">[3]</ref> and extensively tune the inlier threshold for each method separately. We then report the highest scoring results.</p><p>Baselines: We follow the setup of <ref type="bibr" target="#b67">[68]</ref> and resize all images such that their smaller dimension is equal to 480 pixels. We evaluate sparse matchers with 1024 local features extracted by SuperPoint <ref type="bibr" target="#b15">[16]</ref>. We compare LightGlue against nearestneighbor matching with mutual check and the deep matchers SuperGlue <ref type="bibr" target="#b55">[56]</ref> and SGMNet <ref type="bibr" target="#b7">[8]</ref>. We use the official models trained on outdoor datasets <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b63">64]</ref>. For reference, we also evaluate the dense matcher LoFTR <ref type="bibr" target="#b67">[68]</ref>, selecting only the top 1024 predicted matches for the sake of fairness. Results: Table <ref type="table" target="#tab_0">1</ref> shows that LightGlue yields correspondences with higher precision than and similar recall to Su-perGlue and SGMNet. When estimating homographies with DLT, this results in much more accurate estimates than with other matchers. LightGlue thus makes DLT, a simple solver, competitive with the expensive and slower MAGSAC <ref type="bibr" target="#b2">[3]</ref>. At a coarse threshold of 5px, LightGlue is also more accurate than LoFTR despite being constrained by sparse keypoints.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">Relative pose estimation</head><p>We evaluate LightGlue for pose estimation in outdoor scenes that exhibit strong occlusion and challenging lighting and structural changes.</p><p>Setup: We use image pairs from the MegaDepth-1500 test set following the evaluation of <ref type="bibr" target="#b67">[68]</ref>. The test set contains 1500 image pairs from two popular phototourism destinations: St. Peters Square and Reichstag. The data was collected in a way that the difficulty is balanced based on visual overlap. We evaluate our method on the downstream task of relative pose estimation.</p><p>We estimate an essential matrix both with vanilla RANSAC and LO-RANSAC <ref type="bibr" target="#b33">[34]</ref>, respectively, and decompose them into a rotation and a translation. The inlier threshold is tuned for each approach on the test data -we think that this makes the comparison more fair as we do not evaluate RANSAC itself. We compute the pose error as the maximum angular error in rotation and translation and we report its AUC at 5°, 10°, and 20°.</p><p>Baselines: We extract 2048 local features per images, each resized such that its larger dimension is 1600 pixels. With SuperPoint <ref type="bibr" target="#b15">[16]</ref> features, we compare LightGlue to nearestneighbor matching with mutual check and to the official implementations of SuperGlue <ref type="bibr" target="#b55">[56]</ref> and SGMNet <ref type="bibr" target="#b7">[8]</ref>. With DISK [73] we only evaluate against its own strong baseline, as no other trained matcher with DISK is publicly available.</p><p>We also evaluate the recent, dense deep matchers LoFTR <ref type="bibr" target="#b67">[68]</ref>, MatchFormer <ref type="bibr" target="#b77">[78]</ref>, and ASpanFormer <ref type="bibr" target="#b8">[9]</ref>. We carefully follow their respective evaluation setups and resize the input images such that their largest dimension is 840 pixels (LoFTR, MatchFormer) or 1152 pixels (ASpanFormer). Larger images would improve their accuracy, as with sparse features, but would incur prohibitive and unpractical run time and memory requirements.</p><p>Results: Table <ref type="table" target="#tab_1">2</ref> shows that LightGlue largely outperforms the existing approaches SuperGlue and SGMNet on Super-Point features, and can greatly improve the matching accuracy over DISK local features. It yields better correspondences and more accurate relative poses and reduces the inference time by 30%. LightGlue typically predicts slightly fewer matches than SuperGlue but those are more accurate. By detecting confident predictions early in the model, the adaptive variant is over 2× faster than SuperGlue and SGMNet and still more accurate. With a carefully tuned LO-RANSAC <ref type="bibr" target="#b33">[34]</ref>, LightGlue can achieve higher accuracy than some popular dense matcher which are between 5 and 11 times slower. Among the evaluated dense matchers, ASPAN-Former is the most accurate. Considering trade-off between accuracy and speed, LightGlue outperforms all approaches by a large margin.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.">Outdoor visual localization</head><p>Setup: We evaluate long-term visual localization in challenging conditions using the large-scale Aachen Day-Night benchmark <ref type="bibr" target="#b58">[59]</ref>. We follow the Hierarchical Localization framework with the hloc toolbox <ref type="bibr" target="#b54">[55]</ref>. We first triangulate a sparse 3D point cloud from the 4328 daytime reference images, with known poses and calibration, using COLMAP <ref type="bibr" target="#b59">[60]</ref>. For each of the 824 daytime and 98 nighttime queries, we retrieve 50 images with NetVLAD <ref type="bibr" target="#b0">[1]</ref>, match each of them, and estimate a camera pose with RANSAC and a Perspective-n-Point solver. We report the pose recall at multiple thresholds and the average throughput of the matching step during both mapping and localization. Baselines: We extract up to 4096 features with Super-Point and match them with SuperGlue, SGMNet <ref type="bibr" target="#b7">[8]</ref>, Clus-terGNN <ref type="bibr" target="#b64">[65]</ref>, and LightGlue with adaptive depth and width. Since the implementation of ClusterGNN is not publicly available, we report the accuracy found in the original paper and the time estimates kindly provided by the authors.</p><p>Results: Table <ref type="table" target="#tab_2">3</ref> shows that LightGlue reaches a similar accuracy as SuperGlue but at a 2.5× higher throughput. The optimized variant, which leverages an efficient selfattention [14], increases the throughput by 4×. LightGlue thus matches up to 4096 keypoints in real time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4.">Insights</head><p>Ablation study: We validate our design decisions by evaluating LightGlue after its pre-training on the challenging synthetic homography dataset with extreme photometric augmentations. We train different variants with SuperPoint features and 5M samples, all within 4 GPU-days. We create a test set from the same augmentations applied to images unseen during training. We extract 512 keypoints from each. We also compare against SuperGlue, which we train with the same setup. More details are provided in the Appendix. We report the ablation results in Table <ref type="table">4</ref>. Compared to SuperGlue, LightGlue converges significantly faster, and achieves +4% recall and +12% precision. Note that Super-Glue can achieve similar accuracies as LightGlue with a long-enough training, but the improved convergence makes it much more practical to train on new data.</p><p>Without the matchability classifier, the network loses its ability to discriminate between good and bad matches, as shown in Figure <ref type="figure">6</ref>. Intuitively, the similarity matrix proposes many likely matches while the matchability filters incorrect proposals. Thus, our partial assignment can be viewed as an elegant fusion of mutual nearest neighbor search and a learned inlier classifier <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b81">82]</ref>. This is significantly faster than solving the optimal transport problem of SuperGlue.</p><p>Replacing learned absolute positional encoding with rotary embeddings improves the accuracy, with a minor penalty on run time from rotating queries and keys at each selfattention layer. Using relative positions, LightGlue learns to match geometric patterns across images. Reminding the network about positions at each layer improves the robustness  of the network, resulting in +2% precision. Bidirectional cross-attention is equally accurate as standard cross-attention, but saves 20% run time by only computing the similarity matrix once. Currently, the bottleneck is computing the softmax along two dimensions. With a dedicated bidirectional softmax kernel, plenty of redundant computations could be avoided.</p><p>Using deep supervision, also intermediate layers have meaningful outputs. Already after 5 layers, the network can predict robust matches, achieving &gt; 90% recall. In the final layers, the network focuses on rejecting outliers, thus improving the match precision.</p><p>Adaptivity: By predicting matchability scores and confidences, we can adaptively reduce the computations during a forward-pass on a case-by-case basis. Table <ref type="table">5</ref> studies the effectiveness of the two pruning mechanisms -adaptive depth and width -on MegaDepth image pairs for different ranges of visual overlap. For easy samples, such as the successive frames of a video, the network quickly converges and exits after a few layers, resulting in a 1.86× speedup. In cases of low visual overlap, e.g. loop closure, the network requires more layers to converge. It however rejects confident and Table <ref type="table">5</ref>. Impact of adaptive depth and width. Early stopping helps most on smaller scenes, where the network stops after just half the layers. On harder scenes, the network requires more layers to converge, but smaller view overlap between image pairs allows the network to more aggressively prune the width of the network. Overall, adaptive depth-and width-pruning reduces the run time by 33% and is particularly effective on easy pairs. unmatchable points early and leaves them out of the inputs to subsequent layers, thus avoiding unnecessary computations.</p><p>Efficiency: Figure <ref type="figure">7</ref> shows run times for different numbers of input keypoints. For up to 2K keypoints per image, which is a common setting for visual localization, LightGlue is faster than both SuperGlue <ref type="bibr" target="#b55">[56]</ref> and SGMNet <ref type="bibr" target="#b7">[8]</ref>. Adaptive pruning further reduces the run time for any input size.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>This paper introduces LightGlue, a deep neural network trained to match sparse local features across images. Building on the success of SuperGlue, we combine the power of attention mechanisms with insights about the matching problem and with recent innovations in Transformer. We give this model the ability to introspect the confidence of its own predictions. This yields an elegant scheme that adapts the amount of computation to the difficulty of each image pair. Both its depth and width are adaptive: 1) the inference can stop at an early layer if all predictions are ready, and 2) points that are deemed not matchable are discarded early from further steps. The resulting model, LightGlue, is finally faster, more accurate, and easier to train than the long-unrivaled SuperGlue. In summary, LightGlue is a drop-in replacement with only benefits. The code will be released publicly for the benefit of the community.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Point pruning Matchability Matches</head><p>Figure <ref type="figure">8</ref>. Visualization of adaptive depth and width. From top to bottom, we show three easy, medium and difficult image pairs. The left column shows how LightGlue reduces its width: it finds out early that some points (•) are unmatchable (mostly by visual overlap) and discards non-repeatable points in later layers: • → • → •. This is very effective on difficult pairs. LightGlue looks for matches only in the reduced search space (•). The matchability scores (middle column, from non-matchable • to likely matchable •), help find accurate correspondences and are almost binary. On the right we visualize predicted matches as epipolar in-or outliers. We report the run time and stopping layer for each pair. On easy samples, LightGlue stops after only 2-3 layers, running with close to 100 FPS.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Image Matching Challenge</head><p>In this section, we present results obtained on the Pho-toTourism dataset of the Image Matching Challenge 2020 (IMC) <ref type="bibr">[26]</ref> in both stereo and multi-view tracks. The data is very similar to the MegaDepth <ref type="bibr" target="#b37">[38]</ref> evaluation, exhibits similar statistics but different scenes. We follow the standardized matching pipeline of IMC with the setup and hyperparameters of SuperGlue <ref type="bibr" target="#b55">[56]</ref>. We run the evaluation on the 3 validation scenes from the PhotoTourism dataset with LightGlue trained with two kinds of local features.</p><p>SuperPoint: For SuperPoint+SuperGlue and Super-Point+LightGlue, we extract a maximum of 2048 keypoints and use DEGENSAC <ref type="bibr">[11,</ref><ref type="bibr" target="#b11">12,</ref><ref type="bibr" target="#b42">43]</ref> with a threshold on the detection confidence of 1.1 in the stereo track (as suggested by SuperGlue). We do not perform any parameter tuning and reuse our model from the outdoor experiments with adaptive depth-and width, and use efficient self-attention [14] and mixed-precision during evaluation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DISK:</head><p>We also train LightGlue with DISK local features [73], a previous winner of the Image Matching Challenge. We follow the same training setup as for SuperPoint. For evaluation, we follow the guidelines from the authors for the restricted keypoint scenario (max 2048 features per image) and use mutual nearest neighbor matching with a ratio test of 0.95 as a baseline. We again use DEGENSAC for relative pose estimation with a threshold of 0.75. <ref type="table" target="#tab_5">6</ref> reports the evaluation results. We also report the average matching speed over all 3 validation scenes. LightGlue is competitive with SuperGlue both in the stereo and multi-view track, while running 2.5× faster. Most of these run time improvements are due to the adaptive-depth, which largely reduces the run time for easy image pairs. LightGlue trained with DISK [73] largely outperforms both the nearest-neighbor matching baseline with ratio test but also SuperPoint+LightGlue. On the smaller thresholds, DISK+LightGlue achieves +8%/+5% AUC in the stereo and multi-view tasks compared to our SuperPoint equivalent. With DISK, our model predicts 30% more matches than SP+LightGlue with an even higher epipolar precision.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results: Table</head><p>Image Matching Challenge 2021: We evaluate the phototourism subset of the IMC 2021 <ref type="bibr" target="#b26">[27]</ref> benchmark, both in the stereo-and multiview track. We compare our baseline on Su-perPoint <ref type="bibr" target="#b15">[16]</ref> and DISK <ref type="bibr">[73]</ref> with their respective baselines in a clean setting and in a restricted keypoint setting (max 2048 detections). Furthermore, we compare our best scoring method on IMC 2020, DISK+LightGlue, with tuned versions of DISK [73], SuperPoint+SuperGlue <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b55">56]</ref> as well as the SfM implementation of the dense matcher LoFTR <ref type="bibr" target="#b67">[68]</ref>. approaches with a fair margin.</p><p>Image Matching Challenge 2023: We compete in the IMC 2023 <ref type="bibr" target="#b27">[28]</ref>, which evaluates end-to-end Structurefrom-Motion in terms of camera pose accuracy, averaged over multiple thresholds, with a diverse set of scenes beyond phototourism. We use the default recontruction pipeline of hloc <ref type="bibr" target="#b54">[55]</ref> and retrieve 50 pairs per image using NetVLAD <ref type="bibr" target="#b0">[1]</ref>. We average the results over 3 runs to reduce the impact of randomness in the reconstruction pipeline. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Additional results</head><p>Relative pose estimation: Results reported in Section 5.2 were computed with a subset of the MegaDepth dataset <ref type="bibr" target="#b37">[38]</ref>   <ref type="table" target="#tab_1">2</ref>. In contrast to the split used by previous works <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b67">68]</ref>, this set of test images avoids training overlap with SuperGlue <ref type="bibr" target="#b55">[56]</ref>. LightGlue predicts a similar amount of correspondences but with higher precision (P), pose accuracy (AUC), and speed than existing sparse matchers. It is competitive with dense matchers for a fraction of the inference time.</p><p>works <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b67">68,</ref><ref type="bibr" target="#b77">78]</ref>. However, the images therein overlap with the training set of SuperGlue <ref type="bibr" target="#b55">[56]</ref>, the state-of-the-art sparse feature matcher and thus our main competitor. For a more fair evaluation, we perform an extensive outdoor experiment on the test scenes of our MegaDepth <ref type="bibr" target="#b37">[38]</ref> split, which covers 4 unique phototourism landmarks that SuperGlue was not trained with: Sagrada Familia, Lincoln Memorial Statue, London Castle, and the British Museum. To balance the difficulty of image pairs, we bin pairs into three categories based on their visual overlap score <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b55">56]</ref>, with intervals <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b29">30]</ref>%, <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b49">50]</ref>%, and [50, 70]%. We sample 150 image pairs per bin per scene, totaling 1800 image pairs. We carefully rerun the experiment with the same setup that was used in Table <ref type="table" target="#tab_1">2</ref>. We report the precision as the ratio of matches with an epipolar error below 3px. With SIFT <ref type="bibr" target="#b40">[41]</ref>, we evaluate the ratio test and SGMNet <ref type="bibr" target="#b7">[8]</ref> only, as the original SuperGlue model is not publicly available.</p><p>Table <ref type="table" target="#tab_7">8</ref> confirms that LightGlue predicts more accurate correspondences than existing sparse matchers, at a fraction of the time. Detector-free feature matchers like LoFTR remain state-of-the-art on this task, although by a mere 2% AUC@5°with LO-RANSAC.</p><p>Outdoor visual localization: For completeness, we also report results on the Aachen v1.1 dataset <ref type="bibr" target="#b58">[59]</ref> and compare our method to recent sparse and dense baselines. Table <ref type="table" target="#tab_8">9</ref> shows that all methods perform similarly on this dataset, which is largely saturated, with insignificant variations in the results. LightGlue is however far faster than all approaches.</p><p>Indoor visual localization: We report results for InLoc in Table <ref type="table" target="#tab_9">10</ref>. We use hloc and run SuperGlue again for fairness. For LoFTR and ASpanFormer, report existing results as no code is available. LightGlue is competitive with SuperGlue and more accurate at (0.25m,10°  insignificant because each split only has 205/151 queries (1.5% of difference ≡ 3 queries). Failures of LightGlue over SuperGlue (6/356 images @1m) are due to more matches on repeated objects (like trash cans), i.e. to better matching and weak retrieval -we show an example in Figure <ref type="figure" target="#fig_13">10</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Implementation details</head><p>C.1. Architecture Positional Encoding. 2D image coordinates are normalized to a range [-1, 1] while retaining the image aspect ratio. We then project 2D coordinates into frequencies with a linear projection W p ∈ R 2d/2h , where h is the number of attention heads. We cache the result for all layers. We follow the efficient scheme of Roformer <ref type="bibr" target="#b66">[67]</ref> to apply the rotations to query and key embeddings during self-attention, avoiding quadratic complexity to compute relative positional bias. We do not apply any positional encoding during cross-attention, but let the network learn spatial patterns by aggregating context within each image.</p><p>Graph Neural Network: The graph neural network consists of 9 transformer layers with both a self-and cross-attention unit. The update MLP (Eq. 1) has a single hidden layer of dimension d h = 2d followed by LayerNorm, GeLU activation and a linear projection (2d, d) with bias.</p><p>Each attention unit has three projection matrices for query, key and value, plus an additional linear projection that merges the multi-head output. In bidirectional cross attention, the projections for query and key are shared. In practice we use an efficient self-attention [14] which optimizes IO complexity of the attention aggregation. This could also be extended for bidirectional cross attention. While training we use gradient checkpointing to significantly reduce the required VRAM.</p><p>Correspondences: The linear layers (Eq. 6) map from d to d and are not shared across layers. For all experiments we use the mutual check and a filter threshold τ = 0.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Confidence classifier:</head><p>The classifier predicts the confidence with a linear layer followed by a sigmoid activation. Confidences are predicted for each keypoint and only at layers 1, .., L -1, since, by definition, the confidences of the final layer L are 1. Each prediction is supervised with a binary cross-entropy loss and its gradients are not propagated into the states to avoid impacting the matching accuracy. The state already encodes sufficient information since it is also supervised for matchability prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Exit criterion and point pruning:</head><p>During training we observed that the confidence predictions are less accurate in earlier layers. We therefore exponentially decay the confidence threshold:</p><formula xml:id="formula_24">λ l = 0.8 + 0.1e -4ℓ/L . (<label>12</label></formula><formula xml:id="formula_25">)</formula><p>A state is deemed confident if c ℓ i &gt; λ ℓ . During inference, we halt the network if α=95% of states are deemed confident.</p><p>For point pruning, a point is deemed unmatchable when its predicted confidence is high and its matchability is low:</p><formula xml:id="formula_26">unmatchable(i) = c l i &gt; λ ℓ &amp; σ ℓ i &lt; β<label>(13)</label></formula><p>We report an ablation on the exit confidence α in A more conservative stopping, with a higher threshold α, yields a higher accuracy at the cost of higher inference time. α=95% yields the best trade-off. accuracy tradeoff than trimming the model to fewer layers. Stopping the network early mainly sacrifices precision. For our experiments we chose 95% confidence, which yields on average 25% run time reduction with hardly any loss of accuracy on downstream tasks.</p><p>Here, β = 0.01 is a threshold on how matchable a point is. If Eq. 13 holds, we exclude the point from context aggregation in the following layers. This adds an overhead of gather and scatter per layer, but pruning becomes increasingly effective with more keypoints.</p><p>In Figure <ref type="figure" target="#fig_14">11</ref> we report the fraction of keypoints excluded in each layer. After just a few layers of context aggregation, LightGlue is confident to exclude &gt; 30% of keypoints early on. Since the number of keypoints have a quadratic impact on run time, as shown in Fig. <ref type="figure">7</ref>, this can largely reduce the number of computations in a forward pass and thus significantly reduce inference time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.2. Local features</head><p>We train LightGlue with three popular local feature detectors and descriptors: SuperPoint <ref type="bibr" target="#b15">[16]</ref>, SIFT <ref type="bibr" target="#b40">[41]</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.5. Homography estimation</head><p>We validate the models capabilities on real homographies on the Hpatches dataset <ref type="bibr" target="#b1">[2]</ref>. We follow the setup introduced in LoFTR <ref type="bibr" target="#b67">[68]</ref> and resize images to a maximum edge length of 480.</p><p>For SuperPoint we extract the top 1024 keypoints with the highest detection score, and report precision (fraction of matches within 3px homography error) and recall (fraction of recovered mutual nearest-neighbour matches within 3px homography error). For LoFTR we only report epipolar precision. Furthermore, we evaluate the models in the downstream task of homography matrix estimation. Following SuperGlue <ref type="bibr" target="#b55">[56]</ref>, we report pose estimation results from robust estimation using RANSAC/MAGSAC <ref type="bibr" target="#b2">[3]</ref> and the least squares solution with the weighted DLT algorithm. We evaluate the accuracy of estimated homography by their mean absolute corner distance towards the ground-truth homography.</p><p>We use OpenCV with USAC MAGSAC for robust homography estimation, and tune the threshold for each method separately. Our reasoning behind this decision, which is in contrast to previous works in feature matching <ref type="bibr" target="#b55">[56,</ref><ref type="bibr" target="#b67">68]</ref> which fix the RANSAC parameters, is that we mainly use RANSAC as a tool to evaluate the low-level matches on a downstream task, and we want to minimize the variations introduced by its hyperparameters in order to obtain fair and representative evaluations. Different matches typically require different RANSAC thresholds, and thus a fixed threshold is suboptimal for comparison. For example on outdoor relative pose estimation, tuning the RANSAC threshold yields +7% AUC@5 • on SuperGlue, skewing the reported numbers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Timings</head><p>All experiments were conducted on a single RTX 3080 with 10GB VRAM. We report the timings of the matching process only, excluding sparse feature extraction (which is linear in the number of images) and robust pose estimation. We report the average over the respective datasets.</p><p>In Figure <ref type="figure" target="#fig_16">13</ref> we benchmark self-/cross-attention and solving the partial assignment problem against the respective counterparts in SuperGlue <ref type="bibr" target="#b55">[56]</ref>. Bidirectional cross-attention reduces the run-time by 33% by only computing the similarity matrix once. However, the main bottleneck remains computing the softmax over both directions. Our cheap double-softmax and the unary matchability predictions are significantly faster than solving it using optimal transport <ref type="bibr" target="#b65">[66,</ref><ref type="bibr" target="#b47">48]</ref>, where 100 iterations are required during training to maintain stability.</p><p>In practice, we also use efficient self-attention [14] and mixed-precision to significantly reduce run time and memory requirements. However, for a fair comparison, we exclude these performance improvements from all experiments except where explicitly stated otherwise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Qualitative Results</head><p>Figure <ref type="figure">8</ref> shows how LightGlue discards unmatched points and its early stopping mechanism on easy/medium/hard pairs. Figure <ref type="figure">9</ref> illustrates the matching output for LightGlue with SIFT <ref type="bibr" target="#b40">[41]</ref>, SuperPoint <ref type="bibr" target="#b15">[16]</ref> and DISK [73] on some qualitative examples.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure1. LightGlue matches sparse features faster and better than existing approaches like SuperGlue. Its adaptive stopping mechanism gives a fine-grained control over the speed vs. accuracy trade-off. Our final, optimized model ⋆ delivers an accuracy closer to the dense matcher LoFTR at an 8× higher speed, here in typical outdoor conditions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Depth adaptivity. LigthGlue is faster at matching easy image pairs (top) than difficult ones (bottom) because it can stop at earlier layers when its predictions are confident.</figDesc><graphic coords="2,51.06,162.09,109.89,82.48" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head/><label/><figDesc>t e x i t s h a 1 _ b a s e 6 4 = " s G S c x V P Z 5 y</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head/><label/><figDesc>z 2 P a E i 5 C b u w Q B T y T h H I s o 9 2 t F x w t y P + S 5 P 3 Q m e e 5 4 R V F U T L j e d J S z 4 P a 4 7 p 3 W T 6 5 P n E a z j H k F 7 a F 9 d I g 8 d I Y a 6 B J d o R Y i i K I X 9 I r e r H f r 0 / q y v s e t c 1 Y 5 s 4 s m y v r 5 B f h I s b s = &lt; / l a t e x i t &gt; p B &lt; l a t e x i t s h a 1 _ b a s e 6 4 = " E N d w 5 w 7 D z F y M T c Y a 4 z s 5 3 A d J r Q A = " &gt; A A A C R H i c b V D L T s M w E H R 4 U 5 6 F I 5 e I C A l 6 q</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head/><label/><figDesc>z 2 P a E i 5 C b u w Q B T y T h H I s o 9 2 t F x w t y P + S 5 P 3 Q m e e 5 4 R V F U T L j e d J S z 4 P a 4 7 p 3 W T 6 5 P n E a z j H k F 7 a F 9 d I g 8 d I Y a 6 B J d o R Y i i K I X 9 I r e r H f r 0 / q y v s e t c 1 Y 5 s 4 s m y v r 5 B e H g s a 8 = &lt; / l a t e x i t &gt; d B &lt; l a t e x i t s h a 1 _ b a s e 6 4 = " P s a L D 2 M v 4 B u D K V 4 D Y 8 P h l B 5 4 U 4 8</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head/><label/><figDesc>6 t d 6 s D + v T + p q 3 r l j 5 z C F a K O v 7 B y U u s G A = &lt; / l a t e x i t &gt; c &lt; l a t e x i t s h a 1 _ b a s e 6 4 = " + R 8 E T E 7 H i j 8 x 8 H N V d p g g h 7 A o 4 p 8 = " &gt; A</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head/><label/><figDesc>3 t n d 2 y + V D 9 o q S i S B F o l Y J L s B V s C o g J a m m k E 3 l o B 5 w K A T j G 6 n e m c M U t F I 3 O t J D D 7 H D 4 I O K M H a U E 3 S L 1 W c q j M r e x m 4 O a i g v B r 9 s n X m h R F J O A h N G F a q 5 z q x 9 l M s N S U M s q K X K I g x G e E H 6 B k o M A f l p z O n m X 1 i m N A e R N I c o e 0 Z + 3 s i x V y p C Q 9 M J 8 d 6 q P 5 q U / I / r Z f o w b W f U h E n G g S Z P z R I m K 0 j e / p t O 6 Q</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. The LightGlue architecture. Given a pair of input local features (d, p), each layer augments the visual descriptors (•,•) with context based on self-and cross-attention units with positional encoding ⊙. A confidence classifier c helps decide whether to stop the inference. If few points are confident, the inference proceeds to the next layer but we prune points that are confidently unmatchable. Once a confident state if reached, LightGlue predicts an assignment between points based on their pariwise similarity and unary matchability.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head/><label/><figDesc>Problem formulation: LightGlue predicts a partial assignment between two sets of local features extracted from images A and B, following SuperGlue. Each local feature i is composed of a 2D point position p i := (x, y) i ∈ [0, 1] 2 , normalized by the image size, and a visual descriptor d i ∈ R d . Images A and B have M and N local features, indexed by A := {1, ..., M } and B := {1, ..., N }, respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Point pruning. As LigthGlue aggregates context, it can find out early that some points (•) are unmatchable and thus exclude them from subsequent layers. Other, non-repeatable points are excluded in later layers: • → • → •. This reduces the inference time and the search space (•) to ultimately find good matches fast.</figDesc><graphic coords="4,309.94,72.69,149.87,112.23" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Ease of training. The LightGlue architecture vastly improves the speed of convergence of the pre-training on synthetic homographies. After 5M image pairs (only 2 GPU-days), LighGlue achieves -33% loss at the final layer and +4% match recall. Super-Glue requires over 7 days of training to reach a similar accuracy.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Table 4 .Figure 6 .</head><label>46</label><figDesc>Figure 6. Benefit of the matchability. The matchability helps filter out outliers (red) that are visually similar, retaining only inlier correspondences (green).</figDesc><graphic coords="8,58.19,311.35,109.48,80.90" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head/><label/><figDesc>Figure 7. Run time vs number of keypoints. The full LightGlue model is 35% faster than SuperGlue and the adaptive depth and width make it even faster. SGMNet is comparably fast only for 4k keypoints and above but is much slower for standard input sizes.</figDesc><graphic coords="8,170.06,311.43,108.23,80.82" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Figure 10 .</head><label>10</label><figDesc>Figure 10. Failure cases on InLoc [70]. LightGlue sometimes matches repeated objects in the scene with strong texture, instead of the geometric structure.</figDesc><graphic coords="12,308.86,396.91,236.25,111.07" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Figure 11 .</head><label>11</label><figDesc>Figure11. Continuous detection of unmatchable points. After just a few layers the network detects many points which are unmatchable, and we exclude them from context aggregation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head/><label/><figDesc>and DISK [73]. During training and evaluation, we discard the detection threshold for all methods and use the top-k keypoints according to the detection score. During training, if ing rate of 1e-5 and we exponentially decay it by 0.95 in each epoch after 10 epochs, and stop training after 50 epochs (2 days on 2 RTX 3090). The top 2048 keypoints are extracted per image, and we use a batch size of 32. To speed-up training, we cache detections and descriptors per image, requiring around 200 GB of disk space.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_16"><head>Figure 13 .</head><label>13</label><figDesc>Figure 13. Run time breakdown. We evluate the runtime of self-, cross-and partial assignment layers on 1024 keypoints for Super-Glue and LightGlue. Most of LightGlue's default inference time improvements stem from a significantly faster partial assignment layer and reuse of computations in bidirectional cross-attention.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Homography estimation on HPatches.</figDesc><table><row><cell/><cell/><cell/><cell/><cell>AUC -RANSAC AUC -DLT</cell></row><row><cell cols="3">features + matcher R</cell><cell>P</cell><cell>@1px @5px @1px @5px</cell></row><row><cell cols="2">dense LoFTR</cell><cell cols="3">-92.7 41.5</cell><cell>78.8</cell><cell>38.5 70.6</cell></row><row><cell>SuperPoint</cell><cell cols="4">NN+mutual 72.7 67.2 35.0 SuperGlue 94.9 87.4 38.3 SGMNet 95.5 83.0 38.6 LightGlue 94.3 88.9 38.3</cell><cell>75.3 79.3 79.0 79.6</cell><cell>0.0 33.8 76.7 2.0 31.7 76.0 35.9 78.6</cell></row><row><cell/><cell/><cell/><cell/><cell>LightGlue yields</cell></row><row><cell cols="5">better correspondences than sparse matchers, with the highest preci-</cell></row><row><cell cols="5">sion (P) and a high recall (R). This results in accurate homographies</cell></row><row><cell cols="5">when estimated by RANSAC or even a faster least-squares solver</cell></row><row><cell cols="5">(DLT). LightGlue is competitive with dense matchers like LoFTR.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Relative pose estimation. On the MegaDepth1500 dataset, LightGlue predicts more precise correspondences with higher pose accuracy (AUC), and speed than existing sparse matchers. It is competitive with dense matchers for a fraction of the inference time, and even outperforms LoFTR and MatchFormer with the superior LO-RANSAC estimator. The adaptive scheme greatly reduces the run time for only a minor loss of accuracy.</figDesc><table><row><cell/><cell>features +</cell><cell cols="3">RANSAC AUC LO-RANSAC AUC time</cell></row><row><cell/><cell>matcher</cell><cell cols="3">(ms) 5°/ 10°/ 20°d</cell></row><row><cell>ense</cell><cell cols="2">LoFTR MatchFormer 53.3 / 69.7 / 81.8 52.8 / 69.2 / 81.2</cell><cell>66.4 / 78.6 / 86.5 66.5 / 78.9 / 87.5</cell><cell>181 388</cell></row><row><cell/><cell cols="2">ASpanFormer 55.3 / 71.5 / 83.1</cell><cell>69.4 / 81.1 / 88.9</cell><cell>369</cell></row><row><cell>DISK</cell><cell>NN+ratio LightGlue</cell><cell>38.1 / 55.4 / 69.6 43.5 / 61.0 / 75.3</cell><cell>57.2 / 69.5 / 78.6 61.3 / 74.3 / 83.8</cell><cell>7.4 44.5</cell></row><row><cell>SuperPoint</cell><cell>NN+mutual SuperGlue SGMNet LightGlue ë adaptive</cell><cell>31.7 / 46.8 / 60.1 49.7 / 67.1 / 80.6 43.2 / 61.6 / 75.6 49.9 / 67.0 / 80.1 49.4 / 67.2 / 80.1</cell><cell>51.0 / 54.1 / 73.6 65.8 / 78.7 / 87.5 59.8 / 74.1 / 83.9 66.7 / 79.3 / 87.9 66.3 / 79.0 / 87.9</cell><cell>5.7 70.0 73.8 44.2 31.4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Outdoor visual localization. On the Aachen Day-Night dataset, LightGlue performs on par with SuperGlue but runs 2.5× faster, 4× when optimized. SGMNet and ClusterGNN are both slower and less robust on night-time images (*approximation).</figDesc><table><row><cell>SuperPoint</cell><cell>Day</cell><cell>Night</cell><cell>pairs per</cell></row><row><cell>+ matcher</cell><cell cols="2">(0.25m,2°) / (0.5m,5°) / (1.0m,10°)</cell><cell>second</cell></row><row><cell>SuperGlue</cell><cell>88.2 / 95.5 / 98.7</cell><cell>86.7 / 92.9 / 100</cell><cell>6.5</cell></row><row><cell>SGMNet</cell><cell>86.8 / 94.2 / 97.7</cell><cell>83.7 / 91.8 / 99.0</cell><cell>10.2</cell></row><row><cell cols="2">ClusterGNN 89.4 / 95.5 / 98.5</cell><cell>81.6 / 93.9 / 100</cell><cell>13*</cell></row><row><cell>LightGlue</cell><cell>89.2 / 95.4 / 98.5</cell><cell cols="2">87.8 / 93.9 / 100 17.2 / 26.1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 .</head><label>6</label><figDesc>Table7reports the experiment. LightGlue outperforms all Structure-from-Motion with the Image Matching Challenge 2020. We evaluate the stereo track, at multiple error thresholds, and the multi-view track, for various numbers of images N . LightGlue yields better poses than SuperGlue on the multi-view track and significantly reduces the matching time. In combination with DISK, LightGlue improves over SuperPoint+SuperGlue and DISK+NN+ratio in both tracks by a large margin.</figDesc><table><row><cell/><cell cols="5">Task 1: Stereo Task 2: Multiview</cell></row><row><cell>SfM features (2048 keypoints)</cell><cell cols="2">AUC@K •</cell><cell cols="3">AUC@5 • @N</cell><cell>Pairs per second</cell></row><row><cell/><cell>5 •</cell><cell>10 •</cell><cell>5</cell><cell>10</cell><cell>25</cell></row><row><cell>SP+SuperGlue</cell><cell cols="5">58.64 71.07 61.88 78.97 86.75</cell><cell>16.2</cell></row><row><cell>SP+LightGlue</cell><cell cols="5">59.03 71.13 62.87 79.36 86.98</cell><cell>43.4</cell></row><row><cell cols="6">DISK+NN+ratio 57.76 68.73 59.91 78.95 87.54 196.7</cell></row><row><cell cols="6">DISK+LightGlue 67.02 77.82 67.91 80.58 88.35</cell><cell>44.5</cell></row><row><cell>features +</cell><cell cols="5">Task 1: Stereo Task 2: Multiview</cell><cell>Average</cell></row><row><cell>matcher</cell><cell cols="2">AUC 5 • / 10 •</cell><cell/><cell cols="2">AUC 5 • / 10 •</cell><cell>AUC 5 • / 10 •</cell></row><row><cell>SP+SGMNet</cell><cell/><cell>29.6 / 43.0</cell><cell/><cell cols="2">60.2 / 71.6</cell><cell>44.9 / 57.3</cell></row><row><cell>SP+SuperGlue</cell><cell/><cell>36.5 / 50.5</cell><cell/><cell cols="2">63.3 / 73.8</cell><cell>49.9 / 62.2</cell></row><row><cell>SP+LightGlue</cell><cell/><cell>36.7 / 50.7</cell><cell/><cell cols="2">63.6 / 74.4</cell><cell>50.2 / 62.6</cell></row><row><cell>DISK+NN+ratio</cell><cell/><cell>36.3 / 48.5</cell><cell/><cell cols="2">61.5 / 71.6</cell><cell>48.9 / 60.1</cell></row><row><cell>DISK+LightGlue</cell><cell/><cell>43.1 / 56.6</cell><cell/><cell cols="2">66.2 / 76.2</cell><cell>54.7 / 66.4</cell></row><row><cell cols="3">DISK (8K) +NN+ratio* 44.6 / 56.2</cell><cell/><cell cols="2">65.0 / 74.4</cell><cell>54.8 / 65.3</cell></row><row><cell>SP+SuperGlue*</cell><cell/><cell>44.6 / 58.6</cell><cell/><cell cols="2">66.8 / 77.1</cell><cell>55.7 / 67.9</cell></row><row><cell>LoFTR-SfM</cell><cell/><cell>48.4 / 60.9</cell><cell/><cell cols="2">66.4 / 76.1</cell><cell>57.4 / 68.5</cell></row><row><cell cols="3">DISK (8K)+LightGlue 48.7 / 61.8</cell><cell/><cell cols="2">68.9 / 78.2</cell><cell>58.8 / 70.0</cell></row><row><cell cols="6">Table 7. IMC 2021 -Phototourism. *DISK+NN and SP+SG use</cell></row><row><cell cols="6">test-time augmentation while LightGlue does not. To compete with</cell></row><row><cell cols="6">these tuned baselines, we just increase the number of keypoints, e.g.</cell></row><row><cell cols="6">DISK (8K). LoFTR-SfM clusters dense matches with SuperPoint</cell></row><row><cell cols="6">detections. LightGlue outperforms other sparse baselines both in</cell></row><row><cell cols="6">the stereo and multiview task, and even surpasses tuned baselines</cell></row><row><cell cols="5">from the public leaderboard by a large margin.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 .</head><label>8</label><figDesc>Relative pose estimation on Megadepth-1800. This split is different from Table</figDesc><table><row><cell>as introduced by previous</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 9 .</head><label>9</label><figDesc>). Differences of &lt;2% are Outdoor visual localization on Aachen v1.1. LightGlue achieves similar accuracy with higher throughput.</figDesc><table><row><cell>features +</cell><cell/><cell>Day</cell><cell/><cell>Night</cell><cell>pairs per</cell></row><row><cell>matcher</cell><cell/><cell cols="3">(0.25m,2°) / (0.5m,5°) / (1.0m,10°)</cell><cell>second</cell></row><row><cell>LoFTR</cell><cell cols="2">88.7 / 95.6 / 99.0</cell><cell cols="2">78.5 / 90.6 / 99.0</cell><cell>-</cell></row><row><cell>ASpanFormer</cell><cell cols="2">89.4 / 95.6 / 99.0</cell><cell cols="2">77.5 / 91.6 / 99.5</cell><cell>-</cell></row><row><cell cols="3">SP+SuperGlue 89.8 / 96.1 / 99.4</cell><cell/><cell>77.0 / 90.6 / 100</cell><cell>6.4</cell></row><row><cell cols="3">SP+LightGlue 90.2 / 96.0 / 99.4</cell><cell/><cell>77.0 / 91.1 / 100</cell><cell>17.3</cell></row><row><cell>features +</cell><cell/><cell>DUC1</cell><cell/><cell>DUC2</cell></row><row><cell>matcher</cell><cell/><cell cols="3">(0.25m,10°) / (0.5m,10°) / (1.0m,10°)</cell></row><row><cell>LoFTR</cell><cell/><cell cols="2">47.5 / 72.2 / 84.8</cell><cell>54.2 / 74.8 / 85.5</cell></row><row><cell cols="2">MatchFormer</cell><cell cols="2">46.5 / 73.2 / 85.9</cell><cell>55.7 / 71.8 / 81.7</cell></row><row><cell cols="2">ASpanFormer</cell><cell cols="2">51.5 / 73.7 / 86.4</cell><cell>55.0 / 74.0 / 81.7</cell></row><row><cell cols="4">SP+SuperGlue 47.0 / 69.2 / 79.8</cell><cell>53.4 / 77.1 / 80.9</cell></row><row><cell cols="4">SP+LightGlue 49.0 / 68.2 / 79.3</cell><cell>55.0 / 74.8 / 79.4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 10 .</head><label>10</label><figDesc>Indoor visual localization on InLoc. LightGlue performs similarly to SuperGlue (within the variability of the dataset).</figDesc><table/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 11 .</head><label>11</label><figDesc>Table 11 for relative pose estimation on MegaDepth. Lowering α to 80% reduces the inference time by almost 50% compared to our full model, while maintaining competitive accuracy compared to SuperGlue on this task. Reducing the confidence threshold is far more effective in terms of run time -Evaluation of early-stopping on MegaDepth. Matches predicted by deeper layers are more accurate but require more computations with a higher inference time. Modeling confidences adaptively selects the model depth that yields a sufficient accuracy.</figDesc><table><row><cell>Method</cell><cell>#matches</cell><cell>P</cell><cell cols="3">pose estimation AUC time (%) @5 • @10 • @20 •</cell></row><row><cell>SP+LightGlue</cell><cell>613</cell><cell cols="2">96.2 66.7 79.3</cell><cell cols="2">87.9 100.0</cell></row><row><cell>ë layer 7/9</cell><cell>705</cell><cell cols="2">96.0 66.2 79.1</cell><cell>88.0</cell><cell>82.4</cell></row><row><cell>ë layer 5/9</cell><cell>702</cell><cell cols="2">94.5 65.0 77.8</cell><cell>87.0</cell><cell>60.0</cell></row><row><cell>ë layer 3/9</cell><cell>687</cell><cell cols="2">90.0 64.0 76.7</cell><cell>85.8</cell><cell>41.9</cell></row><row><cell>ë confidence 98%</cell><cell>610</cell><cell cols="2">96.2 66.6 79.3</cell><cell>88.0</cell><cell>80.5</cell></row><row><cell>ë confidence 95%</cell><cell>608</cell><cell cols="2">95.4 66.3 79.0</cell><cell>87.9</cell><cell>70.6</cell></row><row><cell>ë confidence 90%</cell><cell>607</cell><cell cols="2">94.5 65.9 78.5</cell><cell>87.2</cell><cell>61.5</cell></row><row><cell>ë confidence 80%</cell><cell>605</cell><cell cols="2">92.6 65.2 77.8</cell><cell>86.7</cell><cell>48.4</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>Acknowledgments: We thank <rs type="person">Mihai Dusmanu</rs>, <rs type="person">Rémi Pautrat</rs>, and <rs type="person">Shaohui Liu</rs> for their helpful feedback.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SIFT+LightGlue</head><note type="other">SuperPoint+LightGlue DISK+LightGlue</note><p>there are less than k detections available, we append random detections and descriptors. For SIFT <ref type="bibr" target="#b40">[41]</ref> and DISK [73], we add a linear layer to project descriptors to d=256 before feeding them to the Transformer backbone.</p><p>SuperPoint: SuperPoint is a popular feature detector which produces highly repeatable points located at distinctive regions. We use the official, open-sourced version of Su-perPoint from MagicLeap <ref type="bibr" target="#b15">[16]</ref>. The detections are pixelaccurate, i.e. the keypoint localization accuracy depends on the image resolution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SIFT:</head><p>We use the excellent implementation of SIFT from vlfeat <ref type="bibr" target="#b74">[75]</ref> when training on MegaDepth, and SIFTGPU from COLMAP <ref type="bibr" target="#b59">[60]</ref> for fast feature extraction when pretraining on homographies. We observed that these implementations are largely equivalent during training and can be exchanged freely. Also, SIFT features from OpenCV can be used without retraining. Orientation and scale are not used in positional encoding.</p><p>DISK: DISK learns detection and description with a reinforcement learning objective. Its descriptors are more powerful than SIFT and SuperPoint and its detections are more repeatable, especially under large viewpoint and illumination changes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.3. Homography pre-training</head><p>Following Sarlin et al. <ref type="bibr" target="#b55">[56]</ref>, we first pre-train LightGlue on synthetic homographies of real-images.</p><p>Dataset: We use 170k images from the Oxford-Paris 1M distractors dataset <ref type="bibr" target="#b49">[50]</ref>, and split them into 150k/10k/10k images for training/validation/test.</p><p>Homography sampling: We generate homographies by randomly sampling four image corners. We split the image into four quarters, and sample a random point in each quarter. To avoid degenerates, we enforce that the enclosed area is convex. After, we apply random rotations and translations to the corners s.t. the corners remain inside the image. With this process, we can generate extreme perspective changes while avoiding border artifacts. This process is repeated twice, resulting in two largely skewed homographies. In interpolation, we then enforce the extracted images to be of size 640x480.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Photometric augmentation:</head><p>The color images are then forwarded through a sequence of strong photometric augmentations, including blur, hue, saturation, sharpness, illumination, gamma and noise. Furthermore, we add random additive shades into the image to simulate occlusions and non-uniform illumination changes. Supervision: Correspondences with 3px symmetric reprojection error are deemed inliers, and points without any correspondence under this threshold are outliers. Training details: We extract 512/1024/1024 keypoints for SuperPoint/SIFT/DISK, and a batch size of 64. The initial learning rate is 0.0001, and we multiply the learning rate by 0.8 each epoch after 20 epochs. We stop the training after 40 epochs (6M image pairs), or 2 days with 2 Nvidia RTX 3090 (for SuperPoint). Our network achieves &gt; 99% recall and &gt; 90% precision on the validation and test set. We also observed that, for fine-tuning, one can stop the pre-training after just one day with only minor losses.</p><p>We also experimented with sampling images from MegaDepth <ref type="bibr" target="#b37">[38]</ref> for homography pre-training, and could not observe major differences. Strong photometric augmentations and perspective changes are crucial for training a robust model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.4. Finetuning on MegaDepth</head><p>We fine-tune our model on phototourism images with pseudo ground-truth camera poses and depth images.</p><p>Dataset: We use the MegaDepth dataset <ref type="bibr" target="#b37">[38]</ref>, which contains dense reconstructions of a large variety of popular landmarks all around the globe, obtained through COLMAP+MVS <ref type="bibr" target="#b59">[60,</ref><ref type="bibr" target="#b60">61]</ref>. Following Sun et al. <ref type="bibr" target="#b67">[68]</ref>, we bin each pair by its covisibility score <ref type="bibr" target="#b18">[19]</ref>, into ranges [0.1, 0.3], [0.3, 0.5] and [0.5, 0.7]. Scenes which are part of the validation and test set in the image matching challenge <ref type="bibr">[26]</ref> are also excluded from training, resulting in 368/5/24 scenes for training/validation/test. At the beginning of each epoch, we sample 100 image pairs per scene.</p><p>Images are resized s.t. their larger edge is of size 1024, and zero-pad images to 1024×1024 resolution. Supervision: Following SuperGlue <ref type="bibr" target="#b55">[56]</ref>, we reproject points using camera poses and depth to the other image. Correspondences with a maximum reprojection error of 3 pixels and which are mutually closest are labelled as inliers. A point where the closest correspondence has a reprojection error larger than 5px are is labelled as outlier. Furthermore, we also declare points without depth and no correspondence with a Sampson Error smaller than 3 px outliers.</p><p>Training details: Weights are initialized from the pretrained model on homographies, Training starts with a learn-</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">NetVLAD: CNN architecture for weakly supervised place recognition</title>
+		<author>
+			<persName><forename type="first">Relja</forename><surname>Arandjelovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petr</forename><surname>Gronat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiko</forename><surname>Torii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pajdla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Hpatches: A benchmark and evaluation of handcrafted and learned local descriptors</title>
+		<author>
+			<persName><forename type="first">Vassileios</forename><surname>Balntas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karel</forename><surname>Lenc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Vedaldi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krystian</forename><surname>Mikolajczyk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Magsac: marginalizing sample consensus</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Barath</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiri</forename><surname>Matas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jana</forename><surname>Noskova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">SURF: Speeded up robust features</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Bay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tinne</forename><surname>Tuytelaars</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luc</forename><surname>Van Gool</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age</title>
+		<author>
+			<persName><forename type="first">Cesar</forename><surname>Cadena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Carlone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Carrillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasir</forename><surname>Latif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Scaramuzza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><surname>Neira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Reid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">J</forename><surname>Leonard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TRO</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1309" to="1332"/>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Emerging Properties in Self-Supervised Vision Transformers</title>
+		<author>
+			<persName><forename type="first">Mathilde</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Jégou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armand</forename><surname>Joulin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICCV</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Handcrafted outlier detection revisited</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Cavalli</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Viktor Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ralf</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Oswald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Sattler</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pollefeys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Learning to match features with seeded graph matching network</title>
+		<author>
+			<persName><forename type="first">Hongkai</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixin</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiahui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuyang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyu</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiew-Lan</forename><surname>Tai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Quan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICCV</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">ASpanFormer: Detector-Free Image Matching with Adaptive Span Transformer</title>
+		<author>
+			<persName><forename type="first">Hongkai</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixin</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yurun</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingmin</forename><surname>Zhen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Mckinnon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanghai</forename><surname>Tsin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Quan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Training Deep Nets with Sublinear Memory Cost</title>
+		<author>
+			<persName><forename type="first">Tianqi</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiyuan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Guestrin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1604.06174</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Locally optimized RANSAC</title>
+		<author>
+			<persName><forename type="first">Ondřej</forename><surname>Chum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiří</forename><surname>Matas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><surname>Kittler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Joint Pattern Recognition Symposium</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Two-view geometry estimation unaffected by a dominant plane</title>
+		<author>
+			<persName><forename type="first">Ondrej</forename><surname>Chum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Werner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiri</forename><surname>Matas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">LaMDA: Language Models for Dialog Applications</title>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Daniel Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandra</forename><surname>Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alena</forename><surname>Butryna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alicia</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Apoorv</forename><surname>Kulshreshtha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Hutchinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Zevenbergen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Hilary Aguera-Arcas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chung</forename><surname>Ching Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Claire</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cosmo</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>De Freitas Adiwardana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dehao</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">(</forename><surname>Dmitry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ed</forename><forename type="middle">H</forename><surname>Dima) Lepikhin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erin</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heng-Tze</forename><surname>Hoffman-John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongrae</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Igor</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Krivokon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jamie</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joe</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johnny</forename><surname>Fenton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathy</forename><surname>Soraker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristen</forename><surname>Meier-Hellstern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lora</forename><forename type="middle">Mois</forename><surname>Olson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maarten</forename><surname>Aroyo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">Joseph</forename><surname>Paul Bosma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">Amorim</forename><surname>Pickett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marian</forename><surname>Menegali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Croak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Díaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxim</forename><surname>Lamm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meredith</forename><forename type="middle">Ringel</forename><surname>Krikun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quoc</forename><forename type="middle">V</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachel</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ravi</forename><surname>Bernstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ray</forename><surname>Rajakumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romal</forename><surname>Kurzweil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Thoppilan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taylor</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toju</forename><surname>Bos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tulsee</forename><surname>Duke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><forename type="middle">Y</forename><surname>Doshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinodkumar</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Will</forename><surname>Prabhakaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaguang</forename><surname>Rusch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanping</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanqi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanzhong</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhifeng</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chen</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2201.08239</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">FlashAttention: Fast and memory-efficient exact attention with IO-awareness</title>
+		<author>
+			<persName><forename type="first">Tri</forename><surname>Dao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">Y</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atri</forename><surname>Rudra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Ré</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Universal Transformers</title>
+		<author>
+			<persName><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephan</forename><surname>Gouws</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">SuperPoint: Self-supervised interest point detection and description</title>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Daniel Detone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Malisiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rabinovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR Workshop on Deep Learning for Visual SLAM</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">BERT: pre-training of deep bidirectional transformers for language understanding</title>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming-Wei</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenton</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristina</forename><surname>Toutanova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NAACL-HLT</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</title>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvain</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><surname>Houlsby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">D2-Net: A trainable CNN for joint detection and description of local features</title>
+		<author>
+			<persName><forename type="first">Mihai</forename><surname>Dusmanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ignacio</forename><surname>Rocco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pajdla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiko</forename><surname>Torii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Depth-Adaptive Transformer</title>
+		<author>
+			<persName><forename type="first">Maha</forename><surname>Elbayad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiatao</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edouard</forename><surname>Grave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Auli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Spatially Adaptive Computation Time for Residual Networks</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Figurnov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Maxwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yukun</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruslan</forename><surname>Vetrov</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Salakhutdinov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Fischler</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bolles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">6</biblScope>
+			<date type="published" when="1981">1981</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A combined corner and edge detector</title>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Christopher G Harris</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Stephens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Alvey vision conference</title>
+		<imprint>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Multiple view geometry in computer vision</title>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Hartley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Cambridge university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Reconstructing the World* in Six Days *(as Captured by the Yahoo 100 Million Image Dataset)</title>
+		<author>
+			<persName><forename type="first">Jared</forename><surname>Heinly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">L</forename><surname>Schonberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrique</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Michael</forename><surname>Frahm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<ptr target="https://www.cs.ubc.ca/research/image-matching-challenge/2020/"/>
+		<title level="m">CVPR 2020 Image Matching Challenge</title>
+		<imprint>
+			<date type="published" when="2023-06-15">June 15, 2023. 11, 14</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<ptr target="https://www.cs.ubc.ca/research/image-matching-challenge/"/>
+		<title level="m">CVPR 2021 Image Matching Challenge</title>
+		<imprint>
+			<date type="published" when="2011">June 15, 2023. 11</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<ptr target="https://www.kaggle.com/competitions/image-matching-challenge-2023/overview"/>
+		<title level="m">CVPR 2023 Image Matching Challenge</title>
+		<imprint>
+			<date type="published" when="2011">June 15, 2023. 11</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Perceiver IO: A general architecture for structured inputs &amp; outputs</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Borgeaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Baptiste</forename><surname>Alayrac</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Doersch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catalin</forename><surname>Ionescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Skanda</forename><surname>Koppula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Zoran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Shelhamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Olivier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Henaff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Botvinick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joao</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Carreira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Perceiver: General Perception with Iterative Attention</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Jaegle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><surname>Gimeno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Brock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">João</forename><surname>Carreira</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Image Matching across Wide Baselines: From Paper to Practice</title>
+		<author>
+			<persName><forename type="first">Yuhe</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmytro</forename><surname>Mishkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anastasiia</forename><surname>Mishchuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiri</forename><surname>Matas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Fua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kwang</forename><forename type="middle">Moo</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduard</forename><surname>Trulls</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IJCV</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Katharopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Vyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Pappas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fleuret</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Machine Learning (ICML)</title>
+		<meeting>the International Conference on Machine Learning (ICML)</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Reformer: The Efficient Transformer</title>
+		<author>
+			<persName><forename type="first">Nikita</forename><surname>Kitaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anselm</forename><surname>Levskaya</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">PoseLib -Minimal Solvers for Camera Pose Estimation</title>
+		<author>
+			<persName><surname>Viktor Larsson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks</title>
+		<author>
+			<persName><forename type="first">Juho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoonho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jungtaek</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Kosiorek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seungjin</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yee</forename><forename type="middle">Whye</forename><surname>Teh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICML</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Not all pixels are equal: Difficulty-aware semantic segmentation via deep layer cascade</title>
+		<author>
+			<persName><forename type="first">Xiaoxiao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ping</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><forename type="middle">Change</forename><surname>Loy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoou</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Learnable Fourier Features for Multi-dimensional Spatial Positional Encoding</title>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Si</forename><surname>Si</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cho-Jui</forename><surname>Hsieh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samy</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">MegaDepth: Learning singleview depth prediction from internet photos</title>
+		<author>
+			<persName><forename type="first">Zhengqi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noah</forename><surname>Snavely</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Pixel-Perfect Structure-from-Motion with Featuremetric Refinement</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Lindenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktor</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICCV</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Anytime Dense Prediction with Confidence Adaptivity</title>
+		<author>
+			<persName><forename type="first">Zhuang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiqiu</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hung-Ju</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Darrell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Shelhamer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Distinctive image features from scaleinvariant keypoints</title>
+		<author>
+			<persName><surname>David G Lowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IJCV</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2004">2004. 6, 12, 13, 14</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Working hard to know your neighbor's margins: Local descriptor learning loss</title>
+		<author>
+			<persName><forename type="first">Anastasiya</forename><surname>Mishchuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmytro</forename><surname>Mishkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Radenovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiri</forename><surname>Matas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Mods: Fast and robust method for two-view matching</title>
+		<author>
+			<persName><forename type="first">Dmytro</forename><surname>Mishkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiri</forename><surname>Matas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Perdoch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Vision and Image Understanding</title>
+		<imprint>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Learning to find good correspondences</title>
+		<author>
+			<persName><forename type="first">Kwang</forename><surname>Moo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduard</forename><surname>Trulls</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuki</forename><surname>Ono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Lepetit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathieu</forename><surname>Salzmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Fua</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">ORB-SLAM: a versatile and accurate monocular SLAM system</title>
+		<author>
+			<persName><forename type="first">Raúl</forename><surname>Mur-Artal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M M</forename><surname>Montiel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">D</forename><surname>Tardós</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TRO</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1147" to="1163"/>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Online invariance selection for local feature descriptors</title>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Pautrat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktor</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">R</forename><surname>Oswald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Re-identification of giant sunfish using keypoint matching</title>
+		<author>
+			<persName><forename type="first">Malte</forename><surname>Pedersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joakim</forename><surname>Bruslund Haurum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">B</forename><surname>Moeslund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marianne</forename><surname>Nyegaard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Northern Lights Deep Learning Workshop</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Computational optimal transport</title>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Peyré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Cuturi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations and Trends® in Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5-6</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Self-attention Does Not Need O(n 2 ) Memory</title>
+		<author>
+			<persName><forename type="first">Markus</forename><forename type="middle">N</forename><surname>Rabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><surname>Staats</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2112.05682</idno>
+		<idno>. 2</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Revisiting Oxford and Paris: Large-scale image retrieval benchmarking</title>
+		<author>
+			<persName><forename type="first">Filip</forename><surname>Radenović</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmet</forename><surname>Iscen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgos</forename><surname>Tolias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Avrithis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ondřej</forename><surname>Chum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<monogr>
+		<title level="m" type="main">Improving language understanding by generative pre-training</title>
+		<author>
+			<persName><forename type="first">Alec</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karthik</forename><surname>Narasimhan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">R2D2: Repeatable and reliable detector and descriptor</title>
+		<author>
+			<persName><forename type="first">Jerome</forename><surname>Revaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Weinzaepfel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">César</forename><forename type="middle">De</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noe</forename><surname>Pion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriela</forename><surname>Csurka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yohann</forename><surname>Cabon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Humenberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Machine learning for high-speed corner detection</title>
+		<author>
+			<persName><forename type="first">Edward</forename><surname>Rosten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Drummond</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">ORB: An efficient alternative to SIFT or SURF</title>
+		<author>
+			<persName><forename type="first">Ethan</forename><surname>Rublee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Rabaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kurt</forename><surname>Konolige</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gary</forename><forename type="middle">R</forename><surname>Bradski</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICCV</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">From coarse to fine: Robust hierarchical localization at large scale</title>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cesar</forename><surname>Cadena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Siegwart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcin</forename><surname>Dymczyk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">11</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">SuperGlue: Learning feature matching with graph neural networks</title>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Detone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Malisiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Rabinovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2020">2020. 11, 12, 14</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">LaMAR: Benchmarking Localization and Mapping for Augmented Reality</title>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihai</forename><surname>Dusmanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">L</forename><surname>Schönberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Speciale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukas</forename><surname>Gruber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktor</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ondrej</forename><surname>Miksik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Back to the Feature: Learning robust camera localization from pixels to pose</title>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajaykumar</forename><surname>Unagar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Måns</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Germain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Toft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viktor</forename><surname>Larsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Lepetit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Hammarstrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fredrik</forename><surname>Kahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Benchmarking 6DOF outdoor visual localization in changing conditions</title>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Will</forename><surname>Maddern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carl</forename><surname>Toft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiko</forename><surname>Torii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lars</forename><surname>Hammarstrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Stenborg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Safari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masatoshi</forename><surname>Okutomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fredrik</forename><surname>Kahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pajdla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">12</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Structure-from-motion revisited</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Lutz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Schönberger</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Michael</forename><surname>Frahm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Pixelwise view selection for unstructured multi-view stereo</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Lutz Schönberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enliang</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Michael</forename><surname>Frahm</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Confident Adaptive Language Modeling</title>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Schuster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Fisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jai</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dara</forename><surname>Bahri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Vinh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><surname>Tay</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Metzler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Self-Attention with Relative Position Representations</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NAACL-HTL</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Matchable image retrieval by learning from surface reconstruction</title>
+		<author>
+			<persName><forename type="first">Tianwei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixin</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runze</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siyu</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Quan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACCV</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">6</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">ClusterGNN: Cluster-based coarse-tofine graph neural network for efficient feature matching</title>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun-Xiong</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoli</forename><surname>Shavit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tai-Jiang</forename><surname>Mu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wensen</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Concerning nonnegative matrices and doubly stochastic matrices</title>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Sinkhorn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Knopp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pacific Journal of Mathematics</title>
+		<imprint>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="1967">1967</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<monogr>
+		<title level="m" type="main">RoFormer: Enhanced Transformer with Rotary Position Embedding</title>
+		<author>
+			<persName><forename type="first">Jianlin</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengfeng</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunfeng</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2104.09864</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page">13</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">LoFTR: Detector-free local feature matching with Transformers</title>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zehong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hujun</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaowei</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CVPR</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">OnePose: One-shot object pose estimation without CAD models</title>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zihao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xingyi</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongcheng</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guofeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaowei</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">InLoc: Indoor Visual Localization with Dense Matching and View Synthesis</title>
+		<author>
+			<persName><forename type="first">Hajime</forename><surname>Taira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masatoshi</forename><surname>Okutomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Torsten</forename><surname>Sattler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mircea</forename><surname>Cimpoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josef</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomas</forename><surname>Pajdla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihiko</forename><surname>Torii</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TPAMI</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">BranchyNet: Fast inference via early exiting from deep neural networks</title>
+		<author>
+			<persName><forename type="first">Bradley</forename><surname>Surat Teerapittayanon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">T</forename><surname>Mcdanel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICPR</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">SOSNet: Second Order Similarity Regularization for Local Descriptor Learning</title>
+		<author>
+			<persName><forename type="first">Yurun</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fuchao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huub</forename><surname>Heijnen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vassileios</forename><surname>Balntas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">DISK: Learning local features with policy gradient</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Michał</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Tyszkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduard</forename><surname>Fua</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Trulls</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Attention is all you need</title>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Łukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NIPS</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">VLFeat: An open and portable library of computer vision algorithms</title>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Vedaldi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Fulkerson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM international conference on Multimedia</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page">14</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Dynamic convolutions: Exploiting spatial sparsity for faster inference</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Verelst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tinne</forename><surname>Tuytelaars</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<author>
+			<persName><forename type="first">Phil</forename><surname>Wang</surname></persName>
+		</author>
+		<ptr target="https://github.com/lucidrains/bidirectional-cross-attention.4"/>
+		<title level="m">Bidirectional cross attention</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">MatchFormer: Interleaving Attention in Transformers for Feature Matching</title>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kailun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunyu</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rainer</forename><surname>Stiefelhagen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACCV</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">12</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<monogr>
+		<title level="m" type="main">Linformer: Self-Attention with Linear Complexity</title>
+		<author>
+			<persName><forename type="first">Sinong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Belinda</forename><forename type="middle">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Madian</forename><surname>Khabsa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2006.04768</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Anytime Stereo Image Depth Estimation on Mobile Devices</title>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zihang</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gao</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurens</forename><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">E</forename><surname>Campbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kilian</forename><forename type="middle">Q</forename><surname>Weinberger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICRA</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">LIFT: Learned invariant feature transform</title>
+		<author>
+			<persName><forename type="first">Kwang</forename><surname>Moo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduard</forename><surname>Trulls</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Lepetit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Fua</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Learning two-view correspondences and geometry using order-aware network</title>
+		<author>
+			<persName><forename type="first">Jiahui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dawei</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixin</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anbang</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianwei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yurong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Quan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongen</forename><surname>Liao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICCV</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Feature matching for multi-epoch historical aerial images</title>
+		<author>
+			<persName><forename type="first">Lulin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ewelina</forename><surname>Rupnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pierrot-Deseilligny</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS Journal of Photogrammetry and Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">182</biblScope>
+			<biblScope unit="page" from="176" to="189"/>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

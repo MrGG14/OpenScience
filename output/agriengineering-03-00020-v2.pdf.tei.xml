@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Automatic and Reliable Leaf Disease Detection Using Deep Learning Techniques</title>
+				<funder>
+					<orgName type="full">Qatar Foundation, Doha, Qatar</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Qatar National Research Fund</orgName>
+				</funder>
+				<funder ref="#_PZqan3j">
+					<orgName type="full">Qatar National Library</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2021-05-20">20 May 2021</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhu</surname></persName>
+							<idno type="ORCID">0000-0003-0744-8206</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Tawsifur</forename><forename type="middle">;</forename><surname>Rahman</surname></persName>
+							<email>tawsifur.rahman@qu.edu.qa</email>
+							<idno type="ORCID">0000-0002-6938-6496</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Amith</forename><forename type="middle">;</forename><surname>Khandakar</surname></persName>
+							<idno type="ORCID">0000-0001-7068-9112</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Mohamed</forename><forename type="middle">Arselene</forename><surname>Ayari</surname></persName>
+							<idno type="ORCID">0000-0001-7068-9112</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Aftab</forename><forename type="middle">Ullah</forename><surname>Khan</surname></persName>
+							<email>aftabkk19@gmail.com</email>
+							<idno type="ORCID">0000-0003-0808-2103</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Muhamm</forename><forename type="middle">Salman</forename><surname>Khan</surname></persName>
+							<idno type="ORCID">0000-0002-4929-3209</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Nass</forename><surname>Al-Emadi</surname></persName>
+							<email>alemadin@qu.edu.qa</email>
+							<idno type="ORCID">0000-0002-4819-863X</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Mamun</forename><surname>Bin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ibne</forename><surname>Reaz</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mohammad</forename><forename type="middle">Tariqul</forename><surname>Islam</surname></persName>
+							<idno type="ORCID">0000-0002-4929-3209</idno>
+						</author>
+						<author>
+							<persName><forename type="first">Sawal</forename><surname>Hamid</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Md</forename><surname>Ali</surname></persName>
+							<idno type="ORCID">0000-0002-4819-863X</idno>
+						</author>
+						<author>
+							<persName><forename type="first">M</forename><forename type="middle">E H ;</forename><surname>Chowdhury</surname></persName>
+							<email>mchowdhury@qu.edu.qa</email>
+						</author>
+						<author>
+							<persName><forename type="first">M</forename><forename type="middle">A ;</forename><surname>Ayari</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">A</forename><forename type="middle">U ;</forename><surname>Khan</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>M.S.;</roleName><surname>Khan</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Lubos</forename><surname>Smutny</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Petr</forename><surname>Bartos</surname></persName>
+						</author>
+						<title level="a" type="main">Automatic and Reliable Leaf Disease Detection Using Deep Learning Techniques</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2021-05-20">20 May 2021</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">58F29D9AA2BCAB7D9F646A0C0F350441</idno>
+					<idno type="DOI">10.3390/agriengineering3020020</idno>
+					<note type="submission">Received: 9 April 2021 Accepted: 17 May 2021</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-05-21T17:01+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>smart agriculture</term>
+					<term>automatic plant disease detection</term>
+					<term>deep learning</term>
+					<term>CNN</term>
+					<term>classification</term>
+					<term>segmentation of leaves</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Plants are a major source of food for the world population. Plant diseases contribute to production loss, which can be tackled with continuous monitoring. Manual plant disease monitoring is both laborious and error-prone. Early detection of plant diseases using computer vision and artificial intelligence (AI) can help to reduce the adverse effects of diseases and also overcome the shortcomings of continuous human monitoring. In this work, we propose the use of a deep learning architecture based on a recent convolutional neural network called EfficientNet on 18,161 plain and segmented tomato leaf images to classify tomato diseases. The performance of two segmentation models i.e., U-net and Modified U-net, for the segmentation of leaves is reported. The comparative performance of the models for binary classification (healthy and unhealthy leaves), six-class classification (healthy and various groups of diseased leaves), and ten-class classification (healthy and various types of unhealthy leaves) are also reported. The modified U-net segmentation model showed accuracy, IoU, and Dice score of 98.66%, 98.5%, and 98.73%, respectively, for the segmentation of leaf images. EfficientNet-B7 showed superior performance for the binary classification and six-class classification using segmented images with an accuracy of 99.95% and 99.12%, respectively. Finally, EfficientNet-B4 achieved an accuracy of 99.89% for ten-class classification using segmented images. It can be concluded that all the architectures performed better in classifying the diseases when trained with deeper networks on segmented images. The performance of each of the experimental studies reported in this work outperforms the existing literature.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Agriculture contributed to the domestication of today's major food crops and animals thousands of years ago. Food insecurity <ref type="bibr" target="#b1">[1]</ref>, which is a major cause of plant diseases <ref type="bibr" target="#b2">[2]</ref>, is one of the major global problems that humanity faces today. According to one study, plant diseases account for around 16 percent of global crop yield loss <ref type="bibr" target="#b3">[3]</ref>. Pest losses are projected to be about 50 percent for wheat and 26-29 percent for soybeans globally <ref type="bibr" target="#b3">[3]</ref>. Fungi, funguslike species, bacteria, viruses, viroid, virus-like organisms, nematodes, protozoa, algae, and parasitic plants are the main classes of plant pathogens. Many applications have benefited from artificial intelligence (AI), machine learning (ML), and computer vision, including power prediction from renewable resources <ref type="bibr" target="#b4">[4,</ref><ref type="bibr" target="#b5">5]</ref> and biomedical applications <ref type="bibr" target="#b6">[6,</ref><ref type="bibr" target="#b7">7]</ref>. During the COVID-19 pandemic, AI was used extensively for the identification of lung-related diseases <ref type="bibr" target="#b8">[8]</ref><ref type="bibr" target="#b9">[9]</ref><ref type="bibr" target="#b10">[10]</ref><ref type="bibr" target="#b11">[11]</ref> as well as other prognostic applications <ref type="bibr" target="#b12">[12]</ref>. Similar advanced technologies can be used to mitigate the negative effects of plant diseases by detecting and diagnosing them at an early level. The application of AI and computer vision to automatic detection and diagnosis of plant diseases is currently being extensively studied because manual plant disease monitoring is tedious, time-consuming, and labor-intensive. Sidharth et al. <ref type="bibr" target="#b13">[13]</ref> applied a Bacterial Foraging Optimization-based Radial Basis Function Network (BRBFNN) to automatically identify and classify plant disease, achieving classification accuracy of 83.07%. Convolutional neural network (CNN) is a very popular neural network architecture that is used successfully for a variety of computer vision tasks in diverse fields <ref type="bibr" target="#b14">[14]</ref>. Researchers have used CNN architecture and its various versions for the classification and identification of plant diseases. Sunayana et al. <ref type="bibr" target="#b15">[15]</ref> compared different CNN architectures for disease detection in potato and mango leaves, with AlexNet achieving 98.33% accuracy and a shallow CNN model achieving 90.85% accuracy. Guan et al. <ref type="bibr" target="#b15">[15,</ref><ref type="bibr" target="#b16">16]</ref> used a pre-trained VGG16 model to predict disease severity in apple plants and achieved a 90.40% accuracy rate. Jihen et al. <ref type="bibr" target="#b17">[17]</ref> used the LeNet model to accurately distinguish healthy and diseased banana leaves, achieving a 99.72% accuracy rate.</p><p>Tomatoes are a major food crop in many parts of the world, with a per capita consumption of 20 kg per year, accounting for around 15% of total vegetable consumption. North America consumes 42 kg of tomatoes per person per year, while Europe consumes 31 kg per person per year <ref type="bibr" target="#b18">[18,</ref><ref type="bibr" target="#b19">19]</ref>. To meet global demand for tomatoes, techniques for the crop yield and early detection of pests, bacterial, and viral infections must be created. Several studies have been performed to enhance tomato plant survival through early disease detection and subsequent disease management using artificial intelligence-based techniques. Manpreet et al. <ref type="bibr" target="#b20">[20]</ref> classified seven tomato diseases with an accuracy of 98.8% using a pre-trained CNN-based architecture known as Residual Network or generally known as ResNet. Rahman et al. <ref type="bibr" target="#b21">[21]</ref> proposed a fully-connected deep learning-based network to distinguish Bacterial Spot, Late Blight, and Septorial Spot disease from tomato leaf images with a 99.25% accuracy. Fuentes et al. <ref type="bibr" target="#b22">[22]</ref> used three types of detectors to identify 10 diseases from tomato leaf images: Faster Region-based Convolutional Neural Network (Faster R-CNN), Region-based Completely Convolutional Network (R-FCN), and Single Shot Multibox Detector (SSD). For real-time disease and pest recognition, these detectors were combined with different variants of deep feature extractors VGG16, ResNet50, and ResNet152 for Faster R-CNN, ResNet-50 for SSD, and ResNet-50 for R-FCN, with VGG16 on top of FRCNN achieving the highest Average Precision of 83%. Agarwal et al. <ref type="bibr" target="#b23">[23]</ref> proposed the Tomato Leaf Disease Detection (ToLeD) model, a CNN-based architecture for the classification of 10 diseases from tomato leaf photographs, with a 91.2% accuracy rate. Durmuş et al. <ref type="bibr" target="#b24">[24]</ref> used AlexNet and SqueezeNet architectures to classify 10 diseases from photographs of tomato leaves and achieved a 95.5% accuracy. While disease classification and identification in plant leaves have been extensively studied in tomatoes and other plants, there has been little research on segmenting leaf images from the context. Since real-world images can differ greatly in terms of lighting conditions, better segmentation techniques can assist AI models in learning from the correct region of interest rather than the context. U-net is a cutting-edge deep learning-based image segmentation architecture. It was created with biomedical image segmentation in mind <ref type="bibr" target="#b25">[25]</ref>. The U-shape network architecture gives U-net its name. Unlike traditional CNN models, U-net includes convolutional layers that are used to up-sample or recombine feature maps into a complete image.</p><p>The authors have published articles using the state-of-the-art U-Net for segmentation <ref type="bibr" target="#b25">[25]</ref> with very promising results <ref type="bibr" target="#b8">[8]</ref>. EfficientNet is a recent classification network <ref type="bibr" target="#b26">[26]</ref> and has not been used for the application intended in the paper. Thus, the authors used it in this application and have obtained promising results.</p><p>The paper has the following main contributions: The performance achieved in this work outperforms the existing state-of-the-art works in this domain.</p><p>The rest of the paper is organized in the following manner: Section 1 gives a brief introduction, literature review, and motivation for the study. Section 2 describes the different types of plant pathogens. Section 3 provides the methodology of the study with technical details such as the dataset description, pre-processing techniques, and details of the experiments. Section 4 reports the results of the studies, followed by discussions in Section 5 and finally, the conclusion is provided in Section 6.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background Study</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Deep Convolutional Neural Networks (CNN)</head><p>For detecting tomato leaf diseases, we fine-tuned the EfficientNet CNN proposed by Tan et al. <ref type="bibr" target="#b26">[26]</ref>. The authors make sure that the network's width, depth, and resolution are all balanced. They are the first to empirically measure the relationship between all three dimensions, unlike other CNN scaling approaches that use one-dimension scaling. The authors developed their baseline architecture using the MnasNet network <ref type="bibr" target="#b27">[27]</ref>, which employs a multi-objective neural architecture search that prioritizes accuracy and FLOPS. They build the EfficientNet-B0 network, which is similar to MnasNet <ref type="bibr" target="#b27">[27]</ref> but much larger due to the higher FLOPS target. The mobile inverted bottleneck MBConv <ref type="bibr" target="#b28">[28]</ref> is its key building block, and it also includes squeeze and excitation optimization <ref type="bibr" target="#b29">[29]</ref>. The authors use the compound scaling method, which uses a compound coefficient ϕ to uniformly scale the network width, depth, and resolution, based on EfficientNet-B0. By the following equation:</p><formula xml:id="formula_0">Depth, D = a ϕ Width, W = b ϕ Resolution, R = c ϕ a ≥ 1, b ≥ 1, c ≥ 1 (1)</formula><p>where a, b, and c are constants that can be identified through a quick grid scan. ϕ is a user-specified coefficient that regulates the number of additional resources used for model scaling, while a, b, and c specify how those extra resources would be allocated to network width, depth, and resolution, respectively. EfficientNet-B0 scales up the baseline network by fixing a, b, and c as constants and scaling up the baseline network with different ϕ to build a family of EfficientNets (B0 to B7); the baseline network is shown in Table <ref type="table" target="#tab_0">1</ref>. EfficientNet-B7 achieves state-of-theart performance on ImageNet, with a top-five accuracy of 97.1%, while being 8.4 times smaller and 6.1 times faster on inference than the best current ConvNets like SENet <ref type="bibr" target="#b29">[29]</ref> and Gpipe <ref type="bibr" target="#b30">[30]</ref>.</p><p>To build our model, we used EfficientNet-B0, EfficientNet-B4, and EfficientNet-B7. To enhance accuracy and minimize overfitting, we added a Global Average Pooling (GAP) to the network's final convolution layer. Following GAP, we added a Dense layer with a size of 1024 and a 25% dropout. Finally, the probability prediction scores for detecting tomato leaf diseases are given by a Softmax layer. Starting with EfficientNet as a baseline, we use our compound scaling method to scale it up in two steps:</p><p>The first step-assuming twice more resources available, we first fix ϕ = 1. In particular, we find the best values for EfficientNet-B0 are a = 1.2, b = 1.1, c = 1.15.</p><p>Second step-then we fix a, b, c as constants and scale-up baseline network with different ϕ using Equation ( <ref type="formula">1</ref>), to obtain EfficientNet-B0 to B7.</p><p>Notably, searching for a, b, and c directly around a large model will yield even better results, but the search cost becomes prohibitively costly on larger models. Our approach overcomes this problem by performing a single search on a small baseline network (first step) and then applying the same scaling coefficients to all other models (second step).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Segmentation</head><p>In the literature, there are many variants of segmentation models based on U-nets. In order to use the best performing one, two separate variants of the original U-Net <ref type="bibr" target="#b25">[25]</ref> and Modified U-Net <ref type="bibr" target="#b31">[31]</ref> were investigated in this study. The design of the original U-Net and the Modified U-Net is shown in Figure <ref type="figure" target="#fig_1">1</ref>. A contracting path and an expanding path make up the initial U-net. The contracting path consists of two 3 × 3 convolutions (unpadded convolutions) that are applied repeatedly, each followed by a ReLU and a 2 × 2 max pooling operation with stride 2 for downsampling. The expanding path consists of an upsampling of the feature map, a 2 × 2 convolution ("up-convolution") that halves the number of feature channels, a concatenation with the contracting path's correspondingly cropped feature map, and two 3 × 3 convolutions, each accompanied by a ReLU. The network employs a total of 23 convolutional layers.</p><p>The Modified U-Net, also a U-Net model with small variation in its decoding part, is utilized <ref type="bibr" target="#b31">[31]</ref>. A contracting path with four encoding blocks is followed by an expanding path with four decoding blocks in the U-Net model. Each encoding block is made up of two consecutive 3 × 3 convolutional layers, followed by a downsampling max pooling layer with a stride of 2. The decoding blocks are made up of two 3 × 3 convolutional layers, a transposed convolutional layer for upsampling, and concatenation with the corresponding feature map from the contracting path. The decoding block uses three convolutional layers instead of two in the modified U-Net architecture. An upsampling layer is followed by two 3 × 3 convolutional layers, a concatenation layer, and another 3 × 3 convolutional layer in the modified decoder. Batch normalization and ReLU activation are extended to all convolutional layers. A pixel-wise SoftMax is applied to map each pixel into a binary class of background at the final layer, which uses 1 × 1 convolution to map the output from the last decoding block to two channel feature maps. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Visualization Techniques</head><p>The development of visualization techniques has resulted from an increased interest in the internal mechanisms of CNNs and the logic behind a network making particular decisions. The visualization techniques aid in the interpretation of CNN decision-making processes by providing a more visual representation. This also improves the model's clarity by visualizing the reasoning behind the inference in a way that is readily understood by humans, thus raising trust in the neural network's outcomes. Among the numerous visualization techniques available, such as SmoothGrad <ref type="bibr" target="#b32">[32]</ref>, Grad-CAM <ref type="bibr" target="#b33">[33]</ref>, Grad-CAM++ <ref type="bibr" target="#b34">[34]</ref>, and Score-CAM <ref type="bibr" target="#b35">[35]</ref>, the recently proposed Score-CAM was used in this study due to its promising output. The weight of each activation map is obtained through its forward passing score on the target class, and the final result is obtained through a linear combination of weights and activation maps. Score-CAM eliminates the dependency on gradients by obtaining the weight of each activation map through its forward passing score on the target class. Figure <ref type="figure" target="#fig_2">2</ref> shows a sample image visualization with Score-CAM, with the heat map showing that the leaf regions controlled the decision making in CNN. This can help users understand how the network makes decisions and can also raise end-user trust if it can be verified that the network always makes decisions based on the leaf area. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Pathogens of Tomato Leaves</head><p>The most common plant pathogens are fungi, which can cause a variety of diseases such as early blight, septoria leaf spot, target spot, and leaf mold. Fungi can invade plants from a variety of places, including infected soil and seeds. Animals, humans, equipment, and soil pollution may all spread fungal infections from one plant to another. The fungus that causes early blight disease in tomato plants affects the plant leaves. Collar rot, stem lesion, and fruit rot are the terms for the rot that affects the seedlings' basal stems, adult plant stems, and fruits, respectively <ref type="bibr" target="#b36">[36,</ref><ref type="bibr" target="#b37">37]</ref>. The most important methods for controlling early blight are cultural control, which involves effective soil, nutrient, and crop management, as well as the use of fungicidal chemicals. Fungus induces Septoria leaf spot on tomato plants <ref type="bibr" target="#b38">[38,</ref><ref type="bibr" target="#b39">39]</ref>, which releases tomatinase enzyme, which speeds up the degradation of tomato steroidal glycoalkaloids α-tomatine <ref type="bibr" target="#b40">[40,</ref><ref type="bibr" target="#b41">41]</ref>. The fungus induces the target spot disease in tomato plants <ref type="bibr" target="#b42">[42,</ref><ref type="bibr" target="#b43">43]</ref>. In tomato plants, necrotic lesions with a light brown color in the middle are symptoms of target spot disease <ref type="bibr" target="#b44">[44,</ref><ref type="bibr" target="#b45">45]</ref>. Early defoliation occurs when the lesions spread to a wider blighted leaf region <ref type="bibr" target="#b44">[44,</ref><ref type="bibr" target="#b45">45]</ref>. The goal spot also does direct damage to the fruit by penetrating the pulp <ref type="bibr" target="#b44">[44,</ref><ref type="bibr" target="#b45">45]</ref>. The fungus is responsible for plant leaf mold disease <ref type="bibr" target="#b46">[46,</ref><ref type="bibr" target="#b47">47]</ref>, which happens when the leaves are damp for a long time. Bacteria are a major plant pathogen as well. They get into plants through wounds like insect bites, pruning, and cuts, as well as natural openings like stomata. Temperature, humidity, soil conditions, nutrient availability, weather conditions, and airflow are all important factors in bacterial growth on plants and the harm they cause. Bacterial spot is a bacterial-caused plant disease <ref type="bibr" target="#b48">[48,</ref><ref type="bibr" target="#b49">49]</ref>. Molds are also a significant contributor to plant disease. Mold causes late blight disease in tomato and potato plants <ref type="bibr" target="#b50">[50,</ref><ref type="bibr" target="#b51">51]</ref>. A few of the symptoms include the presence of dark uneven blemishes on leaf tips and plant stems. The Tomato Yellow Leaf Cur Virus (TYLCV) is a disease-causing virus that affects tomatoes. The plant is infected by this virus, which is spread by another insect. Despite the fact that tomato plants have diseased leaves and a ten-class classification. Different types of tomato leaf diseases were categorized into disease categories in study 2, while different classes of unhealthy and stable leaf photos were classified in study 3. Similar studies have shown that the virus can infect a number of plants, including beans and peppers, tobacco, potatoes, and eggplants <ref type="bibr" target="#b52">[52,</ref><ref type="bibr" target="#b53">53]</ref>. Owing to the disease's rapid spread in recent decades, the focus of research has changed to damage control of yellow leaf curl disease <ref type="bibr" target="#b54">[54]</ref><ref type="bibr" target="#b55">[55]</ref><ref type="bibr" target="#b56">[56]</ref><ref type="bibr" target="#b57">[57]</ref>. Tomato mosaic virus is another viral disease that directly affects tomato plants (ToMV). This virus is present all over the world and affects not only tomatoes but also other plants. Twisted and fern-like stems, infected fruit with yellow patches, and necrotic blemishes are all symptoms of ToMV infection <ref type="bibr" target="#b58">[58,</ref><ref type="bibr" target="#b59">59]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Methodology</head><p>The overall methodology of the study of the paper is summarized in Figure <ref type="figure" target="#fig_3">3</ref>. This study used tomato leaf data from the Plant Village dataset <ref type="bibr" target="#b60">[60,</ref><ref type="bibr" target="#b61">61]</ref>, where tomato leaf images and corresponding segmented tomato leaf masks are provided. As explained earlier, the paper has three different studies: (i) binary classification of healthy and unhealthy segmented leaves; (ii) five-class classification of healthy and were performed using segmented leaf images. The paper also explored different variants of U-net segmentation models to investigate the best segmentation network for leaf segmentation from the background. Segmented tomato leaf images leveraging in the classification is further verified with the Score-Cam visualization technique, which has been found very reliable in different applications. The classification is done using EfficientNet networks that have been comparatively successful in previous publications by the authors. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Datasets Description</head><p>In this study, Plant Village tomato leaf images and corresponding leaf mask dataset were used <ref type="bibr" target="#b60">[60,</ref><ref type="bibr" target="#b61">61]</ref>, where 18,161 tomato leaf images and corresponding segmented leaf masks are available. The dataset was used for training the tomato leaf segmentation models and classification models as well. All images were divided into 10 different classes, where one class is healthy and the other nine classes are unhealthy (such as bacterial spot, early blight, leaf mold, septoria leaf spot, target spot, two-spotted spider mite, late bright mold, mosaic virus, and yellow leaf curl virus), and nine unhealthy classes are categorized into five subgroups (namely-bacterial, viral, fungal, mold, and mite disease). Some sample tomato leaf images, for healthy and different unhealthy classes, and leaf masks from the Plant Village dataset are shown in Figure <ref type="figure" target="#fig_4">4</ref>. Moreover, a detailed description of the number of images in the dataset is also shown in Table <ref type="table" target="#tab_1">2</ref>, which is useful for classification tasks discussed in detail in the next section.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Preprocessing</head><p>Resizing and Normalizing: The various CNN network (both for segmentation and classification experiments) has input image size requirements. Thus, the images were resized to 256 × 256 for the various variants of U-net segmentation networks. Similarly, the images were resized to 224 × 224 for EfficientNet (EfficientNet-B0, EfficientNet-B4, and EfficientNet-B7). Using the mean and standard deviation of the images of the dataset, z-score normalization was used to normalize the images.</p><p>Augmentation: Since the dataset is not balanced and the dataset does not have a similar number of images for the different categories, training with an imbalanced dataset can produce a biased model. Thus, data augmentation can help in having a similar number of images in the various classes, which can provide reliable results as stated in many recent publications <ref type="bibr" target="#b6">[6]</ref><ref type="bibr" target="#b7">[7]</ref><ref type="bibr" target="#b8">[8]</ref><ref type="bibr" target="#b9">[9]</ref><ref type="bibr" target="#b11">11]</ref>. In this study, three augmentation strategies (rotation, scaling, and translation) were utilized to balance the training images. The rotation operation used for image augmentation was done by rotating the images in the clockwise and counterclockwise direction with an angle between 5 to 15 degrees. The scaling operation is the magnification or reduction of the frame size of the image and 2.5% to 10% image magnifications were used in this work. Image translation was done by translating images horizontally and vertically by 5% to 20%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Experiments</head><p>Leaf Segmentation: Different U-net models were used separately on Plant Village tomato leaf images and leaf mask dataset to identify the best performing segmenta-tion model for leaf segmentation. Five-fold cross-validation was used, where 80% of 18,161 tomato leaf images and their corresponding ground truth masks were randomly selected and used for training, and the remaining 20% were used for testing (Table <ref type="table" target="#tab_2">3</ref>). The class distribution in the test set is similar to the train set. Out of the 80% training dataset, 90% was used for actual training, and 10% for validation, which helps in avoiding the overfitting problem. In this study, three different loss functions (Negative Log-Likelihood (NLL) loss, Binary Cross-Entropy (BCE) loss, and Mean-Squared Error (MSE) loss) were used to achieve the best performance metrics and to identify the best tomato leaf segmentation, model. Moreover, an early stopping criterion of five maximum epochs with no improvement in validation loss was used as reported in some of the recent works <ref type="bibr" target="#b9">[9,</ref><ref type="bibr" target="#b11">11]</ref>. Tomato leaf disease classification:</p><p>The study investigated a deep learning architecture based on a recent convolutional neural network called EfficientNet to classify segmented tomato leaf disease images. Three different classification experiments were carried out in this study. Table <ref type="table" target="#tab_3">4</ref> summarizes the details of the images in the experiments for three different classification using segmented leaf images. The summary of parameters of the classification and segmentation experiments is reported in Table <ref type="table" target="#tab_5">5</ref>. All the experiments were conducted using PyTorch library with Python 3.7 on Intel ® Xeon ® CPU E5-2697 v4 @ 2,30GHz and 64 GB RAM, with a 16 GB NVIDIA GeForce GTX 1080 GPU.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Performance Matrix</head><p>Tomato leaf Segmentation: Important performance metrics for the segmentation experiment is stated in Equations ( <ref type="formula" target="#formula_1">2</ref>)-( <ref type="formula" target="#formula_2">4</ref>).</p><formula xml:id="formula_1">Accuracy = TP + TN (TP + FN) + (FP + TN)<label>(2)</label></formula><p>IoU (Jaccard Index) = (TP)</p><formula xml:id="formula_2">(TP + FN + FP) (3) Dice Coefficient( F1 score) = (2 * TP) (2 * TP + FN + FP)<label>(4)</label></formula><p>Tomato leaf disease Classification: Important performance metrics for the classification experiment is stated in Equations ( <ref type="formula">5</ref>)-( <ref type="formula">9</ref>):</p><formula xml:id="formula_3">Accuracy = TP + TN (TP + FN) + (FP + TN) (5) Sensitivity = (TP) (TP + FN) (6) Specificity = (TN) (TN + FP) (7) Precision = (TP) (TP + FP) (8) F1_score = (2 * TP) (2 * TP + FN + FP) (9)</formula><p>Here, true positive (TP) is the number of correctly classified healthy leaf images and true negative (TN) is the number of correctly classified unhealthy leaf images. Falsepositive (FP) and false-negative (FN) are the misclassified healthy and unhealthy leaf images, respectively.</p><p>Moreover, segmentation and classification networks were also compared in terms of the testing time per image, i.e., time taken by each network to segment or classify an input image, represented in Equation <ref type="bibr" target="#b10">(10)</ref>:</p><formula xml:id="formula_4">T = t" -t' (<label>10</label></formula><formula xml:id="formula_5">)</formula><p>where t' is the starting time for a network to segment or classify an image, I and t" is the end time when the network has segmented or classified the same image, I.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results</head><p>The performance of various networks in the different experiments is reported in this section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Tomato Leaf Segmentation</head><p>In this study, three different segmentation models, the original U-net <ref type="bibr" target="#b25">[25]</ref>, and modified U-net <ref type="bibr" target="#b31">[31]</ref> were trained, validated, and tested for the segmentation of tomato leaf images. Table <ref type="table" target="#tab_6">6</ref> shows the comparative performance of the two segmentation models using three different loss functions (namely, NLL, BCE, and MSE loss function) in image segmentation. It can be noted that the Modified U-net with NLL loss function outperformed the original U-net in the segmentation of the leaf region on the whole images quantitatively and qualitatively. The test loss, test accuracy, IoU, and dice for the segmentation of tomato leaves using Modified U-net with NLL loss function were found to be 0.0076, 98.66, 98.5, and 98.73, respectively. Figure <ref type="figure">5</ref> shows some example test tomato leaf images, corresponding ground truth masks, and segmented leaf images generated by the Modified U-net model with NLL loss function for the Plant Village dataset. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Tomato Leaf Disease Classification</head><p>In this study, three different experiments were conducted for segmented tomato leaf images. The comparative performance for three different EfficientNet families (such as EfficientNet-B0, EfficientNet-B4, and EfficientNet-B7) for the three classification schemes for segmented leaf images is shown in Table <ref type="table">7</ref>. It is apparent from Table <ref type="table">7</ref> that all the evaluated pre-trained models perform very well in classifying healthy and unhealthy tomato leaf images in two-class, six-class, and ten-class problems. The performance also improved when using non-segmented images (see Supplementary Table <ref type="table" target="#tab_0">S1</ref>).</p><p>Among the networks trained with leaf images with and without segmented twoclass, six-class, and ten-class problems, EfficientNet-B7 outperformed other trained models, except for ten-class where EfficientNet-B4 was slightly better than EfficientNet-B7. It can also be seen that as the EfficientNet model's scale, the testing time (T) increases due to scaled depth, width, and resolution of the network. The authors have tried the different versions of EfficientNet and it was seen that as the network is scaled in terms of depth, width, and resolution, the performance becomes better. However, as the classification scheme becomes complicated, the performance does not improve much with the scaled version of EfficientNet.</p><p>For segmented tomato leaf images, EfficientNet-B7 outperforms others and for twoclass and six-class problems showed accuracy, sensitivity, and specificity of 99.95%, 99.95%, 99.77%, and 99.12%, 99.11%, 99.81%, respectively. In contrast, EfficientNet-B4 produced the best result for ten-class with accuracy, sensitivity, and specificity of 99.89%, 99.44%, and 99.94%, respectively. It is evident from Figure <ref type="figure">5</ref> that network performances are slightly improved with more parameters for 2-class, 6-class, and 10-class problems.Figure <ref type="figure">6</ref> clearly shows that the Receiver operating characteristic (ROC) curves for two-class, six-class, and ten-class problems using segmented tomato leaf images. However, deep networks can provide better performance gain for 2-class and 6-class problems. The confusion matrix for the best performing networks for the different classification problems using tomato leaf images is shown in Figure <ref type="figure" target="#fig_6">7</ref>. It can be noticed that even with the best performing network EfficientNet-B7 for two-class tomato leaf images, 6 out of 16,570 unhealthy tomato leaf images were misclassified as healthy and 4 out of 1591 healthy tomato leaf images were miss-classified as unhealthy images.</p><p>For the six-class problem, which consisted of one healthy class and five different unhealthy classes, only 3 out of 1591 healthy tomato leaf images were miss-classified as unhealthy images, and 159 out of 16,570 unhealthy tomato leaf images were miss-classified as healthy or any other unhealthy classes. Moreover, for the ten-class problem, which consisted of one healthy class and nine different unhealthy classes, it can be noticed that the best performing network was EfficientNet-B4, only 4 out of 1591 healthy tomato leaf images were miss-classified as unhealthy images and 105 out of 16,570 unhealthy tomato leaf images of nine different categories were miss-classified as healthy or any other unhealthy classes. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Visualization Using Score-Cam</head><p>In this study, the reliability of the trained networks was investigated using visualization techniques. Score-CAM-of five different categories were misclassified as healthy or any other unhealthy classes. For the ten-class problem, heat maps for segmented tomato leaf images were used. Figure <ref type="figure" target="#fig_7">8</ref> shows the original tomato leaf samples along with the heat maps on segmented leaves. As can be seen from Figure <ref type="figure" target="#fig_7">8</ref>, the networks are learning from the leaf images in the segmented leaf, which makes the network decision more reliable. This helps to counter the criticism that CNN takes decision from the non-relevant region and are not reliable <ref type="bibr" target="#b62">[62]</ref>. It can also be seen in Figure <ref type="figure" target="#fig_8">9</ref> that segmentation has helped in a classification where the network learns from the region of interest. This reliable learning has helped incorrect classification. In addition, the authors have also experimented to confirm that segmentation helps in learning and taking decisions from relevant areas compared to non-segmented images (see Supplementary Figure <ref type="figure" target="#fig_1">S1</ref>).  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head><p>Plant diseases are a major threat to global food security. The latest technologies need to be applied to the agriculture sector to curb diseases. Artificial intelligence-based technologies are extensively investigated in plant disease detection. Computer visionbased disease detection systems are popular for their robustness, ease of acquiring data, and quick results. This research investigates how model scaling CNN-based architectures perform against each other in two tasks i.e., segmentation and classification of tomato leaf images. The study was divided into three sub-studies of 2-class classification (Healthy, and Unhealthy), 6-class classification (Healthy, Fungi, Bacteria, Mold, Virus, and Mite), and 10-class classification (Healthy, Early blight, Septoria leaf spot, Target spot, Leaf mold, Bacterial spot, Late bright mold, Tomato Yellow Leaf Curl Virus, Tomato Mosaic Virus, and Two-spotted spider mite). Overall, the EfficientNet-B7 model outperformed every other model, except for binary classification, and 6-class classification with segmented images, where the EfficientNet-B4 model outperformed others in 10-class classification. In the binary classification of healthy and diseased tomato leaves, EfficientNet-B7 showed an overall accuracy of 99.95% with segmented images. In 6-class classification, EfficientNet-B7 showed an overall accuracy of 99.12% with segmented images. Furthermore, in the 10class classification, EfficientNet-B4 showed an overall accuracy of 99.89% with segmented images. The results in the paper are comparable to the state-of-the-art results and are also summarized in Table <ref type="table" target="#tab_7">8</ref>. Although the Plant Village dataset used in this study contains images taken in diverse environmental conditions, the dataset is collected in a specific region and is of specific breeds of tomatoes. A study conducted using a dataset containing images of other breeds of tomato plants from different regions of the world may result in a more robust framework for early disease detection in tomato plants. Furthermore, the lighter architecture of CNN models with non-linearity in the feature extraction layers might be useful to investigate for portable solutions. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusions</head><p>In this work, we developed a deep convolutional neural network (CNN) based on a recently developed EfficientNet CNN model. The model was fine-tuned and trained for the detection of healthy and different unhealthy tomato leaf images. The obtained results show that our model outperforms some recent deep learning techniques by using the most popular publicly available Plant Village dataset <ref type="bibr" target="#b60">[60,</ref><ref type="bibr" target="#b61">61]</ref>. It was also found that the Modified U-net was best suited for segmentation of leaf images from the background and EfficientNet-B7 was better at extracting discriminative features from images compared to other architecture. Besides, the performance of the networks generally further improved when trained with more parameters. The trained models can be used in the early automatic detection of plant diseases. Experts need years of training and knowledge to early disease detection with visual inspection but our model can be used by anybody who is not an expert. Any new users will have the network working in the background which will take input from the visual camera and immediately inform the user of the output so that the user can take necessary action. Thus, preventive actions can be taken earlier. This work can be beneficial in early and automatic disease detection of tomato crops enabled by the latest technologies such as smartphones, drone cameras, and robotic platforms. The proposed framework can be incorporated with a feedback system that gives valuable suggestions, remedies, disease management, and control strategies, thus ensuring better crop yields. The authors would work on an extension of the work to validate the performance of the proposed solution on a real-time application where microcontrollers with cameras will be used to check the performance. The future work would have a much more diverse environment and the authors are confident that it will work better even over there.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>1 . 2 .</head><label>12</label><figDesc>Different variants of U-net architecture are investigated to propose the best segmentation model by comparing the model predictions to the ground truth segmented images. Investigation of the classification tasks for different variants of CNN architecture for binary and different multi-class classifications of tomato diseases. Several experiments employing different CNN architectures were conducted. Three different types of classifications were done in this work: (a) Binary classification of healthy and diseased leaves, (b) Five-class classification of healthy and four diseased leaves, and finally, (c) Ten-class classification with healthy and nine different diseases classes. 3.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Architecture of (A) original U-Net and (B) modified U-Net.</figDesc><graphic coords="5,104.26,95.48,386.76,446.40" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Score-CAM visualization of tomato leaf images, to show where the CNN model is mainly taking the decision.</figDesc><graphic coords="6,167.27,133.76,263.04,120.00" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Overall Methodology of the study.</figDesc><graphic coords="7,70.84,262.28,453.60,286.08" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Sample images of healthy and different unhealthy tomato leaves from the Plant Village database.</figDesc><graphic coords="8,167.27,95.48,368.16,205.92" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5 .Table 7 .Figure 6 .</head><label>576</label><figDesc>Figure 5. Samples tomato leaf images from a database (left), generated masks by the trained modified U-net model with NLL loss function (second from left), corresponding segmented leaf (second from right), and the ground truth from the database (right).</figDesc><graphic coords="12,167.27,158.86,384.48,276.00" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Confusion matrix for healthy, and unhealthy tomato leaf image classification using compound scaling CNN-based models for segmented leaf images for (A) binary-class, (B) six-class, and (C) ten-class classification.</figDesc><graphic coords="14,72.58,95.48,450.12,374.75" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Score-CAM visualization of correctly classified tomato leaf images: Original leaves, score-CAM heat map on segmented leaves.</figDesc><graphic coords="15,167.27,95.48,360.48,227.52" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. Score-CAM visualization to confirm how segmentation has helped in classification.</figDesc><graphic coords="15,167.27,364.86,331.68,267.84" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head/><label/><figDesc/><graphic coords="13,61.72,95.48,471.84,405.85" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>EfficientNet baseline network.</figDesc><table><row><cell>Stage</cell><cell>Operator</cell><cell>Resolution</cell><cell>Channels</cell><cell>Layers</cell></row><row><cell>1</cell><cell>Conv3 × 3</cell><cell>224 × 224</cell><cell>32</cell><cell>1</cell></row><row><cell>2</cell><cell>MBConv 1, k3 × 3</cell><cell>112 × 112</cell><cell>16</cell><cell>1</cell></row><row><cell>3</cell><cell>MBConv 6, k3 × 3</cell><cell>112 × 112</cell><cell>24</cell><cell>2</cell></row><row><cell>4</cell><cell>MBConv 6, k5 × 5</cell><cell>56 × 56</cell><cell>40</cell><cell>2</cell></row><row><cell>5</cell><cell>MBConv 6, k3 × 3</cell><cell>28 × 28</cell><cell>80</cell><cell>3</cell></row><row><cell>6</cell><cell>MBConv 6, k5 × 5</cell><cell>14 × 14</cell><cell>112</cell><cell>3</cell></row><row><cell>7</cell><cell>MBConv 6, k5 × 5</cell><cell>14 × 14</cell><cell>192</cell><cell>4</cell></row><row><cell>8</cell><cell>MBConv 6, k3 × 3</cell><cell>7 × 7</cell><cell>320</cell><cell>1</cell></row><row><cell>9</cell><cell>Conv1 × 1 &amp; Pooling &amp; FC</cell><cell>7 × 7</cell><cell>1280</cell><cell>1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>The number of tomato leaf images for healthy and different unhealthy classes.</figDesc><table><row><cell>Class</cell><cell>Healthy</cell><cell>Fungi</cell><cell>Bacteria</cell><cell>Mold</cell><cell>Virus</cell><cell>Mite</cell></row><row><cell/><cell/><cell>Early blight (1000)</cell><cell/><cell/><cell>Tomato Yellow Leaf Curl Virus</cell><cell/></row><row><cell>Sub Class</cell><cell>Healthy (1591)</cell><cell>Septoria leaf spot (1771) Target spot (1404)</cell><cell>Bacterial spot (2127)</cell><cell>Late bright mold (1910)</cell><cell>(5357) Tomato Mosaic Virus (373)</cell><cell>Two-spotted spider mite (1676)</cell></row><row><cell/><cell/><cell>Leaf mold</cell><cell/><cell/><cell/><cell/></row><row><cell/><cell/><cell>(952)</cell><cell/><cell/><cell/><cell/></row><row><cell/><cell/><cell/><cell cols="2">Tomato (18,161)</cell><cell/><cell/></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 .</head><label>3</label><figDesc>Summary of the U-net segmentation experiment.</figDesc><table><row><cell>Dataset</cell><cell>Number of Tomato Leaf Images and Their Corresponding Mask</cell><cell>Train Set Count/Fold</cell><cell>Validation Set Count/Fold</cell><cell>Test Set Count/Fold</cell></row><row><cell>Plant Village</cell><cell/><cell/><cell/><cell/></row><row><cell>tomato leaf</cell><cell>18161</cell><cell>13076</cell><cell>1453</cell><cell>3632</cell></row><row><cell>images</cell><cell/><cell/><cell/><cell/></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Summary of different classification experiments.</figDesc><table><row><cell>Classification</cell><cell>Types</cell><cell>Total No. of Images/Class</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>For Both Segmented and Unsegmented Experiment Train Set Count/Fold Validation Set Count/Fold Test Set Count/Fold</head><label/><figDesc/><table><row><cell/><cell>Healthy</cell><cell>1591</cell><cell>1147 × 10 = 11470</cell><cell>127</cell><cell>317</cell></row><row><cell>Binary-class</cell><cell>Unhealthy (9 diseases)</cell><cell>16,570</cell><cell>11930</cell><cell>1326</cell><cell>3314</cell></row><row><cell/><cell>Healthy</cell><cell>1591</cell><cell>1147 × 3 = 3441</cell><cell>127</cell><cell>317</cell></row><row><cell/><cell>Fungi</cell><cell>5127</cell><cell>3692</cell><cell>410</cell><cell>1025</cell></row><row><cell/><cell>Bacteria</cell><cell>2127</cell><cell>1532 × 2 = 3064</cell><cell>170</cell><cell>425</cell></row><row><cell>Six-class</cell><cell>Mold</cell><cell>1910</cell><cell>1375 × 3 = 4125</cell><cell>153</cell><cell>382</cell></row><row><cell/><cell>Virus</cell><cell>5730</cell><cell>4126</cell><cell>458</cell><cell>1146</cell></row><row><cell/><cell>Mite</cell><cell>1676</cell><cell>1207 × 3 = 3621</cell><cell>134</cell><cell>335</cell></row><row><cell/><cell>Healthy</cell><cell>1591</cell><cell>1147 × 3 = 3441</cell><cell>127</cell><cell>317</cell></row><row><cell/><cell>Early Blight</cell><cell>1000</cell><cell>720 × 5 = 3600</cell><cell>80</cell><cell>200</cell></row><row><cell/><cell>Septoria Leaf Spot</cell><cell>1771</cell><cell>1275 × 3 = 3825</cell><cell>142</cell><cell>354</cell></row><row><cell/><cell>Target Spot</cell><cell>1404</cell><cell>1011 × 3 = 3033</cell><cell>112</cell><cell>281</cell></row><row><cell>Ten-class</cell><cell>Leaf Mold</cell><cell>952</cell><cell>686 × 5 = 3430</cell><cell>76</cell><cell>190</cell></row><row><cell/><cell>Bacterial Spot</cell><cell>2127</cell><cell>1532 × 2 = 3064</cell><cell>170</cell><cell>425</cell></row><row><cell/><cell>Late Bright Mold</cell><cell>1910</cell><cell>1375 × 3 = 4125</cell><cell>153</cell><cell>382</cell></row><row><cell/><cell>Tomato Yellow Leaf Curl Virus</cell><cell>5357</cell><cell>3857</cell><cell>429</cell><cell>1071</cell></row><row><cell/><cell>Tomato Mosaic Virus</cell><cell>373</cell><cell>268 × 13 = 3484</cell><cell>30</cell><cell>75</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>Summary of training parameters for segmentation and classification experiments.</figDesc><table><row><cell>Parameters</cell><cell>Segmentation Model</cell><cell>Classification Model</cell></row><row><cell>Batch size</cell><cell>16</cell><cell>16</cell></row><row><cell>Learning rate</cell><cell>0.001</cell><cell>0.001</cell></row><row><cell>Epochs</cell><cell>50</cell><cell>15</cell></row><row><cell>Epochs patience</cell><cell>8</cell><cell>6</cell></row><row><cell>Stopping criteria</cell><cell>8</cell><cell>5</cell></row><row><cell>Loss function</cell><cell>NLL/BCE/MSE</cell><cell>BCE</cell></row><row><cell>Optimizer</cell><cell>ADAM</cell><cell>ADAM</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 6 .</head><label>6</label><figDesc>Comparative performance of the original U-net and the modified U-net. (Best results are highlighted as bold).</figDesc><table><row><cell>Loss Function</cell><cell>Network</cell><cell>Test Loss</cell><cell>Test Accuracy</cell><cell>IoU</cell><cell>Dice</cell><cell>Inference Time T (s)</cell></row><row><cell>NLL loss</cell><cell>Unet</cell><cell>0.0168</cell><cell>97.25</cell><cell>96.83</cell><cell>97.11</cell><cell>14.05</cell></row><row><cell>BCE loss</cell><cell>Unet</cell><cell>0.0162</cell><cell>97.32</cell><cell>96.9</cell><cell>97.02</cell><cell>13.89</cell></row><row><cell>MSE loss</cell><cell>Unet</cell><cell>0.0134</cell><cell>97.52</cell><cell>97.25</cell><cell>97.35</cell><cell>13.66</cell></row><row><cell>NLL loss</cell><cell>Modified Unet</cell><cell>0.0076</cell><cell>98.66</cell><cell>98.5</cell><cell>98.73</cell><cell>12.12</cell></row><row><cell>BCE loss</cell><cell>Modified Unet</cell><cell>0.016</cell><cell>97.12</cell><cell>96.82</cell><cell>97.1</cell><cell>12.04</cell></row><row><cell>MSE loss</cell><cell>Modified Unet</cell><cell>0.089</cell><cell>98.19</cell><cell>98.25</cell><cell>98.43</cell><cell>11.76</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 .</head><label>8</label><figDesc>Results in the paper compared with other state-of-the-art results.</figDesc><table><row><cell>Paper</cell><cell>Classification</cell><cell>Dataset</cell><cell cols="2">Accuracy Precision</cell><cell>Recall</cell><cell>F1-Score</cell><cell>Results</cell></row><row><cell>Mohit et al. [23]</cell><cell>Ten-class</cell><cell>Plant Village</cell><cell>91%</cell><cell>90%</cell><cell>92%</cell><cell>91%</cell><cell>Non-Segmented</cell></row><row><cell>P. Tm et al. [63]</cell><cell>Ten-class</cell><cell>Plant Village</cell><cell>94%</cell><cell>94.81%</cell><cell>94.78%</cell><cell>94.8%</cell><cell>Segmented</cell></row><row><cell>Keke et al. [64]</cell><cell>Two-class</cell><cell>Own dataset</cell><cell>95%</cell><cell>-</cell><cell>-</cell><cell>-</cell><cell>Non-segmented</cell></row><row><cell>Madhavi et al. [65]</cell><cell>Two-class</cell><cell>Own dataset</cell><cell>85%</cell><cell>-</cell><cell>84%</cell><cell>-</cell><cell>Non-Segmented -</cell></row><row><cell/><cell>Two-class</cell><cell>Plant Village</cell><cell>99.95%</cell><cell>99.94%</cell><cell>99.95%</cell><cell>99.95%</cell><cell>Segmented</cell></row><row><cell>Proposed study</cell><cell>Six-class</cell><cell>Plant Village</cell><cell>99.12%</cell><cell>99.10%</cell><cell>99.11%</cell><cell>99.10%</cell><cell>Segmented</cell></row><row><cell/><cell>Ten-class</cell><cell>Plant Village</cell><cell>99.89%</cell><cell>99.45%</cell><cell>99.44%</cell><cell>99.4%</cell><cell>Segmented</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><head>Funding:</head><p>The open-access publication of this article was funded by the <rs type="funder">Qatar National Library</rs> and this work was made possible by <rs type="grantNumber">HSREP02-1230-190019</rs> from the <rs type="funder">Qatar National Research Fund</rs>, a member of <rs type="funder">Qatar Foundation, Doha, Qatar</rs>. The statements made herein are solely the responsibility of the authors.</p></div>
+<div><head>Institutional Review Board Statement: Not applicable.</head><p>Informed Consent Statement: Not applicable.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_PZqan3j">
+					<idno type="grant-number">HSREP02-1230-190019</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The data presented in this study are openly available in [SpMohanty/ PlantVillage-Dataset. Available online: https://github.com/spMohanty/PlantVillage-Dataset (accessed on 24 January 2021)].</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials:</head><p>The following are available online at https://www.mdpi.com/article/10 .3390/agriengineering3020020/s1, Figure <ref type="figure">S1</ref>: Score-CAM visualization to confirm how segmentation has helped in classification even incorrectly classified images, Table <ref type="table">S1</ref>: Summary of the tomato leaf disease classification performance using non-segmented original leaf images. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflict of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">14/06 Laodikeia Katakekaumene Nr. 1-23, 94-99</title>
+		<idno type="DOI">10.1515/9783110953022.77</idno>
+		<idno>99.92 ± 0.04 51.23</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Der „Ferne Osten“ und das Landesinnere bis zum Tauros</title>
+		<imprint>
+			<publisher>DE GRUYTER</publisher>
+			<date type="published" when="0799">07 99</date>
+			<biblScope unit="volume">0</biblScope>
+			<biblScope unit="page" from="77" to="98"/>
+		</imprint>
+	</monogr>
+	<note>EfficientNet-b4 99.82 ± 0.06 99.83 ± 0.06 99.82 ± 0.06 99.82 ± 0.06 98.74 ± 0.16 34.25 EfficientNet-b7 99.95 ± 0.03 99.94 ± 0.03 99.95 ± 0.03 99.95 ± 0.03 99.77 ± 0.07 44.12 6 Class EfficientNet-b0 97.34 ± 0.23 97.38 ± 0.23 97.34 ± 0.23 97.33 ± 0.23 99.47 ± 0.11 20.45 EfficientNet-b4 98.49 ± 0.18 98.51 ± 0.18 98.49 ± 0.18 98.49 ± 0.18 99.73 ± 0.08 38.02 EfficientNet-b7 99.12 ± 0.14 99.1 ± 0.14 99.11± 0.14 99.1 ± 0.14 99.81 ± 0.06 45.18 10 Class EfficientNet-b0 99.71 ± 0.08 98.69 ± 0.17 98.68 ± 0.17 98.68 ± 0.17 99.87 ± 0.05 22.16 EfficientNet-b4 99.89 ± 0.05 99.45 ± 0.11 99.44 ± 0.11 99.4 ± 0.11 99.94 ± 0.04 41.24 EfficientNet-b7 99.84 ± 0.06 99.15 ± 0.13 99.13 ± 0.14 99.13 ± 0.14</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Design, Construction and Testing of IoT Based Automated Indoor Vertical Hydroponics Farming Test-Bed in Qatar</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saba</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatima</forename><surname>Al-Khuzaei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jalaa</forename><surname>Hamdalla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fahmida</forename><surname>Haque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mamun</forename><forename type="middle">Bin Ibne</forename><surname>Reaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Al Shafei</surname></persName>
+			<idno type="ORCID">0000-0002-5230-8301</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nasser</forename><surname>Al-Emadi</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s20195637</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">5637</biblScope>
+			<date type="published" when="2020-10-02">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Plant Disease: A Threat to Global Food Security</title>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">N</forename><surname>Strange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">R</forename><surname>Scott</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.phyto.43.113004.133839</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Phytopathology</title>
+		<title level="j" type="abbrev">Annu. Rev. Phytopathol.</title>
+		<idno type="ISSN">0066-4286</idno>
+		<idno type="ISSNe">1545-2107</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="116"/>
+			<date type="published" when="2005-09-01">2005</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Crop losses to pests</title>
+		<author>
+			<persName><forename type="first">E.-C</forename><surname>Oerke</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0021859605005708</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Agricultural Science</title>
+		<title level="j" type="abbrev">J. Agric. Sci.</title>
+		<idno type="ISSN">0021-8596</idno>
+		<idno type="ISSNe">1469-5146</idno>
+		<imprint>
+			<biblScope unit="volume">144</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="31" to="43"/>
+			<date type="published" when="2006">2006</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Photo-Voltaic (PV) Monitoring System, Performance Analysis and Power Prediction Models in Doha, Qatar</title>
+		<author>
+			<persName><forename type="first">Farid</forename><surname>Touati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>E.H. Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Jr. S.P. Gonzales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Kim Sorino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamel</forename><surname>Benhmed</surname></persName>
+		</author>
+		<idno type="DOI">10.5772/intechopen.92632</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Renewable Energy - Technologies and Applications</title>
+		<meeting><address><addrLine>IntechOpen; London, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>IntechOpen</publisher>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>Renewable Energy</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Machine Learning Based Photovoltaics (PV) Power Prediction Using Different Environmental Parameters of Qatar</title>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>E. H. Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monzure-</forename><surname>Khoda Kazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kamel</forename><surname>Benhmed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farid</forename><surname>Touati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Al-Hitmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Jr S. P. Gonzales</surname></persName>
+			<idno type="ORCID">0000-0001-7572-5389</idno>
+		</author>
+		<idno type="DOI">10.3390/en12142782</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Energies</title>
+		<title level="j" type="abbrev">Energies</title>
+		<idno type="ISSNe">1996-1073</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page">2782</biblScope>
+			<date type="published" when="2019-07-19">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Estimating Blood Pressure from the Photoplethysmogram Signal and Demographic Features Using Machine Learning Techniques</title>
+		<author>
+			<persName><forename type="first">Moajjem</forename><forename type="middle">Hossain</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Nazmul Islam</forename><surname>Shuzan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zaid</forename><forename type="middle">B</forename><surname>Mahbub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Monir</forename><surname>Uddin</surname></persName>
+			<idno type="ORCID">0000-0002-9817-6156</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mamun</forename><forename type="middle">Bin Ibne</forename><surname>Reaz</surname></persName>
+			<idno type="ORCID">0000-0002-0459-0365</idno>
+		</author>
+		<idno type="DOI">10.3390/s20113127</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">3127</biblScope>
+			<date type="published" when="2020-06-01">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Real-Time Smart-Digital Stethoscope System for Heart Diseases Monitoring</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khawla</forename><surname>Alzoubi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samar</forename><surname>Mansoor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anas</forename><surname>M. Tahir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mamun</forename><forename type="middle">Bin Ibne</forename><surname>Reaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nasser</forename><surname>Al-Emadi</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s19122781</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">2781</biblScope>
+			<date type="published" when="2019-06-20">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Reliable Tuberculosis Detection Using Chest X-Ray With Deep Learning, Segmentation and Visualization</title>
+		<author>
+			<persName><forename type="first">Tawsifur</forename><surname>Rahman</surname></persName>
+			<idno type="ORCID">0000-0002-6938-6496</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Abdul</forename><surname>Kadir</surname></persName>
+			<idno type="ORCID">0000-0002-4535-9215</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khandaker</forename><forename type="middle">Rejaul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0003-2863-8156</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khandakar</forename><forename type="middle">F</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rashid</forename><surname>Mazhar</surname></persName>
+			<idno type="ORCID">0000-0003-4255-8996</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tahir</forename><surname>Hamid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Tariqul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0002-4929-3209</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saad</forename><surname>Kashem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zaid</forename><forename type="middle">Bin</forename><surname>Mahbub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohamed</forename><forename type="middle">Arselene</forename><surname>Ayari</surname></persName>
+			<idno type="ORCID">0000-0002-8663-886X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2020.3031384</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="191586" to="191601"/>
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Reliable Classification of COVID-19, MERS, and SARS from Chest X-ray Images</title>
+		<author>
+			<persName><forename type="first">Anas</forename><forename type="middle">M</forename><surname>Tahir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yazan</forename><surname>Qiblawey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tawsifur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uzair</forename><surname>Khurshid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farayi</forename><surname>Musharavati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serkan</forename><surname>Kiranyaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somaya</forename><surname>Al-Maadeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<idno type="DOI">10.1007/s12559-021-09955-1</idno>
+		<idno type="arXiv">arXiv:2005.11524</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cognitive Computation</title>
+		<title level="j" type="abbrev">Cogn Comput</title>
+		<idno type="ISSN">1866-9956</idno>
+		<idno type="ISSNe">1866-9964</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1752" to="1772"/>
+			<date type="published" when="2022-01-11"/>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Can AI Help in Screening Viral and COVID-19 Pneumonia?</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tawsifur</forename><surname>Rahman</surname></persName>
+			<idno type="ORCID">0000-0002-6938-6496</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rashid</forename><surname>Mazhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Abdul</forename><surname>Kadir</surname></persName>
+			<idno type="ORCID">0000-0002-4535-9215</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zaid</forename><forename type="middle">Bin</forename><surname>Mahbub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khandakar</forename><forename type="middle">Reajul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0003-2863-8156</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Salman</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0001-9709-8179</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Atif</forename><surname>Iqbal</surname></persName>
+			<idno type="ORCID">0000-0002-6932-4367</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nasser</forename><forename type="middle">Al</forename><surname>Emadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mamun</forename><forename type="middle">Bin Ibne</forename><surname>Reaz</surname></persName>
+			<idno type="ORCID">0000-0002-0459-0365</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Tariqul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0002-4929-3209</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2020.3010287</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="132665" to="132676"/>
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Transfer Learning with Deep Convolutional Neural Network (CNN) for Pneumonia Detection Using Chest X-ray</title>
+		<author>
+			<persName><forename type="first">Tawsifur</forename><surname>Rahman</surname></persName>
+			<idno type="ORCID">0000-0002-6938-6496</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+			<idno type="ORCID">0000-0001-7068-9112</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Khandaker</forename><forename type="middle">R</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Khandaker</forename><forename type="middle">F</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zaid</forename><forename type="middle">B</forename><surname>Mahbub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">A</forename><surname>Kadir</surname></persName>
+			<idno type="ORCID">0000-0002-4535-9215</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saad</forename><surname>Kashem</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/app10093233</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Sciences</title>
+		<title level="j" type="abbrev">Applied Sciences</title>
+		<idno type="ISSNe">2076-3417</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">3233</biblScope>
+			<date type="published" when="2020-05-06">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">An Early Warning Tool for Predicting Mortality Risk of COVID-19 Patients Using Machine Learning</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">E H</forename><surname>Chowdhury</surname></persName>
+			<idno type="ORCID">0000-0003-0744-8206</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tawsifur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amith</forename><surname>Khandakar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Somaya</forename><surname>Al-Madeed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susu</forename><forename type="middle">M</forename><surname>Zughaier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suhail</forename><forename type="middle">A R</forename><surname>Doi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanadi</forename><surname>Hassen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">T</forename><surname>Islam</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12559-020-09812-7</idno>
+		<idno type="arXiv">arXiv:2007.15559</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cognitive Computation</title>
+		<title level="j" type="abbrev">Cogn Comput</title>
+		<idno type="ISSN">1866-9956</idno>
+		<idno type="ISSNe">1866-9964</idno>
+		<imprint>
+			<date type="published" when="2021-04-21"/>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Bacterial Foraging Optimization Based Radial Basis Function Neural Network (BRBFNN) for Identification and Classification of Plant Leaf Diseases: An Automatic Approach Towards Plant Pathology</title>
+		<author>
+			<persName><forename type="first">Siddharth</forename><forename type="middle">Singh</forename><surname>Chouhan</surname></persName>
+			<idno type="ORCID">0000-0003-3787-1857</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Kaul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Uday</forename><forename type="middle">Pratap</forename><surname>Singh</surname></persName>
+			<idno type="ORCID">0000-0003-2077-0793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjeev</forename><surname>Jain</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2018.2800685</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="8852" to="8863"/>
+			<date type="published" when="2018">2018</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Object Recognition with Gradient-Based Learning</title>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Haffner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Léon</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/3-540-46805-6_19</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Shape, Contour and Grouping in Computer Vision</title>
+		<meeting><address><addrLine>Berlin/Heidelberg, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="1999">1999</date>
+			<biblScope unit="page" from="319" to="345"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A Comparative Study of CNN and AlexNet for Detection of Disease in Potato and Mango leaf</title>
+		<author>
+			<persName><forename type="first">Sunayana</forename><surname>Arya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rajeev</forename><surname>Singh</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icict46931.2019.8977648</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Issues and Challenges in Intelligent Computing Techniques (ICICT)</title>
+		<meeting><address><addrLine>Ghaziabad, India</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09-28">27-28 September 2019</date>
+			<biblScope unit="page" from="1" to="6"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Automatic Image-Based Plant Disease Severity Estimation Using Deep Learning</title>
+		<author>
+			<persName><forename type="first">Guan</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3568-2908</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0003-3206-9515</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxin</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-1320-3969</idno>
+		</author>
+		<idno type="DOI">10.1155/2017/2917536</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Intelligence and Neuroscience</title>
+		<title level="j" type="abbrev">Computational Intelligence and Neuroscience</title>
+		<idno type="ISSN">1687-5265</idno>
+		<idno type="ISSNe">1687-5273</idno>
+		<imprint>
+			<biblScope unit="volume">2017</biblScope>
+			<biblScope unit="page" from="1" to="8"/>
+			<date type="published" when="2017">2017</date>
+			<publisher>Hindawi Limited</publisher>
+		</imprint>
+	</monogr>
+	<note>CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">30 Jahre „Datenbanksysteme für Business, Technologie und Web“</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Amara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bouaziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Algergawy</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13222-015-0183-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Datenbank-Spektrum</title>
+		<title level="j" type="abbrev">Datenbank Spektrum</title>
+		<idno type="ISSN">1618-2162</idno>
+		<idno type="ISSNe">1610-1995</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="81" to="90"/>
+			<date type="published" when="2017-03">2017. 6-10 March 2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+			<pubPlace>BTW; Workshopband, Stuttgart, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Food and Agriculture Organization of the United Nations Food Security Through Sustainable Crop Production./Food and Agriculture Organization of the United Nations Food Security Through Sustainable Crop Production./Annual report: crop improvement and seed</title>
+		<idno type="DOI">10.2458/azu_acku_serial_s271_f66_v2001</idno>
+		<imprint>
+			<date type="published" when="2010">2010. 2012</date>
+			<publisher>University of Arizona Libraries</publisher>
+			<biblScope unit="volume">3</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Tomato Products'market Potential and Consumer Preference In Ibadan, Nigeria</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Adeoye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Aderibigbe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Amao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Egbekunle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Bala</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Pap. Manag. Econ. Eng. Agric. Rural Dev</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="9" to="15"/>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Development Of An Improved Tomato Leaf Disease Detection And Classification Method</title>
+		<author>
+			<persName><forename type="first">Manpreet</forename><surname>Kaur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rekha</forename><surname>Bhatia</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cict48419.2019.9066230</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE Conference on Information and Communication Technology</title>
+		<meeting><address><addrLine>Allahabad, India</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-12-08">6-8 December 2019</date>
+			<biblScope unit="page" from="1" to="5"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Improved Segmentation Approach for Plant Disease Detection</title>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Arifur</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Mukitul</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Shahir Mahdee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md.</forename><forename type="middle">Wasi</forename><surname>Ul Kabir</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icasert.2019.8934895</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT)</title>
+		<meeting><address><addrLine>Dhaka, Bangladesh</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-05-05">3-5 May 2019</date>
+			<biblScope unit="page" from="1" to="5"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A Robust Deep-Learning-Based Detector for Real-Time Tomato Plant Diseases and Pests Recognition</title>
+		<author>
+			<persName><forename type="first">Alvaro</forename><surname>Fuentes</surname></persName>
+			<idno type="ORCID">0000-0001-8847-1541</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sook</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sang</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Park</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s17092022</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">2022</biblScope>
+			<date type="published" when="2017-09-04">2017. 2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">ToLeD: Tomato Leaf Disease Detection using Convolution Neural Network</title>
+		<author>
+			<persName><forename type="first">Mohit</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siddhartha</forename><surname>Arjaria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amit</forename><surname>Sinha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suneet</forename><surname>Gupta</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.procs.2020.03.225</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia Computer Science</title>
+		<title level="j" type="abbrev">Procedia Computer Science</title>
+		<idno type="ISSN">1877-0509</idno>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="page" from="293" to="301"/>
+			<date type="published" when="2020">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Disease detection on the leaves of the tomato plants by using deep learning</title>
+		<author>
+			<persName><forename type="first">Halil</forename><surname>Durmus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ece</forename><forename type="middle">Olcay</forename><surname>Gunes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murvet</forename><surname>Kirci</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/agro-geoinformatics.2017.8047016</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 6th International Conference on Agro-Geoinformatics</title>
+		<meeting><address><addrLine>Fairfax, VA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-08-10">7-10 August 2017</date>
+			<biblScope unit="page" from="1" to="5"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Munich, Germany; Cham, Switzerland</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015-10-09">5-9 October 2015. 2015</date>
+			<biblScope unit="page" from="234" to="241"/>
+		</imprint>
+	</monogr>
+	<note>U-net</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Efficientnet: Rethinking model scaling for convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Le</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Machine Learning</title>
+		<meeting>the International Conference on Machine Learning<address><addrLine>Long Beach, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-06-15">10-15 June 2019</date>
+			<biblScope unit="page" from="6105" to="6114"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">MnasNet: Platform-Aware Neural Architecture Search for Mobile</title>
+		<author>
+			<persName><forename type="first">Mingxing</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoming</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Vasudevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Sandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quoc</forename><forename type="middle">V</forename><surname>Le</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00293</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<meeting><address><addrLine>Long Beach, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">June 2019. 2019</date>
+			<biblScope unit="page" from="2820" to="2828"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification, Detection and Segmentation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zhmoginov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sandler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<meeting>the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)<address><addrLine>Salt Lake City, UT, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018-06">June 2018</date>
+			<biblScope unit="page" from="18" to="23"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Squeeze-and-Excitation Networks</title>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gang</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00745</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<meeting><address><addrLine>Salt Lake City, UT, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">June 2018</date>
+			<biblScope unit="page" from="7132" to="7141"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Efficient training of giant neural networks using pipeline parallelism</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bapna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Firat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hyoukjoong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Jiquan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">L</forename><surname>Quoc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yonghui</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1811.06965</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">3D lung segmentation of the CT series based on 2D Chan-Vese</title>
+		<author>
+			<persName><forename type="first">Łukasz</forename><surname>Maciura</surname></persName>
+		</author>
+		<idno type="DOI">10.15199/48.2022.05.31</idno>
+		<ptr target="https://github.com/imlab-uiip/lung-segmentation-2d#readme"/>
+	</analytic>
+	<monogr>
+		<title level="j">PRZEGLĄD ELEKTROTECHNICZNY</title>
+		<title level="j" type="abbrev">ELECTROTECHNICAL REVIEW</title>
+		<idno type="ISSN">0033-2097</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="167" to="170"/>
+			<date type="published" when="2020-08-01">1 August 2020</date>
+			<publisher>Wydawnictwo SIGMA-NOT, sp. z.o.o.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Removing noise by adding noise</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Smilkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Thorat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Viégas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wattenberg</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Smoothgrad</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1706.03825</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization</title>
+		<author>
+			<persName><forename type="first">Ramprasaath</forename><forename type="middle">R</forename><surname>Selvaraju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Cogswell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramakrishna</forename><surname>Vedantam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devi</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dhruv</forename><surname>Batra</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2017.74</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Computer Vision (ICCV)</title>
+		<meeting><address><addrLine>Venice, Italy</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">October 2017</date>
+			<biblScope unit="page" from="618" to="626"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Grad-CAM++: Generalized Gradient-Based Visual Explanations for Deep Convolutional Networks</title>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Chattopadhay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anirban</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prantik</forename><surname>Howlader</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vineeth</forename><forename type="middle">N</forename><surname>Balasubramanian</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/wacv.2018.00097</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE Winter Conference on Applications of Computer Vision (WACV)</title>
+		<meeting><address><addrLine>Lake Tahoe, NV, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-03">March 2018</date>
+			<biblScope unit="page" from="839" to="847"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks</title>
+		<author>
+			<persName><forename type="first">Haofan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zifan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengnan</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sirui</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Mardziel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xia</forename><surname>Hu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvprw50498.2020.00020</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</title>
+		<meeting><address><addrLine>Seattle, WA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06-19">14-19 June 2020</date>
+			<biblScope unit="page" from="24" to="25"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Tomato early blight (Alternaria solani): the pathogen, genetics, and breeding for resistance</title>
+		<author>
+			<persName><forename type="first">Reni</forename><surname>Chaerani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roeland</forename><forename type="middle">E</forename><surname>Voorrips</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10327-006-0299-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of General Plant Pathology</title>
+		<title level="j" type="abbrev">J Gen Plant Pathol</title>
+		<idno type="ISSN">1345-2630</idno>
+		<idno type="ISSNe">1610-739X</idno>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="335" to="347"/>
+			<date type="published" when="2006-12-18">2006</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">DCGAN-Based Data Augmentation for Tomato Leaf Disease Identification</title>
+		<author>
+			<persName><forename type="first">Qiufeng</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-4787-2549</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yiping</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0109-4742</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Meng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2020.2997001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="98716" to="98728"/>
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Septoria leaf spot in organic tomatoes under diverse irrigation systems and water management strategies</title>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">N</forename><surname>Cabral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Waldir</forename><forename type="middle">A</forename><surname>Marouelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">Ac</forename><surname>Lage</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adalberto</forename><forename type="middle">C</forename><surname>Café-Filho</surname></persName>
+		</author>
+		<idno type="DOI">10.1590/s0102-05362013000300009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Horticultura Brasileira</title>
+		<title level="j" type="abbrev">Hortic. Bras.</title>
+		<idno type="ISSNe">0102-0536</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="392" to="400"/>
+			<date type="published" when="2013-09">2013</date>
+			<publisher>FapUNIFESP (SciELO)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Management of Plant Disease Epidemics with Irrigation Practices</title>
+		<author>
+			<persName><forename type="first">Adalberto</forename><surname>C. Café-Filho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Alberto Lopes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maurício</forename><surname>Rossato</surname></persName>
+		</author>
+		<idno type="DOI">10.5772/intechopen.78253</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Irrigation in Agroecosystems</title>
+		<meeting><address><addrLine>Norderstedt, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>IntechOpen</publisher>
+			<date type="published" when="2019-01-23">2019</date>
+			<biblScope unit="page">123</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Expression Profiling Soybean Response to &lt;i&gt;Pseudomonas syringae&lt;/i&gt; Reveals New Defense-Related Genes and Rapid HR-Specific Downregulation of Photosynthesis</title>
+		<author>
+			<persName><forename type="first">Jijun</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandra</forename><surname>Rodriguez-Zas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihai</forename><surname>Aldea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Delkin</forename><forename type="middle">O</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lila</forename><forename type="middle">O</forename><surname>Vodkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evan</forename><surname>Delucia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">J</forename><surname>Clough</surname></persName>
+		</author>
+		<idno type="DOI">10.1094/mpmi-18-1161</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Molecular Plant-Microbe Interactions®</title>
+		<title level="j" type="abbrev">MPMI</title>
+		<idno type="ISSN">0894-0282</idno>
+		<idno type="ISSNe">1943-7706</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1161" to="1174"/>
+			<date type="published" when="2005-11">2005</date>
+			<publisher>Scientific Societies</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Roles of Aquaporins in Plant-Pathogen Interaction</title>
+		<author>
+			<persName><forename type="first">Guangjin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-2456-7170</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanquan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boqiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiping</forename><surname>Tian</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/plants9091134</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Plants</title>
+		<title level="j" type="abbrev">Plants</title>
+		<idno type="ISSNe">2223-7747</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">1134</biblScope>
+			<date type="published" when="2020-09-01">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">AN OVERVIEW OF TARGET SPOT OF TOMATO CAUSED BY CORYNESPORA CASSIICOLA</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Schlub</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">E</forename><surname>Datnoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Pernezny</surname></persName>
+		</author>
+		<idno type="DOI">10.17660/actahortic.2009.808.1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Horticulturae</title>
+		<title level="j" type="abbrev">Acta Hortic.</title>
+		<idno type="ISSN">0567-7572</idno>
+		<idno type="ISSNe">2406-6168</idno>
+		<imprint>
+			<biblScope unit="volume">808</biblScope>
+			<biblScope unit="issue">808</biblScope>
+			<biblScope unit="page" from="25" to="28"/>
+			<date type="published" when="2007-10-08">8 October 2007</date>
+			<publisher>International Society for Horticultural Science (ISHS)</publisher>
+			<pubPlace>Kusadasi, Turkey</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Development of a LAMP method for detecting the N75S mutant in SDHI-resistant Corynespora cassiicola</title>
+		<author>
+			<persName><forename type="first">Jiamei</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingyan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangyang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Mu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ab.2020.113687</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Analytical Biochemistry</title>
+		<title level="j" type="abbrev">Analytical Biochemistry</title>
+		<idno type="ISSN">0003-2697</idno>
+		<imprint>
+			<biblScope unit="volume">597</biblScope>
+			<biblScope unit="page">113687</biblScope>
+			<date type="published" when="2020-05">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Control of target spot of tomato with fungicides, systemic acquired resistance activators, and a biocontrol agent</title>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Pernezny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Stoffella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janice</forename><surname>Collins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Carroll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Audrey</forename><surname>Beaney</surname></persName>
+		</author>
+		<idno type="DOI">10.17221/4855-pps</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Plant Protection Science</title>
+		<title level="j" type="abbrev">Plant Prot. Sci.</title>
+		<idno type="ISSN">1212-2580</idno>
+		<idno type="ISSNe">1805-9341</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="81" to="88"/>
+			<date type="published" when="2002-06-30">2002</date>
+			<publisher>Czech Academy of Agricultural Sciences</publisher>
+			<pubPlace>Prague</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Detection of target spot and bacterial spot diseases in tomato using UAV-based and benchtop-based hyperspectral imaging techniques</title>
+		<author>
+			<persName><forename type="first">Jaafar</forename><surname>Abdulridha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiannis</forename><surname>Ampatzidis</surname></persName>
+			<idno type="ORCID">0000-0002-3660-3298</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sri</forename><forename type="middle">Charan</forename><surname>Kakarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pamela</forename><surname>Roberts</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11119-019-09703-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Precision Agriculture</title>
+		<title level="j" type="abbrev">Precision Agric</title>
+		<idno type="ISSN">1385-2256</idno>
+		<idno type="ISSNe">1573-1618</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="955" to="978"/>
+			<date type="published" when="2020">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Attenuation of Cf-mediated defense responses at elevated temperatures correlates with a decrease in elicitor-binding sites</title>
+		<author>
+			<persName><forename type="first">Jong</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F</forename><surname>Takken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">L</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>De Wit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Joosten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename></persName>
+		</author>
+		<idno type="DOI">10.1094/MPMI.2002.15.10.1040</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mol. Plant. Microbe Interact</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="1040" to="1049"/>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Root Growth Adaptation to Climate Change in Crops</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Calleja-Cabrera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Boter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Oñate-Sánchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pernas</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fpls.2020.00544</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Plant Science</title>
+		<title level="j" type="abbrev">Front. Plant Sci.</title>
+		<idno type="ISSNe">1664-462X</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">544</biblScope>
+			<date type="published" when="2020-05-08">2020</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Field Control of Bacterial Spot and Bacterial Speck of Tomato Using a Plant Activator</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J</forename><surname>Louws</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">L</forename><surname>Campbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Cuppels</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Shoemaker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Sahin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Miller</surname></persName>
+		</author>
+		<idno type="DOI">10.1094/pdis.2001.85.5.481</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Plant Disease</title>
+		<title level="j" type="abbrev">Plant Disease</title>
+		<idno type="ISSN">0191-2917</idno>
+		<idno type="ISSNe">1943-7692</idno>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="481" to="488"/>
+			<date type="published" when="2001-05">2001</date>
+			<publisher>Scientific Societies</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Management of bacterial spot of tomato caused by copper-resistant Xanthomonas perforans using a small molecule compound carvacrol</title>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingchun</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ye</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shouan</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cropro.2020.105114</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Crop Protection</title>
+		<title level="j" type="abbrev">Crop Protection</title>
+		<idno type="ISSN">0261-2194</idno>
+		<imprint>
+			<biblScope unit="volume">132</biblScope>
+			<biblScope unit="page">105114</biblScope>
+			<date type="published" when="2020-06">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Potato and tomato late blight caused by Phytophthora infestans: An overview of pathology and resistance breeding</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nowicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Foolad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nowakowska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">U</forename><surname>Kozik</surname></persName>
+		</author>
+		<idno type="DOI">10.1094/PDIS-05-11-0458</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Plant. Dis</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page" from="4" to="17"/>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Transgenic tomato lines expressing human lactoferrin show increased resistance to bacterial and fungal pathogens</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Buziashvili</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cherednichenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kropyvko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yemets</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.bcab.2020.101602</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biocatal. Agric. Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page">101602</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The viral etiology of tomato yellow leaf curl disease-a review</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Glick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Levy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Gafni</surname></persName>
+		</author>
+		<idno type="DOI">10.17221/26/2009-PPS</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Plant. Prot. Sci</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="81" to="97"/>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Tomato yellow leaf curl virus disease of tomato and its management through resistance breeding: A review</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dhaliwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jindal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Prasanna</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/14620316.2019.1691060</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Hortic. Sci. Biotechnol</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="425" to="444"/>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Tomato yellow leaf curl geminivirus (TYLCV-Is) is transmitted among whiteflies (Bemisia tabaci) in a sex-related manner</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghanim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Czosnek</surname></persName>
+		</author>
+		<idno type="DOI">10.1128/JVI.74.10.4738-4745.2000</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Virol</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="4738" to="4745"/>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Evidence for transovarial transmission of tomato yellow leaf curl virus by its vector, the whiteflyBemisia tabaci</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ghanim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Morin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zeidan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Czosnek</surname></persName>
+		</author>
+		<idno type="DOI">10.1006/viro.1997.8937</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Virology</title>
+		<imprint>
+			<biblScope unit="volume">240</biblScope>
+			<biblScope unit="page" from="295" to="303"/>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">A plant DNA virus replicates in the salivary glands of its insect vector via recruitment of host DNA synthesis machinery</title>
+		<author>
+			<persName><forename type="first">Y.-Z</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T.-Y</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fiallo-Olivé</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Q</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hanley-Bowdoin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xiao-Wei</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1820132117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl. Acad. Sci</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="page" from="16928" to="16937"/>
+			<date type="published" when="2020">2020</date>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Identification of Viruses and Viroids Infecting Tomato and Pepper Plants in Vietnam by Metatranscriptomics</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">K</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-T</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Salaipeth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hae-Ryun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hong-Soo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kook-Hyung</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijms21207565</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Mol. Sci</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page">7565</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Epidemiology and control of tomato mosaic virus</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Broadbent</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.py.14.090176.000451</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annu. Rev. Phytopathol</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="75" to="96"/>
+			<date type="published" when="1976">1976</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">The phylogeographic history of tomato mosaic virus in Eurasia</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.virol.2020.12.009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Virology</title>
+		<imprint>
+			<biblScope unit="volume">554</biblScope>
+			<biblScope unit="page" from="42" to="47"/>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<monogr>
+		<title level="m" type="main">An open access repository of images on plant health to enable the development of mobile disease diagnostics</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Salathé</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1511.08060</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<ptr target="https://github.com/spMohanty/PlantVillage-Dataset"/>
+		<title level="m">SpMohanty/PlantVillage-Dataset</title>
+		<imprint>
+			<date type="published" when="2021-01-24">24 January 2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Attention gated networks: Learning to leverage salient regions in medical images</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schlemper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Oktay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Schaap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Heinrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kainz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glocker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Daniel</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.media.2019.01.012</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Med. Image Anal</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="197" to="207"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Tomato leaf disease detection using convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pranathi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Saiashritha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">B</forename><surname>Chittaragi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Koolagudi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 Eleventh International Conference on Contemporary Computing (IC3)</title>
+		<meeting>the 2018 Eleventh International Conference on Contemporary Computing (IC3)<address><addrLine>Surat, India</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020-02-08">7-8 February 2020</date>
+			<biblScope unit="page" from="1" to="5"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Can deep learning identify tomato leaf disease?</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Meng</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2018/6710865</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Multimed</title>
+		<imprint>
+			<biblScope unit="page">6710865</biblScope>
+			<date type="published" when="2018">2018. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Flowering gene regulation in tomato plants treated with brown seaweed extracts</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dookie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ramsubhag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jayaraman</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scienta.2020.109715</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Hortic</title>
+		<imprint>
+			<biblScope unit="volume">276</biblScope>
+			<biblScope unit="page">109715</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note>CrossRef</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
