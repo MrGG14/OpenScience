@@ -1,0 +1,3343 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Plant Disease Detection and Classification by Deep Learning-A Review</title>
+				<funder ref="#_cGaKsnS">
+					<orgName type="full">unknown</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Lili</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Shujuan</forename><surname>Zhang</surname></persName>
+							<idno type="ORCID">0000-0002-2509-7975</idno>
+						</author>
+						<author>
+							<persName><roleName>AND BIN</roleName><surname>Wang</surname></persName>
+							<idno type="ORCID">0000-0003-4927-5075</idno>
+						</author>
+						<title level="a" type="main">Plant Disease Detection and Classification by Deep Learning-A Review</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">4A7F115C2C319567BD71A599E561B9E5</idno>
+					<idno type="DOI">10.1109/ACCESS.2021.3069646</idno>
+					<note type="submission">Received March 10, 2021, accepted March 24, 2021, date of publication April 8, 2021, date of current version April 19, 2021.</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-05-21T17:11+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Deep learning</term>
+					<term>plant leaf disease detection</term>
+					<term>visualization</term>
+					<term>small sample</term>
+					<term>hyperspectral imaging</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Deep learning is a branch of artificial intelligence. In recent years, with the advantages of automatic learning and feature extraction, it has been widely concerned by academic and industrial circles. It has been widely used in image and video processing, voice processing, and natural language processing. At the same time, it has also become a research hotspot in the field of agricultural plant protection, such as plant disease recognition and pest range assessment, etc. The application of deep learning in plant disease recognition can avoid the disadvantages caused by artificial selection of disease spot features, make plant disease feature extraction more objective, and improve the research efficiency and technology transformation speed. This review provides the research progress of deep learning technology in the field of crop leaf disease identification in recent years. In this paper, we present the current trends and challenges for the detection of plant leaf disease using deep learning and advanced imaging techniques. We hope that this work will be a valuable resource for researchers who study the detection of plant diseases and insect pests. At the same time, we also discussed some of the current challenges and problems that need to be resolved.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>The occurrence of plant diseases has a negative impact on agricultural production. If plant diseases are not discovered in time, food insecurity will increase <ref type="bibr" target="#b0">[1]</ref>. Early detection is the basis for effective prevention and control of plant diseases, and they play a vital role in the management and decisionmaking of agricultural production. In recent years, plant disease identification has been a crucial issue.</p><p>Disease-infected plants usually show obvious marks or lesions on leaves, stems, flowers, or fruits. Generally, each disease or pest condition presents a unique visible pattern that can be used to uniquely diagnose abnormalities. Usually, the leaves of plants are the primary source for identifying plant diseases, and most of the symptoms of diseases may begin to appear on the leaves <ref type="bibr" target="#b1">[2]</ref>.</p><p>In most cases, agricultural and forestry experts are used to identify on-site or farmers identify fruit tree diseases and pests based on experience. This method is not only subjective, but also time-consuming, laborious, and inefficient.</p><p>The associate editor coordinating the review of this manuscript and approving it for publication was Yongming <ref type="bibr">Li .</ref> Farmers with less experience may misjudgment and use drugs blindly during the identification process. Quality and output will also bring environmental pollution, which will cause unnecessary economic losses. To counter these challenges, research into the use of image processing techniques for plant disease recognition has become a hot research topic. The general process of using traditional image recognition processing technology to identify plant diseases is shown in Fig. <ref type="figure" target="#fig_0">1</ref>. Dubey and Jalal <ref type="bibr" target="#b2">[3]</ref> used the K-means clustering method to segment the lesions regions, and combined the global color histogram (GCH) color coherence vector (CCV) local binary pattern (LBP), and completed local binary pattern (CLBP) was used to extract the color and texture features of apple spots, and three kinds of apple diseases were detected and identified based on improved support vector machine (SVM), and the classification accuracy reached 93%.</p><p>Chai et al. <ref type="bibr" target="#b3">[4]</ref> studied four tomato leaf diseases, including early blight and late blight leaf mildew and leaf spot, and extracted 18 characteristic parameters such as color, texture, and shape information of tomato leaf spot images, using stepwise discriminant and Bayesian discriminant principal component analysis (PCA), respectively. Principal component analysis and fisher discriminant methods were used to extract the characteristic parameters and construct the discriminant model. The accuracy of the two methods reached 94.71% and 98.32%, respectively.</p><p>Li and He <ref type="bibr" target="#b4">[5]</ref> selected 5 kinds of apple leaf diseases (speckled deciduous disease, yellow leaf disease, round spot disease, mosaic disease, and rust disease) as the research objects. By extracting 8 features of the apple leaf spot image, such as color, texture, and shape. The BP neural network model was used to classify and recognize the diseases, and the average recognition accuracy reached 92.6%.</p><p>Guan et al. <ref type="bibr" target="#b5">[6]</ref> extracted 63 parameters including morphology, color, and texture features of rice leaf disease spots, and applied step-based discriminant analysis and Bayesian discriminant method to classify and recognize three rice diseases (blast, stripe blight, and bacterial leaf blight) with the highest recognition accuracy of 97.2%.</p><p>In short, it can be concluded that studies on plant disease recognition based on traditional image processing technology have achieved certain results, with high accuracy of disease recognition, but there are still deficiencies and limitations as follow:</p><p>1) The research links and processes are cumbersome, highly subjective, time-consuming and labor-consuming;</p><p>2) It is heavily dependent on spot segmentation; 3) It is heavily dependent on artificial feature extraction; 4) It is difficult to test the disease recognition performance of the model or algorithm in more complex environments.</p><p>Therefore, it is of great significance to realize intelligent, rapid, and accurate plant leaf disease recognition.</p><p>In recent years, deep learning technology in the study of plant disease recognition made more progress. Deep learning (DL) technology in the face of the user is transparent, the researchers of plant protection and statistics professional level is not high, can be automatically extracted image features and classification of plant disease spot, eliminating the traditional image recognition technology of feature extraction and classifier design a lot of work, can express original image characteristics, has the characteristics of the end-toend. These characteristics make deep learning technology in plant disease recognition-obtained-widespread attention, and it has become a hot research topic. This is due to three factors: the availability of larger datasets, the adaptability of multicore graphics processing units (GPUs), and the development of training deep neural networks and supporting software libraries, such as the computing unified device architecture (CUDA) from NVIDIA.</p><p>Recently, the convolutional neural networks (CNN), a special of deep learning techniques, are quickly becoming the preferred methods <ref type="bibr" target="#b6">[7]</ref>. CNN is the most popular classifier for image recognition, and it has shown outstanding ability in image processing and classification <ref type="bibr" target="#b7">[8]</ref>. Deep learning approaches were first introduced in plant image recognition based on leaf vein patterns <ref type="bibr" target="#b8">[9]</ref>. They used 3-6 layers CNN classified three leguminous plant species: white bean, red bean, and soybean. Mohanty et al. <ref type="bibr" target="#b9">[10]</ref> trained a deep learning model to recognize 14 crop species and 26 crop diseases. The trained model achieved an accuracy of 99.35% on the test set. Ma et al. <ref type="bibr" target="#b10">[11]</ref> used a deep CNN to conduct symptom-wise recognition of four cucumber diseases (i.e., downy mildew, anthracnose, powdery mildew, and target leaf spots). The recognition accuracy reached 93.4%. Kawasaki et al. <ref type="bibr" target="#b11">[12]</ref> introduced a system based on CNN to recognize cucumber leaf disease, which realized an accuracy of 94.9%.</p><p>Although very good results have been reported in the literature, however, the diversity of the used datasets is limited. Large datasets (comprised of thousands of images) are required for the training of CNNs. Unfortunately, for plant leaf disease recognition, such large and diverse datasets have not yet been collected for use by researchers. At present, transfer learning is the most effective way to train the robustness of CNN classifiers for plant leaf disease recognition. Transfer learning enables the adaptation of pre-trained CNNs by retraining them with smaller datasets whose distribution is different from the larger datasets previously used to train the network from scratch <ref type="bibr" target="#b12">[13]</ref>. Indeed, it is effective that using CNN models pre-trained on the ImageNet dataset and then retraining them for leaf disease recognition. Therefore, the combination of deep learning and transfer learning provides a new way to solve the problem of limited datasets of plant diseases.</p><p>There are some research papers previously presented to summarize the research about agriculture (including plant disease recognition) by DL <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b13">[14]</ref>, but they lacked some of the recent developments in terms of visualization techniques implemented along with the DL and modified the famous DL models, which were used for plant disease identification.</p><p>The article <ref type="bibr" target="#b14">[15]</ref> presented many imaging techniques for plant disease detection, and the focus was on imaging techniques. The major techniques presented for plant diseases and classification are SVM, K-means, and KNN.</p><p>The article <ref type="bibr" target="#b15">[16]</ref> presented many developed/modified DL architectures implemented to detect and classify plant diseases. And provided a comprehensive explanation of DL models used to visualize various plant diseases. But there is no mention of the early detection of the diseases and how to detect and classify plant diseases based on small samples.</p><p>In the paper <ref type="bibr" target="#b16">[17]</ref>, the authors had presented a comprehensive review of recent research work done in plant disease recognition using IPTs, from the perspective of feature extracted based on hand-crafted or using deep learning techniques. And it is concluded that the deep learning techniques have superseded shallow classifiers trained using hand-crafted features. But they lacked some of the recent developments in terms of visualization techniques, and there is no mention of the early detection of the diseases and how to detect and classify plant diseases based on small samples.</p><p>This paper aim at the shortcomings of the existing review papers on disease detection, we provide a review of recent studies carried out in the area of plant leaf disease recognition using image processing, hyper-spectral imaging, and deep learning techniques. We hope that this work will be helpful for researchers in the area of plant leaf disease recognition using DL methods.</p><p>The rest of this paper is organized as follows. In Section 2, review some basic knowledge including deep learning concept, foundation, framework, development history, model evaluation criteria, the plant leaves disease datasets, and the data enhancement methods, etc. In Section 3, we review research work done so far towards the application of deep learning in crop leaves disease recognition from some aspects. In Section 4, plant disease detection based on small sample data set is discussed. In Section 5, some applications of hyper-spectral imaging in plant disease detection are discussed. Section 6, summarizes and discusses gaps in the existing literature that need to be addressed. The second generation of neural network-back propagation (BP) (1986∼1998): Hinton invented the BP algorithm suitable for multi-layer perceptron (MLP) in 1986 and adopted sigmoid function for nonlinear mapping, which effectively solved the problem of nonlinear classification and learning. This method caused the second upsurge of neural networks. However, in 1991, the BP algorithm was pointed out that there was a gradient vanishing problem.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. BASIC KNOWLEDGE OF DEEP LEARNING</head><p>The third generation neural network-DL(2006-present): In 2006, Hinton gradient disappeared in the deep web training are put forward in this problem solution, but because there is no special effective experimental verification and no attention. It was not until 2011 that the ReLU activation function (the activation function that can effectively restrain the gradient disappeared problem) was put forward, then enter the outbreak period in 2012, in the famous ImageNet image recognition contest, the Hinton team used a deep learning model-AlexNet to win, and far more than the second method (SVM). Since then CNN has attracted the attention of many researchers.</p><p>After the introduction of AlexNet <ref type="bibr" target="#b18">[19]</ref>, the DL architecture began to evolve over time as shown in VI. Many advanced DL models/architectures were used for image detection, segmentation, and classification, and these architectures were successively applied to plant disease detection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2) METRICS</head><p>In order to evaluate these algorithms/architectures, top-1%/top-5% error <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b19">[20]</ref>- <ref type="bibr" target="#b21">[22]</ref>, precision and recall <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b22">[23]</ref>, <ref type="bibr" target="#b23">[24]</ref>, F1 score <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b24">[25]</ref>, training/validation accuracy and loss <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b25">[26]</ref>, classification accuracy (CA) <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b27">[28]</ref>, and mean average precision (mAP) are usually selected as the indicators of judgment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. DISEASE DATASETS</head><p>Common diseases datasets are: 1) P1antVillage, an open dataset, has now collected 54309 plant leaves disease images, covers 14 kinds of fruit and vegetable crops, such as apple, blueberry cherries, grapes, orange peach bell pepper potato raspberry soybean pumpkin strawberry, and tomatoes, corn contains 26 diseases (17 kinds of fungal disease, 4 kinds of bacteria disease, 2 kinds of mycosis, 2 kinds of viral diseases and 1 kind of diseases caused by mite), also includes 12 healthy crop leaf images. 2) 'Plant Pathology Challenge' for CVPR 2020-FGVC7 (https://www.kaggle.com/c/plantpathology -2020 fgvc7), it consists of 3,651 high-quality annotated RGB images of 1,200 apple scab and 1,399 cedar apple rust symptoms and 187 complex disease patterns (the leaves with more than one disease in the same leaf) and 865 healthy apple leaves. 3) While others constitute datasets of real images collected by the authors for their research needed(corn, tea, soybeans, cucumbers, apples, grapes). 4) Growing the plants themself and inoculating them with the virus, the method of data acquisition is commonly seen in applications that use hyperspectral images for disease detection.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. DATA AUGMENTATION</head><p>In leaf disease detection, collection and label a large number of disease images require lots of manpower material resources and financial resources. For some certain plant diseases, their onset period is shorter, it is difficult to collect them. In the field of deep learning, the small sample size and dataset imbalance are the key factors leading to the poor recognition effect. Therefore, the deep learning model for leaf disease detection, expand the amount of data is necessary. Data augmentation to meet the requirements for the practical application, and not at liberty to expand (the color is one of the main manifestations of different diseases, for example, when doing image enhancement can't change the color of the original image). There are two common ways to augment the datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1) TRADITIONAL AUGMENTATION</head><p>The typical methods are the physical expansion method (tensile rotation adjustment resolution image translation disturbance, etc.), web crawler, variational auto-encoder (VAE), and autoregressive model, etc. The shortcomings of the   produced samples by the traditional expansion method are poor quality, inadequate diversity, and unevenness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2) GENERATE ADVERSARIAL NETWORKS (GANS)</head><p>GANs is a kind of generating model proposed by Goodfellow et al. <ref type="bibr" target="#b28">[29]</ref> in 2014. Subsequently, many variations of GAN have emerged successively, such as DCGAN, CGAN, PGGAN, LAPGAN, InfoGAN, WGAN, F-GAN, SeqGAN, LeakGAN, etc. The major goal is to generate synthetic samples with the same characteristics as the given training distribution. The GANs models mainly consist of two parts, that is, generator and discriminator. The structure diagram is shown in Fig. <ref type="figure" target="#fig_4">3</ref>.</p><p>Generative network approaches have been extensively used to generate samples in recent years. Nazki et al. <ref type="bibr" target="#b29">[30]</ref> is the first work that uses GANs to synthetically augment the dataset to improve the plant disease recognition performance. By optimizing the activation reconstruction loss (ARL) function and put forward an improved AR-GAN, compared with most prominent existing models, the proposed model is introduced into composite images, and nine kinds of tomato on the test data set (2789), the results showed that the classification accuracy is significantly increased (+ 5.2%), compared with the classic way.</p><p>Tian et al. <ref type="bibr" target="#b30">[31]</ref> proposed an approach (CycleGAN) that can generate more apple disease images. Generated images augmented by conditional deep convolutional generative adversarial networks (C-DCGAN) <ref type="bibr" target="#b31">[32]</ref> use the segmented tea disease spot image as the input of VGG16. The result showed that the average accuracy is about 28% higher by using C-DCGAN than rotation and translation.</p><p>The article <ref type="bibr" target="#b32">[33]</ref> generated images by using deep convolutional generative adversarial networks (DC-GAN), and achieved a top-1 average identification accuracy of 94.33% on GoogLeNet. The T-distribution random neighborhood embedding (T-SNE) verified that the image distribution generated by this method was closer to the sample distribution of the real image.</p><p>In the paper <ref type="bibr" target="#b33">[34]</ref>, four different kinds of grape leaf disease images were expanded by a novel Leaf GAN model. The experimental results showed that the Leaf GAN model could make the grape leaf disease images highlight the disease and generate enough grape leaf disease images. It was proved that Leaf GAN was superior to those of the DCGAN and WGAN.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. VISUALIZATION TECHNIQUE</head><p>In recent years, the successful application of deep learning technology in plant disease classification provides a new idea for the research of plant disease classification. However, DL classifiers lack interpretability and transparency. The DL classifiers are often considered black boxes without any explanation or details about the classification mechanism. High accuracy is not only necessary for plant disease classification but also needs to be informed how the detection is achieved and which symptoms are present in the plant. Therefore, in recent years, many researchers have devoted themselves to the study of visualization techniques such as the introduction of visual heat maps and salient maps to better understand the identification of plant diseases. Among them, the works of <ref type="bibr" target="#b34">[35]</ref> and <ref type="bibr" target="#b35">[36]</ref> are crucial to understanding how CNN recognizes disease from images.</p><p>For example, Brahimi et al. <ref type="bibr" target="#b34">[35]</ref> introduced saliency maps to visualize the symptoms of plant diseases. Mohanty et al. <ref type="bibr" target="#b9">[10]</ref> used AlexNet and GoogLeNet architectures, through the precision (P), recall (R), F1 score, and the overall accuracy to evaluate the performance of the models on the PlantVillage. Used the three scenarios (color gray and segmentation) to assess the performance of the 2 CNN famous architectures, and come to the conclusion that GoogLeNet outperformed AlexNet, the first layer of the visual results clearly showed the disease spots also. In Cruz et al. <ref type="bibr" target="#b36">[37]</ref>, the improved LeNet model was used to detect olive plant diseases, that is, segmentation and edge maps were used to identify plant diseases. Brahimi et al. <ref type="bibr" target="#b37">[38]</ref> proposed a new visualization method, that is, a new DL model teacher/student network was introduced to identify the spots of plant diseases, compared with the existing plant disease treatment methods, the new method obtained a clearer visualization effect.</p><p>According to the author Dechant et al. <ref type="bibr" target="#b38">[39]</ref>, using different CNN combinations, the visual heat map of maize disease images was used as the inputs, and the probability associated with the occurrence of a particular type of disease was given. The ROC curve was used to evaluate the performance of the model. In addition, the characteristic map of maize diseases was also drawn. Lu et al. <ref type="bibr" target="#b39">[40]</ref> realized that wheat disease detection by using VGG-FCN and VGG-CNN model and visualized the module features. The results showed that the DMIL-WDDS based on VGG-FCN-VD16 achieved a progressive learning process for fine characteristics of the disease. The feature visualization was a good demonstration of what the DMIL-WDDS was learning. Moreover, the results indicated that Softmax aggregation was a superior choice for DMIL-WDDS to improve the recognition accuracy. Ha et al. <ref type="bibr" target="#b40">[41]</ref> used the VGG-CNN model to test the blight of radish and used the k-means clustering method to show the disease markers. And the method was able to detect the individual infected areas. That is, the regions of healthy radish and moderate Fusarium wilt of radish were successfully detected by the method. The results showed that the method can also be applied to other crops and plants, including tomato, tobacco, banana, and etc.</p><p>Barbedo <ref type="bibr" target="#b41">[42]</ref> explored the use of individual lesions and spots for the task, rather than considering the entire leaf, and by using the DL models to identify the plant diseases. The accuracy obtained using the approach was, on average, 12% higher than those achieved using the original images.</p><p>Ghosal et al. <ref type="bibr" target="#b42">[43]</ref>, developed a deep CNN framework to identify and classify 8 kinds of soybean stress. And also present an explanation mechanism, used the top-K highresolution feature maps that isolate the visual symptoms to make predictions. The unsupervised identification of visual symptoms provided a quantitative measure of stress severity, allowing for identification (a type of foliar stress), classification (low, medium, or high stress), without detailed symptom annotation by experts.</p><p>Lu et al. <ref type="bibr" target="#b43">[44]</ref> used CNN to identify rice diseases, early disease detection, and the characteristic maps of disease spots were also obtained. Picon et al. <ref type="bibr" target="#b44">[45]</ref> proposed an adapted algorithm based on a deep residual neural network to deal with the detection of multiple crop diseases in real conditions for early disease detection. And developed a mobile application in which heat maps were used to identify plant diseases. Obtained results reveal an overall improvement of the balanced accuracy up to 0.87 under exhaustive testing, and the accuracy greater than 0.96 on a pilot test performed in Germany.</p><p>Johannes et al. <ref type="bibr" target="#b45">[46]</ref> used an algorithm based on heat map technology to extract the diseased objects. In addition, each heat map is described by two descriptors, one for evaluating the color information of the disease, and the other for identifying the texture of the heat map. The preliminary hot-spot detection and its ulterior description by color and textural descriptors allow real-time performance as only the suspicious regions are trained and described by the higher level classifiers and descriptors.</p><p>Khan et al. <ref type="bibr" target="#b46">[47]</ref> proposed a new visualization technology using correlation coefficient and DL model (e.g., AlexNet and VGG16 architecture). Kerkech et al. <ref type="bibr" target="#b47">[48]</ref> variety vegetation indices in color space combined with the LeNet model were used to detect the grape diseases. The article <ref type="bibr" target="#b48">[49]</ref> for the reason of interpreting the deep learning model, compared with some of the most popular explanatory methods: significant figure, Smooth-Grad, boot back-propagation, depth Taylor decomposition, integration gradient layered associated transmission, and gradient time input. And trained the DenseNet121 network to identify eight different soybean stresses(biological and non-biological). And concluded that the interpretability methods identified the infected regions of the leaf as important features for some (but not all) of the correctly classified images.</p><p>Taken tea leaf diseases images(tea of 261 images of 5 kinds of common disease) in the complex background as the research object, Sun et al. <ref type="bibr" target="#b49">[50]</ref> proposed a method combining simple linear iterative clustering (SLIC) and support vector machine (SVM), and gain a significant figure accurate tea leaf disease images, with 98.5% accuracy, precision is 96.8%, the recall rate was 98.6%, the F1 score was 97.7%. The results showed that the method can effectively extract tea leaves from complex background significant figure.</p><p>Hu et al. <ref type="bibr" target="#b50">[51]</ref> put forward a kind of new convolution neural network model ARNet (Attention residual network) combining the attention mechanism with the residual idea, and the leaves of five tomato diseases in the early and late periods were studied. The results of the study concluded that, compared with the existed models such as VGG16, the ARNet had a better classification performance. The different layers of (Attention convolutional block, ACB), are visualized in the form of heat maps, and the attention information of the different layers obtained by the module are shown in Fig. <ref type="figure" target="#fig_5">4</ref>.</p><p>Fig. <ref type="figure" target="#fig_5">4</ref> (a) and (b) represent the output heat maps of late early blight disease and late leaf frost disease in the ACB module at different levels of the ARNET model respectively. Among them, the heat output of each type of image showed in line 1, and line 2 showed that heat superimposed on the original image, from left to right in turn for layer 2, 3, 4, and 5 layers of the last ACB output module. As you can see in Fig. <ref type="figure" target="#fig_5">4</ref>, the ACB module can more accurately extract the key feature of each type of disease, shallow ACB module to extract the characteristics of relatively scattered, not as a category, but the deep ACB module to extract the characteristics of more concentrated which the color is more close to red, that is the corresponding place a greater contribution to the final classification decision. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. LEAF DISEASE DETECTION BY DEEP LEARNING ARCHITECTURES</head><p>This section presents the recent researches done by using famous DL architectures for the identification and classification of leaf diseases. Moreover, there are some related works in which modified/improved versions of DL architectures were introduced to achieve better results and software development of disease identification systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. LEAF DISEASE DETECTION BY WELL-KNOWN DEEP LEARNING ARCHITECTURES 1) CLASSIC DEEP LEARNING ARCHITECTURES FOR LEAF-DISEASE DETECTION</head><p>Since each disease region has its own characteristics, Barbedo <ref type="bibr" target="#b41">[42]</ref> and Lee et al. <ref type="bibr" target="#b51">[52]</ref>, discussed the use of individual lesions and spots rather than considering the whole leaf. The advantages of this method were that occurrence of multiple diseases on the same leaf could be detected and the data can be augmented by cutting up the leaf image into multiple sub-images. The article <ref type="bibr" target="#b54">[55]</ref> taken 79 diseases of 14 species of plants in the experimental environment and complex field environment as the research object and used the GoogLeNet model to identify diseases. The overall accuracy of using a single lesion and spot was 94%, which was higher than using the whole image (82%). Lee et al. <ref type="bibr" target="#b51">[52]</ref> put forward a new view of leaf disease detection that focused on identifying diseases disease area method (i.e. by the common name of disease rather than crops -diseases on the target category), and through the experiments showed that whatever crops, the model training with the common disease were more universal, especially for the new data obtained in different fields or that crops have not been seen.</p><p>Qiu et al. <ref type="bibr" target="#b52">[53]</ref> used the Mask-RCNN whose feature extraction network was ResNet50 or ResNet101 to detect the wheat disease areas, and the average accuracy on the test dataset was 92.01%.</p><p>Ahmad et al. <ref type="bibr" target="#b53">[54]</ref> used four different pretraining convolution neural networks VGG19, VGG16, ResNet, and Inception V3, and the models were trained by fine-tuning parameters. The experimental results showed that the Inception V3 had the best performance on the two datasets(the laboratory dataset and the field dataset). And the average performance superior to 10% to 15% on the laboratory dataset compared with on the field dataset. Bi et al. <ref type="bibr" target="#b54">[55]</ref> showed that the recognition accuracy rates of apple leaf spot and rust models collected by agricultural experts were 77.65%, 75.59%, and 73.50%, by using ResNet152, Inception V3, and MobileNet, respectively.</p><p>Jiang et al. <ref type="bibr" target="#b55">[56]</ref> used the Mean Shift algorithm to segment four kinds of rice disease spot (red blight stripe disease to rice blast and sheath blight) at first, and then extract shape feature by artificial calculation (put forward three new shape characteristic lesions number N, S lesion area, number of lesions ratio R) and CNN extracts color feature, at last, the SVM classifier was used to identify the diseases, and the results showed that the CNN used segmentation algorithm accuracy was 92.75%, the accuracy was 82.26% without the segmentation algorithm, and the accuracy of the CNN in combination with the SVM model was 96.8%.</p><p>Liang et al. <ref type="bibr" target="#b56">[57]</ref> established a dataset contains 2906 of the positive samples and 2902 of the negative samples to identify rice blasts. And the experimental results showed that the senior characteristics extracted from CNN than the traditional manual extraction of local binary pattern histogram (LBPH) and wavelet transform (Haar-WT) had better identification and effectiveness.</p><p>Huang et al. <ref type="bibr" target="#b57">[58]</ref> put forward a kind of plant leaf image disease recognition method based on the neural structure search algorithm, the method can learn the structure of the neural network to the appropriate depth on the P1antVillage, automatically. According to the results of the studied methods on the dataset of imbalanced and balanced searched out a suitable network structure, and the recognition accuracy of the model was 98.96% and 99.01% respectively. However, if the balance of the gray images was not improved, the accuracy fell to 95.40%.</p><p>Long et al. <ref type="bibr" target="#b58">[59]</ref> used AlexNet for 2 kinds of training, that is, training from scratch and transfer learning from the ImageNet to detect the camellia leaf diseases (4 kinds of diseases and healthy). The results showed that transfer learning can significantly improve the convergence speed and classification performance of the models, and the classification accuracy as high as 96.53%.</p><p>Xu et al. <ref type="bibr" target="#b59">[60]</ref> in order to realize image recognition of corn leaf disease (healthy, leaf blight, rust) in complex field background with small samples, proposed a convolutional neural network model(VGG16) based on transfer learning. The weight parameters of the VGG16 model were trained on ImageNet and transferred to the model, and the average recognition accuracy was 95.33%.</p><p>The ResNet50 network pre-trained on ImageNet was used to study 4 types of apple leaf diseases in the Plant Pathology 2020 Challenge dataset, and the overall test accuracy of the model was 97%. But except for the complex disease pattern category (the combination of several disease symptoms), the recognition accuracy was only 51% <ref type="bibr" target="#b60">[61]</ref>.</p><p>Li et al. <ref type="bibr" target="#b61">[62]</ref> used VGG16 and Inception V3 models to identify different degrees of Ginkgo biloba diseases, the accuracy of the VGG16 was 98.44% in the laboratory dataset and 92.19% in the field dataset. The accuracy of the Inception V3 model was 92.3% and 93.2%, respectively.</p><p>Table <ref type="table" target="#tab_0">1</ref> offers a brief overview of recent research works about the application of the DL framework directly.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2) NEW/MODIFIED DL ARCHITECTURES FOR LEAF-DISEASE DETECTION</head><p>Dechant et al. <ref type="bibr" target="#b38">[39]</ref> integrated multiple CNN classifiers to study high-resolution corn disease images. The experimental results showed that when a single CNN classifier was used, the accuracy rate was 90.8%, when two first-level classifiers were used, the accuracy rate rise to 95.9%, and when three first-level classifiers were used, the accuracy rate was 97.8%.</p><p>Liu et al. <ref type="bibr" target="#b62">[63]</ref> proposed a new CNN structure to identify the apple leaf disease. The network was formed by cascading an AlexNet-precursor network and an Inception network. The Inception network replaced the fully connected layers in the traditional AlexNet model, significantly reducing the number of trainable parameters, thereby reducing storage requirements. Use Nesterov's accelerated gradient (NAG) optimization algorithm instead of the stochastic gradient descent (SDG) algorithm to update the weights to improve the convergence speed. The performance of this network was compared with SVM, BP, AlexNet, GoogLeNet, ResNet20, and VGG16. The accuracy of these models were 68.73%, 54.63%, 91.19%, 95.69%, 92.76% and 96.32%, while the accuracy of the proposed AlexNet-precursor + Cascade-Inception network was 97.62%.</p><p>Picon et al. <ref type="bibr" target="#b44">[45]</ref> in order to extract the detailed features of the wheat disease symptoms, the first 7 × 7 convolutional layer of the ResNet50 network was replaced with two 3 × 3 convolutions and the sigmoid activation function was used instead of the softmax layer for improvement. And used the improved ResNet50 network to detect the early three wheat diseases (septoria, tan spot, and rust), and achieved 96% accuracy on the balanced dataset.</p><p>For the existing deep network model existed problems such as a large number of parameters, long training time, high storage cost and computational cost, etc. Wang et al. <ref type="bibr" target="#b63">[64]</ref> based on the ResNet18, by adding a multi-scale feature extraction module to change the residual layer connection method, decomposes the large convolution kernel and performs group convolution operations, and proposes an improved multi-scale residual (Multi-scale ResNet) model, which significantly reduced the model parameters, storage space and computing overhead. The accuracy rate of 95.95% was achieved on the PlantVillage dataset, and 93.05% was achieved in the self-collected dataset of 7 real environmental diseases.</p><p>Aiming at the problem that the current plant leaf disease recognition model is easily interfered with by shadows, occlusions, and light intensity, and the feature extraction is blind and uncertain, Ren et al. <ref type="bibr" target="#b64">[65]</ref> and others had constructed a deconvolution-guided VGG network (Deconvolution-Guided VGGNet, DGVGGNet) model, which can identify plant leaf disease and segment disease spot. This model had a recognition accuracy of 99.19% for the 10 types of tomato leaf disease images in the PlantVillage dataset. The pixel accuracy and average intersection ratio of disease spots segmentation were 94.66% and 75.36%, respectively.</p><p>And it had good robustness in occlusion, low light, and other environments.</p><p>Guo et al. <ref type="bibr" target="#b65">[66]</ref> designed a multi-receptive field recognition model based on AlexNet (Multi-Scale AlexNet) by removing the local response normalization layer of the AlexNet network, modifying its fully connected layers, and setting a multi-scale convolution kernel to extract features. The PlantVillage dataset and self-collected 7 kinds of tomato diseased leaves dataset are the research objects. The model reduced the memory requirements of the original AlexNet by 95.4%, and the average recognition accuracy of tomato leaf diseases and each disease in the early, middle, and late stages was up to 92.7%.</p><p>Fan et al. <ref type="bibr" target="#b66">[67]</ref> added a batch standardization layer to the convolutional layer of the Faster R-CNN model, introduced a central cost function to construct a mixed cost function, and used a stochastic gradient descent algorithm to optimize the training model. They used 9 kinds of corn leaf diseases with complex backgrounds in the field as the research object. Under the same experimental environment, the improved method had an average accuracy increase of 8.86%, and a single image detection time was reduced by 0.139s; compared with the SSD algorithm, the average accuracy was 4.25% higher, and a single image detection time was reduced by 0.018 s.</p><p>Wang et al. <ref type="bibr" target="#b67">[68]</ref> in order to solve the problems of a long time of training, poor segmentation effect, and susceptibility to illumination and background during the image segmentation of cucumber leaf lesions in traditional convolutional neural networks, they proposed a method based on the full convolution neural network (in which the activation function of rectified linear units (RELU) was replaced by the exponential linear unit (ELU), and the batch normalization function was used to stabilize the model training process, and the softmax of the original CNN was replaced with support vector machine (SVM)). The average pixel segmentation accuracy was 80.46% and the average cross-combination ratio was 70.43% on the 6 kinds of cucumber leaf disease dataset.</p><p>Hu et al. Agarwal et al. <ref type="bibr" target="#b72">[73]</ref> developed a CNN model with 3 convolutional layers, 3 maximum pooling layers, and 2 fully connected layers, and each layer had a different number of filters to detect 9 types of tomato leaf diseases. The experimental results showed that the average accuracy of the proposed model on the test set reached 91.2%, and its performance was much better than VGG16, MobileNet, and Inception.</p><p>Table <ref type="table" target="#tab_1">2</ref> briefly introduces the research progress of the improvement of DL in plant disease detection in recent years.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. TARGET DETECTION OF PLANT DISEASES FOR LEAF DISEASE DETECTION</head><p>Fuentes et al. <ref type="bibr" target="#b73">[74]</ref> used Faster R-CNN, R-FCN, and SSD architectures to locate lesion areas of 9 kinds of tomato leaf diseases and insect pests, and classified them according to the bounding box. And explored the influence of different CNN architectures on the detector. The results showed that ResNet50 as the feature extractor achieved a mean average accuracy (mAP) of 85.98%, and the detection time was about 160 ms per image. Subsequent work <ref type="bibr" target="#b74">[75]</ref> refined the Faster R-CNN by introducing a single-class CNN, and the results showed that the mAP increased by 13%.</p><p>Jiang et al. <ref type="bibr" target="#b75">[76]</ref> proposed a novel method that is the SSD with inception module and rainbow concatenation (INAR-SSD). And the VGG16 feature extractor used in the INAR-SSD network was a modification by replacing two convolution layers (Conv4_1 and Conv4_2) with inception modules, fully connected layers of VGG16 were also replaced with 1 × 1 convolutions. On a dataset of 5 kinds of apple leaf diseases, the proposed INAR-SSD network achieved the highest mAP of 78.8% compared with the Faster R-CNN (73.78%) and SSD (75.82%). Meanwhile, the detection speed of the model was 23.13 FPS.</p><p>Li et al. <ref type="bibr" target="#b76">[77]</ref> took 5 kinds of bitter gourd leaf diseases taken in the field as the research object, modified the Faster R-CNN by increasing the size of the regional suggestion frame and integrating the feature pyramid network (FPN) based on ResNet50. The research results showed that after integrating the feature pyramid network, the average accuracy of the obtained model was 86.39%, higher than the original model (7.54%), and the accuracy of gray spot detection was improved by 16.56%. The detection time of each image is 0.322s, which can guarantee real-time detection.</p><p>Aiming at the problem of difficulty in real-time detection of apple leaf disease images under actual conditions due to the complex background and small lesions, Li et al. <ref type="bibr" target="#b77">[78]</ref> modified the Faster R-CNN by using the feature pyramid network (FPN) and adopting precise region of interest pooling (PROI Pooling). The research results showed that the improved model can effectively detect five apple leaf diseases under natural conditions, with a mean average accuracy of 82.28%. Compared with Faster R-CNN, YOLOv3, and Mask R-CNN, the mean average accuracy increased by 5.81%, 13.92%, and 4.86%, and the detection time of a single image was reduced by 43ms, respectively.</p><p>Li et al. <ref type="bibr" target="#b78">[79]</ref> proposed a video detection architecture of plant diseases and insect pests based on deep learning and a custom backbone, which can better reflect the quality of video detection in experiments. Experiments showed that compared with VGG16, ResNet50, ResNet101 backbone systems, and YOLOv3, the custom backbone system was more suitable for detecting untrained rice videos. The custom DCNN backbone had eminent detection sensitivity in withered leaves of rice sheath blight and rice stem borer symptoms. And the detection speed was 30 frames per second (FPS).</p><p>Aiming at the problem of low segmentation accuracy of traditional convolutional neural networks in crop disease leaf images, Wang et al. <ref type="bibr" target="#b79">[80]</ref> constructed a regional disease detection network (RD-net) based on the traditional VGG16 model and replaced the fully connected layer with a global pooling layer. Based on the Encoder-Decoder model structure, a regional segmentation network (RS-net) was established, and the multi-scale convolution kernel was used to improve the local receptive field of the original convolution kernel and segment the lesion area accurately. Segmentation experiments were carried out on the field-photographed datasets of corn leaf spot, corn round spot, wheat stripe rust, wheat anthracnose, cucumber target spot disease, and cucumber brown spot. The segmentation accuracy was 87.04% and the recall rate was 78.31%. The comprehensive evaluation index value was 88.22% and the single image segmentation speed was 0.23 s.</p><p>Table <ref type="table" target="#tab_2">3</ref> offers a brief overview of recent research works in target detection of plant diseases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. THE SYSTEM OF LEAF-DISEASE DETECTION</head><p>In an era when smart agricultural technology is so advanced, mobile phones have become a new type of ''farming tool'' for farmers, which can help farmers in identifying diseases and insect pests. Currently, researchers develop small programs or mobile apps to help farmers identify crop pests and diseases. The farmer takes pictures and uploads the diseased parts of the crop, and the system will return the recognition result within a few seconds. And provide users with the diagnosis results, similarity, disease characteristics, causes, and prevention and control plans for users, so that farmers can treat diseases and insects in a scientific way and increase crop yields.</p><p>Ozguven and Adem <ref type="bibr" target="#b80">[81]</ref> modified the Faster R-CNN by increasing the size of the input layer from 32 × 32 pixels to 600 × 600 pixels and developed an automatic detection and recognition system for leaf spot disease in 3 levels of sugar beet disease severity (mild, moderate, and severe). The developed Faster R-CNN achieved an accuracy of 95.48% compared to 92.89% achieved by Faster R-CNN.</p><p>Aiming at the problem that the classification accuracy of the classification model for the severity of crop diseases and insect pests is not high enough, Yu et al. <ref type="bibr" target="#b81">[82]</ref> proposed an improved ResNet50 model (CDCNNv2) combined with deep transfer learning and developed a classification system for the of crop diseases and insect pests. In addition to realtime and fully automatic detection of crop pests and diseases, the system also implements a series of supporting functions such as prevention and control recommendations and drug recommendations.</p><p>Li et al. <ref type="bibr" target="#b82">[83]</ref> combined the attention mechanism with the residual structure to build the PARNet model and completed the development of the WEB application. The average accuracy of the platform for 5 tomato leaf diseases can reached 96.84%. It was 2.25%∼11.58% higher than other models (VGG16, ResNet50, and SENet).</p><p>Jiang et al. <ref type="bibr" target="#b83">[84]</ref> redesigned and optimized the convolutional neural network structure based on the traditional LeNet-5 network, and proposed a convolutional neural network system for ginger disease recognition based on the four kinds of ginger disease collected in the natural environment. The recognition rate of four kinds of ginger diseases reached 96%.</p><p>Zhou <ref type="bibr" target="#b84">[85]</ref> identified 5 kinds of apple leaf diseases based on transfer learning and the Faster R-CNN and developed an apple leaf disease detection system based on the Android platform. The detection system had an average recognition accuracy of 76.55% for apple leaf diseases.</p><p>Liu et al. <ref type="bibr" target="#b85">[86]</ref> deployed the MobileNet network on the mobile phone, and the average recognition accuracy of the 6 kinds of grape diseased leaves collected in the field was 87.5%, and the average calculation time for a single image was 134ms.</p><p>Based on the ResNet50 architecture, Esgario et al.</p><p>[87] developed a system that can identify and estimate the severity of stress caused by biological agents on coffee leaves. The system had an accuracy of 95.24% for the classification of biological stress on coffee leaves, and an accuracy of 86.51% for estimation of the severity.</p><p>Xiong et al. <ref type="bibr" target="#b87">[88]</ref> proposed an automatic image segmentation algorithm based on the GrabCut algorithm and selected the MobileNet as DL classification model, and designed a crop disease recognition system for mobile smart devices. The system had a recognition accuracy of more than 80% for a total of 27 diseases of 6 crops in the laboratory environment and the field.</p><p>Table <ref type="table" target="#tab_3">4</ref> offers a brief overview of recent research works in the development of plant leaf disease identification systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. LEAF-DISEASE DETECTION BASED ON SMALL SAMPLES</head><p>In practical applications, the incidence of some plant diseases is low and the cost of acquiring disease images is high, resulting in only a few or dozens of disease images collected. The transfer learning method can transfer the knowledge learned from the general large dataset to the professional fields with relatively little data. But for the datasets with only a few or dozens of images, the transfer learning method also has the problem of low recognition accuracy <ref type="bibr" target="#b22">[23]</ref>. This is because it is difficult for the deep network to learn different features, which leads to problems that are difficult to converge or over-fitting. Therefore, plant disease datasets with single or small samples can hardly support the training of DL architecture. On the other hand, for the recognition of new classes that do not appear in the training set, the deep learning model needs to be retrained.</p><p>Recent advances in DL have proven the effectiveness of several architectures to learn new classes using small datasets, a famous sub-field known as Few-Shot Learning (FSL) <ref type="bibr" target="#b88">[89]</ref>. FSL can not only solve the recognition problem of new classes that did not appear in the training but also solve the problem of the neural network, which difficult to converge due to the small number of experimental samples, thereby improving the accuracy of small datasets recognition.</p><p>The FSL methods used for image classification include model initialization, metric learning and data generate methods. The initialization method focuses on the adjustable parameters in the network so that a new class of classifier can be learned from a limited set of examples <ref type="bibr" target="#b89">[90]</ref>- <ref type="bibr" target="#b91">[92]</ref>. The aim of metric learning methods is learning to compare. It means that once a network learns to compare classes, it will be able to learn new classes from few labeled samples <ref type="bibr" target="#b92">[93]</ref>. Finally, generate data methods, the methods learn a generator from the data in the base classes, and use that generator to generate data for new classes.</p><p>FSL solutions for plant leaves classification have been introduced recently, for example, Hu et al. <ref type="bibr" target="#b93">[94]</ref> present a low shot learning method for tea leaf disease identification, used the improved conditional deep convolutional generative adversarial networks (C-DCGAN) for data augmentation. And the average identification accuracy of the proposed method was 90%. Wang and Wang <ref type="bibr" target="#b94">[95]</ref> proposed a fewshot learning method based on the Siamese network with contrastive loss and kNN classifiers to solve plant leaf classification problem with a small sample. Das and Lee <ref type="bibr" target="#b95">[96]</ref> proposed a two-stage multilayer neural network for the few-shot recognition of new categories and a detailed mathematical theory derivation process.</p><p>Aiming at the problem of too few samples in the training set, Li et al. <ref type="bibr" target="#b96">[97]</ref> proposed a one-shot learning method for the first time and used Bayesian functions to build a network. Subsequently, many DL architectures for one-shot learning tasks were proposed and achieved remarkable results. The author verified in his work <ref type="bibr" target="#b97">[98]</ref> that using FSL can transfer knowledge from a clear source domain (colon tissue) to a more general domain (composed of colon, lung, and breast tissues) by using few training images. Experimental results showed that the FSL can obtain an average accuracy of 90% with only 60 training images, which was better than fine-grained transfer learning (73%). Zhong et al. <ref type="bibr" target="#b98">[99]</ref> proposed a generative model based on conditional adversarial auto-encoder (CAAE), which was used to perform generalized one-shot and few-shot learning in the case of few or even zero training samples to solve the problem of citrus diseases identification.</p><p>Ren et al. <ref type="bibr" target="#b99">[100]</ref> proposed a plant disease identification method based on one-shot learning for the small sample problem of plant leaf diseases. Taking 8 kinds of plant disease with a small number of samples in the public dataset P1antVillage as the identification object, the focal loss function (FL) was used to train the plant disease classifier based on the relation network. The results showed that the recognition accuracy of the method in 5-way and 1-shot reached 89.90%, which was 4.69% higher than the original relation network model. At the same time, compared with matching network and transfer learning, the improved method had increased the recognition accuracy on the experimental dataset by 25.02% and 41.90%, respectively.</p><p>Argüeso et al. <ref type="bibr" target="#b100">[101]</ref> taken 38 kinds of plant disease images in the public dataset P1antVillage as the identification object, Siamese networks, and triplet loss was used and compared to classical fine-tuning transfer learning. The median accuracy was 55.5 % learning for 1 image per class. Median accuracy were 80.0 % and 90.0 % for 15 and 80 images per class. The FSL method outperformed the classical fine-tuning transfer learning which had an accuracy of 18.0 % and 72.0 % for 1 and 80 images per class, respectively. The author Wu <ref type="bibr" target="#b31">[32]</ref> took 3 kinds of tea leaf diseases as the object, segmented the lesions and expanded the dataset of the segmented lesions at first, and then used the combination of depth transfer and Cayley-Klein metric to realize the identification of tea diseases, and a result of 100% recognition accuracy was achieved.</p><p>Table <ref type="table">5</ref> offers a brief overview of recent research works in plant leaf disease detection based on small</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. HYPER-SPECTRAL IMAGING(HSI) WITH DL MODELS</head><p>Plants may be affected by multiple pathogens at the same time during the growth process, and some different pathogens may produce similar symptoms and signs <ref type="bibr" target="#b101">[102]</ref>, <ref type="bibr" target="#b102">[103]</ref> and the symptoms are not obvious at the early stage of plant diseases, which makes it easy to use naked eyes or simple computer vision has become very difficult to detect plant diseases.</p><p>The electromagnetic spectrum range of hyperspectral sensors is mainly concentrated in the visible and near-infrared (400 ∼ 1000nm), and sometimes includes shortwave infrared (SWIR, 1000 ∼ 2500nm). This sensor can obtain spectral information from hundreds of narrow spectral bands <ref type="bibr" target="#b103">[104]</ref>. These narrow bands are highly sensitive to subtle plant leaf changes caused by diseases and can distinguish different types of diseases so that early asymptomatic detection can be carried out. Therefore, HSI is the focus of recent research, for the early detection of plant diseases. For example, the review <ref type="bibr" target="#b104">[105]</ref> provided an overview of advanced hyperspectral technologies for plant disease detection.  Xie et al. <ref type="bibr" target="#b105">[106]</ref> investigated the feasibility of using a hyperspectral imaging technique to identify two kinds of diseases on tomato leaves. Both imaging information and spectral information were investigated in the study. The ELM model was established to identify the diseased samples and the successive projection algorithm (SPA) was applied to select useful wavelengths. The classification accuracy was 97.1% of the SPA-ELM model on the testing set. The early hyperspectral images of cucumber downy mildew in greenhouses collected infield, it is influenced by environmental illumination and difficult to extract effective features from them. Qin et al. <ref type="bibr" target="#b106">[107]</ref> proposed a novel method of extracting feature bands based on disease difference information. Which improved combining adaptive weighting algorithm (CARS) and successive projection algorithm (SPA), and an early detection model of cucumber downy mildew was established. For the hyperspectral image of healthy cucumber leaves and the daily hyperspectral images within 12 days of infection, the detection rate of 100% can be obtained from the 2∼12 day of infection, and the detection rate of the test set for 1 day of infection reached 95.8%. Abdulridha et al. <ref type="bibr" target="#b107">[108]</ref> used hyper-spectral imaging technology combined with the MLP classification method, had an accuracy of 99% for the four stages of tomato bacterial spot disease and bacterial target spot disease (healthy asymptomatic stage, early stage, and late-stage). Yuan et al. <ref type="bibr" target="#b108">[109]</ref> proposed a method for detecting tea tree anthracnose based on hyperspectral imaging.</p><p>Through spectral sensitivity analysis, the disease sensitive bands were determined, and two new disease indexes were established using these bands: tea tree anthracnose ratio index (TARI) and tea tree anthracnose normalized index (TANI). A method combined unsupervised classification and adaptive two-dimensional threshold detection is proposed, based on a set of optimized spectral features. The results showed that the overall accuracy of identifying diseases was 98% at the leaf level, and the overall accuracy of identifying diseases was 94% at the pixel level. In <ref type="bibr" target="#b109">[110]</ref>, a detailed review of DL with the HSI technique was provided. In order to avoid the over-fitting and improve accuracy, a detailed comparison was provided between several DL models like 1D/2D-CNN (2D-CNN better result) LSTM/GRU (both faced over-fitting), 2D-CNN-LSTM/GRU (still over-fitting). Therefore, a novel hybrid method (2D-CNN-BidLSTM/GRU) which from a convolutional and bidirectional gated recurrent network was proposed for the hyperspectral images. The model resolved the problem of over-fitting and achieved 75% F1-score and 73% accuracy for wheat disease detection <ref type="bibr" target="#b110">[111]</ref>. In <ref type="bibr" target="#b111">[112]</ref>, the author developed a supervised 3D-CNN model to learn the spectral and spatial information of hyperspectral images for the classification of healthy and charcoal rot infected samples. A visualization method based on a saliency map was used to identify the classification accuracy of hyper-spectral wavelengths. The importance of wavelength can be inferred by analyzing the size of the gradient distribution of the saliency map of the image on the hyper-spectral wavelength. Based on the hyper-spectral imaging of the inoculated and simulated inoculated stem images, the classification accuracy of the model 3D-CNN was 95.73%, and the F1 score of the infection category was 87%. For the detection of potato virus, DL was used to describe the hyperspectral images and achieved acceptable values of precision (78%) and recall (88%) <ref type="bibr" target="#b112">[113]</ref>. In <ref type="bibr" target="#b113">[114]</ref>, developed a DL model of multiple Inception-ResNet, which uses both spatial and spectral data on hyperspectral UAV images to detect the yellow rust in wheat. The model achieved an accuracy of 85%, which was quite a lot higher than the RF-classifier (77%). Gui et al. <ref type="bibr" target="#b114">[115]</ref> divided the early soybean mosaic virus disease (SMV) into 0, 1, and 2 degrees according to its severity. In the case of a small number of experimental soybean they proposed a novel SMV early detection method which combined convolutional neural network and a support vector machine (CNN-SVM), and achieved an rate of 96.67% on the training set and 94.17% on the testing set. The literature <ref type="bibr" target="#b115">[116]</ref> taken corn seedlings after cold stress as the research object, extract the spectral curve of the comprehensive evaluation index of cold damage based on hyper-spectral images, and used DL to construct a corn seedling damage detection model. According to <ref type="bibr" target="#b116">[117]</ref>, a novel hyper-spectral analysis proximal sensing method based on generative adversarial nets (GANs), named as outlier removal auxiliary classifier generative adversarial nets (OR-AC-GAN) was proposed in order to detect tomato plant disease before its clear symptoms appeared. The classification accuracy achieved 96.25% before visible symptoms show up at plant leaf level (as shown in Fig. <ref type="figure" target="#fig_8">5</ref>).</p><p>Table <ref type="table" target="#tab_4">6</ref> offers a brief overview of recent research works in plant leaf disease detection using hyperspectral images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSION AND FUTURE DIRECTIONS</head><p>In this paper, we have introduced the basic knowledge of deep learning and presented a comprehensive review of recent research work done in plant leaf disease recognition using deep learning. Provided sufficient data is available for training, deep learning techniques are capable of recognizing plant leaf diseases with high accuracy. The importance of collecting large datasets with high variability, data augmentation, transfer learning, and visualization of CNN activation maps in improving classification accuracy, and the importance of small sample plant leaf disease detection and the importance of hyper-spectral imaging for early detection of plant disease have been discussed. At the same time, there are also some inadequacies.</p><p>Most of the DL frameworks proposed in the literature have good detection effects on their datasets, but the effects are not good on other datasets, that is the model has poor robustness. Therefore, better robustness DL models are needed to adapt the diverse disease datasets.</p><p>In most of the researches, the PlantVillage dataset was used to evaluate the performance of the DL models. Although this dataset has a lot of images of several plant species with their diseases, it was taken in the lab. Therefore, it is expected to establish a large dataset of plant diseases in real conditions.</p><p>Although some studies are using hyperspectral images of diseased leaves, and some DL frameworks are used for early detection of plant leaves diseases, problems that affect the widespread use of HSI in the early detection of plant diseases remain to be resolved. That is, for early plant disease detection, it is difficult to obtain the labeled datasets, and even experienced experts cannot mark where the invisible disease symptoms are, and define purely invisible disease pixels, which is very important for HSI to detect plant disease. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1 .</head><label>1</label><figDesc>FIGURE 1. Traditional image recognition processing.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head/><label/><figDesc>A. THE FRAMEWORK, DEVELOPMENT, AND EVALUATION OF MODELS FOR DEEP LEARNING 1) THE HISTORY OF DEEP LEARNING Deep Learning (DL) is a subclass of Machine Learning (ML), It was introduced in 1943 [18] and then went into three stages of development. The first generation of neural network-MCP (1943∼1969): originated in 1943, is a linear model, can only deal with linear classification problems.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 2 .</head><label>2</label><figDesc>FIGURE 2. The history of DL architectures.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIGURE 3 .</head><label>3</label><figDesc>FIGURE 3. Diagram of GANS structure sketch.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIGURE 4 .</head><label>4</label><figDesc>FIGURE 4. The output heat maps of the ACB module in reference<ref type="bibr" target="#b46">[47]</ref>.</figDesc><graphic coords="6,36.83,64.55,240.25,194.39" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head/><label/><figDesc><ref type="bibr" target="#b50">[51]</ref> tried to solve the problem of insufficient identification methods for fine-grained tomato diseases. Taken 5 kinds of tomato diseased leaves in the early and late stages as the research objects, and proposed a new convolutional neural network model ARNet based on the combination of attention and residual ideas. Compared with existing models such as VGG16, ARNet had better classification performance, with an average recognition accuracy rate of 88.2%.Picon et al. [69] proposed three different CNN architectures (RESNET-MC-1, RESNET-MC-2, and RESNET-MC-3) to integrate contextual non-image meta-data (such as crop information) into image-based convolutional neural Network. RESNET-MC-1 achieved 98% accuracy in a field environment containing 17 diseases and 5 crops (wheat, barley, corn, rice, and rapeseed). Chen et al. [70] proposed an improved VGG model (INC-VGGN) based on the VGG model framework by introducing two Inception modules, adding a pooling layer, and modifying the activation function. And the average recognition accuracy of corn plant leaf diseases reached 92%. Zhang et al. [71] combined the expansion convolution and global pooling for the problem of the AlexNet model with too many parameters and a single feature scale and proposed a global pooling extended convolutional neural network (GPDCNN) based on the AlexNet model. After the expansion, an accuracy of 95.18% was obtained on the dataset of 6 common cucumber leaf diseases taken in the field. Due to the problem of low recognition accuracy of grape leaves with different degrees of disease, He et al. [72] proposed a Multi-Scale ResNet based on ResNet18 by changing the conv1 layer to a combination of multiple convolution kernels and adding the SENet module to ResNet18 to identify grape leaf disease. The model had an average recognition accuracy of 90.83% for seven grape diseases including different severity.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>VOLUME 9, 2021 TABLE 5 .</head><label>20215</label><figDesc>A brief overview of recent research works in plant leaf disease detection based on small samples.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>FIGURE 5 .</head><label>5</label><figDesc>FIGURE 5. Comparison of segmentation results of a typical healthy plant. (a)direct CNN model. (b)AC-GAN model. (c)the proposed OR-AC-GAN model.</figDesc><graphic coords="12,80.05,203.93,415.38,146.28" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head/><label/><figDesc>LILI LI received the B.S. degree from Datong China, in 2012, and the M.S. degree from Chongqing University, China, in 2015. She is currently pursuing the Ph.D. degree with the College of Agricultural Engineering, Shanxi Agricultural University. She is currently working with Shanxi Agricultural University. Her research interest includes applications of computer vision in agriculture, using deep learning methods to study plant leaf disease detection in complex background. SHUJUAN ZHANG received the Ph.D. degree in agricultural mechanization engineering from Zhejiang University. She is currently a Professor and the Doctoral Director with the College of Agricultural Engineering, Shanxi Agricultural University. She has published over 60 articles in her research-related fields. Her major research interests include digital agriculture information collection technology and equipment, technology and equipment for harvesting, primary processing, and non-destructive testing of agricultural products. BIN WANG received the B.S. and M.S. degrees from Shanxi Agricultural University, China, in, 2011and 2015, respectively, where he is currently pursuing the Ph.D. degree with the College of Agricultural Engineering. His research interests include hyperspectral technology and nondestructive testing technology.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE 1 .</head><label>1</label><figDesc>Summary of recent research works about the application of DL framework directly.</figDesc><table/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE 2 .</head><label>2</label><figDesc>Summary of recent research works about application about the improvement of DL in plant disease detection.</figDesc><table/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 3 .</head><label>3</label><figDesc>Summary of recent research works about the application in target detection of plant diseases.</figDesc><table/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE 4 .</head><label>4</label><figDesc>A brief overview of recent research works in the development of plant leaf disease identification system.</figDesc><table/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>TABLE 6 .</head><label>6</label><figDesc>A brief overview of recent research works in plant leaf disease detection using hyperspectral images.</figDesc><table/></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56684" xml:id="foot_1"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56688" xml:id="foot_3"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56690" xml:id="foot_4"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56692" xml:id="foot_5"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56694" xml:id="foot_6"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56696" xml:id="foot_7"><p>  VOLUME 9, 2021   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="56698" xml:id="foot_8"><p>  VOLUME 9, 2021   </p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>This work was supported in part by the <rs type="grantName">Innovation Project of Shanxi for Postgraduate Education under Grant</rs> <rs type="grantNumber">J202082047</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_cGaKsnS">
+					<idno type="grant-number">J202082047</idno>
+					<orgName type="grant-name">Innovation Project of Shanxi for Postgraduate Education under Grant</orgName>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Automatic plant pest detection and recognition using k-means clustering algorithm and correspondence filters</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Birch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Obu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Faithpraise</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chatwin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Adv. Biotechnol. Res</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="189" to="199"/>
+			<date type="published" when="2013-07">Jul. 2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Vision-based pest detection based on SVM classification method</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Ebrahimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Khoshtaghaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Minaei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jamshidi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page" from="52" to="58"/>
+			<date type="published" when="2017-05">May 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Adapted approach for fruit disease identification using images</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Dubey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Comput. Vis. Image Process</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="44" to="58"/>
+			<date type="published" when="2012-07">Jul. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Recognition of tomato foliage disease based on computer vision technology</title>
+		<author>
+			<persName><forename type="first">A.-L</forename><surname>Chai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B.-J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-X</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z.-X</forename><surname>Cen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Horticulturae Sinica</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1423" to="1430"/>
+			<date type="published" when="2010-09">Sep. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Research on identify technologies of apple's disease based on mobile photograph image analysis</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">R</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>He</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Eng. Des</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="3051" to="3053"/>
+			<date type="published" when="2010-07">Jul. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Study on recognition method of rice disease based on image</title>
+		<author>
+			<persName><forename type="first">Z.-X</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B.-J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-F</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-Y</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Yao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chin. J. Rice Sci</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="497" to="502"/>
+			<date type="published" when="2010-05">May 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Factors influencing the use of deep learning for plant disease recognition</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G A</forename><surname>Barbedo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biosyst. Eng</title>
+		<imprint>
+			<biblScope unit="volume">172</biblScope>
+			<biblScope unit="page" from="84" to="91"/>
+			<date type="published" when="2018-08">Aug. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Deep learning in agriculture: A survey</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kamilaris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">X</forename><surname>Prenafeta-Boldú</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">147</biblScope>
+			<biblScope unit="page" from="70" to="90"/>
+			<date type="published" when="2018-04">Apr. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Deep learning for plant identification using vein morphological patterns</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">L</forename><surname>Grinblat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Uzal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Larese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Granitto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page" from="418" to="424"/>
+			<date type="published" when="2016-09">Sep. 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Using deep learning for image-based plant disease detection</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Mohanty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Salathé</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers Plant Sci</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">1419</biblScope>
+			<date type="published" when="2016-09">Sep. 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">A recognition method for cucumber diseases using leaf symptom images based on deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="page" from="18" to="24"/>
+			<date type="published" when="2018-11">Nov. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Basic study of automated diagnosis of viral plant diseases using convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kawasaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Uga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kagiwada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Iyatomi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Symp. Vis. Comput</title>
+		<meeting>Int. Symp. Vis. Comput<address><addrLine>Las Vegas, NV, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-12">Dec. 2015</date>
+			<biblScope unit="page" from="638" to="645"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A twostage deep neural network for multi-norm license plate detection and recognition</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kessentini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Besbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ammar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chabbouh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Expert Syst. Appl</title>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page" from="159" to="170"/>
+			<date type="published" when="2019-12">Dec. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Deep learning for plant stress phenotyping: Trends and future perspectives</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ganapathysubramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends Plant Sci</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="883" to="898"/>
+			<date type="published" when="2018-10">Oct. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A review of imaging techniques for plant disease detection</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Singh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artif. Intell. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="229" to="242"/>
+			<date type="published" when="2020-10">Oct. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Plant disease detection and classification by deep learning</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">H</forename><surname>Saleem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Potgieter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">M</forename><surname>Arif</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Plants</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="468" to="489"/>
+			<date type="published" when="2019-10">Oct. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Recent advances in image processing techniques for automated leaf pest and disease recognition-A review</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Ngugi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Abelwahab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Abo-Zahhad</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Process. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">180</biblScope>
+			<biblScope unit="page" from="26" to="50"/>
+			<date type="published" when="2020-04">Apr. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A logical calculus of the ideas immanent in nervous activity</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">S</forename><surname>Mcculloch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Pitts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bull. Math. Biophys</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="115" to="133"/>
+			<date type="published" when="1943-12">Dec. 1943</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">ImageNet classification with deep convolutional neural in</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Krizhevsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1097" to="1105"/>
+			<date type="published" when="2012-09">Sep. 2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Deep residual for image recognition</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)</title>
+		<meeting>IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)<address><addrLine>Sacramento, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016-06">Jun. 2016</date>
+			<biblScope unit="page" from="770" to="778"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Very deep convolutional networks for large-scale image recognition</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Conf. Learn. Repr</title>
+		<meeting>Int. Conf. Learn. Repr<address><addrLine>London, U.K.</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-04">Apr. 2014</date>
+			<biblScope unit="page" from="1" to="14"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Going deeper with convolutions</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sermanet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Reed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Anguelov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Erhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rabinovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)</title>
+		<meeting>IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)<address><addrLine>Sacramento, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-06">Jun. 2015</date>
+			<biblScope unit="page" from="1" to="9"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A deep learning-based approach for banana leaf diseases classification</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Amara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bouaziz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Algergawy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Datenbanksys. Für Bus., Technol. Web (BTW)</title>
+		<meeting>Datenbanksys. Für Bus., Technol. Web (BTW)<address><addrLine>Workshopband, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-07">Jul. 2017</date>
+			<biblScope unit="page" from="1" to="24"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Multi-temporal land cover classification with long short-term memory neural networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rußwurm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Körner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci</title>
+		<meeting>Int. Arch. Photogramm. Remote Sens. Spat. Inf. Sci<address><addrLine>Hannover, Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-06">Jun. 2017</date>
+			<biblScope unit="page" from="551" to="558"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Plant disease and pest detection using deep learning-based features</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Türkoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hanbay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">TURKISH J. Electr. Eng. Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1636" to="1651"/>
+			<date type="published" when="2019-05">May 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Semantic segmentation of mixed crops using deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Mortensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dyrmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Karstoft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">N</forename><surname>Jørgensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Gislum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. CIGR-AgEng Conf</title>
+		<meeting>CIGR-AgEng Conf<address><addrLine>Aarhus, Denmark</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2016-06">Jun. 2016</date>
+			<biblScope unit="page" from="26" to="29"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Plant species classification using deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dyrmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Karstoft</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Midtiby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biosystems Eng</title>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="page" from="72" to="80"/>
+			<date type="published" when="2016-11">Nov. 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Weed seeds classification based on PCANet deep learning baseline</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xinshao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Asia-Pacific Signal Inf. Process. Assoc. Annu. Summit Conf. (APSIPA)</title>
+		<meeting>Asia-Pacific Signal Inf. ess. Assoc. Annu. Summit Conf. (APSIPA)<address><addrLine>Hong Kong</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2015-12">Dec. 2015</date>
+			<biblScope unit="page" from="408" to="415"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Generative adversarial nets</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Goodfellow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pouget-Abadie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mirza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Warde-Farley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ozair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Courville</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Adv. Neural Inf. Process. Sys. (NIPS)</title>
+		<meeting>Adv. Neural Inf. ess. Sys. (NIPS)<address><addrLine>Quebec City, QC, Canada</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014-06">Jun. 2014</date>
+			<biblScope unit="page" from="2672" to="2680"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Unsupervised image translation using adversarial networks for improved plant disease recognition</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nazki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fuentes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">168</biblScope>
+			<biblScope unit="page">105117</biblScope>
+			<date type="published" when="2020-01">Jan. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Detection of apple lesions in orchards based on deep learning methods of CycleGAN and YOLOV3-dense</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Sensors</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="13"/>
+			<date type="published" when="2019-04">2019. Apr. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Identification of tea leaf's diseases in natural scene images based on low shot learning</title>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Wu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<pubPlace>Hefei, China</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Dept. Inf. Eng., Anhui Univ.</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">M.S. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">DCGAN-based data augmentation for tomato leaf disease identification</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="98716" to="98728"/>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A data augmentation method based on generative adversarial networks for grape leaf disease identification</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="102188" to="102198"/>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Deep learning for tomato diseases: Classification and symptoms visualization</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brahimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Boukhalfa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moussaoui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Artif. Intell</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="299" to="315"/>
+			<date type="published" when="2017-05">May 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Deep learning for plant diseases: Detection and saliency map visualisation</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brahimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Arsenovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Laraba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sladojevic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Boukhalfa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moussaoui</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978</idno>
+		<ptr target="https://link.springer.com/book/10.1007/978"/>
+	</analytic>
+	<monogr>
+		<title level="m">Human and Machine Learning</title>
+		<meeting><address><addrLine>Boston, MA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2018-06">Jun. 2018</date>
+			<biblScope unit="page" from="93" to="117"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Vision-based plant disease detection system using transfer and deep learning</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Cruz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Luvisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">De</forename><surname>Bellis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ampatzidis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Asabe Annu. Int. Meeting</title>
+		<meeting>Asabe Annu. Int. Meeting<address><addrLine>Spokane, WA, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2017-07">Jul. 2017</date>
+			<biblScope unit="page" from="16" to="19"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Deep interpretable architecture for plant diseases classification</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Brahimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mahmoudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Boukhalfa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moussaoui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Signal Process., Algorithms, Archit., Arrangements</title>
+		<meeting>Signal ess., Algorithms, Archit., Arrangements<address><addrLine>SPA); Poznan, Poland</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-09">Sep. 2019</date>
+			<biblScope unit="page" from="111" to="116"/>
+		</imprint>
+	</monogr>
+	<note>Appl.</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Automated identification of northern leaf blight-infected maize plants from field imagery using deep learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Dechant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wiesner-Hanks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">L</forename><surname>Stewart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yosinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Gore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lipson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phytopathology</title>
+		<imprint>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1426" to="1432"/>
+			<date type="published" when="2017-11">Nov. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">An in-field automatic wheat disease diagnosis system</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">142</biblScope>
+			<biblScope unit="page" from="369" to="379"/>
+			<date type="published" when="2017-11">Nov. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Deep convolutional neural network for classifying Fusarium wilt of radish from unmanned aerial vehicles</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Ha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Moon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Kwak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">I</forename><surname>Hassan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">Y</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2017-12">Dec. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Plant disease identification from individual lesions and spots using deep learning</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G A</forename><surname>Barbedo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biosyst. Eng</title>
+		<imprint>
+			<biblScope unit="volume">180</biblScope>
+			<biblScope unit="page" from="96" to="107"/>
+			<date type="published" when="2019-04">Apr. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">An explainable deep machine vision framework for plant stress phenotyping</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ghosal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Blystone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ganapathysubramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarkar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Nat. Acad. Sci. USA</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="4613" to="4618"/>
+			<date type="published" when="2018-04">Apr. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Identification of rice diseases using deep convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="page" from="378" to="384"/>
+			<date type="published" when="2017-12">Dec. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Deep convolutional neural networks for mobile capture device-based crop disease classification in the wild</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Picon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alvarez-Gila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Seitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ortiz-Barredo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Echazarra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Johannes</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">161</biblScope>
+			<biblScope unit="page" from="280" to="290"/>
+			<date type="published" when="2019-06">Jun. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Automatic plant disease diagnosis using mobile capture devices, applied on a wheat use case</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Johannes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Picon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alvarez-Gila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Echazarra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rodriguez-Vaamonde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Navajas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ortiz-Barredo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="page" from="200" to="209"/>
+			<date type="published" when="2017-06">Jun. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">CCDF: Automatic system for segmentation and recognition of fruit crops diseases based on correlation coefficient and deep CNN features</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Akram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sharif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Awais</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Javed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Saba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">155</biblScope>
+			<biblScope unit="page" from="220" to="236"/>
+			<date type="published" when="2018-12">Dec. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Deep leaning approach with colorimetric spaces and vegetation indices for vine diseases detection in UAV images</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kerkech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hafiane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Canals</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">155</biblScope>
+			<biblScope unit="page" from="237" to="243"/>
+			<date type="published" when="2018-12">Dec. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Usefulness of interpretability methods to explain deep learning based plant stress phenotyping</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nagasubramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ganapathysubramanian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="18" to="32"/>
+			<date type="published" when="2020-07">Jul. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">SLIC_SVM based leaf diseases saliency map extraction of tea plant</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">157</biblScope>
+			<biblScope unit="page" from="102" to="109"/>
+			<date type="published" when="2019-02">Feb. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Fine-grained tomato disease recognition based on attention residual mechanism</title>
+		<author>
+			<persName><forename type="first">Z.-W</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-M</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q.-Q</forename><surname>Xie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. South China Agricult. Univ</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="124" to="132"/>
+			<date type="published" when="2019-07">Jul. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">New perspectives on plant disease characterization based on deep learning</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Goëau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Joly</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">170</biblScope>
+			<biblScope unit="page">105220</biblScope>
+			<date type="published" when="2020-03">Mar. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Detection of fusarium head blight in wheat using a deep neural network and color imaging</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moghimi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Steffenson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Hirsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page">2658</biblScope>
+			<date type="published" when="2019-11">Nov. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Optimizing pretrained convolutional neural networks for tomato leaf disease detection</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ahmad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hamid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yousaf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">O</forename><surname>Ahmad</surname></persName>
+		</author>
+		<idno type="DOI">10.1155/2020/8812019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Complexity</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="6"/>
+			<date type="published" when="2020-09">2020. Sep. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">MobileNet based apple leaf diseases identification</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-R</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11036-020-01640-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mobile Netw. Appl</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="1" to="9"/>
+			<date type="published" when="2020-08">Aug. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Image recognition of four rice leaf diseases based on deep learning and support vector machine</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page">105824</biblScope>
+			<date type="published" when="2020-12">Dec. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Rice blast disease recognition using a deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">W.-J</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-F</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-X</forename><surname>Cao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10"/>
+			<date type="published" when="2019-02">Feb. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Identification of multiple plant leaf using neural architecture search</title>
+		<author>
+			<persName><forename type="first">J.-P</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K.-X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="166" to="173"/>
+			<date type="published" when="2020-08">Aug. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Image recognition of camellia oleifera diseases based on convolutional neural network &amp; transfer learning</title>
+		<author>
+			<persName><forename type="first">M.-S</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-J</forename><surname>Ouyang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Fu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page" from="194" to="201"/>
+			<date type="published" when="2018-09">Sep. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Recognition of corn leaf spot and rust based on transfer learning with convolutional neural network</title>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-Y</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W.-T</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Mach</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="230" to="236"/>
+			<date type="published" when="2020-02">Feb. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">The plant pathology 2020 challenge dataset to classify foliar disease of apples</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Thapa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Snavely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Belongie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Khan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">11958</biblScope>
+			<date type="published" when="2020-02">Feb. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Using deep learning for image-based different degrees of ginkgo leaf disease classification</title>
+		<author>
+			<persName><forename type="first">K.-Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-R</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-D</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="95" to="104"/>
+			<date type="published" when="2020-02">Feb. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Identification of apple leaf diseases based on deep convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-J</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Symmetry</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="19"/>
+			<date type="published" when="2018-12">Dec. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Identification of vegetable leaf diseases based on improved multi-scale ResNet</title>
+		<author>
+			<persName><forename type="first">C.-S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-R</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-F</forename><surname>Teng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C.-J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-X</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page" from="209" to="217"/>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">Recognition and segmentation model of tomato leaf diseases based on deconvolution-guiding</title>
+		<author>
+			<persName><forename type="first">S.-G</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F.-W</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-J</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P.-S</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-L</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="186" to="195"/>
+			<date type="published" when="2020-01">Jan. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Tomato leaf diseases recognition based on improved multi-scale AlexNet</title>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Q</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Shu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page" from="162" to="169"/>
+			<date type="published" when="2019-07">Jul. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Recognition of field maize leaf diseases based on improved regional convolutional neural network</title>
+		<author>
+			<persName><forename type="first">X.-P</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-P</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. South China Agricult. Univ</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="82" to="91"/>
+			<date type="published" when="2020-06">Jun. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Method for segmentation of cucumber leaf lesions based on improved full convolution neural network</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-F</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jiangsu J. Agricult. Sci</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1054" to="1060"/>
+			<date type="published" when="2019-05">May 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Crop conditional convolutional neural networks for massive multi-crop plant disease classification over cell phone acquired images taken on real field conditions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Picon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Seitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alvarez-Gila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mohnke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ortiz-Barredo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Echazarra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="page">105093</biblScope>
+			<date type="published" when="2019-12">Dec. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Using deep transfer learning for image-based plant disease identification</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Nanehkaran</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">173</biblScope>
+			<biblScope unit="page">105393</biblScope>
+			<date type="published" when="2020-06">Jun. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Cucumber leaf disease identification with global pooling dilated convolutional neural network</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">162</biblScope>
+			<biblScope unit="page" from="422" to="430"/>
+			<date type="published" when="2019-07">Jul. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Grape leaf disease identification based on multi-scale residual network</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Eng</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="8"/>
+			<date type="published" when="2020-04">Apr. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">ToLeD: Tomato leaf disease detection using convolution neural network</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Arjaria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sinha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gupta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="page" from="293" to="301"/>
+			<date type="published" when="2020-01">Jan. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">A robust deep-learningbased detector for real-time tomato plant diseases and pests recognition</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fuentes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<date type="published" when="2017">2022. Sep. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">High-performance deep neural network-based tomato plant diseases and pests diagnosis system with refinement filter bank</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Fuentes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">S</forename><surname>Park</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers Plant Sci</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="1162">Aug. 2018. 1162</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Real-time detection of apple leaf diseases using deep learning approach based on improved convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="59069" to="59080"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Detection of leaf diseases of balsam pear in the field based on improved faster R-CNN</title>
+		<author>
+			<persName><forename type="first">J.-H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Tian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="179" to="185"/>
+			<date type="published" when="2020-06">Jun. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Apple leaf disease detection method based on improved faster R-CNN</title>
+		<author>
+			<persName><forename type="first">X.-R</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Eng</title>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="59" to="64"/>
+			<date type="published" when="2020-11">Nov. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">A recognition method for rice plant diseases and pests video detection based on deep convolutional neural network</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">578</biblScope>
+			<date type="published" when="2020-01">Jan. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Crop diseases leaf segmentation method based on cascade convolutional neural network</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Shanwen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Baoping</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Eng. Appl</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">15</biblScope>
+			<biblScope unit="page" from="242" to="250"/>
+			<date type="published" when="2020-08">Aug. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Automatic detection and classification of leaf spot disease in sugar beet using deep learning algorithms</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">M</forename><surname>Ozguven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Adem</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. A, Stat. Mech. Appl</title>
+		<imprint>
+			<biblScope unit="volume">535</biblScope>
+			<biblScope unit="page">122537</biblScope>
+			<date type="published" when="2019-12">Dec. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Research and application of crop diseases detection method based on transfer learning</title>
+		<author>
+			<persName><forename type="first">X.-D</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Q</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Q</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="252" to="258"/>
+			<date type="published" when="2020-05">May 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Recognition system of tomato leaf disease based on attentional neural network</title>
+		<author>
+			<persName><forename type="first">X.-Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z.-H</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jiangsu J. Agricult. Sci</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="561" to="568"/>
+			<date type="published" when="2020-03">Mar. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Design and experiment of tobacco leaf grade recognition system based on caffe</title>
+		<author>
+			<persName><forename type="first">F.-Q</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D.-W</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E.-B</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chin. Agricult. Mech</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="126" to="131"/>
+			<date type="published" when="2019-01">Jan. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<monogr>
+		<title level="m" type="main">Apple foliage diseases recognition in Android system with transfer learning-based</title>
+		<author>
+			<persName><forename type="first">M.-M</forename><surname>Zhou</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<pubPlace>Yangling, China</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Dept. Inf. Eng., Northwest A&amp;F Univ.</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">M.S. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Plant disease identification method based on lightweight CNN and mobile application</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-Z</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Eng</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="194" to="204"/>
+			<date type="published" when="2019-06">Jun. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Deep learning for classification and severity estimation of coffee leaf biotic stress</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G M</forename><surname>Esgario</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Krohling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Ventura</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="page">105162</biblScope>
+			<date type="published" when="2020-02">Feb. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Identification of cash crop diseases using automatic image segmentation algorithm and deep learning with expanded dataset</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>She</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">177</biblScope>
+			<biblScope unit="page">105712</biblScope>
+			<date type="published" when="2020-10">Oct. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Few-shot learning</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Larochelle</surname></persName>
+		</author>
+		<ptr target="http://www.doc88.com/"/>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision: A Reference Guide</title>
+		<editor>
+			<persName><forename type="first">K</forename><surname>Ikeuchi</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Tokyo, Tokyo</addrLine></address></meeting>
+		<imprint>
+			<publisher>Univ. Tokyo Press</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title level="a" type="main">Probabilistic model-agnostic metalearning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Finn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Levine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="9516" to="9527"/>
+			<date type="published" when="2018-10">Oct. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">Meta-learning with latent embedding optimization</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Rusu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sygnowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Osindero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hadsell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="18" to="27"/>
+			<date type="published" when="2018-03">Mar. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">Reptile: A scalable meta learning algorithm</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nichol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schulman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Sci</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="8"/>
+			<date type="published" when="2018-03">Mar. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title level="a" type="main">Siamese neural networks for one-shot image recognition</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Koch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Dept. Comput. Sci</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>Toronto Univ.; Toronto, ON, Canada</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="report_type">M.S. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">A low shot learning method for tea leaf's disease identification</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page">104852</biblScope>
+			<date type="published" when="2019-08">Aug. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title level="a" type="main">Plant leaves classification: A few-shot learning method based on Siamese network</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="151754" to="151763"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">A two-stage approach to few-shot learning for image recognition</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S G</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Image Process</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="3336" to="3350"/>
+			<date type="published" when="2020-12">Dec. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">One-shot learning of object categories</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Perona</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Pattern Anal. Mach. Intell</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="594" to="611"/>
+			<date type="published" when="2006-04">Apr. 2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Few shot learning in histopathological images: Reducing the need of labeled data on biological datasets</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Medela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Picon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Saratxaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Belar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Cabezón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cicchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bilbao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Glover</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE 16th Int. Symp. Biomed. Imag. (ISBI)</title>
+		<meeting>IEEE 16th Int. Symp. Biomed. Imag. (ISBI)<address><addrLine>Venice, Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019-04">Apr. 2019</date>
+			<biblScope unit="page" from="1860" to="1864"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title level="a" type="main">Zero-and few-shot learning for diseases recognition of citrus aurantium L. Using conditional adversarial autoencoders</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Xia</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page">105828</biblScope>
+			<date type="published" when="2020-12">Dec. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title level="a" type="main">Plant disease identification for small sample based on one-shot learning</title>
+		<author>
+			<persName><forename type="first">S.-N</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-X</forename><surname>Guo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jiangsu J. Agricult. Sci</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1061" to="1067"/>
+			<date type="published" when="2019-05">May 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title level="a" type="main">Few-shot learning approach for plant disease classification using images taken in the field</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Argüeso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Picon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Irusta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Medela</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>San-Emeterio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bereciartua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alvarez-Gila</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">175</biblScope>
+			<biblScope unit="page">105542</biblScope>
+			<date type="published" when="2020-08">Aug. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title level="a" type="main">Hyperspectral and thermal imaging of oilseed rape (Brassica napus) response to fungal species of the genus alternaria</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Baranowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jedryczka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Mazurek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Babula-Skowronska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Siedliska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kaczmarek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2015-03">Mar. 2015</date>
+		</imprint>
+	</monogr>
+	<note>Art. no. e0122913</note>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title level="a" type="main">Identification of powdery mildew (Erysiphe graminis sp. Tritici) and take-all disease (Gaeumannomyces graminis sp. Tritici) in wheat (Triticum aestivum L.) by means of leaf reflectance measurements</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Graeff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Link</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Claupein</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Open Life Sci</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="275" to="288"/>
+			<date type="published" when="2006-06">Jun. 2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title level="a" type="main">Advanced spectral classifiers for hyperspectral images: A review</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ghamisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Plaza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Plaza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Geosci. Remote Sens. Mag</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="8" to="32"/>
+			<date type="published" when="2017-03">Mar. 2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">A review of advanced technologies and development for hyperspectral-based plant disease detection in the past three decades</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page">3188</biblScope>
+			<date type="published" when="2020-09">Sep. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">Detection of early blight and late blight diseases on tomato leaves using hyperspectral imaging</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="11"/>
+			<date type="published" when="2015-11">Nov. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b106">
+	<analytic>
+		<title level="a" type="main">Early detection of cucumber downy mildew in greenhouse by hyperspectral disease differential feature extraction</title>
+		<author>
+			<persName><forename type="first">L.-F</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-Q</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Chin. Soc. Agricult. Mach</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="212" to="220"/>
+			<date type="published" when="2020-11">Nov. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b107">
+	<analytic>
+		<title level="a" type="main">Detection of target spot and bacterial spot diseases in tomato using UAV-based and benchtop-based hyperspectral imaging techniques</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Abdulridha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ampatzidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Kakarla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Roberts</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Precis. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="955" to="978"/>
+			<date type="published" when="2020-10">Oct. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b108">
+	<analytic>
+		<title level="a" type="main">Detection of anthracnose in tea plants based on hyperspectral imaging</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Bao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Electron. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">167</biblScope>
+			<biblScope unit="page">105039</biblScope>
+			<date type="published" when="2019-12">Dec. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b109">
+	<analytic>
+		<title level="a" type="main">Deep learning meets hyperspectral image analysis: A multidisciplinary review</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Signoroni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Savardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Baronio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Benini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Imag</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">52</biblScope>
+			<date type="published" when="2019-05">May 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b110">
+	<analytic>
+		<title level="a" type="main">Classifying wheat hyperspectral pixels of healthy heads and Fusarium head blight disease using a deep neural network in the wild field</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-J</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-W</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">395</biblScope>
+			<date type="published" when="2018-03">Mar. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b111">
+	<analytic>
+		<title level="a" type="main">Plant disease identification using explainable 3D deep learning on hyperspectral images</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nagasubramanian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Ganapathysubramanian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Plant Methods</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10"/>
+			<date type="published" when="2019-08">Aug. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b112">
+	<analytic>
+		<title level="a" type="main">Potato virus Y detection in seed potatoes using deep learning on hyperspectral images</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Polder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Blok</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">A C</forename><surname>De Villiers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Van Der Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kamp</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers Plant Sci</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">209</biblScope>
+			<date type="published" when="2019-03">Mar. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b113">
+	<analytic>
+		<title level="a" type="main">A deep learningbased approach for automated yellow rust disease detection from high-resolution hyperspectral UAV images</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>González-Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sobeih</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">13</biblScope>
+			<biblScope unit="page">1554</biblScope>
+			<date type="published" when="2019-06">Jun. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b114">
+	<analytic>
+		<title level="a" type="main">Grading method of soybean mosaic disease based on hyperspectral imaging technology</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Fei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Diakite</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Process. Agricult</title>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1" to="6"/>
+			<date type="published" when="2020-11">Nov. 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b115">
+	<analytic>
+		<title level="a" type="main">Diagnosis of plant cold damage based on hyperspectral imaging and convolutional neural network</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="118239" to="118248"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b116">
+	<analytic>
+		<title level="a" type="main">Early detection of tomato spotted wilt virus by hyperspectral imaging and outlier removal auxiliary classifier generative adversarial nets (OR-AC-GAN)</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Vinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Seibel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bechar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Nof</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="14"/>
+			<date type="published" when="2019-03">Mar. 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

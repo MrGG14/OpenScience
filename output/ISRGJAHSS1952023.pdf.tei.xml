@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">THE ETHICS OF ARTIFICIAL INTELLIGENCE IN BANKING INDUSTRY</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Victor</forename><surname>Ogheneochuko</surname></persName>
+							<email>1victor.jeko@uniben.edu</email>
+						</author>
+						<author>
+							<persName><forename type="first">Collins</forename><surname>Ojemoron</surname></persName>
+							<email>collinsotoideojemoron@gmaill.com</email>
+						</author>
+						<title level="a" type="main">THE ETHICS OF ARTIFICIAL INTELLIGENCE IN BANKING INDUSTRY</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">2583-7672 (Online)</idno>
+					</monogr>
+					<idno type="MD5">FC4B12C974AD860778A75CA6FD256C96</idno>
+					<idno type="DOI">10.5281/zenodo.10030864</idno>
+					<note type="submission">Received: 12.10.2023 | Accepted: 15.10.2023</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.1-SNAPSHOT" ident="GROBID" when="2024-05-21T17:06+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Ethics</term>
+					<term>Artificial Intelligence</term>
+					<term>Banking</term>
+					<term>Humanism</term>
+					<term>Information-Based Technology</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The fundamental challenges of artificial intelligence and its ethical implications to humanity is that it could lead to job losses and the violation of human rights and privacy. Artificial intelligence enhances human wellbeing, progress and happiness. The significance and application of artificial intelligence has elicited both positive and negative impacts. Artificial intelligence has a myriad of impacts. These impacts are mainly on society, human rights, ecological/environmental sustainability, trust, financial industry and democracy. This paper explores or interrogates the interrelatedness between ethics, artificial intelligence and the banking industry. This paper examines the ethical interrogation into the workings, recognition, sensibilities, consciousness and implications of artificial intelligence in the banking industry. The banking industry is one of the most pivotal sectors of any nation"s economy. It presupposes a critical role in any country"s quest for sustainable development. Artificial intelligence has political, ethical, social, economic, humanist and historical contexts. Artificial intelligence refers to the theory, development and deployment of intelligent machines such as the computers and it enables human beings to perform their tasks optimally and maximally. Artificial intelligence helps our humanity in terms of visual assistance, perception, speech recognition, decision making and translation of languages. This paper concludes that Artificial Intelligence ethics is aimed at ensuring efficiency, safety, robustness and accuracy in the banking industry.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.2.">The Connection between Artificial Intelligence and Banking</head><p>Artificial Intelligence (AI) refers to Systems that display intelligent behaviour by analysing their environment and taking actions-with some degree of autonomy-to achieve specific goal. AI-based systems can be purely software-based, acting in the visual world (e.g. voice assistants, image analysis software, search engines, speech and face recognition systems) or AI can be embedded in hardware devices (advanced robots, autonomous cars, drones or internet of Things application). <ref type="bibr" target="#b0">1</ref> Artificial Intelligence is all about intelligent behaviour. For Bird e tal, a straightforward definitions is that intelligent behaviour is doing the right thing at the right time. <ref type="bibr">2</ref> For Legg and Hunt, surveyed a wide range of informal definitions of intelligence, identifying three common features of intelligence. <ref type="bibr" target="#b2">3</ref> Worthy of note is that Legg and Hunt define intelligence as (1) a property that an individual agent has as it interacts with its environment or environments;</p><p>(2) related to the agent"s ability to succeed or profit with respect to some goal or objective and (3) depends on how able that agent is to adapt to different objectives and environments. <ref type="bibr" target="#b3">4</ref> Legg and Hunt pointed out that intelligence involves adaptation, learning and understanding, at its simplest form, then, intelligence is the ability to acquire and apply knowledge and skills and to manipulate one"s environment. <ref type="bibr" target="#b4">5</ref> Accordingly, Eleanor Bird e tal, further assert that we need to understand that for a physical robot its environment is the real world, which can be a human environment (for social robots), a city street (for an autonomous vehicles), a care home or hospital (for a care or assisted living robot), or a workplace (for a workmate robot). <ref type="bibr">6</ref> According to Eleanor Bird e tal, all present AIs and robots are examples of what we refer to as "narrow" AI: a term that reflects that fact that current AIs and robots are typically only capable of undertaking one specialized task. A long term goal of AI and robotics research is so-called artificial general intelligence (AGI) which would be comparable to human intelligence. <ref type="bibr">7</ref> Artificial Intelligence is all about machine learning. For Eleanor Bird e tal, machine learning is the term used for AIs which are capable of learning or, in the case of robots, adapting to their environment. There are a broad range of approaches to machine learning, but these typically fall into two categories: supervised and unsupervised learning. For Asodun, machine leraning is aimed at machine programming. Taking appropriate decisions based on acquired experience is one of the indicators of human intelligence.</p><p>In an attempt to further showcase machine intelligence, efforts have been invested into designing machines to learn from experience and make appropriate decisions. Asodun Fatai further asserts that this aspect of AI is called machine learning. Thus, machine learning is the study of methods used in programming machines to learn from experience. <ref type="bibr" target="#b5">8</ref> Asodun Fatai further heightened his theoretical position by asserting that:</p><p>Machines are purposely designed to learn for various reasons. For instance, machine learning is useful where the computer is expected to make customized decisions for different users based on its (computer) experience of each user"s peculiar activities on the system. In essence, after arriving at a generalization about a user"s activities, the computer can automatically deduce the user"s needs and react appropriately when it is prompted by the user. Machine learning could help in predicting financial behaviours based on what it has learnt. Humans (users) are those that end up benefiting from machine learning. 9</p><p>Furthermore, machine learning has led to the emergence of robotics. Accordingly, robotics are complex intelligent machines.</p><p>As rightly observed by Asodun Fatai, "Hybrid Techniques" as an AI paradigm involves the integration of many AI paradigms to produce a more complex intelligent agent. Such an agent is the robot. Robotics is therefore an attempt to instantiate multiple paradigms of AI in an intelligent agent. A robot is a computer controlled machine that is programmed to move, manipulate objects and accomplish work while interacting with its environment. <ref type="bibr">10</ref> For Bekey, robots are able to perform repetitive tasks more quickly, cheaply and accurately than humans. <ref type="bibr" target="#b6">11</ref> Robots are meant to serve human needs. According to Burr and Goldinger, humans consider the robots to be lacking a soul since they are nothing more than a machine produced by a complex physical process and they use the robots in any way that serve human needs. <ref type="bibr">12</ref> Put differently, Artificial Intelligence is about machine learning. Eleanor Bird et al, posit that machine learning is the term used for AIs which are capable of learning or, in the case of robots, adapting to their environment. There are a broad range of approaches to machine learning, but these typically fall into two categories: supervised and unsupervised learning. Machine learning could also be referred to as deep learning. The term deep learning simply refers to (typically) supervised machine learning systems with large (ie, many layered) Artificial Neural Networks (ANNs) and large tracing data sets. The term AI and machine learning are not synonymous. Many highly capable AIs and robotics do not make use of machine learning. <ref type="bibr" target="#b9">13</ref> Worthy of note is that there is a great connection between Artificial Intelligence and the banking sector. In order to do justice to the connection between Artificial Intelligence ethics and banking, it is germane to know what banking entails and what is bank? Furthermore, a bank is a financial institution that contributes to the Gross Domestic Product of a country. It acts as one of the most pivotal contributors to a country"s national development. It plays a critical role in every sectors of a country. Bank is a financial institution that accepts deposits from the public and creates and demands deposits while simultaneously making loans to the public. Banking refers to the umbrella of services provided by financial institutions, such as accepting deposits and providing loans within and outside a country. Banking provides essential financial services like depositing, lending, and asset protection to support the national economy of a country. The primary purpose of banking is to facilitate the movement of money in the economy by helping people and businesses store, invest and borrow money. The banking industry includes financial institutions like banks, credit unions and NBFCs.</p><p>Nonetheless, there are two kinds of banks: retail and investment banks. There are types of banking such as retail banking, corporate banking, central banking and cooperative banking. Banking today exists in a myriad of forms due to the advancement of technology. Banks today have a mobile app where account holders can make transactions, check balances, open deposits and more.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.3.">A Brief History and Evolution of Banking in Nigeria</head><p>The origin of banking in Nigeria dates back to 1883 and the first Bank in Nigeria was African Banking Corporation followed by the British Bank of West Africa which was established in 1884. Worthy of note is that the African Banking Corporation collapsed shortly after its establishment. The African Banking Corporation metamorphosed from its former name known as Standard Bank West Africa to Standard Bank of Nigeria, and later changed its name to First Bank of Nigeria. Other foreign banks that were established include Union Bank of Nigeria, United Bank of Africa PLC. Between 1929 to 1960 no less than 26 banks have been established but unfortunately only four have survived till present day Nigeria. These include Wema Bank, African Continental Bank of the North, First Bank of Nigeria, Union Bank of Nigeria, united bank of Africa PLC. The banking ordinance of 1952 was enacted which marks the beginning of banking legislation in Nigeria. Mr. J. B Loynes"s reports of 1957 during the colonial era marks the Central Bank of Nigeria ordinance of 1958. There were a myriads of government regulations and controls that constituted impediments to Nigeria"s national development. Technological innovation and global competitiveness in the banking industry were lacking. This was the prevailing situation until July 1986 when the Nigerian government introduced the structural adjustment programme (SAP) during the military government of Ibrahim Badamosi Babaginda. During the 1960s, the Central Bank of Nigeria act was amended not less than eight (8) times. The main thrust of the legislation was to strengthen the powers of the Central Bank of Nigeria while preserving its functions under the 1958 ordinance. The central bank was saddled with the onerous responsibilities and objectives or functions. These functions are adumbrated below:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.4.">The Typologies and Roles of Banking in Nigeria: Prospects and Challenges</head><p>(1) Issuance of a legal tender currency in Nigeria;</p><p>(2) Maintenance of external reserves so as to safeguard the international value of the currency; (3) Promotion of monetary policy and financial stability and a round or robust financial system; (4) Banker and financial adviser to the federal government of Nigeria; and (5) Banker to other banks in Nigeria and Abroad.</p><p>Cooperative Banking: Cooperative banking refers to a small financial institution by a group of individuals to address the capital needs of their specific community. Such financial institutions are owned and controlled by their members; and the board members are democratically selected to manage and oversee the operations of the cooperative bank. In other words, cooperative banking operates on the principle of cooperation and are owned and operated by their members. Cooperative baking is aimed at supporting or providing the financial needs of a specific community; whereby people come together to pool resources and provide banking services such as loans, savings accounts and so on.</p><p>Furthermore, the roles of banking industry in Nigeria are quite immense and it is a socio-political, economic and an existential imperative to the Nigerian State. The role of the banking industry in Nigeria cannot be overemphasized. It plays a pivotal role to Nigeria"s quest for national paradigm and sustainable development. One of the contributory factors of banking industry in Nigeria is that they perform the function of money deposits and the issuance of loans and credit facilities to customers. Agricultural banks give loans to farmers for the sole objective for food production such as rice, beans, corns, millet, wheat, groundnut, poultry farming such as piggery, goat farming, snails, fish farming and so on. The giving out of loans to farmers in Nigeria could contribute immensely to Nigeria"s Gross Domestic Product (GDP). For instance, in Nigeria there are various names of banks within the banking industry. These include Central Bank of Nigeria, Zenith Bank PLC, First Bank of Nigera PLC, Access Bank PLC, Stanbic IBTC Bank PLC, Sterling Bank PLC, Eco Bank PLC, Fidelity Bank PLC, Union Bank of Nigeria, PLC, United Bank of Africa PLC, Micro Finance Banks, Bank of Industry, and other financial institutions.</p><p>Nevertheless, the roles of the banking industry are enormous because apart from accepting deposits from the public, one of their primary responsibilities is that they are saddled with the responsibility of curbing inflation or regulating Nigeria"s national economy. Banks in Nigeria are faced with enormous responsibilities and challenges. In the light of this, we shall discuss the various challenges of Artificial Intelligence in banking industry.</p><p>Nevertheless, the Nigerian banking industry is faced with enormous challenges. One of the challenges of the use of Artificial Intelligence to the banking industry is that there is a recurring problem of poor economic policies. Nigeria"s political system has been characterized by the problem of leadership irresponsibility. This problem of leadership irresponsibility has drastically affected the banking sector. The Nigerian political leaders lack the political will to revamp the ailing Nigerian economic structure. Secondly, the problem of the evils of corruption has retarded the evolutionary process of Artificial Intelligence ethics within the banking sector in Nigeria. Corruption has become a cankerworm that has eaten deep into the fabric of Nigeria political and economic structures.</p><p>Moreover, management and development scholars assert that there is a great connection between political reality and economic reality. In other words, political strategy requires economic strategy. For Peter Drucker, strategy, therefore, has to accept a new fundamental. The final fundamental on which to base strategy in the period of worldwide structural change and uncertainty is the growing incongruence between economic reality and political reality. <ref type="bibr">14</ref> Artificial Intelligence presupposes a period of radical structural change in human history. <ref type="bibr">15</ref> On the other hand, the emergence of structural violence due to the eruption of ethnoreligious crises, environmental degradation, Islamic fundamentalism or intertribal wars have affected information technology in banking industry. The end Special Anti-Robber Squad of 2020 and the recent cash crunch of 2023 during the President Muhammadu Buhari"s Administration in Nigeria have led to the massive destructions of bank automated teller machines (ATMs) and even bank premises were raised down by fire. The Nigerian populace has a very negative orientation towards the banking industry in Nigeria. Hence, the banking industry in Nigeria is always prone to incessant attacks by the public. This does not encourage the quest for economic development or sustainable development in Nigeria. In a nutshell, Artificial Intelligence relies on good democratic governance based on effective leadership structure or visionary leadership.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1.5.The Ethics of Artificial Intelligence in Banking Industry and the Epistemology of Digital Consciousness</head><p>Artificial Intelligence is deeply rooted in ethical principles or guidelines and these ethical guidelines are aimed at regulating human conduct and respecting human rights and dignity. Eleanor Bird et al, in their work, "The Ethics of Artificial Intelligence: Issues and Initiatives" argued that philosophers have debated ethics for many centuries, and there are various well known principles, perhaps one of the well-known philosophers Immanuel Kant, in his postulation of categorical imperative argues that human beings should not be used as a means to an end, but they are ends in themselves. <ref type="bibr" target="#b11">16</ref> Ethics plays a critical or pivotal role in the field of Artificial Intelligence and the duty of ethics and morality then is to show that for an action to be considered human it must be comprehensive enough. Hence, one of the necessary conditions for considering something as an authentic human action is its ability to be articulated within a wider framework of meaning as to be as universal as possible. 17 According to Lawhead, ethics is an area of philosophy that reasons about morality, particularly the meaning and justification of claims concerning rights or wrong, obligation, moral rules, rights, virtue, the good life, and the philosophy of objective morality. <ref type="bibr" target="#b12">18</ref> There is a theoretical affinity between ethics and Artificial Intelligence. Accordingly, Eleanor Bird et al, assert that:</p><p>AI ethics is concerned with the important question of how human developers, manufacturers, and operators should behave in order to minimise the ethical harms that can arise from AI in society, either arising from poor (unethical) design, inappropriate application or misuse. The scope of AI ethics spans immediate, here and now concerns about, for instance, data privacy and bias in current AI systems; near and medium term concerns about, for instance, the impact of AI and robotics on jobs and the workplace; and longer term concerns about the possibility of AI systems reaching or exceeding human equivalent capabilities (so-called Super-intelligence). <ref type="bibr" target="#b13">19</ref> Worthy of note is that Artificial Intelligence ethics presupposes the critical importance of ethical questions of how human developers, manufacturers, and business operators should behave in order to reduce the ethical risks that can arise from Artificial Intelligence as far as our emancipated global society is concerned, due to the emerging poor or unethical designs, incongruous application of information based technologies or digital consciousness. The extent of Artificial Intelligence ethics is a reflection on our immediate existential world, which has to do with human rights, privacy and bias in current Artificial Intelligence systems.</p><p>In addition, the ethical issues surrounding Artificial Intelligence concerns about the displacement of human workforce through the use of robotics in jobs places. The human workforce concerns about the normative possibility of Artificial Intelligence systems in going beyond human equivalent capabilities such as human rationality. Eleanor Bird et al, further heightened their theoretical position by asserting that:</p><p>Within the last 5 years AI ethics has shifted from an academic concern to a matter for political as well as public debate. The increasing ubiquity of smart phones and the AI-driven applications that many of us rely on every day; and the fact that AI is increasing impacting all sectors of global society (including industry, healthcare, policing &amp; the judiciary, transport, finance and leisure), as well as the seeming prospect of an AI "arms race", has prompted an extraordinary number of national and international initiatives, from NGOs, academic, and industrial groups, professional bodies and governments. It is germane to note that the ethics of Artificial Intelligence as the epistemology of digital consciousness concerns itself with the notion of information technology in the world growing economy. Artificial intelligence is actually a reflection and cognition between man and intelligent machines. For Dukor, reflection and cognition are man"s attributes as a psychological organism and nothing concerns man or motivates or hampers his interests as to a spatialtemporal being escapes the impact or influence of the activity. <ref type="bibr" target="#b14">24</ref> There is a connection between Artificial Intelligence and the banking sector. The banking industry is a corporate world of its own. According to Dukor, in his book, "Justice, Law and Corporate Ethics: Philosophical Essays", asserts that corporate world exist amidst the worlds of mechanics, artisans, chemists, soldiers, sports and in this you find professional bodies and individuals. <ref type="bibr">25</ref> According to the "Principle of Corporate Governance" in Kenya cited by Maduabuchi Dukor, to be corporate is to be legally united into a body so as to act as an individual; belonging or pertaining to a corporation.</p><p>Moreover, the demands of corporate world border on leadership and governance just as the demands of persons in the pre-historic era or state of nature is the need for society. <ref type="bibr">26</ref> Worthy of note is that Artificial Intelligence has an epistemological significance because it has to do with the symbols and experience of information-based technologies. On the other hand, Artificial Intelligence presupposes the representation of symbols. To this extent, the symbol objects have an esoteric veiling and at the same time an esoteric revealing function. The discovery of its meaning presupposed an understanding of a culture, because as a rule, it is based on the convention of a group that agrees on its meaning. Symbols can also in many ways be individually and subjectively construed. <ref type="bibr" target="#b15">27</ref> Accordingly, Dukor posits that there are many different ways of knowing reality, but symbolism has it as a primary objective to reveal the real. In other words, to reveal the truth-the reality, therefore symbol is nothing more than an authentic truth. <ref type="bibr">28</ref> Artificial Intelligence presupposes the neural structure of the brain and the neural structures of the brain are reducible to theistic panpschic foundationalism. Symbolismysticism or symbolismystic science is hereby adduced to be the epistemology of digital consciousness or informationtechnology. <ref type="bibr">29</ref> Symbolismystic science is defined as digital, modularistic and conceptualistic consciousness…which constitutes the epistemology of information technology. <ref type="bibr">30</ref> Artificial Intelligence as the epistemology of information-based technology is the possibility of representation or sense representation and identity. <ref type="bibr">31</ref> Artificial Intelligence presupposes transcendental ideas and it represents Kant"s transcendental dialectics. Artificial Intelligence as transcendental ideas is a representation of our material world. According to Dukor:</p><p>Transcendental ideas in Kant"s transcendental dialectics are symbolisms in symbolismysticism. Symbolismysticism as a theistic panpschic transcendentality is a bridge between the phenomena and noumena. Symbolismysticism is the metaphysical or symbolic interpretation of reality. Therefore, contrary to Kant"s transcendental analytic, Reason in theistic panpschic symbolismysticism produce a priori concepts and ideas which is not limited to experience only, but demands metaphysical and transcendental deductions. <ref type="bibr">32</ref> Nevertheless, Artificial Intelligence requires epistemological paradigm and the power of rationality. According to Dukor, rationality…means acting so as best to satisfy ones overall goal given what you know and can tell about your situation. Generally, whether human or machine, it is a consistent pattern of rational behaviour manifesting the same cognitive states and capacities repeatedly. <ref type="bibr">33</ref> On the other hand, cognition as an epistemology predates the cybernetic and scientific phase. <ref type="bibr" target="#b16">34</ref> Worthy of note is that Artificial Intelligence represents cognitivist, Cartesian and Kantian paradigms. <ref type="bibr">35</ref> Artificial Intelligence presupposes the world of intelligent machines such as the world of computers; and the world of computer is a form of symbolic representation of consciousness that is yet to be determined. <ref type="bibr">36</ref> Dukor further heightened his theoretical position by asserting that, the growing trend in the scientific world is the evolution of symbols at different stages of scientific development leading to bionic brain implant, Super-brain, T mail or telepathic mail. <ref type="bibr">37</ref> Moreover, Artificial Intelligence envisages the need for social change; and a social change is any significant alteration, modification or transformation in the reorganization and operation of social life or business world. <ref type="bibr" target="#b17">38</ref> Artificial Intelligence is all about innovative transformation or scientific inventions. For Ferrante, invention is a synthesis of existing inventions. <ref type="bibr">39</ref> Invention brings about technological innovation. According to Ferrante, innovation presupposes a relatively stable, reliable and predictable arrangement; and it means (1) the acceptance of the cultural goals, but the rejection of legitimate means to obtain these goals; (2) the invention, or discovery of something new-an idea, a process, a practice, a device, or a tool for human emancipation. <ref type="bibr">40</ref> Broadly speaking, innovation is a cascade of new processes and arrangement, new ways of doing things, not just in one area of application but across the economy and society. <ref type="bibr" target="#b18">41</ref> Innovation has resulted in the emergence of Artificial Intelligence or intelligent machines. As rightly observed by Peter Drucker, Artificial Intelligence reminds us that a new information revolution is well under way. <ref type="bibr" target="#b19">42</ref> It has started in business enterprise, and with business information. For Peter Drucker, the computer has had a similar impact on banking operations, with banking probably the most computerized industry today in the world. <ref type="bibr">43</ref> Nonetheless, Artificial Intelligence presupposes truth-revealing and it characterizes an epistemological significance. For Lawhead, epistemology is a branch of philosophy that pursues questions concerning truth and knowledge. <ref type="bibr" target="#b20">44</ref> In addition, ethics with regards to AI ethics serves as a platform to regulate human behaviour in terms of the use and misuse of Artificial Intelligence. On the other hand, ethics is the branch of philosophy that deals with questions of what is good and what we should do. <ref type="bibr">45</ref> Artificial Intelligence presupposes an evolutionary view; the idea that human societies progress in stages from primitive to civilized with each stage being characterized by a gradually more complex form of social organization. <ref type="bibr" target="#b22">46</ref> Artificial Intelligence does not represent or entail socio-political disorder because the present socio-political disorder originates from an epistemological quandary, ideological confusion and misappropriation of the true goals of democracy by the present practice of liberal democracy. <ref type="bibr" target="#b23">47</ref> Nonetheless, the development and deployment of Artificial Intelligence and machine learning has transformed the financial sector. Artificial Intelligence and machine learning capabilities are transforming the banking sector all over the world. Artificial Intelligence and machine learning systems are reshaping client or bank customers" experiences, including communication with financial service providers (for example, chatbots), investing (for example robo-advisor), borrowing (for example, automated mortgage underwriting) and identity verification (for example, image recognition). They are also transforming the operations of financial institutions, providing significant cost savings by automating processes, using predictive analytics for better product offerings, and providing more effective risk and fraud management processes and regulatory compliance. <ref type="bibr" target="#b24">48</ref> The financial sector, led by financial technology (fintech) companies, has been rapidly increasing the use of Artificial Intelligence and machine learning systems. Artificial intelligence and machine learning have made major advances over the past decades. Artificial Intelligence and machine learning within the financial sector requires bridging gaps and which requires developing a digital friendly policy framework anchored around four broad policy pillars: investing in infrastructure, investing in policies for a supportive business environment, investing in skills; and investing in risk managemetnt. <ref type="bibr">49</ref> Artificial Intelligence and machine learning adoption brings in new unique cyber-risks and policy concerns. Financial stability issues could also arise with respect to the robustness of the Artificial Intelligence/Machine Learning algorithms in the face of structural shifts and increased interconnectedness through widespread reliance on few AI/ML service provider. <ref type="bibr">50</ref> The capability of acquiring large sets of data from the environment and processing it with artificial intelligence (AI) and machine learning (ML) is changing the financial sector landscape. AI/ML facilitates enhanced capacity to predict economic, financial and risk events; reshape financial markets, improve risk management and compliance; strengthen prudential oversight; and equip central banks with new macro-prudential mandates. <ref type="bibr">51</ref> Artificial Intelligence in the financial sector has led to forecasting; investment and banking services; risk and compliance management, prudential supervision, central banking; risks and policy considerations such as embedded bias, unboxing the "Black Box" explainability and complexity, cybersecurity, data privacy, robustness; and impact on financial stability. <ref type="bibr">52</ref> The deployment of artificial intelligence (AI) and machine learning (ML) systems in the financial sector will continue to accelerate. The evolving nature of the Artificial Intelligence/ Machine Learning technology and its applications in finance mean that neither the users, the technology providers, and developers, nor the regulators understand, currently, the full extent of the strengths and weaknesses of AI as the epistemology of digital consciousness or information-based technology. <ref type="bibr">53</ref> Hence there may be many unexpected pitfalls that are yet to be materialised and countries will need to strengthen their monitoring and prudential oversight. <ref type="bibr">54</ref> Accordingly, Reza Farishy asserts that the financial sector is a vibrant market with intense competition for products and services, and advancements in the information technology have led to the development of highly valuable new technologies. <ref type="bibr" target="#b25">55</ref> On the other hand, in banking industry, the managers acknowledged that AI in marketing financial services is here to stay and that it is, therefore, vital for them to accelerate its adoption to enhance their business operations and maximise profits through enhanced services. <ref type="bibr" target="#b26">56</ref> Worthy of note is that the financial or banking sector is characterized by a myriad of risk factors and this is necessitated by prudential management of financial resources. Furthermore, the use of artificial intelligence in banking industry has elicited a myriad of ethical issues. One of the fundamental problems that is closely associated with the financial sector is the problem of violation of fundamental human right, human dignity and privacy. The financial sector is exposed to a myriad of financial risks due to the incessant incidences of fraud and fraud management. The privacy of bank customers have always been invaded by internet fraudsters and criminal elements within the Nigerian society. There are various measures in which banks have comprised in terms of the violation of people"s rights. Secondly, the regulatory bodies within the financial sector should be proactive enough in terms of their policy formulation frameworks to avert incessant financial losses and risks both to bank customers and banking operators. Sometimes, poor fiscal policies by some countries like Nigeria have posed a great risks or potential danger to the financial sector. The Nigerian government ought to do the needful in ensuring good fiscal policies that are aimed at ensuring national paradigm and sustainable development or long term economic sustainability.</p><p>Moreover, the perception of banking has elicited negative consequences. The problem of poverty in Nigeria has necessitated the poor culture of bank deposits in Nigeria. Many Nigerians are fond of keep their earnings in their houses rather than depositing the money in Nigerian banks. Many Nigerians believe that Nigerian banks are exploitative in nature. Banks are not to be seen as enemies of the Nigerian people. They are created or established to serve the interest of the people in Nigeria. On the other, many Nigerians are of the opinion that many Nigerian banks are fond of charging very high interest rates whenever they give out loans to the public. Unfortunately, the Nigerian government has a very poor economic policies and implementation and this has drastically affected every sectors of the Nigerian society. One fundamental problem that is closely associated with the Nigerian banks is their lack of global competitiveness. All institutions have to make global competitiveness a strategic goal. <ref type="bibr" target="#b27">57</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.6.">Artificial Intelligence and the Future of Humanity</head><p>Artificial Intelligence has taken an international dimension. The internationalization and weaponization of Artificial Intelligence showcases the philosophy of humanism. In other words, Artificial Intelligence is another form of the philosophy of humanism. The ethics of humanism centres around man himself. It showcases human-centeredness. The fundamental objective of Artficial Intelligence is that its emergence is aimed at human wellbeing, progress and happiness. Artificial Intelligence is the philosophy of humanism that addresses human lofty ideals, needs and aspirations. For Asodun Fatai, an attempt to situate these various significance and application of Artificial Intelligence within the scope of epistemology and ethics of Humanism further reveals that AI research is consistent with Humanism.</p><p>Nevertheless, AI research at any point in time never encourages the inclusion of the Supernatural being in human affairs. <ref type="bibr" target="#b28">58</ref> Asodun Fatai, in consonance with Ludwig Andreas Feuebach"s perspective, asserts that humans" longing for the perfection of their nature is what informs the belief in the existence of God. Man"s belief in the existence of God is borne out of stripping himself of his best qualities-his goodness, his justice, power, mercy, etc and projects them outside himself into an imaginary being, called God. <ref type="bibr">59</ref> But in projecting these human qualities into the concept of God, man removes from them human limitations and therefore sees them as limitless-infinite goodness, infinite justice, infinite wisdom etc. <ref type="bibr" target="#b29">60</ref> As rightly observed by Asodun Fatai, in his work, "The Connection between Humanism and Artificial Intelligence: Interpreting the Turing"s Ideals for Humanity", asserts that efforts are steadfastly geared towards the instantiation of human projected perfect attributes in machines. This move is quite humanistic since such machines are not abstractive entities existing in an imaginary Super-sensible world. Machines exist in human natural habitat. <ref type="bibr">61</ref> They are built by humans to achieve ends designed for them by humans themselves. 62 AI research is equally consistent with the epistemology of Humanism. Here, the application of reason, supported by the scientific method, is considered the channel for interacting with reality. AI itself is a product of human reasoning and scientific method. <ref type="bibr">63</ref> Artificial Intelligence has an epistemological significance and this epistemological significance is what Hubert Dreyfus would call Artificial Reason. <ref type="bibr" target="#b30">64</ref> In the light of this, Asodun Fatai asserts that intelligent machines are scientific technology so designed to help humans in all their endeavours. <ref type="bibr" target="#b31">65</ref> Asodun Fatai, further heightened his position by asserting that:</p><p>Today, AI research offers the most sophisticated tools of scientific inquiry. The ethics of Humanism is already benefitting from AI research. A morally sensitive area of human endeavour where the AI"s support for Humanism is gradually assuming factual significance is that of the care of the aged. In some advanced societies like Japan and China, intelligent machines are playing the role of caregivers or nurses in elderly homes. Indeed the contributions of AI to human welfare cannot be overemphasized. <ref type="bibr">66</ref> Nonetheless, Artificial Intelligence as the philosophy of humanism brings to the fore that like the "human being" which constitutes its primary focus, the term "humanism" can be slippery and controversial to pin down. <ref type="bibr">67</ref> For Andrew Copson, the term "humanism" can be described as a worldview, an approach to life, a lifestance, an attribute, a way of life and a meaning frame. <ref type="bibr" target="#b32">68</ref> On the other hand, Corliss Larmont, in his work, "Philosophy of Humanism", asserts that humanism is the viewpoint that people have but one life to live and should make the most of it in terms of creative work and happiness. <ref type="bibr" target="#b33">69</ref> For Jim Herrick, humanism is a most philosophy of life. Its emphasis is on the human, the hereand-now, the humane. <ref type="bibr" target="#b34">70</ref> It is germane to note that Artificial Intelligence as the philosophy of humanism points out to the fact that humans are the legislators of reality. <ref type="bibr">71</ref> In consonance with Corliss Larmont, Asodun argues that nature rather than the supernatural is considered the totality of being. Humans are taken as evolutionary product of nature bereft of the capacity to survive death; humans are equipped with the capacity to reason, that is, supported by the scientific method; humans can always solve their problems, morality should govern all human values in this earthly experiences where all relationships are pinned down on happiness, freedom and progress for mankind. <ref type="bibr">72</ref> Humans should engage in activities that will contribute to the welfare of trhe community as a whole. The aesthetical experience of nature and everything therein should be a pervasive reality in the lives of all people. Social programmes should be geared towards the attainment of democratic ideals, happiness and a high standard of living for the totality of mankind. <ref type="bibr">73</ref> Asodun further asserts that humanism presupposes a social, political order that is anchored on human affairs. The belief in the unending questioning of basic assumptions and convictions about the human experiences using the scientific method is critical in the field of Artificial Intelligence ethics. <ref type="bibr" target="#b35">74</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.7.">History and Evolution of Artificial Intelligence</head><p>The use of Artificial Intelligence in banking industry has drastically led to economic revolution of countries. Artificial Intelligence has come to stay with us as far as our humanity is concerned. Artificial Intelligence refers to the simulation in machines that are programmed to perform tasks that typically requires human intelligence. It is a broad field of study and research that encompasses various subfields, including machine learning, natural language processing, computer vision, robotics, and more. <ref type="bibr" target="#b36">75</ref> The term "Artificial Intelligence" was coined by John McCarthy in 1956 as the science and the engineering of making intelligent machines, especially intelligent computer programs. <ref type="bibr" target="#b37">76</ref> Artificial Intelligence systems are designed to analyse and interpret vast amounts of data, make decisions, and perform tasks with a level of autonomy, safety, and adaptability.</p><p>In addition, these systems aim at to replicate or mimic human cognitive thinking abilities such as learning, reasoning, problem solving, perception and language understanding. There are two primary types of Artificial Intelligence: narrow or weak Artificial Intelligence and or strong artificial general intelligence (AGI). Narrow Artificial Intelligence refers to systems that are designed to perform specific tasks and are limited to those tasks. Examples of narrow Artificial Intelligence include voice assistants, image recognition systems, and recommendation algorithms. Artificial general Intelligence refers to systems that possess the cognitive ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence.  <ref type="bibr" target="#b38">77</ref> Artificial Intelligence is the study of agent that receive perceptions from the environment and perform actions. The narrow and Artificial general Intelligence explains how fast intelligent machines can be and the way they operate to aid the human workforce. The idea of Artificial Intelligence and machine learning came into the minds of men as a myth brought into human reality. Artificial Intelligence has its historical roots in Greek mythology. It was embedded in the works of philosophers like Aristotle and Archytas of Tariturn who laid the rational foundation for logical thinking and early attempts were made for creating artificial beings. Archytas of Tariturn was an ancient Greek mathematician and philosopher who lived in the 4 th century BCE, was known for his immense contribution to mathematics and mechanical engineering.</p><p>Nonetheless, he built several machines, including the mechanical bird called the "Pigeon", which could flap its wings and fly for a short distance and this could be seen as an early example of automata or mechanical machine devices. In the 17 th century Blaise Pascal and Gottfried Leibniz came up with early mechanical computing. Blaise Pascal was a French mathematician, physicist and philosopher who invented the Pascaline in the 17 th century. The Pascaline was a mechanical calculator designed to perform basic arithmetic operations like addition and subtraction. It used a series of gears and wheels to manipulate numbers. Gottfried Leibniz, on the other hand, was a German mathematician and philosophers, who independently developed a mechanical calculator known as the "Leibniz Wheel" in the 17 th century. The "Leibniz Wheel" was an improved version of the Pascaline and was capable of performing addition, subtraction, multiplication and division. Charles Babbage developed what was known as the "Analytical Engine". In the 19 th century, the English mathematician and inventor conceived or developed designs for a mechanical general-purpose computer called the "Analytical Engine". The "Analytical Engine" was envisioned as a vast improvement over earlier calculators, with the capability to perform complex calculations and store data in a memory system. Babbage"s design incorporated key computing concepts such as a stored program, punched cards for input and output, and an arithmetic logic unit (ALU). Worthy of note is that the "Analytical Engine" was never fully developed or realized due to funding issues and technological limitations of the time and it was regarded as a precursor to modern digital computers. These mechanical computing devices and concepts from Pascal, Leibniz and Babbage played a very crucial role in demonstrating the feasibility and potentiality of automating mathematical computations. Furthermore, they laid the rational foundation for subsequent developments in computing machinery and the eventual emergence of modern computers in the 20 th century. These mechanical calculators, including the Pascaline and the "Leibniz Wheel" were significant precursors to modern computers. They demonstrated the feasibility of automating mathematical calculations through mechanical means. The birth of Artificial Intelligence in the 1950s was borne out of an offshoot with the theoretical foundations of Aristotle, Charles Babbage, Blaise Pascal, and Gottfried Leibniz. In the 1940s and 1950s, a group of scientists from various disciplines, including mathematics, psychology, engineering, economics and political science, began discussing the possibility of creating an artificial brain. <ref type="bibr" target="#b39">78</ref> This theoretical cum practical explorations led to the establishment of the field of Artificial Intelligence (AI) as an academic discipline in 1956. During this time, there were several key developments that influenced the thinking around creating intelligent machines otherwise known as machine learning. Research in neurology revealed that the brain operated through electrical networks of neurons that fired in the pulses. The emergence of these ideas suggested the potential for construing an electronic brain, leading to early research into intelligent or thinking machines otherwise known as machine learning. These early developments in cybernetics, neural networks, and the exploration of electronic brain analogies laid to the rational foundation for subsequent advancements or development and deployment of Artificial Intelligence research. They set the stage for the growth of the field and the contributions of researchers like Marvin Minsky, who became very influential leaders and innovators in the field of Artificial Intelligence over the next five decades. Examples of these works include robots like W. Gray Walter"s turtles and the John Hopkins Beast.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.8.">Evaluation</head><p>Artificial Intelligence became more popular in the 1950s with the intellectual contribution of Alan Turing. 1n 1950, Alan Turing made a significant intellectual contribution to the field of Artificial Intelligence with the publication of his influential work. In his theoretical reconstruction, Alan Turing pondered over the possibility of creating intelligent machines known as thinking machines. Recognizing the challenge in defining what it means to "think" he introduces the concept of the Turing Test (TT). He proposes that if a machine could engage in a conversation through a teleprinter in a manner indistinguishable from a conversation with a human being, then it could be considered as "thinking." This simplified version of the problem allowed Alan Turing to make a compelling argument for the possibility of a "thinking machine." Alan Turing"s theoretical reconstruction on Artificial Intelligence or machine learning addresses common objectives and objections to the idea of mechanical computing programming and it laid down a theoretical/intellectual framework for exploring machine intelligence. The Turing Test holds a significant importance as it was the first significant proposal in the field of philosophy of Artificial Intelligence. The philosophy of Artificial Intelligence sparked off discussions about the nature of intelligence and became a benchmark for evaluating machine intelligence. Turing"s work and the Turing Test has since influenced the development of Artificial Intelligence and continue to be the rational foundation for the philosophy of Artificial Intelligence since 1950s. According to Alan Turing, the Turing Test has bolstered research interest in the field of Artificial Intelligence. <ref type="bibr">79</ref> Finally, artificial intelligence and machine learning has come to stay with us and it presupposes a kind of the philosophy of humanism which cuts across every sectors; finance, transport, academic, health, sports, manufacturing, legal system, environment and the human person.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.9.">Concluding Considerations</head><p>The significance and application of artificial intelligence has elicited some both positive and negative impacts. Artificial intelligence has a myriad of impacts. These impacts are mainly on society, privacy, legal system, human rights, environment, trust, financial system, and democracy. This paper explores or interrogates the interrelatedness between ethics, artificial intelligence and banking sector. This paper, therefore, concludes that artificial intelligence has come to stay with us as far as our humanity is concerned. The ethical implications of artificial intelligence on the banking industry cannot be overemphasized.</p><p>The banking industry is one of the most pivotal sectors of any nation"s economy.</p><p>Finally, the banking industry remains one of the most robust, competitive and computerized industries in the world.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head/><label/><figDesc>20    Worthy of note is that certain initiatives have led to the publication of a large number of sets of ethical principles or guidelines since January, 2017 and that new ethical standards are emerging (notably from the British Standards Institute and the IEEE Standards Association), and a growing number of countries (and groups of countries) have announced AI strategies (with large-scale investments) and set up national advisory or policy bodies to set up ethical guidelines for Artificial Intelligence operations around the world.21  Robots and Artificial Intelligence (AI) come in various forms…and each of which raises a different range of ethical concerns.22  According to the Future Life Institute cited by Eleanor Bird et al, Artificial Intelligence holds great economic, social, medical, security, and environmental promise, with potential</figDesc><table><row><cell>benefits including:</cell></row><row><cell>Helping people to acquire new skills and training;</cell></row><row><cell>Democratising services;</cell></row><row><cell>Designing and delivering faster production times and quicker</cell></row><row><cell>iteration cycles;</cell></row><row><cell>Reducing energy usage;</cell></row><row><cell>Providing real-time environmental monitoring for air</cell></row><row><cell>pollution and quality;</cell></row><row><cell>Enhancing cyber-security defences;</cell></row><row><cell>Boosting national output;</cell></row><row><cell>Reducing healthcare inefficiencies;</cell></row><row><cell>Creating new kinds of enjoyable experiences and interactions</cell></row><row><cell>for people; and</cell></row><row><cell>Improving real-time translation services to connect people</cell></row><row><cell>across the globe. 23</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head/><label/><figDesc>It can be used for tasks such as data analysis, pattern recognition, predictive modelling, autonomous vehicles, visual assistants, and more. According to Stuart Russell and Peter Norvig, Turing was the first to conceptualise a complete vision of AI in his 1950 article.</figDesc><table><row><cell cols="5">Moreover, artificial general intelligence (AGI) is still largely</cell></row><row><cell cols="5">theoretical and not yet achieved. Artificial Intelligence has</cell></row><row><cell cols="5">numerous applications across various industries, including</cell></row><row><cell>healthcare,</cell><cell>finance,</cell><cell>transportation,</cell><cell>manufacturing,</cell><cell>and</cell></row><row><cell>entertainment.</cell><cell/><cell/><cell/><cell/></row></table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Ethics - Scientific Research, Ethical Issues, Artificial Intelligence and Education [Working Title]</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<idno type="DOI">10.5772/intechopen.1001548</idno>
+	</analytic>
+	<monogr>
+		<title level="m">European Parliamentary Research, Service Scientific Foresight Unit</title>
+		<imprint>
+			<publisher>IntechOpen</publisher>
+			<date type="published" when="2020-03">March (2020</date>
+			<biblScope unit="page">634452</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">The Ethics of Artificial Intelligence: Issues and Initiatives</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>Op. cit</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">The Ethics of Artificial Intelligence: Issues and Initiatives</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>Op. cit</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Universal Intelligence: A Definition of Machine Intelligence</title>
+		<author>
+			<persName><surname>Legg</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Shane</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Marcus</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.0712.3329</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.0712.3329"/>
+	</analytic>
+	<monogr>
+		<title level="j">Minds &amp; Machines</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="391" to="444"/>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Ethics - Scientific Research, Ethical Issues, Artificial Intelligence and Education [Working Title]</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<idno type="DOI">10.5772/intechopen.1001548</idno>
+	</analytic>
+	<monogr>
+		<title level="m">European Parliamentary Research, Service Scientific Foresight Unit (STOA)</title>
+		<imprint>
+			<publisher>IntechOpen</publisher>
+			<date type="published" when="2020-03">March. 2020</date>
+			<biblScope unit="page" from="1" to="2"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Connection between Humanism and Artificial Intelligence: Interpreting Turing"s Ideals for Humanity" in Joseph Penlong Nietlong (Editor-in-Chief) Makurdi Owl Journal of Philosophy (MAJOP)</title>
+		<author>
+			<persName><surname>Asodun</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fatai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A Journal of the Department of Philosophy</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2021">2021</date>
+			<pubPlace>Makurdi</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Benue State University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Encarta: The Reference Tool of the Future?&lt;i&gt;Microsoft Encarta World English Dictionary (CD-ROM Version)&lt;/i&gt;. Microsoft Corporation&lt;i&gt;Encarta World English Dictionary&lt;/i&gt;. Anne H. Soukhanov&lt;i&gt;Microsoft Encarta Reference Suite 2000&lt;/i&gt;. Microsoft Corporation</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">A</forename><surname>Bekey</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/603265</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Library Quarterly</title>
+		<title level="j" type="abbrev">The Library Quarterly</title>
+		<idno type="ISSN">0024-2519</idno>
+		<idno type="ISSNe">1549-652X</idno>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="261" to="269"/>
+			<date type="published" when="2001-04"/>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Redmond</forename><forename type="middle">W A</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Microsoft Corporation</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goldinger</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Milton</surname></persName>
+		</author>
+		<title level="m">Philosophy and Contemporary Issues, Ninth Edition</title>
+		<meeting><address><addrLine>New Delhi</addrLine></address></meeting>
+		<imprint>
+			<publisher>Prentice Hall of India Private Limited</publisher>
+			<date type="published" when="2008">2008</date>
+			<biblScope unit="page">370</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Supplementum Epigraphicum GraecumJibrîn. Op. cit. 95, n. 14.</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/1874-6772_seg_a1_542</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Op. cit</title>
+		<imprint>
+			<biblScope unit="page">14</biblScope>
+			<date>null</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Book reviews : NANCY G McNULTY: Training Managers: The International Guide, (Foreword by Peter F Drucker), 1970, New York &amp; London, Harper &amp; Row, xii + 572pp, £7</title>
+		<author>
+			<persName><surname>Drucker</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Peter</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/135050767000100209</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Management Education and Development</title>
+		<title level="j" type="abbrev">Management Education and Development</title>
+		<idno type="ISSN">0047-5688</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="109" to="110"/>
+			<date type="published" when="1999">1999</date>
+			<publisher>SAGE Publications</publisher>
+			<pubPlace>London and New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Ethical issues in robot-assisted play for children with special needs</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<idno type="DOI">10.13180/icres.2019.29-30.07.p03</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Artificial Intelligence, Robots and Ethics</title>
+		<editor>
+			<persName><forename type="first">Pantaleon</forename><surname>Iroegbu</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Anthony</forename><surname>Echekwube</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Ibadan</addrLine></address></meeting>
+		<imprint>
+			<publisher>CLAWAR Association Ltd.</publisher>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="page">44</biblScope>
+		</imprint>
+	</monogr>
+	<note>Complementary Ethical Reflection</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">The Voyage of Discovery: A Historical Introduction to Philosophy, Second Edition</title>
+		<author>
+			<persName><surname>Lawhead</surname></persName>
+		</author>
+		<author>
+			<persName><surname>William</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Wadsworth/Thomson Learning</publisher>
+			<biblScope unit="page">574</biblScope>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">The Ethics of Artificial Intelligence: Issues and Initiatives</title>
+		<author>
+			<persName><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Eleanor</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Justice, Law and Corporate Ethics: Philosophical Essays</title>
+		<author>
+			<persName><surname>Dukor</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Maduabuchi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004">2004</date>
+			<publisher>Essence Library</publisher>
+			<biblScope unit="page" from="183" to="184"/>
+			<pubPlace>Lagos</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Symbol and Symbolism in Info-Tech Epistemology in Maduabuchi Dukor (Editor-in-Chief)</title>
+		<author>
+			<persName><surname>Dukor</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Maduabuchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the Department of Philosophy</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">96</biblScope>
+			<date type="published" when="2009">2009</date>
+			<publisher>Nnamdi Azikiwe University</publisher>
+			<pubPlace>Awka</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Ibid.</title>
+		<author>
+			<persName><surname>Dukor</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Maduabuchi</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctt207g8bt.22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">True False</title>
+		<imprint>
+			<publisher>OR Books</publisher>
+			<date>null</date>
+			<biblScope unit="page" from="101" to="111"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Sociology: A Global Perspective, Fifth Edition</title>
+		<author>
+			<persName><surname>Ferrante</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Joan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>Wadsworth/Thomson Learning</publisher>
+			<biblScope unit="page">540</biblScope>
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Philosophical Dynamics of Innovation, Creativity and Invention in Entrepreneurship</title>
+		<author>
+			<persName><surname>Odia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doris</forename><surname>Lucky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Aiworo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Osariyekemwe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">) Philectics Benin Journal of Philosophy, A Publication of the Department of Philosophy</title>
+		<editor>
+			<persName><forename type="first">Peter</forename><surname>Omonzejele</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">168</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+		<respStmt>
+			<orgName>University of Benin</orgName>
+		</respStmt>
+	</monogr>
+	<note>Editorin-Chief</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Management Challenges in the 21 st Century</title>
+		<author>
+			<persName><surname>Drucker</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Peter</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">98</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Supplementum Epigraphicum GraecumHistria. Stela sepulcralis. Op. cit. 45</title>
+		<author>
+			<persName><surname>Lawhead</surname></persName>
+		</author>
+		<author>
+			<persName><surname>William</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/1874-6772_seg_a2_465</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Op. cit</title>
+		<imprint>
+			<biblScope unit="page">45</biblScope>
+			<date>null</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">THE OCCULT PHILOSOPHY AND PURITANISM: JOHN MILTON</title>
+		<author>
+			<persName><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goldinger</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Milton</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203167113-24</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Occult Philosophy in the Elizabethan Age</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2003-08-27"/>
+			<biblScope unit="page" from="234" to="240"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">Sociology: A Global Perspective</title>
+		<author>
+			<persName><surname>Ferrante</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Joan</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">539</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">order to answer this question, we should obviouslyexamine Weyer's Depraestigiis to see if it contains elements of what is called, perhaps inappropriately, a myth. One of my students researched this and provided me with the results . She demonstrated that Johann Weyer was nowhere presented as one who opposed the theological approach by means of a medical approach. Admittedly, he pointed to certain 'somatic' causes which affected the physical constitution of witches and which predisposed them to be influenced by the peculiar materiality of the devil's 'spirit'. Weyer even spoke of 'melancholia' when he described the specificsomatic constitution of the witches. But in this he did not differ from the philosophers, theologians and physicians of his time. The same can be argued regarding the second element of the myth. Certainly, Weyer pleaded for a humanitarian approach and acted courageously against unnecessary cruelty , as Montaigne and others did. However, does this imply that he was defending an approach which foreshadowed the specific psychiatric practice? I find it impossible to draw this conclusion. Nevertheless, the debate around witch-hunting was of historical significance for modern times because of the changes which it introduced in the Western concept of man. More elements are involved than are usually related in the traditional Weyer myth. The witch-hunt period was also the period during which the disciplines of theology and philosophy started to diverge. The Reformation and the subsequent wars of religion were partly responsible for this development. It was also influenced by the new findings in lruman biology. Around that time, the circulatory system was discovered. One had also become aware of the existence and importance of the nervous system, although its precise way of functioning was not yet fully understood. The theory of physiological humours was being gradually discarded and, along with it, the belief in 'spirits', the very tiny but distinct material elements in the body's centre. The manner in which Descartes, for example, attempted to construct a. theory of the blood's circuiation which did not abandon the belief in these material spirits, demonstrates how difficult was for modern thought to leave the old experience of the body behind. Moreover, religion was linked to this bodily experience. The beliefs that a human being was part of the harmony of creation, that mankind was influenced by the cosmos, that all kinds of spirits existed; the moral consequences derived from these key beliefs and the more particular religious statements such as, for example, transubstantiation as the core of the Eucharist, were shaken by the new conceptions of the human body which focused on 'man as a machine'. It is characteristic of the changes in this period that the Church did not attack Descartes's philosophical system for its sceptical point of departure. At that time, scepticism was an attitude favoured</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nwankwor</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Iks</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203055755-19</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Witchcraft in the Modern World</title>
+		<editor>
+			<persName><forename type="first">George</forename><surname>Ukagba</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Des</forename><surname>Obi</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Nwankwo</forename><surname>Iks</surname></persName>
+		</editor>
+		<meeting><address><addrLine>USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2013-10-28">2013</date>
+			<biblScope unit="page" from="157" to="157"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Lepage, Lawrence. Le Temps. [Sainte-Mélanie, Qc], La Prûche [sic] libre productions, 2012, DC Mélisande. Les Métamorphoses. Ibid., 2014, DC La Cantinière. La Différence. Ibid., 2013, DC Barbo. Résistance. Ibid., 2013, DC Yves Lambert Trio. Trio. Ibid., 2012, DC</title>
+		<author>
+			<persName><forename type="first">André</forename><surname>Gaulin</surname></persName>
+		</author>
+		<idno type="DOI">10.7202/1037489ar</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Rabaska: Revue d'ethnologie de l'Amérique française</title>
+		<title level="j" type="abbrev">Rabaska</title>
+		<idno type="ISSN">1703-7433</idno>
+		<idno type="ISSNe">1916-7350</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page">287</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>Consortium Erudit</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The Use of Artificial Intelligence in Banking Industry</title>
+		<author>
+			<persName><forename type="first">Reza</forename><surname>Farishy</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Reza</surname></persName>
+		</author>
+		<idno type="DOI">10.46799/ijssr.v3i7.447</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Social Service and Research</title>
+		<title level="j" type="abbrev">IJSSR</title>
+		<idno type="ISSN">2807-839X</idno>
+		<idno type="ISSNe">2807-8691</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="1724" to="1731"/>
+			<date type="published" when="2023-07-25">2023</date>
+			<publisher>Ridwan Institute</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Manager"s Understanding of Artificial Intelligence in Relation to Marketing Financial Services: Insights from a Cross-Country Study</title>
+		<author>
+			<persName><surname>Emmanuel</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mogaji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Nguyen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Bank Marketing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="1" to="49"/>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Management Challenges in the 21 st Century</title>
+		<author>
+			<persName><surname>Drucker</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Peter</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">61</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Connection between Humanism and Artificial Intelligence</title>
+		<author>
+			<persName><surname>Asodun</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Fatai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Interpreting Turing"s Ideals for Humanity</title>
+		<imprint>
+			<biblScope unit="page" from="13" to="14"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Supplementum Epigraphicum GraecumSalâ. Ibid. Stela. Op. cit. 236, n. 146.</title>
+		<author>
+			<persName><surname>Asodun</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/1874-6772_seg_a7_1132</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Op. cit</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="15" to="16"/>
+			<date>null</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+	<note>Fatai.</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">What Computers Can't Do of Artificial Reason</title>
+		<author>
+			<persName><surname>Dreyfus</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hubert</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+			<publisher>Harper and Row</publisher>
+			<biblScope unit="page">3</biblScope>
+			<pubPlace>London and New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Supplementum Epigraphicum GraecumSalâ. Ibid. Stela. Op. cit. 236, n. 146.</title>
+		<author>
+			<persName><forename type="first">Asodun</forename><surname>Fatai</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/1874-6772_seg_a7_1132</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Op. cit</title>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date>null</date>
+			<publisher>Brill</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The Wiley Blackwell Handbook of Humanism</title>
+		<author>
+			<persName><surname>Copson</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Andrew</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/9781118793305</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Wiley Blackwell Handbook of Humanism</title>
+		<editor>
+			<persName><forename type="first">Andrew</forename><surname>Copson</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Grayling</surname></persName>
+		</editor>
+		<meeting><address><addrLine>New Jersey</addrLine></address></meeting>
+		<imprint>
+			<publisher>Wiley</publisher>
+			<date type="published" when="2015-04-21">2015</date>
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">The Philosophy of Humanism</title>
+		<author>
+			<persName><surname>Larmont</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Corliss</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1997">1997</date>
+			<publisher>Humanist Press</publisher>
+			<biblScope unit="page">15</biblScope>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Asodun</forename><surname>Fatai</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page">6</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<title level="m" type="main">The Philosophy of Humanism</title>
+		<author>
+			<persName><surname>Larmont</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Corliss</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="13" to="15"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Fairclough, N. New Labour, New Language, London: Routledge, 2000 48 Travers, op. cit., p.122 49 Parker, op. cit., p.167 50 Ibid.,p.l20 51 Ibid.,p.96 52 Harper, op. cit., p.349 53 Parker, op. cit. 54 Curt, B. Textuality and Tectonics: Troubling Social and Psychological Science, Buckingham: Open University Press, 1994 55 Lowe, R. Family Therapy and the Uses of Postmodernism: From Revisionism to Descriptivism, University of Queensland: PhD Dissertation, 1995, p.52 56 Curt, op. cit. 57 Parker, op. cit. 58 Travers, op. cit., p.100 59 See, for example, Holloway &amp; Jefferson, op. cit., Travers, op. cit., Chapman, J. The Rhythm Model. In I. Bruna-Seu &amp; M. Colleen Heenan (eds) Feminism and Psychotherapy, London: Sage, 1998 60 Burr An introduction to Social Constructionism, London: Routledge, 1995, p.8</title>
+		<author>
+			<persName><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goldinger</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Milton</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203422311-26</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Deconstructing Evidence-Based Practice</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2004-08-02"/>
+			<biblScope unit="page" from="155" to="156"/>
+		</imprint>
+	</monogr>
+	<note>Op. cit</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">The Turing Test is a thought Experiment: Minds and Machines</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Goncalves</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11023-022-09616-82023</idno>
+		<ptr target="http://doi.org/10.1007/s11023-022-09616-82023"/>
+		<imprint>
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Artificial Intelligence: A Modern Approach, Second Edition</title>
+		<author>
+			<persName><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Stuart</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Norvig</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Peter</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>Prentice Hall</publisher>
+			<biblScope unit="page">17</biblScope>
+			<pubPlace>Englewood Cliffs</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Fairclough, N. New Labour, New Language, London: Routledge, 2000 48 Travers, op. cit., p.122 49 Parker, op. cit., p.167 50 Ibid.,p.l20 51 Ibid.,p.96 52 Harper, op. cit., p.349 53 Parker, op. cit. 54 Curt, B. Textuality and Tectonics: Troubling Social and Psychological Science, Buckingham: Open University Press, 1994 55 Lowe, R. Family Therapy and the Uses of Postmodernism: From Revisionism to Descriptivism, University of Queensland: PhD Dissertation, 1995, p.52 56 Curt, op. cit. 57 Parker, op. cit. 58 Travers, op. cit., p.100 59 See, for example, Holloway &amp; Jefferson, op. cit., Travers, op. cit., Chapman, J. The Rhythm Model. In I. Bruna-Seu &amp; M. Colleen Heenan (eds) Feminism and Psychotherapy, London: Sage, 1998 60 Burr An introduction to Social Constructionism, London: Routledge, 1995, p.8</title>
+		<author>
+			<persName><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Goldinger</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Milton</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9780203422311-26</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Deconstructing Evidence-Based Practice</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2004-08-02"/>
+			<biblScope unit="page" from="155" to="156"/>
+		</imprint>
+	</monogr>
+	<note>Op. cit.</note>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">I.—COMPUTING MACHINERY AND INTELLIGENCE</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Turing</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Alan</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mind/lix.236.433</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Mind</title>
+		<idno type="ISSN">0026-4423</idno>
+		<idno type="ISSNe">1460-2113</idno>
+		<imprint>
+			<biblScope unit="volume">LIX</biblScope>
+			<biblScope unit="issue">236</biblScope>
+			<biblScope unit="page" from="433" to="460"/>
+			<date type="published" when="1950-10-01">1950</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
