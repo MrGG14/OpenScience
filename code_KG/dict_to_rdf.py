@@ -120,7 +120,7 @@ for paper_title, paper_info in papers.items():
             g.add((paper_uri, SCHEMA.isSimilar, similar_paper_uri))
             g.add((similar_paper_uri, RDF.type, SCHEMA.Paper))
     except:
-        print(f'El paper  {paper_title} no tiene ningun otro paper que haya superado el umbral de similitud.')
+        print(f'El paper {paper_title} no tiene ningun otro paper que haya superado el umbral de similitud.')
 
 # Serializar y guardar el grafo RDF
 g.serialize("knowledge_graph_linked.rdf", format="xml")

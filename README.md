@@ -5,14 +5,19 @@
 
  ## Description
 
-Repository for Artificial Intelligence And Open Science. The aim of this repository is to create a Gobrid client which will perform an analysis over 10
-open-access articles and will:
+Repository for Artificial Intelligence And Open Science. The aim of this repository is to create a Gobrid client which will perform an analysis over 30
+open-access articles and:
 
-- Draw a keyword cloud based on the words found in the abstract of your papers.
+- Extract metadata such as abstract, authors, publication date, referenced authors and organizactions.
   
-- Create a visualization showing the number of ﬁgures per article.
+- Compare papers assigning a similitude metric between them.
   
-- Create a list of the links found in each paper.
+- Topic modelling using LDA.
+
+-  Make local Knlowledge Graph in RDF.
+
+-  Expanding our Knowledge Graph with external information.
+
 
 
 
