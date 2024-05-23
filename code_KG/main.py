@@ -2,7 +2,6 @@ from grobid_client.grobid_client import GrobidClient
 import xml.etree.ElementTree as ET        
 import matplotlib.pyplot as plt
 import os
-from wordcloud import WordCloud
 import re 
 import sys
 import gensim
