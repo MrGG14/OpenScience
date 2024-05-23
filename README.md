@@ -48,23 +48,18 @@ pip install -r requirements.txt
  ## Execution instructions
 
  ### LOCALLY
-Initilize Gobrid (Docker must be running): 
-```
-docker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0
-```
+Initilize Gobrid: 
 
 Once Gobrid is up and running you just need to place the papers you want to analyze in the 'papers' folder.
 
 Finally just execute the 'main.py' file. The outputs generated will be in the 'output' folder.
 
+After doing that we have to run the 'modelling.ipynb', which would collect and process all the data we need to create our KG, storing it in 'papers_metadata.pickle'file.
 
-### DOCKERIZED
-All this can also be done using Docker compose. If you want to execute this way you need to go to the repository folder and execute the following comand:
+Once you have the dictionary created you have to run the 'dict_to_rdf.py' file, this file will convert all the information collected in the previous part to rdf format, it will also enrich our KG with information from Wikidata and ORCID, using their APIs, storing the KG in the 'knowledge_graph_linked.rdf' file.
 
-```
-docker compose build
-docker compose run paper_analysis
-```
+Lastly you need to use the 'querys.ipynb' program to run queries from any SPARQL query web.
+
 
  ## Running example 
 We will run an example using [10 Deep Learning papers](https://github.com/MrGG14/OpenScience/tree/main/papers) in PDF format located in the 'papers' folder.
@@ -73,9 +68,7 @@ We just need to execute the main.py file and we obtain:
 
 - [XMLs generated](https://github.com/MrGG14/OpenScience/tree/main/output)
 
-- [WordCloud images](https://github.com/MrGG14/OpenScience/tree/main/output/imgs/WordCloud)
-
-- [Figures per paper](https://github.com/MrGG14/OpenScience/tree/main/output/imgs/FigHist)
+After doing that we have to run the 'modelling.ipynb', whic
  
  ## Preferred citation 
  Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
