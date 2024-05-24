@@ -19,23 +19,16 @@ open-access articles and:
 -  Expanding our Knowledge Graph with external information.
 
 
-
-
  ## Requirements
 - Python >= 3.5
 
 - Gobrid library (uses requests as dependency beyond the Standard Python Library).
 
-- Docker
  ## Installation instructions
-First of all you need to install Gobrid from Docker as specified in [Gobrid´s containers documentation](https://grobid.readthedocs.io/en/latest/Grobid-docker/). CRF-only image is recomended.
-
-To install initialize the docker daemon and execute: 
+First clone this repository locally with:
 ```
-docker pull lfoppiano/grobid:0.8.0
+git clone
 ```
-
-Then you should clone this repository locally.
 
 Finally, you may need to install the necessary packages to run the code. In order to do this go to the github cloned repo through the CMD and go to the '/docs' folder (cd docs). Now just run:
 
@@ -47,7 +40,6 @@ pip install -r requirements.txt
  
  ## Execution instructions
 
- ### LOCALLY
 Initilize Gobrid: 
 
 Once Gobrid is up and running you just need to place the papers you want to analyze in the 'papers' folder.
@@ -78,6 +70,4 @@ Finally, we can make the querys we like with 'querys.ipynb'. There are some exam
  Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
  ## Where to get help
 Gobrid´s documentation [here](https://github.com/kermitt2/grobid_client_python)
-Docker´s documentation [here](https://docs.docker.com/manuals/)
- ## Problems
-There seems to be a problem to install Gobrid´s python client from Docker. In the Dockerfile we try to install it following Gobrid´s steps (setup.py install) and directly with pip and neither of them seem to install it correctly. However locally works with both, we dont know where this error must come from. 
+
