@@ -68,7 +68,11 @@ We just need to execute the main.py file and we obtain:
 
 - [XMLs generated](https://github.com/MrGG14/OpenScience/tree/main/output)
 
-After doing that we have to run the 'modelling.ipynb', whic
+After doing that we have to run the 'modelling.ipynb', which will extract all paper metadata and will enrich the data with simiitude metrics between papers and topic modelling.
+
+Next, to generate our Knowledge graph and to merge our local graph with entities from wikidata and orcid we need to run 'dict_to_rdf.py' to seriealize in RDF the data extracted previously. 
+
+Finally, we can make the querys we like with 'querys.ipynb'. There are some examples in the file, but you can make any query you like.
  
  ## Preferred citation 
  Read [CFF](https://github.com/MrGG14/OpenScience/blob/main/CITATION.cff)
