@@ -11,6 +11,12 @@ authors:
   - given-names: Nicolas
     family-names: Vega Muñoz
     email: nicovegamunoz@gmail.com
+  - given-names: Jorge
+    family-names: Saenz de Miera Marzo
+    email: 
+  - given-names: Daniel
+    family-names: Fernandez Gomez
+    email: danifg42@gmail.com
 identifiers:
   - type: doi
     value: 10.5281/zenodo.10702189
